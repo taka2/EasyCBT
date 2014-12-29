@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>EasyCBT</title>
+  <link rel='stylesheet' href='css/EasyCBT.css'>
+</head>
+<body>
+
+<!-- htmlレンダリングエリア -->
+<div id='rendering_area'></div>
+
+<!-- 問題ページ用テンプレート -->
+<script type="text/html" id="questions_template">
+  <h1><%=examinationName%></h1>
+
+  <form name="form1">
+    <ul class="questions">
+
+    <% for(var i=0; i<questions.length; i++) { %>
+      <li>
+        Q<%=(i+1)%>. <%=questions[i].description%>
+        <ul class="answers">
+
+        <% for(var j=0; j<questions[i].answers.length; j++) { %>
+          <li>
+          <% if(questions[i].multiple_answer) { %>
+            <input type="checkbox" name="answers<%=(i+1)%>[<%=questions[i].index%>]" value="<%=questions[i].answers[j].index%>"> <%=questions[i].answers[j].description%>
+          <% } else { %>
+            <input type="radio" name="answers<%=(i+1)%>[<%=questions[i].index%>]" value="<%=questions[i].answers[j].index%>"> <%=questions[i].answers[j].description%>
+          <% } %>
+          </li>
+        <% } %>
+        </ul>
+      </li>
+    <% } %>
+    </ul>
+    <input type="button" name="finish" value="Finish" id='btn_finish'>
+  </form>
+</script>
+
+<!-- 結果ページ用テンプレート -->
+<script type="text/html" id="result_template">
+  <h1><%=examinationName%></h1>
+  <ul class="questions">
+  <% for(var k=0; k<questions.length; k++) { %>
+    <li>
+      Q<%=(k+1)%>. <%=questions[k].description%>
+      <ul class="results">
+      <% if(questions[k].correct) { %>
+        <li>正解！</li>
+      <% } else { %>
+        <li>不正解。。</li>
+      <% } %>
+        <li>回答: <%=concatAnswersDescription(questions[k].selectedAnswers)%></li>
+        <li>正解: <%=concatAnswersDescription(questions[k].correctAnswers)%></li>
+      </ul>
+    </li>
+  <% } %>
+  </ul>
+
+  <!-- 成績 -->
+  <p class="record">
+  <%=questionCount%>問中<%=correctAnswersCount%>問正解でした。<br/>
+  正答率=<%=calcPercentageOfCorrectAnswers(questionCount, correctAnswersCount)%>%
+  </p>
+
+  <!-- 戻るリンク -->
+  <p class="back">
+  <a href = "javascript:location.reload();">戻る</a>
+  </p>
+</script>
+
+<script src="js/external/jquery-1.11.2.js"></script>
+<script src="js/external/underscore.js"></script>
+<script src="js/external/backbone.js"></script>
+
+<!-- 問題データ -->
+<script src="js/app/questions.js"></script>
+<!-- モデル -->
+<script src="js/app/model/Question.js"></script>
+<!-- コレクション -->
+<script src="js/app/collection/Questions.js"></script>
+<!-- ビュー -->
+<script src="js/app/view/ExaminationView.js"></script>
+<!-- ルーター -->
+<script src="js/app/router/MyRouter.js"></script>
+<!-- アプリメイン -->
+<script src="js/app/app.js"></script>
+
+</body>
+</html>
