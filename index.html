@@ -19,15 +19,15 @@
 
     <% for(var i=0; i<questions.length; i++) { %>
       <li>
-        Q<%=(i+1)%>. <%=questions[i].description%>
+        Q<%=(i+1)%>. <%=questions.at(i).get('description')%>
         <ul class="answers">
 
-        <% for(var j=0; j<questions[i].answers.length; j++) { %>
+        <% for(var j=0; j<questions.at(i).get('answers').length; j++) { %>
           <li>
-          <% if(questions[i].multiple_answer) { %>
-            <input type="checkbox" name="answers<%=(i+1)%>[<%=questions[i].index%>]" value="<%=questions[i].answers[j].index%>"> <%=questions[i].answers[j].description%>
+          <% if(questions.at(i).get('multiple_answer')) { %>
+            <input type="checkbox" name="answers<%=(i+1)%>[<%=questions.at(i).index%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
           <% } else { %>
-            <input type="radio" name="answers<%=(i+1)%>[<%=questions[i].index%>]" value="<%=questions[i].answers[j].index%>"> <%=questions[i].answers[j].description%>
+            <input type="radio" name="answers<%=(i+1)%>[<%=questions.at(i).index%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
           <% } %>
           </li>
         <% } %>
@@ -75,8 +75,6 @@
 <script src="js/external/underscore.js"></script>
 <script src="js/external/backbone.js"></script>
 
-<!-- 問題データ -->
-<script src="js/app/questions.js"></script>
 <!-- モデル -->
 <script src="js/app/model/Question.js"></script>
 <!-- コレクション -->
@@ -85,6 +83,11 @@
 <script src="js/app/view/ExaminationView.js"></script>
 <!-- ルーター -->
 <script src="js/app/router/MyRouter.js"></script>
+<!-- 問題データ -->
+<script>
+  var questions = new easycbt.collection.Questions();
+</script>
+<script src="js/app/questions.js"></script>
 <!-- アプリメイン -->
 <script src="js/app/app.js"></script>
 

@@ -8,8 +8,10 @@ easycbt.router.MyRouter = Backbone.Router.extend({
   },
 
   showQuestions: function() {
-    var questions = new easycbt.collection.Questions();
-    var examinationView = new easycbt.view.ExaminationView({collection: questions});
+    var examinationView = new easycbt.view.ExaminationView({
+      examinationName: examinationName
+      , collection: questions
+    });
     examinationView.render();
     console.log('MyRouter#showQuestions');
   },

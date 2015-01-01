@@ -3,7 +3,7 @@ var examinationName = "Javaクイズ";
 // 出題数
 var questionCount = 2;
 // テストデータ
-var questions = [
+questions.add([
   {
     description: "次のうち、プリミティブ型でないものはどれ"
     , multiple_answer: true
@@ -34,4 +34,4 @@ var questions = [
       , {description: "ArrayList a = new List();", correct: false}
     ]
   }
-];
+]);
