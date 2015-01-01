@@ -1,8 +1,13 @@
 // 出題データ
 examinations.add([
   {
-    examinationName: "Javaクイズ"
+    examinationName: "Javaクイズ(カテゴリなしのみ)"
     , questionCount: 2
-    , categories: []
+    , categories: [undefined]
+  }
+  , {
+    examinationName: "Javaクイズ(ALL)"
+    , questionCount: 3
+    , categories: [undefined, 'Bronze']
   }
 ]);

@@ -12,6 +12,8 @@
 
 <!-- 試験一覧ページ用テンプレート -->
 <script type="text/html" id="examinations_template">
+  <h1>試験一覧</h1>
+
   <ul class="examinations">
     <% for(var i=0; i<examinations.length; i++) { %>
       <li>
@@ -48,6 +50,9 @@
     </ul>
     <input type="button" name="finish" value="Finish" id='btn_finish'>
   </form>
+  <p class="back">
+    <a href = "index.html">試験一覧へ</a>
+  </p>
 </script>
 
 <!-- 結果ページ用テンプレート -->
@@ -78,7 +83,8 @@
 
   <!-- 戻るリンク -->
   <p class="back">
-  <a href = "javascript:location.reload();">戻る</a>
+  <a href = "javascript:location.reload();">テストへ</a>
+  <a href = "index.html">試験一覧へ</a>
   </p>
 </script>
 

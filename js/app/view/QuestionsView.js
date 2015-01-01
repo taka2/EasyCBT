@@ -27,15 +27,12 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     // 問題をシャッフルして、指定数だけ取り出す
     var copiedQuestions = questions.clone();
     copiedQuestions.reset(copiedQuestions.shuffle(), {silent:true});
-    copiedQuestions = copiedQuestions.first(self.examination.get('questionCount'));
-    
-    // Type convert Array -> easycbt.collection.Questions
-    var copiedQuestions2 = new easycbt.collection.Questions();
-    copiedQuestions2.add(copiedQuestions);
+    copiedQuestions.reset(copiedQuestions.filterCategories(self.examination.get('categories')));
+    copiedQuestions.reset(copiedQuestions.first(self.examination.get('questionCount')));
 
     var output = self.template({
       'examinationName': self.examination.get('examinationName')
-      , 'questions': copiedQuestions2
+      , 'questions': copiedQuestions
     });
 
     self.$el.html(output);

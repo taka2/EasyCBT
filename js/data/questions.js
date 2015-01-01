@@ -30,4 +30,15 @@ questions.add([
       , {description: "ArrayList a = new List();", correct: false}
     ]
   }
+  , {
+    description: "識別子として有効なものはどれか"
+    , multiple_answer: true
+    , answers: [
+      {description: "日本語", correct: true}
+      , {description: "volatile", correct: false}
+      , {description: "val", correct: true}
+      , {description: "true", correct: false}
+    ]
+    , category: 'Bronze'
+  }
 ]);
