@@ -4,9 +4,8 @@ easycbt.router = easycbt.router || {};
 easycbt.router.MyRouter = Backbone.Router.extend({
   routes: {
     '': 'showExaminations'
-    , 'examinations': 'showExaminations'
     , 'questions/:examination_id': 'showQuestions'
-    , '*default': 'showQuestions'
+    , '*default': 'showExaminations'
   },
 
   showExaminations: function() {
@@ -16,8 +15,14 @@ easycbt.router.MyRouter = Backbone.Router.extend({
   }, 
 
   showQuestions: function(examination_id) {
+    var self = this;
+
     examination_id = examination_id || 0;
     var examination = examinations.at(examination_id);
+    if(!examination) {
+      self.navigate('/', {trigger: true, replace: true});
+      return self;
+    }
     var questionsView = new easycbt.view.QuestionsView({
       examination: examinations.at(examination_id)
       , collection: questions
