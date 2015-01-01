@@ -9,8 +9,8 @@ easycbt.view.ExaminationView = Backbone.View.extend({
   },
   initialize: function(options) {
     var self = this;
-    self.examinationName = options.examinationName;
-    self.questionCount = options.questionCount;
+    self.examinationName = options.examination.get('examinationName');
+    self.questionCount = options.examination.get('questionCount');
     self.collection = options.collection;
     console.log('ExaminationView#initialize');
   },
@@ -31,7 +31,7 @@ easycbt.view.ExaminationView = Backbone.View.extend({
     // 問題をシャッフルして、指定数だけ取り出す
     var copiedQuestions = questions.clone();
     copiedQuestions.reset(copiedQuestions.shuffle(), {silent:true});
-    copiedQuestions = copiedQuestions.first(questionCount);
+    copiedQuestions = copiedQuestions.first(self.questionCount);
     
     // Type convert Array -> easycbt.collection.Questions
     var copiedQuestions2 = new easycbt.collection.Questions();

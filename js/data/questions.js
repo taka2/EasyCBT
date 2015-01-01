@@ -1,7 +1,3 @@
-// テストタイトル
-var examinationName = "Javaクイズ";
-// 出題数
-var questionCount = 2;
 // テストデータ
 questions.add([
   {
