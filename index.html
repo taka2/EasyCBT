@@ -25,9 +25,9 @@
         <% for(var j=0; j<questions.at(i).get('answers').length; j++) { %>
           <li>
           <% if(questions.at(i).get('multiple_answer')) { %>
-            <input type="checkbox" name="answers<%=(i+1)%>[<%=questions.at(i).index%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
+            <input type="checkbox" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
           <% } else { %>
-            <input type="radio" name="answers<%=(i+1)%>[<%=questions.at(i).index%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
+            <input type="radio" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
           <% } %>
           </li>
         <% } %>
@@ -43,17 +43,17 @@
 <script type="text/html" id="result_template">
   <h1><%=examinationName%></h1>
   <ul class="questions">
-  <% for(var k=0; k<questions.length; k++) { %>
+  <% for(var k=0; k<questions2.length; k++) { %>
     <li>
-      Q<%=(k+1)%>. <%=questions[k].description%>
+      Q<%=(k+1)%>. <%=questions2.at(k).get('description')%>
       <ul class="results">
-      <% if(questions[k].correct) { %>
+      <% if(questions2.at(k).get('correct')) { %>
         <li>正解！</li>
       <% } else { %>
         <li>不正解。。</li>
       <% } %>
-        <li>回答: <%=concatAnswersDescription(questions[k].selectedAnswers)%></li>
-        <li>正解: <%=concatAnswersDescription(questions[k].correctAnswers)%></li>
+        <li>回答: <%=concatAnswersDescription(questions2.at(k).get('selectedAnswers'))%></li>
+        <li>正解: <%=concatAnswersDescription(questions2.at(k).get('correctAnswers'))%></li>
       </ul>
     </li>
   <% } %>
@@ -82,9 +82,12 @@
 <script src="js/app/collection/Questions.js"></script>
 <script src="js/app/collection/Examinations.js"></script>
 <!-- ビュー -->
-<script src="js/app/view/ExaminationView.js"></script>
+<script src="js/app/view/QuestionsView.js"></script>
+<script src="js/app/view/ResultView.js"></script>
 <!-- ルーター -->
 <script src="js/app/router/MyRouter.js"></script>
+<!-- ユーティリティ -->
+<script src="js/app/util/Util.js"></script>
 <!-- 問題データ -->
 <script>
   var examinations = new easycbt.collection.Examinations();
