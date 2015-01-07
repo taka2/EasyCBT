@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>EasyCBT</title>
+  <link rel='stylesheet' href='css/bootstrap.css'>
+  <link rel='stylesheet' href='css/bootstrap-responsive.css'>
   <link rel='stylesheet' href='css/EasyCBT.css'>
 </head>
 <body>
@@ -12,85 +14,102 @@
 
 <!-- 試験一覧ページ用テンプレート -->
 <script type="text/html" id="examinations_template">
-  <h1>試験一覧</h1>
+  <div class="container">
+    <h2>試験一覧</h2>
 
-  <ul class="examinations">
-    <% for(var i=0; i<examinations.length; i++) { %>
-      <li>
-        <a href = "index.html#questions/<%= i %>"><%= examinations.at(i).get('examinationName') %></a> （問題数: <%= examinations.at(i).get('questionCount') %>）
-      </li>
-    <% } %>
-  </ul>
+    <table class="table table-striped">
+      <tr>
+        <th>#</th>
+        <th>試験名</th>
+        <th>問題数</th>
+      </tr>
+      <% for(var i=0; i<examinations.length; i++) { %>
+        <tr>
+          <td><%= (i+1) %></td>
+          <td><a href = "index.html#questions/<%= i %>"><%= examinations.at(i).get('examinationName') %></a></td>
+          <td><%= examinations.at(i).get('questionCount') %></td>
+        </tr>
+      <% } %>
+    </table>
+  </div>
 </script>
 
 <!-- 問題ページ用テンプレート -->
 <script type="text/html" id="questions_template">
-  <h1><%=examinationName%></h1>
+  <div class="container">
+    <h2><%=examinationName%></h2>
 
-  <form name="form1">
-    <ul class="questions">
+    <form name="form1">
+      <table class="table table-striped questions">
+        <% for(var i=0; i<questions.length; i++) { %>
+          <tr><td>
+            Q<%=(i+1)%>. <%=questions.at(i).get('description')%>
+            <ul class="answers">
 
-    <% for(var i=0; i<questions.length; i++) { %>
-      <li>
-        Q<%=(i+1)%>. <%=questions.at(i).get('description')%>
-        <ul class="answers">
-
-        <% for(var j=0; j<questions.at(i).get('answers').length; j++) { %>
-          <li>
-          <% if(questions.at(i).get('multiple_answer')) { %>
-            <input type="checkbox" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
-          <% } else { %>
-            <input type="radio" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
-          <% } %>
-          </li>
+            <% for(var j=0; j<questions.at(i).get('answers').length; j++) { %>
+              <li>
+              <% if(questions.at(i).get('multiple_answer')) { %>
+                <input type="checkbox" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
+              <% } else { %>
+                <input type="radio" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
+              <% } %>
+              </li>
+            <% } %>
+            </ul>
+          </td></tr>
         <% } %>
-        </ul>
-      </li>
-    <% } %>
-    </ul>
-    <input type="button" name="finish" value="Finish" id='btn_finish'>
-  </form>
-  <p class="back">
-    <a href = "index.html">試験一覧へ</a>
-  </p>
+      </table>
+
+      <input type="button" name="finish" value="Finish" id='btn_finish' class="btn btn-primary">
+    </form>
+    <p class="back">
+      <input type="button" name="back" value="試験一覧へ" id='btn_back' class="btn" onClick="javascript:location.href='index.html'">
+    </p>
+  </div>
 </script>
 
 <!-- 結果ページ用テンプレート -->
 <script type="text/html" id="result_template">
-  <h1><%=examinationName%></h1>
-  <ul class="questions">
-  <% for(var k=0; k<questions2.length; k++) { %>
-    <li>
-      Q<%=(k+1)%>. <%=questions2.at(k).get('description')%>
-      <ul class="results">
-      <% if(questions2.at(k).get('correct')) { %>
-        <li>正解！</li>
-      <% } else { %>
-        <li>不正解。。</li>
-      <% } %>
-        <li>回答: <%=concatAnswersDescription(questions2.at(k).get('selectedAnswers'))%></li>
-        <li>正解: <%=concatAnswersDescription(questions2.at(k).get('correctAnswers'))%></li>
-      </ul>
-    </li>
-  <% } %>
-  </ul>
+  <div class="container">
+    <h2><%=examinationName%></h2>
 
-  <!-- 成績 -->
-  <p class="record">
-  <%=questionCount%>問中<%=correctAnswersCount%>問正解でした。<br/>
-  正答率=<%=calcPercentageOfCorrectAnswers(questionCount, correctAnswersCount)%>%
-  </p>
+    <table class="questions table table-striped">
+    <% for(var k=0; k<questions2.length; k++) { %>
+      <tr><td>
+        Q<%=(k+1)%>. <%=questions2.at(k).get('description')%>
+        <ul class="results">
+        <% if(questions2.at(k).get('correct')) { %>
+          <li>正解！</li>
+        <% } else { %>
+          <li>不正解。。</li>
+        <% } %>
+          <li>回答: <%=concatAnswersDescription(questions2.at(k).get('selectedAnswers'))%></li>
+          <li>正解: <%=concatAnswersDescription(questions2.at(k).get('correctAnswers'))%></li>
+        </ul>
+      </td></tr>
+    <% } %>
+    </table>
 
-  <!-- 戻るリンク -->
-  <p class="back">
-  <a href = "javascript:location.reload();">テストへ</a>
-  <a href = "index.html">試験一覧へ</a>
-  </p>
+    <!-- 成績 -->
+    <p class="record">
+      <%=questionCount%>問中<%=correctAnswersCount%>問正解でした。<br/>
+      正答率=<%=calcPercentageOfCorrectAnswers(questionCount, correctAnswersCount)%>%
+    </p>
+
+    <!-- 戻るリンク -->
+    <p class="reload">
+      <input type="button" name="reload" value="テストへ" id='btn_reload' class="btn" onClick="javascript:location.reload();">
+    </p>
+    <p class="back">
+      <input type="button" name="back" value="試験一覧へ" id='btn_back' class="btn" onClick="javascript:location.href='index.html'">
+    </p>
+  </div>
 </script>
 
 <script src="js/external/jquery-1.11.2.js"></script>
 <script src="js/external/underscore.js"></script>
 <script src="js/external/backbone.js"></script>
+<script src="js/external/bootstrap.js"></script>
 
 <!-- モデル -->
 <script src="js/app/model/Question.js"></script>
