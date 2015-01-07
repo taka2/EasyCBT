@@ -25,10 +25,16 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     }
 
     // 問題をシャッフルして、指定数だけ取り出す
-    var copiedQuestions = questions.clone();
+    var copiedQuestions = questions.deepCopy();
     copiedQuestions.reset(copiedQuestions.shuffle(), {silent:true});
     copiedQuestions.reset(copiedQuestions.filterCategories(self.examination.get('categories')));
     copiedQuestions.reset(copiedQuestions.first(self.examination.get('questionCount')));
+
+    // 選択肢もシャッフル
+    for(var i=0; i<copiedQuestions.length; i++) {
+      var copiedAnswers = _.clone(copiedQuestions.at(i).get('answers'));
+      copiedQuestions.at(i).set('answers', _.shuffle(copiedAnswers));
+    }
 
     var output = self.template({
       'examinationName': self.examination.get('examinationName')

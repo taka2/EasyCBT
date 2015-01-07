@@ -4,6 +4,11 @@ easycbt.collection = easycbt.collection || {};
 easycbt.collection.Questions = Backbone.Collection.extend({
   model: easycbt.model.Question,
 
+  deepCopy: function() {
+    return new easycbt.collection.Questions(
+      JSON.parse(JSON.stringify(this))
+    );
+  }, 
   filterCategories: function(categories) {
     var self = this;
     var result = [];
