@@ -5,6 +5,7 @@ easycbt.router.MyRouter = Backbone.Router.extend({
   routes: {
     '': 'showExaminations'
     , 'questions/:examination_id': 'showQuestions'
+    , 'results': 'showResults'
     , '*default': 'showExaminations'
   },
 
@@ -29,4 +30,10 @@ easycbt.router.MyRouter = Backbone.Router.extend({
     });
     questionsView.render();
   },
+  
+  showResults: function() {
+    var displayResultsView = new easycbt.view.DisplayResultsView({
+    });
+    displayResultsView.render();
+  }, 
 });

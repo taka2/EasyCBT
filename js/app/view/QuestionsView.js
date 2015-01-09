@@ -104,6 +104,17 @@ easycbt.view.QuestionsView = Backbone.View.extend({
       copiedQuestions.push(question);
     }
 
+    // 成績を保存
+    var results = new easycbt.collection.Results();
+    results.fetch();
+    results.create(
+      {
+        'examination': self.examination
+        , 'questions': copiedQuestions
+        , 'created': new Date()
+      }
+    );
+
     // 結果ページを描画
     var resultView = new easycbt.view.ResultView({
       examination: self.examination

@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>EasyCBT</title>
   <link rel='stylesheet' href='css/bootstrap.css'>
-  <link rel='stylesheet' href='css/bootstrap-responsive.css'>
   <link rel='stylesheet' href='css/EasyCBT.css'>
 </head>
 <body>
@@ -17,6 +16,7 @@
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li class="active"><a href="index.html">試験一覧</a></li>
+          <li class="active"><a href="index.html#results">成績一覧</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -27,109 +27,132 @@
 
 <!-- 試験一覧ページ用テンプレート -->
 <script type="text/html" id="examinations_template">
-  <div class="container">
-    <h2>試験一覧</h2>
+  <h2>試験一覧</h2>
 
-    <table class="table table-striped">
+  <table class="table table-striped">
+    <tr>
+      <th>#</th>
+      <th>試験名</th>
+      <th>問題数</th>
+    </tr>
+    <% for(var i=0; i<examinations.length; i++) { %>
       <tr>
-        <th>#</th>
-        <th>試験名</th>
-        <th>問題数</th>
+        <td><%= (i+1) %></td>
+        <td><a href = "index.html#questions/<%= i %>"><%= examinations.at(i).get('examinationName') %></a></td>
+        <td><%= examinations.at(i).get('questionCount') %></td>
       </tr>
-      <% for(var i=0; i<examinations.length; i++) { %>
-        <tr>
-          <td><%= (i+1) %></td>
-          <td><a href = "index.html#questions/<%= i %>"><%= examinations.at(i).get('examinationName') %></a></td>
-          <td><%= examinations.at(i).get('questionCount') %></td>
-        </tr>
-      <% } %>
-    </table>
-  </div>
+    <% } %>
+  </table>
 </script>
 
 <!-- 問題ページ用テンプレート -->
 <script type="text/html" id="questions_template">
-  <div class="container">
-    <h2><%=examinationName%></h2>
+  <h2><%=examinationName%></h2>
 
-    <form name="form1">
-      <table class="table table-striped questions">
-        <% for(var i=0; i<questions.length; i++) { %>
-          <tr><td>
-            Q<%=(i+1)%>. <%=questions.at(i).get('description')%>
-            <ul class="answers">
+  <form name="form1">
+    <table class="table table-striped questions">
+      <% for(var i=0; i<questions.length; i++) { %>
+        <tr><td>
+          Q<%=(i+1)%>. <%=questions.at(i).get('description')%>
+          <ul class="answers">
 
-            <% for(var j=0; j<questions.at(i).get('answers').length; j++) { %>
-              <li>
-              <% if(questions.at(i).get('multiple_answer')) { %>
-                <input type="checkbox" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
-              <% } else { %>
-                <input type="radio" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
-              <% } %>
-              </li>
+          <% for(var j=0; j<questions.at(i).get('answers').length; j++) { %>
+            <li>
+            <% if(questions.at(i).get('multiple_answer')) { %>
+              <input type="checkbox" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
+            <% } else { %>
+              <input type="radio" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
             <% } %>
-            </ul>
-          </td></tr>
-        <% } %>
-      </table>
+            </li>
+          <% } %>
+          </ul>
+        </td></tr>
+      <% } %>
+    </table>
 
-      <p class="finish">
-        <input type="button" name="finish" value="Finish" id='btn_finish' class="btn btn-primary">
-      </p>
-    </form>
-  </div>
+    <p class="finish">
+      <input type="button" name="finish" value="Finish" id='btn_finish' class="btn btn-primary">
+    </p>
+  </form>
 </script>
 
 <!-- 結果ページ用テンプレート -->
 <script type="text/html" id="result_template">
-  <div class="container">
-    <h2><%=examinationName%></h2>
+  <h2><%=examinationName%></h2>
 
-    <table class="questions table table-striped">
-    <% for(var k=0; k<questions2.length; k++) { %>
-      <tr><td>
-        Q<%=(k+1)%>. <%=questions2.at(k).get('description')%>
-        <ul class="results">
-        <% if(questions2.at(k).get('correct')) { %>
-          <li class="correct_answer">正解！</li>
-        <% } else { %>
-          <li class="incorrect_answer">不正解。。</li>
-        <% } %>
-          <li>回答: <%=concatAnswersDescription(questions2.at(k).get('selectedAnswers'))%></li>
-          <li>正解: <%=concatAnswersDescription(questions2.at(k).get('correctAnswers'))%></li>
-        </ul>
-      </td></tr>
-    <% } %>
-    </table>
+  <table class="questions table table-striped">
+  <% for(var k=0; k<questions2.length; k++) { %>
+    <tr><td>
+      Q<%=(k+1)%>. <%=questions2.at(k).get('description')%>
+      <ul class="results">
+      <% if(questions2.at(k).get('correct')) { %>
+        <li class="correct_answer">正解！</li>
+      <% } else { %>
+        <li class="incorrect_answer">不正解。。</li>
+      <% } %>
+        <li>回答: <%=concatAnswersDescription(questions2.at(k).get('selectedAnswers'))%></li>
+        <li>正解: <%=concatAnswersDescription(questions2.at(k).get('correctAnswers'))%></li>
+      </ul>
+    </td></tr>
+  <% } %>
+  </table>
 
-    <!-- 成績 -->
-    <p class="record">
-      <%=questionCount%>問中<%=correctAnswersCount%>問正解でした。<br/>
-      正答率=<%=calcPercentageOfCorrectAnswers(questionCount, correctAnswersCount)%>%
-    </p>
+  <!-- 成績 -->
+  <p class="record">
+    <%=questionCount%>問中<%=correctAnswersCount%>問正解でした。<br/>
+    正答率=<%=calcPercentageOfCorrectAnswers(questionCount, correctAnswersCount)%>%
+  </p>
 
-    <!-- 戻るリンク -->
-    <p class="reload">
-      <input type="button" name="reload" value="再テスト" id='btn_reload' class="btn" onClick="javascript:location.reload();">
-    </p>
-  </div>
+  <!-- 戻るリンク -->
+  <p class="reload">
+    <input type="button" name="reload" value="再テスト" id='btn_reload' class="btn" onClick="javascript:location.reload();">
+  </p>
+</script>
+
+<!-- 成績表示ページ用テンプレート -->
+<script type="text/html" id="display_results_template">
+  <h2>成績一覧</h2>
+
+  <table class="table table-striped">
+    <tr>
+      <th>試験名</th>
+      <th>実施日時</th>
+    </tr>
+  <% for(var i=0; i<results.length; i++) { %>
+  <%   var result = results.at(i); %>
+    <tr>
+      <td><%= result.get('examination').examinationName %></td>
+      <td><%= moment(result.get('created')).format('YYYY/MM/DD HH:mm:ss') %></td>
+    </tr>
+  <% } %>
+  </table>
+
+  <!-- 成績クリア -->
+  <p class="clear_results">
+    <input type="button" name="clear_results" value="成績クリア" id='btn_clear_results' class="btn btn-danger">
+  </p>
 </script>
 
 <script src="js/external/jquery-1.11.2.js"></script>
 <script src="js/external/underscore.js"></script>
 <script src="js/external/backbone.js"></script>
+<script src="js/external/backbone.localStorage.js"></script>
 <script src="js/external/bootstrap.js"></script>
+<script src="js/external/moment.js"></script>
 
 <!-- モデル -->
 <script src="js/app/model/Question.js"></script>
 <script src="js/app/model/Examination.js"></script>
+<script src="js/app/model/Result.js"></script>
 <!-- コレクション -->
 <script src="js/app/collection/Questions.js"></script>
 <script src="js/app/collection/Examinations.js"></script>
+<script src="js/app/collection/Results.js"></script>
 <!-- ビュー -->
 <script src="js/app/view/ExaminationsView.js"></script>
 <script src="js/app/view/QuestionsView.js"></script>
 <script src="js/app/view/ResultView.js"></script>
+<script src="js/app/view/DisplayResultsView.js"></script>
 <!-- ルーター -->
 <script src="js/app/router/MyRouter.js"></script>
 <!-- ユーティリティ -->
