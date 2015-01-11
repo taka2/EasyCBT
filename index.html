@@ -100,7 +100,7 @@
   <!-- 成績 -->
   <p class="record">
     <%=questionCount%>問中<%=correctAnswersCount%>問正解でした。<br/>
-    正答率=<%=calcPercentageOfCorrectAnswers(questionCount, correctAnswersCount)%>%
+    正答率=<%= percentageOfCorrectAnswers %>%
   </p>
 
   <!-- 戻るリンク -->
@@ -116,12 +116,14 @@
   <table class="table table-striped">
     <tr>
       <th>試験名</th>
+      <th>正答率</th>
       <th>実施日時</th>
     </tr>
   <% for(var i=0; i<results.length; i++) { %>
   <%   var result = results.at(i); %>
     <tr>
       <td><%= result.get('examination').examinationName %></td>
+      <td><%= result.get('percentageOfCorrectAnswers') %>%</td>
       <td><%= moment(result.get('created')).format('YYYY/MM/DD HH:mm:ss') %></td>
     </tr>
   <% } %>

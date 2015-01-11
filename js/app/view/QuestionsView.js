@@ -103,6 +103,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
       }
       copiedQuestions.push(question);
     }
+    var percentageOfCorrectAnswers = calcPercentageOfCorrectAnswers(self.examination.get('questionCount'), correctAnswersCount);
 
     // 成績を保存
     var results = new easycbt.collection.Results();
@@ -111,6 +112,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
       {
         'examination': self.examination
         , 'questions': copiedQuestions
+        , 'percentageOfCorrectAnswers': percentageOfCorrectAnswers
         , 'created': new Date()
       }
     );
@@ -120,6 +122,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
       examination: self.examination
       , questions2: copiedQuestions
       , correctAnswersCount : correctAnswersCount
+      , percentageOfCorrectAnswers: percentageOfCorrectAnswers
     });
     resultView.render();
   }

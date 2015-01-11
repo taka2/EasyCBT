@@ -8,7 +8,8 @@ easycbt.view.ResultView = Backbone.View.extend({
     var self = this;
     self.examination = options.examination;
     self.questions2 = options.questions2;
-    self.correctAnswersCount = options.correctAnswersCount
+    self.correctAnswersCount = options.correctAnswersCount;
+    self.percentageOfCorrectAnswers = options.percentageOfCorrectAnswers;
   },
   render: function() {
     var self = this;
@@ -18,6 +19,7 @@ easycbt.view.ResultView = Backbone.View.extend({
       , 'questionCount': self.examination.get('questionCount')
       , 'questions2': self.questions2
       , 'correctAnswersCount': self.correctAnswersCount
+      , 'percentageOfCorrectAnswers': self.percentageOfCorrectAnswers
     });
 
     self.$el.html(output);
