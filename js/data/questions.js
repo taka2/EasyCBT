@@ -210,7 +210,7 @@ questions.add([
     , category: 'SC-H26-AUTUMN'
   }
   , {
-    description: "インターネット標準 RFC5322 ([日 RFC822)に準拠した電子メールにおいて，へッダと本体を区別する方法はどれか。"
+    description: "インターネット標準 RFC5322 (旧RFC822)に準拠した電子メールにおいて，へッダと本体を区別する方法はどれか。"
     , multiple_answer: false
     , answers: [
       {description: "&lt;header&gt;と&lt;/header&gt;で固まれた部分をヘッダ. &lt;body&gt;と&lt;/hody&gt;で固まれた部分を本体とする。", correct: false}
