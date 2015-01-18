@@ -275,4 +275,299 @@ questions.add([
     ]
     , category: 'SC-H26-AUTUMN'
   }
+  , {
+    description: "特定の認証局が発行した CRL(Certificate Revocation List)に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "CRLには，失効したディジタル証明書に対応する秘密鍵が登録される。", correct: false}
+      , {description: "CRLには，有効期限内のディジタル証明書のうち破棄されているディジタル証明書と破棄された日時の対応が提示される。", correct: true}
+      , {description: "CRLは，鍵の漏えい，破棄申請の状況をリアルタイムに反映するプロトコルである。", correct: false}
+      , {description: "有効期限切れで失効したディジタル証明書は，所有者が新たなディジタル証明書を取得するまでの間，CRLに登録される。", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "XML署名において署名対象であるオブジェクトの参照を指定する表記形式はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "OIDの形式", correct: false}
+      , {description: "SSIDの形式", correct: false}
+      , {description: "URIの形式", correct: true}
+      , {description: "ディジタル証明書のシリアル番号の形式", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "クラウドサービスにおける，従量課金を利用した EDoS(Economic Denial of Service. Economic Denial of Sustainability)攻撃の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "カード情報の取得を目的に，金融機関が利用しているクラウドサービスに侵入する攻撃", correct: false}
+      , {description: "課金回避を目的に，同じハードウェア上に構築された別の仮想マシンに侵入し，課金機能を利用不可にする攻撃", correct: false}
+      , {description: "クラウド利用企業の経済的な損失を目的に，リソースを大量消費させる攻撃", correct: true}
+      , {description: "パスワード解析を目的に，クラウド環境のリソースを悪用する攻撃", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "スパムメールの対策として，宛先ポート番号25番の通信に対してISPが実施するOP25Bの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ISP管理外のネットワークからの通信のうち，スパムメールのシグネチャに該当するものを遮断する。", correct: false}
+      , {description: "動的IPアドレスを割り当てたネットワークからISP管理外のネットワークへの直接の通信を遮断する。", correct: true}
+      , {description: "メール送信元のメールサーバについてDNSの逆引きができない場合，そのメールサーバからの通信を遮断する。", correct: false}
+      , {description: "メール不正中継の脆弱ぜい性をもつメールサーバからの通信を遮断する。", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "PCなどに内蔵されるセキュリティチップ (TPM：Trusted Platform Module)がもつ機能はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "TPM間での共通鍵の交換", correct: false}
+      , {description: "鍵ペアの生成", correct: true}
+      , {description: "ディジタル証明書の発行", correct: false}
+      , {description: "ネットワーク経由の乱数送信", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "ファイアウォールにおけるダイナミックパケットフィルタリングの特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "IPアドレスの変換が行われるので，ファイアウォール内部のネットワーク構成を外部から隠蔽できる。", correct: false}
+      , {description: "暗号化されたパケットのデータ部を復号して，許可された通信かどうかを判断できる。", correct: false}
+      , {description: "パケットのデータ部をチェックして，アプリケーション層での不正なアクセスを防止できる。", correct: false}
+      , {description: "戻りのパケットに関しては，過去に通過したリクエストパケットに対応付けられるものだけを通過させることができる。", correct: true}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "ポリモーフィック型ウイルスの説明として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "インターネットを介して，攻撃者が PCを遠隔操作する。", correct: false}
+      , {description: "感染するごとにウイルスのコードを異なる鍵で暗号化し，ウイルス自身を変化させて同一のパターンで検知されないようにする。", correct: true}
+      , {description: "複数のOSで利用できるプログラム言話でウイルスを作成することによって，複数のOS上でウイルスが動作する。", correct: false}
+      , {description: "ルートキットを利用してウイルスに感染していないように見せかけることによって，ウイルスを隠蔽する。", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "ICMP Flood攻撃に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "HTTP GETコマンドを繰返し送ることによって，攻撃対象のサーバにコンテンツ送信の負荷を掛ける。", correct: false}
+      , {description: "pingコマンドを用いて大量の要求パケットを発信することによって，攻撃対象のサーバに至るまでの回線を過負荷にしてアクセスを妨害する。", correct: true}
+      , {description: "コネクション開始要求に当たるSYNパケットを大量に送ることによって，攻撃対象のサーバに，接続要求ごとに応答を返すための過大な負荷を掛ける。", correct: false}
+      , {description: "大量のTCPコネクションを確立することによって，攻撃対象のサーバに接続を維持させ続けてリソースを枯渇させる。", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "自ネットワークのホストへの侵入を，ファイアウオールにおいて防止する対策のうち， IPスプーフィング（spoofing）攻撃の対策について述べたものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "外部から入るTCPコネクション確立要求パケットのうち，外部へのインターネットサービスの提供に必要なもの以外を破棄する。", correct: false}
+      , {description: "外部から入るUDPパケットのうち，外部へのインターネットサービスの提供や利用したいインターネットサービスに必要なもの以外を破棄する。", correct: false}
+      , {description: "外部から入るパケットの宛先IPアドレスが，インターネットとの直接の通信をすべきでない自ネットワークのホストのものであれば，そのパケットを破棄する。", correct: false}
+      , {description: "外部から入るパケットの送信元IPアドレスが自ネットワークのものであれば，そのパケットを破棄する。", correct: true}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "WebサーバがHTTPS通信の応答でcookieにSecure属性を設定したときのブラウザの処理はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ブラウザは，cookieの”Secure=”に続いて指定された時間を参照し，指定された時間を過ぎている場合にそのcookieを削除する。", correct: false}
+      , {description: "ブラウザは，cookieの“Secure=”に続いて指定されたホスト名を参照し，指定されたホストにそのcookieを送信する。", correct: false}
+      , {description: "ブラウザは，cookieの“Secure”を参照し，HTIPS通信時だけそのcookieを送信する。", correct: true}
+      , {description: "ブラウザは，cookieの“Secure”を参照し，ブラウザの終了時にその cookieを削除する。", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "テンペスト（TEMPEST）攻撃を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "故意に暗号化演算を誤動作させて正しい処理結果との差異を解析する。", correct: false}
+      , {description: "処理時間の差異を計測し解析する。", correct: false}
+      , {description: "処理中に機器から放射される電磁波を観測し解析する。", correct: true}
+      , {description: "チップ内の信号線などに探針を直接当て，処理中のデータを観測し解析する。", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "脆弱性検査で，対象ホストに対してポートスキャンを行った。対象ポートの状態を判定する方法のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "対象ポートにSYNパケットを送信し，対象ホストから”RST/ACK”パケットを受信するとき，対象ポートが開いていると判定する。", correct: false}
+      , {description: "対象ポートにSYNパケットを送信し，対象ホストから”SYN/ACK”パケットを受信するとき，対象ポートが閉じていると判定する。", correct: false}
+      , {description: "対象ポートにUDPパケットを送信し，対象ホストからメッセージ“port unreachable”を受信するとき，対象ポートが閉じていると判定する。", correct: true}
+      , {description: "対象ポートにUDPパケットを送信し，対象ホストからメッセージ“port unreachable”を受信するとき，対象ポートが開いていると判定する。", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "無線LANのセキュリティ対策に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "EAPは，クライアントPCとアクセスポイントとの問で，あらかじめ登録した共通鍵による暗号化通信を実現できる。", correct: false}
+      , {description: "RADIUSでは，クライアントPCとアクセスポイントとの問で公開鍵暗号方式による暗号化通信を実現できる。", correct: false}
+      , {description: "SSIDは，クライアント PCごとの秘密鍵を定めたものであり，公開鍵暗号方式による暗号化通信を実現できる。", correct: false}
+      , {description: "WPA2では，IEEE 802.1Xの規格に沿った利用者認証及び動的に更新される暗号化鍵を用いた暗号化通信を実現できる。", correct: true}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "JVN（Japan Vulnerability Notes）などの脆弱性対策ポータルサイトで採用されているCWE（Common Weakness Enumeration）はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "基本評価基準，現状評価基準，環境評価基準の三つの基準でIT製品の脆弱性を評価する手法", correct: false}
+      , {description: "製品を識別するためのプラットフォーム名の一覧", correct: false}
+      , {description: "セキュリティに関連する設定項目を識別するための識別子", correct: false}
+      , {description: "ソフトウェアの脆弱性の種類の一覧", correct: true}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "Webアプリケーションの監弱性を悪用する攻撃手法のうち，Perlのsystem関数やPHPのexec関数など外部プログラムの呼出しを可能にするための関数を利用し，不正にシェルスクリプトや実行形式のファイルを実行させるものは，どれに分類されるか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "HTTPヘッダインジエクション", correct: false}
+      , {description: "OSコマンドインジェクション", correct: true}
+      , {description: "クロスサイトリクエストフォージェリ", correct: false}
+      , {description: "セッションハイジヤック", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "WAF (Web Application Firewall）のブラックリスト又はホワイトリストの説明のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ブラックリストは，臨弱性があるサイトの IPアドレスを登録したものであり，該当する通信を遮断する。", correct: false}
+      , {description: "ブラックリストは，問題がある通信データパターンを定義したものであり，該当する通信を遮断するか又は無害化する。", correct: true}
+      , {description: "ホワイトリストは，暗号化された受信データをどのように復号するかを定義したものであり，復号鍵が登録されていないデータを遮断する。", correct: false}
+      , {description: "ホワイトリストは，脆弱性がないサイトのFQDNを登録したものであり，登録がないサイトへの通信を遮断する。", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "SSLに対するパージョンロールバック攻撃の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SSLの実装の脆ぜい弱性を用いて，通信経路に介在する攻撃者が，弱い暗号化通信方式を強制することによって，暗号化通信の内容を解読して情報を得る。", correct: true}
+      , {description: "SSLのハンドシェイクプロトコルの終了前で，使用暗号化アルゴリズムの変更メッセージを，通信経路に介在する攻撃者が削除することによって，通信者が暗号化なしでセッションを開始し，攻撃者がセッションの全通信を盗聴したり改ざんしたりする。", correct: false}
+      , {description: "SSLを実装した環境において，攻撃者が物理デバイスから得られた消費電流の情報などを利用して秘密情報を得る。", correct: false}
+      , {description: "保守作業のミスや誤操作のときに回復できるようにバックアップしたSSLの旧バージョンのライブラリを，攻撃者が外部から破壊する。", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "10Mビット/秒のLANで接続された4台のノード（A，B，C，D）のうち，2組（AとB，CとD）のノード問でそれぞれ次のファイル転送を行った場合，LANの利用率はおよそ何%か。ここで，転送時にはファイルの大きさの30%に当たる各種制御情報が付加されるものとする。また，LANではリピータハプが使用されており，更に衝突は考えないものとする。<br>ファイルの大きさ：平均 1,000バイト<br>ファイルの転送頻度：平均60回/秒（1組当たり）"
+    , multiple_answer: false
+    , answers: [
+      {description: "2", correct: false}
+      , {description: "6", correct: false}
+      , {description: "10", correct: false}
+      , {description: "12", correct: true}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "VoIPにおいて，ユーザエージエント聞のセッションの確立，変更，切断を行うプロトコルはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "RTCP", correct: false}
+      , {description: "RIP", correct: false}
+      , {description: "SDP", correct: false}
+      , {description: "SIP", correct: true}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "インターネットVPNを実現するために用いられる技術であり，ESP（Encapsulating Security Payload）やAH（Authentication Header）などのプロトコルを含むものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "lPsec", correct: true}
+      , {description: "MPLS", correct: false}
+      , {description: "PPP", correct: false}
+      , {description: "SSL", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "関係モデルにおける外部キーに関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "外部キーの値は，その関係の中で一意でなければならない。", correct: false}
+      , {description: "外部キーは，それが参照する候補キーと比較可能でなくてもよい。", correct: false}
+      , {description: "参照先の関係に，参照元の外部キーの値と一致する候補キーが存在しなくてもよい。", correct: false}
+      , {description: "一つの関係に外部キーが複数存在してもよい。", correct: true}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "UML2.0において，オブジェクト間の相互作用を時間の経過に注目して記述するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "アクティビティ図", correct: false}
+      , {description: "コミュニケーション図", correct: false}
+      , {description: "シーケンス図", correct: true}
+      , {description: "ユースケース図", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "SOA（Service Oriented Architecture）の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Webサービスを利用するためのインタフェースやプロトコルを規定したものである。", correct: false}
+      , {description: "XMLを利用して，インターネット上に存在するWebサービスを検索できる仕組みである。", correct: false}
+      , {description: "業務機能を提供するサービスを組み合わせることによって，システムを構築する考え方である。", correct: true}
+      , {description: "サービス提供者と委託者との問でサービスの内容，範聞及び品質に対する要求水準を明確にして，あらかじめ合意を得ておくことである。", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "システムの改善に向けて提出された4案について，評価項目を設定して採点した結果を，採点結果表に示す。効果及びリスクについては5段階評価とし，それぞれの評価項目の重要度に応じて，重み付け表に示すとおりの重み付けを行った上で次の式で総合評価点を算出したとき，総合評価点が最も高い改善案はどれか。" + 
+    "[総合評価点の算出式]" + 
+    "　総合評価点＝効果の総評価点－リスクの総評価点" + 
+    "<p>採点結果表" + 
+    "<table border=\"1\">" + 
+    "<tr><td colspan=\"2\"></td><td>案1</td><td>案2</td><td>案3</td><td>案4</td></tr>" + 
+    "<tr><td rowspan=\"3\">効果</td><td>セキュリティ強化</td><td>3</td><td>4</td><td>5</td><td>2</td></tr>" + 
+    "<tr><td>システム運用品質向上</td><td>2</td><td>4</td><td>2</td><td>5</td></tr>" + 
+    "<tr><td>作業コスト削減</td><td>5</td><td>4</td><td>2</td><td>4</td></tr>" + 
+    "<tr><td rowspan=\"3\">リスク</td><td>スケジュールリスク</td><td>2</td><td>4</td><td>1</td><td>5</td></tr>" + 
+    "<tr><td>技術リスク</td><td>4</td><td>1</td><td>5</td><td>1</td></tr>" + 
+    "</table>" + 
+    "<p>重み付け表" + 
+    "<table border=\"1\">" + 
+    "<tr><td colspan=\"2\">評価項目</td><td>重み</td></tr>" + 
+    "<tr><td rowspan=\"3\">効果</td><td>セキュリティ強化</td><td>4</td></tr>" + 
+    "<tr><td>システム運用品質向上</td><td>2</td></tr>" + 
+    "<tr><td>作業コスト削減</td><td>3</td></tr>" + 
+    "<tr><td rowspan=\"2\">リスク</td><td>スケジュールリスク</td><td>8</td></tr>" + 
+    "<tr><td>技術リスク</td><td>3</td></tr>" + 
+    "</table>"
+    , multiple_answer: false
+    , answers: [
+      {description: "案1", correct: false}
+      , {description: "案2", correct: false}
+      , {description: "案3", correct: true}
+      , {description: "案4", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
+  , {
+    description: "システム監査報告書に記載された改善勧告に対して，被監査部門から提出された改善計画を経営者がITガパナンスの観点から評価する際の方針のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "1年以内に実現できる改善を実施する。", correct: false}
+      , {description: "経営資源の状況を踏まえて改善を実施する。", correct: true}
+      , {description: "情報システムの機能面の改善に絞って実施する。", correct: false}
+      , {description: "被監査部門の予算の範囲内で改善を実施する。", correct: false}
+    ]
+    , category: 'SC-H26-SPRING'
+  }
 ]);
