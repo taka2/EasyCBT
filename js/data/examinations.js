@@ -18,6 +18,6 @@ examinations.add([
   , {
     examinationName: "情報セキュリティスペシャリスト試験（SC） AM2 ALL"
     , questionCount: 25
-    , categories: ['SC-H26-AUTUMN', 'SC-H26-SPRING']
+    , categories: ['SC-H26-AUTUMN', 'SC-H26-SPRING', 'SC-H25-AUTUMN']
   }
 ]);
