@@ -364,7 +364,7 @@ questions.add([
     , category: 'SC-H26-SPRING'
   }
   , {
-    description: "自ネットワークのホストへの侵入を，ファイアウオールにおいて防止する対策のうち， IPスプーフィング（spoofing）攻撃の対策について述べたものはどれか。"
+    description: "自ネットワークのホストへの侵入を，ファイアウォールにおいて防止する対策のうち， IPスプーフィング（spoofing）攻撃の対策について述べたものはどれか。"
     , multiple_answer: false
     , answers: [
       {description: "外部から入るTCPコネクション確立要求パケットのうち，外部へのインターネットサービスの提供に必要なもの以外を破棄する。", correct: false}
@@ -380,7 +380,7 @@ questions.add([
     , answers: [
       {description: "ブラウザは，cookieの”Secure=”に続いて指定された時間を参照し，指定された時間を過ぎている場合にそのcookieを削除する。", correct: false}
       , {description: "ブラウザは，cookieの“Secure=”に続いて指定されたホスト名を参照し，指定されたホストにそのcookieを送信する。", correct: false}
-      , {description: "ブラウザは，cookieの“Secure”を参照し，HTIPS通信時だけそのcookieを送信する。", correct: true}
+      , {description: "ブラウザは，cookieの“Secure”を参照し，HTTPS通信時だけそのcookieを送信する。", correct: true}
       , {description: "ブラウザは，cookieの“Secure”を参照し，ブラウザの終了時にその cookieを削除する。", correct: false}
     ]
     , category: 'SC-H26-SPRING'
