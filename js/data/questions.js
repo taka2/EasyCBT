@@ -570,4 +570,288 @@ questions.add([
     ]
     , category: 'SC-H26-SPRING'
   }
+
+  , {
+    description: "RLO（Right-to-Left Override）を利用した手口の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "”コンビュータウイルスに感染している”といった偽の警告を出して利用者を脅し，ウイルス対策ソフトの購入などを迫る。", correct: false}
+      , {description: "脆弱性があるホストやシステムをあえて公開し，攻撃の内容を観察する。", correct: false}
+      , {description: "ネットワーク機器の MIB情報のうち監視項目の値の変化を感知し，セキュリティに関するイベントを SNMPマネージャに通知するように動作させる。", correct: false}
+      , {description: "文字の表示順を変える制御文字を利用し，ファイル名の拡張子を偽装する。", correct: true}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "XMLディジタル署名の特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "XML文書中の，指定したエレメントに対して署名することができる。", correct: true}
+      , {description: "エンベローピング署名（EnvelopingSignature）では一つの署名対象に必ず複数の署名を付ける。", correct: false}
+      , {description: "署名形式として， CMS（Cryptographic Message Syntax）を用いる。", correct: false}
+      , {description: "署名対象と署名アルゴリズムをASN.1によって記述する。", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "共通鍵暗号方式で，100人の送受信者のそれぞれが，相互に暗号化通信を行うときに必要な共通鍵の総数は幾つか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "200", correct: false}
+      , {description: "4,950", correct: true}
+      , {description: "9,900", correct: false}
+      , {description: "10,000", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "無線LANにおけるWPA2の特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "AHとESPの機能によって認証と暗号化を実現する。", correct: false}
+      , {description: "暗号化アルゴリズムにAESを採用したCCMP（Counter-mode with CBC-MAC Protocol）を使用する。", correct: true}
+      , {description: "端末とアクセスポイントの問で通信を行う際に，SSL Handshake Protocolを使用して，お互いが正当な相手かどうかを認証する。", correct: false}
+      , {description: "利用者が設定する秘密鍵と，製品で生成するIVC（Initialization Vector）とを連結した数字を基に，データをフレームごとにRC4で暗号化する。", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "JVN（Japan Vulnerability Notes）などの脆弱性対策ポータルサイトで採用されているCWE（Common Weakness Enumeration）はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "コンビュータで必要なセキュリティ設定項目を識別するための識別子である。", correct: false}
+      , {description: "脆弱性を利用して改ざんされたWebサイトの画面ショットを識別するための識別子である。", correct: false}
+      , {description: "製品に含まれる脆弱性を識別するための識別子である。", correct: true}
+      , {description: "セキュリテイ製品を識別するための識別子である。", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "サイドチャネル攻撃の手法であるタイミング攻撃の対策として，最も適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "演算アルゴリズムに対策を施して，機密情報の違いによって演算の処理時間に差異が出ないようにする。", correct: true}
+      , {description: "故障を検出する機構を設けて，検出したら機密情報を破壊する。", correct: false}
+      , {description: "コンデンサを挿入して，電力消費量が時間的に均一になるようにする。", correct: false}
+      , {description: "保護層を備えて，内部のデータが不正に書き換えられないようにする。", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "テンペスト技術の説明とその対策として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ディスプレイなどから放射される電磁波を傍受し，表示内容などを盗み見る技術であり，電磁波を遮断することによって対抗する。", correct: true}
+      , {description: "データ通信の途中でパケットを横取りし，内容を改ざんする技術であり，ディジタル署名を利用した改ざん検知によって対抗する。", correct: false}
+      , {description: "マクロウイルスにおいて使われる技術であり，ウイルス対策ソフトを導入し，最新の定義ファイルを適用することによって対抗する。", correct: false}
+      , {description: "無線 LANの信号を傍受し，通信内容を解析する技術であり，通信パケットを暗号化することによって対抗する。", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "DMZ上のコンビュータがインターネットからのpingに応答しないようにファイアウォールのルールを定めるとき，”通過禁止”に設定するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ICMP", correct: true}
+      , {description: "TCP及びUDPのポート番号53", correct: false}
+      , {description: "TCPのポート番号21", correct: false}
+      , {description: "UDPのポート番号123", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "共通鍵暗号の鍵を見つけ出す，ブルートフォース攻撃に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "1組の平文と暗号文が与えられたとき，全ての鍵候補を一つずつ試して鍵を見つけ出す。", correct: true}
+      , {description: "平文と暗号文と鍵の関係を代数式に表して数学的に鍵を見つけ出す。", correct: false}
+      , {description: "平文の一部分の情報と暗号文の一部分の情報との聞の統計的相関を手掛かりに鍵を見つけ出す。", correct: false}
+      , {description: "平文を一定量変化させたときの暗号文の変化から鍵を見つけ出す。", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "利用者PCがボッ卜に感染しているかどうかをhostsファイルで確認するとき，設定内容が改ざんされていないと判断できるものはどれか。ここで，hostsファイルには設定内容が1行だけ書かれているものとする。"
+    , multiple_answer: false
+    , answers: [
+      {description: "127.0.0.1 a.b.com | a.b.comはOS提供元のFQDNを示す。", correct: false}
+      , {description: "127.0.0.1 c.d.com | c.d.comはPC製造元のFQDNを示す。", correct: false}
+      , {description: "127.0.0.1 e.f.com | e.f.comはウイルス定義ファイルの提供元のFQDNを示す。", correct: false}
+      , {description: "127.0.0.1 localhost | localhostは利用者PC自身を示す。", correct: true}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "ルートキット（rootkit）を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "OSの中核であるカーネル部分の脆ぜい弱性を分析するツール", correct: false}
+      , {description: "コンピュータがウイルスやワームに感染していないことをチェックするツール", correct: false}
+      , {description: "コンビュータやルータのアクセス可能な通信ポートを外部から調査するツール", correct: false}
+      , {description: "不正侵入してOSなどに組み込んだものを隠蔽するツール", correct: true}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "送信元を詐称した電子メールを拒否するために，SPF（Sender Policy Framework）の仕組みにおいて受信側が行うことはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Resent-Sender:，Resent-From:，Sender:，Fromなどのメールヘッダの送信者メールアドレスを基に送信メールアカウントを検証する。", correct: false}
+      , {description: "SMTPが利用するポート番号25の通信を拒否する。", correct: false}
+      , {description: "SMTP通信中にやり取りされるMAILFROMコマンドで与えられた送信ドメインと送信サーバのIPアドレスの適合性を検証する。", correct: true}
+      , {description: "電子メールに付加されたディジタル署名を検証する。", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "迷惑メールの検知手法であるベイジアンフィルタリングの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "信頼できるメール送信元を許可リストに登録しておき，許可リストにないメール送信元からの電子メールは迷惑メールと判定する。", correct: false}
+      , {description: "電子メールが正規のメールサーバから送信されていることを検証し，迷惑メールであるかどうかを判定する。", correct: false}
+      , {description: "電子メールの第三者中継を許可しているメールサーバを登録したデータベースに掲載されている情報を基に，迷惑メールであるかどうかを判定する。", correct: false}
+      , {description: "利用者が振り分けた迷惑メールから特徴を学習し，迷惑メールであるかどうかを統計的に解析して判定する。", correct: true}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "DNSの再帰的な問合せを使ったサービス不能攻撃（DNS amp）の踏み台にされることを防止する対策はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "キャッシュサーバとコンテンツサーバに分離し，インターネット側からキャッシュサーバに問合せできないようにする。", correct: true}
+      , {description: "問合せがあったドメインに関する情報をWhoisデータベースで確認する。", correct: false}
+      , {description: "一つのDNSレコードに複数のサーバのIPアドレスを割り当て，サーバへのアクセスを振り分けて分散させるように設定する。", correct: false}
+      , {description: "他のDNSサーバから送られてくるIPアドレスとホスト名の対応情報の信頼性をディジタル署名で確認するように設定する。", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "SQLインジェクション対策について，Webアプリケーションの実装における対策とWebアプリケーションの実装以外の対策として，ともに適切なものはどれか。" + 
+    "Webアプリケーションの実装における対策 | Webアプリケーションの実装以外の対策"
+    , multiple_answer: false
+    , answers: [
+      {description: "Webアプリケーション中でシェルを起動しない。 | chroot環境でWebサーバを実行する。", correct: false}
+      , {description: "セッションIDを乱数で生成する。 | SSLによって通信内容を秘匿する。", correct: false}
+      , {description: "バインド機構を利用する。 | データベースのアカウントのもつデータベースアクセス権限を必要最小限にする。", correct: true}
+      , {description: "パス名やファイル名をパラメタとして受け取らないようにする。 | 重要なファイルを公開領域に置かない。", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "ディレクトリトラバーサル攻撃はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "攻撃者が，OSの操作コマンドを利用するアプリケーションに対して，OSのディレクトリ作成コマンドを渡して実行する。", correct: false}
+      , {description: "攻撃者が，SQL文のリテラル部分の生成処理に問題があるアプリケーションに対して，任意のSQL文を渡して実行する。", correct: false}
+      , {description: "攻撃者が，シングルサインオンを提供するディレクトリサービスに対して，不正に入手した認証情報を用いてログインし，複数のアプリケーションを不正使用する。", correct: false}
+      , {description: "攻撃者が，ファイル名の入力を伴うアプリケーションに対して，上位のディレクトリを意味する文字列を使って，非公開のファイルにアクセスする。", correct: true}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "LANの制御方式に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "CSMA/CD方式では，単位時間当たりの送出フレーム数が増していくと，衝突の頻度が増すので，スループットはある値をピークとして，その後下がる。", correct: true}
+      , {description: "CSMA/CD方式では，一つの装置から送出されたフレームが順番に各装置に伝送されるので，リング状のLANに適している。", correct: false}
+      , {description: "TDMA方式では，伝送路上におけるフレームの伝搬遅延時間による衝突が発生する。", correct: false}
+      , {description: "トークンパッシング方式では，トークンの巡回によって送信権を管理しているので，トラフィックが増大すると，CSMA/CD方式に比べて伝送効率が急激に低下する。", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "コンビュータとスイッチングハブ（レイヤ 2スイッチ）の間，又は2台のスイッチングハブの聞を接続する複数の物理回線を論理的に1本の回線に束ねる技術はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "スパニングツリー", correct: false}
+      , {description: "ブリッジ", correct: false}
+      , {description: "マルチホーミング", correct: false}
+      , {description: "リンクアグリゲーション", correct: true}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "電子メールシステムにおいて，利用者端末がサーバから電子メールを受信するために使用するプロトコルであり，選択した電子メールだけを利用者端末へ転送する機能，サーバ上の電子メールを検索する機能，電子メールのヘッダだけを取り出す機能などをもつものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "lMAP4", correct: true}
+      , {description: "MIME", correct: false}
+      , {description: "POP3", correct: false}
+      , {description: "SMTP", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "TCPのサプミッションポート（ポート番号587）の説明として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "FTPサービスで，制御用コネクションのポート番号21とは別にデータ転送用に使用する。", correct: false}
+      , {description: "Webアプリケーションで，ポート80番のHTTP要求とは別に，サブミットボタンをクリックした際の入力フォームのデータ送信に使用する。", correct: false}
+      , {description: "コマンド操作の遠隔ログインで，通信内容を暗号化するためにTELNETのポート番号23の代わりに使用する。", correct: false}
+      , {description: "電子メールサービスで，迷惑メール対策としてSMTPのポート番号25の代わりに使用する。", correct: true}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "分散データベースシステムにおける”分割に対する透過性”を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "データの格納サイトが変更されても，利用者のアプリケーションや操作法に影響がないこと", correct: false}
+      , {description: "同ーのデータが複数のサイトに格納されていても，利用者はそれを意識せずに利用できること", correct: false}
+      , {description: "一つの表が複数のサイトに分割されて格納されていても，利用者はそれを意識せずに利用できること", correct: true}
+      , {description: "利用者がデータベースの位置を意識せずに利用できること", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "安全性と信頼性について，次の方針でプログラム設計を行う場合，その方針を表す用語はどれか。<br>" + 
+    "”不特定多数の人が使用するプログラムには，自分だけが使用するプログラムに比べて，より多くのデータチェックの機能を組み込む。プログラムが処理できるデータの前提条件を文書に書いておくだけでなく，その前提条件を満たしていないデータが実際に入力されたときは，エラーメッセージを表示して再入力を促すようにプログラムを作る。"
+    , multiple_answer: false
+    , answers: [
+      {description: "フールプルーフ", correct: true}
+      , {description: "フェールセーフ", correct: false}
+      , {description: "フェールソフト", correct: false}
+      , {description: "フォールトトレラント", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "表は，システムへの要求の明確さに応じた開発方針と，開発方針に適した開発モデルの組である。a～cに該当する開発モデルの組合せはどれか。" + 
+    "<table class=\"table\">" + 
+    "<tr><td>要求の明確さ</td><td>開発方針</td><td>開発モデル</td></tr>" + 
+    "<tr><td>要求が明確になっている。</td><td>全機能を一斉に開発する。</td><td>a</td></tr>" + 
+    "<tr><td>要求に不明確な部分がある。</td><td>簡易なシステムを実装し、動作を評価しながら要求を早期に明確にする。その後は全機能を一斉に開発する。</td><td>b</td></tr>" + 
+    "<tr><td>要求に変更される可能性が高い部分がある。</td><td>最初に要求が確定した部分だけを開発する。その後に要求が確定した部分を逐次追加していく。</td><td>c</td></tr>" + 
+    "</table>"
+    , multiple_answer: false
+    , answers: [
+      {description: "a=ウォータフォールモデル，b=進化的モデル，c=プロトタイピングモデル", correct: false}
+      , {description: "a=ウォータフォールモデル，b=プロトタイピングモデル，c=進化的モデル", correct: true}
+      , {description: "a=進化的モデル，b=ウォータフォールモデル，c=プロトタイピングモデル", correct: false}
+      , {description: "a=プロトタイピングモデル，b=ウォータフォールモデル，c=進化的モデル", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "ITサービスマネジメントの問題管理プロセスにおけるプロアクティプな活動はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "インシデントの根本原因を究明する。", correct: false}
+      , {description: "過去に同様のインシデントが発生していないか調査する。", correct: false}
+      , {description: "過去のインシデントの記録を分析し，今後起こりそうなインシデントを予測する。", correct: true}
+      , {description: "根本原因を突き止めた問題を既知のエラーとして登録する。", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "被監査企業がSaaSをサービス利用契約して業務を実施している場合，被監査企業のシステム監査人がSaaSの利用者環境からSaaSへのアクセスコントロールを評価できる対象のIDはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "DBMSの管理者ID", correct: false}
+      , {description: "アプリケーションの利用者ID", correct: true}
+      , {description: "サーバのOSの利用者ID", correct: false}
+      , {description: "ストレージデバイスの管理者ID", correct: false}
+    ]
+    , category: 'SC-H25-AUTUMN'
+  }
 ]);
