@@ -155,7 +155,7 @@ questions.add([
     , category: 'SC-H26-AUTUMN'
   }
   , {
-    description: "スパムメールへの対策である DKIM (DomainKeys Identified Mail)の説明はどれか。"
+    description: "スパムメールへの対策であるDKIM（DomainKeys Identified Mail）の説明はどれか。"
     , multiple_answer: false
     , answers: [
       {description: "送信側メールサーバでディジタル署名を電子メールのヘッダに付加して，受信側メールサーバで検証する。", correct: true}
@@ -221,7 +221,7 @@ questions.add([
     , category: 'SC-H26-AUTUMN'
   }
   , {
-    description: "トランザクション A～Dに関する待ちグラフのうち，デッドロックが発生しているものはどれか。ここで，待ちグラフの矢印は.X→Yのとき，トランザクションXはトランザクション Yがロックしている資源のアンロックを待っていることを表す。"
+    description: "トランザクション A～Dに関する待ちグラフのうち，デッドロックが発生しているものはどれか。ここで，待ちグラフの矢印は，X→Yのとき，トランザクションXはトランザクションYがロックしている資源のアンロックを待っていることを表す。"
     , multiple_answer: false
     , answers: [
       {description: "B->A C->B D->C D->A", correct: false}
@@ -298,7 +298,7 @@ questions.add([
     , category: 'SC-H26-SPRING'
   }
   , {
-    description: "クラウドサービスにおける，従量課金を利用した EDoS(Economic Denial of Service. Economic Denial of Sustainability)攻撃の説明はどれか。"
+    description: "クラウドサービスにおける，従量課金を利用した EDoS（Economic Denial of Service. Economic Denial of Sustainability）攻撃の説明はどれか。"
     , multiple_answer: false
     , answers: [
       {description: "カード情報の取得を目的に，金融機関が利用しているクラウドサービスに侵入する攻撃", correct: false}
@@ -853,5 +853,281 @@ questions.add([
       , {description: "ストレージデバイスの管理者ID", correct: false}
     ]
     , category: 'SC-H25-AUTUMN'
+  }
+  , {
+    description: "APT（Advanced Persistent Threats）の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "攻撃者はDoS攻撃及びDDoS攻撃を繰り返し組み合わせて，長期間にわたって特定組織の業務を妨害する。", correct: false}
+      , {description: "攻撃者は興味本位で場当たり的に，公開されている攻撃ツールや脆弱性検査ツールを悪用した攻撃を繰り返す。", correct: false}
+      , {description: "攻撃者は特定の目的をもち，特定組織を標的に複数の手法を組み合わせて気付かれないよう執拗に攻撃を繰り返す。", correct: true}
+      , {description: "攻撃者は不特定多数への感染を目的として，複数の攻撃方法を組み合わせたマルウェアを継続的にばらまく。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "DNSSEC（DNS Security Extensions）の機能はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "DNSキャッシュサーバの設定によって再帰的な問合せの受付範囲が最大になるようにする。", correct: false}
+      , {description: "DNSサーバから受け取るリソースレコードに対するディジタル署名を利用して，リソースレコードの送信者の正当性とデータの完全性を検証する。", correct: true}
+      , {description: "ISPなどのセカンダリDNSサーバを利用してDNSコンテンツサーバを二重化することで名前解決の可用性を高める。", correct: false}
+      , {description: "共通鍵暗号技術とハッシュ関数を利用したセキュアな方法で，DNS更新要求が許可されているエンドポイントを特定し認証する。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "PKIを構成する OCSP（Online Certificate Status Protocol）を利用する目的はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "誤って破棄してしまった秘密鍵の再発行処理の進捗状況を問い合わせる。", correct: false}
+      , {description: "ディジタル証明書から生成した鍵情報の交換がOCSPクライアントとレスポンダの間で失敗した際，認証状態を確認する。", correct: false}
+      , {description: "ディジタル証明書の失効情報を問い合わせる。", correct: true}
+      , {description: "有効期限の切れたディジタル証明書の更新処理の進捗状況を確認する。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "図のような構成と通信サービスのシステムにおいて，Webアプリケーションの脆弱性対策としてネットワークのパケットをキャブチャしてWAFによる検査を行うとき，WAFの設置場所として最も適切な箇所はどこか。ここで，WAFには通信を暗号化したり，復号したりする機能はないものとする。" + 
+    "<p>PC <-> インターネット <-(a)HTTPS-> ファイアウォール <-(b)HTTPS-> SSLアクセラレータ <-(c)HTTP-> Webサーバ <-(d)データベースアクセス用サービス-> データベースサーバ</p>"
+    , multiple_answer: false
+    , answers: [
+      {description: "a", correct: false}
+      , {description: "b", correct: false}
+      , {description: "c", correct: true}
+      , {description: "d", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "サイドチャネル攻撃の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "暗号アルゴリズムを実装した攻撃対象の物理デバイスから得られる物理量（処理時間や消費電流など）やエラーメッセージから，攻撃対象の機密情報を得る。", correct: true}
+      , {description: "企業などの機密情報を詐取するソーシャルエンジニアリングの手法の一つであり，オフィスの紙ゴミの中から不用意に捨てられた機密情報の印刷物を探し出す。", correct: false}
+      , {description: "通信を行う二者の聞に割り込んで，両者が交換する情報を自分のものとすり替えることによって，気付かれることなく盗聴する。", correct: false}
+      , {description: "データベースを利用するWebサイトに入力パラメタとしてSQL文の断片を与えることによって，データベースを改ざんする。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "SMTP-AUTHにおける認証の動作を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SMTPサーバに電子メールを送信する前に，電子メールを受信し，その際にパスワード認証が行われたクライアントのIPアドレスは，一定時間だけ電子メールの送信が許可される。", correct: false}
+      , {description: "クライアントがSMTPサーバにアクセスしたときに利用者認証を行い，許可された利用者だけから電子メールを受け付ける。", correct: true}
+      , {description: "サーバは認証局のディジタル証明書をもち，クライアントから送信された認証局の署名付きクライアント証明書の妥当性を確認する。", correct: false}
+      , {description: "利用者が電子メールを受信する際の認証情報を秘匿できるように，パスワードからハッシュ値を計算して，その値で利用者認証を行う。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "無線LAN環境に複数台のPC，複数のアクセスポイント及び利用者認証情報を管理する1台のサーバがある。利用者認証とアクセス制御にIEEE802.1XとRADIUSを利用する場合の実装方法はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "PCにはIEEE802.1Xのサプリカントを実装し，RADIUSクライアントの機能をもたせる。", correct: false}
+      , {description: "アクセスポイントにはIEEE802.1Xのオーセンティケータを実装し，RADIUSクライアントの機能をもたせる。", correct: true}
+      , {description: "アクセスポイン卜にはIEEE802.1Xのサプリカントを実装し，RADIUSサーバの機能をもたせる。", correct: false}
+      , {description: "サーバにはIEEE802.1Xのオーセンテイケータを実装し，RADIUSサーバの機能をもたせる。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "CSIRTの説明として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "IPアドレスの割当て方針の決定，DNSルートサーバの運用監視，DNS管理に関する調整などを世界規模で行う組織である。", correct: false}
+      , {description: "インターネットに関する技術文書を作成し，標準化のための検討を行う組織である。", correct: false}
+      , {description: "国レベルや企業・組織内に設置され，コンビュータセキュリティインシデントに関する報告を受け取り，調査し，対応活動を行う組織の総称である。", correct: true}
+      , {description: "情報技術を利用し，信教や政治的な目標を達成するという目的をもった人や組織の総称である。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "NISTの定義によるクラウドコンビューティングのサービスモデルにおいて，パブリッククラウドサービスの利用企業のシステム管理者が，仮想サーバのゲストOSに係る設定作業及びセキュリティパッチ管理作業を実施可かどうかの組合せのうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "IaaS=実施可，PaaS=実施可，SaaS=実施不可", correct: false}
+      , {description: "IaaS=実施可，PaaS=実施不可，SaaS=実施不可", correct: true}
+      , {description: "IaaS=実施不可，PaaS=実施可，SaaS=実施不可", correct: false}
+      , {description: "IaaS=実施不可，PaaS=実施不可，SaaS=実施可", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "基本評価基準，現状評価基準，環境評価基準の三つの基準でIT製品のセキュリテイ脆弱ぜい性の深刻さを評価するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "CVSS", correct: true}
+      , {description: "ISMS", correct: false}
+      , {description: "PCIDSS", correct: false}
+      , {description: "PMS", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "CRYPTRECの活動内容はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "客観的な評価によって安全性及び実装性に優れると判断された暗号技術のリストを決定する。", correct: true}
+      , {description: "情報セキュリティ政策に係る基本戦略の立案，官民における統一的，横断的な情報セキュリテイ対策の推進に係る企画などを行う。", correct: false}
+      , {description: "組織の情報セキュリティマネジメントシステムについて評価し認証する制度を運用する。", correct: false}
+      , {description: "認証機関から貸与された暗号モジュール試験報告書作成支援ツールを用いて暗号モジュールの安全性についての評価試験を行う。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "企業のDMZ上で1台のDNSサーバをインターネット公開用と社内用で共用している。このDNSサーバが，DNSキャッシュポイズニングの被害を受けた結果，直接引き起こされ得る現象はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "DNSサーバのハードディスク上のファイルに定義されたDNSサーバ名が書き換わり，外部からの参照者が，DNSサーバに接続できなくなる。", correct: false}
+      , {description: "DNSサーバのメモリ上にワームが常駐し，DNS参照元に対して不正プログラムを送り込む。", correct: false}
+      , {description: "社内の利用者が，インターネット上の特定のWebサーバを参照しようとすると，本来とは異なるWebサーバに誘導される。", correct: true}
+      , {description: "社内の利用者間で送信された電子メールの宛先アドレスが書き換えられ，正常な送受信ができなくなる。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "ウイルスの検出手法であるビヘイビア法を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "あらかじめ特徴的なコードをパターンとして登録したウイルス定義ファイルを用いてウイルス検査対象と比較し，同じパターンがあれば感染を検出する。", correct: false}
+      , {description: "ウイルスに感染していないことを保証する情報をあらかじめ検査対象に付加しておき，検査時に不整合があれば感染を検出する。", correct: false}
+      , {description: "ウイルスの感染が疑わしい検査対象を，安全な場所に保管されている原本と比較し，異なっていれば感染を検出する。", correct: false}
+      , {description: "ウイルスの感染や発病によって生じるデータ書込み動作の異常や通信量の異常増加などの変化を監視して，感染を検出する。", correct: true}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "DoS攻撃の一つである Smurf攻撃の特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ICMPの応答パケットを大量に発生させる。", correct: true}
+      , {description: "TCP接続要求であるSYNパケットを大量に送信する。", correct: false}
+      , {description: "サイズが大きいUDPパケットを大量に送信する。", correct: false}
+      , {description: "サイズが大きい電子メールや大量の電子メールを送信する。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "ダウンローダ型ウイルスが内部ネットワークのPCに感染した場合に，インターネット経由で他のウイルスがダウンロードされることを防ぐ対策として，最も有効なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "URLフィルタを用いてインターネット上の不正Webサイトへの接続を遮断する。", correct: true}
+      , {description: "インターネットから内部ネットワークに向けた要求パケットによる不正侵入行為をIPSで破棄する。", correct: false}
+      , {description: "スパムメール対策サーバでインターネットからのスパムメールを拒否する。", correct: false}
+      , {description: "メールフィルタで他サイトへの不正メール発信を遮断する。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "スパムメールの対策であるDKIM（DomainKeys Identified Mail）の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "送信側メールサーバでディジタル署名を電子メールのヘッダに付加して，受信側メールサーバで検証する。", correct: true}
+      , {description: "送信側メールサーバで利用者が認証されたとき，電子メールの送信が許可される。", correct: false}
+      , {description: "電子メールのヘッダや配送経路の情報から得られる送信元情報を用いて，メール送信元の IPアドレスを検証する。", correct: false}
+      , {description: "ネットワーク機器で，内部ネットワークから外部のメールサーバのTCPポート番号25への直接の通信を禁止する。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "IEEE 802.11aやIEEE802.11bで採用されているアクセス制御方式はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "CSMA/CA", correct: true}
+      , {description: "CSMA/CD", correct: false}
+      , {description: "LAPB", correct: false}
+      , {description: "トークンパッシング方式", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "IPv6グローバルユニキャストアドレスはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "::1", correct: false}
+      , {description: "2001:dc3:35", correct: true}
+      , {description: "fd00::12:fff:fea9:18", correct: false}
+      , {description: "fe80::f:acff:fea9:18", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "TCPのフロー制御に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "OSI基本参照モデルのネットワーク層の機能である。", correct: false}
+      , {description: "ウインドウ制御の単位は，バイトではなくビットである。", correct: false}
+      , {description: "確認応答がない場合は再送処理によってデータ回復を行う。", correct: true}
+      , {description: "データの順序番号をもたないので，データは受信した順番のままで処理する。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "電子メールが配送される途中に経由したMTAのIPアドレスや時刻などの経由情報を，MTAが付加するヘッダフィールドはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Accept", correct: false}
+      , {description: "Received", correct: true}
+      , {description: "Return-Path", correct: false}
+      , {description: "Via", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "関係データベースのビューを利用する目的はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "DISTINCT指定，GROUP BY句及びHAVING句をもつ演算処理を独立させて，プログラムに単純化したデータ更新手段を提供する。", correct: false}
+      , {description: "行や列を特定の条件で絞り込んだビューだけをアクセスさせることによって，基となる表のデータの一部を隠蔽して保護する手段を提供する。", correct: true}
+      , {description: "データベースの物理的記憶構造の変更に影響されないように，アプリケーションプログラムに対して物理的データ独立性を提供する。", correct: false}
+      , {description: "複数の表を結合したビューにインデックスを付与することによって，複数の表にまたがった高度な検索手段を提供する。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "既存システムを基に，新システムのモデル化を行う場合のDFD作成の手順として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "現物理モデル→現論理モデル→新物理モデル→新論理モデル", correct: false}
+      , {description: "現物理モデル→現論理モデル→新論理モデル→新物理モデル", correct: true}
+      , {description: "現論理モデル→現物理モデル→新物理モデル→新論理モデル", correct: false}
+      , {description: "現論理モデル→現物理モデル→新論理モデル→新物理モデル", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "SOA（Service Oriented Architecture）でサービスを設計する際の注意点のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "可用性を高めるために，ステートフルなインタフェースとする。", correct: false}
+      , {description: "業務からの独立性を確保するために，サービスの命名は役割を表すものとする。", correct: false}
+      , {description: "業務の変化に対応しやすくするために，サービス問の関係は疎結合にする。", correct: true}
+      , {description: "セキュリティを高めるために，一度開発したサービスは再利用しない方がよい。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "情報システムの設計のうち，フェールソフトの例はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "UPSを設置することによって，停電時に手順どおりにシステムを停止できるようにし，データを保全する。", correct: false}
+      , {description: "制御プログラムの障害時に，システムの暴走を避け，安全に運転を停止できるようにする。", correct: false}
+      , {description: "ハードウェアの障害時に，パフォーマンスは低下するが，構成を縮小して運転を続けられるようにする。", correct: true}
+      , {description: "利用者の誤操作や誤入力を未然に防ぐことによって，システムの誤動作を防止できるようにする。", correct: false}
+    ]
+    , category: 'SC-H25-SPRING'
+  }
+  , {
+    description: "新システムへの移行に関するシステム監査で確認した状況のうち，指摘事項に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "移行作業と併せて，システム運用部門及びシステム利用部門に対する新システムの操作教育を計画し，実施していた。", correct: false}
+      , {description: "移行対象，移行方法，移行実施体制及び移行スケジュールを明記した移行計画に従って，移行作業を行っていた。", correct: false}
+      , {description: "移行ツールを利用して，データベースの移行及びその移行結果の検証を行っていた。", correct: false}
+      , {description: "システム開発部門内に検証体制を作って移行結果の検証を行い，移行完了としていた。", correct: true}
+    ]
+    , category: 'SC-H25-SPRING'
   }
 ]);
