@@ -1130,4 +1130,279 @@ questions.add([
     ]
     , category: 'SC-H25-SPRING'
   }
+  , {
+    description: "特定のCAが発行したCRL（Certified Revocation List）に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "CRLには，失効された公開鍵証明書に対応する秘密鍵が登録される。", correct: false}
+      , {description: "CRLには，有効期限内の公開鍵証明書のうち破棄されている公開鍵証明書と破棄された日時の対応が提示される。", correct: true}
+      , {description: "CRLは，鍵の漏えい，破棄申請の状況をリアルタイムに反映するプロトコルである。", correct: false}
+      , {description: "有効期限切れで無効になった公開鍵証明書は，所有者が新たな公開鍵証明書を取得するまでの問，CRLに登録される。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "IEEE 802.1Xで使われるEAP-TLSによって実現される認証はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "CHAPを用いたチャレンジレスポンスによる利用者認証", correct: false}
+      , {description: "あらかじめ登録した共通鍵によるサーバ認証と，時刻同期のワンタイムパスワードによる利用者認証", correct: false}
+      , {description: "ディジタル証明書による認証サーバとクライアントの相互認証", correct: true}
+      , {description: "利用者IDとパスワードによる利用者認証", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "SEO（Search Engine Optimization）ポイズニングの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Web検索サイトの順位付けアルゴリズムを悪用して，キーワードで検索した結果の上位に，悪意のあるサイトを意図的に表示させる。", correct: true}
+      , {description: "ウイルス検索エンジンのセキュリティ上の監弱性を悪用して，システム権限で不正な処理を実行させる。", correct: false}
+      , {description: "車などで移動しながら，無線LANのアクセスポイントを探し出して，ネットワークに不正侵入する。", correct: false}
+      , {description: "ネットワークを流れるパケットから，不正侵入のパターンに合致するものを検出して，管理者への通知や，検出した内容の記録を行う。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "2011年に経済産業省が公表した”クラウドサービス利用のための情報セキュリティマネジメントガイドライン”が策定された目的について述べたものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "JIS Q 27002の管理策を拡張し，クラウドサービス利用者が情報セキュリティ対策を円滑に行えるようにする。", correct: true}
+      , {description: "クラウドサービス提供事業者に対して情報セキュリティ監査を実施する方法を利用者に提示する。", correct: false}
+      , {description: "クラウドサービスの利用がもたらすセキュリテイリスクをサービス提供事業者の視点で提示する。", correct: false}
+      , {description: "セキュリティリスクの懸念の少ないクラウドサービス提供事業者を利用者が選択できるような格付け基準を提供する。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "スパムメールの対策として，宛先ポート番号25番の通信に対してISPが実施するOP25Bの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ISP管理外のネットワークからの通信のうち，スパムメールのシグネチャに該当するものを遮断する。", correct: false}
+      , {description: "動的IPアドレスを割り当てたネットワークからISP管理外のネットワークへの直援の通信を遮断する。", correct: true}
+      , {description: "メール送信元のメールサーバについてDNSの逆引きができない場合，そのメールサーバからの通信を遮断する。", correct: false}
+      , {description: "メール不正中継の髄弱性をもつメールサーバからの通信を遮断する。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "ファイアウォールにおけるダイナミックパケットフィルタリングの特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "IPアドレスの変換が行われるので，ファイアウオール内部のネットワーク構成を外部から隠蔽できる。", correct: false}
+      , {description: "暗号化されたパケットのデータ部を復号して，許可された通信かどうかを判断できる。", correct: false}
+      , {description: "戻りのパケットに関しては，過去に通過したリクエストパケットに対応したものだけを通過させることができる。", correct: true}
+      , {description: "パケットのデータ部をチェックして，アプリケーション層での不正なアクセスを防止できる。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "ポリモーフィック型ウイルスの説明として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "インターネットを介して，攻撃者がPCを遠隔操作する。", correct: false}
+      , {description: "感染するごとに鍵を変えてウイルスのコードを暗号化することによってウイルス自身を変化させて，同一のパターンで検知されないようにする。", correct: true}
+      , {description: "複数のOSで利用できるプログラム言語でウイルスを作成することによって，複数のOS上でウイルスが動作する。", correct: false}
+      , {description: "ルートキットを利用してウイルスに感染していないように見せかけることによって，ウイルスを隠蔽する。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "FIPS 140-2を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "暗号モジュールのセキュリティ要求事項", correct: true}
+      , {description: "情報セキュリティマネジメントシステムに関する認証基準", correct: false}
+      , {description: "ディジタル証明暫や証明書失効リストの標準仕様", correct: false}
+      , {description: "無線LANセキュリティ技術", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "特定の情報資産の漏えいに関するリスク対応のうち，リスク回避に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "外部の者が侵入できないように，入退室をより厳重に管理する。", correct: false}
+      , {description: "情報資産を外部のデータセンタに預託する。", correct: false}
+      , {description: "情報の新たな収集を禁止し，収集済みの情報を消去する。", correct: true}
+      , {description: "情報の重要性と対策費用を勘案し，あえて対策をとらない。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "ICMP Flood攻撃に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "pingコマンドを用いて同時に発信した大量の要求パケットによって，攻撃対象のサーバに至るまでの回線を過負荷にしてアクセスを妨害する。", correct: true}
+      , {description: "繰り返しHTTP GETコマンドを送ることによって，攻撃対象のサーバにコンテンツ送信の負荷を掛ける。", correct: false}
+      , {description: "コネクション開始要求に当たるSYNパケットを大量に送ることによって，攻撃対象のサーバに，接続要求ごとに応答を返すための過大な負荷を掛ける。", correct: false}
+      , {description: "大量のTCPコネクションを確立することによって，攻撃対象のサーバに接続を維持させ続けリソースを枯渇させる。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "標準化団体OASISが，Webサイト間で認証，属性及び認可の情報を安全に交換するために策定したフレームワークはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SAML", correct: true}
+      , {description: "SOAP", correct: false}
+      , {description: "XKMS", correct: false}
+      , {description: "XML Signature", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "ディジタルフォレンジックスを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "画像や音楽などのディジタルコンテンツに著作権者などの情報を埋め込む。", correct: false}
+      , {description: "コンピュータやネットワークのセキュリティ上の弱点を発見するテスト手法のーつであり，システムを実際に攻撃して侵入を試みる。", correct: false}
+      , {description: "ネットワークの管理者や利用者などから，巧みな話術や盗み聞き，盗み見などの手段によって，パスワードなどのセキュリティ上重要な情報を入手する。", correct: false}
+      , {description: "犯罪に対する証拠となり得るデータを保全し，その後の訴訟などに備える。", correct: true}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "ゼロデイ攻撃の特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "セキュリティパッチが提供される前にパッチが対象とする脆弱性を攻撃する。", correct: true}
+      , {description: "特定のサイトに対し，日時を決めて，複数台のPCから同時に攻撃する。", correct: false}
+      , {description: "特定のターゲットに対し，フィッシングメールを送信して不正サイトへ誘導する。", correct: false}
+      , {description: "不正中継が可能なメールサーバを見つけた後，それを踏み台にチェーンメールを大量に送信する。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "SSLに関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SSLで使用するWebサーバのディジタル証明書にはIPアドレスの組込みが必須なので，WebサーバのIPアドレスを変更する場合は，ディジタル証明書を再度取得する必要がある。", correct: false}
+      , {description: "SSLで使用する個人認証用のディジタル証明書は，ICカードなどに格納できるので，格納場所を特定のPCに限定する必要はない。", correct: true}
+      , {description: "SSLはWebサーバを経由した特定の利用者間の通信のために開発されたプロトコルであり，Webサーバ提供者への事前の利用者登録が不可欠である。", correct: false}
+      , {description: "日本国内では，SSLで使用する共通鍵の長さは，128ピット未満に制限されている。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "WAF（Web Application Firewall）のブラックリスト又はホワイトリストの説明のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ブラックリストは，髄弱性があるサイトのIPアドレスを登録したものであり，該当する通信を遮断する。", correct: false}
+      , {description: "ブラックリストは，問題がある通信データパターンを定義したものであり，該当する通信を遮断するか又は無害化する。", correct: true}
+      , {description: "ホワイトリストは，暗号化された受信データをどのように復号するかを定義したものであり，復号鍵が登録されていないデータを遮断する。", correct: false}
+      , {description: "ホワイトリストは，脆弱性がないサイトのFQDNを登録したものであり，登録がないサイトへの通信を遮断する。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "SSLに対するバージョンロールバック攻撃の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SSLの実装の脆弱ぜい性を用いて，通信経路に介在する攻撃者が弱い暗号化通信方式を強制することによって，暗号化通信の内容を解読して情報を得る。", correct: true}
+      , {description: "SSLのハンドシェイクプロトコルの終了前で，使用暗号化アルゴリズムの変更メッセージを，通信経路に介在する攻撃者が削除することによって，通信者が暗号化なしでセッションを開始し，攻撃者がセッションの全通信を盗聴したり改ざんしたりする。", correct: false}
+      , {description: "SSLを実装した環境において，攻撃者が物理デバイスから得られた消費電流の情報などを利用して秘密情報を得る。", correct: false}
+      , {description: "保守作業のミスや誤操作のときに回復できるようにバックアップしたSSLの旧バージョンのライブラリを，攻撃者が外部から破壊する。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "ネットワークを構成する装置の用途や機能に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ゲートウェイは，主にトランスポート層以上での中継を行う装置であり，異なったプロトコル体系のネットワーク問の接続などに用いられる。", correct: true}
+      , {description: "ブリッジは，物理層での中継を行う装置であり，フレームのフィルタリング機能をもつ。", correct: false}
+      , {description: "リピータは，ネットワーク層での中継を行う装置であり，伝送途中で減衰した信号レベルの補正と再生増幅を行う。", correct: false}
+      , {description: "ルータは，データリンク層のプロトコルに基づいてフレームの中継と交換を行う装置であり，フロー制御や最適経路選択などの機能をもつ。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "DNSSECに関する記述として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "DNSサーバへのDoS攻撃を防止できる。", correct: false}
+      , {description: "IPsecによる暗号化通信が前提となっている。", correct: false}
+      , {description: "代表的なDNSサーバの実装であるBINDの代替として使用する。", correct: false}
+      , {description: "ディジタル署名によってDNS応答の正当性を確認できる。", correct: true}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "2台のPCをIPv6ネットワークに接続するとき，2台ともプレフィックスが2001:db8:100:1000::/56のIPv6サブネットに入るようになるIPアドレスの組合せばどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "2001:db8:100::aa:bb  2001:db8:100::cc:dd", correct: false}
+      , {description: "2001:db8:100:1000::aa:bb  2001:db8:100:2000::cc:dd", correct: false}
+      , {description: "2001:db8:100:1010::aa:bb  2001:db8:100:1020::cc:dd", correct: true}
+      , {description: "2001:db8:100:1100::aa:bb  2001:db8:100:1200::cc:dd", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "HTTPの認証機能を利用するクライアント側の処理として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ダイジェスト認証では，利用者IDとパスワードを”:”で連結したものを，MD5を使ってエンコードしAuthorizationヘッダで指定する。", correct: false}
+      , {description: "ダイジェスト認証では，利用者IDとパスワードを”:”で連結したものを，SHA を使ってエンコードしAuthorizationヘッダで指定する。", correct: false}
+      , {description: "ベーシック認証では，利用者IDとパスワードを”:”で連結したものを，BASE64 でエンコードしAuthorizationヘッダで指定する。", correct: true}
+      , {description: "ベーシック認証では，利用者IDとパスワードを”:”で連結したものを，エンコードせずにAuthorizationヘッダで指定する。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "データベースのデータを更新するトランザクションが，実行途中で異常終了したとき，更新中のデータに対して行われる処理はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "異常終了時点までの更新ログ情報を破棄することによって，データをトランザクション開始前の状態に回復する。", correct: false}
+      , {description: "チェックポイント時点からコミットが完了しているトランザクションの更新をロールフォワードすることによって，データを回復する。", correct: false}
+      , {description: "トランザクションの更新ログ情報を使って異常終了時点までロールフォワードすることによって，データを回復する。", correct: false}
+      , {description: "ロールパックすることによって，データをトランザクション開始前の状態に回復する。", correct: true}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "オブジェクト指向における情報隠蔽に関する記述として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "オブジェクトの特性（属性，関連，操作）をまとめて抽象化する。", correct: false}
+      , {description: "オブジェクトは，メッセージによってだけアクセス可能となる。", correct: true}
+      , {description: "親クラスに定義されたメソッドを，実行時に子クラスに引き継ぐ。", correct: false}
+      , {description: "同一メッセージでも，実行時の受信クラスに基づいて適用されるメソッドが決まる。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "特許権に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "A社が特許を出願するよりも前に独自に開発して発売した製品は，A社の特許権の侵害にならない。", correct: true}
+      , {description: "組込み機器におけるハードウェアは特許権で保護されるが，ソフトウェアは保護されない。", correct: false}
+      , {description: "審査を受けて特許権を取得した後に，特許権が無効となることはない。", correct: false}
+      , {description: "先行特許と同ーの技術であっても，独自に開発した技術であれば特許権の侵害にならない。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "ソフトウェア開発・保守の工程において，リポジトリを構築する理由として，最も適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "各工程で検出した不良を管理することが可能になり，ソフトウェアの品質分析が容易になる。", correct: false}
+      , {description: "各工程での作業手順を定義することが容易になり，開発・保守時の作業ミスを防止することができる。", correct: false}
+      , {description: "各工程での作業予定と実績を関連付けて管理することが可能になり，作業の進捗管理が容易になる。", correct: false}
+      , {description: "各工程での成果物を一元管理することによって，開発・保守作業の効率が良くなり，用語の統ーもできる。", correct: true}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
+  , {
+    description: "システム監査で用いる統計的サンプリングに関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "開発プロセスにおけるコントロールを評価する際には，開発規模及び影響度の大きい案件を選定することによって，母集団全体への評価を導き出すことができる。", correct: false}
+      , {description: "コントロールが有効であると判断するために必要なサンプル件数を事前に決めることができる。", correct: true}
+      , {description: "正しいサンプリング手順を踏むことによって，母集団全件に対して検証を行う場合と同じ結果を常に導き出すことができる。", correct: false}
+      , {description: "母集団からエラー対応が行われたデータを選定することによって，母集団全体に対してコントロールが適切に行われていることを確認できる。", correct: false}
+    ]
+    , category: 'SC-H24-AUTUMN'
+  }
 ]);
