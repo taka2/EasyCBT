@@ -1405,4 +1405,279 @@ questions.add([
     ]
     , category: 'SC-H24-AUTUMN'
   }
+  , {
+    description: "クリックジャッキング攻撃に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Webアプリケーションの脆弱性を悪用し，Webサーバに不正なリクエストを送ってWebサーバからのレスポンスを二つに分割させることによって，利用者のブラウザのキャッシュを偽造する。", correct: false}
+      , {description: "Webページのコンテンツ上に透明化した標的サイトのコンテンツを配置し，利用者が気づかないうちに標的サイト上で不正操作を実行させる。", correct: true}
+      , {description: "ブラウザのタブ表示機能を利用し，ブラウザの非活性なタブの中身を，利用者が気づかないうちに偽ログインページに書き換えて，それを操作させる。", correct: false}
+      , {description: "利用者のブラウザの設定を変更することによって，利用者のWebページの閲覧履歴やパスワードなどの機密情報を盗み出す。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "作成者によってディジタル署名された電子文書に，タイムスタンプ機関がタイムスタンプを付与した。この電子文書を公開する場合のタイムスタンプの効果のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "タイムスタンプを付与した時刻以降に，作成者が電子文書の内容を他の電子文書へコピーして流用することを防止する。", correct: false}
+      , {description: "タイムスタンプを付与した時刻以降に，第三者が電子文書の内容を他の電子文書へコピーして流用することを防止する。", correct: false}
+      , {description: "電子文書がタイムスタンプの時刻以前に存在したことを示すことによって，作成者が電子文書の作成を否認することを防止する。", correct: true}
+      , {description: "電子文書がタイムスタンプの時刻以前に存在したことを示すことによって，第三者が電子文書を改ざんすることを防止する。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "ディジタル証明書に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "S/MIMEやTLSで利用するディジタル証明書の規格は，ITU-T X.400で規定されている。", correct: false}
+      , {description: "ディジタル証明書は，SSL/TLSプロトコルにおいて通信データの暗号化のための鍵交換や通信相手の認証に利用されている。", correct: true}
+      , {description: "認証局が発行するディジタル証明書は，申請者の秘密鍵に対して認証局がディジタル署名したものである。", correct: false}
+      , {description: "ルート認証局は，下位層の認証局の公開鍵にルート認証局の公開鍵でディジタル署名したディジタル証明書を発行する。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "米国NISTが制定した，AESにおける鍵長の条件はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "128ビット，192ビット，256ビットから選択する。", correct: true}
+      , {description: "256ビット未満で任意に指定する。", correct: false}
+      , {description: "暗号化処理単位のブロック長より32ビット長くする。", correct: false}
+      , {description: "暗号化処理単位のブロック長より 32ビット短くする。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "コンティンジェンシープランにおける留意点はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "企業の全てのシステムを対象とするのではなく，システムの復旧の重要性と緊急性を勘案して対象を決定する。", correct: true}
+      , {description: "災害などへの対応のために，すぐに使用できるよう，パックアップデータをコンピュータ室内又はセンタ内に保存しておく。", correct: false}
+      , {description: "バックアップの対象は，機密情報の中から機密度を勘案して選択する。", correct: false}
+      , {description: "被害のシナリオを作成し，これに基づく”予防策策定手順”を策定する。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "JIS Q 27001:2006における情報システムのリスクとその評価に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "脅威とは，監弱性が顕在化する源のことであり，情報システムに組み込まれた技術的管理策によって脅威のレベルと発生の可能性が決まる。", correct: false}
+      , {description: "脆弱性とは，情報システムに対して悪い影響を与える要因のことであり，自然災害，システム障害，人為的過失及び不正行為に大別される。", correct: false}
+      , {description: "リスクの特定では，脅威が管理策の脆弱性に付け込むことによって情報資産に与える影響を特定する。", correct: true}
+      , {description: "リスク評価では，リスク回避とリスク低減の二つに評価を分類し，リスクの大きさを判断して対策を決める。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "ファイアウォールにおいて，自ネットワークのホストへの侵入を防止する対策のうち，IPスプーフィング（spoofing）攻撃の対策について述べたものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "外部から入るTCPコネクション確立要求パケットのうち，外部へのインターネットサービスの提供に必要なもの以外を破棄する。", correct: false}
+      , {description: "外部から入るUDPパケットのうち，外部へのインターネットサービスの提供や利用したいインターネットサービスに必要なもの以外を破棄する。", correct: false}
+      , {description: "外部から入るパケットの宛先IPアドレスが，インターネットとの直接の通信をすべきでない自ネットワークのホストのものであれば，そのパケットを破棄する。", correct: false}
+      , {description: "外部から入るパケットの送信元IPアドレスが自ネットワークのものであれば，そのパケットを破棄する。", correct: true}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "サイドチャネル攻撃の手法であるタイミング攻撃の対策として，最も適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "演算アルゴリズムに対策を施して，演算内容による処理時間の差異が出ないようにする。", correct: true}
+      , {description: "故障を検出する機構を設けて，検出したら機密情報を破壊する。", correct: false}
+      , {description: "コンデンサを挿入して，電力消費量が時間的に均ーとなるようにする。", correct: false}
+      , {description: "保護層を備えて，内部のデータが不正に書き換えられないようにする。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "PCIデータセキュリティ基準（PCIDSS Version 2.0）の要件のうち，詳細要件の選択肢として，WAFの導入を含むものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "要件 1:カード会員データを保護するために，ファイアウォールをインストールして構成を維持すること", correct: false}
+      , {description: "要件 3:保存されるカード会員データを保護すること", correct: false}
+      , {description: "要件 6:安全性の高いシステムとアプリケーションを開発し，保守すること", correct: true}
+      , {description: "要件 7:カード会員データへのアクセスを，業務上必要な範囲内に制限すること", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "DMZ上のコンピュータがインターネットからのpingに応答しないようにファイアウォールのセキュリティルールを定めるとき，”通過禁止”に設定するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ICMP", correct: true}
+      , {description: "TCP及びUDPのポート番号53", correct: false}
+      , {description: "TCPのポート番号21", correct: false}
+      , {description: "UDPのポーれ番号123", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "有料の公衆無線LANサービスにおいて実施される，ネットワークサービスの不正利用に対するセキュリティ対策の方法と目的はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "利用者ごとに異なるSSIDを割り当てることによって，利用者PCへの不正アクセスを防止する。", correct: false}
+      , {description: "利用者ごとに異なるサプリカントを割り当てることによって，利用者PCへの不正アクセスを防止する。", correct: false}
+      , {description: "利用者ごとに異なるプライベートIPアドレスを割り当てることによって，第三者によるアクセスポイントへのなりすましを防止する。", correct: false}
+      , {description: "利用者ごとに異なる利用者IDを割り当て，パスワードを設定することによって，契約者以外の利用者によるアクセスを防止する。", correct: true}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "送信元を詐称した電子メールを拒否するために，SPF（Sender Policy Framework）の仕組みにおいて受信側が行うことはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Resent-Sender:，Resent-From:，Sender:，From:などのメールヘッダ情報の送信者メールアドレスを基に送信メールアカウントを検証する。", correct: false}
+      , {description: "SMTPが利用するポート番号25の通信を拒否する。", correct: false}
+      , {description: "SMTP通信中にやり取りされるMAILFROMコマンドで与えられた送信ドメインと送信サーバのIPアドレスの適合性を検証する。", correct: true}
+      , {description: "電子メールに付加されたディジタル署名を受信側が検証する。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "迷惑メールの検知手法であるベイジアンフィルタリングの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "信頼できるメール送信元を許可リストに登録しておき，許可リストにない送信元からの電子メールは迷惑メールと判定する。", correct: false}
+      , {description: "電子メールが正規のメールサーバから送信されていることを検証し，迷惑メールであるかどうかを判定する。", correct: false}
+      , {description: "電子メールの第三者中継を許可しているメールサーバを登録したデータベースに掲載されている情報を基に，迷惑メールであるかどうかを判定する。", correct: false}
+      , {description: "迷惑メールを利用者が振り分けるときに，迷惑メールの特徴を自己学習し，迷惑メールであるかどうかを統計的に解析して判定する。", correct: true}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "DNSの再帰的な問合せを使ったサービス不能攻撃（DNS amp）の踏み台にされることを防止する対策はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "キャッシュサーバとコンテンツサーバに分離し，インターネット側からキャッシュサーバに問合せできないようにする。", correct: true}
+      , {description: "問合せされたドメインに関する情報をWhoisデータベースで確認する。", correct: false}
+      , {description: "一つのDNSレコードに複数のサーバのIPアドレスを割り当て，サーバへのアクセスを振り分けて分散させるように設定する。", correct: false}
+      , {description: "他のDNSサーバから送られてくるIPアドレスとホスト名の対応情報の信頼性をディジタル署名で確認するように設定する。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "SMTP-AUTHを使ったメールセキュリティ対策はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ISP管理下の動的IPアドレスからの電子メール送信について，管理外ネットワークのメールサーバへのSMTP通信を禁止する。", correct: false}
+      , {description: "PCからの電子メール送信は，POP接続で利用者認証済の場合にだけ許可する。", correct: false}
+      , {description: "通常のSMTPのポートとは別のサブミッションポートを使用して，PCからメールサーバへの電子メール送信時の認証を行う。", correct: true}
+      , {description: "電子メール送信元のサーバについてDNSの逆引きが成功した場合にだけ，電子メール受信を許可する。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "SQLインジェクション対策について，Webアプリケーションの実装における対策とWebアプリケーションの実装以外の対策として，ともに適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Webアプリケーション中でシェルを起動しない。chroot環境でWebサーバを実行する。", correct: false}
+      , {description: "セッションIDを複雑なものにする。SSLによって通信内容を秘匿する。", correct: false}
+      , {description: "バインド機構を利用する。データベースのアカウントのもつデータベースアクセス権限を必要最小限にする。", correct: true}
+      , {description: "パス名やファイル名をパラメタとして受け取らないようにする。重要なファイルを公開領域に置かない。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "無線LANで用いられるSSIDの説明として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "48ビットのネットワーク識別子であり，アクセスポイントのMACアドレスとー致する。", correct: false}
+      , {description: "48ビットのホスト識別子であり，有線LANのMACアドレスと同様の働きをする。", correct: false}
+      , {description: "最長32オクテットのネットワーク識別子であり，接続するアクセスポイントの選択に用いられる。", correct: true}
+      , {description: "最長32オクテットのホスト識別子であり，ネットワーク上で一意である。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "シリアル回線で使用するものと同じデータリンクのコネクション確立やデータ転送を，LAN上で実現するプロトコルはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "MPLS", correct: false}
+      , {description: "PPP", correct: false}
+      , {description: "PPPoE", correct: true}
+      , {description: "PPTP", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "ネットワーク管理プロトコルであるSNMPパージョン1のメッセージタイプのうち，事象の発生をエージェント自身が自発的にマネージャに知らせるために使用するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "get-request", correct: false}
+      , {description: "get-response", correct: false}
+      , {description: "set-request", correct: false}
+      , {description: "trap", correct: true}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "WebDAVの特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "HTTP上のSOAPによってソフトウェア同士が通信して，ネットワーク上に分散したアプリケーションを連携させることができる。", correct: false}
+      , {description: "HTTPを拡張したプロトコルを使って，サーバ上のファイルの参照や作成，削除及びパージョン管理が行える。", correct: true}
+      , {description: "WebアプリケーションからIMAPサーバにアクセスして，ブラウザから添付ファイルを含む電子メールの操作ができる。", correct: false}
+      , {description: "ブラウザで”ftp://”から始まるURLを指定して，ソフトウェアなどの大容量ファイルのダウンロードができる。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "SQLのGRANT文による権限定義に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "PUBLIC指定によって，全ての権限を与えることができる。", correct: false}
+      , {description: "WITH GRANT OPTION指定によって，権限を付与可能にすることができる。", correct: true}
+      , {description: "ビューに対して固有の参照権限を定義できない。", correct: false}
+      , {description: "表定義のSQL文内にGRANT文を指定することによって，権限定義ができる。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "システム開発で行われる各テストについて，そのテスト要求事項が定義されるアクティビティとテストの組合せのうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "システム方式設計=運用テスト ソフトウェア方式設計=システム結合テスト ソフトウェア詳細設計=ソフトウェア結合テスト", correct: false}
+      , {description: "システム方式設計=運用テスト ソフトウェア方式設計=ソフトウェア結合テスト ソフトウェア詳細設計=ソフトウェアユニットテスト", correct: false}
+      , {description: "システム方式設計=システム結合テスト ソフトウェア方式設計=ソフトウェア結合テスト ソフトウェア詳細設計=ソフトウェアユニットテスト", correct: true}
+      , {description: "システム方式設計=システム結合テスト ソフトウェア方式設計=ソフトウェアユニットテスト ソフトウェア詳細設計=ソフトウェア結合テスト", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "開発した製品で利用している新規技術に関して特許の出願を行った。日本において特許権の取得が可能なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "学会で技術内容を発表した日から11か月目に出願した。", correct: false}
+      , {description: "顧客と守秘義務の確認を取った上で技術内容を説明した後，製品発表前に出願した。", correct: true}
+      , {description: "製品に使用した暗号の生成式を出願した。", correct: false}
+      , {description: "製品を販売した後に出願した。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "ITサービスマネジメン卜の情報セキュリティ管理プロセスに対して，JIS Q 20000-1が要求している事項はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "潜在的な問題を低減させるために，予防処置を取らなければならない。", correct: false}
+      , {description: "ディジタルの構成品目の原本を，物理的又は電子的にセキュリティが保たれた書庫で管理しなければならない。", correct: false}
+      , {description: "変更要求に対しては，そのリスク，影響及び事業利益について，アセスメントを行わなければならない。", correct: false}
+      , {description: "変更を実装する前に，変更がセキュリティ管理策に与える影響のアセスメントを行わなければならない。", correct: true}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
+  , {
+    description: "内部監査として実施したシステム監査で，問題点を検出後，改善勧告を行うまでの問に監査人が考慮すべき事項として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "改善事項を被監査部門へ事前に通知した場合，不備の是正が行われ，元から不備が存在しなかったように見える可能性があるので，被監査部門に秘匿する。", correct: false}
+      , {description: "監査人からの一方的な改善提案は実行不可能なものとなるおそれがあるので，改善勧告の前に，改善策について被監査部門との間で協議する場をもつ。", correct: true}
+      , {description: "経営判断に関与することを避けるため，不備を改善する際の経済合理性などの判断を行わず，そのまま経営者に対する改善勧告とする。", correct: false}
+      , {description: "将来のフォローアップに際して，客観的で中立的な判断を阻害する要因となるので，改善勧告の優先度付けや取捨選択を行うことを避ける。", correct: false}
+    ]
+    , category: 'SC-H24-SPRING'
+  }
 ]);
