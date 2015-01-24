@@ -1680,4 +1680,284 @@ questions.add([
     ]
     , category: 'SC-H24-SPRING'
   }
+  , {
+    description: "DNSSEC（DNS Security Extensions）の機能はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "DNSキャッシュサーバの設定によって再帰的な問合せの受付範囲が最大限になるように拡張する。", correct: false}
+      , {description: "DNSサーバから受け取るリソースレコードに対するディジタル署名を利用して，リソースレコードの送信者の正当性とデータの完全性を検証する。", correct: true}
+      , {description: "ISPなどのセカンダリDNSサーバを利用してDNSコンテンツサーバを二重化することで名前解決の可用性を高める。", correct: false}
+      , {description: "共通鍵暗号技術とハッシュ関数を利用したセキュアな方法で，DNS更新要求が許可されているエンドポイントを特定し認証する。", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "セキュアハッシュ関数SHA-256を用いて，32ビット，256ビット，2,048ビットの三つの長さのメッセージからハッシュ値を求めたとき，それぞれのメッセージのハッシュ値の長さはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "32bit 256bit 256bit", correct: false}
+      , {description: "32bit 256bit 2,048bit", correct: false}
+      , {description: "256bit 256bit 256bit", correct: true}
+      , {description: "256bit 256bit 2,048bit", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "A社のWebサーバは，認証局で生成したWebサーバ用のディジタル証明書を使ってSSL/TLS通信を行っている。PCがA社のWebサーバにSSL/TLSを用いてアクセスしたときにPCが行う処理のうち，サーバのディジタル証明書を入手した後に，認証局の公開鍵を利用して行うものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "暗号化通信に利用する共通鍵を生成し，認証局の公開鍵を使って暗号化する。", correct: false}
+      , {description: "暗号化通信に利用する共通鍵を認証局の公開鍵を使って復号する。", correct: false}
+      , {description: "ディジタル証明書の正当性を認証局の公開鍵を使って検証する。", correct: true}
+      , {description: "利用者が入力して送付する秘匿データを認証局の公開鍵を使って暗号化する。", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "SSLを使用して通信を暗号化する場合，SSL-VPN装置に必要な条件はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SSL-VPN装置は，FQDN又はIPアドレスを含むディジタル証明書を組み込む必要がある。", correct: true}
+      , {description: "SSL-VPN装置は，装置メーカが用意した機種固有のディジタル証明書を組み込む必要がある。", correct: false}
+      , {description: "SSL-VPN装置は，装置メーカから提供される認証局を利用する必要がある。", correct: false}
+      , {description: "同一ドメイン内で複数拠点に SSL-VPN装置を設置する場合は，同一のディジタル証明書を利用する必要がある。", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "ISP＂A＂管理下のネットワークから別のISP＂B＂管理下の宛先へSMTPで電子メールを送信する。電子メール送信者がSMTP-AUTHを利用していない場合，スパムメール対策OP25Bによって遮断される電子メールはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ISP＂A＂管理下の固定IPアドレスから送信されたが，受信者の承諾を得ていない広告の電子メール", correct: false}
+      , {description: "ISP＂A＂管理下の固定IPアドレスから送信されたが，送信元IPアドレスがDNSで逆引きできなかった電子メール", correct: false}
+      , {description: "ISP＂A＂管理下の動的IPアドレスからISP＂A＂のメールサーバを経由して送信された電子メール", correct: false}
+      , {description: "ISP＂A＂管理下の動的IPアドレスからISP＂A＂のメールサーバを経由せずに送信された電子メール", correct: true}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "100人の送受信者が共通鍵暗号方式で，それぞれが相互に暗号化通信を行うときに必要な共通鍵の総数は幾つか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "200", correct: false}
+      , {description: "4,950", correct: true}
+      , {description: "9,900", correct: false}
+      , {description: "10,000", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "IPアドレスに対する MACアドレスの不正な対応関係を作り出す攻撃はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ARPスプーフィング攻撃", correct: true}
+      , {description: "DNSキャッシュポイズニング攻撃", correct: false}
+      , {description: "URLエンコーディング攻撃", correct: false}
+      , {description: "バッファオーバフロー攻撃", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "DNSサーバに格納されるネットワーク情報のうち，第三者に公開する必要のない情報が攻撃に利用されることを防止するための，プライマリDNSサーバの設定はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SOAレコードのシリアル番号を更新する。", correct: false}
+      , {description: "外部のDNSサーバにリソースレコードがキャッシュされる時間を短く設定する。", correct: false}
+      , {description: "ゾーン転送を許可するDNSサーバを限定する。", correct: true}
+      , {description: "ラウンドロビン設定を行う。", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "サービス不能攻撃（DoS）の一つであるSmurf攻撃の特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ICMPの応答パケットを大量に発生させる。", correct: true}
+      , {description: "TCP接続要求であるSYNパケットを大量に送信する。", correct: false}
+      , {description: "サイズの大きいUDPパケットを大量に送信する。", correct: false}
+      , {description: "サイズの大きい電子メールや大量の電子メールを送信する。", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "表に示すテーブルX，Yへのアクセス要件に関して，J1S Q 27001:2006（ISO/IEC 27001:2005）が示す＂完全性＂の観点からセキュリティを脅かすおそれのあるアクセス権付与はどれか。" + 
+    "<table class='table'>" + 
+    "<tr><td>テーブル</td><td>アクセス要件</td></tr>" + 
+    "<tr><td>X（注文テーブル）</td><td>①調達課の利用者Aが注文データを入力するために，又は内容を確認するためにアクセスする。<br>②管理課の利用者Bはアクセスしない。</td></tr>" + 
+    "<tr><td>Y（仕入先マスタテーブル）</td><td>①調達課の利用者Aが仕入先データを照会する目的だけでアクセスする。<br>②管理課の利用者Bが仕入先データのマスタメンテナンス作業を行うためにアクセスする。</td></tr>" + 
+    "</table>"
+    , multiple_answer: false
+    , answers: [
+      {description: "GRANT INSERT ON Y TO A", correct: true}
+      , {description: "GRANT INSERT ON Y TO B", correct: false}
+      , {description: "GRANT SELECT ON X TO A", correct: false}
+      , {description: "GRANT SELECT ON X TO B", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "テンペスト（TEMPEST）攻撃を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "故意に暗号化演算を誤動作させて正しい処理結果との差異を解析する。", correct: false}
+      , {description: "処理時間の差異を計測し解析する。", correct: false}
+      , {description: "処理中に機器から放射される電磁波を観測し解析する。", correct: true}
+      , {description: "チップ内の信号線などに探針を直接当て，処理中のデータを観測し解析する。", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "ダウンローダ型ウイルスがPCに侵入した場合に，インターネット経路で他のウイルスがダウンロードされることを防ぐ対策のうち，最も有効なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "URLフィルタを用いてインターネット上の不正Webサイトへの接続を遮断する。", correct: true}
+      , {description: "インターネットから内部ネットワークに向けた要求パケットによる不正侵入行為をIPSで破棄する。", correct: false}
+      , {description: "スパムメール対策サーバでインターネットからのスパムメールを拒否する。", correct: false}
+      , {description: "メールフィルタで他サイトへの不正メール発信を遮断する。", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "ルートキット（rootkit）を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "OSの中核であるカーネル部分の脆ぜい弱性を分析するツール", correct: false}
+      , {description: "コンビュータがウイルスやワームに感染していないことをチェックするツール", correct: false}
+      , {description: "コンビュータやルータのアクセス可能な通信ポートを外部から調査するツール", correct: false}
+      , {description: "不正侵入してOSなどに不正に組み込んだものを隠蔽する機能をまとめたツール", correct: true}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "スパムメールの対策であるDKIM（Domain Keys Identified Mail）の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "送信側メールサーバでディジタル署名を電子メールのヘッダに付与して，受信側メールサーバで検証する。", correct: true}
+      , {description: "送信側メールサーバで利用者が認証されたとき，電子メールの送信が許可される。", correct: false}
+      , {description: "電子メールのヘッダや配送経路の情報から得られる送信元情報を用いて，メール送信元のIPアドレスを検証する。", correct: false}
+      , {description: "ネットワーク機器で，内部ネットワークから外部のメールサーバのTCPポート25番への直接の通信を禁止する。", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "IPsecのAHに関する説明のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "IPパケットを暗号化する対象部分によって，トランスポートモード，トンネルモードの方式がある。", correct: false}
+      , {description: "暗号化アルゴリズムや暗号化鍵のライフタイムが設定される管理テーブルで，期聞を過ぎると新しいデータに更新される。", correct: false}
+      , {description: "暗号化アルゴリズムを決定し，暗号化鍵を動的に生成する鍵交換プロトコルで，暗号化通信を行う。", correct: false}
+      , {description: "データの暗号化は行わず，SPI，シーケンス番号，認証データを用い，完全性の確保と認証を行う。 ", correct: true}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "Webアプリケーションの脆弱性を悪用する攻撃手法のうち，Perlのsystem関数やPHPのexec関数など外部プログラムの呼出しを可能にするための関数を利用し，不正にシェルスクリプトや実行形式のファイルを実行させるものはどれに分類されるか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "HTTPヘッダインジェクション", correct: false}
+      , {description: "OSコマンドインジェクション", correct: true}
+      , {description: "クロスサイトリクエストフォージェリ", correct: false}
+      , {description: "セッションハイジャック", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "DNSのMXレコードで指定するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "エラーが発生したときの通知先のメールアドレス", correct: false}
+      , {description: "送信先ドメインのメールサーバ", correct: true}
+      , {description: "複数のDNSサーバが動作しているときのマスタDNSサーバ", correct: false}
+      , {description: "メーリングリストを管理しているサーバ", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "コンビュータとスイッチングハブの間，又は2台のスイッチングハブの問を接続する複数の物理回線を論理的に1本の回線に束ねる技術はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "スパニングツリー", correct: false}
+      , {description: "ブリッジ", correct: false}
+      , {description: "マルチホーミング", correct: false}
+      , {description: "リンクアグリゲーション", correct: true}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "電源オフ時にIPアドレスを保持することができない装置が，電源オン時に自装置のMACアドレスから自装置に割り当てられているIPアドレスを知るために用いるデータリンク層のプロトコルで，ブロードキャストを利用するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ARP", correct: true}
+      , {description: "DHCP", correct: false}
+      , {description: "DNS", correct: false}
+      , {description: "RARP", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "TCPヘッダに含まれる情報はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "宛先ポート番号", correct: false}
+      , {description: "パケット生存時間（TTL）", correct: false}
+      , {description: "発信元IPアドレス", correct: false}
+      , {description: "プロトコル番号", correct: true}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "次数がnの関係Rには，属性なし（φ）も含めて異なる射影は幾つあるか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "n", correct: false}
+      , {description: "2n", correct: false}
+      , {description: "n^2", correct: false}
+      , {description: "2^n", correct: true}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "パグ埋込み法において，埋め込まれたパグ数をS，埋め込まれたパグのうち発見されたパグ数をm，埋め込まれたパグを含まないテスト開始前の潜在パグ数をT，発見された総パグ数をnとしたとき，S，T，m，nの関係を表す式はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "m/S = (n-m)/T", correct: true}
+      , {description: "m/S = T/(n-m)", correct: false}
+      , {description: "m/S = n/T", correct: false}
+      , {description: "m/S = T/n", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "ソフトウェア開発組織の活動状態のうち，CMMIモデルにおける成熟度レベルが最も高いものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "作業成果物の状況が，主要なタスクの完了時点で管理層に対して見える状態になっている。", correct: false}
+      , {description: "実績が定量的に把握されておりプロセスが組織的に管理されている。", correct: false}
+      , {description: "プロセスが明文化されて，組織内の全ての人がそれを利用している。", correct: false}
+      , {description: "プロセスを継続的に改善していくための仕組みが機能している。", correct: true}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "情報システムの設計において，フェールソフトが講じられているのはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "UPS装置を設置することで，停電時に手順どおりにシステムを停止できるようにし，データを保全する。", correct: false}
+      , {description: "制御プログラムの障害時に，システムの暴走を避け，安全に運転を停止できるようにする。", correct: false}
+      , {description: "ハードウェアの障害時に，パフォーマンスは低下するが，構成を縮小して運転を続けられるようにする。", correct: true}
+      , {description: "利用者の誤操作や誤入力を未然に防ぐことで，システムの誤動作を防止できるようにする。", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "ISMSにおけるリスク分析手法の一つである＂詳細リスク分析＂で行う作業はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "情報セキュリティポリシの作成", correct: false}
+      , {description: "セーフガードの選択", correct: false}
+      , {description: "リスクの評価", correct: true}
+      , {description: "リスクの容認", correct: false}
+    ]
+    , category: 'SC-H23-AUTUMN'
+  }
 ]);
