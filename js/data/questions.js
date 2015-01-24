@@ -533,7 +533,7 @@ questions.add([
     "[総合評価点の算出式]" + 
     "　総合評価点＝効果の総評価点－リスクの総評価点" + 
     "<p>採点結果表" + 
-    "<table border=\"1\">" + 
+    "<table class='table table-bordered' style='width:60%'>" + 
     "<tr><td colspan=\"2\"></td><td>案1</td><td>案2</td><td>案3</td><td>案4</td></tr>" + 
     "<tr><td rowspan=\"3\">効果</td><td>セキュリティ強化</td><td>3</td><td>4</td><td>5</td><td>2</td></tr>" + 
     "<tr><td>システム運用品質向上</td><td>2</td><td>4</td><td>2</td><td>5</td></tr>" + 
@@ -542,7 +542,7 @@ questions.add([
     "<tr><td>技術リスク</td><td>4</td><td>1</td><td>5</td><td>1</td></tr>" + 
     "</table>" + 
     "<p>重み付け表" + 
-    "<table border=\"1\">" + 
+    "<table class='table table-bordered' style='width:60%'>" + 
     "<tr><td colspan=\"2\">評価項目</td><td>重み</td></tr>" + 
     "<tr><td rowspan=\"3\">効果</td><td>セキュリティ強化</td><td>4</td></tr>" + 
     "<tr><td>システム運用品質向上</td><td>2</td></tr>" + 
@@ -1959,5 +1959,284 @@ questions.add([
       , {description: "リスクの容認", correct: false}
     ]
     , category: 'SC-H23-AUTUMN'
+  }
+  , {
+    description: "AESの暗号化方式を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "鍵長によって，段数が決まる。", correct: true}
+      , {description: "段数は，6回以内の範囲で選択できる。", correct: false}
+      , {description: "データの暗号化，復号，暗号化の順に3回繰り返す。", correct: false}
+      , {description: "同ーの公開鍵を用いて暗号化を3回繰り返す。", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "IEEE 802.1Xで使われるEAP-TLSによって実現される認証はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "あらかじめ登録した共通鍵によるサーバ認証と，時刻同期のワンタイムパスワードによる利用者認証", correct: false}
+      , {description: "チャレンジレスポンスによる利用者認証", correct: false}
+      , {description: "ディジタル証明書による認証サーバとクライアントの相互認証", correct: true}
+      , {description: "利用者IDとパスワードによる利用者認証", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "PCに内蔵されるセキュリティチップ（TPM: Trusted Platform Module）がもつ機能はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "TPM間の共通鍵の交換", correct: false}
+      , {description: "鍵ペアの生成", correct: true}
+      , {description: "ディジタル証明書の発行", correct: false}
+      , {description: "ネットワーク経由の乱数送信", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "暗号アルゴリズムの危殆化を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "外国の輸出規制によって十分な強度をもつ暗号アルゴリズムを実装した製品が利用できなくなること", correct: false}
+      , {description: "鍵の不適切な管理によって，鍵が漏えいする危険性が増すこと", correct: false}
+      , {description: "計算能力の向上などによって，健の推定が可能となり，暗号の安全性が低下すること", correct: true}
+      , {description: "最高性能のコンビュータを用い，膨大な時間やコストを掛けて暗号強度をより確実なものとすること", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "SMTP-AUTHにおける認証の動作を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SMTPサーバに電子メールを送信する前に，電子メールを受信し，その際にパスワード認証が行われたクライアントのIPアドレスに対して，一定時間だけ電子メールの送信を許可する。", correct: false}
+      , {description: "クライアントがSMTPサーバにアクセスしたときに利用者認証を行い，許可された利用者だけから電子メールを受け付ける。", correct: true}
+      , {description: "サーバは認証局のディジタル証明書をもち，クライアントから送信された認証局の署名付きクライアント証明書の妥当性を確認する。", correct: false}
+      , {description: "利用者が電子メールを受信する際の認証情報を秘匿できるように，パスワードからハッシュ値を計算して，その値で利用者認証を行う。", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "X.509における CRL（Certificate Revocation List）の運用を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "PKIの利用者は，認証局の公開鍵がブラウザに組み込まれていれば，CRLを参照しなくてもよい。", correct: false}
+      , {description: "認証局は，X.509によって1年に1回のCRL発行が義務付けられている。", correct: false}
+      , {description: "認証局は，ディジタル証明書を有効期限内にCRLに登録することがある。", correct: true}
+      , {description: "認証局は，発行したすべてのディジタル証明書の有効期限をCRLに登録する。", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "認証局が送信者に発行したディジタル証明書を使用して送信者又は受信者が行えることはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "受信した暗号文を復号して，盗聴を検知する。", correct: false}
+      , {description: "受信した暗号文を復号して，メッセージが改ざんされていないことと送信者が商取引相手として信頼できることを確認する。", correct: false}
+      , {description: "受信したメッセージのディジタル署名を検証して，メッセージが改ざんされていないこととメッセージの送信者に偽りのないことを確認する。", correct: true}
+      , {description: "メッセージにディジタル署名を添付して，盗聴を防止する。", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "サーバへのログイン時に用いるパスワードを不正に取得しようとする攻撃とその対策の組合せのうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "辞書攻撃=パスワードを平文で送信しない。 スニッフィング=ログインの試行回数に制限を設ける。 ブルートフォース攻撃=ランダムな値でパスワードを設定する。", correct: false}
+      , {description: "辞書攻撃=ランダムな値でパスワードを設定する。 スニッフィング=パスワードを平文で送信しない。 ブルートフォース攻撃=ログインの試行回数に制限を設ける。", correct: true}
+      , {description: "辞書攻撃=ランダムな値でパスワードを設定する。 スニッフィング=ログインの試行回数に制限を設ける。 ブルートフォース攻撃=パスワードを平文で送信しない。", correct: false}
+      , {description: "辞書攻撃=ログインの試行回数に制限を設ける。 スニッフィング=ランダムな値でパスワードを設定する。 ブルートフォース攻撃=パスワードを平文で送信しない。", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "ウイルスの検出手法であるピヘイビア法を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "あらかじめ特徴的なコードをパターンとして登録したウイルス定義ファイルを用いてウイルス検査対象と比較し，同じパターンがあれば感染を検出する。", correct: false}
+      , {description: "ウイルスに感染していないことを保証する情報をあらかじめ検査対象に付加しておき，検査時に不整合があれば感染を検出する。", correct: false}
+      , {description: "ウイルスの感染が疑わしい検査対象を，安全な場所に保管する原本と比較し，異なっていれば感染を検出する。", correct: false}
+      , {description: "ウイルスの感染や発病によって生じるデータ書込み動作の異常や通信量の異常増加などの変化を監視して，感染を検出する。", correct: true}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "ウイルスの調査手法に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "逆アセンブルは，バイナリコードの新種ウイルスの動作を解明するのに有効な手法である。", correct: true}
+      , {description: "パターンマッチングでウイルスを検知する方式は，暗号化された文書中のマクロウイルスの動作を解明するのに有効な手法である。", correct: false}
+      , {description: "ファイルのハッシュ値を基にウイルスを検知する方式は，ウイルスのハッシュ値からどのウイルスの亜種かを特定するのに確実な手法である。", correct: false}
+      , {description: "不正な動作からウイルスを検知する方式は，ウイルス名を特定するのに確実な手法である。", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "通信の暗号化に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "IPsecのトランスポートモードでは，ゲートウェイ間の通信経路上だけではなく，送信ホストと受信ホストとの聞の全経路上でメッセージが暗号化される。", correct: true}
+      , {description: "LDAPクライアントがLDAPサーバに接続するとき，その通信内容は暗号化することができない。", correct: false}
+      , {description: "S/MIMEで暗号化した電子メールは，受信側のメールサーバ内に格納されている聞は，メール管理者が平文として見ることができる。", correct: false}
+      , {description: "SSLを使用すると，暗号化されたHTML文書はブラウザでキャッシュの有無が設定できず，ディスク内に必ず保存される。", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "自社の中継用メールサーバのログのうち，外部ネットワークからの第三者中継と判断できるものはどれか。ここで，AAA.168.1.5とAAA.168.1.10は自社のグローバルIPアドレスとし，BBB.45.67.89とBBB.45.67.90は社外のグローバルIPアドレスとする。a.b.cは自社のドメイン名とし，a.b.dとa.b.eは他社のドメイン名とする。また，IPアドレスとドメイン名は詐称されていないものとする。"
+    , multiple_answer: false
+    , answers: [
+      {description: "接続元IPアドレス=AAA.168.1.5 送信者のドメイン=a.b.c 受信者のドメイン=a.b.d", correct: false}
+      , {description: "接続元IPアドレス=AAA.168.1.10 送信者のドメイン=a.b.c 受信者のドメイン=a.b.c", correct: false}
+      , {description: "接続元IPアドレス=BBB.45.67.89 送信者のドメイン=a.b.d 受信者のドメイン=a.b.e", correct: true}
+      , {description: "接続元IPアドレス=BBB.45.67.90 送信者のドメイン=a.b.d 受信者のドメイン=a.b.c", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "経済産業省＂ソフトウェア管理ガイドライン＂に定められた，ソフトウェアを使用する法人，団体などが実施すべき基本的事項の記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ウイルスからソフトウェアを保護するため，関係法令や使用許諾契約などについて利用者の教育啓発を行う。", correct: false}
+      , {description: "セキュリティ対策に責任を負うセキュリティ管理責任者を任命し，適切な管理体制を整備する。", correct: false}
+      , {description: "ソフトウェアの違法複製などの有無を確認するため，すべてのソフトウェアを対象として，その使用状況についての監査を実施する。", correct: true}
+      , {description: "ソフトウェアの脆弱性を突いた不正アクセスから保護するため，ソフトウェアの使用手順や管理方法などを定めたソフトウェア管理規則を制定する。", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "共通フレーム2007に従いシステム開発の要件定義の段階で実施することとして，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "システムに必要なセキュリティ機能及びその機能が対策として達成すべき内容を決定する。", correct: true}
+      , {description: "システムに必要なセキュリティ機能に関連するチェックリストを用いてソースコードをレビューする。", correct: false}
+      , {description: "組織に必要なセキュリティ機能を含むシステム化計画を立案する。", correct: false}
+      , {description: "第三者によるシステムのセキュリティ監査を脆弱性評価ツールを用いて定期的に実施する。", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "ICカードの耐タンパ性を高める対策はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ICカードとICカードリーダとが非接触の状態で利用者を認証して，利用者の利便性を高めるようにする。", correct: false}
+      , {description: "故障に備えてあらかじめ作成した予備のICカードを保管し，故障時に直ちに予備カードに交換して利用者がICカードを使い続けられるようにする。", correct: false}
+      , {description: "信号の読出し用プローブの取付けを検出するとICチップ内の保存情報を消去する回路を設けて，ICチップ内の情報を容易に解析できないようにする。", correct: true}
+      , {description: "退職者のICカードは業務システム側で利用を停止して，ほかの利用者が使用できないようにする。", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "ルータで接続された二つのセグメント間でのコリジョンの伝搬とブロードキャストフレームの中継について，適切な組合せはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "コリジョンの伝搬=伝搬する ブロードキャストフレームの中継=中継する", correct: false}
+      , {description: "コリジョンの伝搬=伝搬する ブロードキャストフレームの中継=中継しない", correct: false}
+      , {description: "コリジョンの伝搬=伝搬しない ブロードキャストフレームの中継=中継する", correct: false}
+      , {description: "コリジョンの伝搬=伝搬しない ブロードキャストフレームの中継=中継しない", correct: true}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "ある企業の本店で内線通話を調査したところ，通話数が1時間当たり120回，平均適話時聞が90秒であった。本店内線の呼量は何アーランか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "0.03", correct: false}
+      , {description: "3", correct: true}
+      , {description: "180", correct: false}
+      , {description: "10,800", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "インターネットVPNを実現するために用いられる技術であり，ESP（Encapsu1ating Security Payload）やAH（Authentication Header）などのプロトコルを含むものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "IPsec", correct: true}
+      , {description: "MPLS", correct: false}
+      , {description: "PPP", correct: false}
+      , {description: "SSL", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "TCPのフロー制御に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "OSI基本参照モデルのネットワーク層の機能である。", correct: false}
+      , {description: "ウインドウ制御はピット単位で行う。", correct: false}
+      , {description: "認応答がない場合は再送処理によってデータ回復を行う。", correct: true}
+      , {description: "データの順序番号をもたないので，データは受信した順番のままで処理する。", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "通信プロトコルで使用するデータ形式を記述するための記法であって，SNMPのパケットの符号化に利用されているものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ASN.1", correct: true}
+      , {description: "JSON", correct: false}
+      , {description: "SGML", correct: false}
+      , {description: "SOAP", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "次のSQL文をA表の所有者が発行した場合を説明したものはどれか。<br>GRANT ALL PRIVILEGES ON A TO B WITH GRANT OPTION"
+    , multiple_answer: false
+    , answers: [
+      {description: "A表に関する，SELECT権限，UPDATE権限，INSERT権限，DELETE権限などのすべての権限，及びそれらの付与権限を利用者Bに対して付与する。", correct: true}
+      , {description: "A表に関する，SELECT権限，UPDATE権限，INSERT権限，DELETE権限などのすべての権限を利用者Bに対して付与するが，それらの権限の付与権限は付与しない。", correct: false}
+      , {description: "A表に関する，SELECT権限，UPDATE権限，INSERT権限，DELETE権限は与えないが，それらのすべての権限の付与権限だけを利用者Bに対して付与する。", correct: false}
+      , {description: "A表に関する，SELECT権限，及びSELECT権限の付与権限を利用者Bに対して付与し，UPDATE権限，INSERT権限，DELETE権限，及びそれらの付与権限は付与しない。", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "操作に不慣れな人も利用するシステムでは，間違ったデータが入力されることが想定される。誤入力が発生しても，プログラムやシステムを異常終了させずに，エラーメッセージを表示して次の操作を促すような設計を何というか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "フールブルーフ", correct: true}
+      , {description: "フェールセーフ", correct: false}
+      , {description: "フェールソフト", correct: false}
+      , {description: "フォールトトレランス", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "共通フレーム2007で取り決められているものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "作成する文書の種類及び書式", correct: false}
+      , {description: "信頼性，保守性などのソフトウェアの品質尺度", correct: false}
+      , {description: "適用すべき開発モデル，技法及びツール", correct: false}
+      , {description: "プロセスごとの作業の主体者（役割）と責任の所在", correct: true}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "(1)〜(4)はある障害の発生から本格的な対応までの一連の活動である。(1)〜(4)の各活動とそれに対応するITILの管理プロセスの組合せのうち，適切なものはどれか。" + 
+    "<ul><li>(1) 利用者からサービスデスクに＂特定の入力操作が拒否される＂という連絡があったので，別の入力操作による回避方法を利用者に伝えた</li>" + 
+    "<li>(2) 原因を開発チームで追究した結果，アプリケーションプログラムに不具合がある乙とが分かった。</li>" + 
+    "<li>(3) 障害の原因となったアプリケーションプログラムの不具合を改修する必要があるのかどうか，改修した場合に不具合箇所以外に影響が出る心配はないかどうかについて，関係者を集めて確認し，改修することを決定した。</li>" + 
+    "<li>(4) 改修したアプリケーションプログラムの稼働環境への適用については，利用者への周知，適用手順及び失敗時の切戻し手順の確認など，十分に事前準備を行った。</li>"
+    , multiple_answer: false
+    , answers: [
+      {description: "(1)=インシデント管理 (2)=問題管理 (3)=変更管理 (4)=リリース管理及び展開管理", correct: true}
+      , {description: "(1)=インシデント管理 (2)=問題管理 (3)=リリース管理及び展開管理 (4)=変更管理", correct: false}
+      , {description: "(1)=問題管理 (2)=インシデント管理 (3)=変更管理 (4)=リリース管理及び展開管理", correct: false}
+      , {description: "(1)=問題管理 (2)=インシデント管理 (3)=リリース管理及び展開管理 (4)=変更管理", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
+  }
+  , {
+    description: "入出金管理システムから出力された入金データファイルを，売掛金管理システムが読み込んでマスタファイルを更新する。入出金管理システムから売掛金管理システムへのデータ受渡しの正確性及び網羅性を確保するコントロールはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "売掛金管理システムにおける入力データと出力結果とのランツーランコントロール", correct: false}
+      , {description: "売掛金管理システムのマスタファイル更新におけるタイムスタンプ機能", correct: false}
+      , {description: "入金額及び入金データ件数のコントロールトータルのチェック", correct: true}
+      , {description: "入出金管理システムへの入力のエディットバリデーションチェック", correct: false}
+    ]
+    , category: 'SC-H23-SPRING'
   }
 ]);
