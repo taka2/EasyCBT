@@ -2515,4 +2515,286 @@ questions.add([
     ]
     , category: 'SC-H22-AUTUMN'
   }
+  , {
+    description: "セキュアハッシュ関数SHA-256を用いて，32ビット，256ビット，2,048ビットの三つの長さのメッセージからハッシュ値を求めたとき，それぞれのメッセージのハッシュ値の長さはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "32 256 256", correct: false}
+      , {description: "32 256 2,048", correct: false}
+      , {description: "256 256 256", correct: true}
+      , {description: "256 256 2,048", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "XMLディジタル署名の特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "XML文書中の，指定したエレメントに対して署名することができる。", correct: true}
+      , {description: "エンベローピング署名（Enveloping Signature）では一つの署名対象に必ず複数の署名を付ける。", correct: false}
+      , {description: "署名形式として，CMS（Cryptographic Message Syntax）を用いる。", correct: false}
+      , {description: "署名対象と署名アルゴリズムをASN.1によって記述する。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "A社のWebサーバは，認証局で生成したWebサーバ用のディジタル証明書を使ってSSL/TLS通信を行っている。PCがA社のWebサーバにSSL/TLSを用いてアクセスしたとき，サーバのディジタル証明書を入手した後に，認証局の公開鍵を利用しPCが行う処理はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "暗号化通信に利用する共通鍵を生成し，認証局の公開鍵を使って暗号化する。", correct: false}
+      , {description: "暗号化通信に利用する共通鍵を認証局の公開鍵を使って復号する。", correct: false}
+      , {description: "ディジタル証明書の正当性を認証局の公開鍵を使って検証する。", correct: true}
+      , {description: "利用者が入力，送付する秘匿データを認証局の公開鍵を使って暗号化する。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "S/KEYワンタイムパスワードに関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "クライアントは認証要求のたびに，サーバへシーケンス番号と種（Seed）からなるチャレンジデータを送信する。", correct: false}
+      , {description: "サーバはクライアントから送られた使い捨てパスワードを演算し，サーバで記憶している前回の使い捨てパスワードと比較することによって，クライアントを認証する。", correct: true}
+      , {description: "時刻情報を基にパスワードを生成し，クライアント，サーバ間でパスワードを時刻で同期させる。", correct: false}
+      , {description: "利用者が設定したパスフレーズは 1回ごとに使い捨てる。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "100人の送受信者が共通鍵暗号方式で，それぞれ秘密に通信を行うときに必要な共通鍵の総数は幾つか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "200", correct: false}
+      , {description: "4,950", correct: true}
+      , {description: "9,900", correct: false}
+      , {description: "10,000", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "情報漏えいに関するリスク対応のうち，リスク回避に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "外部の者が侵入できないように，入退室をより厳重に管理する。", correct: false}
+      , {description: "情報資産を外部のデータセンタに預託する。", correct: false}
+      , {description: "情報の重要性と対策費用を勘案し，あえて対策をとらない。", correct: false}
+      , {description: "データの安易な作成を禁止し，不要なデータを消去する。", correct: true}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "経済産業省告示の“ソフトウェア等脆弱性関連＂情報取扱基準＂におけるWebアプリケーションに関する脆弱性関連情報の適切な取扱いはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Webアプリケーションの脆弱性についての情報を受けた受付機関は，発見者の氏名・連絡先をWebサイト運営者に通知する。", correct: false}
+      , {description: "Webアプリケーションの脆弱性についての通知を受けたWebサイト運営者は，当該脆弱性に起因する個人情報の漏えいなどが発生した場合，事実関係を公表しない。", correct: false}
+      , {description: "受付機関は，Webサイト運営者からWebアプリケーションの脆弱性が修正されたという通知を受けたら，それを速やかに発見者に通知する。", correct: true}
+      , {description: "受付機関は，一般利用者に不安を与えないために，Webアプリケーションの脆弱性関連情報の届出状況は，受付機関の中で管理し，公表しない。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "DNSサーバに格納されるネットワーク情報のうち，第三者に公開する必要のない情報が攻撃に利用されることを防止するための，プライマリDNSサーバの設定はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SOAレコードのシリアル番号を更新する。", correct: false}
+      , {description: "外部のDNSサーバにリソースレコードがキャッシュされる時間を短く設定する。", correct: false}
+      , {description: "ゾーン転送を許可するDNSサーバを登録する。", correct: true}
+      , {description: "ラウンドロビン設定を行う。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "ワームの侵入に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "公開サーバへのワームの侵入は，IDSでは検知できない。", correct: false}
+      , {description: "未知のワームの侵入は，パターンマッチング方式で検知できる。", correct: false}
+      , {description: "ワームは，アプリケーションソフトの脆弱性を突いて侵入できる。", correct: true}
+      , {description: "ワームは，仮想OS環境内のゲストOSに侵入できない。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "ステガノグラフィを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "データの複写を不可能にする（コピーできないようにする）技術のことをいう。", correct: false}
+      , {description: "データを第三者に盗み見られでも解読できないようにするため，決まった規則に従ってデータを変換することをいう。", correct: false}
+      , {description: "文書の正当性を保証するために付けられる暗号化された署名情報のことをいう。", correct: false}
+      , {description: "メッセージを画像データや音声データなどに埋め込み，その存在を隠す技術のことをいう。", correct: true}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "DMZ上のコンビュータがインターネットからのpingに応答しないようにファイアウォールのセキュリティルールを定めるとき，＂通過禁止＂に設定するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ICMP", correct: true}
+      , {description: "TCP及びUDPのポート番号53", correct: false}
+      , {description: "TCPのポート番号21", correct: false}
+      , {description: "UDPのポート番号123", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "ダウンローダ型ウイルスがPCに侵入した場合に，インターネット経路でほかのウイルスがダウンロードされることを防ぐ有効な対策はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "URLフィルタを用いてインターネット上の不正Webサイトへの接続を遮断する。", correct: true}
+      , {description: "インターネットから内部ネットワークに向けた要求パケットによる不正侵入行為をIPSで破棄する。", correct: false}
+      , {description: "スパムメール対策サーバでインターネットからのスパムメールを拒否する。", correct: false}
+      , {description: "メールフィルタで他サイトへの不正メール発信を遮断する。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "ディジタル証明書を使わずに，通信者同士が，通信によって交換する公開鍵を用いて行う暗号化通信において，通信内容を横取りする目的で当事者になりすますものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Man-in-the-middle攻撃", correct: true}
+      , {description: "wardriving", correct: false}
+      , {description: "トロイの木馬", correct: false}
+      , {description: "ブルートフォース攻撃", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "スパムメールの対策であるDKIM（Domain Keys Identified Mail）の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "送信側メールサーバでディジタル署名を電子メールのヘッダに付与して，受信側メールサーバで検証する。", correct: true}
+      , {description: "送信側メールサーバで利用者が認証されたとき，電子メールの送信が許可される。", correct: false}
+      , {description: "電子メールのヘッダや配送経路の情報から得られる送信元情報を用いて，メール送信元のIPアドレスを検証する。", correct: false}
+      , {description: "ネットワーク機器で，内部ネットワークから外部のメールサーバのTCPポート25番への直接の通信を禁止する。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "SMTP-AUTHを使ったメールセキュリティ対策はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ISP管理下の動的IPアドレスからの電子メール送信について，管理外ネットワークのメールサーバへSMTP通信を禁止する。", correct: false}
+      , {description: "PCからの電子メール送信について，POP接続で利用者認証済の場合にだけ許可する。", correct: false}
+      , {description: "通常のSMTPとは独立したサプミッショ-ンポートを使用して，メールサーバ接続時の認証を行う。", correct: true}
+      , {description: "電子メール送信元のサーバについてDNSの逆引きが成功した場合にだけ，電子メール受信を許可する。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "セキュリティプロトコルSSL/TLSの機能はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "FTPなどの様々なアプリケーションに利用されて，アプリケーション層とトランスポート層（TCP）との間で暗号化する。", correct: true}
+      , {description: "MIMEをベースとして，電子署名とメッセージの暗号化によって電子メールのセキュリティを強化する。", correct: false}
+      , {description: "PPTPとL2Fが統合された仕様で，PPPをトンネリングする。", correct: false}
+      , {description: "特定のアプリケーションの通信だけではなく，あらゆるIPパケットをIP層で暗号化する。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "IPsecに関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "IKEはIPsecの鍵交換のためのプロトコルであり，ポート番号80が使用される。", correct: false}
+      , {description: "鍵交換プロトコルとして，HMAC-MD5が使用される。", correct: false}
+      , {description: "トンネルモードを使用すると，元のヘッダまで含めて暗号化される。", correct: true}
+      , {description: "ホストAとホストBとの間でIPsecによる通信を行う場合，認証や暗号化アルゴリズムを両者で決めるためにESPヘッダではなくAHヘッダを使用する。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "図のような2台のレイヤ2スイッチ，1台のルータ，4台の端末からなるIPネットワークで，端末Aから端末Cに通信を行う際に，送付されるパケットのあて先IPアドレスである端末CのIPアドレスと，端末CのMACアドレスとを対応付けるのはどの機器か。ここで，ルータZにおいてプロキシARPは設定されていないものとする。" + 
+    "ルータZ<br>" + 
+    "├レイヤ2スイッチX<br>" + 
+    "│　├端末A<br>" + 
+    "│　└端末B<br>" + 
+    "└レイヤ2スイッチY<br>" + 
+    "　 ├端末C<br>" + 
+    " 　└端末D"
+    , multiple_answer: false
+    , answers: [
+      {description: "端末A", correct: false}
+      , {description: "ルータZ", correct: true}
+      , {description: "レイヤ2スイッチX", correct: false}
+      , {description: "レイヤ2スイッチY", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "インターネットで電子メールを送信するとき，メッセージの本文の暗号化に共通鍵暗号方式を用い，共通鍵の受渡しには公開鍵暗号方式を用いるものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "AES", correct: false}
+      , {description: "IPsec", correct: false}
+      , {description: "MIME", correct: false}
+      , {description: "S/MIME", correct: true}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "192.168.1.0/24のネットワークアドレスを，16個のサブネットに分割したときのサブネットマスクはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "255.255.255.192", correct: false}
+      , {description: "255.255.255.224", correct: false}
+      , {description: "255.255.255.240", correct: true}
+      , {description: "255.255.255.248", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "データマイニングツールに関する記述として，最も適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "企業内で発生する情報を主題ごとに時系列で蓄積することによって，既存の情報システムだけでは得られない情報を提供する。", correct: false}
+      , {description: "集計データを迅速かつ容易に表示するなど，利用者に対して様々な情報分析機能を提供する。", correct: false}
+      , {description: "大量に蓄積されたデータに対して統計処理などを行い，法則性の発見を支援する。", correct: true}
+      , {description: "利用者が情報を利用するための目的別データベースであり，あらかじめ集計処理などを施しておくことによって検索時間を短縮する。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "次のクラス図におけるクラス問の関係の説明のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "＂パス＂，＂トラック＂などのクラスが＂自動車＂クラスの定義を引き継ぐことを，インスタンスという。", correct: false}
+      , {description: "＂パス＂，＂トラック＂などのクラスの共通部分を抽出し＂自動車＂クラスとして定義することを，汎化という。", correct: true}
+      , {description: "＂パス＂，＂トラック＂などのクラスは，＂自動車＂クラスに対するオブジェクトという。", correct: false}
+      , {description: "＂パス＂，＂トラック＂などのそれぞれのクラスの違いを＂自動車＂クラスとして定義することを，特化という。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "SOA（Service Oriented Architecture）の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Webサービスを利用するためのインタフェースやプロトコルを規定したものである。", correct: false}
+      , {description: "XMLを利用して，インターネット上に存在するWebサービスを検索できる仕組みである。", correct: false}
+      , {description: "業務機能を提供するサービスを組み合わせることによって，システムを構築する考え方である。", correct: true}
+      , {description: "サービス提供者と委託者との間でサービスの内容，範囲及び品質に対する要求水 準を明確にして，あらかじめ合意を得ておくことである。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "情報システムの設計において，フェールソフトが講じられているのはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "UPS装置を設置することで，停電時に手順どおりにシステムを停止できるようにし，データを保全する。", correct: false}
+      , {description: "制御プログラムの障害時に，システムの暴走を避け，安全に運転を停止できるようにする。", correct: false}
+      , {description: "ハードウェアの障害時に，パフォーマンスは低下するが，構成を縮小して運転を続けられるようにする。", correct: true}
+      , {description: "利用者の誤操作や誤入力を未然に防ぐことで，システムの誤動作を防止できるようにする。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
+  , {
+    description: "＂情報セキュリティ監査基準＂の位置付けはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査人が情報資産の監査を行う際に判断の尺度として用いるべき基準であり，監査人の規範である。", correct: false}
+      , {description: "情報資産を保護するためのベストプラクティスをまとめたものであり，監査マニュアル作成の手引書である。", correct: false}
+      , {description: "情報セキュリティ監査業務の品質を確保し，有効かつ効率的に監査を実施することを目的とした監査人の行為規範である。", correct: true}
+      , {description: "組織体が効果的な情報セキュリティマネジメント体制を構築し，適切なコントロールを整備，運用するための実践規範である。", correct: false}
+    ]
+    , category: 'SC-H22-SPRING'
+  }
 ]);
