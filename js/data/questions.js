@@ -2239,4 +2239,280 @@ questions.add([
     ]
     , category: 'SC-H23-SPRING'
   }
+  , {
+    description: "シングルサインオンの説明のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "クッキーを使ったシングルサインオンの場合，サーバごとの認証情報を含んだクッキーをクライアントで生成し，各サーバ上で保存，管理する。", correct: false}
+      , {description: "クッキーを使ったシングルサインオンの場合，認証対象の各サーバを異なるインターネットドメインに配置する必要がある。", correct: false}
+      , {description: "リパースプロキシを使ったシングルサインオンの場合，認証対象の各Webサーバを異なるインターネットドメインに配置する必要がある。", correct: false}
+      , {description: "リパースプロキシを使ったシングルサインオンの場合，利用者認証においてパスワードの代わりにディジタル証明書を用いることができる。", correct: true}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "作成者によってディジタル署名された電子文書に，タイムスタンプ機関がタイムスタンプを付与した。この電子文書を公開する場合のタイムスタンプの効果のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "タイムスタンプを付与した時刻以降に，作成者が，電子文書の内容をほかの電子文書へコピーして流用することを防止する。", correct: false}
+      , {description: "タイムスタンプを付与した時刻以降に，第三者が，電子文書の内容をほかの電子文書へコピーして流用することを防止する。", correct: false}
+      , {description: "電子文書が，タイムスタンプの時刻以前に存在したことを示し，作成者が，電子文書の作成を否認することを防止する。", correct: true}
+      , {description: "電子文書が，タイムスタンプの時刻以前に存在したことを示し，第三者が，電子文書を改ざんすることを防止する。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "FIPS 140-2を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "暗号モジュールのセキュリティ要求事項", correct: true}
+      , {description: "情報セキュリティマネジメントシステムに関する認証基準", correct: false}
+      , {description: "ディジタル証明書や証明書失効リストの標準仕様", correct: false}
+      , {description: "無線LANセキュリティ技術", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "米国NISTが制定したAESにおける鍵長の条件はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "128ビット，192ビット，256ビットから選択する。", correct: true}
+      , {description: "256ビット未満で任意に指定する。", correct: false}
+      , {description: "暗号化処理単位のフロック長より32ビット長くする。", correct: false}
+      , {description: "暗号化処理単位のフロック長より32ビット短くする。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "JIS Q 27001:2006における情報システムのリスクとその評価に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "脅威とは，脆弱ぜい性が顕在化する確率のことであり，情報システムに組み込まれた技術的管理策によって決まる。", correct: false}
+      , {description: "脆弱性とは，情報システムに対して悪い影響を与える要因のことであり，自然災害，システム障害，人為的過失及び不正行為に大別される。", correct: false}
+      , {description: "リスクの特定では，脅威が情報資産の脆弱性に付け込み，情報資産に与える影響を特定する。", correct: true}
+      , {description: "リスク評価では，リスク回避とリスク低減の二つに評価を分類し，リスクの大きさを判断して対策を決める。 ", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "DMZ上に公開しているWebサーバで入力データを受け付け，内部ネットワークのDBサーバにそのデータを蓄積するシステムがある。インターネットからDMZを経由してなされるDBサーバへの不正侵入対策のーつとして，DMZと内部ネットワークとの聞にファイアウォールを設置するとき，最も有効な設定はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "DBサーバの受信ポート番号を固定し，WebサーバからDBサーバの受信ポート番号への通信だけをファイアウォールで通す。", correct: true}
+      , {description: "DMZからDBサーバへの通信だけをファイアウォールで通す。", correct: false}
+      , {description: "Webサーバの発信ポート番号は任意のポート番号を使用し，ファイアウォールでは，いったん終了した通信と同じ発信ポート番号を使った通信を拒否する。", correct: false}
+      , {description: "Webサーバの発信ポート番号を固定し，その発信ポート番号からの通信だけをファイアウォールで通す。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "ファイアウォールにおいて，自ネットワークのホストへの侵入を防止する対策のうち，IPスプーフィング（spoofing）攻撃に有効なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "外部から入るTCPコネクション確立要求パケットのうち，外部へのインターネットサービスの提供に必要なもの以外を阻止する。", correct: false}
+      , {description: "外部から入るUDPパケットのうち，外部へのインターネットサービスの提供や利用したいインターネットサービスに必要なもの以外を阻止する。", correct: false}
+      , {description: "外部から入るパケットのあて先IPアドレスが，インターネットとの直接の通信をすべきでない自ネットワークのホストのものであれば，そのパケットを阻止する。", correct: false}
+      , {description: "外部から入るパケットの送信元IPアドレスが自ネットワークのものであれば，そのパケットを阻止する。", correct: true}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "SQLインジェクション攻撃を防ぐ方法はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "入力から，上位ディレクトリを指定する文字列（..）を取り除く。", correct: false}
+      , {description: "入力中の文字がデータベースへの問合せや操作において特別な意味をもつ文字として解釈されないようにする。", correct: true}
+      , {description: "入力にHTMLタグが含まれていたら，解釈，実行できないほかの文字列に置き換える。", correct: false}
+      , {description: "入力の全体の長さが制限を超えていたときは受け付けない。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "通信を要求したPCに対し，ARPの仕組みを利用して実現できる通信の可否の判定方法のうち，最も適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "PCにインストールされているソフトウェアを確認し，登録されているソフトウェアだけがインストールされている場合に通信を許可する。", correct: false}
+      , {description: "PCのMACアドレスを確認し，事前に登録されているMACアドレスをもつ場合だけ通信を許可する。", correct: true}
+      , {description: "PCのOSのパッチ適用状況を確認し，最新のパッチが適用されている場合だけ通信を許可する。", correct: false}
+      , {description: "PCのマルウェア対策ソフトの定義ファイルを確認し，最新になっている場合だけ通信を許可する。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "暗号方式に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "AESは公開鍵暗号方式，RSAは共通鍵暗号方式の一種である。", correct: false}
+      , {description: "共通鍵暗号方式では，暗号化及び復号に使用する鍵が同一である。", correct: true}
+      , {description: "公開鍵暗号方式を通信内容の秘匿に使用する場合は，暗号化鍵を秘密にして，復号鍵を公開する。", correct: false}
+      , {description: "ディジタル署名に公開鍵暗号方式が使用されることはなく，共通鍵暗号方式が使用される。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "社内とインターネットの接続点にパケットフィルタリング型ファイアウォールを設置したネットワーク構成において，社内のPCからインターネット上のSMTPサーバに電子メールを送信するとき，ファイアウォールで通過許可とするTCPパケットのポート番号の組合せはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "<table class='table'><tr><td></td><td>送信元</td><td>あて先</td><td>送信元ポート番号</td><td>あて先ポート番号</td></tr><tr><td>発信</td><td>PC</td><td>SMTPサーバ</td><td>25</td><td>1024以上</td></tr><tr><td>応答</td><td>SMTPサーバ</td><td>PC</td><td>1024以上</td><td>25</td></tr></table>", correct: false}
+      , {description: "<table class='table'><tr><td></td><td>送信元</td><td>あて先</td><td>送信元ポート番号</td><td>あて先ポート番号</td></tr><tr><td>発信</td><td>PC</td><td>SMTPサーバ</td><td>1024以上</td><td>25</td></tr><tr><td>応答</td><td>SMTPサーバ</td><td>PC</td><td>25</td><td>1024以上</td></tr></table>", correct: true}
+      , {description: "<table class='table'><tr><td></td><td>送信元</td><td>あて先</td><td>送信元ポート番号</td><td>あて先ポート番号</td></tr><tr><td>発信</td><td>SMTPサーバ</td><td>PC</td><td>110</td><td>1024以上</td></tr><tr><td>応答</td><td>PC</td><td>SMTPサーバ</td><td>1024以上</td><td>110</td></tr></table>", correct: false}
+      , {description: "<table class='table'><tr><td></td><td>送信元</td><td>あて先</td><td>送信元ポート番号</td><td>あて先ポート番号</td></tr><tr><td>発信</td><td>SMTPサーバ</td><td>PC</td><td>1024以上</td><td>110</td></tr><tr><td>応答</td><td>PC</td><td>SMTPサーバ</td><td>110</td><td>1024以上</td></tr></table>", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "送信元を詐称した電子メールを拒否するために，SPF（Sender Policy Framework）の仕組みにおいて受信側が行うことはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Resent-Sender:，Resent-From:，Sender:，From:などのメールヘッダ情報の送信者メールアドレスを基に送信メールアカウントを検証する。", correct: false}
+      , {description: "SMTPが利用するポート番号25の通信を拒否する。", correct: false}
+      , {description: "SMTP通信中にやり取りされるMAILFROMコマンドで与えられた送信ドメインと送信サーバのIPアドレスの適合性を検証する。", correct: true}
+      , {description: "付加されたディジタル署名を受信側が検証する。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "ISP管理下の動的IPアドレスを割り当てられたPCからのスパムメール送信を防止する対策OP25Bはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "管理下の動的IPアドレスから，管理外のグローバルIPアドレスへのPOP通信を拒否する。", correct: false}
+      , {description: "管理下の動的IPアドレスから，管理外のグローバルIPアドレスへのSMTP通信を拒否する。", correct: true}
+      , {description: "メールサーバで，受信メールのあて先電子メールアドレスが管理外のドメインを指す場合，電子メールの受信を拒否する。", correct: false}
+      , {description: "メールサーバで，スパムメール受信時に送信元の電子メールアドレスをブラックリストに登録しておき，スパムメール送信元からの電子メールの受信を拒否する。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "無線LANにおける通信の暗号化の仕組みに関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "EAPは，クライアントPCとアクセスポイントとの間で，あらかじめ登録した共通鍵による暗号化通信を実現する。", correct: false}
+      , {description: "ESS-IDは，クライアントPCごとの秘密鍵を定めたものであり，公開鍵暗号方式による暗号化通信を実現する。", correct: false}
+      , {description: "WEPでは，クライアントPCとアクセスポイントとの問で公開鍵暗号方式による暗号化通信を実現できる。", correct: false}
+      , {description: "WPA2では，IEEE802.1Xの規格に沿って機器認証を行い，動的に更新される暗号化鍵を用いて暗号化通信を実現できる。", correct: true}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "SSLの利用に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SSLで使用する個人認証用のディジタル証明書は，ICカードなどに格納できるので，格納場所を特定のPCに限定する必要はない。", correct: true}
+      , {description: "SSLはWebサーバを経由した特定の利用者間の通信のために開発されたプロトコルであり，Webサーバ提供者への事前の利用者登録が不可欠である。", correct: false}
+      , {description: "SSLを利用するWebサーバのディジタル証明書にはIPアドレスの組込みが必須なので，WebサーバのIPアドレスを変更する場合は，ディジタル証明書を再度取得する必要がある。", correct: false}
+      , {description: "日本国内では，SSLで使用する共通鍵の長さは，128ピット未満に制限されている。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "WAF（Web Application Firewall）のブラックリスト文はホワイトリストの説明のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ブラックリストは，脆弱性のあるサイトのIPアドレスを登録したものであり，該当する通信を遮断する。", correct: false}
+      , {description: "ブラックリストは，問題のある通信データパターンを定義したものであり，該当する通信を遮断するか又は無害化する。", correct: true}
+      , {description: "ホワイトリストは，脆弱性のないサイトのFQDNを登録したものであり，該当する通信を遮断する。", correct: false}
+      , {description: "ホワイトリストは問題のある送信データをどのように無害化するかを定義したものであり，該当するデータを無害化する。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "1台のサーバと複数台のクライアントが，100Mピット/秒のLANで接続されている。業務のピーク時には，クライアント1台につき1分当たり600kバイトのデータをサーバからダウンロードする。このとき，同時使用しでもピーク時に業務を滞りなく遂行できるクライアント数は何台までか。ここで，LANの伝送効率は50%，サーバ及びクライアント内の処理時間は無視できるものとし，1Mビット/秒=10^6ビット/秒，1kバイト=1,000バイトとする。"
+    , multiple_answer: false
+    , answers: [
+      {description: "10", correct: false}
+      , {description: "625", correct: true}
+      , {description: "1,250", correct: false}
+      , {description: "5,000", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "LANの制御方式に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "CSMA/CD方式では，単位時間当たりの送出フレーム数が増していくと，衝突の頻度が増すので，スルーフットはある値をピークとして，その後下がる。", correct: true}
+      , {description: "CSMA/CD方式では，一つの装置から送出されたフレームが順番に各装置に伝送されるので，リング状のLANに適している。", correct: false}
+      , {description: "TDMA方式では，伝送路上におけるフレームの伝搬遅延時間による衝突が発生する。", correct: false}
+      , {description: "トークンアクセス方式では，トークンの巡回によって送信権を管理しているので，トラフィックが増大すると，CSMA/CD方式に比べて伝送効率が急激に低下する。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "DNSSECの説明として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "DNSサーバへのDoS攻撃を防止できる。", correct: false}
+      , {description: "IPsecによる暗号化通信が前提となっている。", correct: false}
+      , {description: "代表的なDNSサーバの実装であるBINDの代替として使用する。", correct: false}
+      , {description: "ディジタル署名によってDNS応答の正当性を確認できる。", correct: true}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "TCPのコネクション確立方式である3ウェイハンドシェイクを表す図はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "→SYN ←SYN+ACK →ACK", correct: true}
+      , {description: "→SYN ←ACK ←SYN →ACK →SYN ←ACK", correct: false}
+      , {description: "→SYN →SYN →SYN ←ACK", correct: false}
+      , {description: "→SYN ←ACK →SYN ←ACK →SYN ←ACK", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "和両立である表 R（*ID，NAME），S（*NO，NAMAE）がある。差集合R-Sを求めるSELECT文とするために，aに入れるべき適切な字句はどれか。ここで，*は主キーを表す。また，NAMEとNAMAEはNULL不可とする。 " + 
+    "<p>SELECT * FROM R WHERE (a) <br>(SELECT * FROM S WHERE S.NO = R.ID AND S.NAMAE = R.NAME)"
+    , multiple_answer: false
+    , answers: [
+      {description: "EXISTS", correct: false}
+      , {description: "NOT EXISTS", correct: true}
+      , {description: "NOT IN", correct: false}
+      , {description: "R.ID NOT IN", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "ソフトウェアの保守作業の効率向上施策として，最も適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "エンドユーザによる動作確認テスト", correct: false}
+      , {description: "コーディング規約に準拠したプログラムの作成", correct: true}
+      , {description: "最適化コンパイルによる性能改善", correct: false}
+      , {description: "発生したパグの要因分類による傾向分析", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "SOA（Service Oriented Architecture）でサービスを設計する際の注意点のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "可用性を高めるために，ステートフルなインタフェースとする。", correct: false}
+      , {description: "業務からの独立性を確保するために，サービスの命名は役割を表すものとする。", correct: false}
+      , {description: "業務の変化に対応しやすくするために，サービス間の関係は疎結合にする。", correct: true}
+      , {description: "セキュリティを高めるために，一度開発したサービスは再利用しない方がよい。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "レプリケーションが有効な対策となるものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "悪意によるデータの改ざんを防ぐ。", correct: false}
+      , {description: "コンビュータウイルスによるデータの破壊を防ぐ。", correct: false}
+      , {description: "災害発生時にシステムが長時間停止するのを防ぐ。", correct: true}
+      , {description: "操作ミスによるデータの削除を防ぐ。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
+  , {
+    description: "請負契約でシステム開発を委託している案件について，委託元のシステム監査人の指摘事項に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "委託した開発案件の品質を委託元の管理者が定期的にモニタリングしている。", correct: false}
+      , {description: "委託元の管理者が委託先の開発担当者を指揮命令している。", correct: true}
+      , {description: "契約書に機密保持のための必要事項が盛り込まれている。", correct: false}
+      , {description: "特定の委託先との契約が長期化しているので，その妥当性を確認している。", correct: false}
+    ]
+    , category: 'SC-H22-AUTUMN'
+  }
 ]);
