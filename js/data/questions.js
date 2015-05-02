@@ -1428,277 +1428,300 @@ questions.add([
     , category: 'SM-H22-AUTUMN'
   }
   , {
-    description: ""
+    description: "重要性や需要変動，在庫コストの観点から商品単位に定量発注法，定期発注法，2ビン発注法のいずれの方法にするかを決定したい。発注方式を決定するために用いる手法として，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "ABC分析", correct: true}
+      , {description: "管理図", correct: false}
+      , {description: "クリティカルパスメソッド", correct: false}
+      , {description: "線形計画法", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "ITILv2における\"ユーザ\"文は\"顧客\"の説明のうち，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "IT運用の費用を負担する責任者は\"ユーザ\"である。", correct: false}
+      , {description: "ITサービスに対するサービス要求を決定する者は\"ユーザ\"である。", correct: false}
+      , {description: "ITサービスを日々利用する者は\"ユーザ\"である。", correct: true}
+      , {description: "サービスデスクを主な窓口として利用する者は\"顧客\"である。", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "システムの改善に向けて提出された4案について，評価項目を設定して採点した結果を，採点結果表に示す。効果及びリスクについては5段階評価とし，それぞれの評価項目の重要度に応じて，重み付け表に示すとおりの重み付けを行った上で次の式で総合評価点を算出したとき，総合評価点が最も高い改善案はどれか。<br><br>" + 
+    "[総合評価点の算出式]<br>" + 
+    "　総合評価点＝効果の総評価点－リスクの総評価点" + 
+    "<p>採点結果表" + 
+    "<table class='table table-bordered' style='width:60%'>" + 
+    "<tr><td colspan=\"2\"></td><td>案1</td><td>案2</td><td>案3</td><td>案4</td></tr>" + 
+    "<tr><td rowspan=\"3\">効果</td><td>セキュリティ強化</td><td>3</td><td>4</td><td>5</td><td>2</td></tr>" + 
+    "<tr><td>システム運用品質向上</td><td>2</td><td>4</td><td>2</td><td>5</td></tr>" + 
+    "<tr><td>作業コスト削減</td><td>5</td><td>4</td><td>2</td><td>4</td></tr>" + 
+    "<tr><td rowspan=\"3\">リスク</td><td>スケジュールリスク</td><td>2</td><td>4</td><td>1</td><td>5</td></tr>" + 
+    "<tr><td>技術リスク</td><td>4</td><td>1</td><td>5</td><td>1</td></tr>" + 
+    "</table>" + 
+    "<p>重み付け表" + 
+    "<table class='table table-bordered' style='width:60%'>" + 
+    "<tr><td colspan=\"2\">評価項目</td><td>重み</td></tr>" + 
+    "<tr><td rowspan=\"3\">効果</td><td>セキュリティ強化</td><td>4</td></tr>" + 
+    "<tr><td>システム運用品質向上</td><td>2</td></tr>" + 
+    "<tr><td>作業コスト削減</td><td>3</td></tr>" + 
+    "<tr><td rowspan=\"2\">リスク</td><td>スケジュールリスク</td><td>8</td></tr>" + 
+    "<tr><td>技術リスク</td><td>3</td></tr>" + 
+    "</table>"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "案1", correct: false}
+      , {description: "案2", correct: false}
+      , {description: "案3", correct: true}
+      , {description: "案4", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "エージェント機能を利用した運用監視の例はどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "WWWサーバやFTPサーバなどのサーバが正常に稼働しているかどうかを調べるために，実際にそのサービスを利用して確認する。", correct: false}
+      , {description: "監視対象機器内の監視プログラムがリソースの使用状況を監視し，しきい値を超えたら監視サーパに通知する。", correct: true}
+      , {description: "監視対象機器に対して監視サーバから定期的にpingコマンドを発行し，機器の死活を監視する。", correct: false}
+      , {description: "メールサーバ上にウイルス対策ソフトを配置し，PCへのウイルス感染を防ぐ。", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "ITサービスマネジメントのインシデント管理の達成目標はどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "インフラストラクチャの弱点を探り，それらの弱点を取り除くための提案を行ってインシデントを予防する。", correct: false}
+      , {description: "過去のインシデントの根本原因を見つけ，改善や是正に関する提案を行い，インシデントを未然に防ぐ。", correct: false}
+      , {description: "顧客が要求するITサービスを，継続して維持し，改善していくようにする。", correct: false}
+      , {description: "組織やユーザのビジネス活動に対するインパクトを最小限に抑えるために，できるだけ早くSLAで定めた通常のサービスレベルに復帰させる。", correct: true}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "ITILにおけるバーチャルサービスデスクはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "サービスデスク機能を実現するために，専門の業者にアウトソーシングする。", correct: false}
+      , {description: "サービスデスクは各地に存在するが，ユーザからはサービスデスク機能があたかも1か所にあるかのように見える。", correct: true}
+      , {description: "地域ごとにサービスデスクを設置し，各地域のビジネスニーズに対応したサービスデスク機能を提供する。", correct: false}
+      , {description: "複数のユーザサイトに対するサービスデスク機能を1か所に設置したサービスデスクで提供する。", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "ITサービスマネジメントのプロセスの一つである構成管理を導入することによって得られるメリットはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "IT資産の情報を正確に把握することによって，ほかのプロセスの確実な実施を支援できる。", correct: true}
+      , {description: "ITリソースに対する，現在の需要の把握と将来の需要の予測ができる。", correct: false}
+      , {description: "緊急事態時でも最低限のITサービス基盤を提供することによって，事業の継続が可能になる。", correct: false}
+      , {description: "適正なコストで常に一定した品質でのITサービスが提供されるようになる。", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "災害によるITサービス停止が，ビジネスへどれだけの影響を及ぼすかを分析するピジネスインパクト分析は，どのプロセスで実施するか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "ITサービス継続性管理", correct: true}
+      , {description: "インシデント管理", correct: false}
+      , {description: "可用性管理", correct: false}
+      , {description: "問題管理", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "複数のサーパへのアクセスに用いられる，シングルサインオンに関する記述のうち，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "安全性を高めるために，利用者認証には使い捨てパスワード(ワンタイムパスワード)方式の採用が前提になる。", correct: false}
+      , {description: "公開鍵暗号方式を用いるので，認証局への利用者登録が必要となる。", correct: false}
+      , {description: "ディレクトリサービスを用いることで，複数サーバのIDとパスワードを統一して管理できる。", correct: true}
+      , {description: "利用者によるパスワードの管理が容易になり，パスワード漏えい時のリスクが減少する。", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "コンピュータシステムの利用料金を逓減課金方式にしたときのグラフはどれか。ここで，横軸を使用量，縦軸を利用料金とする。<br><br>" + 
+    "<img src = \"js/data/H21_q10.png\"/>"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "ア", correct: false}
+      , {description: "イ", correct: false}
+      , {description: "ウ", correct: true}
+      , {description: "エ", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "様式が複数ある伝票から，様式ごとに定められた項目のデータを入力する。入力漏れがないことを確認するためにプログラムで実行する処理として適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "伝票の様式ごとに定められた項目数と入力された項目数が一致することを確認する。", correct: true}
+      , {description: "伝票の様式に基づいて，入力された項目の値のデータ形式を検査する。", correct: false}
+      , {description: "入力された項目の内容が，伝票で定義された範囲に収まっていることを確認する。", correct: false}
+      , {description: "マスタファイルと突き合わせて，入力された項目の内容が正しいことを確認する。", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "ウォームスタンバイの説明はどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "同じようなシステムを運用する外部の企業や組織と協定を結び，緊急時には互いのシステムを貸し借りして，サービスを回復する。", correct: false}
+      , {description: "緊急時にバックアップシステムを持ち込んでシステムを再開し，サービスを回復する。", correct: false}
+      , {description: "別の場所に常にデータの同期が取れているバックアップシステムを用意し，緊急時にバックアップシステムに切り換えてサービスを回復する。", correct: false}
+      , {description: "別の場所にバックアップシステムを用意し，緊急時にバックアップシステムを起動してデータを最新状態にした後にサービスを回復する。", correct: true}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "ITサービスマネジメントの構築に当たり，現状の業務のやり方とITILなどのベストプラクティスとを照合し，課題を明確にするために実施するものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "ギャップ分析", correct: true}
+      , {description: "サービスレベル管理", correct: false}
+      , {description: "マネジメントレビュー", correct: false}
+      , {description: "リスクアセスメント", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "ITサービスマネジメントにおけるリスクの対応策の具体例のうち，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "リスクを回避するために，設備に保険をかける。", correct: false}
+      , {description: "リスクを軽減するために，指紋認証を採用する。", correct: true}
+      , {description: "リスクを受容するために，新たにバックアップシステムを構築する。", correct: false}
+      , {description: "リスクを転嫁するために，バックアップシステムを遠隔地に移転する。", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "空調設備の送風方式の一つである床下空調方式の特徴として，最も適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "機器の配置に合わせてダクトを設置する。", correct: false}
+      , {description: "送風の流れと暖気の上昇の流れが同じ方向であり，効率よく冷却できる。", correct: true}
+      , {description: "適切にダクトを配置することによって，温度分布を均一化できる。", correct: false}
+      , {description: "取付けが簡単で工事費用が安いので，小型機用によく使われる。", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "雷サージによって通信回線に誘起された異常電圧から通信機器を防護するための装置はどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "IDF(Intermediate Distributing Frame)", correct: false}
+      , {description: "MCCB(Molded Case Circuit Breaker)", correct: false}
+      , {description: "アレスタ", correct: true}
+      , {description: "避雷針", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "\"システム監査基準\"の前文に記述されている基準の利用の目的として，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "システム監査業務の品質を確保し，有効かつ効率的に監査を実施することを目的とした監査人の行為規範である。", correct: true}
+      , {description: "システム監査人が監査上の判断の尺度として用いる基準であって，情報セキュリティ監査基準と一体となって機能する基準である。", correct: false}
+      , {description: "情報システムに保証を付与することを目的とした監査でなく，改善のための助言を行うことを目的とした監査に利用する基準である。", correct: false}
+      , {description: "組織体の外部者に監査を依頼するシステム監査でなく，組織体の内部監査部門などが実施するシステム監査に利用する基準である。", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "プロジェクトの工程管理や進捗管理に使用されるガントチャートの特徴はどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "各作業の開始時点と終了時点が一目で把握できる。", correct: true}
+      , {description: "各作業の前後関係が明確になり，クリティカルパスが把握できる。", correct: false}
+      , {description: "各作業の余裕日数が容易に把握できる。", correct: false}
+      , {description: "各作業を要素に分解することによって，管理がしやすくなる。", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "顧客に対して自社製品のプレゼンテーションを行うことになった。このとき，同業他社における複数の導入成功事例を挙げ，この製品を導入することで大きな効果が期待できることを訴求したい。このプレゼンテーションで使用するストーリ構成法として適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "演繹的構成法", correct: false}
+      , {description: "帰納的構成法", correct: true}
+      , {description: "重点順位構成法", correct: false}
+      , {description: "難易構成法", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "シリアルATAの説明として，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "PCと周辺機器とを結ぶシリアルインタフェースであり，キーボード，マウス，スピーカ，プリンタ， CD-RWドライプなど多岐にわたる周辺機器を接続する。", correct: false}
+      , {description: "PCと周辺機器とを結ぶシリアルインタフェースであり，磁気ディスク装置，DVDドライブなどの高速な周辺機器を接続する。", correct: true}
+      , {description: "PCと通信機器とを結ぶシリアルインタフェースであり，ルータ又はモデムを接続する。", correct: false}
+      , {description: "PCとディジタルAV機器とを結ぶシリアルインタフェースであり，セットトップボックス， DVDプレーヤなどを接続する。", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "1台のCPUの性能を1とするとき，そのCPUをn台用いたマルチプロセッサの性能Pが，<br>" + 
+"P=n/(1+(n-1)a)<br>" + 
+"で表されるとする。ここで，aはオーバヘッドを表す定数である。例えば，a = 0.1，n=4とすると，p≒3なので，4台のCPUからなるマルチプロセッサの性能は約3になる。この式で表されるマルチプロセッサの性能には上限があり，nを幾ら大きくしでもある値以上には大きくならない。a=0.1の場合，その値は幾らか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "5", correct: false}
+      , {description: "10", correct: true}
+      , {description: "15", correct: false}
+      , {description: "20", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "データマイニングを説明したものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "多次元データベースを使ってデータの組合せを変え，データ間の関連性を分析すること", correct: false}
+      , {description: "データとメソッドを一緒にしてオブジェクトの内部構造を利用者に見えなくすること", correct: false}
+      , {description: "データベースをチューニングし，データ更新を高速化すること", correct: false}
+      , {description: "データを，いろいろな視点や切り口から，発見型の手法や統計的手法を使って分析することで，隠れているデータ間の関連性や規則性を見つけ出すこと", correct: true}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "TCP/IPネットワークで使用されるARPの説明として，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "IPアドレスからMACアドレスを得るためのプロトコル", correct: true}
+      , {description: "IPアドレスからホスト名(ドメイン名)を得るためのプロトコル", correct: false}
+      , {description: "MACアドレスからIPアドレスを得るためのプロトコル", correct: false}
+      , {description: "ホスト名(ドメイン名)からIPアドレスを得るためのプロトコル", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "緊急事態を装って組織内部の人間からパスワードや機密情報を入手する不正な行為は，どれに分類されるか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "ソーシャルエンジニアリング", correct: true}
+      , {description: "トロイの木馬", correct: false}
+      , {description: "パスワードクラック", correct: false}
+      , {description: "踏み台攻撃", correct: false}
     ]
     , category: 'SM-H21-AUTUMN'
   }
   , {
-    description: ""
+    description: "労働者派遣法に適合するものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "派遣契約の内容にかかわらず合理的な理由がある場合には，派遣先の作業指示者の判断で派遣労働者に残業を命じることができる。", correct: false}
+      , {description: "派遣先の事業所に属する従業員はだれでも，派遣労働者に業務命令を行うことができる。", correct: false}
+      , {description: "労働者派遣法で認められた業務であれば，派遣先の判断で派遣労働者の業務内容を変更できる。", correct: false}
+      , {description: "労働者派遣法で認められた特殊な技能を要する業務であれば，同一人の派遣を3年を超えて行うことができる。", correct: true}
     ]
     , category: 'SM-H21-AUTUMN'
   }
