@@ -642,8 +642,8 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "ウォームスタート", correct: false}
-      , {description: "ロールバック", correct: true}
-      , {description: "コールドスタート", correct: false}
+      , {description: "コールドスタート", correct: true}
+      , {description: "ロールバック", correct: false}
       , {description: "ロールフォワード", correct: false}
     ]
     , category: 'SM-H24-AUTUMN'
@@ -1148,5 +1148,558 @@ questions.add([
       , {description: "発注者の業務上の要請を受託者側の責任者が窓口となって受け付ける。", correct: false}
     ]
     , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "JIS Q 20000-1において，供給者管理に求められるものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "供給者管理における変更は，変更管理プロセスではなく，供給者管理プロセスに従う。", correct: false}
+      , {description: "供給者は，供給者管理プロセスへの適合を実証する。", correct: false}
+      , {description: "サービス提供者は，供給者管理プロセスを文書化する。", correct: true}
+      , {description: "重要な契約についてのレビューを少なくとも3年に1回実施する。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "コンピュータルームにおけるオペレータの行動のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "オペレーションミスによる障害が発生したので，ジョプを再実行した。この結果，予定時間内に作業が完了したので，正常処理として取り扱った。", correct: false}
+      , {description: "ジョブの異常終了の原因が，システムリソースの不足にあることが分かったので，運用マニュアルに記載された回復処理手順に従ってジョブを再処理した。", correct: true}
+      , {description: "ジョブの実行に必要なデータファイルの記録媒体が準備されておらず，保管庫の管理者が不在だったので，自分自身で保管庫から探し出して，ジョブを実行した。", correct: false}
+      , {description: "プログラムの開発者から直接，緊急のジョブを実行するように依頼があったので，この依頼を自分の判断で受け入れて，緊急のジョブを処理した。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "JIS Q 20000規格群の関係プロセスの規定における，供給者，サービス提供者及び顧客の3者の関係のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "供給者，サービス提供者及び顧客は，それぞれ別々の組織(外部)に所属する。", correct: false}
+      , {description: "供給者のサービスも含めて，サービス提供者が責任をもって，顧客にサービスを提供する。", correct: true}
+      , {description: "供給者は，サービス提供者を顧客とみなしてサービスを提供することはない。", correct: false}
+      , {description: "供給者はサービス提供者からサービスや製品を受領して，顧客に提供する。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "ITサービスマネジメントにおけるSLAの対象項目として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "移植性", correct: false}
+      , {description: "開発生産性", correct: false}
+      , {description: "信頼性", correct: true}
+      , {description: "妥当性", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "ITサービスマネジメントにおける問題管理プロセスとして，実施するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "システムダウンから暫定的に復旧させ，業務を継続できるようにする。", correct: false}
+      , {description: "システムダウンに備えて，復旧のための設計をする。", correct: false}
+      , {description: "システムダウンの根本原因を究明し，抜本的な対応策を策定する。", correct: true}
+      , {description: "システムダウンの発生を記録し，関係する部署に状況を連絡する。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "JIS Q 20000規格群におけるインシデント管理プロセスと問題管理プロセスの関係はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "インシデント管理プロセスでは，インシデント解決の進捗状況を問題管理プロセスに伝えなければならない。", correct: false}
+      , {description: "インシデント管理プロセスでは，インシデントの根本原因を調査して，その結果を問題管理プロセスに伝えなければならない。", correct: false}
+      , {description: "問題管理プロセスでは，既知の誤り及び是正された問題に関する最新情報を，インシデント管理プロセスが利用できるようにしなければならない。", correct: true}
+      , {description: "問題管理プロセスでは，問題の根本原因を正すために要求される変更を，インシデント管理プロセスに伝えなければならない。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "システム障害が発生したときにシステムを初期状態に戻して再開する方法で，イニシャルプログラムロードとも呼ばれるものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ウォームスタート", correct: false}
+      , {description: "コールドスタート", correct: true}
+      , {description: "ロールバック", correct: false}
+      , {description: "ロールフォワード", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "レプリケーションが有効な対策となるものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "悪意によるデータの改ざんを防ぐ。", correct: false}
+      , {description: "コンピュータウイルスによるデータの破壊を防ぐ。", correct: false}
+      , {description: "災害発生時にシステムが長時間停止するのを防ぐ。", correct: true}
+      , {description: "操作ミスによるデータの削除を防ぐ。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "ITILv3における変更諮問委員会(CAB)の役割の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "変更されたリリースパッケージの導入に対する最終承認を行う。", correct: false}
+      , {description: "変更に対する切り戻し計画とテスト計画の作成を行う。", correct: false}
+      , {description: "変更の許可を支援し，変更の評価と優先度付けにおいて変更管理を援助する。", correct: true}
+      , {description: "変更要求の受領及び登録を行い，非現実的な要求は却下する。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "システムを毎日8:00から24:00まで稼働させるために，要員を図の3種類の勤務時問で1名ずつ配置している。このシステムを，年間365日稼働させるために必要となる要員の総数は，最少で何人か。ここで，年間の休日は120 日，年次有給休暇日数は20 日とする。また，休暇や病欠などで要員の確保が不可能にならないように調整できるものとする。<br><br>" + 
+    "<img src = \"js/data/H22_q10.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "3", correct: false}
+      , {description: "4", correct: false}
+      , {description: "5", correct: true}
+      , {description: "6", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "ITILにおけるサービスレベル管理の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ITサービスを供給するために使用されるIT資産と資源を財務的に管理するプロセスである。", correct: false}
+      , {description: "顧客と提供者の合意事項が達成できるようにITサービスの品質を維持し，改善するプロセスである。", correct: true}
+      , {description: "サービスの品質を阻害する事象に対して，迅速に元のサービスレベルまで回復させるプロセスである。", correct: false}
+      , {description: "必須となるITインフラとサービス設備が，合意した期限内に回復できるようにするプロセスである。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "\"ITサービスが必要とされたときに合意済の機能を実行する能力\"について，様々な側面を定義，分析，計画立案，測定，改善することを責務とするITILのプロセスはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ITサービス継続性管理", correct: false}
+      , {description: "インシデント管理", correct: false}
+      , {description: "可用性管理", correct: true}
+      , {description: "問題管理", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "ITILv3におけるサービストランジションの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "規定された要件と制約に沿って，サービスを運用に移行し，確実に稼働させることである。", correct: true}
+      , {description: "サービスの効率，有効性，費用対効果の観点で運用状況を継続的に測定し，改善していくととである。", correct: false}
+      , {description: "サービスの内容を具体的に決めることである。", correct: false}
+      , {description: "戦略的資産として，どのようにサービスマネジメントを設計，開発，導入するかについての手引を提供することである。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "ソフトウェア開発・保守の工程において，リポジトリを構築する理由はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "各工程で検出した不良を管理することが可能になり，ソフトウェアの品質分析が容易になる。", correct: false}
+      , {description: "各工程での作業手順を定義することが容易になり，開発・保守時の作業ミスを防止することができる。", correct: false}
+      , {description: "各工程での作業予定と実績を関連付けて管理することが可能になり，作業の進捗管理が容易になる。", correct: false}
+      , {description: "各工程での成果物を一元管理することによって，開発・保守作業の効率が良くなり，用語の統ーもできる。", correct: true}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "システム運用にかかわる費用を，利用部門に公平に賦課するための制度はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "委託計算", correct: false}
+      , {description: "外部委託", correct: false}
+      , {description: "課金", correct: true}
+      , {description: "標準原価", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "ミッションクリテイカルシステムの意味として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "OSなどのように，業務システムを稼働させる上で必要不可欠なシステム", correct: false}
+      , {description: "システム運用条件が，性能の限界に近い状態の下で稼働するシステム", correct: false}
+      , {description: "障害が起きると，企業活動に重大な影響を及ぼすシステム", correct: true}
+      , {description: "先行して試験導入され，成功すると本格的に導入されるシステム", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "請負契約でシステム開発を委託している案件について，委託元のシステム監査人の指摘事項に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "委託した開発案件の品質を委託元の管理者が定期的にモニタリングしている。", correct: false}
+      , {description: "委託元の管理者が委託先の開発担当者を指揮命令している。", correct: true}
+      , {description: "契約書に機密保持のための必要事項が盛り込まれている。", correct: false}
+      , {description: "特定の委託先との契約が長期化しているので，その妥当性を確認している。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "EVM (Earned Value Management) は，プロジェクトのスケジュールの遅れやコストの超過を可視化できる進捗管理手法である。図中のAが示すものはどれか。<br><br>" + 
+    "<img src = \"js/data/H22_q18.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "実質的な削減金額", correct: false}
+      , {description: "実質的な超過金額", correct: false}
+      , {description: "進捗の遅延日数", correct: false}
+      , {description: "進捗の遅れを金額で表した値", correct: true}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "プロジェクトのリスクマネジメントにおけるリスク対応策のうち，リスクの受容策はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "開発人員を追加投入する。", correct: false}
+      , {description: "開発を他社に委託する。", correct: false}
+      , {description: "スコープを縮小する。", correct: false}
+      , {description: "リスク発生に備えてコンティンジェンシー予備を設ける。", correct: true}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "RAID3の組合せとして，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ストライピングの単位=ビット、冗長化=ハミングコード、冗長ディスク構成=固定", correct: false}
+      , {description: "ストライピングの単位=ビット、冗長化=パリティ、冗長ディスク構成=固定", correct: true}
+      , {description: "ストライピングの単位=ブロック、冗長化=パリティ、冗長ディスク構成=固定", correct: false}
+      , {description: "ストライピングの単位=ブロック、冗長化=パリティ、冗長ディスク構成=分散", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "Webシステムにおいてロードパランサ(負荷分散装置)が定期的に行っているアプリケーションレベルの稼働監視に関する記述として，最も適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "WebサーバでOSのコマンドを実行し，その結果が正常かどうかを確認する。", correct: false}
+      , {description: "Webサーバの特定のURLにアクセスし，その結果に含まれる文字列が想定値と一致するかどうかを確認する。", correct: true}
+      , {description: "Webサーバの特定のポートに対して接続要求パケットを発行し，確認、応答パケットが返ってくるかどうかを確認する。", correct: false}
+      , {description: "ネットワークの疎通を確認するコマンドを実行し， Webサーバから応答が返ってくるかどうかを確認する。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "商品の販売状況分析を商品軸，販売チャネル軸，時間軸，顧客タイプ軸で行う。データ集計の観点を，商品，販売チャネルごとから，商品，顧客タイプごとに切り替える操作はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ダイス", correct: true}
+      , {description: "データクレンジング", correct: false}
+      , {description: "ドリルダウン", correct: false}
+      , {description: "ロールアップ", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "図は，組織内のTCP/lPネットワークにあるクライアントが，プロキシサーバ，ルータ，インターネットを経由して組織外のWebサーバを利用するときの経路を示している。この通信のTCPコネクションが設定される場所はどれか。<br/>" + 
+    "<img src = \"js/data/H26_q22.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "クライアントとWebサーバの間，クライアントとプロキシサーバの間", correct: false}
+      , {description: "クライアントとプロキシサーバの問，プロキシサーバとWebサーバの間", correct: true}
+      , {description: "クライアントとプロキシサーバの間，プロキシサーバとルータの間，ルータとWebサーバの問", correct: false}
+      , {description: "クライアントとルータの問，ルータとWebサーバの間", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "暗号方式に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "AESは公開鍵暗号方式， RSAは共通鍵暗号方式の一種である。", correct: false}
+      , {description: "共通鍵暗号方式では，暗号化及び復号に使用する鍵が同一である。", correct: true}
+      , {description: "公開鍵暗号方式を通信内容の秘匿に使用する場合は，暗号化鍵を秘密にして，復号鍵を公開する。", correct: false}
+      , {description: "ディジタル署名に公開鍵暗号方式が使用されることはなく，共通鍵暗号方式が使用される。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: "製造業者の責任に関して，製造物責任法(PL法)に定められているものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "顧客の財産に関する損害については，製造業者は製造物を顧客に引き渡した時から永久に損害賠償責任を負う。", correct: false}
+      , {description: "製造物の欠陥原因が部品メーカの製造した部品であった場合，完成品メーカの設計どおりに製造し納品した部品であっても，部品メーカに損害賠償責任がある。", correct: false}
+      , {description: "製造物を顧客に引き渡した時における科学又は技術水準では発見できない内容の欠陥であれば，その製造業者の損害賠償責任は問われない。", correct: true}
+      , {description: "製造物を輸入して販売している販売業者は，製造業者ではないので，その製造物によって顧客が財産上の損害を被っても，損害賠償責任は問われない。", correct: false}
+    ]
+    , category: 'SM-H22-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'SM-H21-AUTUMN'
   }
 ]);
