@@ -808,7 +808,7 @@ questions.add([
     , category: 'SM-H24-AUTUMN'
   }
   , {
-    description: "主記憶アクセスの高速化技術であるライトパック方式における，キャッシュメモリ及び主記憶への書込みの説明として，適切なものはどれか。"
+    description: "主記憶アクセスの高速化技術であるライトバック方式における，キャッシュメモリ及び主記憶への書込みの説明として，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
       {description: "キャッシュメモリ及び主記憶の両方に同時に書き込む。", correct: false}
