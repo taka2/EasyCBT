@@ -873,4 +873,280 @@ questions.add([
     ]
     , category: 'SM-H24-AUTUMN'
   }
+  , {
+    description: "重要性や需要変動，在庫コストの観点から商品単位に定量発注法，定期発注法，2ビン発注法のいずれの方法にするかを決定したい。発注方式を決定するために用いる手法として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ABC分析", correct: true}
+      , {description: "管理図", correct: false}
+      , {description: "クリテイカルパスメソッド", correct: false}
+      , {description: "線形計画法", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "ITサービスマネジメントにおけるプロセスで，サービスライフサイクルのサービスストラテジに含まれる戦略レベルのプロセスの組みはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "インシデント管理，問題管理", correct: false}
+      , {description: "サービス資産管理，構成管理", correct: false}
+      , {description: "サービスポートフォリオ管理，財務管理", correct: true}
+      , {description: "サービスレベル管理，キャパシティ管理", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "コンピュータシステムにおけるジョブスケジューリングの特徴のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "CPUに割り当てるジョブをOSが強制的に切り替えるタイムスライス方式では，タイマ割込みが多発するので，スループットが低下する。", correct: false}
+      , {description: "FCFS (first-come first-served)方式のジョブスケジューリングは，ジョブ間にCPUを公平に割り当てるので，スループットや応答時間の保証が可能となる。", correct: false}
+      , {description: "対話型処理とバッチ処理が混在するシステムでは，対話型処理の優先度を高くすることによって，対話型処理の応答性能の向上が期待できる。", correct: true}
+      , {description: "入出力を多用するジョブよりもCPUを多用するジョブの処理優先度を上げた方が，CPUの待ち時間が少なくなるので，全体のスループットの向上が期待できる。", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "情報システムの設計において，フェールソフトが講じられているのはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "UPS装置を設置することで，停電時に手順どおりにシステムを停止できるようにし，データを保全する。", correct: false}
+      , {description: "制御プログラムの障害時に，システムの暴走を避け，安全に運転を停止できるようにする。", correct: false}
+      , {description: "ハードウェアの障害時に，パフォーマンスは低下するが，構成を縮小して運転を続けられるようにする。", correct: true}
+      , {description: "利用者の誤操作や誤入力を未然に防ぐことで，システムの誤動作を防止できるようにする。", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "RAIDにおいて，信頼性向上ではなく，性能向上だけを目的としたものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "RAID0", correct: true}
+      , {description: "RAID1", correct: false}
+      , {description: "RAID3", correct: false}
+      , {description: "RAID5", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "ITサービスマネジメントにおいて，リリース管理からインシデント管理に伝達することが望ましいとされている情報はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "リリースが許可された証拠", correct: false}
+      , {description: "リリースするものに含まれている既知の誤り", correct: true}
+      , {description: "リリースに関連しないインシデント", correct: false}
+      , {description: "リリースまでに要したコスト", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "システムが障害によって停止したときに行う，システム再開の方法の一つであるウォームスタートの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "システムの再立上げの過程で，システム停止時に処理中であったジョブのうち，処理の続行が可能なものは処理を再開させ，入出力キューに残っているものは，そのまま処理の対象とする。", correct: true}
+      , {description: "システムの初期化のために，イニシャルプログラムローダによってコンフィギュレーション情報を主記憶装置上に展開する。", correct: false}
+      , {description: "システムの停止で処理が中断したジョブについて，それまでに採取されたチェックポイント情報によって回復作業を実施する。", correct: false}
+      , {description: "ジャーナルファイルに記録されているデータを使用して，ファイルを障害発生以前の状態に戻す。", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "ITILのキャパシティ管理において，監視項目となるものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "インシデント発生件数", correct: false}
+      , {description: "オペレータ要員数", correct: false}
+      , {description: "ディスク使用率", correct: true}
+      , {description: "平均故障間隔", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "ITILにおいて，サービスレベル管理プロセスの活動とされているものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ITサービスの提供に必要な予算に対して，適切な資金を確保する。", correct: false}
+      , {description: "現在のリソースのチューニングと最適化，及び将来のリソース要件に関する予測を記載した計画を作成する。", correct: false}
+      , {description: "災害や障害などで事業が中断しでも，要求されたサービス機能を合意された期間内に確実に復旧できるように，ビジネスインパクトの評価や復旧優先順位を明確にする。", correct: false}
+      , {description: "提供するITサービスとその目標値などについて， ITサービスプロパイダが顧客との間で合意書を交わす。", correct: true}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "JIS Q 20000規格群におけるサービス継続及び可用性の管理プロセスで行う活動はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "インシデント及び問題の影響を識別し，最小限に抑える，又は回避するための手順を採用する。", correct: false}
+      , {description: "サービス中止の許容可能な最長継続時間などの要求事項を，事業計画，SLA及びリスクアセスメントに基づいて特定する。", correct: true}
+      , {description: "サービスの容量・能力を監視し，サービスのパフォーマンスを調整して，かつ，適切な容量・能力を提供するための方法，手順及び技法を明確にする。", correct: false}
+      , {description: "提供する個々のサービスを定義し，合意して，かつ，文書化する。", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "システム運用管理における管理情報の取扱いに関する記述のうち，最も適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "管理は少人数の管理者グループで行う。管理用アカウントは，グループ専用のものを共用する。管理情報は，一般利用者に公開し，利用者自身がチェックできるようにする。", correct: false}
+      , {description: "管理は少人数の管理者グループで行う。管理用アカウントは，グループ専用のものを共用する。管理情報は，セキュリティレベルなどを考慮した上で一般利用者への公開を行う。", correct: false}
+      , {description: "管理は少人数の管理者グループで行う。管理用アカウントは，個々の管理者専用のものを使用する。管理情報は，セキュリティレベルなどを考慮した上で一般利用者への公開を行う。", correct: true}
+      , {description: "管理は一人の管理者で行う。管理情報は，セキュリティレベルなどを考慮した上で一般利用者への公開を行う。", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "様式が複数ある伝票から，様式ごとに定められた項目のデータを入力する。項目の入力漏れを検出するためにプログラムで実行する処理として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "伝票の様式ごとに定められた項目数と入力された項目数が一致することを確認する。", correct: true}
+      , {description: "伝票の様式に基づいて，入力された項目の値のデータ形式を検査する。", correct: false}
+      , {description: "入力された項目の内容が，伝票で定義された範囲に収まっていることを確認する。", correct: false}
+      , {description: "マスタファイルと突き合わせて，入力された項目の内容が正しいことを確認する。", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "雷サージによって通信回線に誘起された異常電圧から通信機器を防護するための装置はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "IDF(Intermediate Distributing Frame)", correct: false}
+      , {description: "MCCB(Molded Case Circuit Breaker)", correct: false}
+      , {description: "アレスタ", correct: true}
+      , {description: "避雷針", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "システム監査人の外観上の独立性に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査報告書における指摘事項の多寡によって報酬が決まるような契約が望ましい。", correct: false}
+      , {description: "公正かつ客観的な監査判断を行うための精神上の独立性が保たれることによって保証される。", correct: false}
+      , {description: "組織的な独立の他，過去の自己の業務に対する監査とならないか，被監査部門の長が監査人の元上司でないか，なども考慮する必要がある。", correct: true}
+      , {description: "第三者がうかがい知ることの困難な精神上の独立性とは異なり，内部監査では必要ないが，外部監査では厳密に要求される。", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "システム開発委託先(受託者)から委託元(委託者)に納品される成果物に対する受入れテストの適切性を確かめるシステム監査の要点はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "委託者が作成した受入れテスト計画書に従って，受託者が成果物に対して受入れテストを実施していること", correct: false}
+      , {description: "受託者が成果物と一緒に受入れテスト計画書を納品していること", correct: false}
+      , {description: "受託者から納品された成果物に対して，委託者が受入れテストを実施していること", correct: true}
+      , {description: "受託者から納品された成果物に対して，監査人が受入れテスト計画を策定していること", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "プロジェクトのスケジュールを管理するときに使用する\"クリテイカルチェーン法\"の特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "クリテイカルパス上の作業に生産性を向上させるための開発ツールを導入する。", correct: false}
+      , {description: "クリテイカルパス上の作業に要員を追加投入する。", correct: false}
+      , {description: "クリテイカルパス上の先行作業が終了する前に後続作業に着手し，並行して実施する。", correct: false}
+      , {description: "クリテイカルパスを守るために，フィーディングバッファと所要期間バッファを設ける。", correct: true}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "プロジェクトの進捗管理をEVM(Earned Value Management) で行っている。コストが超過せず，納期にも遅れないと予想されるプロジェクトはどれか。ここで，それぞれのプロジェクトの開発の生産性は現在までと変わらないものとする。<br/>" + 
+    "<img src = \"js/data/H26_q16.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "ア", correct: false}
+      , {description: "イ", correct: false}
+      , {description: "ウ", correct: true}
+      , {description: "エ", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "定性的リスク分析の活動として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "検討対象以外の全ての不確実な要素をベースライン値に固定した状態で，プロジェクトの個々の不確定要素が，検討対象の目標に与える影響の度合いを調べる。", correct: false}
+      , {description: "デシジョンツリー図を使用して，選択肢に対する期待金額価値(EMV)を比較する。", correct: false}
+      , {description: "リスクに関するインタビューを通じて，各WBS要素に対する三点見積りをする。", correct: false}
+      , {description: "リスクの発生確率と影響度を評価して，識別したリスクに等級付けをする。", correct: true}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "MPUの高速化技術の一つであるスーパスカラの特徴として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "同時に実行可能な複数の動作をまとめて一つの命令として実行する。", correct: false}
+      , {description: "独立した複数の命令ストリームを用意し，これらの実行を適宜切り換えながら行う。", correct: false}
+      , {description: "パイプラインの深さを増すとともに，パイプラインピッチを短くして，平均命令実行時間を短縮する。", correct: false}
+      , {description: "パイプラインを複数用意し，同時に複数の命令を実行する。", correct: true}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "ECCメモリで，2ビットの誤りを検出し，1ビットの誤りを訂正するために用いるものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "偶数パリティ", correct: false}
+      , {description: "垂直パリティ", correct: false}
+      , {description: "チェックサム", correct: false}
+      , {description: "ハミング符号", correct: true}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "信頼性設計におけるフォールバックを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "サーバに障害が発生した場合，あらかじめ確保しておいた予備のサイトに必要な機器や媒体を持ち込み，サーバを復元して業務を再開する。", correct: false}
+      , {description: "サーバに障害が発生した場合，他のサーバに処理を一旦引き継ぎ，障害が回復した後に元のサーバに処理を戻す。", correct: false}
+      , {description: "人間の操作ミスやシステムの故障の際，その結果が人間などに危害や損害を与えることがないようにする。", correct: false}
+      , {description: "不具合が起きた場合，不具合の箇所を含む分割可能な部分を切り離して，残りの部分で処理を続行する。", correct: true}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "次数がnの関係Rには，属性なし(φ)も含めて異なる射影は幾つあるか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "n", correct: false}
+      , {description: "2n", correct: false}
+      , {description: "n^2", correct: false}
+      , {description: "2^n", correct: true}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "TCP，UDPのポート番号を識別し，プライベートIPアドレスとグローバルIPアドレスとの対応関係を管理することによって，プライベートIPアドレスを使用するLAN上の複数の端末が，一つのグローバルIPアドレスを共有してインターネットにアクセスする仕組みはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "IPスプーフィング", correct: false}
+      , {description: "IPマルチキャスト", correct: false}
+      , {description: "NAPT", correct: true}
+      , {description: "NTP3", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "ステガノグラフィの機能はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "画像データなどにメッセージを埋め込み，メッセージの存在そのものを隠す。", correct: true}
+      , {description: "メッセージの改ざんやなりすましの検出，及び否認の防止を行う。", correct: false}
+      , {description: "メッセージの認証を行って改ざんの有無を検査する。", correct: false}
+      , {description: "メッセージを決まった手順で変換し，通信途中での盗聴を防ぐ。", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
+  , {
+    description: "請負契約を締結していても，労働者派遣とみなされる受託者の行為はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "休暇取得のルールを発注者側の指示に従って取り決める。", correct: true}
+      , {description: "業務の遂行に関する指導や評価を自ら実施する。", correct: false}
+      , {description: "勤務に関する規律や職場秩序の保持を実施する。", correct: false}
+      , {description: "発注者の業務上の要請を受託者側の責任者が窓口となって受け付ける。", correct: false}
+    ]
+    , category: 'SM-H23-AUTUMN'
+  }
 ]);
