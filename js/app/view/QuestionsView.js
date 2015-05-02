@@ -75,7 +75,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
           // 選択なしの場合は不正解とする
           correct = false;
         }
-        var correctAnswers = getCorrectAnswers(question);
+        var correctAnswers = question.getCorrectAnswers();
         if(answers.length != correctAnswers.length) {
           // 回答数と正解数があわない場合は不正解とする
           correct = false;
@@ -91,7 +91,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
           correct = answer.correct;
           answers.push(answer);
         }
-        var correctAnswers = getCorrectAnswers(question);
+        var correctAnswers = question.getCorrectAnswers();
       }
 
       // questionオブジェクトに正否、回答、解答をセット

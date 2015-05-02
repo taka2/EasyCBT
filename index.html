@@ -17,6 +17,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="index.html">試験一覧</a></li>
           <li class="active"><a href="index.html#results">成績一覧</a></li>
+          <li class="active"><a href="index.html#review">誤答の復習</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -135,6 +136,27 @@
   </p>
 </script>
 
+<!-- 復習ページ用テンプレート -->
+<script type="text/html" id="display_review_template">
+  <h2>復習</h2>
+
+  <table class="table table-striped">
+    <tr>
+      <th>問題</th>
+      <th>正解</th>
+      <th>誤答回数</th>
+    </tr>
+  <% for(var i=0; i<questions.length; i++) { %>
+  <%   var result = questions.at(i); %>
+    <tr>
+      <td><%= result.get('description') %></td>
+      <td><%= result.getCorrectAnswerDescription() %></td>
+      <td><%= result.get('count') %></td>
+    </tr>
+  <% } %>
+  </table>
+</script>
+
 <script src="js/external/jquery-1.11.2.js"></script>
 <script src="js/external/underscore.js"></script>
 <script src="js/external/backbone.js"></script>
@@ -155,6 +177,7 @@
 <script src="js/app/view/QuestionsView.js"></script>
 <script src="js/app/view/ResultView.js"></script>
 <script src="js/app/view/DisplayResultsView.js"></script>
+<script src="js/app/view/DisplayReviewView.js"></script>
 <!-- ルーター -->
 <script src="js/app/router/MyRouter.js"></script>
 <!-- ユーティリティ -->

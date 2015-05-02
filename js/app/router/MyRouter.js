@@ -6,6 +6,7 @@ easycbt.router.MyRouter = Backbone.Router.extend({
     '': 'showExaminations'
     , 'questions/:examination_id': 'showQuestions'
     , 'results': 'showResults'
+    , 'review': 'showReview'
     , '*default': 'showExaminations'
   },
 
@@ -35,5 +36,11 @@ easycbt.router.MyRouter = Backbone.Router.extend({
     var displayResultsView = new easycbt.view.DisplayResultsView({
     });
     displayResultsView.render();
+  }, 
+
+  showReview: function() {
+    var displayReviewView = new easycbt.view.DisplayReviewView({
+    });
+    displayReviewView.render();
   }, 
 });

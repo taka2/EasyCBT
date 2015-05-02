@@ -4,19 +4,6 @@ function extractNumber(answersString) {
   return Number(result[1]);
 }
 
-// question配列から正解オブジェクトを取り出す
-function getCorrectAnswers(question) {
-  var result = [];
-  for(var i=0; i<question.get('answers').length; i++) {
-    var answer = question.get('answers')[i];
-    if(answer.correct) {
-      result.push(answer);
-    }
-  }
-
-  return result;
-}
-
 // answers配列のdescriptionを改行でつないだ文字列を返す
 function concatAnswersDescription(answers) {
   if(answers.length == 1) {
