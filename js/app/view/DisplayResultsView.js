@@ -21,7 +21,7 @@ easycbt.view.DisplayResultsView = Backbone.View.extend({
     self.$el.html(output);
     return self;
   },
-  // 成績クリアボタンイベントハンドラ
+  // 謌千ｸｾ繧ｯ繝ｪ繧｢繝懊ち繝ｳ繧､繝吶Φ繝医ワ繝ｳ繝峨Λ
   btnClearResults: function() {
     var self = this;
 
