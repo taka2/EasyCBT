@@ -8,7 +8,7 @@ easycbt.collection.Questions = Backbone.Collection.extend({
     return new easycbt.collection.Questions(
       JSON.parse(JSON.stringify(this))
     );
-  }, 
+  },
   filterCategories: function(categories) {
     var self = this;
     var result = [];

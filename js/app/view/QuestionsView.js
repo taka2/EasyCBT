@@ -14,7 +14,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
   render: function() {
     var self = this;
 
-    // 問題をシャッフルして、指定数だけ取り出す
+    // 問題をシャッフルして、指定カテゴリで絞り、指定数だけ取り出す
     var copiedQuestions = questions.deepCopy();
     copiedQuestions.reset(copiedQuestions.shuffle(), {silent:true});
     copiedQuestions.reset(copiedQuestions.filterCategories(self.examination.get('categories')));
