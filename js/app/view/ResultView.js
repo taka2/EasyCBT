@@ -15,8 +15,8 @@ easycbt.view.ResultView = Backbone.View.extend({
     var self = this;
 
     var output = self.template({
-      'examinationName': self.examination.get('examinationName')
-      , 'questionCount': self.examination.get('questionCount')
+      'examinationName': self.examination.getExaminationName()
+      , 'questionCount': self.examination.getQuestionCount()
       , 'questions2': self.questions2
       , 'correctAnswersCount': self.correctAnswersCount
       , 'percentageOfCorrectAnswers': self.percentageOfCorrectAnswers

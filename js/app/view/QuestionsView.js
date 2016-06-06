@@ -17,8 +17,8 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     // 問題をシャッフルして、指定カテゴリで絞り、指定数だけ取り出す
     var copiedQuestions = questions.deepCopy();
     copiedQuestions.reset(copiedQuestions.shuffle(), {silent:true});
-    copiedQuestions.reset(copiedQuestions.filterCategories(self.examination.get('categories')));
-    copiedQuestions.reset(copiedQuestions.first(self.examination.get('questionCount')));
+    copiedQuestions.reset(copiedQuestions.filterCategories(self.examination.getCategories()));
+    copiedQuestions.reset(copiedQuestions.first(self.examination.getQuestionCount()));
 
     // 選択肢もシャッフル
     for(var i=0; i<copiedQuestions.length; i++) {
@@ -27,7 +27,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     }
 
     var output = self.template({
-      'examinationName': self.examination.get('examinationName')
+      'examination': self.examination
       , 'questions': copiedQuestions
     });
 
@@ -41,7 +41,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     // 答え合わせ
     var correctAnswersCount = 0;
     var copiedQuestions = new easycbt.collection.Questions();
-    for(var k=0; k<self.examination.get('questionCount'); k++) {
+    for(var k=0; k<self.examination.getQuestionCount(); k++) {
       // "answers(k+1)["で始まる要素を取得
       var elem = $("input[name ^= 'answers" + (k+1) + "\[']");
 
@@ -93,7 +93,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
       }
       copiedQuestions.push(question);
     }
-    var percentageOfCorrectAnswers = calcPercentageOfCorrectAnswers(self.examination.get('questionCount'), correctAnswersCount);
+    var percentageOfCorrectAnswers = calcPercentageOfCorrectAnswers(self.examination.getQuestionCount(), correctAnswersCount);
 
     // 成績を保存
     var results = new easycbt.collection.Results();

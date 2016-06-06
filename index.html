@@ -39,8 +39,8 @@
     <% for(var i=0; i<examinations.length; i++) { %>
       <tr>
         <td><%= (i+1) %></td>
-        <td><a href = "index.html#questions/<%= i %>"><%= examinations.at(i).get('examinationName') %></a></td>
-        <td><%= examinations.at(i).get('questionCount') %></td>
+        <td><a href = "index.html#questions/<%= i %>"><%= examinations.at(i).getExaminationName() %></a></td>
+        <td><%= examinations.at(i).getQuestionCount() %></td>
       </tr>
     <% } %>
   </table>
@@ -48,7 +48,7 @@
 
 <!-- 問題ページ用テンプレート -->
 <script type="text/html" id="questions_template">
-  <h2><%=examinationName%></h2>
+  <h2><%= examination.getExaminationName() %></h2>
 
   <form name="form1">
     <table class="table table-striped questions">
