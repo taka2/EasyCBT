@@ -57,12 +57,12 @@
           Q<%=(i+1)%>. <%=questions.at(i).get('description')%>
           <ul class="answers">
 
-          <% for(var j=0; j<questions.at(i).get('answers').length; j++) { %>
+          <% for(var j=0; j<questions.at(i).getChoices().length; j++) { %>
             <li>
             <% if(questions.at(i).get('multiple_answer')) { %>
-              <input type="checkbox" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
+              <input type="checkbox" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).getChoices()[j].index%>"> <%=questions.at(i).getChoices()[j].description%>
             <% } else { %>
-              <input type="radio" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).get('answers')[j].index%>"> <%=questions.at(i).get('answers')[j].description%>
+              <input type="radio" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).getChoices()[j].index%>"> <%=questions.at(i).getChoices()[j].description%>
             <% } %>
             </li>
           <% } %>

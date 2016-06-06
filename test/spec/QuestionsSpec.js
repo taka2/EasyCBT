@@ -39,6 +39,28 @@ describe("Questions", function() {
     expect(actual2).toEqual("intの最大値はどれか");
   });
 
+  it("getCchoices", function() {
+    var actual1 = questions.at(0).getChoices();
+    expect(actual1.length).toEqual(4);
+    expect(actual1[0].description).toEqual("ArrayList a = new ArrayList();");
+    expect(actual1[1].description).toEqual("List a = new ArrayList();");
+    expect(actual1[2].description).toEqual("List a = new List();");
+    expect(actual1[3].description).toEqual("ArrayList a = new List();");
+  });
+
+  it("setChoices", function() {
+    var expectedChoices = [
+        {description: "List a = new ArrayList();", correct: true}
+        , {description: "ArrayList a = new ArrayList();", correct: true}
+        , {description: "List a = new List();", correct: false}
+    ];
+
+    var question1 = questions.at(0).setChoices(expectedChoices);
+    var actual1 = question1.getChoices();
+    expect(actual1.length).toEqual(3);
+    expect(actual1).toEqual(expectedChoices);
+  });
+
   it("getCorrectAnswers", function() {
     var actual1 = questions.at(0).getCorrectAnswers();
     var actual2 = questions.at(1).getCorrectAnswers();

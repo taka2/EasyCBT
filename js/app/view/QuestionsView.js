@@ -18,9 +18,9 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     for(var i=0; i<questions.length; i++) {
       var question = questions.at(i);
       question.set({index: i});
-      var answers = question.get('answers');
-      for(var j=0; j<answers.length; j++) {
-        answers[j].index = j;
+      var choices = question.getChoices();
+      for(var j=0; j<choices.length; j++) {
+        choices[j].index = j;
       }
     }
 
@@ -32,8 +32,8 @@ easycbt.view.QuestionsView = Backbone.View.extend({
 
     // 選択肢もシャッフル
     for(var i=0; i<copiedQuestions.length; i++) {
-      var copiedAnswers = _.clone(copiedQuestions.at(i).get('answers'));
-      copiedQuestions.at(i).set('answers', _.shuffle(copiedAnswers));
+      var copiedChoices = _.clone(copiedQuestions.at(i).getChoices());
+      copiedQuestions.at(i).setChoices(_.shuffle(copiedChoices));
     }
 
     var output = self.template({
@@ -66,7 +66,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
         for(var i=0; i<elem.length; i++) {
           if(elem[i].checked) {
             var answerNumber = Number(elem[i].value);
-            var answer = question.get('answers')[answerNumber];
+            var answer = question.getChoices()[answerNumber];
             correct = correct && answer.correct;
             answers.push(answer);
           }
@@ -87,7 +87,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
         var radioButtonValue = elem.filter(":checked").val();
         if(radioButtonValue != undefined) {
           var answerNumber = Number(radioButtonValue);
-          var answer = question.get('answers')[answerNumber];
+          var answer = question.getChoices()[answerNumber];
           correct = answer.correct;
           answers.push(answer);
         }

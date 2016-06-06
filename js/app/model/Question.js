@@ -8,10 +8,22 @@ easycbt.model.Question = Backbone.Model.extend({
     return self.get('description');
   },
 
+  // 選択肢を取得する
+  getChoices: function() {
+  	var self = this;
+  	return self.get('answers');
+  },
+
+  // 選択肢を設定する
+  setChoices: function(choices) {
+  	var self = this;
+  	return self.set('answers', choices);
+  },
+
   // 正解を取得する
   getCorrectAnswers: function() {
   	var self = this;
-  	var answers = self.get('answers');
+  	var answers = self.getChoices();
 
     var resultList = [];
     for(var i=0; i<answers.length; i++) {
