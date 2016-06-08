@@ -53,4 +53,44 @@ easycbt.model.Question = Backbone.Model.extend({
 
     return resultStringArray.join(' ');
   },
+
+  // 回答が正答かどうか判定する
+  // @param answers 回答番号のリスト
+  isCorrectAnswer: function(answers) {
+    var self = this;
+
+    if(!answers || answers.length == 0) {
+      // 無回答は不正解
+      return false;
+    }
+
+    var answersLength = answers.length;
+    var choices = self.getChoices();
+    var choicesLength = choices.length;
+    // 回答番号のリストを選択肢数分に拡張した配列
+    var answersArray = [];
+
+    // 配列を全てfalseで初期化
+    for(var i=0; i<choicesLength; i++) {
+      answersArray[i] = false;
+    }
+
+    // 回答箇所のみtrueに上書き
+    for(i=0; i<answersLength; i++) {
+      answersArray[answers[i]] = true;
+    }
+
+    for(i=0; i<choicesLength; i++) {
+      if(choices[i].correct && answersArray[i]) {
+        // 正解
+      } else if(!choices[i].correct && !answersArray[i]) {
+        // 不正解を選択してない
+      } else {
+        // 不正解
+        return false;
+      }
+    }
+
+    return true;
+  },
 });

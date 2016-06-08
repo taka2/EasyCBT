@@ -74,4 +74,34 @@ describe("Questions", function() {
     expect(actual1).toEqual("(1) ArrayList a = new ArrayList(); (2) List a = new ArrayList();");
     expect(actual2).toEqual("2147483647");
   });
+
+  it("isCorrectAnswer", function() {
+    // 回答がなし（引数なし）の場合
+    var actual1 = questions.at(0).isCorrectAnswer();
+    expect(actual1).toEqual(false);
+
+    // 回答がなし（空配列）の場合
+    var actual2 = questions.at(0).isCorrectAnswer([]);
+    expect(actual2).toEqual(false);
+
+    // 回答があり（複数、正解）の場合
+    var actual3 = questions.at(0).isCorrectAnswer([0, 1]);
+    expect(actual3).toEqual(true);
+
+    // 回答があり（複数、一部正解）の場合
+    var actual4 = questions.at(0).isCorrectAnswer([0, 2]);
+    expect(actual4).toEqual(false);
+
+    // 回答があり（複数、全部不正解）の場合
+    var actual5 = questions.at(0).isCorrectAnswer([2, 3]);
+    expect(actual5).toEqual(false);
+
+    // 回答があり（単一、正解）の場合
+    var actual6 = questions.at(1).isCorrectAnswer([1]);
+    expect(actual6).toEqual(true);
+
+    // 回答があり（単一、不正解）の場合
+    var actual7 = questions.at(1).isCorrectAnswer([2]);
+    expect(actual7).toEqual(false);
+  });
 });
