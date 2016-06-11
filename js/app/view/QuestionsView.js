@@ -14,6 +14,16 @@ easycbt.view.QuestionsView = Backbone.View.extend({
   render: function() {
     var self = this;
 
+    // 問題データの（シャッフル前）オリジナルインデックスを保存
+    for(var i=0; i<questions.length; i++) {
+      var question = questions.at(i);
+      question.set({index: i});
+      var choices = question.getChoices();
+      for(var j=0; j<choices.length; j++) {
+        choices[j].index = j;
+      }
+    }
+
     // 問題をシャッフルして、指定カテゴリで絞り、指定数だけ取り出す
     var copiedQuestions = questions.deepCopy();
     copiedQuestions.reset(copiedQuestions.shuffle(), {silent:true});
