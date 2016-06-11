@@ -47,49 +47,44 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     for(var k=0; k<self.examination.getQuestionCount(); k++) {
       // "answers(k+1)["で始まる要素を取得
       var elem = $("input[name ^= 'answers" + (k+1) + "\[']");
+      var elemType = elem.prop('type');
 
       // 問題を特定
       var questionNumber = extractNumber(elem[0].name);
       var question = questions.at(questionNumber).clone();
 
-      if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE) {
+      if(elemType == 'checkbox') {
         // チェックボックスの場合
         var answers = [];
+        var answersIndex = [];
         var correct = true;
         for(var i=0; i<elem.length; i++) {
           if(elem[i].checked) {
             var answerNumber = Number(elem[i].value);
             var answer = question.getChoices()[answerNumber];
-            correct = correct && answer.correct;
             answers.push(answer);
+            answersIndex.push(answerNumber);
           }
         }
-        if(answers.length == 0){
-          // 選択なしの場合は不正解とする
-          correct = false;
-        }
-        var correctAnswers = question.getCorrectAnswers();
-        if(answers.length != correctAnswers.length) {
-          // 回答数と正解数があわない場合は不正解とする
-          correct = false;
-        }
-      } else {
+        correct = question.isCorrectAnswer(answersIndex);
+      } else if(elemType == 'radio') {
         // ラジオボタンの場合
         var answers = [];
+        var answersIndex = [];
         var correct = false;
         var radioButtonValue = elem.filter(":checked").val();
         if(radioButtonValue != undefined) {
           var answerNumber = Number(radioButtonValue);
           var answer = question.getChoices()[answerNumber];
-          correct = answer.correct;
           answers.push(answer);
+          answersIndex.push(answerNumber);
         }
-        var correctAnswers = question.getCorrectAnswers();
+        correct = question.isCorrectAnswer(answersIndex);
       }
 
       // questionオブジェクトに正否、回答、解答をセット
       question.set({correct: correct});
-      question.set({correctAnswers: correctAnswers});
+      question.set({correctAnswers: question.getCorrectAnswers()});
       question.set({selectedAnswers: answers});
       if(question.get('correct')) {
         correctAnswersCount++;
