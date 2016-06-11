@@ -30,7 +30,7 @@ easycbt.model.Question = Backbone.Model.extend({
   	return self.set('answers', choices);
   },
 
-  // 正解を取得する
+  // 正解の選択肢リストを取得する
   getCorrectAnswers: function() {
   	var self = this;
   	var answers = self.getChoices();
@@ -41,6 +41,19 @@ easycbt.model.Question = Backbone.Model.extend({
       if(answer.correct) {
       	resultList.push(answer);
       }
+    }
+
+    return resultList;
+  },
+
+  // 指定したインデックスの選択肢リストを取得する
+  getSelectedAnswers: function(answers) {
+  	var self = this;
+  	var choices = self.getChoices();
+    var resultList = [];
+
+    for(var i=0; i<answers.length; i++) {
+      resultList.push(choices[answers[i]]);
     }
 
     return resultList;

@@ -87,6 +87,13 @@ describe("Questions", function() {
     expect(actual2.length).toEqual(1);
   });
 
+  it("getSelectedAnswers", function() {
+    var actual1 = questions.at(0).getSelectedAnswers([0, 1]);
+    expect(actual1.length).toEqual(2);
+    expect(actual1[0].description).toEqual("ArrayList a = new ArrayList();");
+    expect(actual1[1].description).toEqual("List a = new ArrayList();");
+  });
+
   it("getCorrectAnswersDescription", function() {
     var actual1 = questions.at(0).getCorrectAnswersDescription();
     var actual2 = questions.at(1).getCorrectAnswersDescription();

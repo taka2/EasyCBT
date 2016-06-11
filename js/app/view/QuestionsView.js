@@ -125,7 +125,6 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     // 結果ページを描画
     var resultView = new easycbt.view.ResultView({
       takeExamination: takeExamination
-      , questions2: copiedQuestions
       , correctAnswersCount: correctAnswersCount
       , percentageOfCorrectAnswers: percentageOfCorrectAnswers
     });
