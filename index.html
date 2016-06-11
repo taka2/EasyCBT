@@ -79,28 +79,28 @@
 
 <!-- 結果ページ用テンプレート -->
 <script type="text/html" id="result_template">
-  <h2><%=examinationName%></h2>
+  <h2><%= takeExamination.getExamination().getExaminationName() %></h2>
 
   <table class="questions table table-striped">
-  <% for(var k=0; k<questions2.length; k++) { %>
+    <% for(var k=0; k<takeExamination.getAnswers().length; k++) { %>
     <tr><td>
-      Q<%=(k+1)%>. <%=questions2.at(k).getDescription()%>
+      Q<%=(k+1)%>. <%= takeExamination.getAnswers().at(k).getQuestion().getDescription() %>
       <ul class="results">
-      <% if(questions2.at(k).get('correct')) { %>
-        <li class="correct_answer">正解！</li>
-      <% } else { %>
-        <li class="incorrect_answer">不正解。。</li>
-      <% } %>
+        <% if(takeExamination.getAnswers().at(k).isCorrectAnswer()) { %>
+          <li class="correct_answer">正解！</li>
+        <% } else { %>
+          <li class="incorrect_answer">不正解。。</li>
+        <% } %>
         <li>回答: <%=concatAnswersDescription(questions2.at(k).get('selectedAnswers'))%></li>
-        <li>正解: <%=concatAnswersDescription(questions2.at(k).getCorrectAnswers())%></li>
+        <li>正解: <%=concatAnswersDescription(takeExamination.getAnswers().at(k).getQuestion().getCorrectAnswers())%></li>
       </ul>
     </td></tr>
-  <% } %>
+    <% } %>
   </table>
 
   <!-- 成績 -->
   <p class="record">
-    <%=questionCount%>問中<%=correctAnswersCount%>問正解でした。<br/>
+    <%= takeExamination.getExamination().getQuestionCount() %>問中<%=correctAnswersCount%>問正解でした。<br/>
     正答率=<%= percentageOfCorrectAnswers %>%
   </p>
 
@@ -168,10 +168,14 @@
 <script src="js/app/model/Question.js"></script>
 <script src="js/app/model/Examination.js"></script>
 <script src="js/app/model/Result.js"></script>
+<script src="js/app/model/Answer.js"></script>
+<script src="js/app/model/TakeExamination.js"></script>
 <!-- コレクション -->
 <script src="js/app/collection/Questions.js"></script>
 <script src="js/app/collection/Examinations.js"></script>
 <script src="js/app/collection/Results.js"></script>
+<script src="js/app/collection/Answers.js"></script>
+<script src="js/app/collection/TakeExaminations.js"></script>
 <!-- ビュー -->
 <script src="js/app/view/ExaminationsView.js"></script>
 <script src="js/app/view/QuestionsView.js"></script>
