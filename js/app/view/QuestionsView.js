@@ -53,11 +53,12 @@ easycbt.view.QuestionsView = Backbone.View.extend({
       var questionNumber = extractNumber(elem[0].name);
       var question = questions.at(questionNumber).clone();
 
+      var correct = true;
       if(elemType == 'checkbox') {
         // チェックボックスの場合
         var answers = [];
         var answersIndex = [];
-        var correct = true;
+
         for(var i=0; i<elem.length; i++) {
           if(elem[i].checked) {
             var answerNumber = Number(elem[i].value);
@@ -71,7 +72,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
         // ラジオボタンの場合
         var answers = [];
         var answersIndex = [];
-        var correct = false;
+
         var radioButtonValue = elem.filter(":checked").val();
         if(radioButtonValue != undefined) {
           var answerNumber = Number(radioButtonValue);
