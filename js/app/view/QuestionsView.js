@@ -82,11 +82,10 @@ easycbt.view.QuestionsView = Backbone.View.extend({
         correct = question.isCorrectAnswer(answersIndex);
       }
 
-      // questionオブジェクトに正否、回答、解答をセット
+      // questionオブジェクトに正否、回答をセット
       question.set({correct: correct});
-      question.set({correctAnswers: question.getCorrectAnswers()});
       question.set({selectedAnswers: answers});
-      if(question.get('correct')) {
+      if(correct) {
         correctAnswersCount++;
       }
       copiedQuestions.push(question);

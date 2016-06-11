@@ -92,7 +92,7 @@
         <li class="incorrect_answer">不正解。。</li>
       <% } %>
         <li>回答: <%=concatAnswersDescription(questions2.at(k).get('selectedAnswers'))%></li>
-        <li>正解: <%=concatAnswersDescription(questions2.at(k).get('correctAnswers'))%></li>
+        <li>正解: <%=concatAnswersDescription(questions2.at(k).getCorrectAnswers())%></li>
       </ul>
     </td></tr>
   <% } %>
