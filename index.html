@@ -54,7 +54,7 @@
     <table class="table table-striped questions">
       <% for(var i=0; i<questions.length; i++) { %>
         <tr><td>
-          Q<%=(i+1)%>. <%=questions.at(i).get('description')%>
+          Q<%=(i+1)%>. <%= questions.at(i).getDescription() %>
           <ul class="answers">
 
           <% for(var j=0; j<questions.at(i).getChoices().length; j++) { %>
@@ -84,7 +84,7 @@
   <table class="questions table table-striped">
   <% for(var k=0; k<questions2.length; k++) { %>
     <tr><td>
-      Q<%=(k+1)%>. <%=questions2.at(k).get('description')%>
+      Q<%=(k+1)%>. <%=questions2.at(k).getDescription()%>
       <ul class="results">
       <% if(questions2.at(k).get('correct')) { %>
         <li class="correct_answer">正解！</li>
@@ -149,7 +149,7 @@
   <% for(var i=0; i<questions.length; i++) { %>
   <%   var result = questions.at(i); %>
     <tr>
-      <td><%= result.get('description') %></td>
+      <td><%= result.getDescription() %></td>
       <td><%= result.getCorrectAnswersDescription() %></td>
       <td><%= result.get('count') %></td>
     </tr>
