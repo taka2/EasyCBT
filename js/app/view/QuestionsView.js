@@ -49,7 +49,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
       var questionNumber = extractNumber(elem[0].name);
       var question = questions.at(questionNumber).clone();
 
-      if(question.get('multiple_answer')) {
+      if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE) {
         // チェックボックスの場合
         var answers = [];
         var correct = true;
