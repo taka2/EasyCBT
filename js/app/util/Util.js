@@ -19,10 +19,3 @@ function concatAnswersDescription(answers) {
 
   return resultStringArray.join(' ');
 }
-
-// 正答率を計算する
-function calcPercentageOfCorrectAnswers(questionCount, correctAnswersCount) {
-  var percentage = (correctAnswersCount / questionCount * 100);
-  // 小数点第2位まで表示（切り捨て）
-  return (Math.floor(percentage * 100) / 100);
-}
