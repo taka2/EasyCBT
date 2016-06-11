@@ -32,6 +32,18 @@ describe("Questions", function() {
     expect(actualSize).toEqual(2);
   });
 
+  it("saveOriginalIndex", function() {
+    var actualQuestions = questions.deepCopy();
+    actualQuestions = actualQuestions.saveOriginalIndex();
+    for(var i=0; i<actualQuestions.size(); i++) {
+      expect(actualQuestions.at(i).get('index')).toEqual(i);
+      var choices = actualQuestions.at(i).getChoices();
+      for(var j=0; j<choices.length; j++) {
+        expect(choices[j].index).toEqual(j);
+      }
+    }
+  });
+
   it("getQuestionType", function() {
     var actual1 = questions.at(0).getQuestionType();
     var actual2 = questions.at(1).getQuestionType();
