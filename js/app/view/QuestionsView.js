@@ -91,7 +91,6 @@ easycbt.view.QuestionsView = Backbone.View.extend({
 
       // questionオブジェクトに正否、回答をセット
       question.set({correct: answer.isCorrectAnswer()});
-      question.set({selectedAnswers: _answers});
       copiedQuestions.push(question);
       answers.push(answer);
     }
@@ -113,7 +112,6 @@ easycbt.view.QuestionsView = Backbone.View.extend({
       {
         'examination': self.examination
         , 'questions': copiedQuestions
-        , 'percentageOfCorrectAnswers': takeExamination.getPercentageOfCorrectAnswers()
         , 'created': new Date()
       }
     );
