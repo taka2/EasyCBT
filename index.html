@@ -120,14 +120,14 @@
       <th>正答率</th>
       <th>実施日時</th>
     </tr>
-  <% for(var i=0; i<results.length; i++) { %>
-  <%   var result = results.at(i); %>
+    <% for(var i=0; i<takeExaminations.size(); i++) { %>
+    <%   var takeExamination = takeExaminations.at(i); %>
     <tr>
-      <td><%= result.get('examination').examinationName %></td>
-      <td><%= result.get('percentageOfCorrectAnswers') %>%</td>
-      <td><%= moment(result.get('created')).format('YYYY/MM/DD HH:mm:ss') %></td>
+      <td><%= takeExamination.getExamination().getExaminationName() %></td>
+      <td><%= takeExamination.getPercentageOfCorrectAnswers() %>%</td>
+      <td><%= moment(takeExamination.getCreated()).format('YYYY/MM/DD HH:mm:ss') %></td>
     </tr>
-  <% } %>
+    <% } %>
   </table>
 
   <!-- 成績クリア -->

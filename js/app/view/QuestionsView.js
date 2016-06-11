@@ -100,7 +100,12 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     var takeExamination = new easycbt.model.TakeExamination({
       examination: self.examination
       , answers: answers
+      , created: new Date()
     });
+
+    var takeExaminations = new easycbt.collection.TakeExaminations();
+    takeExaminations.fetch();
+    takeExaminations.create(takeExamination.clone());
 
     var results = new easycbt.collection.Results();
     results.fetch();
@@ -112,10 +117,6 @@ easycbt.view.QuestionsView = Backbone.View.extend({
         , 'created': new Date()
       }
     );
-
-    /*var takeExaminations = new easycbt.collection.TakeExaminations();
-    takeExaminations.fetch();
-    takeExaminations.create(takeExamination);*/
 
     // 結果ページを描画
     var resultView = new easycbt.view.ResultView({

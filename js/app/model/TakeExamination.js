@@ -26,6 +26,18 @@ easycbt.model.TakeExamination = Backbone.Model.extend({
   	return self.set('answers', answers);
   },
 
+  // 受験日時を取得する
+  getCreated: function() {
+    var self = this;
+    return self.get('created');
+  },
+
+  // 受験日時をを設定する
+  setCreated: function(created) {
+  	var self = this;
+  	return self.set('created', created);
+  },
+
   // 正答数を取得する
   getCorrectAnswersCount: function() {
     var self = this;

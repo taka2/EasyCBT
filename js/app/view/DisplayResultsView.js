@@ -12,10 +12,12 @@ easycbt.view.DisplayResultsView = Backbone.View.extend({
   render: function() {
     var self = this;
 
-    var results = new easycbt.collection.Results();
-    results.fetch();
+    var takeExaminations = new easycbt.collection.TakeExaminations();
+    takeExaminations.fetch();
+    takeExaminations.restoreFromLocalStorage();
+
     var output = self.template({
-      'results': results
+      'takeExaminations': takeExaminations
     });
 
     self.$el.html(output);
@@ -29,6 +31,12 @@ easycbt.view.DisplayResultsView = Backbone.View.extend({
     results.fetch();
     for(var i=results.length-1; i>=0; i--) {
       results.at(i).destroy();
+    }
+
+    var takeExaminations = new easycbt.collection.TakeExaminations();
+    takeExaminations.fetch();
+    for(var i=takeExaminations.length-1; i>=0; i--) {
+      takeExaminations.at(i).destroy();
     }
 
     self.render();
