@@ -32,6 +32,13 @@ describe("Questions", function() {
     expect(actualSize).toEqual(2);
   });
 
+  it("getQuestionType", function() {
+    var actual1 = questions.at(0).getQuestionType();
+    var actual2 = questions.at(1).getQuestionType();
+    expect(actual1).toEqual(easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE);
+    expect(actual2).toEqual(easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE);
+  });
+
   it("getDescription", function() {
     var actual1 = questions.at(0).getDescription();
     var actual2 = questions.at(1).getDescription();

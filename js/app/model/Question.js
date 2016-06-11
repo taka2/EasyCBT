@@ -2,6 +2,16 @@ var easycbt = easycbt || {};
 easycbt.model = easycbt.model || {};
 
 easycbt.model.Question = Backbone.Model.extend({
+  // 問題のタイプを取得する
+  getQuestionType: function() {
+    var self = this;
+    if(self.get('multiple_answer')) {
+      return easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE;
+    } else {
+      return easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE;
+    }
+  },
+
   // 問題文を取得する
   getDescription: function() {
     var self = this;
@@ -93,4 +103,10 @@ easycbt.model.Question = Backbone.Model.extend({
 
     return true;
   },
+}, {
+  // 定数
+  // n択問題の正解が1つ
+  QUESTION_TYPE_SINGLE_CHOICE: 1,
+  // n択問題の正解が複数
+  QUESTION_TYPE_MULTIPLE_CHOICE: 2,
 });
