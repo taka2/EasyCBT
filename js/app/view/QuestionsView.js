@@ -42,7 +42,6 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     var self = this;
 
     // 答え合わせ
-    var correctAnswersCount = 0;
     var copiedQuestions = new easycbt.collection.Questions();
     var answers = new easycbt.collection.Answers();
     for(var k=0; k<self.examination.getQuestionCount(); k++) {
@@ -93,30 +92,26 @@ easycbt.view.QuestionsView = Backbone.View.extend({
       // questionオブジェクトに正否、回答をセット
       question.set({correct: answer.isCorrectAnswer()});
       question.set({selectedAnswers: _answers});
-      if(answer.isCorrectAnswer()) {
-        correctAnswersCount++;
-      }
       copiedQuestions.push(question);
       answers.push(answer);
     }
-    var percentageOfCorrectAnswers = calcPercentageOfCorrectAnswers(self.examination.getQuestionCount(), correctAnswersCount);
 
     // 成績を保存
+    var takeExamination = new easycbt.model.TakeExamination({
+      examination: self.examination
+      , answers: answers
+    });
+
     var results = new easycbt.collection.Results();
     results.fetch();
     results.create(
       {
         'examination': self.examination
         , 'questions': copiedQuestions
-        , 'percentageOfCorrectAnswers': percentageOfCorrectAnswers
+        , 'percentageOfCorrectAnswers': takeExamination.getPercentageOfCorrectAnswers()
         , 'created': new Date()
       }
     );
-
-    var takeExamination = new easycbt.model.TakeExamination({
-      examination: self.examination
-      , answers: answers
-    });
 
     /*var takeExaminations = new easycbt.collection.TakeExaminations();
     takeExaminations.fetch();
@@ -125,8 +120,6 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     // 結果ページを描画
     var resultView = new easycbt.view.ResultView({
       takeExamination: takeExamination
-      , correctAnswersCount: correctAnswersCount
-      , percentageOfCorrectAnswers: percentageOfCorrectAnswers
     });
     resultView.render();
   }

@@ -25,4 +25,27 @@ easycbt.model.TakeExamination = Backbone.Model.extend({
   	var self = this;
   	return self.set('answers', answers);
   },
+
+  // 正答数を取得する
+  getCorrectAnswersCount: function() {
+    var self = this;
+    var answers = self.getAnswers();
+    var result = 0;
+    for(var i=0; i<answers.size(); i++) {
+      if(answers.at(i).isCorrectAnswer()) {
+        result++;
+      }
+    }
+
+    return result;
+  },
+
+  // 正答率を取得する
+  getPercentageOfCorrectAnswers: function() {
+    var self = this;
+
+    var percentage = (self.getCorrectAnswersCount() / self.getExamination().getQuestionCount() * 100);
+    // 小数点第2位まで表示（切り捨て）
+    return (Math.floor(percentage * 100) / 100);
+  },
 });

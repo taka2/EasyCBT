@@ -100,8 +100,8 @@
 
   <!-- 成績 -->
   <p class="record">
-    <%= takeExamination.getExamination().getQuestionCount() %>問中<%=correctAnswersCount%>問正解でした。<br/>
-    正答率=<%= percentageOfCorrectAnswers %>%
+    <%= takeExamination.getExamination().getQuestionCount() %>問中<%= takeExamination.getCorrectAnswersCount() %>問正解でした。<br/>
+    正答率=<%= takeExamination.getPercentageOfCorrectAnswers() %>%
   </p>
 
   <!-- 戻るリンク -->
