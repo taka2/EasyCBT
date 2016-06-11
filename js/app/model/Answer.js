@@ -73,4 +73,10 @@ easycbt.model.Answer = Backbone.Model.extend({
     var self = this;
     return self.getQuestion().getSelectedAnswers(self.getAnswers());
   },
+
+  // 回答した選択肢リストを取得する
+  getAnsweredChoicesDescription: function() {
+    var self = this;
+    return self.getQuestion().getSelectedAnswersDescription(self.getAnswers());
+  },
 });

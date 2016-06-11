@@ -91,8 +91,8 @@
         <% } else { %>
           <li class="incorrect_answer">不正解。。</li>
         <% } %>
-        <li>回答: <%= concatAnswersDescription(takeExamination.getAnswers().at(k).getAnsweredChoices()) %></li>
-        <li>正解: <%= concatAnswersDescription(takeExamination.getAnswers().at(k).getQuestion().getCorrectAnswers()) %></li>
+        <li>回答: <%= takeExamination.getAnswers().at(k).getAnsweredChoicesDescription() %></li>
+        <li>正解: <%= takeExamination.getAnswers().at(k).getQuestion().getCorrectAnswersDescription() %></li>
       </ul>
     </td></tr>
     <% } %>

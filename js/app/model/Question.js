@@ -62,16 +62,27 @@ easycbt.model.Question = Backbone.Model.extend({
   // 正解の説明文を取得する
   getCorrectAnswersDescription: function() {
   	var self = this;
-  	var correctAnswers = self.getCorrectAnswers();
-    if(correctAnswers.length == 1) {
+    return self.getAnswersDescription(self.getCorrectAnswers());
+  },
+
+  // 指定したインデックスの選択肢リストの説明文を取得する
+  getSelectedAnswersDescription: function(answers) {
+  	var self = this;
+    return self.getAnswersDescription(self.getSelectedAnswers(answers));
+  },
+
+  // 指定した選択肢リストの説明文を取得する
+  getAnswersDescription: function(choices) {
+  	var self = this;
+    if(choices.length == 1) {
       // 1件の場合は加工せず返す
-      return correctAnswers[0].description;
+      return choices[0].description;
     }
 
     // 複数件の場合は加工して返す
     var resultStringArray = [];
-    for(var i=0; i<correctAnswers.length; i++) {
-      resultStringArray.push("(" + (i+1) + ") " + correctAnswers[i].description);
+    for(var i=0; i<choices.length; i++) {
+      resultStringArray.push("(" + (i+1) + ") " + choices[i].description);
     }
 
     return resultStringArray.join(' ');

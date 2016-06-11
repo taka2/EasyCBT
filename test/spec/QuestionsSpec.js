@@ -100,4 +100,11 @@ describe("Questions", function() {
     expect(actual1).toEqual("(1) ArrayList a = new ArrayList(); (2) List a = new ArrayList();");
     expect(actual2).toEqual("2147483647");
   });
+
+  it("getSelectedAnswersDescription", function() {
+    var actual1 = questions.at(0).getSelectedAnswersDescription([0, 2]);
+    var actual2 = questions.at(1).getSelectedAnswersDescription([2]);
+    expect(actual1).toEqual("(1) ArrayList a = new ArrayList(); (2) List a = new List();");
+    expect(actual2).toEqual("9223372036854775807");
+  });
 });
