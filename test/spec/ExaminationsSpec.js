@@ -44,4 +44,12 @@ describe("Examinations", function() {
     var actual2 = examinations.at(1).getCategories();
     expect(actual2).toEqual([undefined, 'Bronze']);
   });
+
+  it("getActualQuestionCount", function() {
+    var actual1 = examinations.at(1).getActualQuestionCount();
+    expect(actual1).toEqual(3);
+    examinations.at(1).setActualQuestionCount(2);
+    var actual2 = examinations.at(1).getActualQuestionCount();
+    expect(actual2).toEqual(2);
+  });
 });

@@ -29,6 +29,9 @@ easycbt.view.QuestionsView = Backbone.View.extend({
       copiedQuestions.at(i).setChoices(_.shuffle(copiedChoices));
     }
 
+    // 実問題数を保存
+    self.examination.setActualQuestionCount(copiedQuestions.length);
+
     var output = self.template({
       'examination': self.examination
       , 'questions': copiedQuestions
@@ -43,7 +46,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
 
     // 答え合わせ
     var answers = new easycbt.collection.Answers();
-    for(var k=0; k<self.examination.getQuestionCount(); k++) {
+    for(var k=0; k<self.examination.getActualQuestionCount(); k++) {
       // "answers(k+1)["で始まる要素を取得
       var elem = $("input[name ^= 'answers" + (k+1) + "\[']");
       var elemType = elem.prop('type');

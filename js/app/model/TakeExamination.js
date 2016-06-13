@@ -56,7 +56,7 @@ easycbt.model.TakeExamination = Backbone.Model.extend({
   getPercentageOfCorrectAnswers: function() {
     var self = this;
 
-    var percentage = (self.getCorrectAnswersCount() / self.getExamination().getQuestionCount() * 100);
+    var percentage = (self.getCorrectAnswersCount() / self.getExamination().getActualQuestionCount() * 100);
     // 小数点第2位まで表示（切り捨て）
     return (Math.floor(percentage * 100) / 100);
   },

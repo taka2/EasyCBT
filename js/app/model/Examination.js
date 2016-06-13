@@ -19,4 +19,21 @@ easycbt.model.Examination = Backbone.Model.extend({
     var self = this;
     return self.get('categories');
   },
+
+  // 実際の問題数を取得する
+  getActualQuestionCount: function() {
+    var self = this;
+    var actualQuestionCount = self.get('actualQuestionCount');
+    if(!actualQuestionCount) {
+      return self.getQuestionCount()
+    } else {
+      return actualQuestionCount;
+    }
+  },
+
+  // 実際の問題数を設定する
+  setActualQuestionCount: function(actualQuestionCount) {
+  	var self = this;
+  	return self.set('actualQuestionCount', actualQuestionCount);
+  },
 });

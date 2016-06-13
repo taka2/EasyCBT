@@ -7,7 +7,7 @@ examinations.add([
   }
   , {
     examinationName: "Javaクイズ(ALL)"
-    , questionCount: 3
+    , questionCount: 5
     , categories: [undefined, 'Bronze']
   }
 ]);
