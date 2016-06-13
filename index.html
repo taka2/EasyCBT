@@ -146,14 +146,14 @@
       <th>正解</th>
       <th>誤答回数</th>
     </tr>
-  <% for(var i=0; i<questions.length; i++) { %>
-  <%   var result = questions.at(i); %>
+    <% for(var i=0; i<wrongAnswerCountList.length; i++) { %>
+    <%   var result = wrongAnswerCountList[i]; %>
     <tr>
-      <td><%= result.getDescription() %></td>
-      <td><%= result.getCorrectAnswersDescription() %></td>
-      <td><%= result.get('count') %></td>
+      <td><%= result.question.getDescription() %></td>
+      <td><%= result.question.getCorrectAnswersDescription() %></td>
+      <td><%= result.count %></td>
     </tr>
-  <% } %>
+    <% } %>
   </table>
 </script>
 
@@ -167,13 +167,11 @@
 <!-- モデル -->
 <script src="js/app/model/Question.js"></script>
 <script src="js/app/model/Examination.js"></script>
-<script src="js/app/model/Result.js"></script>
 <script src="js/app/model/Answer.js"></script>
 <script src="js/app/model/TakeExamination.js"></script>
 <!-- コレクション -->
 <script src="js/app/collection/Questions.js"></script>
 <script src="js/app/collection/Examinations.js"></script>
-<script src="js/app/collection/Results.js"></script>
 <script src="js/app/collection/Answers.js"></script>
 <script src="js/app/collection/TakeExaminations.js"></script>
 <!-- ビュー -->

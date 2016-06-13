@@ -42,7 +42,6 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     var self = this;
 
     // 答え合わせ
-    var copiedQuestions = new easycbt.collection.Questions();
     var answers = new easycbt.collection.Answers();
     for(var k=0; k<self.examination.getQuestionCount(); k++) {
       // "answers(k+1)["で始まる要素を取得
@@ -51,51 +50,39 @@ easycbt.view.QuestionsView = Backbone.View.extend({
 
       // 問題を特定
       var questionNumber = extractNumber(elem[0].name);
-      var question = questions.at(questionNumber).clone();
-      var answer;
+      var question = questions.at(questionNumber);
 
       if(elemType == 'checkbox') {
         // チェックボックスの場合
-        var _answers = [];
         var answersIndex = [];
 
         for(var i=0; i<elem.length; i++) {
           if(elem[i].checked) {
             var answerNumber = Number(elem[i].value);
-            var _answer = question.getChoices()[answerNumber];
-            _answers.push(_answer);
             answersIndex.push(answerNumber);
           }
         }
-        answer = new easycbt.model.Answer({
+        answers.push(new easycbt.model.Answer({
           question: question
           , answers: answersIndex
-        });
+        }));
       } else if(elemType == 'radio') {
         // ラジオボタンの場合
-        var _answers = [];
         var answersIndex = [];
 
         var radioButtonValue = elem.filter(":checked").val();
         if(radioButtonValue != undefined) {
           var answerNumber = Number(radioButtonValue);
-          var _answer = question.getChoices()[answerNumber];
-          _answers.push(_answer);
           answersIndex.push(answerNumber);
         }
-        answer = new easycbt.model.Answer({
+        answers.push(new easycbt.model.Answer({
           question: question
           , answers: answersIndex
-        });
+        }));
       }
-
-      // questionオブジェクトに正否、回答をセット
-      question.set({correct: answer.isCorrectAnswer()});
-      copiedQuestions.push(question);
-      answers.push(answer);
     }
 
-    // 成績を保存
+    // 成績をローカルストレージに保存
     var takeExamination = new easycbt.model.TakeExamination({
       examination: self.examination
       , answers: answers
@@ -105,16 +92,6 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     var takeExaminations = new easycbt.collection.TakeExaminations();
     takeExaminations.fetch();
     takeExaminations.create(takeExamination.clone());
-
-    var results = new easycbt.collection.Results();
-    results.fetch();
-    results.create(
-      {
-        'examination': self.examination
-        , 'questions': copiedQuestions
-        , 'created': new Date()
-      }
-    );
 
     // 結果ページを描画
     var resultView = new easycbt.view.ResultView({

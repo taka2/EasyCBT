@@ -9,12 +9,12 @@ easycbt.view.DisplayReviewView = Backbone.View.extend({
   render: function() {
     var self = this;
 
-    var results = new easycbt.collection.Results();
-    results.fetch();
+    var takeExaminations = new easycbt.collection.TakeExaminations();
+    takeExaminations.fetch();
+    takeExaminations.restoreFromLocalStorage();
 
-    self.questions = results.groupByWrongAnswerCount();
     var output = self.template({
-      'questions': self.questions
+      'wrongAnswerCountList': takeExaminations.getWrongAnswerCountGroupByQuestion()
     });
 
     self.$el.html(output);
