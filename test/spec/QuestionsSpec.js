@@ -18,6 +18,7 @@ describe("Questions", function() {
       , {description: "9223372036854775807", correct: false}
       , {description: "\\uffff", correct: false}
     ]
+    , category: 'Java'
   }];
 
   var questions;
@@ -58,7 +59,7 @@ describe("Questions", function() {
     expect(actual2).toEqual("intの最大値はどれか");
   });
 
-  it("getCchoices", function() {
+  it("getChoices", function() {
     var actual1 = questions.at(0).getChoices();
     expect(actual1.length).toEqual(4);
     expect(actual1[0].description).toEqual("ArrayList a = new ArrayList();");
@@ -78,6 +79,13 @@ describe("Questions", function() {
     var actual1 = question1.getChoices();
     expect(actual1.length).toEqual(3);
     expect(actual1).toEqual(expectedChoices);
+  });
+
+  it("getCategory", function() {
+    var actual1 = questions.at(0).getCategory();
+    var actual2 = questions.at(1).getCategory();
+    expect(actual1).toBeUndefined();
+    expect(actual2).toEqual("Java");
   });
 
   it("getCorrectAnswers", function() {

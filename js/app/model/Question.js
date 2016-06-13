@@ -30,6 +30,12 @@ easycbt.model.Question = Backbone.Model.extend({
   	return self.set('answers', choices);
   },
 
+  // カテゴリを取得する
+  getCategory: function() {
+  	var self = this;
+  	return self.get('category');
+  },
+
   // 正解の選択肢リストを取得する
   getCorrectAnswers: function() {
   	var self = this;

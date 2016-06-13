@@ -54,7 +54,7 @@
     <table class="table table-striped questions">
       <% for(var i=0; i<questions.length; i++) { %>
         <tr><td>
-          Q<%=(i+1)%>. <%= questions.at(i).getDescription() %>
+          Q<%=(i+1)%>. <%= questions.at(i).getDescription() %> <span class="bg-info"><%= questions.at(i).getCategory() %></span>
           <ul class="answers">
 
           <% for(var j=0; j<questions.at(i).getChoices().length; j++) { %>
