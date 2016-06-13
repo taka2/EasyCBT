@@ -1,8 +1,9 @@
-#ŠT—v
-JSON‚ÅŽŽŒ±‚Æ–â‘è‚ð’è‹`‚·‚é‚¾‚¯‚ÅA—eˆÕ‚ÉCBTiComputer Based Testingj‚ðŽÀŒ»‚·‚é‚½‚ß‚Ìƒc[ƒ‹B<br/>
+#æ¦‚è¦
+JSONã§è©¦é¨“ã¨å•é¡Œã‚’å®šç¾©ã™ã‚‹ã ã‘ã§ã€å®¹æ˜“ã«CBTï¼ˆComputer Based Testingï¼‰ã‚’å®Ÿç¾ã™ã‚‹ãŸã‚ã®ãƒ„ãƒ¼ãƒ«ã€‚<br/>
 
-#ƒNƒCƒbƒNƒXƒ^[ƒg
-  * https://github.com/taka2/EasyCBT ‚©‚çƒA[ƒJƒCƒu‚³‚ê‚½ÅV”Å‚ðƒ_ƒEƒ“ƒ[ƒh‚µ‚Ü‚·B
-  * ƒ_ƒEƒ“ƒ[ƒh‚µ‚½zipƒtƒ@ƒCƒ‹‚ð‰ð“€‚µAindex.html‚ðƒuƒ‰ƒEƒU‚ÅŠJ‚«‚Ü‚·B
-¦IE‚âMicrosoft Edge‚Å‚ÍAƒ[ƒJƒ‹ƒtƒ@ƒCƒ‹‚©‚çlocalStorage‚ÖƒAƒNƒZƒXo—ˆ‚È‚¢‚½‚ßA³‚µ‚­“®ì‚µ‚Ü‚¹‚ñB
-  WebƒT[ƒo‚ÉƒfƒvƒƒC‚µ‚½ã‚Å‚²—˜—p‚­‚¾‚³‚¢B
+#ã‚¯ã‚¤ãƒƒã‚¯ã‚¹ã‚¿ãƒ¼ãƒˆ
+  * https://github.com/taka2/EasyCBT ã‹ã‚‰ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã•ã‚ŒãŸæœ€æ–°ç‰ˆã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
+  * ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸzipãƒ•ã‚¡ã‚¤ãƒ«ã‚’è§£å‡ã—ã€index.htmlã‚’ãƒ–ãƒ©ã‚¦ã‚¶ã§é–‹ãã¾ã™ã€‚
+
+â€»IEã‚„Microsoft Edgeã§ã¯ã€ãƒ­ãƒ¼ã‚«ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰localStorageã¸ã‚¢ã‚¯ã‚»ã‚¹å‡ºæ¥ãªã„ãŸã‚ã€æ­£ã—ãå‹•ä½œã—ã¾ã›ã‚“ã€‚
+  Webã‚µãƒ¼ãƒã«ãƒ‡ãƒ—ãƒ­ã‚¤ã—ãŸä¸Šã§ã”åˆ©ç”¨ãã ã•ã„ã€‚
