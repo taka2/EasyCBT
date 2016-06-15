@@ -28,24 +28,21 @@ easycbt.collection.Questions = Backbone.Collection.extend({
 
   filterCategories: function(categories) {
     var self = this;
-    var result = [];
 
+    if(!categories) {
+      // カテゴリ指定がない場合は、全ての要素が対象となる
+      return self;
+    }
+
+    var result = [];
     for(var i=0; i<this.length; i++) {
-      if(!categories) {
-        result.push(this.at(i));
-      } else {
-        var question = this.at(i);
-        var matchCategory = false;
-        for(var j=0; j<categories.length; j++) {
-	  if(question.get('category') == categories[j]) {
-	    matchCategory = true;
-	    break;
-	  }
-	}
-	if(matchCategory) {
+      var question = self.at(i);
+      for(var j=0; j<categories.length; j++) {
+	    if(question.getCategory() == categories[j]) {
           result.push(this.at(i));
-	}
-      }
+	      break;
+	    }
+	  }
     }
 
     return result;
