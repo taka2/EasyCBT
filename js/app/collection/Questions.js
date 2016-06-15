@@ -41,10 +41,20 @@ easycbt.collection.Questions = Backbone.Collection.extend({
       } else {
         // 試験にカテゴリ指定がある場合
         if(_.isString(questionCategory)) {
+          // 問題に1つのカテゴリが指定されている場合
           if(_.contains(categories, questionCategory)) {
             result.push(question);
           }
+        } else if(_.isArray(questionCategory)) {
+          // 問題に複数のカテゴリが指定されている場合
+          for(var j=0; j<questionCategory.length; j++) {
+            if(_.contains(categories, questionCategory[j])) {
+              result.push(question);
+              break;
+            }
+          }
 	    } else if(_.isUndefined(questionCategory)) {
+	      // 問題にカテゴリが指定されていない場合
           if(_.contains(categories, undefined)) {
             result.push(question);
           }

@@ -29,6 +29,7 @@ questions.add([
       , {description: "List a = new List();", correct: false}
       , {description: "ArrayList a = new List();", correct: false}
     ]
+    , category: ['Java']
   }
   , {
     description: "識別子として有効なものはどれか"
@@ -39,6 +40,6 @@ questions.add([
       , {description: "val", correct: true}
       , {description: "true", correct: false}
     ]
-    , category: 'Bronze'
+    , category: ['Bronze', 'Java']
   }
 ]);
