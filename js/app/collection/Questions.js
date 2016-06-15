@@ -26,21 +26,28 @@ easycbt.collection.Questions = Backbone.Collection.extend({
     );
   },
 
+  // 問題リストを指定されたカテゴリリストで抽出する
   filterCategories: function(categories) {
     var self = this;
-
-    if(!categories) {
-      // カテゴリ指定がない場合は、全ての要素が対象となる
-      return self;
-    }
 
     var result = [];
     for(var i=0; i<this.length; i++) {
       var question = self.at(i);
-      for(var j=0; j<categories.length; j++) {
-	    if(question.getCategory() == categories[j]) {
-          result.push(this.at(i));
-	      break;
+      var questionCategory = question.getCategory();
+
+      if(!categories) {
+        // 試験にカテゴリ指定がない場合は、全ての要素が対象となる
+        result.push(question);
+      } else {
+        // 試験にカテゴリ指定がある場合
+        if(_.isString(questionCategory)) {
+          if(_.contains(categories, questionCategory)) {
+            result.push(question);
+          }
+	    } else if(_.isUndefined(questionCategory)) {
+          if(_.contains(categories, undefined)) {
+            result.push(question);
+          }
 	    }
 	  }
     }
