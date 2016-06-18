@@ -49,13 +49,12 @@ easycbt.view.QuestionsView = Backbone.View.extend({
     for(var k=0; k<self.examination.getActualQuestionCount(); k++) {
       // "answers(k+1)["で始まる要素を取得
       var elem = $("input[name ^= 'answers" + (k+1) + "\[']");
-      var elemType = elem.prop('type');
 
       // 問題を特定
       var questionNumber = extractNumber(elem[0].name);
       var question = questions.at(questionNumber);
 
-      if(elemType == 'checkbox') {
+      if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE) {
         // チェックボックスの場合
         var answersIndex = [];
 
@@ -69,19 +68,17 @@ easycbt.view.QuestionsView = Backbone.View.extend({
           question: question
           , answers: answersIndex
         }));
-      } else if(elemType == 'radio') {
+      } else if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE) {
         // ラジオボタンの場合
-        var answersIndex = [];
-
         var radioButtonValue = elem.filter(":checked").val();
         if(radioButtonValue != undefined) {
           var answerNumber = Number(radioButtonValue);
-          answersIndex.push(answerNumber);
         }
         answers.push(new easycbt.model.Answer({
           question: question
-          , answers: answersIndex
+          , answers: answerNumber
         }));
+      } else {
       }
     }
 

@@ -61,8 +61,9 @@
             <li>
             <% if(questions.at(i).getQuestionType() == easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE) { %>
               <input type="checkbox" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).getChoices()[j].index%>"> <%=questions.at(i).getChoices()[j].description%>
-            <% } else { %>
+            <% } else if(questions.at(i).getQuestionType() == easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE) { %>
               <input type="radio" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).getChoices()[j].index%>"> <%=questions.at(i).getChoices()[j].description%>
+            <% } else { %>
             <% } %>
             </li>
           <% } %>
