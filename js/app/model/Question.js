@@ -58,8 +58,19 @@ easycbt.model.Question = Backbone.Model.extend({
   	var choices = self.getChoices();
     var resultList = [];
 
-    for(var i=0; i<answers.length; i++) {
-      resultList.push(choices[answers[i]]);
+    if(!answers || answers.length == 0) {
+      // 無回答は空リストを返す
+      return resultList;
+    }
+
+    if(self.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE) {
+      for(var i=0; i<answers.length; i++) {
+        resultList.push(choices[answers[i]]);
+      }
+    } else if(self.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE) {
+      resultList.push(choices[answers]);
+    } else {
+      // QuestionType追加時にコード追加する場所
     }
 
     return resultList;

@@ -55,7 +55,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
       var question = questions.at(questionNumber);
 
       if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE) {
-        // チェックボックスの場合
+        // n択問題の正解が複数の場合
         var answersIndex = [];
 
         for(var i=0; i<elem.length; i++) {
@@ -69,7 +69,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
           , answers: answersIndex
         }));
       } else if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE) {
-        // ラジオボタンの場合
+        // n択問題の正解が1つの場合
         var radioButtonValue = elem.filter(":checked").val();
         if(radioButtonValue != undefined) {
           var answerNumber = Number(radioButtonValue);
@@ -79,6 +79,7 @@ easycbt.view.QuestionsView = Backbone.View.extend({
           , answers: answerNumber
         }));
       } else {
+        // QuestionType追加時にコード追加する場所
       }
     }
 

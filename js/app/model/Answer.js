@@ -70,6 +70,7 @@ easycbt.model.Answer = Backbone.Model.extend({
     } else if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE) {
       return question.getSelectedAnswers([answers])[0].correct;
     } else {
+      // QuestionType追加時にコード追加する場所
     }
   },
 
