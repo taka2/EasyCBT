@@ -38,3 +38,8 @@ body {
 .incorrect_answer {
   color: red;
 }
+
+.invalid_question {
+  color: #eeeeee;
+  background-color: #d9534f;
+}

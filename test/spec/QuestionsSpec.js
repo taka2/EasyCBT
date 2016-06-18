@@ -29,7 +29,17 @@ describe("Questions", function() {
       , {description: "short", correct: false}
     ]
     , category: ['Java', 'Compile']
-  }];
+  }, {
+    description: "intの最大値はどれか（出題ミス）"
+    , multiple_answer: false
+    , answers: [
+      {description: "32767", correct: false}
+      , {description: "2147483647", correct: true}
+      , {description: "9223372036854775807", correct: true}
+      , {description: "\\uffff", correct: false}
+    ]
+    , category: ['Wrong Question']
+   }];
 
   var questions;
 
@@ -40,7 +50,7 @@ describe("Questions", function() {
 
   it("size", function() {
     var actualSize = questions.size();
-    expect(actualSize).toEqual(3);
+    expect(actualSize).toEqual(4);
   });
 
   it("saveOriginalIndex", function() {
@@ -129,7 +139,7 @@ describe("Questions", function() {
   it("filterCategories - no categories specified", function() {
     var actual = questions.filterCategories();
     var actualSize = actual.length;
-    expect(actualSize).toEqual(3);
+    expect(actualSize).toEqual(4);
   });
 
   it("filterCategories - one category specified", function() {
@@ -168,5 +178,12 @@ describe("Questions", function() {
     expect(actualDescription1).toEqual("コンパイルエラーが起きないのはどれか");
     var actualDescription2 = actual[1].getDescription();
     expect(actualDescription2).toEqual("次のうち、プリミティブ型でないものはどれ");
+  });
+
+  it("isValid", function() {
+    var actual1 = questions.at(1).isValid();
+    expect(actual1).toEqual(true);
+    var actual2 = questions.at(3).isValid();
+    expect(actual2).toEqual(false);
   });
 });

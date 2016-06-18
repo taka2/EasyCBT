@@ -93,6 +93,19 @@ easycbt.model.Question = Backbone.Model.extend({
 
     return resultStringArray.join(' ');
   },
+
+  // 出題に誤りがないかどうかチェックする
+  isValid: function() {
+    var self = this;
+
+    if(self.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE) {
+      // 「n択問題の正解が1つ」にも関わらず、複数の正解が設定されている場合
+      if(self.getCorrectAnswers().length > 1) {
+        return false;
+      }
+    }
+    return true;
+  },
 }, {
   // 定数
   // n択問題の正解が1つ
