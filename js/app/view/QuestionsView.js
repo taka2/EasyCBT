@@ -73,6 +73,8 @@ easycbt.view.QuestionsView = Backbone.View.extend({
         var radioButtonValue = elem.filter(":checked").val();
         if(radioButtonValue != undefined) {
           var answerNumber = Number(radioButtonValue);
+        } else {
+          var answerNumber = undefined;
         }
         answers.push(new easycbt.model.Answer({
           question: question
