@@ -32,13 +32,17 @@ easycbt.model.Answer = Backbone.Model.extend({
     var self = this;
     var answers = self.getAnswers();
 
-    if(!answers || answers.length == 0) {
+    if(answers == undefined) {
       // 無回答は不正解
       return false;
     }
 
     var question = self.getQuestion();
     if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE) {
+      if(answers.length == 0) {
+        // 無回答は不正解
+        return false;
+      }
       var answersLength = answers.length;
       var choices = question.getChoices();
       var choicesLength = choices.length;

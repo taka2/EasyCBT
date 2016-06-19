@@ -58,12 +58,17 @@ easycbt.model.Question = Backbone.Model.extend({
   	var choices = self.getChoices();
     var resultList = [];
 
-    if(!answers || answers.length == 0) {
+    if(answers == undefined) {
       // 無回答は空リストを返す
       return resultList;
     }
 
     if(self.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE) {
+      if(answers.length == 0) {
+        // 無回答は空リストを返す
+        return resultList;
+      }
+
       for(var i=0; i<answers.length; i++) {
         resultList.push(choices[answers[i]]);
       }
