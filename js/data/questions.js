@@ -9,7 +9,7 @@ questions.add([
       , {description: "String", correct: true}
       , {description: "short", correct: false}
     ]
-    , category: ['Java']
+    , category: 'Java'
   }
   , {
     description: "intの最大値はどれか"
@@ -20,7 +20,7 @@ questions.add([
       , {description: "9223372036854775807", correct: false}
       , {description: "\\uffff", correct: false}
     ]
-    , category: ['Bronze', 'Java']
+    , category: 'Java-Bronze'
   }
   , {
     description: "コンパイルエラーが起きないのはどれか"
@@ -31,7 +31,7 @@ questions.add([
       , {description: "List a = new List();", correct: false}
       , {description: "ArrayList a = new List();", correct: false}
     ]
-    , category: ['Java']
+    , category: 'Java'
   }
   , {
     description: "識別子として有効なものはどれか"
@@ -42,7 +42,7 @@ questions.add([
       , {description: "val", correct: true}
       , {description: "true", correct: false}
     ]
-    , category: ['Bronze', 'Java']
+    , category: 'Java-Bronze'
   }
   , {
     description: "PKIを構成するOCSPを利用する目的はどれか。"

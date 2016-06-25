@@ -3,12 +3,12 @@ examinations.add([
   {
     examinationName: "Javaクイズ(Bronzeカテゴリのみ)"
     , questionCount: 2
-    , categories: ['Bronze']
+    , categories: ['Java-Bronze']
   }
   , {
     examinationName: "Javaクイズ(ALL)"
     , questionCount: 3
-    , categories: ['Java']
+    , categories: ['Java', 'Java-Bronze']
   }
   , {
     examinationName: "平成26年度秋季試験 情報セキュリティスペシャリスト試験（SC） AM2"

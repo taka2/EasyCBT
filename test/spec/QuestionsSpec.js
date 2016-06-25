@@ -28,7 +28,7 @@ describe("Questions", function() {
       , {description: "String", correct: true}
       , {description: "short", correct: false}
     ]
-    , category: ['Java', 'Compile']
+    , category: 'Compile'
   }, {
     description: "intの最大値はどれか（出題ミス）"
     , multiple_answer: false
@@ -38,7 +38,7 @@ describe("Questions", function() {
       , {description: "9223372036854775807", correct: true}
       , {description: "\\uffff", correct: false}
     ]
-    , category: ['Wrong Question']
+    , category: 'Wrong Question'
    }];
 
   var questions;
@@ -153,11 +153,9 @@ describe("Questions", function() {
   it("filterCategories - one category specified pattern2", function() {
     var actual = questions.filterCategories(['Java']);
     var actualSize = actual.length;
-    expect(actualSize).toEqual(2);
+    expect(actualSize).toEqual(1);
     var actualDescription1 = actual[0].getDescription();
     expect(actualDescription1).toEqual("intの最大値はどれか");
-    var actualDescription2 = actual[1].getDescription();
-    expect(actualDescription2).toEqual("次のうち、プリミティブ型でないものはどれ");
   });
 
   it("filterCategories - two categories specified", function() {
@@ -166,16 +164,6 @@ describe("Questions", function() {
     expect(actualSize).toEqual(2);
     var actualDescription1 = actual[0].getDescription();
     expect(actualDescription1).toEqual("intの最大値はどれか");
-    var actualDescription2 = actual[1].getDescription();
-    expect(actualDescription2).toEqual("次のうち、プリミティブ型でないものはどれ");
-  });
-
-  it("filterCategories - two categories specified with undefined", function() {
-    var actual = questions.filterCategories(['Compile', undefined]);
-    var actualSize = actual.length;
-    expect(actualSize).toEqual(2);
-    var actualDescription1 = actual[0].getDescription();
-    expect(actualDescription1).toEqual("コンパイルエラーが起きないのはどれか");
     var actualDescription2 = actual[1].getDescription();
     expect(actualDescription2).toEqual("次のうち、プリミティブ型でないものはどれ");
   });

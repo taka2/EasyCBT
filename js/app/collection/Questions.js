@@ -27,6 +27,10 @@ easycbt.collection.Questions = Backbone.Collection.extend({
   },
 
   // 問題リストを指定されたカテゴリリストで抽出する
+  // | Exam/Question | undefined     | string             |
+  // | undefined     | Target        | Target             |
+  // | one           | Non Target    | Target if match    |
+  // | multiple      | Non Target    | Target if contains |
   filterCategories: function(categories) {
     var self = this;
 
@@ -36,30 +40,24 @@ easycbt.collection.Questions = Backbone.Collection.extend({
       var questionCategory = question.getCategory();
 
       if(!categories) {
-        // 試験にカテゴリ指定がない場合は、全ての要素が対象となる
+        // 試験にカテゴリ指定がない場合は、無条件で対象となる
+        result.push(question);
+        continue;
+      }
+      if(!questionCategory) {
+        // 問題にカテゴリ指定がない場合は、無条件で対象外となる
+        continue;
+      }
+
+      if(categories.length == 1 && categories[0] == questionCategory) {
+        // 試験に1つのカテゴリ指定がある場合
         result.push(question);
       } else {
-        // 試験にカテゴリ指定がある場合
-        if(_.isString(questionCategory)) {
-          // 問題に1つのカテゴリが指定されている場合
-          if(_.contains(categories, questionCategory)) {
-            result.push(question);
-          }
-        } else if(_.isArray(questionCategory)) {
-          // 問題に複数のカテゴリが指定されている場合
-          for(var j=0; j<questionCategory.length; j++) {
-            if(_.contains(categories, questionCategory[j])) {
-              result.push(question);
-              break;
-            }
-          }
-	    } else if(_.isUndefined(questionCategory)) {
-	      // 問題にカテゴリが指定されていない場合
-          if(_.contains(categories, undefined)) {
-            result.push(question);
-          }
-	    }
-	  }
+        // 試験に複数のカテゴリ指定がある場合
+        if(_.contains(categories, questionCategory)) {
+          result.push(question);
+        }
+      }
     }
 
     return result;
