@@ -18,6 +18,13 @@ describe("Answers", function() {
       , {description: "9223372036854775807", correct: false}
       , {description: "\\uffff", correct: false}
     ]
+  }, {
+    description: "mainメソッドの定義を書け"
+    , question_type: 'input_text'
+    , answers: [
+      {description: 'public static void main(String[] args)', correct: true}
+    ]
+    , category: 'Java-Main'
   }];
 
   var questions;
@@ -88,5 +95,29 @@ describe("Answers", function() {
       , answers: [2]
     });
     expect(answer7.isCorrectAnswer()).toEqual(false);
+  });
+
+  it("isCorrectAnswer - INPUT_TEXT", function() {
+    var question = questions.at(2);
+
+    // 回答がなし（引数なし）の場合
+    var answer1 = new easycbt.model.Answer({
+      question: question
+    });
+    expect(answer1.isCorrectAnswer()).toEqual(false);
+
+    // 回答があり（不正解）の場合
+    var answer2 = new easycbt.model.Answer({
+      question: question
+      , answers: 'hoge'
+    });
+    expect(answer2.isCorrectAnswer()).toEqual(false);
+
+    // 回答があり（正解）の場合
+    var answer3 = new easycbt.model.Answer({
+      question: question
+      , answers: 'public static void main(String[] args)'
+    });
+    expect(answer3.isCorrectAnswer()).toEqual(true);
   });
 });

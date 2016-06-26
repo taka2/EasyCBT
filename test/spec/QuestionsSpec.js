@@ -39,7 +39,14 @@ describe("Questions", function() {
       , {description: "\\uffff", correct: false}
     ]
     , category: 'Wrong Question'
-   }];
+  }, {
+    description: "mainメソッドの定義を書け"
+    , question_type: 'input_text'
+    , answers: [
+      {description: 'public static void main(String[] args)', correct: true}
+    ]
+    , category: 'Java-Main'
+  }];
 
   var questions;
 
@@ -50,7 +57,7 @@ describe("Questions", function() {
 
   it("size", function() {
     var actualSize = questions.size();
-    expect(actualSize).toEqual(4);
+    expect(actualSize).toEqual(5);
   });
 
   it("saveOriginalIndex", function() {
@@ -68,8 +75,10 @@ describe("Questions", function() {
   it("getQuestionType", function() {
     var actual1 = questions.at(0).getQuestionType();
     var actual2 = questions.at(1).getQuestionType();
+    var actual3 = questions.at(4).getQuestionType();
     expect(actual1).toEqual(easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE);
     expect(actual2).toEqual(easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE);
+    expect(actual3).toEqual(easycbt.model.Question.QUESTION_TYPE_INPUT_TEXT);
   });
 
   it("getDescription", function() {
@@ -86,6 +95,12 @@ describe("Questions", function() {
     expect(actual1[1].description).toEqual("List a = new ArrayList();");
     expect(actual1[2].description).toEqual("List a = new List();");
     expect(actual1[3].description).toEqual("ArrayList a = new List();");
+  });
+
+  it("getChoices - INPUT_TEXT", function() {
+    var actual1 = questions.at(4).getChoices();
+    expect(actual1.length).toEqual(1);
+    expect(actual1[0].description).toEqual("public static void main(String[] args)");
   });
 
   it("setChoices", function() {
@@ -111,8 +126,10 @@ describe("Questions", function() {
   it("getCorrectAnswers", function() {
     var actual1 = questions.at(0).getCorrectAnswers();
     var actual2 = questions.at(1).getCorrectAnswers();
+    var actual3 = questions.at(4).getCorrectAnswers();
     expect(actual1.length).toEqual(2);
     expect(actual2.length).toEqual(1);
+    expect(actual3[0].description).toEqual("public static void main(String[] args)");
   });
 
   it("getSelectedAnswers", function() {
@@ -120,26 +137,33 @@ describe("Questions", function() {
     expect(actual1.length).toEqual(2);
     expect(actual1[0].description).toEqual("ArrayList a = new ArrayList();");
     expect(actual1[1].description).toEqual("List a = new ArrayList();");
+
+    var actual2 = questions.at(4).getSelectedAnswers("aaaaa");
+    expect(actual2).toEqual([]);
   });
 
   it("getCorrectAnswersDescription", function() {
     var actual1 = questions.at(0).getCorrectAnswersDescription();
     var actual2 = questions.at(1).getCorrectAnswersDescription();
+    var actual3 = questions.at(4).getCorrectAnswersDescription();
     expect(actual1).toEqual("(1) ArrayList a = new ArrayList(); (2) List a = new ArrayList();");
     expect(actual2).toEqual("2147483647");
+    expect(actual3).toEqual("public static void main(String[] args)");
   });
 
   it("getSelectedAnswersDescription", function() {
     var actual1 = questions.at(0).getSelectedAnswersDescription([0, 2]);
     var actual2 = questions.at(1).getSelectedAnswersDescription([2]);
+    var actual3 = questions.at(4).getSelectedAnswersDescription("aaaa");
     expect(actual1).toEqual("(1) ArrayList a = new ArrayList(); (2) List a = new List();");
     expect(actual2).toEqual("9223372036854775807");
+    expect(actual3).toEqual('');
   });
 
   it("filterCategories - no categories specified", function() {
     var actual = questions.filterCategories();
     var actualSize = actual.length;
-    expect(actualSize).toEqual(4);
+    expect(actualSize).toEqual(5);
   });
 
   it("filterCategories - one category specified", function() {

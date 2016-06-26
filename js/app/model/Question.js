@@ -5,10 +5,18 @@ easycbt.model.Question = Backbone.Model.extend({
   // 問題のタイプを取得する
   getQuestionType: function() {
     var self = this;
-    if(self.get('multiple_answer')) {
-      return easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE;
+
+    var questionType = self.get('question_type');
+    if(questionType != undefined) {
+      if(questionType == 'input_text') {
+        return easycbt.model.Question.QUESTION_TYPE_INPUT_TEXT;
+      }
     } else {
-      return easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE;
+      if(self.get('multiple_answer')) {
+        return easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE;
+      } else {
+        return easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE;
+      }
     }
   },
 
@@ -74,6 +82,8 @@ easycbt.model.Question = Backbone.Model.extend({
       }
     } else if(self.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE) {
       resultList.push(choices[answers]);
+    } else if(self.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_INPUT_TEXT) {
+      // 何もしない
     } else {
       // QuestionType追加時にコード追加する場所
     }
@@ -128,4 +138,6 @@ easycbt.model.Question = Backbone.Model.extend({
   QUESTION_TYPE_SINGLE_CHOICE: 1,
   // n択問題の正解が複数
   QUESTION_TYPE_MULTIPLE_CHOICE: 2,
+  // テキスト入力
+  QUESTION_TYPE_INPUT_TEXT: 3,
 });

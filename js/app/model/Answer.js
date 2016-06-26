@@ -73,6 +73,8 @@ easycbt.model.Answer = Backbone.Model.extend({
       return true;
     } else if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE) {
       return question.getSelectedAnswers([answers])[0].correct;
+    } else if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_INPUT_TEXT) {
+      return question.getCorrectAnswers()[0].description == answers;
     } else {
       // QuestionType追加時にコード追加する場所
     }
@@ -87,6 +89,15 @@ easycbt.model.Answer = Backbone.Model.extend({
   // 回答した選択肢リストを取得する
   getAnsweredChoicesDescription: function() {
     var self = this;
-    return self.getQuestion().getSelectedAnswersDescription(self.getAnswers());
+
+    var question = self.getQuestion();
+    if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE
+      || question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE) {
+      return question.getSelectedAnswersDescription(self.getAnswers());
+    } else if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_INPUT_TEXT) {
+      return self.getAnswers();
+    } else {
+      // QuestionType追加時にコード追加する場所
+    }
   },
 });

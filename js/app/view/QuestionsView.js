@@ -80,6 +80,13 @@ easycbt.view.QuestionsView = Backbone.View.extend({
           question: question
           , answers: answerNumber
         }));
+      } else if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_INPUT_TEXT) {
+        // テキスト入力の場合
+        var inputTextValue = elem.val();
+        answers.push(new easycbt.model.Answer({
+          question: question
+          , answers: inputTextValue
+        }));
       } else {
         // QuestionType追加時にコード追加する場所
       }

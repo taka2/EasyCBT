@@ -45,6 +45,14 @@ questions.add([
     , category: 'Java-Bronze'
   }
   , {
+    description: "mainメソッドの定義を書け"
+    , question_type: 'input_text'
+    , answers: [
+      {description: 'public static void main(String[] args)', correct: true}
+    ]
+    , category: 'Java-Bronze'
+  }
+  , {
     description: "PKIを構成するOCSPを利用する目的はどれか。"
     , multiple_answer: false
     , answers: [
