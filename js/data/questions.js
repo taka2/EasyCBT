@@ -4574,4 +4574,282 @@ questions.add([
     ]
     , category: 'SM-H21-AUTUMN'
   }
+  , {
+    description: "IT投資マネジメントを，プロジェクト単位での最適化を目的とする個別プロジェクトマネジメントと企業レベルの最適化を目的とする戦略マネジメントの二つに分類した場合，戦略マネジメントでの実施項目はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "実施中のプロジェクトの評価を行い，全社IT統括部門に進捗状況などを報告した上で，必要に応じて実施計画を修正する。", correct: false}
+      , {description: "全社IT投資計画を基にプロジェクトの実施計画を策定し，投資目的・目標の設定と，投資額の見積りを行い，予算の配分を判断する。", correct: false}
+      , {description: "全社規模でのIT投資評価の方法や，複数のプロジェクトから成るIT投資ボートフォリオの選択基準を決定し，全社IT投資テーマを起案する。", correct: true}
+      , {description: "プロジェクトが完了してから一定期聞が経過した後，実施計画段階で設定した効果目標が達成されているか否かを実績に基づいて検証する。", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "TCOの算定に当たって，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "エンドユーザコンピューティングにおける利用部門の運用費用は考慮しない。", correct: false}
+      , {description: "システム監査における監査対象データの収集費用や管理費用は考慮しない。", correct: false}
+      , {description: "システム障害の発生などによって，その障害とは直接関係のない仕入先企業が被るおそれがある，将来的な損失額も考慮する。", correct: false}
+      , {description: "利用部門におけるシステム利用に起因する，埋没原価などの見えない費用も考慮する。 ", correct: true}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "物流業務において，lO%の物流コストの削減の目標を立てて，図のような業務プロセスの改善活動を実施している。図中のcに相当する活動はどれか。<br><br>" +
+                 "<img src = \"js/data/image/ST_H27_q03.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "CSF (Critical Success Factorlの抽出", correct: false}
+      , {description: "KGI (Key Goal Indicator)の設定", correct: false}
+      , {description: "KPI (Key Performance Indicator)の設定", correct: true}
+      , {description: "MBO (Management by Objectives)の導入", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "共通フレームによれば，システム化計画の立案において，システム化機能を整理し，情報と処理の流れを明確にするために実施する作業はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "機能要件の定義", correct: false}
+      , {description: "業務運用手順の文書化", correct: false}
+      , {description: "業務モデルの作成", correct: true}
+      , {description: "システム方式の確立", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "IT投資案件Xの5年間の投資効果をNPVで評価する場合の算出式はどれか。<br><br>" +
+                 "<img src = \"js/data/image/ST_H27_q05.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "<img src = \"js/data/image/ST_H27_q05a.png\"/>", correct: false}
+      , {description: "<img src = \"js/data/image/ST_H27_q05b.png\"/>", correct: false}
+      , {description: "<img src = \"js/data/image/ST_H27_q05c.png\"/>", correct: true}
+      , {description: "<img src = \"js/data/image/ST_H27_q05d.png\"/>", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "アンゾフの成長マトリクスを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "外部環境と内部環境の観点から，強み，弱み，機会，脅威という伺つの要因について情報を整理し，企業を取り巻く環境を分析する手法である。", correct: false}
+      , {description: "企業のビジョンと戦略を実現するために，財務，顧客，内部ビジネスプロセス，学習と成長という四つの視点から事業活動を検討し，アクションプランまで具体化していくマネジメント手法である。", correct: false}
+      , {description: "事業を，市場浸透，市場拡大，製品開発，多角化という四つのタイプに分類し，事業の方向性を分析する手法である。", correct: true}
+      , {description: "製品を，導入期，成長期，成熟期，衰退期という四つの段階に分類し，企業にとって最適な戦略を分析する手法である。", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "バリューチェーンは，付加価値を生み出す事業活動を五つの主活動と四つの支援活動に分類する。支援活動に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "技術開発", correct: true}
+      , {description: "購買物流", correct: false}
+      , {description: "サービス", correct: false}
+      , {description: "製造", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "観測データを類似性によって集団や群に分類し，その特徴となる要因を分析する手法はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "クラスタ分析法", correct: true}
+      , {description: "指数平滑法", correct: false}
+      , {description: "デルファイ法", correct: false}
+      , {description: "モンテカルロ法", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "消費者市場のセグメンテーション変数のうち，心理的変数はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "使用頻度，ロイヤリテイ", correct: false}
+      , {description: "性格，ライフスタイル", correct: true}
+      , {description: "都市規模，人口密度", correct: false}
+      , {description: "年齢，職業", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "バイラルマーケティングを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "インターネット上で成果報酬型広告の仕組みを用いるマーケティング手法である。", correct: false}
+      , {description: "個々の顧客を重要視し，個別ニーズへの対応を図るマーケティング手法である。", correct: false}
+      , {description: "セグメントごとに差別化した，異なる商品を提供するマーケティング手法である。", correct: false}
+      , {description: "人から人へと評判が伝わることを積極的に利用するマーケティング手法である。", correct: true}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "マーケットバスケット分析を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "POSシステムなどで収集した販売情報から，顧客が買物をした際の購入商品の組合せを分析する。", correct: true}
+      , {description: "網の目状に一定の経線と緯線で区切った地域に対して，人口，購買力など様々なデータを集計し，より細かく地域の分析を行う。", correct: false}
+      , {description: "一定の目的で地域を幾つかに分割し，各地域にオピニオンリーダを選んで反復調査を行い，地域の傾向や実態を把握する。", correct: false}
+      , {description: "商品ごとの販売金額又は粗利益額を高い順に並べ，その累計比率から商品を三つのランクに分けて商品分析を行い，売れ筋商品を把握する。", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "一人の顧客に関する顧客生涯価値の見積りで留意すべきことはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "顧客が紹介する他の顧客の購入見込みも対象とする。", correct: true}
+      , {description: "顧客の平均購入単価よりも年間購入回数を重視する。", correct: false}
+      , {description: "商品を新しく買い換える行為は考慮しない。", correct: false}
+      , {description: "新製品のプロモーション費用は対象としない。", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "企業が実施するマクロ環境分析のうち.PEST分析によって戦略を策定している事例はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "購買決定者の年齢層や社会的なポジション，購買に至るプロセスの中で購買行動に影響する要因を把握し，自社の製品の市場投入方法を決定する。", correct: false}
+      , {description: "自社の製品市場に参入してくると見込まれる，別市場の企業の動向を把握し，新製品の開発を決定する。", correct: false}
+      , {description: "自社の販売力，生産力の評価や自社の保有する技術力を検証し，新しく進出する市場分野を決定する。", correct: false}
+      , {description: "法規制，景気動向，流行の推移や新技術の状況を把握し，自社の製品改善方針を決定する。", correct: true}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "知識創造プロセス (SECIモデル)において，表出化に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "顧客への対応の仕方を，業種別にマニュアル化する。", correct: true}
+      , {description: "顧客を訪問し，要望についてのヒアリングを行う。", correct: false}
+      , {description: "製品操作マニュアルと業務マニュアルから，運用マニュアルを作成する。", correct: false}
+      , {description: "マニュアルに記載された方法を実践し，スキルを習得する。", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "企業と大学との共同研究に関する記述として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "企業のニーズを受け入れて共同研究を実施するための機関として，各大学にTLO (Technology Licensing Organization)が設置されている。", correct: false}
+      , {description: "共同研究で得られた成果を特許出願する場合，研究に参加した企業，大学などの法人を発明者とする。", correct: false}
+      , {description: "共同研究に必要な経費を企業が全て負担した場合でも，実際の研究は大学の教職員と企業の研究者が対等の立場で行う。", correct: true}
+      , {description: "国立大学法人が共同研究を行う場合，その研究に必要な費用は全て国が負担しなければならない。", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "ebXMLを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "XML文書をペースとしたメッセージをHTTPなどのプロトコルで交換することによって，他のコンビュータ上のオブジェクトにアクセスするための仕様である。", correct: false}
+      , {description: "XMLを応用したもので，インターネット上のディレクトリ(登録簿)にWebサーピスを登録し，検索可能とするための仕様である。", correct: false}
+      , {description: "XMLを用いたWebサービス間の通信プロトコルやビジネスプロセスの記述方法，取引情報のフォーマットなどを定義する一連の仕様である。", correct: true}
+      , {description: "プログラムからWebサービスを呼び出す際に必要なインタフェース情報を，XML形式の言語で記述するための仕様である。 ", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "インターネットにおける広告形態のうち，インプレッション保証型広告の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "あらかじめ決められたキーワードを利用者が検索エンジンに入力した際に表示される広告", correct: false}
+      , {description: "掲載した広告を見た利用者が，その広告をクリックした上で，掲載者の意図に沿った行動を起こした場合に，掲載料を支払う広告", correct: false}
+      , {description: "契約した表示回数に達するまで掲載を続ける広告", correct: true}
+      , {description: "ポータルサイトのトップページや特集ページなどに一定期間掲載する広告", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "e-ビジネス分野で提唱されているロングテールの考え方を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "売れ筋商品に絞り込んで販売するのではなく，多品種少量販売によって大きな売上や利益を得ることができる。", correct: true}
+      , {description: "業界標準を確立した製品・サービスは生産規模が2倍になると生産性が更に向上し，収益が2倍以上になる。", correct: false}
+      , {description: "全体の2割の優良顧客が全体の売上の8割を占め，全商品の上位2割が8割の売上を占める。", correct: false}
+      , {description: "利用者が増えるほど，個々の利用者の便益が増加し，その結果，ますます利用者が繕えることで寡占化が進む。", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "リーダシップを“タスク志向”と“人間関係志向”の強弱で四つの型に分類し，部下の成熟度によって，有効なリーダシツプの型が変化するとしたものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SL理論", correct: true}
+      , {description: "Y理論", correct: false}
+      , {description: "コンビテンシモデル", correct: false}
+      , {description: "マズローの欲求段階説", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "A社とB社の比較表から分かる，A社の特徴はどれか。<br><br>" +
+                 "<img src = \"js/data/image/ST_H27_q20.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "売上高の増加が大きな利益に結び付きやすい。", correct: true}
+      , {description: "限界利益率が低い。", correct: false}
+      , {description: "損益分岐点が低い。", correct: false}
+      , {description: "不況時にも，売上高の減少が大きな損失に結び付かず不況抵抗力は強い。", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "EVA (経済的付加価値)の算出方法を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "効果の現在価値と投資額の差がゼロになる資本コストを求める。", correct: false}
+      , {description: "投資額に対してどれだけ利益を生み出しているかを求める。", correct: false}
+      , {description: "投資額を回収するのに必要な期間(年数)を求める。", correct: false}
+      , {description: "利益から資本費用(投資額x資本コスト)を引いて金額を求める。", correct: true}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "我が国における，連結の対象となる子会社の範囲を決定する基準はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "営業循環基準", correct: false}
+      , {description: "影響力基準", correct: false}
+      , {description: "支配力基準", correct: true}
+      , {description: "持株基準", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "国税関係帳簿を磁気媒体で保存する場合，法律で規定されているものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "あらかじめ所轄の税務署長の承認が必要となる。", correct: true}
+      , {description: "定められた性能の媒体を用いなければならない。", correct: false}
+      , {description: "電子取引に関する記録に限って許可されている。", correct: false}
+      , {description: "バックアップとして紙又はマイクロフィルムでの保存が義務付けられている。", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "JIS Q 22301:2013が要求事項を規定している対象はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ITサービスマネジメントシステム", correct: false}
+      , {description: "個人情報保護マネジメントシステム", correct: false}
+      , {description: "事業継続マネジメントシステム", correct: true}
+      , {description: "情報セキュリティマネジメントシステム", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "メールサーバ(SMTPサーバ)の不正利用を防止するために，メールサーバにおいて行う設定はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ゾーン転送のアクセス元を制御する。", correct: false}
+      , {description: "第三者中継を禁止する。", correct: true}
+      , {description: "ディレクトリに存在するファイル名の表示を禁止する。", correct: false}
+      , {description: "特定のディレクトリ以外でのCGIプログラムの実行を禁止する。 ", correct: false}
+    ]
+    , category: 'ST-H27-AUTUMN'
+  }
 ]);

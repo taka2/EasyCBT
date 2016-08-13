@@ -1,6 +1,21 @@
 // 出題データ
 examinations.add([
   {
+    examinationName: "平成27年度秋季試験 ITストラテジスト試験（ST） AM2"
+    , questionCount: 25
+    , categories: ['ST-H27-AUTUMN']
+  }
+  , {
+    examinationName: "ITストラテジスト試験（ST） AM2 ALL"
+    , questionCount: 25
+    , categories: ['ST-H27-AUTUMN']
+  }
+  , {
+    examinationName: "ITストラテジスト試験（ST） AM2 ALL 10問"
+    , questionCount: 10
+    , categories: ['ST-H27-AUTUMN']
+  }
+  , {
     examinationName: "Javaクイズ(Bronzeカテゴリのみ)"
     , questionCount: 2
     , categories: ['Java-Bronze']
