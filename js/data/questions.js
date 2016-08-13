@@ -4597,7 +4597,7 @@ questions.add([
     , category: 'ST-H27-AUTUMN'
   }
   , {
-    description: "物流業務において，lO%の物流コストの削減の目標を立てて，図のような業務プロセスの改善活動を実施している。図中のcに相当する活動はどれか。<br><br>" +
+    description: "物流業務において，10%の物流コストの削減の目標を立てて，図のような業務プロセスの改善活動を実施している。図中のcに相当する活動はどれか。<br><br>" +
                  "<img src = \"js/data/image/ST_H27_q03.png\"/>"
     , multiple_answer: false
     , answers: [
@@ -4851,5 +4851,293 @@ questions.add([
       , {description: "特定のディレクトリ以外でのCGIプログラムの実行を禁止する。 ", correct: false}
     ]
     , category: 'ST-H27-AUTUMN'
+  }
+  , {
+    description: "エンタープライズアーキテクチャの参照モデルのうち，BRM(Business ReferenceModel)で提供されるものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "アプリケーションサービスを機能的な観点から分類・体系化したサービスコンポーネントから成る，アプリケーションサービスの再利用を促進するためのモデル", correct: false}
+      , {description: "業務分類に従った業務体系・システム体系と各種業務モデルから成る，組織全体で業務やシステムの共通化の対象領域を洗い出すためのモデル", correct: true}
+      , {description: "サービスコンポーネントを実際に活用するためのプラットフォームやテクノロジの標準仕様から成る，組織全体での技術の標準化を促進するためのモデル", correct: false}
+      , {description: "組織間で共有される可能性の高い情報について，名称，定義及び各種属性を総体的に記述したモデルから成る，情報の再利用・統合を促進するためのモデル", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "IDEALによるプロセス改善の取組みにおいて，図のbに当てはまる説明はどれか。<br><br>" +
+                 "<img src = \"js/data/image/ST_H26_q02.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "解決策を作り，その先行評価・試行・展開を行う。", correct: false}
+      , {description: "改善活動の優先順位を設定し，具体的な改善計画を作成する。", correct: true}
+      , {description: "活動を分析してその妥当性を確認し，次のサイクルの準備を行う。", correct: false}
+      , {description: "業務の現状を調査して可視化し，改善ポイントを明らかにする。", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "BI (Business Intelligence)を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "企業内外のデータを蓄積し，分類・加工・分析して活用することによって，企業の意思決定の迅速化を支援する手法", correct: true}
+      , {description: "企業内の慣行などにとらわれず，業務プロセスを抜本的に再構築することによって，コスト・品質・サービス水準などを改善する手法", correct: false}
+      , {description: "企業内の業務の流れを可視化し，業務改善サイクルを適用することによって，継続的な業務改善を図る手法", correct: false}
+      , {description: "企業内の異なるシステムを互いに連結し，データやプロセスの統合を図ることによって，効率よく活用する手法", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "IT投資案件において，投資効果を.. PBP(Pay Back Period)で評価する。投資額が500のとき，期待できるキャッシュインの四つのシナリオa～dのうち，PBP効果が最も高いものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "<img src = \"js/data/image/ST_H26_q04a.png\"/>", correct: false}
+      , {description: "<img src = \"js/data/image/ST_H26_q04b.png\"/>", correct: false}
+      , {description: "<img src = \"js/data/image/ST_H26_q04c.png\"/>", correct: false}
+      , {description: "<img src = \"js/data/image/ST_H26_q04d.png\"/>", correct: true}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "IT技術動向，ソフトウェアパッケージ情報，開発方法論などの情報提供をベンダに要請するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "IFB", correct: false}
+      , {description: "RFI", correct: true}
+      , {description: "RFP", correct: false}
+      , {description: "RFQ", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "専門の事業者が提供するサービスのうち，EMSの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "コールセンタの企画，設計から業務運用までを一括して受託することによって，委託元のコールセンタへの設備投資や人員調達を不要とするサービス", correct: false}
+      , {description: "人事，経理，総務などの業務を標準化してグループ内の1か所に集約することによって，グループ全体の間接業務のコスト削減に貢献するサービス", correct: false}
+      , {description: "複数の電子機器メーカから製品の設計，製造を一括して受託することによって，生産規模を確保し，低コストで製品を提供するサービス", correct: true}
+      , {description: "プロパイダ側のコンビュータ上でソフトウェアを稼働させて，利用者はそのソフトウェアの機能をネットワーク経由で利用するサービス", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "LBOの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "株式市場で一般株主に対して，一定期間に一定の価格で株式を買い付けることを公告し，相手先企業の株式を取得する。", correct: false}
+      , {description: "現経営陣や事業部門の責任者が株主から自社の株式を譲り受けることによって，当該事業の経営権を取得する。", correct: false}
+      , {description: "投資会社が，業績不振などの問題を抱えた企業の株式の過半数を取得した上で，マネジメントチームを派遣い経営に参画する。", correct: false}
+      , {description: "買収先企業の資産などを担保に，金融機関から資金を調達するなどして，限られた資金で企業を買収する。 ", correct: true}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "PPMにおいて，投資用の資金源として位置付けられる事業はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "市場成長率が高く，相対的市場占有率が高い事業", correct: false}
+      , {description: "市場成長率が高く，相対的市場占有率が低い事業", correct: false}
+      , {description: "市場成長率が低く，相対的市場占有率が高い事業", correct: true}
+      , {description: "市場成長率が低く，相対的市場占有率が低い事業", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "コールセンタシステムにおけるIVRを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "企業ピル内などに設置して，外線電話と内線電話，内線電話同士を交換する装置", correct: false}
+      , {description: "顧客からの電話に自動応答し，顧客自身の操作によって情報の選択や配信，合成音声による応答などを行う仕組み", correct: true}
+      , {description: "コンビュータと電話を統合し，顧客データベースとPBXを連動させて，発呼や着呼と同時に必要な顧客情報をオペレータの画面上に表示するシステム", correct: false}
+      , {description: "着信した電話を，あらかじめ決められたルールに従ってa複数のオペレータのうちの1人だけに接続する仕組み", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "消費者市場のセグメンテーション変数のうち，行動的変数はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "社会階層，ライフスタイル", correct: false}
+      , {description: "使用頻度，ロイヤルティ", correct: true}
+      , {description: "都市規模，人口密度", correct: false}
+      , {description: "年齢，職業", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "マーケティング調査におけるエスノグラフィーの活用事例はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "業界誌や業界新聞，調査会社の売れ筋ランキングなどから消費者の動向を探る。", correct: false}
+      , {description: "広告の一部に資料請求の項目を入れておき，それを照会してきた人数を調べる。", correct: false}
+      , {description: "消費行動の現場で観察やインタビューを行い，気付かなかった需要を発掘する。", correct: true}
+      , {description: "同等の条件下で複数パターンの見出しを広告として表示し，反応の違いを測る。", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "顧客の収益が表のように見込まれるとき，3年間の顧客生涯価値(LTV)は何百万円か。ここで，割引率は10%とし，計算は百万円未満を切り捨てるものとする。<br><br>" +
+                 "<img src = \"js/data/image/ST_H26_q12.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "65", correct: false}
+      , {description: "67", correct: true}
+      , {description: "70", correct: false}
+      , {description: "73", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "ファイプフォース分析において，企業の競争力に影響を与える五つの要因として，新規参入者の脅威，バイヤの交渉力，競争業者間の敵対関係，代替製品の脅威と，もう一つはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "サプライヤの交渉力", correct: true}
+      , {description: "自社製品の品質", correct: false}
+      , {description: "消費者の購買力", correct: false}
+      , {description: "政府の規制", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "経営戦略に用いるCSF分析で明らかになるものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "業界内の競争に影響する要因と，自社の強み", correct: false}
+      , {description: "競争環境の脅威と機会，企業の強み・弱み", correct: false}
+      , {description: "成功するための重要な機能や特性", correct: true}
+      , {description: "保有する事業の成長性と収益性", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "カーブアウトの説明として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "企業の経営者などが自社の株式や事業部門を買収すること", correct: false}
+      , {description: "競争相手に知られたくない技術を，特許取得せずノウハウとして社内に秘匿すること", correct: false}
+      , {description: "自社の事業の一部を戦略的に切り出し，埋もれた技術や人材を社外の別組織として独立させること", correct: true}
+      , {description: "製造委託契約を締結し，外部から完成品を調達すること", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "製品のロードマップに従って製品を開発していく場合に，プロダクトライン開発を適用する利点はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "技術者個人のカを組織力よりも重視するので，成熟度が低い組織でも製品開発に成功しやすい。", correct: false}
+      , {description: "品質が安定した資産を再利用していくので，品質が安定した製品を低いコストで開発できる。", correct: true}
+      , {description: "ロードマップ上の各製品を完全に独立して開発していくので，一つの製品の不具合が他の製品に波及することがない。", correct: false}
+      , {description: "ロードマップ上の最初の機種の開発開始時に，開発環境を準備するなどの初期投資が不要なので，市場への新規参入が容易になる。", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "TOC (Theory of Constraints)の特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "個々の工程を個別に最適化することによって，生産工程全体を最適化する。", correct: false}
+      , {description: "市場の需要が供給能力を下回っている場合に有効な理論である。", correct: false}
+      , {description: "スループット(=売上高一資材費)の増大を最重要視する。", correct: true}
+      , {description: "生産プロセス改善のための総投資額を制約条件として確立された理論である。", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "ある会社の生産計画部では，毎月25日に次の手続で翌月分の計画生産量を決定している。8月分の計画生産量を求める式はどれか。<br><br>" +
+                 "<img src = \"js/data/image/ST_H26_q18.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "I6+P7-S7+S8", correct: false}
+      , {description: "S8+S9+S10+S11-I7", correct: true}
+      , {description: "S8+S9+S10+S11-I8", correct: false}
+      , {description: "S9+S10+S11-I7", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "HEMSの説明として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "太陽光発電システム及び家庭用燃料電池が発電した電気を，家庭などで利用できるように変換するシステム", correct: false}
+      , {description: "廃棄物の減量及び資源の有効利用推進のために，一般家庭及び事務所から排出された家電製品の有用な部分をリサイクルするシステム", correct: false}
+      , {description: "ヒートポンプを利用して，より少ないエネルギーで大きな熱量を発生させる電気給湯システム", correct: false}
+      , {description: "複数の家電製品をネットワークでつなぎ，電力の可視化及び電力消費の最適制御を行うシステム", correct: true}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "コンピテンシモデルの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "権限行使と命令統制による労務管理を批判し，目標管理制度や経営参加制度などによる動機付けが有効であるとしたもの", correct: false}
+      , {description: "最適なリーダシップの唯一のスタイルは存在せず，望ましいリーダシップのスタイルは，状況に応じて異なるとしたもの", correct: false}
+      , {description: "人材の評価や育成の基準とするために，恒常的に成果に結び付けることができる個人の行動や思考特性を定義したもの", correct: true}
+      , {description: "人間の基本的欲求を低次から，生理的欲求，安全の欲求，所属と愛の欲求，承認の欲求，自己実現の欲求としたもの", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "マトリックス組織を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "事業部制組織と職能制組織との両方の特徴を生かそうとする組織である。", correct: true}
+      , {description: "新事業開発のために社内に独立した活動単位として設置し，小さな企業であるかのように運営する組織である。", correct: false}
+      , {description: "製品群などを事業単位として構成し，事業単位ごとに意思決定を行う組織である。", correct: false}
+      , {description: "専門性を生かした組織であり，研究開発，製造，販売，人事・総務，経理・財務のような職能別に構成された組織である。", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "ROE (ReturnOnEquity)を減少させるものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ROAの増加", correct: false}
+      , {description: "自己資本比率の増加", correct: true}
+      , {description: "総資本回転率の増加", correct: false}
+      , {description: "当期純利益率の増加", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "次の条件において.. A社の連結損益計算書を作成した場合の連結売上高は何百万円か。<br>" +
+    "<br/>" +
+"<div>〔条件〕" +
+"・A社は，B社の株式の80%を取得している。" +
+"・B社は，C社の株式の60%を取得している。" +
+"・B社は，D社の株式の20%を取得している。ただし，役員の派遣などはない。" +
+"・A社の売上高は，700,000百万円であり，その10%は，B社に対するものである。" +
+"・B社の売上高は，350,000百万円であり，その20%は，D社に対するものである。" +
+"・C社の売上高は，250,000百万円である。" +
+"・D社の売上高は，200,000百万円である。" +
+"・A社と.. B社，.. B社と.. D社以外の相互間取引はない。</div>"
+    , multiple_answer: false
+    , answers: [
+      {description: "1,230,000", correct: true}
+      , {description: "1,300,000", correct: false}
+      , {description: "1,360,000", correct: false}
+      , {description: "1,430,000", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "刑法の電子計算機使用詐欺罪が適用される違法行為はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "いわゆるねずみ講方式による取引形態のWebページを開設する。", correct: false}
+      , {description: "インターネット上に，実際よりも良品と誤認させる商品カタログを掲載し，粗悪な商品を販売する。", correct: false}
+      , {description: "インターネットを経由して銀行のシステムに虚偽の情報を与え，不正な振込や送金をさせる。", correct: true}
+      , {description: "企業のWebページを不正な手段で改変し，その企業の信用を傷つける情報を流す。", correct: false}
+    ]
+    , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "シングルサインオンの実装方式の特徴のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "クッキーを使ったシングルサインオンの場合，サーバごとの認証情報を含んだクッキーをクライアントで生成し，各サーバ上で保存，管理する。", correct: false}
+      , {description: "クッキーを使ったシングルサインオンの場合，認証対象のサーバを，異なるインターネットドメインに配置する必要がある。", correct: false}
+      , {description: "リバースプロキシを使ったシングルサインオンの場合，認証対象のWebサーバを，異なるインターネットドメインに配置する必要がある。", correct: false}
+      , {description: "リバースプロキシを使ったシングルサインオンの場合，利用者認証においてパスワードの代わりにディジタル証明書を用いることができる。 ", correct: true}
+    ]
+    , category: 'ST-H26-AUTUMN'
   }
 ]);
