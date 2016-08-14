@@ -612,7 +612,7 @@ questions.add([
     , category: 'SC-H26-SPRING'
   }
   , {
-    description: "システム監査報告書に記載された改善勧告に対して，被監査部門から提出された改善計画を経営者がITガパナンスの観点から評価する際の方針のうち，適切なものはどれか。"
+    description: "システム監査報告書に記載された改善勧告に対して，被監査部門から提出された改善計画を経営者がITガバナンスの観点から評価する際の方針のうち，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
       {description: "1年以内に実現できる改善を実施する。", correct: false}
@@ -3019,7 +3019,7 @@ questions.add([
     , category: 'SM-H26-AUTUMN'
   }
   , {
-    description: "プロジェクトの進捗管理をEVM(Earned Value Management) で行っている。コストが超過せず，納期にも遅れないと予想されるプロジェクトはどれか。ここで，それぞれのプロジェクトの開発の生産性は現在までと変わらないものとする。<br/>" +
+    description: "プロジェクトの進捗管理をEVM(Earned Value Management) で行っている。コストが超過せず，納期にも遅れないと予想されるプロジェクトはどれか。ここで，それぞれのプロジェクトの開発の生産性は現在までと変わらないものとする。<br/><br/>" +
     "<img src = \"js/data/image/H26_q16.png\"/>"
     , multiple_answer: false
     , answers: [
@@ -4987,7 +4987,7 @@ questions.add([
     , category: 'ST-H26-AUTUMN'
   }
   , {
-    description: "ファイプフォース分析において，企業の競争力に影響を与える五つの要因として，新規参入者の脅威，バイヤの交渉力，競争業者間の敵対関係，代替製品の脅威と，もう一つはどれか。"
+    description: "ファイブフォース分析において，企業の競争力に影響を与える五つの要因として，新規参入者の脅威，バイヤの交渉力，競争業者間の敵対関係，代替製品の脅威と，もう一つはどれか。"
     , multiple_answer: false
     , answers: [
       {description: "サプライヤの交渉力", correct: true}
@@ -5139,5 +5139,286 @@ questions.add([
       , {description: "リバースプロキシを使ったシングルサインオンの場合，利用者認証においてパスワードの代わりにディジタル証明書を用いることができる。 ", correct: true}
     ]
     , category: 'ST-H26-AUTUMN'
+  }
+  , {
+    description: "情報戦略の投資効果を評価するとき，利益額を分子に，投資額を分母にして算出するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "EVA", correct: false}
+      , {description: "IRR", correct: false}
+      , {description: "NPV", correct: false}
+      , {description: "ROI", correct: true}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "TCOの策定に当たって適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "エンドユーザコンビューティングにおけるユーザ部門の運用コストを考慮する必要はない。", correct: false}
+      , {description: "システム監査における監査対象データの収集コストや管理コストを考慮する必要はない。", correct: false}
+      , {description: "システム障害の発生などによって仕入先企業が被るおそれのある，将来的な損失額も考慮する必要がある。", correct: false}
+      , {description: "ユーザ部門におけるシステム利用に起因する，埋没原価などの見えないコストも考慮する必要がある。", correct: true}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "エンタープライズアーキテクチャを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "今まで開発してきた業務システムをビジネス価値とソリューション品質の2軸で分析し，業務システムごとの改善の方向を決定する。", correct: false}
+      , {description: "既存の業務と情報システムの全体像及び将来の目標を明示することによって，ITガパナンスを強化し，経営の視点からIT投資効果を高める。", correct: true}
+      , {description: "財務，顧客，内部ビジネスプロセス，学習と成長の四つの視点から評価指標を設定し，IT投資による組織全体への効果を的確に管理する。", correct: false}
+      , {description: "情報システムの開発・保守とその組織運営の現状を調査し，ソフトウェアプロセスの成熟度を評価して，プロセス改善の方向を決定する。", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "BABOKでは，要求をビジネス要求，ステークホルダ要求，ソリューション要求及び移行要求の4種類に分類している。ソリューション要求の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "経営戦略や情報化戦略などから求められる要求であり，エンタープライズアナリシスの活動で定義している。", correct: false}
+      , {description: "新システムへのデータ変換や要員教育などに関する要求であり，ソリューションのアセスメントと妥当性確認の活動で定義している。", correct: false}
+      , {description: "組織・業務・システムが実現すべき機能要求と非機能要求であり，要求アナリシスの活動で定義している。", correct: true}
+      , {description: "利用部門や運用部門などから個別に発せられるニーズであり，要求アナリシスの活動で定義している。", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "非機能要件の使用性に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "4時間以内のトレーニングで新しい画面インタフェースを操作できること", correct: true}
+      , {description: "業務のピーク時でも 8時間以内で夜間パッチ処理を完了できること", correct: false}
+      , {description: "現行のシステムから新システムへ72時間以内で移行できること", correct: false}
+      , {description: "地震などの大規模災害時でも144時間以内にシステムを復旧できること", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "グリーン購入法において，“環境物品等”として規定されているものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ISO 14001認証を取得した企業が製造又は提供する製品・サービス", correct: false}
+      , {description: "IT活用による省エネなど，グリーンITに関わる製品・サービス", correct: false}
+      , {description: "環境への負荷低減に資する原材料・部品文は製品・サービス", correct: true}
+      , {description: "コーズリレーテッドマーケティング対象の，環境配慮の製品・サービス ", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "市場成長率と相対的市場シェアから，市場と企業の関係を分析し，自社製品や事業についての最適な資源配分方針を求めるための手法はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "3C", correct: false}
+      , {description: "BSC", correct: false}
+      , {description: "PPM", correct: true}
+      , {description: "SWOT", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "アンゾフの成長マトリクスを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "外部環境と内部環境の観点から，強み，弱み，機会及び脅威の四つの要因について情報を整理し，企業を取り巻く環境を分析する手法である。", correct: false}
+      , {description: "企業のビジョンと戦略を実現するために，財務，顧客，内部ビジネスプロセス及び学習と成長の四つの視点から事業活動を検討し，アクションプランまで具体化していくマネジメント手法である。", correct: false}
+      , {description: "事業を，市場浸透，市場拡大，製品開発及び多角化の四つのタイプに分類し，事業の方向性を分析する手法である。", correct: true}
+      , {description: "製品を，導入期，成長期，成熟期及び衰退期の四つの段階に分類し，企業にとって最適な戦略を分析する手法である。", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "コアコンビタンスに該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "主な事業ドメインの高い成長率", correct: false}
+      , {description: "競合他社よりも効率性が高い生産システム", correct: true}
+      , {description: "参入を予定している事業分野の競合状況", correct: false}
+      , {description: "収益性が高い事業分野での市場シェア", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "バリューチェーンは，付加価値を生み出す事業活動を五つの主活動と四つの支援活動に分類する。支援活動に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "技術開発", correct: true}
+      , {description: "購買物流", correct: false}
+      , {description: "サービス", correct: false}
+      , {description: "製造", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "観測データを類似性によって集団や群に分類し，その特徴となる要因を分析する手法はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "クラスタ分析法", correct: true}
+      , {description: "指数平滑法", correct: false}
+      , {description: "デルファイ法", correct: false}
+      , {description: "モンテカルロ法", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "人から人へと評判が伝わることを積極的に利用することが特徴的なマーケティング手法はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "アフィリエイトマーケティング", correct: false}
+      , {description: "セグメン卜内差別化マーケティング", correct: false}
+      , {description: "パーミッションマーケティング", correct: false}
+      , {description: "バイラルマーケティング", correct: true}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "プランド戦略における，プランドエクイティを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "顧客がそのブランドに対してどの程度の執着心をもっているかを示す概念であり，これが高いほど，顧客は他のブランドに乗り換えにくくなる。", correct: false}
+      , {description: "顧客がプランド要素に接触したとき，企業として顧客の心の中に何を連想してほしいかのイメージである。", correct: false}
+      , {description: "特定の組織にとって自社のブランドの名前やシンボルと結び付いたブランドの資産の集合であり，製品やサービスの価値を増大させるものである。", correct: true}
+      , {description: "名称，キャッチフレーズ，ロゴマーク，キャラクタ，記号，包装，スローガンなど，ブランドを特定して差別化するための要素である。", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "計画的陳腐化を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "機能がまだ十分に使用可能な製品を，新しいデザインに変更することによって，既存製品からの移行を進めていくこと", correct: true}
+      , {description: "製品の誕生から廃棄までのうち，製品のニーズがなくなることによって，売上も利益も下降線をたどる段階のこと", correct: false}
+      , {description: "製品の値引き販売をすることによって，多くの人の購入を狙うこと", correct: false}
+      , {description: "大規模な流通業者が，あえてプランド名を付けないことによって，旧タイプの製品を提供すること", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "マーケットバスケット分析を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "POSシステムで収集した販売情報から，顧客が貨物をした際の購入商品の組合せなどを分析する。", correct: true}
+      , {description: "網の白状に一定の経線と緯線で区切った地域に対して，人口，購買力など様々なデータを集計し，より細かく地域の分析を行う。", correct: false}
+      , {description: "一定の目的で地域を幾つかに分割し，各地域にオピニオンリーダを選んで反復調査を行い，地域の傾向や実態を把握する。", correct: false}
+      , {description: "商品ごとの販売金額文は粗利益額を高いl頓に並べ，その累計比率から商品を三つのランクに分けて商品分析を行い，売れ筋商品を把握する。", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "企業が実施するマクロ環境分析のうち，PEST分析によって戦略を策定している事例はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "購買決定者の年齢層や社会的なポジション，購買に至るプロセスの中で購買行動に影響する要因を把握し，自社の製品の市場投入方法を決定する。", correct: false}
+      , {description: "自社の製品市場に参入してくると見込まれる，別市場の企業の動向を把握し，新製品の開発を決定する。", correct: false}
+      , {description: "自社の販売力，生産力の評価や自社の保有する技術力を検証し，新しく進出する市場分野を決定する。", correct: false}
+      , {description: "法規制，景気動向，流行の推移や新技術の状況を把握し，自社の製品改善方針を決定する。", correct: true}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "SECIモデルにおける，内面化の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "新たに創造された知識を組織に広め，新たな暗黙知として習得すること", correct: true}
+      , {description: "組織内の個人，小グループが有する暗黙知を形式知として明示化すること", correct: false}
+      , {description: "組織内の個人，小グループで暗黙知の共有化や，新たな暗黙知を創造すること", correct: false}
+      , {description: "明示化した形式知を組み合わせ，それを基に新たな知識を創造すること", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "特許を分析して生まれた問題解決技法であり，問題(矛盾)を創造的・発明的に解決するための弁証法的な思考j去を具体的な方法論にまとめたものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "QFD", correct: false}
+      , {description: "TRIZ", correct: true}
+      , {description: "シックスシグマ", correct: false}
+      , {description: "親和図法", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "ある期間の生産計画において，図の部品表で表される製品Aの需要量が10個であるとき，部品Dの正味所要量は何個か。ここで，ユニットBの在庫残が5個，部品Dの在庫残が25個あり，他の在庫残，仕掛残，注文残，引当残などはないものとする。<br/><br/>" +
+                 "<img src = \"js/data/image/ST_H25_q19.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "80", correct: false}
+      , {description: "90", correct: true}
+      , {description: "95", correct: false}
+      , {description: "105", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "ファプレスの特徴を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "1人又は数人が全工程を担当する方式であり，作業内容を変えるだけで生産品目を変更でき，多品種少量生産への対応が容易である。", correct: false}
+      , {description: "後工程から，部品納入の時期，数量を示した作業指示書を前工程に渡して部品供給を受ける仕組みであり，在庫を圧縮することができる。", correct: false}
+      , {description: "生産設備である工場をもたないので，資金が固定化せず，需給変動や製品ライフサイクルに伴うリスクが低減できる。", correct: true}
+      , {description: "生産設備をもたない複数の企業の製造を請け負うことによって，効率の良い設備運営や高度な研究開発を行える。", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "リーダシップを“タスク志向“と“人間関係志向”の強弱で四つの型に分類し，部下の成熟度によって，有効なリーダシップの型が変化するとしたものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SL理論", correct: true}
+      , {description: "Y理論", correct: false}
+      , {description: "コンピテンシモデル", correct: false}
+      , {description: "マズローの欲求段階説", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "アクションラーニングを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ある企業や業界で起こった事例を基にして，問題解決や意思決定について議論する学習方法", correct: false}
+      , {description: "自社が直面する経営課題に対して参加者が自ら施策を立案し，問題解決に向けた取組みを実践していく学習方法", correct: true}
+      , {description: "シミュレーション機能を使用して，販売，製造，人事，財務における意思決定を模擬体験する学習方法", correct: false}
+      , {description: "特定の状況設定の下で，様々な立場の役割を演じて，それぞれの問題点や解決方法を考える学習方法", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "X社では(1)～(4)に示す算定方式で在庫補充量を決定している。第n週の週末時点での在庫量をB[n]，第n週の販売量をC[n]としたとき，第n週の週末に発注する在庫補充量の算出式はどれか。ここで，nは3以上とする。<br/><br/>" +
+                 "〔在庫補充盈の算定方式〕<br/>" +
+                 "(1) 週末ごとに在庫補充量を算出し，発注を行う。在庫は翌週の月曜日に補充される。<br/>" +
+                 "(2) 在庫補充量は，翌週の販売予測量から現在の在庫量を引き，安全在庫量を加えて算出する。<br/>" +
+                 "(3) 翌週の販売予測量は，先週の販売量と今週の販売量の平均値とする。<br/>" +
+                 "(4) 安全在庫量は，翌週の販売予測量の10%とする。"
+    , multiple_answer: false
+    , answers: [
+      {description: "(C[n-1]+C[n])/2x1.1-B[n]", correct: true}
+      , {description: "(C[n-1]+C[n])/2x1.1-B[n-1]", correct: false}
+      , {description: "(C[n-1]+C[n])/2+C[n]x0.1-B[n]", correct: false}
+      , {description: "(C[n-2]+C[n-1])/2+C[n]x0.1-B[n]", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "連絡貸借対照表作成に関する相殺消去について，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "持分法適用会社相互間の債権と債務は，相殺消去しなければならない。", correct: false}
+      , {description: "持分法適用会社に対する投資は，当該会社の資本と相殺消去しなければならない。", correct: false}
+      , {description: "連結会社相互間の債権と債務は，相殺消去しなければならない。", correct: true}
+      , {description: "連絡会社相互間の売買取引に基づく棚卸資産の期末残高は，売上と相殺消去しなければならない。", correct: false}
+    ]
+    , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "派遣労働者の受入れに関する記述のうち，派遣先責任者の役割，立場として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "派遣先賢任者は，派遣先管理台帳の管理，派遣労働者から申出を受けた苦情への対応，派遣元事業主との連絡調整，派遣労働者の人事記録と考課などの任務を行わなければならない。", correct: false}
+      , {description: "派遣先責任者は，派遣就業場所が複数ある場合でも，一人に絞って選任されなければならない。", correct: false}
+      , {description: "派遣先責任者は，派遣労働者が従事する業務全般を統括する管理職伎の者の内から選任されなければならない。", correct: false}
+      , {description: "派遣先責任者は，派遣労働者に直接指揮命令する者に対して，労働者派遣法などの関連法規の規定，労働者派遣契約の内容，派遣元からの通知などを周知しなければならない。", correct: true}
+    ]
+    , category: 'ST-H25-AUTUMN'
   }
 ]);
