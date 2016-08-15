@@ -26,6 +26,11 @@ examinations.add([
     , categories: ['ST-H25-AUTUMN']
   }
   , {
+    examinationName: "平成24年度秋季試験 ITストラテジスト試験（ST） AM2"
+    , questionCount: 25
+    , categories: ['ST-H24-AUTUMN']
+  }
+  , {
     examinationName: "Javaクイズ(Bronzeカテゴリのみ)"
     , questionCount: 2
     , categories: ['Java-Bronze']

@@ -5108,7 +5108,7 @@ questions.add([
 "・B社の売上高は，350,000百万円であり，その20%は，D社に対するものである。" +
 "・C社の売上高は，250,000百万円である。" +
 "・D社の売上高は，200,000百万円である。" +
-"・A社と.. B社，.. B社と.. D社以外の相互間取引はない。</div>"
+"・A社とB社，B社とD社以外の相互間取引はない。</div>"
     , multiple_answer: false
     , answers: [
       {description: "1,230,000", correct: true}
@@ -5420,5 +5420,294 @@ questions.add([
       , {description: "派遣先責任者は，派遣労働者に直接指揮命令する者に対して，労働者派遣法などの関連法規の規定，労働者派遣契約の内容，派遣元からの通知などを周知しなければならない。", correct: true}
     ]
     , category: 'ST-H25-AUTUMN'
+  }
+  , {
+    description: "エンタープライズアーキテクチャ(EA)のビジネスアーキテクチャで機能情報関連図(DFD)を作成する目的はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "業務・システムの機能と情報の流れを明確にする。", correct: true}
+      , {description: "業務・システムの目的・機能，情報システムの管理・運用体制を明確にする。", correct: false}
+      , {description: "情報システム間でやり取りされる情報の種類と方向を明確にする。", correct: false}
+      , {description: "物理的なデータ構造を明確にする。", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "“システム管理基準”によれば，情報戦略の全体最適化計画策定において，実施すべきことはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "開発，運用及び保守の費用の算出基礎を明確にする。", correct: false}
+      , {description: "個別開発計画の優先順位及び順イ立付けのルールを明確にする。", correct: true}
+      , {description: "情報システム部門及びユーザ部門の役割分担を明確にする。", correct: false}
+      , {description: "ユーザニーズ調査の対象，範囲及び方法を明確にする。", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "内閣府の“事業継続ガイドライン”による事業継続計画の継続的改善のプロセスを順番に並べたときcに入るものはどれか。ここで，ア～エはa～dのいずれかに入る。<br/><br/>" +
+                 "<img src = \"js/data/image/ST_H24_q03.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "教育・訓練の実施", correct: false}
+      , {description: "経営層による見直し", correct: false}
+      , {description: "実施及び運用", correct: false}
+      , {description: "点検及び是正指置", correct: true}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "システム化計画の立案において実施する作業であり，その作業の結果を基に，後続の作業でシステム化機能を整理し，情報と処理の流れを明確にするものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "機能要件の定義", correct: false}
+      , {description: "業務運用手順の文書化", correct: false}
+      , {description: "業務モデルの作成", correct: true}
+      , {description: "システム方式の設計", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "情報システムの全体計画立案のためにE-Rモデルを用いて全社のデータモデルを作成する手順はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "管理層の業務から機能を抽出し，機能をエンティティとする。次に，機能の相互関係に基づいてリレーションシップを定義する。さらに，全社の帳票類を調査して整理し，正規化された項目に基づいて属性を定義し，全社のデータモデルとする。", correct: false}
+      , {description: "企業の全体像を把握するために，主要なエンティティだけを抽出し，それらの相互間のリレーションシップを含めて，鳥瞰図を作成する。次に，エンティティを詳細化し，全てのリレーションシップを明確にしたものを全社のデータモデルとする。", correct: true}
+      , {description: "業務層の現状システムを分析し，エンティティとリレーションシップを抽出する。それぞれについて適切な属性を定め，これらを基にER図を作成し，それを抽象化して，全社のデータモデルを作成する。", correct: false}
+      , {description: "全社のデータとその処理過程を分析し，重要な処理を行っている業務を基本エンティティとする。次に，基本エンティティ相互のデータの流れをリレーションシップとして捉え，適切な識別名を与える。さらに，基本エンティティと関係あるデータを属性とし，全社のデータモデルを作成する。", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "専門の事業者が提供するサービスのうち，EMSの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "コールセンタの企画，設計から業務運用まで一括して受託することによって，委託元のコールセンタ開設のための設備投資や人員調達を不要とするサービス", correct: false}
+      , {description: "人事や経理，総務などの業務を標準化してグループ内の1か所に集約することによって，グループ全体の間接業務のコスト削減に貢献するサービス", correct: false}
+      , {description: "複数の電子機器メーカから製品の設計，製造を一括して受託することによって，生産規模を確保し，低コストで製品を提供するサービス", correct: true}
+      , {description: "プロパイダ側のコンビュータ上で、ノフトウェアを稼働させて，利用者はそのソフトウェアの機能をネットワーク経由で利用するサービス", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "LBOの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "株式市場で一般株主に対して，一定期間に一定の価格で株式を買い付けることを公告し，相手先企業の株式を取得する。", correct: false}
+      , {description: "現経営陣や事業部門の責任者が株主から自社の株式を譲り受けることによって，当該事業の経営権を取得する。", correct: false}
+      , {description: "投資会社などが，業績不振などの問題を抱えた企業の株式の過半数を取得した上で，マネジメントチームを派遣し，経営に参画する。", correct: false}
+      , {description: "買収先企業の資産などを担保に，金融機関から資金を調達するなどして，限られた資金で企業を買収する。", correct: true}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "プロダクトポートフォリオマネジメン卜(PPM)マトリックスのa. bに入れる語句の適切な組合せはどれか。<br/><br/>" +
+                 "<img src = \"js/data/image/ST_H24_q08.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "a=売上高利益率, b=市場占有率", correct: false}
+      , {description: "a=市場成長率, b=売上高利益率", correct: false}
+      , {description: "a=市場成長率, b=市場占有率", correct: true}
+      , {description: "a=市場占有率, b=市場成長率", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "コアコンビタンスを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "経営活動における基本精神や行動指針", correct: false}
+      , {description: "事業戦略の遂行によって達成すべき到達目標", correct: false}
+      , {description: "自社を取り巻く環境に関するビジネス上の機会と脅威", correct: false}
+      , {description: "他社との差別化の源泉となる経営資源", correct: true}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "事業戦略のうち，収穫戦略に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "売上高をできるだけ維持しながら，製品や事業に掛けるコストを徐々に引き下げていく乙とによって，短期的なキャッシュフローの増大を図る。", correct: true}
+      , {description: "事業を分社化し，その会社を売却することによって投下資金の回収を図る。", correct: false}
+      , {description: "新規事業に進出するととによって企業を成長させ，利益の増大を図る。", correct: false}
+      , {description: "低価格戦略と積極的なプロモーションによって，新製品のマーケットシェアの増大を図る。", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "商品の購入希望者に対して，その商品に関連する別の商品又は組合せ商品などを推奨して販売することを何というか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "アップセリング", correct: false}
+      , {description: "カテゴリキラー", correct: false}
+      , {description: "カテゴリトップ", correct: false}
+      , {description: "クロスセリング", correct: true}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "コンジョイント分析の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "顧客ごとの売上高，利益額などを高い順に並べ，自社のビジネスの中心をなしている顧客を分析する手法", correct: false}
+      , {description: "商品がもっ価格，デザイン，使いやすさなど，購入者が重視している複数の属性の組合せを分析する手法", correct: true}
+      , {description: "同一世代は年齢を重ねても，時代が変化しでも，共通の行動や意識を示すことに注目した，消費者の行動を分析する手法", correct: false}
+      , {description: "ブランドがもっ複数のイメージ項目を散布図にプロットし，それぞれのプランドのポジショニングを分析する手法", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "将来の科学技術の進歩の予測など、について，専門家などに対するアンケートを実施し，その結果をその都度回答者にフィードバックすることによって，ぱらぱらの予測を図のように収束させる方法はどれか。<br/><br/>" +
+                 "<img src = \"js/data/image/ST_H24_q13.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "ゴードン法", correct: false}
+      , {description: "デルファイ法", correct: true}
+      , {description: "ミニマックス法", correct: false}
+      , {description: "モンテカルロ法", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "表のような顧客の収益状況が見込まれるとき，3年間の顧客生涯価値(LTV)は何百万円か。ここで，割引率は10%とし，計算は百万円未満を切り捨てるものとする。<br/><br/>" +
+                 "<img src = \"js/data/image/ST_H24_q14.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "65", correct: false}
+      , {description: "67", correct: true}
+      , {description: "70", correct: false}
+      , {description: "73", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "経営戦略に用いるCSF分析の特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "業界内の競争に影響する要因と，自社の強みを明らかにする。", correct: false}
+      , {description: "競争環境の脅威と機会，企業の強み・弱みを明らかにする。", correct: false}
+      , {description: "成功するための重要な機能や特性を明らかにする。", correct: true}
+      , {description: "保有する事業の成長性と収益性を明らかにする。", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "コールセンタシステムにおけるIVRを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "企業ビル内などに設置して，外線電話と内線電話，内線電話同士を交換する装置", correct: false}
+      , {description: "顧客からの電話に自動応答し，顧客自身の操作によって情報の選択や配信，合成音声による応答などを行う仕組み", correct: true}
+      , {description: "コンビュータと電話を統合し，顧客データベースとPBXを連動させて，発呼や着呼と同時に必要な顧客情報をオペレータの函面上に表示するシステム", correct: false}
+      , {description: "着信した電話を，あらかじめ決められたルールに従って，複数のオペレータのうちの1人だけに接続する住組み", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "製品のロードマップに従って製品を開発していく場合に，プロダクトライン開発を適用する利点はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "技術者個人のカを組織力よりも重視するので，成熟度の低い組織でも製品開発に成功しやすい。", correct: false}
+      , {description: "品質が安定した資産を再利用していくので，品質が安定した製品を低いコストで開発できる。", correct: true}
+      , {description: "ロードマップ上の各製品を完全に独立して開発していくので，一つの製品の不具合が他の製品に波及することがない。", correct: false}
+      , {description: "ロードマップ上の最初の機種の開発開始時に，ソフトウェア資産を準備するなどの初期投資が不要なので，市場への新規参入が容易になる。", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "アパレル業界におけるSPAの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "過剰在庫，返品，特殊サイズ，傷などによって正規の価格では売れない商品を低価格で販売する。", correct: false}
+      , {description: "顧客のニーズに対応したカスタマイズを実現するために，顧客の注文を受けてから最終製品の生産を行う。", correct: false}
+      , {description: "商品企画から生産，販売までを行う製造小売業であり，自社のブランド商品を消費者に直接提供する。", correct: true}
+      , {description: "特定の商品分野に絞り込み，豊富な品揃えとローコストオペレーションによって，徹底した低価格訴求を行う。", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "XBRLを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "企業内文は企業間で使用される複数の業務システムを連携させることであり，データやビジネスプロセスの効率的な統合が可能となる。", correct: false}
+      , {description: "小売庖の端末からネットワーク経由で発注を行うことによって，迅速かつ正確な発注作業が実現でき，リードタイムの短縮や受発注業務の効率向上が可能となる。", correct: false}
+      , {description: "財務報告用の情報の作成・流通・利用ができるように標準化した言語であり，適用業務パッケージやプラットフォームに依存せずに財務情報の利用が可能となる。", correct: true}
+      , {description: "通信プロトコルやデータフォーマットの標準的な規約を定めることによって，企業間での受発注，決済，入出荷などの情報の電子的な交換が可能となる。", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "TOC (Theory Of Constraints)の特徴はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "個々の工程を個別に最適化することによって，生産工程全体を最適化する。", correct: false}
+      , {description: "市場の需要が供給能力を下回っている場合に有効な理論である。", correct: false}
+      , {description: "スループット(=売上高-資材費)の増大を最重要視する。", correct: true}
+      , {description: "生産プロセス改善のための総投資額を制約条件として確立された理論である。", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "ゲーム理論を使って検討するのに適している業務はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "イベント会場の入場ゲート数の決定", correct: false}
+      , {description: "売れ筋商品の要因の分析", correct: false}
+      , {description: "競争者がいる地域での販売戦略の策定", correct: true}
+      , {description: "新規開発商品の需要の予測", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "合格となるべきロットが，抜取検査で誤って不合格となる確率のことを何というか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "合格品質水準", correct: false}
+      , {description: "消費者危険", correct: false}
+      , {description: "生産者危険", correct: true}
+      , {description: "有意水準", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "投資評価方法の説明のうち， IRR (Internal Rate Of Return)法はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "“将来に期待されるキャッシュインフローの現在価値の総額初期投資額”を算出し，評価する。", correct: false}
+      , {description: "“投下された資本=将来に期待される各期のキャッシュインフローの累計”になるまでの期間を算出し，評価する。", correct: false}
+      , {description: "“投資案のキャッシュアウトフローの現在価値の総額=将来に期待されるキャッシュインフローの現在価値の総額”になるような割引率を算出し，評価する。", correct: true}
+      , {description: "“投資案の効果が及ぶ最終年までの平均年間純利益÷投資総額”で利回りを算出し，評価する。", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "次の資料を基に，A社の連結損益計算書を作成した場合の連結売上高は何百万円か。<br>" +
+    "<br/>" +
+"<div>" +
+"・A社は，B社の株式の80%を取得している。" +
+"・B社は，C社の株式の60%を取得している。" +
+"・B社は，D社の株式の20%を取得している。ただし，役員の派遣などはない。" +
+"・A社の売上高は，700,000百万円であり，その10%は，B社に対するものである。" +
+"・B社の売上高は，350,000百万円であり，その20%は，D社に対するものである。" +
+"・C社の売上高は，250,000百万円である。" +
+"・D社の売上高は，200,000百万円である。" +
+"・A社とB社，B社とD社以外の相互間取引はない。</div>"
+    , multiple_answer: false
+    , answers: [
+      {description: "1,230,000", correct: true}
+      , {description: "1,300,000", correct: false}
+      , {description: "1,360,000", correct: false}
+      , {description: "1,430,000", correct: false}
+    ]
+    , category: 'ST-H24-AUTUMN'
+  }
+  , {
+    description: "製造物責任法(PL法)において，免責と規定されているものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "製造物の欠陥の原因となった製造過程における過失を被害者が証明できない場合", correct: false}
+      , {description: "製造物を海外から輸入して国内で販売している場合", correct: false}
+      , {description: "製造物を引き渡した時点から5年を過ぎて事故が発生した場合", correct: false}
+      , {description: "製造物を引き渡した時点の科学又は技術では欠陥を認識できなかった場合", correct: true}
+    ]
+    , category: 'ST-H24-AUTUMN'
   }
 ]);
