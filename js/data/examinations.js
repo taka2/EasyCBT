@@ -3,12 +3,12 @@ examinations.add([
   {
     examinationName: "ITストラテジスト試験（ST） AM2 ALL"
     , questionCount: 25
-    , categories: ['ST-H27-AUTUMN', 'ST-H26-AUTUMN', 'ST-H25-AUTUMN']
+    , categories: ['ST-H27-AUTUMN', 'ST-H26-AUTUMN', 'ST-H25-AUTUMN', 'ST-H24-AUTUMN']
   }
   , {
     examinationName: "ITストラテジスト試験（ST） AM2 ALL 10問"
     , questionCount: 10
-    , categories: ['ST-H27-AUTUMN', 'ST-H26-AUTUMN', 'ST-H25-AUTUMN']
+    , categories: ['ST-H27-AUTUMN', 'ST-H26-AUTUMN', 'ST-H25-AUTUMN', 'ST-H24-AUTUMN']
   }
   , {
     examinationName: "平成27年度秋季試験 ITストラテジスト試験（ST） AM2"
