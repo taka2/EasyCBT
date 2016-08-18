@@ -5710,4 +5710,44 @@ questions.add([
     ]
     , category: 'ST-H24-AUTUMN'
   }
+  , {
+    description: "この夏はとても雨が少なかった。We ..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "We had very little rain this summer.", correct: true}
+    ]
+    , category: 'English-Grammer-01'
+  }
+  , {
+    description: "先生は彼に英語を一生懸命勉強するようにと言った。The teacher told..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "The teacher told him to study English hard.", correct: true}
+    ]
+    , category: 'English-Grammer-01'
+  }
+  , {
+    description: "ジムは息子の15歳の誕生日に、ギターをプレゼントした。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Jim gave his son a guitar on his fifteenth birthday.", correct: true}
+    ]
+    , category: 'English-Grammer-01'
+  }
+  , {
+    description: "私はあなたにここに来てほしくなかった。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "I didn't want you to come here.", correct: true}
+    ]
+    , category: 'English-Grammer-01'
+  }
+  , {
+    description: "二階へ行って、お父さんにすぐ来るように言いなさい。Go...downstairs at once."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Go upstairs and tell Father to come downstairs at once.", correct: true}
+    ]
+    , category: 'English-Grammer-01'
+  }
 ]);

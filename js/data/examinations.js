@@ -31,6 +31,11 @@ examinations.add([
     , categories: ['ST-H24-AUTUMN']
   }
   , {
+    examinationName: "はじめてわかる英文法"
+    , questionCount: 10
+    , categories: ['English-Grammer-01']
+  }
+  , {
     examinationName: "Javaクイズ(Bronzeカテゴリのみ)"
     , questionCount: 2
     , categories: ['Java-Bronze']
