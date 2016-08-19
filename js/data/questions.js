@@ -5750,4 +5750,44 @@ questions.add([
     ]
     , category: 'English-Grammer-01'
   }
+  , {
+    description: "一番近い駅までの道を教えてください。...the nearest station?"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Would you show me the way to the nearest station?", correct: true}
+    ]
+    , category: 'English-Grammer-02'
+  }
+  , {
+    description: "私は昨日、事故のせいで授業に出られなかった。Yesterday..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Yesterday I couldn't attend the class because of the accident.", correct: true}
+    ]
+    , category: 'English-Grammer-02'
+  }
+  , {
+    description: "ドアは開けたままにしておいてくれる？...for me."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Please leave the door open for me.", correct: true}
+    ]
+    , category: 'English-Grammer-02'
+  }
+  , {
+    description: "彼に君の成功について話してあげたほうがいいと思うよ。I think..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "I think you had better tell him about your success.", correct: true}
+    ]
+    , category: 'English-Grammer-02'
+  }
+  , {
+    description: "トムはこれ以上、暑さに耐えられない。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Tom can't stand the heat any longer.", correct: true}
+    ]
+    , category: 'English-Grammer-02'
+  }
 ]);
