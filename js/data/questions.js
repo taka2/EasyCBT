@@ -5790,4 +5790,44 @@ questions.add([
     ]
     , category: 'English-Grammer-02'
   }
+  , {
+    description: "彼の15回めの誕生パーティーを開くとのことです。He says he...birthday party."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "He says he is going to have his fifteenth birthday party.", correct: true}
+    ]
+    , category: 'English-Grammer-03'
+  }
+  , {
+    description: "彼が帰宅したときそれについて彼に尋ねてみましょう。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "I will ask him about it when he comes home.", correct: true}
+    ]
+    , category: 'English-Grammer-03'
+  }
+  , {
+    description: "昨夜、和夫はとても眠かったので宿題をしなかった。Last night, Kazuo..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Last night, Kazuo was so sleepy that he did not do his homework.", correct: true}
+    ]
+    , category: 'English-Grammer-03'
+  }
+  , {
+    description: "私のお気に入りの歌を聞いてたところよ。Just..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Just listening to my favourite song.", correct: true}
+    ]
+    , category: 'English-Grammer-03'
+  }
+  , {
+    description: "ナンシーは机で食べようとしたが、上司にそこで食べるなと言われた。Nancy was going to eat at her desk, but her boss..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Nancy was going to eat at her desk, but her boss told her not to eat there.", correct: true}
+    ]
+    , category: 'English-Grammer-03'
+  }
 ]);
