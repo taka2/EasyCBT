@@ -5830,4 +5830,44 @@ questions.add([
     ]
     , category: 'English-Grammer-03'
   }
+  , {
+    description: "この前の火曜日からずっととても寒い。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "It has been very cold since last Tuesday.", correct: true}
+    ]
+    , category: 'English-Grammer-04'
+  }
+  , {
+    description: "彼女はどのくらい学校を休んでいますか。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "How long has she been absent from school?", correct: true}
+    ]
+    , category: 'English-Grammer-04'
+  }
+  , {
+    description: "今まで私たちはあんなひどい嵐にあったことはない。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "We have never had such a heavy storm before. ", correct: true}
+    ]
+    , category: 'English-Grammer-04'
+  }
+  , {
+    description: "私の弟は今しがた帰宅したばかりです。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "My younger brother has just come back home.", correct: true}
+    ]
+    , category: 'English-Grammer-04'
+  }
+  , {
+    description: "宿題はもうすみましたか。Have...?"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Have you finished your homework yet?", correct: true}
+    ]
+    , category: 'English-Grammer-04'
+  }
 ]);
