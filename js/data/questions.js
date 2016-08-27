@@ -5870,4 +5870,44 @@ questions.add([
     ]
     , category: 'English-Grammer-04'
   }
+  , {
+    description: "トムはふつう7時に学校に出かけます。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Tom usually leaves home for school at seven.", correct: true}
+    ]
+    , category: 'English-Grammer-05'
+  }
+  , {
+    description: "だれも彼に何を期待してよいかわかりませんでした。...him."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "No one knew what to expect from him.", correct: true}
+    ]
+    , category: 'English-Grammer-05'
+  }
+  , {
+    description: "お父さんは家であなたを何と呼びますか？What...at your home?"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "What does your father call you at your home?", correct: true}
+    ]
+    , category: 'English-Grammer-05'
+  }
+  , {
+    description: "太郎君は一日にどのくらい英語を勉強したか、あなたは知っていますか。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Do you know how long Taro studied English each day?", correct: true}
+    ]
+    , category: 'English-Grammer-05'
+  }
+  , {
+    description: "あなたは、少しも疲れていないみたいだ。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "You do not look tired at all.", correct: true}
+    ]
+    , category: 'English-Grammer-05'
+  }
 ]);
