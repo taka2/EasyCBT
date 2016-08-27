@@ -33,7 +33,14 @@ examinations.add([
   , {
     examinationName: "はじめてわかる英文法"
     , questionCount: 10
-    , categories: ['English-Grammer-01', 'English-Grammer-02', 'English-Grammer-03', 'English-Grammer-04', 'English-Grammer-05']
+    , categories: [
+      'English-Grammer-01'
+      , 'English-Grammer-02'
+      , 'English-Grammer-03'
+      , 'English-Grammer-04'
+      , 'English-Grammer-05'
+      , 'English-Grammer-06'
+    ]
   }
   , {
     examinationName: "Javaクイズ(Bronzeカテゴリのみ)"

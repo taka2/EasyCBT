@@ -5910,4 +5910,44 @@ questions.add([
     ]
     , category: 'English-Grammer-05'
   }
+  , {
+    description: "この本をどこで買ったらよいか、彼に聞いてもよいですか。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "May I ask him where to buy this book.", correct: true}
+    ]
+    , category: 'English-Grammer-06'
+  }
+  , {
+    description: "私たちに自己紹介していただきたい。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "We would like you to introduce yourself to us.", correct: true}
+    ]
+    , category: 'English-Grammer-06'
+  }
+  , {
+    description: "お茶をもう一杯飲みませんか。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Will you have another cup of tea?", correct: true}
+    ]
+    , category: 'English-Grammer-06'
+  }
+  , {
+    description: "ボブは5時までにその仕事を終えなければならない。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Bob will have to finish doing the work by five.", correct: true}
+    ]
+    , category: 'English-Grammer-06'
+  }
+  , {
+    description: "私たち家族は、このあたりに住んでいた。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Our family used to live around here.", correct: true}
+    ]
+    , category: 'English-Grammer-06'
+  }
 ]);
