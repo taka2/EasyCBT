@@ -6030,4 +6030,44 @@ questions.add([
     ]
     , category: 'English-Grammer-08'
   }
+  , {
+    description: "私は美弥にあげる写真をたくさん持っていまｓ。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "I have a lot of pictures to give Miya.", correct: true}
+    ]
+    , category: 'English-Grammer-09'
+  }
+  , {
+    description: "カーティスはみんなを元気づけるために大声で歌った。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Kurtis sang aloud so as to cheer everyone up.", correct: true}
+    ]
+    , category: 'English-Grammer-09'
+  }
+  , {
+    description: "君が彼のことを尋ねるなんて不思議だ。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "It is strange for you to ask about him.", correct: true}
+    ]
+    , category: 'English-Grammer-09'
+  }
+  , {
+    description: "この靴は私が履くには小さ過ぎます。These shoes..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "These shoes are too small for me to wear.", correct: true}
+    ]
+    , category: 'English-Grammer-09'
+  }
+  , {
+    description: "だれも自分の心の決め方なんて教えてくれない。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Nobody tells you how to make up your own mind.", correct: true}
+    ]
+    , category: 'English-Grammer-09'
+  }
 ]);
