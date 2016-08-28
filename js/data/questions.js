@@ -5950,4 +5950,44 @@ questions.add([
     ]
     , category: 'English-Grammer-06'
   }
+  , {
+    description: "あなたが気に入ろうと、そうでなかろうと、世界はどんどん小さくなっていくだろう。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "The world will become smaller and smaller whether you like it or not.", correct: true}
+    ]
+    , category: 'English-Grammer-07'
+  }
+  , {
+    description: "貧しいからといって人を見下してはいけない。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Don't look down upon them just because they are poor.", correct: true}
+    ]
+    , category: 'English-Grammer-07'
+  }
+  , {
+    description: "彼女は手紙をくれると約束したけれど、僕は再び彼女から連絡をもらうことはなかった。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "She promised to write, but I never heard from her again.", correct: true}
+    ]
+    , category: 'English-Grammer-07'
+  }
+  , {
+    description: "あなたがそれをやり終えたら、すぐに知らせてください。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Let me know at once when you have finished it.", correct: true}
+    ]
+    , category: 'English-Grammer-07'
+  }
+  , {
+    description: "この仕事を全て7時までに終わらせることができたとしても、パーティーに時間どおりに着くことができるとは思えない。I still don't think we will be able to get the party on time..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "I still don't think we will be able to get the party on time even if we can finish all this work by seven.", correct: true}
+    ]
+    , category: 'English-Grammer-07'
+  }
 ]);
