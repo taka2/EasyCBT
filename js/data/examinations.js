@@ -41,6 +41,7 @@ examinations.add([
       , 'English-Grammer-05'
       , 'English-Grammer-06'
       , 'English-Grammer-07'
+      , 'English-Grammer-08'
     ]
   }
   , {

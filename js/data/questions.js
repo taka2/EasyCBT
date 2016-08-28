@@ -5990,4 +5990,44 @@ questions.add([
     ]
     , category: 'English-Grammer-07'
   }
+  , {
+    description: "この車は日本で作られた。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "This car was made in Japan.", correct: true}
+    ]
+    , category: 'English-Grammer-08'
+  }
+  , {
+    description: "あのボクサーのことは、この国のだれでもよく知っている。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "That boxer is well known to everybody in this country.", correct: true}
+    ]
+    , category: 'English-Grammer-08'
+  }
+  , {
+    description: "その子供たちは、毎晩母親に新しい話をしてもらう。The children..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "The children are told a new story by their mother every night.", correct: true}
+    ]
+    , category: 'English-Grammer-08'
+  }
+  , {
+    description: "僕は知らない人に突然話しかけられた。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "I was suddenly spoken to by a stranger.", correct: true}
+    ]
+    , category: 'English-Grammer-08'
+  }
+  , {
+    description: "私の家族はFBIによって保護されている。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "My family is being protected by FBI.", correct: true}
+    ]
+    , category: 'English-Grammer-08'
+  }
 ]);
