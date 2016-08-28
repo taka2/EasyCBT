@@ -6070,4 +6070,44 @@ questions.add([
     ]
     , category: 'English-Grammer-09'
   }
+  , {
+    description: "彼はUFOを見たと主張した。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "He insisted on having seen a UFO.", correct: true}
+    ]
+    , category: 'English-Grammer-10'
+  }
+  , {
+    description: "窓を閉めていただけますか。Would..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Would you mind shutting the window for me?", correct: true}
+    ]
+    , category: 'English-Grammer-10'
+  }
+  , {
+    description: "私たちが辞書なしでこの本を読むことは困難です。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Reading this book without any dictionaries is difficult for us.", correct: true}
+    ]
+    , category: 'English-Grammer-10'
+  }
+  , {
+    description: "彼の人気の理由を説明することはできない。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "There is no explaining the reason of his popularity.", correct: true}
+    ]
+    , category: 'English-Grammer-10'
+  }
+  , {
+    description: "彼女はその歌を聞くと悲しい気分になります。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Listening to the song makes her sad.", correct: true}
+    ]
+    , category: 'English-Grammer-10'
+  }
 ]);
