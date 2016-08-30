@@ -6150,4 +6150,44 @@ questions.add([
     ]
     , category: 'English-Grammer-11'
   }
+  , {
+    description: "右に曲がると、郵便局が左手にあります。Turning..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Turning right, you'll find a post office on your left.", correct: true}
+    ]
+    , category: 'English-Grammer-12'
+  }
+  , {
+    description: "バスには空席がなかったので、私はずっと立ち続けだった。..., I kept on standing."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "There being no vacant seat in the bus, I kept on standing.", correct: true}
+    ]
+    , category: 'English-Grammer-12'
+  }
+  , {
+    description: "駅がどこにあるかわからなかったので私は人に道を聞いた。..., I asked a man the way."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Not knowing where the station was, I asked a man the way.", correct: true}
+    ]
+    , category: 'English-Grammer-12'
+  }
+  , {
+    description: "彼の話し方からすると、きっと彼は関西出身だ。...from the Kansai district."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Judging from the way he talks, he must be from the Kansai district.", correct: true}
+    ]
+    , category: 'English-Grammer-12'
+  }
+  , {
+    description: "全てをやり遂げたが、彼女はまだ自由にはなっていない。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Having done everything, she still isn't free.", correct: true}
+    ]
+    , category: 'English-Grammer-12'
+  }
 ]);
