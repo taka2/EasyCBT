@@ -74,7 +74,14 @@ easycbt.model.Answer = Backbone.Model.extend({
     } else if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE) {
       return question.getSelectedAnswers([answers])[0].correct;
     } else if(question.getQuestionType() == easycbt.model.Question.QUESTION_TYPE_INPUT_TEXT) {
-      return question.getCorrectAnswers()[0].description == answers;
+      var correctAnswers = question.getCorrectAnswers();
+      // 回答が正解のどれかに合致していれば正解
+      for(var i=0; i<correctAnswers.length; i++) {
+        if(correctAnswers[i].description == answers) {
+          return true;
+        }
+      }
+      return false;
     } else {
       // QuestionType追加時にコード追加する場所
     }

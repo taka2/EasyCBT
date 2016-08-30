@@ -59,20 +59,25 @@
             <span class="invalid_question">出題ミス</span>
           <% } %>
           <ul class="answers">
-
-          <% for(var j=0; j<questions.at(i).getChoices().length; j++) { %>
-            <li>
             <% if(questions.at(i).getQuestionType() == easycbt.model.Question.QUESTION_TYPE_MULTIPLE_CHOICE) { %>
-              <input type="checkbox" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).getChoices()[j].index%>"> <%=questions.at(i).getChoices()[j].description%>
+              <% for(var j=0; j<questions.at(i).getChoices().length; j++) { %>
+                <li>
+                  <input type="checkbox" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).getChoices()[j].index%>"> <%=questions.at(i).getChoices()[j].description%>
+                </li>
+              <% } %>
             <% } else if(questions.at(i).getQuestionType() == easycbt.model.Question.QUESTION_TYPE_SINGLE_CHOICE) { %>
-              <input type="radio" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).getChoices()[j].index%>"> <%=questions.at(i).getChoices()[j].description%>
+              <% for(var j=0; j<questions.at(i).getChoices().length; j++) { %>
+                <li>
+                  <input type="radio" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" value="<%=questions.at(i).getChoices()[j].index%>"> <%=questions.at(i).getChoices()[j].description%>
+                </li>
+              <% } %>
             <% } else if(questions.at(i).getQuestionType() == easycbt.model.Question.QUESTION_TYPE_INPUT_TEXT) { %>
-              <input type="text" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" size="<%= questions.at(i).getChoices()[j].description.length + 10 %>">
+              <li>
+                <input type="text" name="answers<%=(i+1)%>[<%=questions.at(i).get('index')%>]" size="<%= questions.at(i).getChoices()[0].description.length + 10 %>">
+              </li>
             <% } else { %>
               <!-- QuestionType追加時にコード追加する場所 -->
             <% } %>
-            </li>
-          <% } %>
           </ul>
         </td></tr>
       <% } %>

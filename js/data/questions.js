@@ -49,6 +49,7 @@ questions.add([
     , question_type: 'input_text'
     , answers: [
       {description: 'public static void main(String[] args)', correct: true}
+      , {description: 'public static void main(String[] args) throws Exception', correct: true}
     ]
     , category: 'Java-Bronze'
   }
