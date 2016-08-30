@@ -6110,4 +6110,44 @@ questions.add([
     ]
     , category: 'English-Grammer-10'
   }
+  , {
+    description: "角に立っているあの背の高い男の人はだれですか。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Who is that tall man standing in the corner.", correct: true}
+    ]
+    , category: 'English-Grammer-11'
+  }
+  , {
+    description: "あそこでピアノを弾いている女の子はルーシーという名前です。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "The girl playing the piano there is named Lucy.", correct: true}
+    ]
+    , category: 'English-Grammer-11'
+  }
+  , {
+    description: "投げ捨てられたカンやビンで私たちの街が汚れてしまいます。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Cans and bottles thrown away by people make our city dirty.", correct: true}
+    ]
+    , category: 'English-Grammer-11'
+  }
+  , {
+    description: "ママがサンタにキスしてるのを見ちゃった。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "I saw Mommy kissing Santa Claus.", correct: true}
+    ]
+    , category: 'English-Grammer-11'
+  }
+  , {
+    description: "この冬はずっとスノーボードをして過ごした。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "I spent the whole winter snow-boarding.", correct: true}
+    ]
+    , category: 'English-Grammer-11'
+  }
 ]);
