@@ -50,7 +50,7 @@
 <script type="text/html" id="questions_template">
   <h2><%= examination.getExaminationName() %></h2>
 
-  <form name="form1">
+  <form name="form1" autocomplete="off">
     <table class="table table-striped questions">
       <% for(var i=0; i<questions.length; i++) { %>
         <tr><td>
