@@ -6190,4 +6190,204 @@ questions.add([
     ]
     , category: 'English-Grammer-12'
   }
+  , {
+    description: "私たちは稼いだお金を全て教会に寄付します。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "All the money we make will go to the church.", correct: true}
+    ]
+    , category: 'English-Grammer-13'
+  }
+  , {
+    description: "大阪出身の背の高い少年は、私の友達です。That tall boy..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "That tall boy who comes from Osaka is a friend of mine.", correct: true}
+    ]
+    , category: 'English-Grammer-13'
+  }
+  , {
+    description: "彼は大学がいくつかある町に住んでいる。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "He lives in a town where there are several colleges.", correct: true}
+    ]
+    , category: 'English-Grammer-13'
+  }
+  , {
+    description: "4月は人が新しい場所へと移動していく月だ。...in."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "April is the month which people move to new places in.", correct: true}
+    ]
+    , category: 'English-Grammer-13'
+  }
+  , {
+    description: "ほしい物をほしいときに言っていいよ。You can tell..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "You can tell me what you want, when you want it.", correct: true}
+    ]
+    , category: 'English-Grammer-13'
+  }
+  , {
+    description: "もしあなたの忠告がなかったならば、彼は研究に失敗していたかもしれない。...your advice, he might have failed in his study."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "If it had not been for your advice, he might have failed in his study.", correct: true}
+    ]
+    , category: 'English-Grammer-14'
+  }
+  , {
+    description: "もし彼の住所を知っていれば、訪ねて行くのだけれど。If I..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "If I knew his address, I would visit him.", correct: true}
+    ]
+    , category: 'English-Grammer-14'
+  }
+  , {
+    description: "忙しくなければ会議に出席できたのだが。If I...the meeting."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "If I had not been busy, I could have attended the meeting.", correct: true}
+    ]
+    , category: 'English-Grammer-14'
+  }
+  , {
+    description: "これがずっと続けばいいのになあ。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "I wish this could last forever.", correct: true}
+    ]
+    , category: 'English-Grammer-14'
+  }
+  , {
+    description: "もし彼だったら、君たち全員を擁護するだろう。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "He would stand up for you all.", correct: true}
+    ]
+    , category: 'English-Grammer-14'
+  }
+  , {
+    description: "兄は毎月僕の3倍の本を読む。...every month."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "My brother reads three times as many books as I every month.", correct: true}
+    ]
+    , category: 'English-Grammer-15'
+  }
+  , {
+    description: "ジェーンほど速く泳げる生徒はこのクラスにはいません。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "No student in this class can swim as fast as Jane.", correct: true}
+    ]
+    , category: 'English-Grammer-15'
+  }
+  , {
+    description: "今夜はいつもより早めに食事をしたいと思います。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "I would like to eat dinner earlier than usual this evening.", correct: true}
+    ]
+    , category: 'English-Grammer-15'
+  }
+  , {
+    description: "一番暑い季節はいつですか。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Which is the hottest of all the seasons.", correct: true}
+    ]
+    , category: 'English-Grammer-15'
+  }
+  , {
+    description: "これはどんな写真よりもずっときれいだ。...anything ever."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "This picture is still more beautiful than anything ever.", correct: true}
+    ]
+    , category: 'English-Grammer-15'
+  }
+  , {
+    description: "妻がぐっすり寝ているから静かにしてもらえますか。Please..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Please be quiet because my wife is sound asleep.", correct: true}
+    ]
+    , category: 'English-Grammer-16'
+  }
+  , {
+    description: "彼の結婚は少し急だったので私はびっくりしている。His marriage..."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "His marriage was kind of sudden, so I am surprised.", correct: true}
+    ]
+    , category: 'English-Grammer-16'
+  }
+  , {
+    description: "光一はよりよいアイデアを思いつかなかった。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Koichi hardly could think of any better ideas.", correct: true}
+    ]
+    , category: 'English-Grammer-16'
+  }
+  , {
+    description: "これは本当にすてきなプレゼントですね。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "This is so lovely a present.", correct: true}
+    ]
+    , category: 'English-Grammer-16'
+  }
+  , {
+    description: "目的もなく外国で勉強するのはやめといたほうがいいと思うよ。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "You better not study abroad without any goals.", correct: true}
+    ]
+    , category: 'English-Grammer-16'
+  }
+  , {
+    description: "私の姉は音楽に関しての情報をたくさんくれる。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "My sister gives me a good deal of information abount music.", correct: true}
+    ]
+    , category: 'English-Grammer-17'
+  }
+  , {
+    description: "彼、自分のジャケットが古いってわかってないのかしら。, does he?"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "He doesn't know his jacket is behind the times, does he?", correct: true}
+    ]
+    , category: 'English-Grammer-17'
+  }
+  , {
+    description: "りっぱな家具をありがとうございます。"
+    , question_type: 'input_text'
+    , answers: [
+      {description: "Thank you for a fine piece of futniture.", correct: true}
+    ]
+    , category: 'English-Grammer-17'
+  }
+  , {
+    description: "彼は川の片側の岸からもう片側の岸へ飛び移った。...side."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "He jumped from one side of the river to the other side.", correct: true}
+    ]
+    , category: 'English-Grammer-17'
+  }
+  , {
+    description: "洗面器にはせっけん1個とシャンプーが残っていた。There left...in the basin."
+    , question_type: 'input_text'
+    , answers: [
+      {description: "There left a cake of soap and a shampoo in the basin.", correct: true}
+    ]
+    , category: 'English-Grammer-17'
+  }
 ]);
