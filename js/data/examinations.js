@@ -1,6 +1,11 @@
 // 出題データ
 examinations.add([
   {
+    examinationName: "平成28年度春期試験 システム監査技術者試験（AU） AM2"
+    , questionCount: 25
+    , categories: ['AU-H28-SPRING']
+  }
+  , {
     examinationName: "ITストラテジスト試験（ST） AM2 ALL"
     , questionCount: 25
     , categories: ['ST-H27-AUTUMN', 'ST-H26-AUTUMN', 'ST-H25-AUTUMN', 'ST-H24-AUTUMN']

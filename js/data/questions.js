@@ -6391,4 +6391,282 @@ questions.add([
     ]
     , category: 'English-Grammer-17'
   }
+  , {
+    description: "”システム監査基準”で定めているシステム監査業務の品質管理の主な目的はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査時期，範囲，手続などについてのシステム監査計画を立案すること", correct: false}
+      , {description: "システム監査結果の適正性を確保すること", correct: true}
+      , {description: "システム監査で入手した情報の機密性を維持すること", correct: false}
+      , {description: "システム監査の実施を通して，情報システムの品質向上に貢献すること", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "システム監査において実施される”試査”に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査対象に最も適合した監査手続を決定するために，幾つかの監査技法を試行する。", correct: false}
+      , {description: "計算モジュールの正確性を確認するために，ソースプログラムをレビューする。", correct: false}
+      , {description: "全てのトランザクションデータに監査手続を試験的に適用し，その処理の正当性について判断する。", correct: false}
+      , {description: "抽出した一定件数のトランザクションデータに監査手続を適用し，データ全件の正当性について判断する。", correct: true}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "財務報告に係る内部統制監査におけるリスクアプローチの説明のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査の効率性を念頭におき，固有リスクだけを評価する。", correct: false}
+      , {description: "財務諸表の重要な虚偽表示リスクの有無にかかわらず，任意に抽出した業務プロセスに対してリスクを評価する。", correct: false}
+      , {description: "財務報告に係る全ての業務に対して，ボトムアップで網羅的にリスクを洗い出して評価する。", correct: false}
+      , {description: "想定されるリスクのうち，財務諸表の重要な虚偽表示リスクが高い項目に監査のリソースを重点的に配分する。", correct: true}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "”システム監査基準”における”監査の手順”はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "打合せ→情報収集→予備調査→報告書作成", correct: false}
+      , {description: "監査対象の明確化→本調査→監査手続書の作成→評価・報告", correct: false}
+      , {description: "監査手続書の作成→実地調査→フォローアップ→報告書作成", correct: false}
+      , {description: "予備調査→本調査→評価・結論", correct: true}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "表はコンビュータを利用して行うシステム監査技法についてまとめたものである。(1)～(4)の組合せとして，適切なものはどれか。<br/><br/>" +
+                 "<img src = \"js/data/image/AU_H28_q05.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "ア", correct: false}
+      , {description: "イ", correct: true}
+      , {description: "ウ", correct: false}
+      , {description: "エ", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "日本公認会計士協会の監査・保証実務委員会実務指針第 86号”受託業務に係る内部統制の保証報告書”に基づいて作成される文書と作成者の適切な組合せはどれか。ここで，受託業務の一部について再委託が行われており，除外方式を採用しているものとする。<br/><br/>" +
+                 "<img src = \"js/data/image/AU_H28_q06.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "ア", correct: false}
+      , {description: "イ", correct: false}
+      , {description: "ウ", correct: true}
+      , {description: "エ", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "JIS Q 19011:2012における第二者監査に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査法人による会社法監査", correct: false}
+      , {description: "業務委託先である子会社へのシステム監査", correct: true}
+      , {description: "審査機関による ISMS認証審査", correct: false}
+      , {description: "内部監査人が行う情報セキュリテイ監査", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "システム監査で利用する統計的サンプリング法に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "サンプルの抽出に無作為抽出法を用い，サンプルの評価結果に基づいて母集団に関する結論を出す場合に，確率論の考え方を用いる。", correct: true}
+      , {description: "抽出するサンプル数は，統計的サンプリングと非統計的サンプリングの選択を決定付ける重要な判断基準である。", correct: false}
+      , {description: "抽出するサンプルを統計的に決定するのではなく，サンプルに対して評価手続を実施した結果を統計的に推定する。", correct: false}
+      , {description: "無作為抽出法を用いるだけではなく，システム監査人が経験的判断を加味して，サンプルを抽出する。", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "金融庁の”財務報告に係る内部統制の評価及び監査の基準”における IT業務処理統制に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "外部委託に関する契約の管理", correct: false}
+      , {description: "システムの運用管理", correct: false}
+      , {description: "システムの開発・保守に係る管理", correct: false}
+      , {description: "利用部門によるエラーデータの修正と再処理", correct: true}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "債権管理システムから出力された債権残高の集計処理結果を用いて，経理部門が事後的に実施できる，異常の有無の検証に有効な方法はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "債権データ生成時における，得意先コードを用いた得意先マスタとの自動マッチング", correct: false}
+      , {description: "債権データの金額項目のフォーマットチェック", correct: false}
+      , {description: "スプレッドシートを用いた売掛債権回転期間の前年同期比較チェック", correct: true}
+      , {description: "正規の権限者による操作に限定するアクセスコントロール", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "ITILで定義されるサービスのライフサイクルにおける，サービストランジション段階の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "規定された要件と制約に沿って，サービスを運用に移行し，確実に稼働させることである。", correct: true}
+      , {description: "サービスの効率，有効性，費用対効果の観点で運用状況を継続的に測定し，改善していくことである。", correct: false}
+      , {description: "サービスの内容を具体的に決めることである。", correct: false}
+      , {description: "戦略的資産として，どのようにサービスマネジメントを設計，開発，導入するかについての手引を提供することである。", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "ITサービスマネジメントにおいて，構成ベースラインを確立することによって可能になることはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ITサービスの存続期間を通したパフォーマンスの変化の測定", correct: false}
+      , {description: "インシデントが発生したときの問題管理プロセスでの状況証拠の分析", correct: false}
+      , {description: "構成監査及び切り戻しのための基準の提供", correct: true}
+      , {description: "サービスを機能させるために必要な最低限の利用可能レベルの定義", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "法人が作成し，公開，発売したソフトウェアの著作権の権利期聞は公開から何年か。"
+    , multiple_answer: false
+    , answers: [
+      {description: "15", correct: false}
+      , {description: "20", correct: false}
+      , {description: "30", correct: false}
+      , {description: "50", correct: true}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "常時10名以上の従業員を有するソフトウエア開発会社が，社内の情報セキュリティ管理を強化するために，機密情報を扱う担当従業員の扱いを見直すこととした。労働法に照らし，適切な行為はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "就業規則に業務上知り得た秘密の漏えい禁止の一般的な規定があるが，担当従業員の職務に即して秘密の内容を特定する個別合意を行う。", correct: true}
+      , {description: "就業規則には業務上知り得た秘密の漏えい禁止の規定がないので，漏えい禁止と処分の規定を従業員の合意を得ずに就業規則に追加する。", correct: false}
+      , {description: "情報セキュリテイ事故を起こした場合の処分について，担当従業員との聞で，就業規則よりも処分の内容を重くした個別合意を行う。", correct: false}
+      , {description: "情報セキュリティに関連する規定は就業規則に記載する事項ではないので，就業規則に規定を設けようとはせずに，全ての従業員と個別合意を行う。", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "製造物責任法(PL法)において，製造物責任を問われる事例はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ITサービスの品質に問題が発覚し，SLAを締結している顧客へのサービスがー時的に提供できなくなったので，顧客から多大なクレームを受けた。", correct: false}
+      , {description: "機器に組み込まれているROMに記録されたプログラムに瑕疵があったので，その機器の使用者に大けがをさせた。", correct: true}
+      , {description: "工場に配備されている制御系コンピュータのオペレーションを誤ったので，製品製造のラインを長時間停止させ大きな損害を与えた。", correct: false}
+      , {description: "ソフトウェアパッケージに重大な瑕疵が発見され，修復に時間が掛かったので，販売先の業務に大混乱をもたらした。", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "表は，CSR(Corporate Social Responsibility)をキャロルによる四つの責任分野に分類し，それぞれの企業活動例を示している。表中のcに入るものはどれか。<br/><br/>" +
+                 "<img src = \"js/data/image/AU_H28_q16.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "経済的責任", correct: false}
+      , {description: "社会貢献責任", correct: false}
+      , {description: "法的責任", correct: false}
+      , {description: "倫理的責任", correct: true}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "導出表を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "実表に依存していない表のことである。", correct: false}
+      , {description: "実表の一部をコピーして別に保存した表である。", correct: false}
+      , {description: "何らかの問合せによって得られた表である。", correct: true}
+      , {description: "二つ以上の実表の関連である。", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "ネットワークの経路制御プロトコルのうち，IPv6ネットワークに使用され，距離ベクトル方式を用いているものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "BGP-4", correct: false}
+      , {description: "OSPFv3", correct: false}
+      , {description: "RIP-2", correct: false}
+      , {description: "RIPng", correct: true}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "CRYPTRECの役割として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "外国為替及び外国貿易法で規制されている暗号装置の輸出を審査，検査する。", correct: false}
+      , {description: "政府調達においてIT関連製品のセキュリティ機能の適切性を評価，認証する。", correct: false}
+      , {description: "電子政府での利用を推奨する暗号技術の安全性を評価，監視する。", correct: true}
+      , {description: "民間企業のサーバに対するセキュリテイ攻掌を監視，検知する。", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "ウイルスの検出手法であるピへイピア法を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "あらかじめ特徴的なコードをパターンとして登録したウイルス定義ファイルを用いてウイルス検査対象と比較し，同じパターンがあれば感染を検出する。", correct: false}
+      , {description: "ウイルスに感染していないことを保証する情報をあらかじめ検査対象に付加しておき，検査時に不整合があれば感染を検出する。", correct: false}
+      , {description: "ウイルスの感染が疑わしい検査対象を，安全な場所に保管されている原本と比較し，異なっていれば感染を検出する。", correct: false}
+      , {description: "ウイルスの感染や発病によって生じるデータ書込み動作の異常や通信量の異常増加などの変化を監視して，感染を検出する。", correct: true}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "DNSSECの機能はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "DNSキャッシュサーバの設定によって再帰的な問合せの受付範囲が最大になるようにする。", correct: false}
+      , {description: "DNSサーバから受け取るリソースレコードに対するディジタル署名を利用して，リソースレコードの送信者の正当性とデータの完全性を検証する。", correct: true}
+      , {description: "ISPなどのセカンダリDNSサーバを利用してDNSコンテンツサーバを二重化することによって，名前解決の可用性を高める。", correct: false}
+      , {description: "共通鍵暗号技術とハッシュ関数を利用したセキュアな方法によって，DNS更新要求が許可されているエンドポイントを特定して認証する。", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "デザインレビュ一方法に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "インスペクションでは，絞られた問題事項に関して様々な角度からの分析を行うことができるので，対策を引き出しやすい。", correct: true}
+      , {description: "ウォークスルーでは，運営を指揮するリーダが，メンバが作成したレビュー対象の資料成果物を参加者に説明する。", correct: false}
+      , {description: "プロトタイプを採用する開発では，利用者が直接検証するプロトタイピングによってレビューを省略できる。", correct: false}
+      , {description: "ラウンドロビンレビューでは，参加者の作業量を均一にすることによって，参加者の経験や知識レベルに影響されないようにする。", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "JIS X 0161:2008によるソフトウェア保守のタイプのうち，適応保守はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ソフトウェア製品の引渡し後に発見された問題を訂正するために行う受け身の修正", correct: false}
+      , {description: "引渡し後，変化した又は変化している環境において，ソフトウェア製品を使用できるように保ち続けるために実施するソフトウェア製品の修正", correct: true}
+      , {description: "引渡し後のソフトウェア製品の潜在的な障害が，故障として現れる前に，検出し訂正するための修正", correct: false}
+      , {description: "引渡し後のソフトウェア製品の潜在的な障害が運用障害になる前に発見し，是正を行うための修正", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "市場成長率と相対的市場シェアから，市場と企業の関係を分析し，自社製品や事業についての最適な資源配分方針を求めるための手法はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "3C", correct: false}
+      , {description: "BSC", correct: false}
+      , {description: "PPM", correct: true}
+      , {description: "SWOT", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
+  , {
+    description: "SECIモデルにおける，内面化の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "新たに創造された知識を組織に広め，新たな暗黙知として習得すること", correct: true}
+      , {description: "組織内の個人，小グループが有する暗黙知を形式知として明示化すること", correct: false}
+      , {description: "組織内の個人，小グループで暗黙知の共有化や，新たな暗黙知の創造を行うこと", correct: false}
+      , {description: "明示化した形式知を組み合わせ，それを基に新たな知識を創造すること", correct: false}
+    ]
+    , category: 'AU-H28-SPRING'
+  }
 ]);
