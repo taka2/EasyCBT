@@ -6669,4 +6669,281 @@ questions.add([
     ]
     , category: 'AU-H28-SPRING'
   }
+  , {
+    description: "システム監査技法であるITF(Integrated Test Facility)法の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査機能をもったモジュールを監査対象プログラムに組み込んで実環境下で実行し，抽出条件に合った例外データ，異常データなどを収集し，監査対象プログラムの処理の正確性を検証する方法である。", correct: false}
+      , {description: "監査対象ファイルにシステム監査人用の口座を設け，実稼働中にテストデータを入力し，その結果をあらかじめ用意した正しい結果と照合して，監査対象プログラムの処理の正確性を検証する方法である。", correct: true}
+      , {description: "システム監査人が準備した監査用プログラムと監査対象プログラムに同ーのデータを入力し，両者の実行結果を比較することによって，監査対象プログラムの処理の正確性を検証する方法である。", correct: false}
+      , {description: "プログラムの検証したい部分を通過したときの状態を出力し，それらのデータを基に監査対象プログラムの処理の正確性を検証する方法である。", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "インシデントの究明やシステム監査にも利用できる，証拠を収集し保全する技法はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "コンティンジェンシープラン", correct: false}
+      , {description: "サンプリング", correct: false}
+      , {description: "ディジタルフオレンジックス", correct: true}
+      , {description: "ベンチマーキング", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "システム監査において，ペネトレーションテストが最も適合するチェックポイントはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "オフィスへの入退に，不正防止及び機密保護の物理的な対策が講じられているか。", correct: false}
+      , {description: "データ入力が漏れなく，重複なく正確に行われているか。", correct: false}
+      , {description: "ネットワークの負荷状況の推移が記録，分析されているか。", correct: false}
+      , {description: "ネットワークへのアクセスコントロールが有効に機能しているか。", correct: true}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "テストデータ法をシステム監査手続として使用する上での留意点はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査モジュールを適時に組み込み，本番データの正当性を検証すること", correct: false}
+      , {description: "テスト対象プログラムのロジックが本番で稼働しているものと同一であるかを確認すること", correct: true}
+      , {description: "テストデータには本番データをそのまま用いること", correct: false}
+      , {description: "テストデータの作成に当たっては統計的サンプリング手法を用いること", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "システム監査報告書に記載された改善勧告への取組みに対する監査人のフォローアップとして，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "改善勧告に対する改善の実施を，被監査部門の長に指示する。", correct: false}
+      , {description: "改善勧告に対する被監査部門の改善実施状況を確認する。", correct: true}
+      , {description: "改善勧告に対する被監査部門の改善実施プロジェクトの管理を行う。", correct: false}
+      , {description: "改善勧告の内容を被監査部門に示し，改善実施計画を策定する。", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "システムの開発，運用及び保守を担当者が1人だけで実施している企業におけるシステム監査に関する記述のうち，最も適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "開発，運用及び保守の実施状況を熟知している当該担当者に対するヒアリング結果だけを監査証拠にする。", correct: false}
+      , {description: "システム改修時の利用部門による動作確認及び責任者による承認の実施状況を確認できる監査手続にする。", correct: true}
+      , {description: "適正な監査手続の実施が不可能であることを当然のこととして，監査意見を形成する。", correct: false}
+      , {description: "内部統制による牽制が十分であることを当然のこととして，監査計画を策定する。", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "システム監査の手順に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査作業は，予備調査，本調査，評価・結論，指摘事項に対する改善の順に行う。", correct: false}
+      , {description: "評価・結論の作業は，監査担当者による評価，被監査部門による評価，監査責任者による評価を順に経て，最終結論を下す。", correct: false}
+      , {description: "本調査の作業は，予備調査結果の確認，監査証拠の入手，証拠能力の評価の順に行う。", correct: true}
+      , {description: "予備調査の作業は，同業他社の状況調査，被監査部門の過去の監査結果の評価，サンプリングによる実地調査の順に行う。", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "システム監査における監査証跡はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査業務の全過程において，監査人が収集及び作成した資料である。", correct: false}
+      , {description: "監査対象システムの入力から出力に至る過程を追跡できる一連の仕組みと記録である。", correct: true}
+      , {description: "監査人が監査証拠を入手するために実施する監査技術の組合せである。", correct: false}
+      , {description: "監査人が監査手続を実施して収集した資料を監査人の判断に基づいて評価した結果である。", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "個人情報取扱事業者に対する監査において，個人情報の第三者提供の観点から指摘事項に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "社員が意識不明に陥り，家族とも連絡がつかないときに，救急隊員に社員本人の個人情報を，本人の同意を得ずに渡した。", correct: false}
+      , {description: "税務署の要請によって，従業員の給与振込先口座の情報を，本人の同意を得ずに提出した。", correct: false}
+      , {description: "フランチャイズの本部から加盟店に，顧客の個人情報を，本人の同意を得ずに渡した。", correct: true}
+      , {description: "法令で定められた共同利用に関する事項をWebサイトに明示した上で，プレゼントキャンペーンの応募者データを，本人の向意を得ずにグループ会社と共同利用した。", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "人事給与システムのシステム監査において，勤怠データの入力漏れを発見するコントロールの評価項目として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "人事マスタに未登録の社員の勤怠データは，通常の入力操作では入力できないこと", correct: false}
+      , {description: "データ入力を行う担当者に，正規の手続によってアクセス権限が付与されていること", correct: false}
+      , {description: "入力された勤怠時間に対する限界値チェック機能が，システムに組み込まれていること", correct: false}
+      , {description: "入力された内容がプルーフリストとして出力され，人事部の管理者が入力原票と照合を行っていること", correct: true}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "システム監査の個別計画書の記載内容を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "個別計画書に記述される監査時期，監査日程には，本調査だけでなく，予備調査や監査結果の報告会，フォローアップも含める。", correct: true}
+      , {description: "個別計画書に記述される監査手続とは，監査項目に対応した監査の基本方針のことである。", correct: false}
+      , {description: "個別計画書には監査対象ごとに重点監査テーマを記載し，システム監査の方針とする。", correct: false}
+      , {description: "個別計画書は監査の具体的な実行計画なので，計画策定後はたとえ組織体の長の意向であっても変更すべきではない。", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "JIS Q 20000-1の”サービスマネジメントシステムの監視及びレビュー”の要求事項のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査員は，自らの仕事を監査してはならない。", correct: true}
+      , {description: "監査の基準は，文書化された手順の中に定義してはならない。", correct: false}
+      , {description: "特定された不適合，懸念事項は，該当する利害関係者であっても開示してはならない。", correct: false}
+      , {description: "レビューの間隔は，あらかじめ定めてはならない。", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "ITサービスマネジメントにおける，インシデント及びサービス要求管理の主な活動はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "インシデントの影響を最小限にするための既知の誤り記録の作成", correct: false}
+      , {description: "インシデントの解決とサービスの復旧", correct: true}
+      , {description: "インシデントの傾向分析と予防処置", correct: false}
+      , {description: "インシデントの未知の根本原因の特定", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "プログラムの著作物について，著作権法上，適法である行為はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "海賊版を複製したプログラムと事前に知りながら入手し，業務で使用した。", correct: false}
+      , {description: "業務処理用に購入したプログラムを複製し，社内教育用として各部門に配布した。", correct: false}
+      , {description: "職務著作のプログラムを，作成した担当者が独断で複製し，他社に貸与した。", correct: false}
+      , {description: "処理速度を向上させるために，購入したプログラムを改変した。", correct: true}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "電子帳簿保存法の要件に反しない事実関係はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "自社内に会計システムをもたない会社が，委託先会計事務所の電子計算機を用いて，取引の最初の記録から一貫して国税関係の帳簿を作成している。", correct: true}
+      , {description: "支店などの新設がない場合において，仕訳帳を会計期間の中途から電磁的に記録している。", correct: false}
+      , {description: "電子帳簿保存を行うシステム関係書類(システム概要書，システム仕様書，操作説明書)の備え付けはしていない。", correct: false}
+      , {description: "電子帳簿保存を行うシステムで仕訳情報の登録，削除の内容は検索できるが，訂正の内容は検索ができない。", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "合格となるべきロットが，抜取検査で誤って不合格となる確率のことを何というか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "合格品質水準", correct: false}
+      , {description: "消費者危険", correct: false}
+      , {description: "生産者危険", correct: true}
+      , {description: "有意水準", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "関係データベースのビューを利用する目的はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "DISTINCT指定，GROUP BY句及びHAVIlG句をもっ演算処理を独立させて，プログラムに単純化したデータ更新手段を提供する。", correct: false}
+      , {description: "行や列を特定の条件で絞り込んだビューだけをアクセスさせることによって，基となる表のデータの一部を隠蔽して保護する手段を提供する。", correct: true}
+      , {description: "データベースの物理的記憶構造の変更に影響されないように，アプリケーションプログラムに対して物理的データ独立性を提供する。", correct: false}
+      , {description: "複数の表を結合したビューにインデックスを付与するととによって，複数の表にまたがった高度な検索手段を提供する。", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "Webページ内でinfo@example.co.jpが電子メールアドレスであることを表し，このアドレスへの電子メールの送信に利用されるURIはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "imap:info@example.co.jp", correct: false}
+      , {description: "mailto:info@example.co.jp", correct: true}
+      , {description: "pop:info@example.co.jp", correct: false}
+      , {description: "smtp:info@example.co.jp", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "共通鍵暗号方式において，100人の送受信者のそれぞれが，相互に暗号化通信を行うときに必要な共通鍵の総数は幾つか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "200", correct: false}
+      , {description: "4,950", correct: true}
+      , {description: "9,900", correct: false}
+      , {description: "10,000", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "”システム管理基準”に該当する記述はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ITILというITサービスの品質向上のためのガイドラインを基に作成した，ITサーピスマネジメントに関するフレームワークである。", correct: false}
+      , {description: "一般基準，実施基準及び報告基準から構成されており，一般基準ではシステム監査人の独立性や職業倫理について規定している。", correct: false}
+      , {description: "システム監査業務の品質を確保し，有効かつ効率的に監査を実施することを目的とした監査人の行為規範である。", correct: false}
+      , {description: "情報システム戦略に基づき，効果的な情報システム投資のための，また，リスクを低減するためのコントロールを適切に整備・運用するための実践規範である。", correct: true}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "PCIデータセキュリティ基準(PCIDSS Version 3.0)のセキュリティ要件から見て，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "管理者のアクセスログは取得するが，プライバシを考慮して，一般利用者のアクセスログは取得しない。", correct: false}
+      , {description: "従業員によるネットワーク外部からのリモートアクセスを許可する場合，管理者以外の従業員は利用者IDとそのIDのパスワードだけの認証でよい。", correct: false}
+      , {description: "伝送中及び保存中のパスワードは，暗号化して解読不能にする。", correct: true}
+      , {description: "利用されない利用者IDの削除及び無効化は，1年に1回まとめて行う。", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "安全性と信頼性について，次の方針でプログラム設計を行う場合，その方針を表す用語はどれか。<br/><br/>" +
+                  "[方針〕<br/>" +
+                  "不特定多数の人が使用するプログラムには，自分だけが使用するプログラムに比べて，より多くのデータチェックの機能を組み込む。プログラムが処理できるデータの前提条件を文書に書いておくだけでなく，その前提条件を満たしていないデータが実際に入力されたときは，エラーメッセージを表示して再入力を促すようにプログラムを作る。"
+    , multiple_answer: false
+    , answers: [
+      {description: "フールプルーフ", correct: true}
+      , {description: "フェールセーフ", correct: false}
+      , {description: "フェールソフト", correct: false}
+      , {description: "フォールトトレラント", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "JIS X 25010:2013で規定されるシステム及びソフトウェア製品の品質特性の定義のうち，”性能効率性”の定義はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "意図した保守者によって，製品又はシステムが修正することができる有効性及び効率性の度合い", correct: false}
+      , {description: "明記された状態(条件)で使用する資源の量に関係する性能の度合い", correct: true}
+      , {description: "明示された時間帯で，明示された条件下に，システム，製品又は構成要素が明示された機能を実行する度合い", correct: false}
+      , {description: "明示された条件下で使用するとき，明示的ニーズ及び暗黙のニーズを満足させる機能を，製品又はシステムが提供する度合い", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "ある顧客層の今後3年間を通しての，年間顧客維持率が40%，1人当たり年平均売上高が200万円，売上高コスト比率が50%と想定される場合，今後3年間のLTV(顧客1人当たりの生涯価値)は何万円か。ここで，割引率は考慮しないものとする。"
+    , multiple_answer: false
+    , answers: [
+      {description: "62.4", correct: false}
+      , {description: "156", correct: true}
+      , {description: "210", correct: false}
+      , {description: "312", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "バランススコアカードを説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "企業のビジョンと戦略を実現するために，財務，顧客，内部ビジネスプロセス，学習と成長という四つの視点から検討するマネジメント手法", correct: true}
+      , {description: "経営環境を，強み，弱み，機会，脅威という四つのカテゴリに分類して分析し，企業にとっての事業機会を導き出すマネジメント手法", correct: false}
+      , {description: "製品を，導入期，成長期，成熟期，衰退期という四つの段階に分類し，企業にとっての最適な事業戦略を立案するマネジメント手法", correct: false}
+      , {description: "ビジネスを，問題児，花形，金のなる木，負け犬という四つのカテゴリに分類し，経営資源配分を決定するためのマネジメント手法", correct: false}
+    ]
+    , category: 'AU-H27-SPRING'
+  }
 ]);
