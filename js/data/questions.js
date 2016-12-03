@@ -6537,7 +6537,7 @@ questions.add([
     , category: 'AU-H28-SPRING'
   }
   , {
-    description: "常時10名以上の従業員を有するソフトウエア開発会社が，社内の情報セキュリティ管理を強化するために，機密情報を扱う担当従業員の扱いを見直すこととした。労働法に照らし，適切な行為はどれか。"
+    description: "常時10名以上の従業員を有するソフトウェア開発会社が，社内の情報セキュリティ管理を強化するために，機密情報を扱う担当従業員の扱いを見直すこととした。労働法に照らし，適切な行為はどれか。"
     , multiple_answer: false
     , answers: [
       {description: "就業規則に業務上知り得た秘密の漏えい禁止の一般的な規定があるが，担当従業員の職務に即して秘密の内容を特定する個別合意を行う。", correct: true}
@@ -6945,5 +6945,284 @@ questions.add([
       , {description: "ビジネスを，問題児，花形，金のなる木，負け犬という四つのカテゴリに分類し，経営資源配分を決定するためのマネジメント手法", correct: false}
     ]
     , category: 'AU-H27-SPRING'
+  }
+  , {
+    description: "”システム監査基準”におけるシステム監査業務の品質管理の主な目的はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査時期・範囲・手続などについての適切なシステム監査計画を立案すること", correct: false}
+      , {description: "システム監査結果の適正性を確保すること", correct: true}
+      , {description: "システム監査で入手した情報の機密性を維持すること", correct: false}
+      , {description: "システム監査の実施を通して，情報システムの品質向上に貢献すること", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "”システム管理基準”で定めている，運用業務におけるソフトウェア管理に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "プログラムからの出力情報の利用状況を記録し，定期的に分析する。", correct: false}
+      , {description: "プログラムで用いるデータファイルへのアクセスをコントロールする。", correct: false}
+      , {description: "プログラムの違法コピーが発生しないよう教育する。", correct: true}
+      , {description: "プログラムのテスト結果を記録，保管する。", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "受注管理システムのデータ入力に対するシステム監査の報告書において，指摘事項に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "営業担当者が起票した受注伝票が，直接，受注入力担当者に送られ，受注入力担当者が伝票内容をシステムに入力し，その入力データによって出荷指示が自動的に行われている。", correct: true}
+      , {description: "受注管理責任者と受注入力担当者が任命され，それぞれの役割が職務記述書に明文化されている。", correct: false}
+      , {description: "受注件数が増えたので，契約社員を受注入力担当者に任命し，営業管理者の承認印のある受注伝票をシステムに入力させている。", correct: false}
+      , {description: "受注入力担当者がシステムに入力した結果のプルーフリストを，受注管理責任者が出力し，入力した受注伝票と照合している。", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "経済産業省の”営業秘密管理指針”に基づく営業秘密データの管理状況について監査を行うとき，秘密管理性のチェックポイントはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "当該データが経営効率の改善に役立つているかどうかを分析していること", correct: false}
+      , {description: "当該データの記録媒体に秘密を意味する表示をしていること", correct: true}
+      , {description: "当該データの内容が刊行物に掲載されていないかを定期的に確認していること", correct: false}
+      , {description: "当該データの内容が公序良俗に反していないかを確認していること", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "外部委託管理の監査に関する記述のうち，最も適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "請負契約においては，委託側の事務所で作業を行っている受託側要員のアクセス管理が妥当かどうかを，委託側が監査できるように定める。", correct: true}
+      , {description: "請負契約の場合は，受託側要員に対する委託側責任者の指揮命令が適切に行われているかどうかを，委託側で監査する。", correct: false}
+      , {description: "外部委託で開発した業務システムの品質管理状況は，委託側で監査する必要はなく，受託側で監査すべきである。", correct: false}
+      , {description: "機密度の高い業務システムの開発を外部に委託している場合は，自社開発に切り替えるよう改善勧告する。", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "表はコンビュータを利用して行うシステム監査技法についてまとめたものである。(1)～(4)の組合せとして，適切なものはどれか。<br/><br/>" +
+                 "<img src = \"js/data/image/AU_H28_q05.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "ア", correct: false}
+      , {description: "イ", correct: true}
+      , {description: "ウ", correct: false}
+      , {description: "エ", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "監査調書に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "記載事項について被監査部門の承認を受ける。", correct: false}
+      , {description: "実施した監査手続を記載し，証拠資料は写しでなく原資料を添付して保管する。", correct: false}
+      , {description: "被監査部門から入手した証拠資料の写しに被監査部門の承認印を受ける。", correct: false}
+      , {description: "必要に応じて被監査部門から入手した証拠資料を添付して保管する。", correct: true}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "個人情報の取得に関して，IS Q 15001における個人情報取得時の要求事項への準拠性を監査した。指摘事項に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Webサイトから注文するシステムにおいて，利用者が注文申込みボタンを押し，注文受付完了画面が表示された時点で，個人情報の利用目的を表示している。", correct: true}
+      , {description: "営業担当者が，顧客から口頭で注文を受ける際，顧客に対して口頭で個人情報の利用目的を伝えている。", correct: false}
+      , {description: "商品購入者に商品を利用した感想を答えてもらうアンケートはがきに，個人情報の利用目的を記載している。", correct: false}
+      , {description: "通信販売コールセンタのオペレータが，電話で注文を受ける際，電話を通して顧客に個人情報の利用目的を伝えている。", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "日本公認会計士協会の監査・保証実務委員会実務指針第86号”受託業務に係る内部統制の保証報告書”に基づいて作成される文書と作成者の適切な組合せはどれか。ここでは，受託業務の一部について再委託が行われており，除外方式を採用しているものとする。<br/><br/>" +
+                 "<img src = \"js/data/image/AU_H26_q09.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "ア", correct: false}
+      , {description: "イ", correct: false}
+      , {description: "ウ", correct: true}
+      , {description: "エ", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "金融庁の”財務報告に係る内部統制の評価及び監査の基準”におけるIT業務処理統制に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "外部委託に関する契約の管理", correct: false}
+      , {description: "システムの運用管理", correct: false}
+      , {description: "システムの開発・保守に係る管理", correct: false}
+      , {description: "利用部門によるエラーデータの修正と再処理", correct: true}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "職務著作の要件のうち，プログラムの著作物の場合は満たす必要がなく，プログラム以外の著作物の場合は必要なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "著作権が作成者に帰属するとの取り決めがないこと", correct: false}
+      , {description: "法人等が自己の著作の名義の下に公表していること", correct: true}
+      , {description: "法人等の業務に従事する者が作成していること", correct: false}
+      , {description: "法人等の発意に基づいていること", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "下請業者から納品されたプログラムに，下請業者側の事情を原因とするパグが発見され，プログラムの修正が必要となった。このとき，支払期日を改めて定めようとする場合，下請代金支払遅延等防止法上認められている期間(60日)の起算日はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "当初のプログラムの検査が終了した日", correct: false}
+      , {description: "当初のプログラムが下請業者に返却された日", correct: false}
+      , {description: "修正済プログラムが納品された日", correct: true}
+      , {description: "修正済プログラムの検査が終了した日", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "会社法に基づく監査委員会の役割はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "委員会設置会社の機関であり，取締役及び執行役の職務の執行を監査し，株主総会に提出する会計監査人の選任などに関する議案の内容を決定する。", correct: true}
+      , {description: "大会社である公開会社に設置が義務付けられている機関であり，監査役及び監査役会を統括する。", correct: false}
+      , {description: "日本公認会計士協会に設置される機関であり，公認会計士監査に関する実務上の指針である監査基準委員会報告書を公表する。", correct: false}
+      , {description: "連結グループに属する会社法監査対象会社の会計監査人によって構成される機関であり，連結グループに属する会社の監査役の活動を監査する。", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "ある研究所において，社員は一つ以上の学会に所属している。社員と学会の関係をUMLを用いて表した図のうち，適切なものはどれか。ここで，会員番号は学会が所属する会員を一意に識別するために付与する番号である。<br/><br/>" +
+                 "<img src = \"js/data/image/AU_H26_q14.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "ア", correct: false}
+      , {description: "イ", correct: false}
+      , {description: "ウ", correct: true}
+      , {description: "エ", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "クラスBのIPアドレスで255.255.255.0のサブネットマスクを用いたとき，同一サブネット内で設定可能なホストアドレス数は最大で幾つか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "126", correct: false}
+      , {description: "254", correct: true}
+      , {description: "65,534", correct: false}
+      , {description: "16,777,214", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "IPv6において，拡張ヘッダを利用することによって実現できるセキュリティ機能はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "URLフィルタリング機能", correct: false}
+      , {description: "暗号化機能", correct: true}
+      , {description: "ウイルス検疫機能", correct: false}
+      , {description: "情報漏えい検知機能", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "コンティンジェンシープランにおける留意点はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "企業の全てのシステムを対象とするのではなく，システムの復旧の重要性と緊急性を勘案して対象を決定する。", correct: true}
+      , {description: "災害などへの対応のために，すぐに使用できるよう，パックアップデータはコンピュータ室内又はセンタ内に保存しておく。", correct: false}
+      , {description: "バックアップの対象は，機密情報の中から機密度を勘案して選択する。", correct: false}
+      , {description: "被害のシナリオを作成し，これに基づく”予防策策定手順”を策定する。", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "SSLに関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "SSLで使用するWebサーバのディジタル証明書にはIPアドレスの組込みが必須なので， WebサーバのIPアドレスを変更する場合は，ディジタル証明書を再度取得する必要がある。", correct: false}
+      , {description: "SSLで使用する個人認証用のディジタル証明書は，ICカードなどに格納できるので，格納場所を特定のPCに限定する必要はない。", correct: true}
+      , {description: "SSLはWebサーバを経由した特定の利用者間の通信のために開発されたプロトコルであり，Webサーバ提供者への事前の利用者登録が不可欠である。", correct: false}
+      , {description: "日本国内では，SSLで使用する共通鍵の長さは，128ビット未満に制限されている。", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "UML 2.0において，オブジェクト間の相互作用を時間の経過に注目して記述するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "アクティビテイ図", correct: false}
+      , {description: "コミュニケーション図", correct: false}
+      , {description: "シーケンス図", correct: true}
+      , {description: "ユースケース図", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "ソフトウェアの潜在エラー数を推定する方法の一つにエラー埋込み法がある。100個のエラーを故意にプログラムに埋め込んだとき，そのエラーの存在を知らない検査グループが30個のエラーを発見した。そのうち 20個は故意に埋め込んでおいたものであった。この時点で，このプログラムには埋込みエラーを除く残存エラー数は幾つと推定できるか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "40", correct: true}
+      , {description: "50", correct: false}
+      , {description: "70", correct: false}
+      , {description: "150", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "システムの改善に向けて提出された4案について，評価項目を設定して採点した結果を，採点結果表に示す。効果及びリスクについては5段階評価とし，それぞれの評価項目の重要度に応じて，重み付け表に示すとおりの重み付けを行った上で次の式で総合評価点を算出したとき，総合評価点が最も高い改善案はどれか。<br/><br/>" +
+                 "<img src = \"js/data/image/AU_H26_q14.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "案1", correct: false}
+      , {description: "案2", correct: false}
+      , {description: "案3", correct: true}
+      , {description: "案4", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "ITサービスマネジメントにおける問題管理プロセスの活動はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "根本原因の特定", correct: true}
+      , {description: "サービス要求の優先度付け", correct: false}
+      , {description: "変更要求の記録", correct: false}
+      , {description: "リリースの試験", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "企業の競争戦略におけるリーダ戦略はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "上位企業の市場シェアを奪うことを目標に製品，サービス，販売促進，流通チャネルなどのあらゆる面での差別化戦略をとる。", correct: false}
+      , {description: "潜在的な需要がありながら，大手企業が参入してこないような専門特化した市場に，限られた経営資源を集中する。", correct: false}
+      , {description: "目標とする企業の戦略を観察し，迅速に模倣することで，開発や広告のコストを抑制し，市場での存続を図る。", correct: false}
+      , {description: "利潤，名声の維持・向上と最適市場シェアの確保を目標として，市場内の全ての顧客をターゲットにした全方位戦略をとる。", correct: true}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "TOCにおけるDBR(ドラム・バッファ・ロープ)のドラムの説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "制約条件工程を最大限に稼働させるために制約条件工程の前に置かれる余裕時間や計画的な在庫", correct: false}
+      , {description: "制約条件工程を含む工程全体の売上高から，原材料費などの費用を差し引いたもの", correct: false}
+      , {description: "全体の生産量を決める上で能力上制約となる工程のこと，又はその工程のペースに合わせること", correct: true}
+      , {description: "先頭の工程への原材料の投入タイミングを制約条件工程の生産速度に同期させる仕組み", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "前期の製品Aの売上高は1,000万円，営業利益は50万円であり，限界利益は400万円であった。当期は売上高が10%減少するととが予想されている。当期も前期と同じ営業利益を得るために必要な，固定費の削減額は何万円か。ここで，当期の限界利益率は前期と同じものとする。"
+    , multiple_answer: false
+    , answers: [
+      {description: "35", correct: false}
+      , {description: "40", correct: true}
+      , {description: "60", correct: false}
+      , {description: "65", correct: false}
+    ]
+    , category: 'AU-H26-SPRING'
   }
 ]);

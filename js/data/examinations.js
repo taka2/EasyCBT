@@ -1,6 +1,16 @@
 // 出題データ
 examinations.add([
   {
+    examinationName: "システム監査技術者試験（AU） AM2 ALL"
+    , questionCount: 25
+    , categories: ['AU-H28-SPRING', 'AU-H27-SPRING', 'AU-H26-SPRING']
+  }
+  , {
+    examinationName: "システム監査技術者試験（AU） AM2 ALL 10問"
+    , questionCount: 10
+    , categories: ['AU-H28-SPRING', 'AU-H27-SPRING', 'AU-H26-SPRING']
+  }
+  , {
     examinationName: "平成28年度春期試験 システム監査技術者試験（AU） AM2"
     , questionCount: 25
     , categories: ['AU-H28-SPRING']
@@ -9,6 +19,11 @@ examinations.add([
     examinationName: "平成27年度春期試験 システム監査技術者試験（AU） AM2"
     , questionCount: 25
     , categories: ['AU-H27-SPRING']
+  }
+  , {
+    examinationName: "平成26年度春期試験 システム監査技術者試験（AU） AM2"
+    , questionCount: 25
+    , categories: ['AU-H26-SPRING']
   }
   , {
     examinationName: "ITストラテジスト試験（ST） AM2 ALL"
