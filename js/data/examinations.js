@@ -3,12 +3,12 @@ examinations.add([
   {
     examinationName: "システム監査技術者試験（AU） AM2 ALL"
     , questionCount: 25
-    , categories: ['AU-H28-SPRING', 'AU-H27-SPRING', 'AU-H26-SPRING', 'AU-H25-SPRING']
+    , categories: ['AU-H28-SPRING', 'AU-H27-SPRING', 'AU-H26-SPRING', 'AU-H25-SPRING', 'AU-H24-SPRING']
   }
   , {
     examinationName: "システム監査技術者試験（AU） AM2 ALL 10問"
     , questionCount: 10
-    , categories: ['AU-H28-SPRING', 'AU-H27-SPRING', 'AU-H26-SPRING', 'AU-H25-SPRING']
+    , categories: ['AU-H28-SPRING', 'AU-H27-SPRING', 'AU-H26-SPRING', 'AU-H25-SPRING', 'AU-H24-SPRING']
   }
   , {
     examinationName: "平成28年度春期試験 システム監査技術者試験（AU） AM2"
@@ -29,6 +29,11 @@ examinations.add([
     examinationName: "平成25年度春期試験 システム監査技術者試験（AU） AM2"
     , questionCount: 25
     , categories: ['AU-H25-SPRING']
+  }
+  , {
+    examinationName: "平成24年度春期試験 システム監査技術者試験（AU） AM2"
+    , questionCount: 25
+    , categories: ['AU-H24-SPRING']
   }
   , {
     examinationName: "ITストラテジスト試験（ST） AM2 ALL"

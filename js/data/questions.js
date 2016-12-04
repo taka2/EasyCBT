@@ -7501,4 +7501,286 @@ questions.add([
     ]
     , category: 'AU-H25-SPRING'
   }
+  , {
+    description: "システム監査における，サンプリング(試査)に関わる用語の説明のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "許容誤謬率とは，サンプルの件数を決めるときに用いるものであって，監査人が受け入れることのできる所定の内部統制からの逸脱率である。", correct: true}
+      , {description: "サンプリングリスクとは，固有リスクと統制リスクを掛け合わせた結果である。", correct: false}
+      , {description: "統計的サンプリングとは，特定の種類の例外取引を全部抽出する方法である。", correct: false}
+      , {description: "母集団とは，評価対象から結論を導き出すのに必要なデータ全体のうち，リスクの高いデータの集合である。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "システム監査における監査証拠の説明のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査人が収集又は作成する資料であり，監査報告書に記載する監査意見や指橋事項は，その資料によって裏付けられていなければならない。", correct: true}
+      , {description: "監査人が当初設定した監査手続を記載した資料であり，監査人はその資料に基づいて厳査を実施しなければならない。", correct: false}
+      , {description: "機密性の高い情報が含まれている資料であり，監査人は監査報告書の作成後，速やかに全てを処分しなければならない。", correct: false}
+      , {description: "被監査部門が監査人に提出する資料であり，監査人が自ら作成する資料は含まれない。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "ソフトウェアパッケージ購入に関する監査において監査人自身が行う手続として，最も適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "自社開発と購入の場合の投資対効果をそれぞれ分析，比較して，ソフトウェアパッケージを選定する。", correct: false}
+      , {description: "ソフトウェアパッケージに適合するハードウェア性能の検討が行われていることを確認する。", correct: true}
+      , {description: "ソフトウェアパッケージを提供する企業の財務内容が健全かどうかを調査する。", correct: false}
+      , {description: "他の同種のソフトウェアパッケージに関する資料を取り寄せて，価格，性能などを比較する。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "”JIS Q 27001：2006”の管理策を参考にして設定した，ノート型PCに対する物理的セキュリティ対策の妥当性を確かめるための監査手続はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "オフィス内を視察し，不在者のノート型PCが施錠されたキャビネットに保管されていることを確認する。", correct: true}
+      , {description: "管理ルールを調べ，ノート型PCを社外に持ち出す場合には，セキュリティ管理者の許可を得るルールになっていることを確認する。", correct: false}
+      , {description: "教育計画及び教育記録を閲覧し，ノート型PCの安全管理についての社員教育が適切に行われていることを確認する。", correct: false}
+      , {description: "実際にノート型PCを操作して，パスワードを入力しないと利用可能にならない仕組みになっていることを確認する。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "システム監査報告書に記載された改善勧告に対する監査人の取組みのうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "改善勧告に対する改善実施状況を確認する。", correct: true}
+      , {description: "改善勧告に対する改善の実施を，被監査部門の長に指示する。", correct: false}
+      , {description: "改善勧告に対する被監査部門の改善実施プロジェクトの管理を行う。", correct: false}
+      , {description: "改善勧告の内容を被監査部門に示し，改善実施計画を提出させる。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "”システム管理基準”で定めている，運用業務におけるソフトウェア管理に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "プログラムからの出力情報の利用状況を記録し，定期的に分析する。", correct: false}
+      , {description: "プログラムで用いるデータファイルへのアクセスをコントロールする。", correct: false}
+      , {description: "プログラムの違法コピーが発生しないよう教育する。", correct: true}
+      , {description: "プログラムのテスト結果を記録，保管する。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "提案依頼書(RFP)によるベンダ選定手続に関するシステム監査の結果，指摘事項に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "RFPに，システム化要求事項の他，あるべき業務モデルも添付していた。", correct: false}
+      , {description: "RFP発行後，問合せをしてきたITベンダに対して追加資料を提供していた。", correct: true}
+      , {description: "提案を希望するITベンダを集めて，RFP説明会を実施していた。", correct: false}
+      , {description: "予算額の範囲を，RFPに明示していた。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "システム監査の予備調査の段階で行う作業はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査計画書の作成", correct: false}
+      , {description: "監査目的の設定", correct: false}
+      , {description: "監査対象の実態把握", correct: true}
+      , {description: "監査目的の設定", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "内部統制として効果的な職務の分離の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "開発部門のプログラマが運用部門のオペレータを兼務しない。", correct: true}
+      , {description: "購買管理で購入物品の検品確認と検品確認入力を同じ担当者が行わない。", correct: false}
+      , {description: "資材管理で資材の搬入確認と搬入確認入力を兼務しない。", correct: false}
+      , {description: "電子送金システムでシステムの始動と送金操作を同じ担当者が行わない。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "金融庁の”財務報告に係る内部統制の評価及び監査の基準”では，内部統制の基本的要素の一つとして”ITへの対応”を示している。”ITへの対応”に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "COSOの”内部統制の統合的枠組み”にも，構成要素のーつとして示されている。", correct: false}
+      , {description: "IT環境への対応と，ITの利用及び統制からなる。", correct: true}
+      , {description: "ITを利用しない手作業での統制活動では内部統制の目的は達成できない。", correct: false}
+      , {description: "他の内部統制の基本的要素と独立に存在する。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "内部統制の基本的要素の一つである”統制活動”に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "経営目的を達成するための経営方針及び経営戦略", correct: false}
+      , {description: "個人情報保護に関する脅威と脆弱性の分析", correct: false}
+      , {description: "受注から出荷に至る業務プロセスに組み込まれた処理結果の検証", correct: true}
+      , {description: "定期的に計画して実施する内部業務監査", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "ITサービスマネジメントにおけるインシデント管理プロセスの効率性又は有効性を判断するための指標として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "うまくいかずに切戻しをした変更の個数", correct: false}
+      , {description: "根本原因の診断や必要な変更が完了していない問題の個数", correct: false}
+      , {description: "サービス停止の発生頻度", correct: false}
+      , {description: "サービスデスクがエスカレーションせずにクローズしたインシデントの割合", correct: true}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "ITILv3におけるサービスライフサイクルの段階のうち，キャパシティ管理を含むものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "サービスオペレーション", correct: false}
+      , {description: "サービスストラテジ", correct: false}
+      , {description: "サービスデザイン", correct: true}
+      , {description: "サービストランジション", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "電子署名法に規定されているものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "電子署名技術は公開鍵暗号技術によるものと規定されている。", correct: false}
+      , {description: "電子署名には，電磁的記録以外の，コンピュータ処理の対象とならないものも含まれる。", correct: false}
+      , {description: "電子署名には，民事訴訟法における押印と同様の効力が認められている。", correct: true}
+      , {description: "電子署名の認証業務を行うことができるのは，政府が運営する認証局に限られる。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "JIS Q 9001 (ISO 9001)で内部監査について規定していることはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "内部監査では，品質マネジメントシステムが定められたとおり正しく機能しているかどうかを，予告することなく不定期に確認する。", correct: false}
+      , {description: "内部監査では，品質マネジメントシステムの効果的な実施と維持及び規格要求事項への適合を確認する。", correct: true}
+      , {description: "内部監査は，社内のシステム監査部門又はシステム監査技術者が行う。", correct: false}
+      , {description: "内部監査を実施する前提条件として，ISO 9001に基づく品質マネジメントシステムの審査登録が必要である。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "リーダシップのスタイルは，その組織の状況に合わせる必要がある。組織とリーダシップの関係に次のことが想定できるとすると，野球チームの監督のリーダシップのスタイルとして，図のdと考えられるものはどれか。<br/><br/>" +
+                 "〔組織とリーダシップの関係〕<br/>" +
+                 "組織は発足当時，構成員や仕組みの成熟度が低いので，リーダが仕事本位のリーダシップで引っ張っていく。成熟度が上がるにつれ，リーダと構成員の人間関係が培われ，仕事本位から人間関係本位のリーダシップに移行していく。更に成熟度が進むと，構成員は自主的に行動でき，リーダシップは仕事本位，人間関係本位のいずれもが弱まっていく。<br/><br/>" +
+                 "<img src = \"js/data/image/AU_H24_q16.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "うるさく言うのも半分くらいで勝てるようになってきた。", correct: false}
+      , {description: "勝つためには選手と十分に話し合って戦略を作ることだ。", correct: false}
+      , {description: "勝つためには選手の足を引っ張らないことだ。", correct: true}
+      , {description: "選手をきちんと管理することが勝つための条件だ。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "”商品”表に対して，次のSQL文を実行して得られる仕入先数は幾つか。<br/><br/>" +
+                 "SELECT DISTINCT 仕入先コード FROM 商品<br/>" +
+                 "WHERE (販売単価 - 仕入単価) ><br/>" +
+                 "(SELECT AVG (販売単価 - 仕入単価) FROM 商品)<br/><br/>" +
+                 "<img src = \"js/data/image/AU_H24_q17.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "1", correct: false}
+      , {description: "2", correct: false}
+      , {description: "3", correct: true}
+      , {description: "4", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "IEEE 802.1QのタグVLANの特徴に関する記述として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "MACアドレスを用いたグルーピングを行う。", correct: false}
+      , {description: "VLAN識別子(VID)の最大は 1,024である。", correct: false}
+      , {description: "イーサネットフレームのタイプフィールドにVLAN識別子(VID)を指定する。", correct: false}
+      , {description: "複数のスイッチングハブにまたがる仮想LANを構築できる。", correct: true}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "一つのグローバルIPアドレスを使って複数のホストが同時にインターネットにアクセスできるようにする仕組みを何と呼ぶか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "DHCP", correct: false}
+      , {description: "IPマルチキャスト", correct: false}
+      , {description: "NAPT", correct: true}
+      , {description: "VPN", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "IPv6において，拡張ヘッダを利用することによって実現できるセキュリティ機能はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "URLフィルタリング機能", correct: false}
+      , {description: "暗号化機能", correct: true}
+      , {description: "ウイルス検疫機能", correct: false}
+      , {description: "情報漏えい検知機能", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "”システム管理基準”に該当する記述はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ITILというITサービスの品質向上のためのガイドラインを基に作成した，ITサービスマネジメントに関するフレームワークである。", correct: false}
+      , {description: "一般基準，実施基準及び報告基準から構成されており，一般基準ではシステム監査人の独立性や職業倫理について規定されている。", correct: false}
+      , {description: "システム監査業務の品質を確保し，有効かつ効率的に監査を実施することを目的とした監査人の行為規純である。", correct: false}
+      , {description: "情報システム戦略に基づき，効果的な情報システム投資のための，また，リスクを低減するためのコントロールを適切に整備・運用するための実践規範である。", correct: true}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "UML2.0において，オブジェクト聞の相互作用を時間の経過に注目して記述するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "アクティビティ図", correct: false}
+      , {description: "コミュニケーション図", correct: false}
+      , {description: "シーケンス図", correct: true}
+      , {description: "ユースケース図", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "開発ライフサイクルモデルとして，ウォータフォールモデル，進化的モデル，スパイラルモデルの三つを考える。ソフトウェア保守は，どのモデルを採用したときに必要か。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ウォータフォールモデルだけ", correct: false}
+      , {description: "ウォータフォールモデルと進化的モデルだけ", correct: false}
+      , {description: "ウォータフォールモデルとスパイラルモデルだけ", correct: false}
+      , {description: "ウォータフォールモデル，進化的モデル，スパイラルモデルの全て", correct: true}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "ブランド戦略のうち，ブランド拡張を説明したものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "既存のブランドネームをそのまま用いた上で，対象市場を新しいマーケットセグメントに変更し，売上高の増加を狙う戦略である。", correct: false}
+      , {description: "既存のブランドネームを他の商品においても展開することで，既存ブランドの認知度を新商品にも利用し，販売効果を高める戦略である。", correct: true}
+      , {description: "従来の市場をターゲットとし続けるが，従来のブランドネームを廃棄して新しいブランドネームに変更する戦略である。", correct: false}
+      , {description: "単一のブランドを強調するだけでなく，同一カテゴリで複数ブランドを使い分けることによって市場シェアの獲得を狙う戦略である。", correct: false}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
+  , {
+    description: "企業が実施するマクロ環境分析のうちPEST分析によって戦略を策定している事例はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "購買決定者の年齢層や社会的なポジション，購買に至るプロセスの中で購買行動に影響する要因を把握し，自社の製品の市場投入方法を決定する。", correct: false}
+      , {description: "自社の製品市場に参入してくると見込まれる，別市場の企業の動向を把握し，新製品の開発を決定する。", correct: false}
+      , {description: "自社の販売力，生産カの評価や自社の保有する技術力を検証し，新しく進出する市場分野を決定する。", correct: false}
+      , {description: "法規制，景気動向，流行の推移や新技術の状況を把握し，自社の製品改善方針を決定する。", correct: true}
+    ]
+    , category: 'AU-H24-SPRING'
+  }
 ]);
