@@ -114,7 +114,7 @@ questions.add([
     , answers: [
       {description: "IPアドレスの割当て方針の決定， DNSルートサーバの運用監視， DNS管理に関する調整などを世界規模で行う組織である。", correct: false}
       , {description: "インターネットに関する技術文書を作成し，標準化のための検討を行う組織である。", correct: false}
-      , {description: "企業・組織内や政府機関に設置され，コンビュータセキュリティインシデントに関する報告を受け取り，調査し，対応活動を行う組織の総称である。", correct: true}
+      , {description: "企業・組織内や政府機関に設置され，コンピュータセキュリティインシデントに関する報告を受け取り，調査し，対応活動を行う組織の総称である。", correct: true}
       , {description: "情報技術を利用し，宗教的又は政治的な目標を達成するという目的をもった人や組織の総称である。", correct: false}
     ]
     , category: 'SC-H26-AUTUMN'
@@ -164,7 +164,7 @@ questions.add([
     , category: 'SC-H26-AUTUMN'
   }
   , {
-    description: "暗号化や認証機能をもち，遠隔にあるコンビュータを操作する機能をもったものはどれか。"
+    description: "暗号化や認証機能をもち，遠隔にあるコンピュータを操作する機能をもったものはどれか。"
     , multiple_answer: false
     , answers: [
       {description: "IPsec", correct: false}
@@ -201,7 +201,7 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "画像や音楽などのディジタルコンテンツに著作権者などの情報を埋め込む。", correct: false}
-      , {description: "コンビュータやネットワークのセキュリティ上の弱点を発見するテスト手法のーつであり，システムを実際に攻撃して侵入を試みる。", correct: false}
+      , {description: "コンピュータやネットワークのセキュリティ上の弱点を発見するテスト手法のーつであり，システムを実際に攻撃して侵入を試みる。", correct: false}
       , {description: "ネットワークの管理者や利用者などから，巧みな話術や盗み聞き，盗み見などの手段によって，パスワードなどのセキュリティ上重要な情報を入手する。", correct: false}
       , {description: "犯罪に対する証拠となり得るデータを保全し，その後の訴訟などに備える。", correct: true}
     ]
@@ -628,7 +628,7 @@ questions.add([
     description: "RLO（Right-to-Left Override）を利用した手口の説明はどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "”コンビュータウイルスに感染している”といった偽の警告を出して利用者を脅し，ウイルス対策ソフトの購入などを迫る。", correct: false}
+      {description: "”コンピュータウイルスに感染している”といった偽の警告を出して利用者を脅し，ウイルス対策ソフトの購入などを迫る。", correct: false}
       , {description: "脆弱性があるホストやシステムをあえて公開し，攻撃の内容を観察する。", correct: false}
       , {description: "ネットワーク機器の MIB情報のうち監視項目の値の変化を感知し，セキュリティに関するイベントを SNMPマネージャに通知するように動作させる。", correct: false}
       , {description: "文字の表示順を変える制御文字を利用し，ファイル名の拡張子を偽装する。", correct: true}
@@ -672,7 +672,7 @@ questions.add([
     description: "JVN（Japan Vulnerability Notes）などの脆弱性対策ポータルサイトで採用されているCWE（Common Weakness Enumeration）はどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "コンビュータで必要なセキュリティ設定項目を識別するための識別子である。", correct: false}
+      {description: "コンピュータで必要なセキュリティ設定項目を識別するための識別子である。", correct: false}
       , {description: "脆弱性を利用して改ざんされたWebサイトの画面ショットを識別するための識別子である。", correct: false}
       , {description: "製品に含まれる脆弱性を識別するための識別子である。", correct: true}
       , {description: "セキュリテイ製品を識別するための識別子である。", correct: false}
@@ -702,7 +702,7 @@ questions.add([
     , category: 'SC-H25-AUTUMN'
   }
   , {
-    description: "DMZ上のコンビュータがインターネットからのpingに応答しないようにファイアウォールのルールを定めるとき，”通過禁止”に設定するものはどれか。"
+    description: "DMZ上のコンピュータがインターネットからのpingに応答しないようにファイアウォールのルールを定めるとき，”通過禁止”に設定するものはどれか。"
     , multiple_answer: false
     , answers: [
       {description: "ICMP", correct: true}
@@ -740,7 +740,7 @@ questions.add([
     , answers: [
       {description: "OSの中核であるカーネル部分の脆ぜい弱性を分析するツール", correct: false}
       , {description: "コンピュータがウイルスやワームに感染していないことをチェックするツール", correct: false}
-      , {description: "コンビュータやルータのアクセス可能な通信ポートを外部から調査するツール", correct: false}
+      , {description: "コンピュータやルータのアクセス可能な通信ポートを外部から調査するツール", correct: false}
       , {description: "不正侵入してOSなどに組み込んだものを隠蔽するツール", correct: true}
     ]
     , category: 'SC-H25-AUTUMN'
@@ -813,7 +813,7 @@ questions.add([
     , category: 'SC-H25-AUTUMN'
   }
   , {
-    description: "コンビュータとスイッチングハブ（レイヤ 2スイッチ）の間，又は2台のスイッチングハブの聞を接続する複数の物理回線を論理的に1本の回線に束ねる技術はどれか。"
+    description: "コンピュータとスイッチングハブ（レイヤ 2スイッチ）の間，又は2台のスイッチングハブの聞を接続する複数の物理回線を論理的に1本の回線に束ねる技術はどれか。"
     , multiple_answer: false
     , answers: [
       {description: "スパニングツリー", correct: false}
@@ -991,13 +991,13 @@ questions.add([
     , answers: [
       {description: "IPアドレスの割当て方針の決定，DNSルートサーバの運用監視，DNS管理に関する調整などを世界規模で行う組織である。", correct: false}
       , {description: "インターネットに関する技術文書を作成し，標準化のための検討を行う組織である。", correct: false}
-      , {description: "国レベルや企業・組織内に設置され，コンビュータセキュリティインシデントに関する報告を受け取り，調査し，対応活動を行う組織の総称である。", correct: true}
+      , {description: "国レベルや企業・組織内に設置され，コンピュータセキュリティインシデントに関する報告を受け取り，調査し，対応活動を行う組織の総称である。", correct: true}
       , {description: "情報技術を利用し，信教や政治的な目標を達成するという目的をもった人や組織の総称である。", correct: false}
     ]
     , category: 'SC-H25-SPRING'
   }
   , {
-    description: "NISTの定義によるクラウドコンビューティングのサービスモデルにおいて，パブリッククラウドサービスの利用企業のシステム管理者が，仮想サーバのゲストOSに係る設定作業及びセキュリティパッチ管理作業を実施可かどうかの組合せのうち，適切なものはどれか。"
+    description: "NISTの定義によるクラウドコンピューティングのサービスモデルにおいて，パブリッククラウドサービスの利用企業のシステム管理者が，仮想サーバのゲストOSに係る設定作業及びセキュリティパッチ管理作業を実施可かどうかの組合せのうち，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
       {description: "IaaS=実施可，PaaS=実施可，SaaS=実施不可", correct: false}
@@ -1875,8 +1875,8 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "OSの中核であるカーネル部分の脆ぜい弱性を分析するツール", correct: false}
-      , {description: "コンビュータがウイルスやワームに感染していないことをチェックするツール", correct: false}
-      , {description: "コンビュータやルータのアクセス可能な通信ポートを外部から調査するツール", correct: false}
+      , {description: "コンピュータがウイルスやワームに感染していないことをチェックするツール", correct: false}
+      , {description: "コンピュータやルータのアクセス可能な通信ポートを外部から調査するツール", correct: false}
       , {description: "不正侵入してOSなどに不正に組み込んだものを隠蔽する機能をまとめたツール", correct: true}
     ]
     , category: 'SC-H23-AUTUMN'
@@ -1926,7 +1926,7 @@ questions.add([
     , category: 'SC-H23-AUTUMN'
   }
   , {
-    description: "コンビュータとスイッチングハブの間，又は2台のスイッチングハブの問を接続する複数の物理回線を論理的に1本の回線に束ねる技術はどれか。"
+    description: "コンピュータとスイッチングハブの間，又は2台のスイッチングハブの問を接続する複数の物理回線を論理的に1本の回線に束ねる技術はどれか。"
     , multiple_answer: false
     , answers: [
       {description: "スパニングツリー", correct: false}
@@ -2053,7 +2053,7 @@ questions.add([
       {description: "外国の輸出規制によって十分な強度をもつ暗号アルゴリズムを実装した製品が利用できなくなること", correct: false}
       , {description: "鍵の不適切な管理によって，鍵が漏えいする危険性が増すこと", correct: false}
       , {description: "計算能力の向上などによって，健の推定が可能となり，暗号の安全性が低下すること", correct: true}
-      , {description: "最高性能のコンビュータを用い，膨大な時間やコストを掛けて暗号強度をより確実なものとすること", correct: false}
+      , {description: "最高性能のコンピュータを用い，膨大な時間やコストを掛けて暗号強度をより確実なものとすること", correct: false}
     ]
     , category: 'SC-H23-SPRING'
   }
@@ -2551,7 +2551,7 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "悪意によるデータの改ざんを防ぐ。", correct: false}
-      , {description: "コンビュータウイルスによるデータの破壊を防ぐ。", correct: false}
+      , {description: "コンピュータウイルスによるデータの破壊を防ぐ。", correct: false}
       , {description: "災害発生時にシステムが長時間停止するのを防ぐ。", correct: true}
       , {description: "操作ミスによるデータの削除を防ぐ。", correct: false}
     ]
@@ -2679,7 +2679,7 @@ questions.add([
     , category: 'SC-H22-SPRING'
   }
   , {
-    description: "DMZ上のコンビュータがインターネットからのpingに応答しないようにファイアウォールのセキュリティルールを定めるとき，＂通過禁止＂に設定するものはどれか。"
+    description: "DMZ上のコンピュータがインターネットからのpingに応答しないようにファイアウォールのセキュリティルールを定めるとき，＂通過禁止＂に設定するものはどれか。"
     , multiple_answer: false
     , answers: [
       {description: "ICMP", correct: true}
@@ -3181,7 +3181,7 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "悪意によるデータの改ざんを防ぐ。", correct: false}
-      , {description: "コンビュータウイルスによるデータの破壊を防ぐ。", correct: false}
+      , {description: "コンピュータウイルスによるデータの破壊を防ぐ。", correct: false}
       , {description: "災害発生時にシステムが長時間停止するのを防ぐ。", correct: true}
       , {description: "操作ミスによるデータの削除を防ぐ。", correct: false}
     ]
@@ -4746,7 +4746,7 @@ questions.add([
     description: "ebXMLを説明したものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "XML文書をペースとしたメッセージをHTTPなどのプロトコルで交換することによって，他のコンビュータ上のオブジェクトにアクセスするための仕様である。", correct: false}
+      {description: "XML文書をペースとしたメッセージをHTTPなどのプロトコルで交換することによって，他のコンピュータ上のオブジェクトにアクセスするための仕様である。", correct: false}
       , {description: "XMLを応用したもので，インターネット上のディレクトリ(登録簿)にWebサーピスを登録し，検索可能とするための仕様である。", correct: false}
       , {description: "XMLを用いたWebサービス間の通信プロトコルやビジネスプロセスの記述方法，取引情報のフォーマットなどを定義する一連の仕様である。", correct: true}
       , {description: "プログラムからWebサービスを呼び出す際に必要なインタフェース情報を，XML形式の言語で記述するための仕様である。 ", correct: false}
@@ -4916,7 +4916,7 @@ questions.add([
       {description: "コールセンタの企画，設計から業務運用までを一括して受託することによって，委託元のコールセンタへの設備投資や人員調達を不要とするサービス", correct: false}
       , {description: "人事，経理，総務などの業務を標準化してグループ内の1か所に集約することによって，グループ全体の間接業務のコスト削減に貢献するサービス", correct: false}
       , {description: "複数の電子機器メーカから製品の設計，製造を一括して受託することによって，生産規模を確保し，低コストで製品を提供するサービス", correct: true}
-      , {description: "プロパイダ側のコンビュータ上でソフトウェアを稼働させて，利用者はそのソフトウェアの機能をネットワーク経由で利用するサービス", correct: false}
+      , {description: "プロパイダ側のコンピュータ上でソフトウェアを稼働させて，利用者はそのソフトウェアの機能をネットワーク経由で利用するサービス", correct: false}
     ]
     , category: 'ST-H26-AUTUMN'
   }
@@ -4948,7 +4948,7 @@ questions.add([
     , answers: [
       {description: "企業ピル内などに設置して，外線電話と内線電話，内線電話同士を交換する装置", correct: false}
       , {description: "顧客からの電話に自動応答し，顧客自身の操作によって情報の選択や配信，合成音声による応答などを行う仕組み", correct: true}
-      , {description: "コンビュータと電話を統合し，顧客データベースとPBXを連動させて，発呼や着呼と同時に必要な顧客情報をオペレータの画面上に表示するシステム", correct: false}
+      , {description: "コンピュータと電話を統合し，顧客データベースとPBXを連動させて，発呼や着呼と同時に必要な顧客情報をオペレータの画面上に表示するシステム", correct: false}
       , {description: "着信した電話を，あらかじめ決められたルールに従ってa複数のオペレータのうちの1人だけに接続する仕組み", correct: false}
     ]
     , category: 'ST-H26-AUTUMN'
@@ -5156,7 +5156,7 @@ questions.add([
     description: "TCOの策定に当たって適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "エンドユーザコンビューティングにおけるユーザ部門の運用コストを考慮する必要はない。", correct: false}
+      {description: "エンドユーザコンピューティングにおけるユーザ部門の運用コストを考慮する必要はない。", correct: false}
       , {description: "システム監査における監査対象データの収集コストや管理コストを考慮する必要はない。", correct: false}
       , {description: "システム障害の発生などによって仕入先企業が被るおそれのある，将来的な損失額も考慮する必要がある。", correct: false}
       , {description: "ユーザ部門におけるシステム利用に起因する，埋没原価などの見えないコストも考慮する必要がある。", correct: true}
@@ -5485,7 +5485,7 @@ questions.add([
       {description: "コールセンタの企画，設計から業務運用まで一括して受託することによって，委託元のコールセンタ開設のための設備投資や人員調達を不要とするサービス", correct: false}
       , {description: "人事や経理，総務などの業務を標準化してグループ内の1か所に集約することによって，グループ全体の間接業務のコスト削減に貢献するサービス", correct: false}
       , {description: "複数の電子機器メーカから製品の設計，製造を一括して受託することによって，生産規模を確保し，低コストで製品を提供するサービス", correct: true}
-      , {description: "プロパイダ側のコンビュータ上で、ノフトウェアを稼働させて，利用者はそのソフトウェアの機能をネットワーク経由で利用するサービス", correct: false}
+      , {description: "プロパイダ側のコンピュータ上で、ノフトウェアを稼働させて，利用者はそのソフトウェアの機能をネットワーク経由で利用するサービス", correct: false}
     ]
     , category: 'ST-H24-AUTUMN'
   }
@@ -5597,7 +5597,7 @@ questions.add([
     , answers: [
       {description: "企業ビル内などに設置して，外線電話と内線電話，内線電話同士を交換する装置", correct: false}
       , {description: "顧客からの電話に自動応答し，顧客自身の操作によって情報の選択や配信，合成音声による応答などを行う仕組み", correct: true}
-      , {description: "コンビュータと電話を統合し，顧客データベースとPBXを連動させて，発呼や着呼と同時に必要な顧客情報をオペレータの函面上に表示するシステム", correct: false}
+      , {description: "コンピュータと電話を統合し，顧客データベースとPBXを連動させて，発呼や着呼と同時に必要な顧客情報をオペレータの函面上に表示するシステム", correct: false}
       , {description: "着信した電話を，あらかじめ決められたルールに従って，複数のオペレータのうちの1人だけに接続する住組み", correct: false}
     ]
     , category: 'ST-H24-AUTUMN'
@@ -6436,7 +6436,7 @@ questions.add([
     , category: 'AU-H28-SPRING'
   }
   , {
-    description: "表はコンビュータを利用して行うシステム監査技法についてまとめたものである。(1)～(4)の組合せとして，適切なものはどれか。<br/><br/>" +
+    description: "表はコンピュータを利用して行うシステム監査技法についてまとめたものである。(1)～(4)の組合せとして，適切なものはどれか。<br/><br/>" +
                  "<img src = \"js/data/image/AU_H28_q05.png\"/>"
     , multiple_answer: false
     , answers: [
@@ -7002,7 +7002,7 @@ questions.add([
     , category: 'AU-H26-SPRING'
   }
   , {
-    description: "表はコンビュータを利用して行うシステム監査技法についてまとめたものである。(1)～(4)の組合せとして，適切なものはどれか。<br/><br/>" +
+    description: "表はコンピュータを利用して行うシステム監査技法についてまとめたものである。(1)～(4)の組合せとして，適切なものはどれか。<br/><br/>" +
                  "<img src = \"js/data/image/AU_H28_q05.png\"/>"
     , multiple_answer: false
     , answers: [
@@ -7224,5 +7224,281 @@ questions.add([
       , {description: "65", correct: false}
     ]
     , category: 'AU-H26-SPRING'
+  }
+  , {
+    description: "システム監査技法であるITF(lntegrated Test Facility)法の説明はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査機能をもったモジュールを監査対象プログラムに組み込んで実環境下で実行し，抽出条件に合った例外データ，異常データなどを収集し，監査対象プログラムの処理の正確性を検証する方法である。", correct: false}
+      , {description: "監査対象ファイルにシステム監査人用の口座を設け，実稼働中にテストデータを入力し，その結果をあらかじめ用意した正しい結果と照合して，監査対象プログラムの処理の正確性を検証する方法である。", correct: true}
+      , {description: "システム監査人が準備した監査用プログラムと監査対象プログラムに同ーのデータを入力し，両者の実行結果を比較することによって，監査対象プログラムの処理の正確性を検証する方法である。", correct: false}
+      , {description: "プログラムの検証したい部分を通過したときの状態を出力し，それらのデータを基に監査対象プログラムの処理の正確性を検証する方法である。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "インシデントの究明やシステム監査にも利用できる，証拠を収集し保全する技法はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "コンティンジェンシープラン", correct: false}
+      , {description: "サンプリング", correct: false}
+      , {description: "ディジタルフォレンジックス", correct: true}
+      , {description: "ベンチマーキング", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "A社のシステム開発課長の指揮監督下でB社のプログラマが開発業務を担当する状況において，監査報告書に記載された指摘事項として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "B社が一般労働者派遣事業の許可を得ていない場合，派遣契約はできないので，指揮命令系統は変えずに請負契約に改める必要がある。", correct: false}
+      , {description: "請負契約であり，B社に対してはコーディング業務に限定して発注する必要がある。", correct: false}
+      , {description: "請負契約であり，著作権の帰属があいまいになるので，法人著作である旨と著作者人格権とを，A社の権利として，契約条項に記載する必要がある。", correct: false}
+      , {description: "派遣契約であり，B社のプログラマがA社の著作権を侵害した場合の措置に関する規定を設けておく必要がある。", correct: true}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "システム監査において，ペネトレーションテストが最も適合するチェックポイントはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "オフィスへの入退に，不正防止及び機密保護の物理的な対策が講じられているか。", correct: false}
+      , {description: "データ入力が漏れなく，重複なく正確に行われているか。", correct: false}
+      , {description: "ネットワークの負荷状況の推移が記録，分析されているか。", correct: false}
+      , {description: "ネットワークへのアクセスコントロールが有効に機能しているか。", correct: true}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "給与計算業務を外部に委託している場合に，受託会社が提供する業務における，委託会社の財務報告に関わる内部統制の有効性が，外部の監査人によって保証されていることを確認できるものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "一般財団法人日本情報経済社会推進協会 ISMS認証証明書", correct: false}
+      , {description: "一般財団法人日本情報経済社会推進協会 プライパシーマーク登録証", correct: false}
+      , {description: "特別民間法人日本公認会計士協会 監査・保証実務委員会実務指針第86号に基づく保証報告書", correct: true}
+      , {description: "独立行政法人情報処理推進機構 JISEC認証報告書", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "システム監査における監査証跡はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "監査業務の全過程において，監査人が収集及び作成した資料である。", correct: false}
+      , {description: "監査対象システムの入力から出力に至る過程を追跡できる一連の仕組みと記録である。", correct: true}
+      , {description: "監査人が監査証拠を入手するために実施する監査技術の組合せである。", correct: false}
+      , {description: "監査人が監査手続を実施して収集した資料，及び監査人の判断に基づいて評価された資料である。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "組織体が情報システムにまつわるリスクに対するコントロールを適切に整備・運用する目的として，”システム管理基準”に示されているものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "システム監査業務の品質を確保し，有効かつ効率的に監査を実施するため", correct: false}
+      , {description: "情報システムが，組織体の目的を実現するように安全，有効かつ効率的に機能するため", correct: true}
+      , {description: "情報セキュリティに係るリスクのマネジメントが効果的に実施されるよう，リスクマネジメントに基づくコントロールの整備・運用の状況を評価するため", correct: false}
+      , {description: "リスクに対するコントロールをシステム監査人が評価し，保証又は助言を行い，ITガパナンスの実現に寄与するため", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "システム監査で利用する統計的サンプリング法に関する記述のうち，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "サンプルの抽出に無作為抽出法を用い，サンプルの評価結果に基づいて母集団に関する結論を出す場合に，確率論の考え方を用いる。", correct: true}
+      , {description: "抽出されるサンプル数は，統計的サンプリングと非統計的サンプリングの選択を決定付ける重要な判断基準である。", correct: false}
+      , {description: "抽出するサンプルを統計的に決定する手法ではなく，サンプルに対して評価手続を実施した結果を統計的に推定する方法である。", correct: false}
+      , {description: "無作為抽出法を用いるだけではなく，システム監査人が経験的判断を加味して，サンプルを抽出する。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "外部委託に関するシステム臨査において，経営破綻などによってソフトウェア資産のメンテナンスが受けられなくなることを防ぐために確認すべき契約項目はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "開発したソフトウエアの瑕疵担保責任条項", correct: false}
+      , {description: "外部委託先のサービスを評価するためのSLA条項", correct: false}
+      , {description: "責任の所在を明確にするためのソフトウェア開発の再委託禁止条項", correct: false}
+      , {description: "ソフトウェアのソースコードなどを第三者へ預託するエスクロウ条項", correct: true}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "”ソフトウェア管理ガイドライン”への準拠性を確かめることを目的とした監査はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "情報システムに対する自然災害，機器の障害，故意や過失などのリスクを未然に防止する対策事項の監査", correct: false}
+      , {description: "情報システムの信頼性と安全性を確実に具備する対策事項の監査", correct: false}
+      , {description: "ソフトウェアの違法複製を防止・発見する対策事項の監査", correct: true}
+      , {description: "ソフトウェアの脆弱性関連情報の取扱いに関する対策事項の監査", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "金融庁の”財務報告に係る内部統制の評価及び監査に関する実施基準”において，”全社的な内部統制”としての”ITへの対応”に該当する評価項目はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "ITに係る業務の外部委託に関する契約の管理を適切に行っているか。", correct: false}
+      , {description: "新たなシステムの導入に当たり十分な試験が行われているか。", correct: false}
+      , {description: "経営者は，ITに関する適切な戦略，計画などを定めているか。", correct: true}
+      , {description: "システムに障筈が発生した場合，分析や解決などの対応が適切に行われているか。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "データ管理者(DA)とデータベース管理者(DBA)を別々に任命した場合のDAの役割として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "業務データ量の増加傾向を把握し，ディスク装置の増設などを計画して実施する。", correct: false}
+      , {description: "システム開発の設計工程では，主に論理データベース設計を行い，データ項目を管理して標準化する。", correct: true}
+      , {description: "システム開発のテスト工程では，主にパフォーマンスチューニングを担当する。", correct: false}
+      , {description: "システム障害が発生した場合には，データの復旧や整合性のチェックなどを行う。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "情報システムの設計のうち，フェールソフトの例はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "UPSを設置することによって，停電時に手順どおりにシステムを停止できるようにし，データを保全する。", correct: false}
+      , {description: "制御プログラムの障害時に，システムの暴走を避け，安全に運転を停止できるようにする。", correct: false}
+      , {description: "ハードウェアの障害時に，パフォーマンスは低下するが，構成を縮小して運転を続けられるようにする。", correct: true}
+      , {description: "利用者の誤操作や誤入力を未然に防ぐことによって，システムの誤動作を防止できるようにする。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "不正競争防止法で保護されるものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "特許権を取得した発明", correct: false}
+      , {description: "頒布されている独自のシステム開発手順書", correct: false}
+      , {description: "秘密として管理している事業活動用の非公開の顧客名簿", correct: true}
+      , {description: "秘密としての管理を行っていない，自社システムを開発するために重要な設計書", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "公益通報者保護法に定められているものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "自主的な製品回収計画を監督官庁に届け出ることは，公益通報である。", correct: false}
+      , {description: "社内のコンプライアンス窓口への通報は，公益通報ではない。", correct: false}
+      , {description: "派遣労働者は，派遣先企業の違法行為について通報を行うことができる。", correct: true}
+      , {description: "労働組合や新聞社など，行政機関ではない社外の機関に通報することはできない。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "刑法の電子計算機使用詐欺罪が適用される違法行為はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "いわゆるねずみ講方式による取引形態のWebページを開設する。", correct: false}
+      , {description: "インターネット上に，実際よりも良品と誤認させる商品カタログを掲載し，粗悪な商品を販売する。", correct: false}
+      , {description: "インターネットを経由して銀行のシステムに虚偽の情報を与え，不正な振込や送金をさせる。", correct: true}
+      , {description: "企業のWebページを不法な手段で変造し，その企業の信用を傷つける情報を流す。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "金融商品に関する会計基準において，原則として時価を貸借対照表価額とするものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "受取手形，売掛金，貸付金などの債権", correct: false}
+      , {description: "子会社及び関連会社の株式", correct: false}
+      , {description: "売買目的有価証券", correct: true}
+      , {description: "満期保有目的の債券", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "関係データベースのビューを利用する目的はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "DISTINCT指定，GROUP BY匂及びHAVING句をもつ演算処理を独立させて，プログラムに単純化したデータ更新手段を提供する。", correct: false}
+      , {description: "行や列を特定の条件で絞り込んだビューだけをアクセスさせることによって，基となる表のデータの一部を隠蔽して保護する手段を提供する。", correct: true}
+      , {description: "データベースの物理的記憶構造の変更に影響されないように，アプリケーションプログラムに対して物理的データ独立性を提供する。", correct: false}
+      , {description: "複数の表を結合したビューにインデックスを付与することによって，複数の表にまたがった高度な検索手段を提供する。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "関係XとYを結合した後，関係Zを得る関係代数演算はどれか。<br/><br/>" +
+                 "<img src = \"js/data/image/AU_H25_q19.png\"/>"
+    , multiple_answer: false
+    , answers: [
+      {description: "射影と選択", correct: true}
+      , {description: "射影と和", correct: false}
+      , {description: "選択", correct: false}
+      , {description: "選択と和", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "ダイナミック DNS(DNS UPDATE)の説明として，適切なものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "PCのIPアドレスが変わっても，そのPCには同じホスト名でアクセスできる。", correct: true}
+      , {description: "PCのホスト名が変わっても，そのPCには同じIPアドレスでアクセスできる。", correct: false}
+      , {description: "ネットワークに接続されたPCの起動時に自動的にIPアドレスを割り当てる。", correct: false}
+      , {description: "ネットワークに接続されたPCの起動時に自動的にホスト名を割り当てる。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "ブルートフォース攻撃に該当するものはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "可能性のある文字のあらゆる組合せのパスワードでログインを試みる。", correct: true}
+      , {description: "コンピュータへのキ一入力を全て記録して外部に送信する。", correct: false}
+      , {description: "盗聴者が正当な利用者のログインシーケンスをそのまま記録してサーバに送信する。", correct: false}
+      , {description: "ブラウザとWebサーバの問の通信で，認証が成功してセッションが開始されているときに，Cookieなどのセッション情報を盗む。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "Webコンテンツの作成に当たって，アクセシビリティを確保する観点から考慮すベきことはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "キーボードだけでも操作できるように，TabキーとEnterキーでリンクを選択できるようにする。", correct: true}
+      , {description: "どこに入力するかを分かりやすくするために，項目名の直後に入力欄を配置し，”(半角)”などの入力方法は入力欄の後ろに配置する。", correct: false}
+      , {description: "文字位置をそろえるために，単語の途中に空白を入れて調整する。", correct: false}
+      , {description: "利用者がどこを誤ったか分かるように，入力エラーがあった項目名を赤色の文字に変更した入力画面を再表示する。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "共通フレーム2007における監査プロセスの目的はどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "あるアクティビティのソフトウェア製品が，先行するアクティピテイで決められた要求事項又は条件を満たしていることを確認する。", correct: false}
+      , {description: "客観性及び独立性を保証された立場から，成果物及びプロセスが要求事項，計画及び合意に適合しているかどうかを判定する。", correct: true}
+      , {description: "システム又はソフトウェア製品が，明確に意図した使用方法を満足していることを確認する。", correct: false}
+      , {description: "プロジェクトの管理レベル及び技術レベルの両面に対して，プロジェクト活動の状況及び成果物を評価する。", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "ファイブフォース分析において，企業の競争力に影響を与える五つの要因として，新規参入者の脅威，バイヤの交渉力，競争業者間の敵対関係，代替製品の脅威と，もう一つはどれか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "サプライヤの交渉力", correct: true}
+      , {description: "自社製品の品質", correct: false}
+      , {description: "消費者の購買力", correct: false}
+      , {description: "政府の規制", correct: false}
+    ]
+    , category: 'AU-H25-SPRING'
+  }
+  , {
+    description: "新たに創造された知識を組織に広め，新たな暗黙知として習得することを，SECIモデルでは，どれに分類するか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "共同化(Socialization)", correct: false}
+      , {description: "表出化(Externalization)", correct: false}
+      , {description: "連結化(Combination)", correct: false}
+      , {description: "内面化(Internalization)", correct: true}
+    ]
+    , category: 'AU-H25-SPRING'
   }
 ]);
