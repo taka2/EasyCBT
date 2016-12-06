@@ -6626,7 +6626,7 @@ questions.add([
     , category: 'AU-H28-SPRING'
   }
   , {
-    description: "デザインレビュ一方法に関する記述のうち，適切なものはどれか。"
+    description: "デザインレビュー方法に関する記述のうち，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
       {description: "インスペクションでは，絞られた問題事項に関して様々な角度からの分析を行うことができるので，対策を引き出しやすい。", correct: true}
