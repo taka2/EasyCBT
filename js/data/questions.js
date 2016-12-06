@@ -7171,7 +7171,7 @@ questions.add([
   }
   , {
     description: "システムの改善に向けて提出された4案について，評価項目を設定して採点した結果を，採点結果表に示す。効果及びリスクについては5段階評価とし，それぞれの評価項目の重要度に応じて，重み付け表に示すとおりの重み付けを行った上で次の式で総合評価点を算出したとき，総合評価点が最も高い改善案はどれか。<br/><br/>" +
-                 "<img src = \"js/data/image/AU_H26_q14.png\"/>"
+                 "<img src = \"js/data/image/AU_H26_q21.png\"/>"
     , multiple_answer: false
     , answers: [
       {description: "案1", correct: false}
