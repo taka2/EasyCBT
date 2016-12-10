@@ -7516,7 +7516,7 @@ questions.add([
     description: "システム監査における監査証拠の説明のうち，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "監査人が収集又は作成する資料であり，監査報告書に記載する監査意見や指橋事項は，その資料によって裏付けられていなければならない。", correct: true}
+      {description: "監査人が収集又は作成する資料であり，監査報告書に記載する監査意見や指摘事項は，その資料によって裏付けられていなければならない。", correct: true}
       , {description: "監査人が当初設定した監査手続を記載した資料であり，監査人はその資料に基づいて厳査を実施しなければならない。", correct: false}
       , {description: "機密性の高い情報が含まれている資料であり，監査人は監査報告書の作成後，速やかに全てを処分しなければならない。", correct: false}
       , {description: "被監査部門が監査人に提出する資料であり，監査人が自ら作成する資料は含まれない。", correct: false}
