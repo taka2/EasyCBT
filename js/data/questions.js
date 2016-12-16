@@ -3203,7 +3203,7 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "現在の担当者では解決できなかったインシデントの対応を，高度な専門知識をもつサポートグループに委ねる。", correct: false}
-      , {description: "現在の担当者では解決できなかったインシデントの対応を，広範にわたる関係者を招集する権限をもっ上級マネージャに委ねる。", correct: true}
+      , {description: "現在の担当者では解決できなかったインシデントの対応を，広範にわたる関係者を招集する権限をもつ上級マネージャに委ねる。", correct: true}
       , {description: "自分のシフト勤務時間内に完了しなかったインシデントの対応を，次のシフト勤務者に委ねる。", correct: false}
       , {description: "中央サービスデスクで受け付けたインシデントの対応を，利用者が属する地域のローカルサービスデスクに委ねる。", correct: false}
     ]
@@ -5550,9 +5550,9 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "顧客ごとの売上高，利益額などを高い順に並べ，自社のビジネスの中心をなしている顧客を分析する手法", correct: false}
-      , {description: "商品がもっ価格，デザイン，使いやすさなど，購入者が重視している複数の属性の組合せを分析する手法", correct: true}
+      , {description: "商品がもつ価格，デザイン，使いやすさなど，購入者が重視している複数の属性の組合せを分析する手法", correct: true}
       , {description: "同一世代は年齢を重ねても，時代が変化しでも，共通の行動や意識を示すことに注目した，消費者の行動を分析する手法", correct: false}
-      , {description: "ブランドがもっ複数のイメージ項目を散布図にプロットし，それぞれのプランドのポジショニングを分析する手法", correct: false}
+      , {description: "ブランドがもつ複数のイメージ項目を散布図にプロットし，それぞれのプランドのポジショニングを分析する手法", correct: false}
     ]
     , category: 'ST-H24-AUTUMN'
   }
@@ -6849,7 +6849,7 @@ questions.add([
     description: "関係データベースのビューを利用する目的はどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "DISTINCT指定，GROUP BY句及びHAVIlG句をもっ演算処理を独立させて，プログラムに単純化したデータ更新手段を提供する。", correct: false}
+      {description: "DISTINCT指定，GROUP BY句及びHAVIlG句をもつ演算処理を独立させて，プログラムに単純化したデータ更新手段を提供する。", correct: false}
       , {description: "行や列を特定の条件で絞り込んだビューだけをアクセスさせることによって，基となる表のデータの一部を隠蔽して保護する手段を提供する。", correct: true}
       , {description: "データベースの物理的記憶構造の変更に影響されないように，アプリケーションプログラムに対して物理的データ独立性を提供する。", correct: false}
       , {description: "複数の表を結合したビューにインデックスを付与するととによって，複数の表にまたがった高度な検索手段を提供する。", correct: false}
@@ -7583,7 +7583,7 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "監査計画書の作成", correct: false}
-      , {description: "監査目的の設定", correct: false}
+      , {description: "監査証拠の評価", correct: false}
       , {description: "監査対象の実態把握", correct: true}
       , {description: "監査目的の設定", correct: false}
     ]
