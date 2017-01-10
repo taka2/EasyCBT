@@ -7314,7 +7314,7 @@ questions.add([
     , category: 'AU-H25-SPRING'
   }
   , {
-    description: "外部委託に関するシステム臨査において，経営破綻などによってソフトウェア資産のメンテナンスが受けられなくなることを防ぐために確認すべき契約項目はどれか。"
+    description: "外部委託に関するシステム監査において，経営破綻などによってソフトウェア資産のメンテナンスが受けられなくなることを防ぐために確認すべき契約項目はどれか。"
     , multiple_answer: false
     , answers: [
       {description: "開発したソフトウエアの瑕疵担保責任条項", correct: false}
@@ -7734,7 +7734,7 @@ questions.add([
     , answers: [
       {description: "ITILというITサービスの品質向上のためのガイドラインを基に作成した，ITサービスマネジメントに関するフレームワークである。", correct: false}
       , {description: "一般基準，実施基準及び報告基準から構成されており，一般基準ではシステム監査人の独立性や職業倫理について規定されている。", correct: false}
-      , {description: "システム監査業務の品質を確保し，有効かつ効率的に監査を実施することを目的とした監査人の行為規純である。", correct: false}
+      , {description: "システム監査業務の品質を確保し，有効かつ効率的に監査を実施することを目的とした監査人の行為規範である。", correct: false}
       , {description: "情報システム戦略に基づき，効果的な情報システム投資のための，また，リスクを低減するためのコントロールを適切に整備・運用するための実践規範である。", correct: true}
     ]
     , category: 'AU-H24-SPRING'
