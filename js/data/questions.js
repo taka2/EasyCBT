@@ -497,7 +497,7 @@ questions.add([
     description: "WAF (Web Application Firewall）のブラックリスト又はホワイトリストの説明のうち，適切なものはどれか。"
     , multiple_answer: false
     , answers: [
-      {description: "ブラックリストは，臨弱性があるサイトの IPアドレスを登録したものであり，該当する通信を遮断する。", correct: false}
+      {description: "ブラックリストは，脆弱性があるサイトの IPアドレスを登録したものであり，該当する通信を遮断する。", correct: false}
       , {description: "ブラックリストは，問題がある通信データパターンを定義したものであり，該当する通信を遮断するか又は無害化する。", correct: true}
       , {description: "ホワイトリストは，暗号化された受信データをどのように復号するかを定義したものであり，復号鍵が登録されていないデータを遮断する。", correct: false}
       , {description: "ホワイトリストは，脆弱性がないサイトのFQDNを登録したものであり，登録がないサイトへの通信を遮断する。", correct: false}
@@ -6686,7 +6686,7 @@ questions.add([
     , answers: [
       {description: "コンティンジェンシープラン", correct: false}
       , {description: "サンプリング", correct: false}
-      , {description: "ディジタルフオレンジックス", correct: true}
+      , {description: "ディジタルフォレンジックス", correct: true}
       , {description: "ベンチマーキング", correct: false}
     ]
     , category: 'AU-H27-SPRING'
@@ -7025,7 +7025,7 @@ questions.add([
     , category: 'AU-H26-SPRING'
   }
   , {
-    description: "個人情報の取得に関して，IS Q 15001における個人情報取得時の要求事項への準拠性を監査した。指摘事項に該当するものはどれか。"
+    description: "個人情報の取得に関して，JIS Q 15001における個人情報取得時の要求事項への準拠性を監査した。指摘事項に該当するものはどれか。"
     , multiple_answer: false
     , answers: [
       {description: "Webサイトから注文するシステムにおいて，利用者が注文申込みボタンを押し，注文受付完了画面が表示された時点で，個人情報の利用目的を表示している。", correct: true}
