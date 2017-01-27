@@ -7342,7 +7342,7 @@ questions.add([
       {description: "ITに係る業務の外部委託に関する契約の管理を適切に行っているか。", correct: false}
       , {description: "新たなシステムの導入に当たり十分な試験が行われているか。", correct: false}
       , {description: "経営者は，ITに関する適切な戦略，計画などを定めているか。", correct: true}
-      , {description: "システムに障筈が発生した場合，分析や解決などの対応が適切に行われているか。", correct: false}
+      , {description: "システムに障害が発生した場合，分析や解決などの対応が適切に行われているか。", correct: false}
     ]
     , category: 'AU-H25-SPRING'
   }
