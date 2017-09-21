@@ -7971,6 +7971,138 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
   }
   , {
+    description: "RAW画像データを様々な形式に変換する処理を行っている。データの耐久性やコストの最適化を考慮した場合、それぞれのデータに適した格納先はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "RAW画像：EBS　変換後画像：スタンダードS3", correct: false}
+      , {description: "RAW画像：EBS　変換後画像：RRS S3", correct: false}
+      , {description: "RAW画像：スタンダードS3　変換後画像：RRS S3", correct: true}
+      , {description: "RAW画像：スタンダードS3　変換後画像：Glacier", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "S3に保存すべきデータとして適していないものはどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "社内の従業員に公開する動画", correct: false}
+      , {description: "世界中のエンドユーザに公開する動画", correct: false}
+      , {description: "ゲノムのシーケンスデータ", correct: false}
+      , {description: "DBのオンライントランザクションログ", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "S3に対してオブジェクトの格納／上書き／削除を行った際、発生する可能性がある選択肢はどれか？正しい選択肢を全て選べ。"
+    , multiple_answer: true
+    , answers: [
+      {description: "S3バケットに新規にオブジェクトを格納する操作をし、「完了」と表示された。その後すぐにバケット内のオブジェクトの一覧表示をしたが、格納したはずのオブジェクトが表示されなかった。", correct: false}
+      , {description: "S3バケットに格納済みのオブジェクトを上書きする操作をし、「完了」と表示された。その後すぐに上書きしたオブジェクトを開くと以前のデータが参照された。", correct: true}
+      , {description: "S3バケットに格納済みのオブジェクトを削除する操作をし、「完了」と表示された。その後すぐにバケット内のオブジェクトの一覧表示をしたが、削除したはずのオブジェクトが表示された。", correct: true}
+      , {description: "他の選択肢はすべて発生する可能性がない。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "S3バケットに格納しているオブジェクトを特定のAWSアカウントのIAMユーザにのみ参照させたい。利用するS3のアクセス制限はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "アクセスコントロールリスト(ACL)", correct: false}
+      , {description: "バケットポリシー", correct: true}
+      , {description: "IAMポリシー(ユーザポリシー)", correct: false}
+      , {description: "署名付きURL", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "S3のデフォルトで有効な機能はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "オブジェクトの暗号化", correct: false}
+      , {description: "アクセスログの取得", correct: false}
+      , {description: "オブジェクトのバージョニング", correct: false}
+      , {description: "オブジェクトのリージョン内複製", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "S3オブジェクトの誤削除に対する有効な機能／設定はどれか？正しい選択肢を全て選べ。"
+    , multiple_answer: false
+    , answers: [
+      {description: "オブジェクトのバージョニング", correct: true}
+      , {description: "オブジェクトのリージョン内複製", correct: false}
+      , {description: "アクセスコントロールリスト(ACL)", correct: false}
+      , {description: "バケットポリシー", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "Glacierに格納すべきデータとして適切なものはどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "社内の従業員に公開する動画", correct: false}
+      , {description: "世界中のエンドユーザに公開する動画", correct: false}
+      , {description: "ゲノムのシーケンスデータ", correct: true}
+      , {description: "DBのオンライントランザクションログ", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "マルチAZ配置したRDSインスタンスでフェイルオーバーが発生した際に、利用者側で実施しなければいけない操作として正しい選択肢はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "マスターとして動作していたインスタンスに割り振られていたプライベートIPアドレスを、スレーブとしてスタンバイしているインスタンスに割り振る。", correct: false}
+      , {description: "マスターとして動作していたインスタンスを再起動し、スレーブとしてスタンバイするように設定する。", correct: false}
+      , {description: "RDSインスタンスへの読み書きを行っていたアプリケーションのRDSインスタンスの接続先を、マスターのプライベートIPアドレスからスレーブのプライベートIPアドレスに変更し、再度デプロイする。", correct: false}
+      , {description: "特に何も操作する必要はない。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "オペレーションミスによるデータ損失に対する有効なRDSの機能／設定はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "マルチAZ配置", correct: false}
+      , {description: "自動バックアップ", correct: true}
+      , {description: "パッチ適用", correct: false}
+      , {description: "Provisioned IOPS", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "DynamoDBの特徴／メリット／ユースケースとして正しい選択肢を全て選べ。"
+    , multiple_answer: true
+    , answers: [
+      {description: "DynamoDBは、データを3ヶ所のデータセンタに冗長的に格納するため耐久性が非常に高く、Key-Value Store形式に対応したNoSQLデータベースである。その上、拡張性があり、格納したデータに合わせて自動的に拡張するため、S3の代替用途として利用できる。", correct: false}
+      , {description: "DynamoDBテーブルへのアクセスはデフォルトですべてのアクセスが拒否されているため、セキュリティグループでアクセスを受け付ける必要がある。", correct: false}
+      , {description: "DynamoDBは拡張性があり、格納したデータに合わせて自動的に拡張する上、高いI/O性能を有している。そのため、頻繁に書き込みが発生する大量のデータの格納先として適している。", correct: true}
+      , {description: "DynamoDBは拡張性があるものの、項目の最大サイズは限られている、そのため、大きなデータサイズのデータを扱うには、実データについてはS3に保管し、DynamoDBにはメタデータを格納する。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "ElasticCacheｎ特徴／メリット／ユースケースとして正しい選択肢はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "ElasticCacheはインメモリキャッシュとして高速に読み書きできるため、ログインが必要な会員Webサイトのユーザのセッション情報の格納先として適している。", correct: true}
+      , {description: "ElasticCacheに対してデータを読み書きするアプリケーションがEC2インスタンス上で動作している場合、ElasticCacheへのアクセスを許可したIAMポリシーを設定したIAMロールをEC2インスタンスに割り当てることで、ElasticCacheへのアクセス制限を安全に管理することができる。", correct: false}
+      , {description: "ElasticCacheはリージョン内の3か所のデータセンタのサーバにデータをキャッシングすることで、利用者は3か所のうちの最も近いデータセンタからデータを低レイテンシーでダウンロードすることができる。", correct: false}
+      , {description: "ElasticCacheはインメモリキャッシュとして高速に読み書きできるため、Webサーバの前段に配置することにより、キャッシングしているデータを高速に利用者に応答するメリットがあるほか、Webサーバへの負荷を軽減することができる。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
     description: ""
     , multiple_answer: false
     , answers: [
