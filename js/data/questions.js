@@ -8027,7 +8027,7 @@ questions.add([
   }
   , {
     description: "S3オブジェクトの誤削除に対する有効な機能／設定はどれか？正しい選択肢を全て選べ。"
-    , multiple_answer: false
+    , multiple_answer: true
     , answers: [
       {description: "オブジェクトのバージョニング", correct: true}
       , {description: "オブジェクトのリージョン内複製", correct: false}
@@ -8092,24 +8092,167 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
   }
   , {
-    description: ""
+    description: "Webサーバとして利用しているEC2インスタンスの標準メトリックスとして正しい選択肢はどれか？"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "メモリ使用率", correct: false}
+      , {description: "Webページへのロード時間", correct: false}
+      , {description: "Webサーバのプロセス／スレッド数", correct: false}
+      , {description: "Network I/O", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
   }
   , {
-    description: ""
+    description: "ELBについて、その特徴やメリットを正しく説明している選択肢はどれか？"
     , multiple_answer: false
     , answers: [
-      {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
-      , {description: "", correct: false}
+      {description: "マルチリージョン(東京リージョンとソウルリージョン)にEC2インスタンスを冗長的に起動し、それらをELBの配下に配置することで、リージョンレベルの障害にも備えた高可用なシステムを構築できる。", correct: false}
+      , {description: "ELBは配下のEC2インスタンスのヘルスチェックを行っており、異常のインスタンスを検出すると、そのインスタンスをターミネートし、配下から削除する。新しいインスタンスの起動については、Auto Scalingと組み合わせて利用する必要がある。", correct: false}
+      , {description: "ELBはPCからのアクセスやモバイル端末からのアクセスなど、受信したトラフィックの種類に応じて特定のEC2インスタンスにトラフィックを分散することができる。", correct: false}
+      , {description: "ELBは負荷に応じてELB自体が動的にスケーリングすることにより、ボトルネックにならないように設計されている。スケーリングに応じてELBの実体のIPアドレスも変化するため、ELBのIPアドレスを直接指定(使用)してはいけない。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "可用性やコストメリットを考慮した上で、適切なシステム構成はどれか？正しい選択肢を全て選べ。"
+    , multiple_answer: true
+    , answers: [
+      {description: "システムの負荷テストを1週間かけて行い、予測される最大の負荷に対応できるEC2インスタンスタイプ／数を初期構成とする。予測できない負荷に対しては、Auto Scalingを実装して対応する。", correct: false}
+      , {description: "システムの負荷テストは1日で終わらせ、予測される平均の負荷に対応できるEC2インスタンスタイプ／数を初期構成とする。予測できない負荷に対しては、Auto Scalingを実装して対応する。", correct: true}
+      , {description: "オンプレミス環境で80時間かかっていた分散／並列処理が可能なバッチ処理がある。この処理をコンピューティング最適化インスタンスファミリーの中で一番性能／利用料金の高いc4.8xlargeを1台使用して40時間で処理する。", correct: false}
+      , {description: "オンプレミス環境で80時間かかっていた分散／並列処理が可能なバッチ処理がある。この処理をコンピューティング最適化インスタンスファミリーの中で一番性能／利用料金の高いc4.8xlargeを40台使用して1時間で処理する。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "年末年始の休暇が1か月後に迫り、Auto Scaling設定がされている運航チケット予約WebシステムのEC2インスタンスの最大数を一時的に増やしたい。Auto Scalingのどの設定を変更したらよいか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "起動設定(Launch Configuration)", correct: false}
+      , {description: "Auto Scaling Group", correct: true}
+      , {description: "Auto Scalingポリシー", correct: false}
+      , {description: "CloudWatchアラームの閾値", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "2つのAZ(AZ-1とAZ-2)内のサブネット設定がされたAuto Scalingグループがある。現在それぞれのAZに2台ずつAuto Scalingグループに所属しているEC2インスタンスが起動している。Auto ScalingポリシーでCPU利用率が70%を超えたら2台インスタンスを増やし、40%を下回ったら1台インスタンスを減らし、さらに30%を下回ったら1台インスタンスを減らす設定をしている。CPU利用率が次のように遷移した場合、各AZのインスタンス数の分布として発生しうる選択肢はどれか？正しい選択肢を全て選べ。"
+    , multiple_answer: true
+    , answers: [
+      {description: "AZ-1：3　AZ-2：3", correct: false}
+      , {description: "AZ-1：2　AZ-2：2", correct: false}
+      , {description: "AZ-1：3　AZ-2：2", correct: true}
+      , {description: "AZ-1：2　AZ-2：3", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "SQSを導入することで効果が見込まれるシステムはどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "動画トランスコード", correct: true}
+      , {description: "動画配信", correct: false}
+      , {description: "ショッピングサイトの買い物かご", correct: false}
+      , {description: "ショッピングサイトの注文－請求処理", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "S3の静的ウェブサイトホスティング機能を利用したWebページを、「example.com」という名前でアクセスさせるよう、Route 53で名前解決したい。どのレコードを使用すればよいか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Aレコード", correct: false}
+      , {description: "AAAAレコード", correct: false}
+      , {description: "CNAMEレコード", correct: false}
+      , {description: "ALIASレコード", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "2つのリージョンにそれぞれ同じWebシステムを構成し、世界のどこからアクセスしても同じURLでWebシステムにアクセスできるようにRoute 53で名前解決している。このとき、利用すべきRoute 53の機能として、適切なものはどれか？正しい選択肢を全て選べ。"
+    , multiple_answer: true
+    , answers: [
+      {description: "加重ラウンドロビン", correct: false}
+      , {description: "レイテンシーベースルーティング", correct: true}
+      , {description: "ヘルスチェック／フェイルオーバー", correct: true}
+      , {description: "クロスリージョンルーティング", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "CloudFrontを利用した際のメリットはどれか？正しい選択肢を全て選べ。"
+    , multiple_answer: true
+    , answers: [
+      {description: "1年単位の契約でCDNサービスが利用できる。", correct: false}
+      , {description: "コンテンツを世界各地のエッジロケーションにキャッシュすることで、動画などの大きなコンテンツを高速にダウンロードできる。", correct: true}
+      , {description: "アクセス(ダウンロード)させるオリジナルのデータ(コンテンツ)格納先として、AWS上のS3バケットやELB(EC2インスタンス)の他、オンプレミスのサーバも指定でき、コンテンツ配信サーバの負荷を下げることができる。", correct: true}
+      , {description: "CloudFrontでは、ディストリビューション作成時にオリジナルデータ(コンテンツ)が世界各地のエッジロケーションにキャッシュされるため、最初にアクセスしたエンドユーザから高速アクセス(ダウンロード)が可能となる。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "年度初めに行われた期首方針の社外秘の説明動画を、全世界の支店／事務所に配信したい。どのように配信するのが最も適切か？"
+    , multiple_answer: false
+    , answers: [
+      {description: "全てのリージョンに動画配信用のS3バケットを作成し、その中に動画をコピーする。全従業員をIAMユーザとして登録し、IAMポリシーで各従業員の最寄りのリージョンのS3バケット内の動画へのアクセスを許可する。", correct: false}
+      , {description: "全てのリージョンに動画配信用のS3バケットを作成し、その中に動画をコピーする。動画オブジェクトのURLから署名付きURLを作成し、各支店／事務所のイントラサイトに署名付きURLを掲載する。", correct: false}
+      , {description: "本社近くのリージョンに動画配信用のS3バケットを作成し、その中に動画を格納する。CloudFrontを利用して、そのS3バケットをオリジンサーバに設定し、全社のイントラサイトにCloudFrontのディストリビューションURLを掲載する。", correct: false}
+      , {description: "本社近くのリージョンに動画配信用のS3バケットを作成し、その中に動画を格納する。本社の従業員を含め、S3バケットからの直接動画配信を禁止し、全社のイントラサイトにCloudFrontの署名付きURLを記載する。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "CloudFormationで実施できることとして、誤っているものはどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "インフラストラクチャをコードとして記述でき、バージョン管理できる。", correct: false}
+      , {description: "リソースを作成するリージョンごとに異なるテンプレートを作成する必要がある。", correct: true}
+      , {description: "本番環境と開発環境でEC2インスタンスの台数が異なるが、1つのテンプレートで本番環境と開発環境の設定が記述できる。", correct: false}
+      , {description: "CloudFormationで作成したリソースを一括して更新／削除できる。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "CloudFormationの特徴として、正しいものはどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "CloudFormationはテンプレートに記述された順番にリソースを作成していくため、依存関係のあるリソースは記載順序に気をつける。", correct: false}
+      , {description: "CloudFormationでスタックの作成途中にエラーが発生した場合、デフォルトでは、たとえそれまでに課金が発生するリソースが起動していたとしても、そのリソースを削除してロールバックする。", correct: true}
+      , {description: "CloudFormerというツールを利用し、作成したテンプレートに間違いがないかを確認することができる。", correct: false}
+      , {description: "CloudFormationはEC2インスタンスやRDSインスタンスなどの実体を作成するツールであり、VPCは作成できないため、事前にVPCを作成しておく必要がある。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "CloudFormation／Elastic Beanstalk／OpsWorksの使い方として、適切なものはどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "CloudFormationのテンプレートにバージョン番号をつけ、アプリケーションのバージョンアップに合わせてスタックの更新を行う。", correct: false}
+      , {description: "複数のリージョンで本番環境とは異なるVPCで開発環境と検証環境を作成するため、Elastic Beanstalkを利用して環境をデプロイする。", correct: false}
+      , {description: "OpsWorksからChefのレシピを実行し、ELBの配下にAuto Scaling設定がされたEC2インスタンスが配置される構成を作成する。", correct: false}
+      , {description: "Web-DB連携アプリケーション開発環境を複数用意するため、CloudFormationでELBとEC2インスタンスとRDSインスタンスを作成し、EC2インスタンスに必要なソフトウェアをインストールする。CloudFormationからOpsWorksを呼び出して、アプリケーションソフトウェアの接続先のDBとしてRDSを設定する。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "24時間365日サービスを提供するチケット販売WebシステムをELBと配下のAuto ScalingグループのEC2インスタンス、及びRDSで構成している。初期EC2インスタンス数は2台だが、チケット販売開始時期にはアクセスが集中するため、販売開始時期の5分前にもう2台手動で追加しておき、販売開始後はAuto Scalingで自動拡張するように設定した。リサーブドインスタンスの使いどころとして適切なものはどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "初めから木戸うしている2台のインスタンス", correct: true}
+      , {description: "販売開始時刻の5分前に追加する2台のインスタンス", correct: false}
+      , {description: "販売開始後にAuto Scalingによって追加されるインスタンス", correct: false}
+      , {description: "このシステムにリザーブドインスタンスを使う必要はない。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "24時間365日サービスを提供するチケット販売WebシステムをELBと配下のAuto ScalingグループのEC2インスタンス、及びRDSで構成している。初期EC2インスタンス数は2台だが、チケット販売開始時期にはアクセスが集中するため、販売開始時期の5分前にもう2台手動で追加しておき、販売開始後はAuto Scalingで自動拡張するように設定した。スポットインスタンスの使いどころとして適切なものはどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "初めから木戸うしている2台のインスタンス", correct: false}
+      , {description: "販売開始時刻の5分前に追加する2台のインスタンス", correct: false}
+      , {description: "販売開始後にAuto Scalingによって追加されるインスタンス", correct: true}
+      , {description: "このシステムにリザーブドインスタンスを使う必要はない。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
   }
