@@ -7783,4 +7783,202 @@ questions.add([
     ]
     , category: 'AU-H24-SPRING'
   }
+  , {
+    description: "次の構成のうち、最も可用性が高くなる構成はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "1つのリージョン内の1つのAZに4台のWebサーバ(EC2)を配置し、ELBを用いて負荷分散する", correct: false}
+      , {description: "1つのリージョン内の2つのAZに各2台のWebサーバ(EC2)を配置し、ELBを用いて負荷分散する", correct: true}
+      , {description: "2つのリージョン内の各1つのAZに2台ずつWebサーバ(EC2)を配置し、ELBを用いて負荷分散する", correct: false}
+      , {description: "2つのリージョン内の各2つのAZに1台ずつWebサーバ(EC2)を配置し、ELBを用いて負荷分散する", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "次のうち、利用者の責任で実施しなければいけないセキュリティ対策はどれか？2つ選べ。"
+    , multiple_answer: true
+    , answers: [
+      {description: "EC2インスタンスの物理ホスト上のハイパーバイザのセキュリティパッチの適用", correct: false}
+      , {description: "S3上のデータの暗号化", correct: true}
+      , {description: "物理ディスクの適切な廃棄", correct: false}
+      , {description: "EC2インスタンス上のOSのセキュリティパッチの適用", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "AWSアカウント／認証情報の推奨される運用はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "ルートアカウントに複雑なパスワードを割り当てて、定期的に更新しながら利用する", correct: false}
+      , {description: "S3バケットへのファイルのアップロードを行うプログラムのソースコードに、S3バケットへのファイルアップロードが許可されたIAMユーザのアクセスキーとシークレットアクセスキーを記載する", correct: false}
+      , {description: "S3バケットへのファイルのアップロードを行うプログラムをEC2インスタンスで実行する場合、S3バケットへのファイルのアップロードが許可されたIAMロールをEC2インスタンスに割り当ててEC2インスタンスを作成する", correct: true}
+      , {description: "AWSの使用頻度に関わらず、全従業員(約1,000人)をそれぞれIAMユーザとして登録し、各自のアクセスキーとシークレットキーを用いてAWSを利用させる", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "サブネットの特徴についての次の記述のうち、正しいものはどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "7つのベストプラクティスの1つである「故障に備えた設計で障害を回避」を実現するために、サブネットは複数のAZにまたがって作成することが推奨されている。", correct: false}
+      , {description: "サブネットを作成する際、パブリックサブネット機能を有効化することで、インターネットと通信が可能なパブリックサブネットを作成することができる。", correct: false}
+      , {description: "異なるAZに作成されたサブネット間の通信も、デフォルトのルーティングルールで許可されており、ルーティングルールでは通信を制限することができない。", correct: true}
+      , {description: "パブリックサブネット内のインスタンスとプライベートサブネット内のインスタンスの通信を許可するには、セキュリティグループ、ネットワークACLとルートテーブルの3つ全ての設定を見直す必要がある。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "プライベートサブネット内のEC2インスタンスがインターネットにアクセスするのに不要な手順はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "インターネットゲートウェイをVPCにアタッチする。", correct: false}
+      , {description: "NATインスタンスを作成し、NATインスタンスの送信先／送信元チェックを無効化する。", correct: false}
+      , {description: "インターネットにアクセスさせるプライベートサブネット内のEC2インスタンスに、Elastic IPをアタッチする。", correct: true}
+      , {description: "プライベートサブネットのルートテーブルの送信先0.0.0.0/0のターゲットにNATインスタンスを設定する。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "パブリックサブネット内のWebサーバのEC2インスタンスにインターネットからHTTPアクセス(80番ポート)ができない。確認不要な設定はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Webサーバのセキュリティグループのインバウンドで、80番ポートへのアクセスが許可されていることを確認する。", correct: false}
+      , {description: "Webサーバのセキュリティグループのアウトバウンドで、戻りのトラフィックの通過が許可されていることを確認する。", correct: true}
+      , {description: "パブリックサブネットのネットワークACLのインバウンドで、80番ポートへのアクセスが許可されていることを確認する。", correct: false}
+      , {description: "パブリックサブネットのネットワークACLのアウトバウンドで、戻りのトラフィックの通過が許可されていることを確認する。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "VPCピア機能の正しい利用方法はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "災害対策で2つのリージョンに同じシステムを構築した。リージョン間のデータの同期のために、各VPCをピア接続で接続した。", correct: false}
+      , {description: "本番環境と開発環境を同一のネットワーク環境(同じプライベートCIDRブロック)としたいため、VPCを分けて作成した。本番環境で発生した障害を開発環境で検証するために、本番環境と開発環境をVPCピア接続で接続した。", correct: false}
+      , {description: "オンプレミスのデータセンタとVPC-AがVPN接続されている。VPC-B内のEC2インスタンスにオンプレミスのデータセンタからVPNを介してセキュアに接続するために、オンプレミスのデータセンタ内のルーティングルールでVPC-B宛を追加し、VPC-AとVPC-BをVPCピア接続した。", correct: false}
+      , {description: "プライベートネットワークアドレスが10.200.0.0/16のVPC-Aと192.168.0.0/16のVPC-BをVPCピア接続で接続したところ、PCX-1が作成された。そこで、VPC-Aのルートテーブルに「送信先192.168.0.0/16のターゲットとしてPCX-1」を追加し、VPC-Bのルートテーブルに「送信先10.200.0.0/16のターゲットとしてPCX-1」を追加した。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "EC2インスタンスの初回起動時にソフトウェアをインストールしたり、サービスを起動したりすることを指定するEC2のデータはどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "メタデータ", correct: false}
+      , {description: "起動スクリプト", correct: false}
+      , {description: "rc.ec2", correct: false}
+      , {description: "ユーザデータ", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "インスタンスIDやIPアドレスなど、EC2インスタンス自身に関する情報が格納されており、EC2インスタンスの初回起動時の設定などに用いられるEC2のデータはどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "メタデータ", correct: true}
+      , {description: "起動スクリプト", correct: false}
+      , {description: "rc.ec2", correct: false}
+      , {description: "ユーザデータ", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "EBSボリュームに格納しているデータが削除されるタイミングとして正しい選択肢はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "EC2インスタンス再起動時", correct: false}
+      , {description: "EC2インスタンス停止時", correct: false}
+      , {description: "EC2インスタンス削除時(EBSボリュームのDelete on Terminationはオフ)", correct: false}
+      , {description: "OSからデータの削除処理を行った時", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "インスタンスストアに格納しているデータが削除されるタイミングとして正しい選択肢はどれか？正しい選択肢を全て選べ。"
+    , multiple_answer: true
+    , answers: [
+      {description: "EC2インスタンス再起動時", correct: false}
+      , {description: "EC2インスタンス停止時", correct: true}
+      , {description: "EC2インスタンス削除時(EBSボリュームのDelete on Terminationはオフ)", correct: true}
+      , {description: "OSからデータの削除処理を行った時", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "EBS-backedインスタンスにはできるが、instance store-backedインスタンスにはできない操作はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "EC2インスタンス再起動", correct: false}
+      , {description: "EC2インスタンス停止", correct: true}
+      , {description: "EC2インスタンス削除", correct: false}
+      , {description: "OSからのシャットダウン(停止)", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "Provisioned IOPSタイプのEBSボリュームを利用して、安定したIO性能をアプリケーションに提供したい。推奨される構成として正しい選択肢はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Provisioned IOPSのEBSボリュームを4本以上用意し、ソフトウェアRAIDによってRAID5を組む", correct: false}
+      , {description: "Provisioned IOPS最適化EC2インスタンスを起動して、Provisioned IOPSのEBSボリュームをそのEC2インスタンスにアタッチする", correct: false}
+      , {description: "EBS最適化EC2インスタンスを起動して、Provisioned IOPSのEBSボリュームをそのEC2インスタンスにアタッチする", correct: true}
+      , {description: "Provisioned IOPSのEBSボリュームを2本用意し、ソフトウェアRAIDによってRAID1を組む", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "EBSデータボリューム(非ルートボリューム)のスナップショット取得方法として、適切な選択肢はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "対象となるEBSボリュームへのディスクI/Oは気にせずに、スナップショットの取得を開始する。", correct: false}
+      , {description: "対象となるEBSボリュームへのディスクI/Oが少なくなる時間帯に、スナップショットの取得を開始する。", correct: false}
+      , {description: "対象となるEBSボリュームをアンマウントし、スナップショットの取得を開始する。開始後はスナップショットの取得完了を待たずにEBSボリュームを再びマウントして、ディスクI/Oを再開する。", correct: true}
+      , {description: "対象となるEBSボリュームをアンマウントし、スナップショットの取得を開始する。スナップショットの取得完了を待ってEBSボリュームを再びマウントして、ディスクI/Oを再開する。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "EBSボリュームの特徴(取り扱い)として、正しい選択肢はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "EBSボリュームは同じVPC内のEC2インスタンスであれば、どのEC2インスタンスにでもアタッチ(接続)することができる。", correct: false}
+      , {description: "あるEBSボリュームを他のリージョンのEC2インスタンスにアタッチ(接続)したい場合、EBSボリュームのリージョン間コピーを利用して、該当リージョンにコピーする。", correct: false}
+      , {description: "あるEBSボリュームを同じリージョン内の別のAZのEC2インスタンスにアタッチしたい場合は、EBSボリュームのAZ間コピーを利用して、該当AZにコピーする。", correct: false}
+      , {description: "あるEBSボリュームを同じリージョン内の別のAZのEC2インスタンスにアタッチしたい場合は、一度スナップショットを作成し、そのスナップショットから新たなEBSボリュームを作成する。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "プレイスメントグループの特徴を示した選択肢はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "単一のAZ内に作られたグループで、そのグループ内に起動したEC2インスタンス間のネットワークアクセスを高速化する。", correct: true}
+      , {description: "単一のリージョン内に作られたグループで、そのグループ内に起動したEC2インスタンス間のネットワークアクセスを高速化する。", correct: false}
+      , {description: "単一のAZ内に作られたグループで、そのグループ内に起動したEC2インスタンス間の通信が自動的に暗号化される。", correct: false}
+      , {description: "単一のリージョン内に作られたグループで、そのグループ内に起動したEC2インスタンス間の通信が自動的に暗号化される。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: "Dedicatedインスタンスの特徴を示した選択肢はどれか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "ネットワーク接続型のストレージであるEBSボリュームとの間に、ディスクI/O専用の帯域を確保し、ディスクI/Oを安定化させるEC2インスタンス。", correct: false}
+      , {description: "特定のAZ内で、特定のインスタンスタイプを1年あるいは3年の契約で低価格で利用できるEC2インスタンス。", correct: false}
+      , {description: "特定のAZにおける市場価格に対して、その市場価格を上回る価格で入札し、低価格で利用できるEC2インスタンス。", correct: false}
+      , {description: "EC2インスタンスを起動する物理ホストにおいて、自アカウント以外のEC2インスタンスが起動しないことを保証されたEC2インスタンス。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
+  , {
+    description: ""
+    , multiple_answer: false
+    , answers: [
+      {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+      , {description: "", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
+  }
 ]);

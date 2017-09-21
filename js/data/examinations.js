@@ -1,6 +1,16 @@
 // 出題データ
 examinations.add([
   {
+    examinationName: "AWS認定ソリューションアーキテクトアソシエイト ALL"
+    , questionCount: 100
+    , categories: ['AWS-Certified-Solutions-Architect-Associate-JP']
+  }
+  , {
+    examinationName: "AWS認定ソリューションアーキテクトアソシエイト 10問"
+    , questionCount: 10
+    , categories: ['AWS-Certified-Solutions-Architect-Associate-JP']
+  }
+  , {
     examinationName: "システム監査技術者試験（AU） AM2 ALL"
     , questionCount: 25
     , categories: ['AU-H28-SPRING', 'AU-H27-SPRING', 'AU-H26-SPRING', 'AU-H25-SPRING', 'AU-H24-SPRING']
