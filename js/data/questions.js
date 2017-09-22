@@ -8081,7 +8081,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
   }
   , {
-    description: "ElasticCacheｎ特徴／メリット／ユースケースとして正しい選択肢はどれか？"
+    description: "ElasticCacheの特徴／メリット／ユースケースとして正しい選択肢はどれか？"
     , multiple_answer: false
     , answers: [
       {description: "ElasticCacheはインメモリキャッシュとして高速に読み書きできるため、ログインが必要な会員Webサイトのユーザのセッション情報の格納先として適している。", correct: true}
