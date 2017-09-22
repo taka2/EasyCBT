@@ -8238,7 +8238,7 @@ questions.add([
     description: "24時間365日サービスを提供するチケット販売WebシステムをELBと配下のAuto ScalingグループのEC2インスタンス、及びRDSで構成している。初期EC2インスタンス数は2台だが、チケット販売開始時期にはアクセスが集中するため、販売開始時期の5分前にもう2台手動で追加しておき、販売開始後はAuto Scalingで自動拡張するように設定した。リサーブドインスタンスの使いどころとして適切なものはどれか？"
     , multiple_answer: false
     , answers: [
-      {description: "初めから木戸うしている2台のインスタンス", correct: true}
+      {description: "初めから起動している2台のインスタンス", correct: true}
       , {description: "販売開始時刻の5分前に追加する2台のインスタンス", correct: false}
       , {description: "販売開始後にAuto Scalingによって追加されるインスタンス", correct: false}
       , {description: "このシステムにリザーブドインスタンスを使う必要はない。", correct: false}
@@ -8249,7 +8249,7 @@ questions.add([
     description: "24時間365日サービスを提供するチケット販売WebシステムをELBと配下のAuto ScalingグループのEC2インスタンス、及びRDSで構成している。初期EC2インスタンス数は2台だが、チケット販売開始時期にはアクセスが集中するため、販売開始時期の5分前にもう2台手動で追加しておき、販売開始後はAuto Scalingで自動拡張するように設定した。スポットインスタンスの使いどころとして適切なものはどれか？"
     , multiple_answer: false
     , answers: [
-      {description: "初めから木戸うしている2台のインスタンス", correct: false}
+      {description: "初めから起動している2台のインスタンス", correct: false}
       , {description: "販売開始時刻の5分前に追加する2台のインスタンス", correct: false}
       , {description: "販売開始後にAuto Scalingによって追加されるインスタンス", correct: true}
       , {description: "このシステムにリザーブドインスタンスを使う必要はない。", correct: false}
