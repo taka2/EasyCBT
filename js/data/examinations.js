@@ -6,6 +6,11 @@ examinations.add([
     , categories: ['AWS-Certified-Solutions-Architect-Associate-JP', 'AWS-Certified-Solutions-Architect-Associate-EN']
   }
   , {
+    examinationName: "AWS認定ソリューションアーキテクトアソシエイト(EN) ALL"
+    , questionCount: 200
+    , categories: ['AWS-Certified-Solutions-Architect-Associate-EN']
+  }
+  , {
     examinationName: "AWS認定ソリューションアーキテクトアソシエイト(EN) 10問"
     , questionCount: 10
     , categories: ['AWS-Certified-Solutions-Architect-Associate-EN']

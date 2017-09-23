@@ -9040,4 +9040,237 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "オートスケーリンググループの必須要素は次のうちどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Minimum size", correct: true}
+      , {description: "Health checks", correct: false}
+      , {description: "Desired capacity", correct: false}
+      , {description: "Launch configuration", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Port 80でリスニングするElastic Load Balancingロードバランサを作成し、ポート80でリッスンしている単一のAmazon Elastic Compute Cloud（Amazon EC2）インスタンスに登録しました。クライアントは正しいプロトコルでロードバランサにリクエストを行い、 ロードバランサのポート。 このシナリオでは、バランサは何コネクションを維持していますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "1", correct: false}
+      , {description: "2", correct: true}
+      , {description: "3", correct: false}
+      , {description: "4", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon CloudWatchはメトリックデータをどのくらい保持しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "1 day", correct: false}
+      , {description: "2 days", correct: false}
+      , {description: "1 week", correct: false}
+      , {description: "2 weeks", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Auto Scalingの起動設定を作成するために最低限必要な要素はどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Launch configuration name, Amazon Machine Image (AMI), and instance type", correct: true}
+      , {description: "Launch configuration name, AMI, instance type, and key pair", correct: false}
+      , {description: "Launch configuration name, AMI, instance type, key pair, and security group", correct: false}
+      , {description: "Launch configuration name, AMI, instance type, key pair, security group, and block device mapping", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "複数のAmazon EC2インスタンス上で実行されている会社の既存のアプリケーション用のアプリケーションロギングソリューションは、お客様が担当しています。 AWS内のアプリケーションログを集約するための最良の方法はどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon CloudWatch custom metrics", correct: false}
+      , {description: "Amazon CloudWatch Logs Agent", correct: true}
+      , {description: "An Elastic Load Balancing listener", correct: false}
+      , {description: "An internal Elastic Load Balancing load balancer", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "着信トラフィックを受け入れるために、Elastic Load Balancingロードバランサで次のうちどれを設定する必要がありますか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "A port", correct: false}
+      , {description: "A network interface", correct: false}
+      , {description: "A listener", correct: true}
+      , {description: "An instance", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Auto Scalingグループは、最小サイズ値10、最大サイズ値100、および希望する容量値50で構成された新しい領域に作成します。ただし、Amazon Elastic Compute Cloud（Amazon EC2）のインスタンスが起動できません。 この行動の原因は次のうちどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "You cannot define an Auto Scaling group larger than 20.", correct: false}
+      , {description: "The Auto Scaling group maximum value cannot be more than 20.", correct: false}
+      , {description: "You did not attach an Elastic Load Balancing load balancer to the Auto Scaling group.", correct: false}
+      , {description: "You have not raised your default Amazon EC2 capacity (20) for the new region.", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "1つのX.509証明書を持つElastic Load Balancingロードバランサの背後にある複数のAmazon EC2インスタンスに複数のHTTPS（Hypertext Transfer Protocol Secure）Webサイトをホストしたいとします。 ロードバランサに接続するクライアントに接続時に警告が表示されないように、SSL（Secure Sockets Layer）証明書をどのように構成する必要がありますか。"
+    , multiple_answer: false
+    , answers: [
+      {description: "Create one SSL certificate with a Subject Alternative Name (SAN) value for each website name.", correct: true}
+      , {description: "Create one SSL certificate with the Server Name Indication (SNI) value checked.", correct: false}
+      , {description: "Create multiple SSL certificates with a SAN value for each website name.", correct: false}
+      , {description: "Create SSL certificates for each Availability Zone with a SAN value for each website name.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Webアプリケーションのフロントエンドは、Elastic Load Balancingロードバランサの背後にある複数のAmazon Compute Cloud（Amazon EC2）インスタンスで構成されています。 これらのAmazon EC2インスタンスでヘルスチェックを実行するようにロードバランサを設定しました。 インスタンスがヘルスチェックに合格しなかった場合、どのステートメントが正しいでしょうか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "The instance is replaced automatically by the load balancer.", correct: false}
+      , {description: "The instance is terminated automatically by the load balancer.", correct: false}
+      , {description: "The load balancer stops sending traffic to the instance that failed its health check.", correct: true}
+      , {description: "The instance is quarantined by the load balancer for root cause analysis.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Elastic Compute Cloud（Amazon EC2）の基本監視パッケージでは、Amazon CloudWatchのメトリックはどのように使用できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Web server visible metrics such as number of failed transaction requests", correct: false}
+      , {description: "Operating system visible metrics such as memory utilization", correct: false}
+      , {description: "Database visible metrics such as number of connections", correct: false}
+      , {description: "Hypervisor visible metrics such as CPU utilization", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "携帯電話会社はコンテストのためにダイナミックコンテンツのテレビコマーシャルを運営しています。 彼らは彼らのウェブサイトが商業放送の後に来るトラフィックスパイクに対処することを望んでいる。 ウェブサイトはインタラクティブで、場所、購入履歴、現在の商業放送に基づいて各訪問者にパーソナライズされたコンテンツを提供します。 静かな期間にコストを最小限に抑えながら、Auto Scalingを拡張して需要の急増に対応するように設計するアーキテクチャはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "自動スケーリンググループの最小サイズを設定して、スケールアウトせずに高いトラフィック量を処理できるようにします。", correct: false}
+      , {description: "ピークトラフィックの負荷を処理するのに十分な大きさのAuto Scalingグループを作成し、いくつかのインスタンスを停止します。 停止したインスタンスを使用してトラフィックが増加したときにスケールアウトするように自動スケーリングを設定すると、新しい容量がすぐにオンラインになります。", correct: false}
+      , {description: "トラフィックの増加に応じてスケールアウトするように自動スケーリングを設定します。 事前設定済みのAmazon Machine Image（AMI）から新しいインスタンスを起動するように、起動設定を構成します。", correct: true}
+      , {description: "Amazon CloudFrontおよびAmazon Simple Storage Service（Amazon S3）を使用して、自動スケーリンググループを元に設定して、変化するコンテンツをキャッシュします。 自動スケールでCloudFrontとAmazon ElastiCacheを初期設定し、キャッシュが完全に読み込まれた後にスケールインするのに必要なインスタンスを持つように設定します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "3つのアベイラビリティゾーン（ap-northeast-1a、ap-northeast-1b、およびap-northeast-1c）を持つap-northeast-1領域で実行されているアプリケーションの場合、通常は9つのアプリケーション Amazon Elastic Compute Cloud（Amazon EC2）インスタンスを実行していますが、容量の65％以上で実行できますが、自動スケーリングは残りの可用性ゾーンで代替インスタンスを起動しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "ap-northeast-1aの4つのサーバーとap-northeast-1bの5つのサーバーにアプリケーションをデプロイし、ap-northeast-1aに5つの停止インスタンスを予約として保持します。", correct: false}
+      , {description: "ap-northeast-1aの3つのサーバー、ap-northeast-1bの3つのサーバー、およびap-northeast-1cの3つのサーバーにアプリケーションを展開します。", correct: true}
+      , {description: "ap-northeast-1bの6つのサーバーとap-northeast-1cの3つのサーバーにアプリケーションを展開します。", correct: false}
+      , {description: "アプリケーションをap-northeast-1bの9つのサーバーにデプロイし、ap-northeast-1aに9つの停止インスタンスを予約として保持します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWS上のAuto Scalingサービスの特徴は次のうちどれですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Sends traffic to healthy instances", correct: false}
+      , {description: "Responds to changing conditions by adding or terminating Amazon Elastic Compute Cloud (Amazon EC2) instances", correct: true}
+      , {description: "Collects and tracks metrics and sets alarms", correct: false}
+      , {description: "Delivers push notifications", correct: false}
+      , {description: "Launches instances from a specified Amazon Machine Image (AMI)", correct: true}
+      , {description: "Enforces a minimum number of running Amazon EC2 instances", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Auto Scalingグループの一部ではなく、Auto Scalingグループが起動設定を参照するのはなぜですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "It allows you to change the Amazon Elastic Compute Cloud (Amazon EC2) instance type and Amazon Machine Image (AMI) without disrupting the Auto Scaling group.", correct: false}
+      , {description: "It facilitates rolling out a patch to an existing set of instances managed by an Auto Scaling group.", correct: false}
+      , {description: "It allows you to change security groups associated with the instances launched without having to make changes to the Auto Scaling group.", correct: false}
+      , {description: "All of the other choices", correct: true}
+      , {description: "None of the other choices", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "自動スケーリンググループでは、次のものを使用できます。（2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "On-Demand Instances", correct: true}
+      , {description: "Stopped instances", correct: false}
+      , {description: "Spot Instances", correct: true}
+      , {description: "On-premises instances", correct: false}
+      , {description: "Already running instances if they use the same Amazon Machine Image (AMI) as the Auto Scaling group’s launch configuration and are not already part of another Auto Scaling group", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon CloudWatchはどのタイプの監視計画をサポートしていますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Basic monitoring, which is free", correct: true}
+      , {description: "Basic monitoring, which has an additional cost", correct: false}
+      , {description: "Ad hoc monitoring, which is free", correct: false}
+      , {description: "Ad hoc monitoring, which has an additional cost", correct: false}
+      , {description: "Detailed monitoring, which is free", correct: false}
+      , {description: "Detailed monitoring, which has an additional cost", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Elastic Load Balancingのヘルスチェックは、次のようになります。（3つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "A ping", correct: true}
+      , {description: "A key pair verification", correct: false}
+      , {description: "A connection attempt", correct: true}
+      , {description: "A page request", correct: true}
+      , {description: "An Amazon Elastic Compute Cloud (Amazon EC2) instance status check", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "接続排水を使用するElastic Load Balancingロードバランサに登録されたAmazon Elastic Compute Cloud（Amazon EC2）インスタンスが登録解除または不健全になった場合、次のうちどれが実行されますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Immediately close all existing connections to that instance.", correct: false}
+      , {description: "Keep the connections open to that instance, and attempt to complete in-flight requests.", correct: true}
+      , {description: "Redirect the requests to a user-defined error page like “Oops this is embarrassing” or “Under Construction.”", correct: true}
+      , {description: "Forcibly close all connections to that instance after a timeout period.", correct: false}
+      , {description: "Leave the connections open as long as the load balancer is running.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Elastic Load Balancingは、次のタイプのロードバランサをサポートしていますか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Cross-region", correct: false}
+      , {description: "Internet-facing", correct: true}
+      , {description: "Interim", correct: false}
+      , {description: "Itinerant", correct: false}
+      , {description: "Internal", correct: true}
+      , {description: "Hypertext Transfer Protocol Secure (HTTPS) using Secure Sockets Layer (SSL)", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "自動スケーリングは、自動スケーリンググループの次の計画のどれをサポートしていますか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Predictive", correct: false}
+      , {description: "Manual", correct: true}
+      , {description: "Preemptive", correct: false}
+      , {description: "Scheduled", correct: true}
+      , {description: "Dynamic", correct: true}
+      , {description: "End-user request driven", correct: false}
+      , {description: "Optimistic", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
