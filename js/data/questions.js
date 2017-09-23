@@ -8256,4 +8256,114 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
   }
+  , {
+    description: "AWSがデータセンターをクラスタリングする世界中の物理的な場所について、次のうちどれが説明されていますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Endpoint", correct: false}
+      , {description: "Collection", correct: false}
+      , {description: "Fleet", correct: false}
+      , {description: "Region", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "各AWS地域は2つ以上の場所で構成されており、単一のデータセンターを使用する場合よりも高可用性、耐障害性、スケーラビリティの高い運用システムを運用することができます。 これらの場所は何と呼ばれていますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Availability Zones", correct: true}
+      , {description: "Replication areas", correct: false}
+      , {description: "Geographic districts", correct: false}
+      , {description: "Compute centers", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "クラウドリソースを内部システムに接続するために既存のオンプレミスインフラストラクチャをクラウドに拡張する環境のデプロイに関する用語は何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "All-in deployment", correct: false}
+      , {description: "Hybrid deployment", correct: true}
+      , {description: "On-premises deployment", correct: false}
+      , {description: "Scatter deployment", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "どのAWSクラウドサービスを利用すれば、リソース使用率、アプリケーションパフォーマンス、および運用上の健康状態をシステム全体で把握できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWS Identity and Access Management (IAM)", correct: false}
+      , {description: "Amazon Simple Notification Service (Amazon SNS)", correct: false}
+      , {description: "Amazon CloudWatch", correct: true}
+      , {description: "AWS CloudFormation", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のAWSクラウドサービスのうち、完全に管理されるNoSQLデータベースサービスはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Simple Queue Service (Amazon SQS)", correct: false}
+      , {description: "Amazon DynamoDB", correct: true}
+      , {description: "Amazon ElastiCache", correct: false}
+      , {description: "Amazon Relational Database Service (Amazon RDS)", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社は、フラッシュ販売に基づいて、電子商取引ウェブサイトへのトラフィックパターンの変動を経験します。 フラッシュ販売中に必要なコンピューティング能力をトラフィックの急上昇に動的に対応させるには、どのようなサービスが役立ちますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Auto Scaling", correct: true}
+      , {description: "Amazon Glacier", correct: false}
+      , {description: "Amazon Simple Notification Service (Amazon SNS)", correct: false}
+      , {description: "Amazon Virtual Private Cloud (Amazon VPC)", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社はオンライン写真共有サービスを提供しています。 開発チームは、待ち時間の最も短い画像ファイルをエンドユーザーに配信する方法を模索しており、ウェブサイトのコンテンツは最高のパフォーマンスで配信されます。 どのようなサービスが世界中のエンドユーザーにこれらのイメージファイルの配布をスピードアップするのに役立ちますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Elastic Compute Cloud (Amazon EC2)", correct: false}
+      , {description: "Amazon Route 53", correct: false}
+      , {description: "AWS Storage Gateway", correct: false}
+      , {description: "Amazon CloudFront", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Elastic Compute Cloud（Amazon EC2）インスタンスを定期的に実行して、大規模で成長するファイルシステムに対してバッチ処理を実行します。 バッチジョブが終了したら、費用を節約するためにAmazon EC2インスタンスをシャットダウンしますが、以前のバッチ処理からAmazon EC2インスタンス上のファイルシステムを維持する必要があります。 これらの要件を満たすためにどのようなAWSクラウドサービスを利用できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Elastic Block Store (Amazon EBS)", correct: true}
+      , {description: "Amazon DynamoDB", correct: false}
+      , {description: "Amazon Glacier", correct: false}
+      , {description: "AWS CloudFormation", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "どのAWSクラウドサービスが、AWSクラウドの論理的に分離されたセクションを提供していますか？組織は定義した仮想ネットワークでAWSリソースを起動できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Simple Workflow Service (Amazon SWF)", correct: false}
+      , {description: "Amazon Route 53", correct: false}
+      , {description: "Amazon Virtual Private Cloud (Amazon VPC)", correct: true}
+      , {description: "AWS CloudFormation", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社は人気のあるテレビ番組のモバイル投票アプリケーションを提供しています。視聴者は5〜2,500万人で、すべての投票が15秒のタイムスパンで行われます。 投票アプリケーションを、投票を集計したバックエンドサービスから切り離すために、どのようなメカニズムを使用できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWS CloudTrail", correct: false}
+      , {description: "Amazon Simple Queue Service (Amazon SQS)", correct: true}
+      , {description: "Amazon Redshift", correct: false}
+      , {description: "Amazon Simple Notification Service (Amazon SNS)", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
