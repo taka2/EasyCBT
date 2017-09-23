@@ -8366,4 +8366,235 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "Amazon Simple Storage Service（Amazon S3）オブジェクトストレージはどのようにブロックストレージおよびファイルストレージとどのように異なるのですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Amazon S3 stores data in fixed size blocks.", correct: false}
+      , {description: "Objects are identified by a numbered address.", correct: false}
+      , {description: "Objects can be any size.", correct: false}
+      , {description: "Objects contain both data and metadata.", correct: true}
+      , {description: "Objects are stored in buckets.", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Storage Service（Amazon S3）の適切な使用例ではないものはどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Storing web content", correct: false}
+      , {description: "Storing a file system mounted to an Amazon Elastic Compute Cloud (Amazon EC2) instance", correct: true}
+      , {description: "Storing backups for a relational database", correct: false}
+      , {description: "Primary storage for a database", correct: true}
+      , {description: "Storing logs for analytics", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Storage Service（Amazon S3）の重要な特徴は何ですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "All objects have a URL.", correct: true}
+      , {description: "Amazon S3 can store unlimited amounts of data.", correct: true}
+      , {description: "Objects are world-readable by default.", correct: false}
+      , {description: "Amazon S3 uses a REST (Representational State Transfer) Application Program Interface (API).", correct: true}
+      , {description: "You must pre-allocate the storage in a bucket.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Storage Service（Amazon S3）データへのアクセスを制限するために使用できる機能はどれですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Enable static website hosting on the bucket.", correct: false}
+      , {description: "Create a pre-signed URL for an object.", correct: true}
+      , {description: "Use an Amazon S3 Access Control List (ACL) on a bucket or object.", correct: true}
+      , {description: "Use a lifecycle policy.", correct: false}
+      , {description: "Use an Amazon S3 bucket policy.", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "アプリケーションは重要なデータをAmazon Simple Storage Service（Amazon S3）に保存します。Amazon S3は、不注意または故意の削除から保護する必要があります。 このデータはどのように保護されますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Use cross-region replication to copy data to another bucket automatically.", correct: false}
+      , {description: "Set a vault lock.", correct: false}
+      , {description: "Enable versioning on the bucket.", correct: true}
+      , {description: "Use a lifecycle policy to migrate data to Amazon Glacier.", correct: false}
+      , {description: "Enable MFA Delete on the bucket.", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社はAmazon Simple Storage Service（Amazon S3）にドキュメントを保存しますが、コストを最小限に抑えたいと考えています。 ほとんどの文書は約1ヶ月間だけ積極的に使用され、次にあまり頻繁に使用されません。 ただし、要求された場合、すべてのデータを数分以内に利用できる必要があります。 どのようにこれらの要件を満たすことができますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Migrate the data to Amazon S3 Reduced Redundancy Storage (RRS) after 30 days.", correct: false}
+      , {description: "Migrate the data to Amazon Glacier after 30 days.", correct: false}
+      , {description: "Migrate the data to Amazon S3 Standard – Infrequent Access (IA) after 30 days.", correct: true}
+      , {description: "Turn on versioning, then migrate the older version to Amazon Glacier.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "高耐久性のためにAmazon Simple Storage Service（Amazon S3）にデータを保存する方法は？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Data is automatically replicated to other regions.", correct: false}
+      , {description: "Data is automatically replicated within a region.", correct: true}
+      , {description: "Data is replicated only if versioning is enabled on the bucket.", correct: false}
+      , {description: "Data is automatically backed up on tape and restored if needed.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のいずれかの記述が正しいAmazon Simple Storage Service（Amazon S3）のURLに基づいていますか？" +
+
+                  "https://bucket1.abc.com.s3.amazonaws.com/folderx/myfile.doc"
+    , multiple_answer: false
+    , answers: [
+      {description: "The object “myfile.doc” is stored in the folder “folderx” in the bucket “bucket1.abc.com.”", correct: false}
+      , {description: "The object “myfile.doc” is stored in the bucket “bucket1.abc.com.”", correct: false}
+      , {description: "The object “folderx/myfile.doc” is stored in the bucket “bucket1.abc.com.”", correct: true}
+      , {description: "The object “myfile.doc” is stored in the bucket “bucket1.”", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "誰があなたのAmazon Simple Storage Service（Amazon S3）データにアクセスしたのか、どこから何をすべきかを記録するには？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Enable versioning on the bucket.", correct: false}
+      , {description: "Enable website hosting on the bucket.", correct: false}
+      , {description: "Enable server access logs on the bucket.", correct: true}
+      , {description: "Create an AWS Identity and Access Management (IAM) bucket policy.", correct: false}
+      , {description: "Enable Amazon CloudWatch logs.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Storage Service（Amazon S3）バケットでクロスリージョンレプリケーションを有効にする理由は何ですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "You want a backup of your data in case of accidental deletion.", correct: false}
+      , {description: "You have a set of users or customers who can access the second bucket with lower latency.", correct: true}
+      , {description: "For compliance reasons, you need to store data in a location at least 300 miles away from the first region.", correct: true}
+      , {description: "Your data needs at least five nines of durability.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社では、外部ストレージに送信されるすべてのデータを暗号化して送信する必要があります。 どのAmazon Simple Storage Service（Amazon S3）暗号化ソリューションがこの要件を満たしますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Server-Side Encryption (SSE) with AWS-managed keys (SSE-S3)", correct: false}
+      , {description: "SSE with customer-provided keys (SSE-C)", correct: false}
+      , {description: "Client-side encryption with customer-managed keys", correct: true}
+      , {description: "Server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS)", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Storage Service（Amazon S3）バケットに格納されたデータにアクセスする一般的なWebアプリケーションがあります。 アクセスは非常に読み込みが集中し、多くのクライアントから要求される要求速度は最大500 GET /秒です。 この場合、Amazon S3のパフォーマンスとスケーラビリティをどのように高めることができますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Turn on cross-region replication to ensure that data is served from multiple locations.", correct: false}
+      , {description: "Ensure randomness in the namespace by including a hash prefix to key names.", correct: true}
+      , {description: "Turn on server access logging.", correct: false}
+      , {description: "Ensure that key names are sequential to enable pre-fetch.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Storage Service（Amazon S3）バケットでクロスリージョンレプリケーションを有効にするには、何が必要ですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Enable versioning on the bucket.", correct: true}
+      , {description: "Enable a lifecycle rule to migrate data to the second region.", correct: false}
+      , {description: "Enable static website hosting.", correct: false}
+      , {description: "Create an AWS Identity and Access Management (IAM) policy to allow Amazon S3 to replicate objects on your behalf.", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社には100TBの財務記録があり、法律で7年間保管する必要があります。 経験によると、1歳以上の記録はアクセスされない可能性があります。 次のいずれかのストレージプランが、費用対効果の最も高い方法でこれらのニーズを満たしていますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Store the data on Amazon Elastic Block Store (Amazon EBS) volumes attached to t2.micro instances.", correct: false}
+      , {description: "Store the data on Amazon Simple Storage Service (Amazon S3) with lifecycle policies that change the storage class to Amazon Glacier after one year and delete the object after seven years.", correct: true}
+      , {description: "Store the data in Amazon DynamoDB and run daily script to delete data older than seven years.", correct: false}
+      , {description: "Store the data in Amazon Elastic MapReduce (Amazon EMR).", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Storage Service（S3）バケットポリシーは、Amazon S3バケットへのアクセスを制限することができます。 （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Company name", correct: false}
+      , {description: "IP address range", correct: true}
+      , {description: "AWS account", correct: true}
+      , {description: "Country of origin", correct: false}
+      , {description: "Objects with a specific prefix", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Storage Service（Amazon S3）は最終的に一貫したストレージシステムです。 最終的な一貫性の結果として失効したデータを取得することは可能ですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "GET after PUT of a new object", correct: false}
+      , {description: "GET or LIST after a DELETE", correct: true}
+      , {description: "GET after overwrite PUT (PUT to an existing key)", correct: true}
+      , {description: "DELETE after PUT of new object", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Storage Service（Amazon S3）バケットで静的なWebサイトをホストするためには何が必要ですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Configure the bucket for static hosting and specify an index and error document.", correct: true}
+      , {description: "Create a bucket with the same name as the website.", correct: true}
+      , {description: "Enable File Transfer Protocol (FTP) on the bucket.", correct: false}
+      , {description: "Make the objects in the bucket world-readable.", correct: true}
+      , {description: "Enable HTTP on the bucket.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたは、AWS上でホストされている貴重なメディアファイルを持っており、それらをあなたのWebアプリケーションの認証されたユーザーにのみ提供することにしたいです。 あなたは、あなたのコンテンツが無料で盗まれ、配布される可能性があると懸念しています。 どのようにあなたのコンテンツを保護することができますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Use static web hosting.", correct: false}
+      , {description: "Generate pre-signed URLs for content in the web application.", correct: true}
+      , {description: "Use AWS Identity and Access Management (IAM) policies to restrict access.", correct: false}
+      , {description: "Use logging to track your content.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Glacierは以下のどのデータに適していますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Is infrequently or rarely accessed", correct: true}
+      , {description: "Must be immediately available when needed", correct: false}
+      , {description: "Is available after a three- to five-hour restore period", correct: true}
+      , {description: "Is frequently erased within 30 days", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Glacierについての真実は？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Amazon Glacier stores data in objects that live in archives.", correct: false}
+      , {description: "Amazon Glacier archives are identified by user-specified key names.", correct: false}
+      , {description: "Amazon Glacier archives take three to five hours to restore.", correct: true}
+      , {description: "Amazon Glacier vaults can be locked.", correct: true}
+      , {description: "Amazon Glacier can be used as a standalone service and as an Amazon S3 storage class.", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
