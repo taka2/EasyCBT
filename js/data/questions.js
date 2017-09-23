@@ -8819,4 +8819,225 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "Amazon VPCで使用できる最小サイズのサブネットとは何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "/24", correct: false}
+      , {description: "/26", correct: false}
+      , {description: "/28", correct: true}
+      , {description: "/30", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "既存のサーバー資産をAWSに移行している大規模な旅行会社で働くソリューションアーキテクトです。 カスタムAmazon VPCを使用することをお勧めしており、進んでいくことに同意しています。 彼らは、自分のWebサーバー用のパブリックサブネットと、データベースを配置するプライベートサブネットが必要になります。 また、Webサーバーとデータベースサーバーの可用性が高く、Webサーバーが最低2台、データベースサーバーが2台必要です。 高可用性を維持する必要があるサブネットの数はいくつですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "2", correct: false}
+      , {description: "3", correct: false}
+      , {description: "4", correct: true}
+      , {description: "1", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のうちVPCのサブネット層に適用できるオプションのセキュリティ制御はどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Network ACL", correct: true}
+      , {description: "Security Group", correct: false}
+      , {description: "Firewall", correct: false}
+      , {description: "Web application firewall", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon VPCで使用できるIPアドレスの最大サイズは何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "/16", correct: true}
+      , {description: "/24", correct: false}
+      , {description: "/28", correct: false}
+      , {description: "/30", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "新しいサブネットを作成し、IGWを使用してそのサブネットからインターネットにトラフィックをルーティングするルートテーブルにルートを追加します。 どのタイプのサブネットを作成しましたか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "An internal subnet", correct: false}
+      , {description: "A private subnet", correct: false}
+      , {description: "An external subnet", correct: false}
+      , {description: "A public subnet", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "新しいAmazon VPCを作成するとどうなりますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "A main route table is created by default.", correct: true}
+      , {description: "Three subnets are created by default—one for each Availability Zone.", correct: false}
+      , {description: "Three subnets are created by default in one Availability Zone.", correct: false}
+      , {description: "An IGW is created by default.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "US-East-1で新しいVPCを作成し、このAmazon VPC内に3つのサブネットを用意します。 次のうちどれが当てはまりますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "By default, these subnets will not be able to communicate with each other; you will need to create routes.", correct: false}
+      , {description: "All subnets are public by default.", correct: false}
+      , {description: "All subnets will be able to communicate with each other by default.", correct: true}
+      , {description: "Each subnet will have identical CIDR blocks.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon VPCには一度にいくつのIGWを接続できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "1", correct: true}
+      , {description: "2", correct: false}
+      , {description: "3", correct: false}
+      , {description: "4", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon VPCのどの面がステートフルですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Network ACLs", correct: false}
+      , {description: "Security groups", correct: true}
+      , {description: "Amazon DynamoDB", correct: false}
+      , {description: "Amazon S3", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "プライベートサブネットとパブリックサブネットの両方を備えたカスタムAmazon VPCを作成しました。 NATインスタンスを作成し、このインスタンスをパブリックサブネットに展開しました。 EIPアドレスを添付し、NATをルートテーブルに追加しました。 残念ながら、プライベートサブネットのインスタンスは引き続きインターネットにアクセスできません。 これは何が原因でしょうか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Your NAT is in a public subnet, but it needs to be in a private subnet.", correct: false}
+      , {description: "Your NAT should be behind an Elastic Load Balancer.", correct: false}
+      , {description: "You should disable source/destination checks on the NAT.", correct: true}
+      , {description: "Your NAT has been deployed on a Windows instance, but your other instances are Linux. You should redeploy the NAT onto a Linux instance.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Elastic Block Store（Amazon EBS）に関連付けられたEIPを持つAmazon VPC内のAmazon EC2インスタンスが停止され、開始された場合、次のうちどれが発生しますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "The EIP will be dissociated from the instance.", correct: false}
+      , {description: "All data on instance-store devices will be lost.", correct: true}
+      , {description: "All data on Amazon EBS devices will be lost.", correct: false}
+      , {description: "The ENI is detached.", correct: false}
+      , {description: "The underlying host for the instance is changed.", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "同じAWSリージョン内にある4つのVPCに対して、他の各トラフィックにトラフィックを送信できるようにするには、いくつのVPCピアリング接続が必要ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "3", correct: false}
+      , {description: "4", correct: false}
+      , {description: "5", correct: false}
+      , {description: "6", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "EC2-VPCインスタンスがAWS以外のDNS名を解決するために使用するAWSリソースはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "A VPC peering connection", correct: false}
+      , {description: "A DHCP option set", correct: true}
+      , {description: "A routing rule", correct: false}
+      , {description: "An IGW", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AmazonのVPN接続のAmazon側はどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "An EIP", correct: false}
+      , {description: "A CGW", correct: false}
+      , {description: "An IGW", correct: false}
+      , {description: "A VPG", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "顧客が地域内に持つ可能性があるAmazon VPCの数のデフォルトの制限はいくらですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "5", correct: true}
+      , {description: "6", correct: false}
+      , {description: "7", correct: false}
+      , {description: "There is no default maximum number of VPCs within a region.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたはあなたの会社のAWSリソースを担当しており、あなたの会社には顧客がいない外国のIPアドレスから大量のトラフィックが発生しています。 トラフィックの詳細な調査は、トラフィックの送信元がEC2-VPCインスタンスのオープンポートをスキャンしていることを示します。 トラフィックがインスタンスに到達することを拒否できるリソースはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Security group", correct: false}
+      , {description: "Network ACL", correct: true}
+      , {description: "NAT instance", correct: false}
+      , {description: "An Amazon VPC endpoint", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon VPCでサポートされているセキュリティプロトコルはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "SSH", correct: false}
+      , {description: "Advanced Encryption Standard (AES)", correct: false}
+      , {description: "Point-to-Point Tunneling Protocol (PPTP)", correct: false}
+      , {description: "IPsec", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "EC2-VPCインスタンスがAmazon S3に直接トラフィックを送信するために使用するAmazon VPCリソースはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon S3 gateway", correct: false}
+      , {description: "IGW", correct: false}
+      , {description: "CGW", correct: false}
+      , {description: "VPC endpoint", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "作成時にAmazon VPCのどのプロパティを指定する必要がありますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "The CIDR block representing the IP address range", correct: true}
+      , {description: "One or more subnets for the Amazon VPC", correct: false}
+      , {description: "The region for the Amazon VPC", correct: true}
+      , {description: "Amazon VPC Peering relationships", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "どのAmazon VPC機能を使用して、デュアルホームインスタンスを作成できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "EIP address", correct: false}
+      , {description: "ENI", correct: true}
+      , {description: "Security groups", correct: false}
+      , {description: "CGW", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
