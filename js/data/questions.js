@@ -8597,4 +8597,226 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "ほとんどの場合、安定したトラフィックをサポートするために、Webアプリケーションには4つのインスタンスが必要です。 毎月最終日に、トラフィックは3倍になります。 このトラフィックパターンを処理する費用効果の高い方法は何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Run 12 Reserved Instances all of the time.", correct: false}
+      , {description: "Run four On-Demand Instances constantly, then add eight more On-Demand Instances on the last day of each month.", correct: false}
+      , {description: "Run four Reserved Instances constantly, then add eight On-Demand Instances on the last day of each month.", correct: true}
+      , {description: "Run four On-Demand Instances constantly, then add eight Reserved Instances on the last day of each month.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "受注処理アプリケーションは、2つの予約インスタンスが10件/分を処理するキューから抽出された受注を処理します。 処理中に注文が失敗した場合、注文はペナルティなしでキューに戻されます。 週末の販売のため、キューには数百の注文がバックアップされています。 バックアップは大惨事ではありませんが、顧客が確認メールをすばやく入手できるように、バックアップを排除したいと考えています。 受注用のキューを排除する費用効果の高い方法は何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Create more queues.", correct: false}
+      , {description: "Deploy additional Spot Instances to assist in processing the orders.", correct: true}
+      , {description: "Deploy additional Reserved Instances to assist in processing the orders.", correct: false}
+      , {description: "Deploy additional On-Demand Instances to assist in processing the orders.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "新しいAmazon Elastic Compute Cloud（Amazon EC2）Windowsインスタンスを起動するときに指定する必要があるのはどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "The Amazon EC2 instance ID", correct: false}
+      , {description: "Password for the administrator account", correct: false}
+      , {description: "Amazon EC2 instance type", correct: true}
+      , {description: "Amazon Machine Image (AMI)", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "us-east-1aにm3.xlarge Linux Reservedインスタンスを購入しました。 この予約をどのように変更できますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Change it into two m3.large instances.", correct: true}
+      , {description: "Change it to a Windows instance.", correct: false}
+      , {description: "Move it to us-east-1b.", correct: true}
+      , {description: "Change it to an m4.xlarge.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "インスタンスは2つのセキュリティグループに関連付けられています。 1つ目は、ポートレスのCIDR（Classless Inter-Domain Routing）ブロック72.14.0.0/16からのリモートデスクトッププロトコル（RDP）アクセスを可能にすることです。 2つ目は、CIDRブロック0.0.0.0/0からのポート80経由のHTTPアクセスを許可します。 あなたのインスタンスに到達できるトラフィックは何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "RDP and HTTP access from CIDR block 0.0.0.0/0", correct: false}
+      , {description: "No traffic is allowed.", correct: false}
+      , {description: "RDP and HTTP traffic from 72.14.0.0/16", correct: false}
+      , {description: "RDP traffic over port 3389 from 72.14.0.0/16 and HTTP traffic over port 80 from 0.0.00/0", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のうち拡張ネットワークの機能はどれですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "More Packets Per Second (PPS)", correct: true}
+      , {description: "Lower latency", correct: true}
+      , {description: "Multiple network interfaces", correct: false}
+      , {description: "Border Gateway Protocol (BGP) routing", correct: false}
+      , {description: "Less jitter", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "高性能コンピューティング（HPC）クラスターを作成しており、インスタンス間の待ち時間と帯域幅が非常に小さくなっています。 次のどのような組み合わせによってこれが可能になりますか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Use an instance type with 10 Gbps network performance.", correct: true}
+      , {description: "Put the instances in a placement group.", correct: true}
+      , {description: "Use Dedicated Instances.", correct: false}
+      , {description: "Enable enhanced networking on the instances.", correct: true}
+      , {description: "Use Reserved Instances.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "どのAmazon Elastic Compute Cloud（Amazon EC2）の機能によって、インスタンスが他のAWS顧客のインスタンスと物理ホストを共有しないことが保証されますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Virtual Private Cloud (VPC)", correct: false}
+      , {description: "Placement groups", correct: false}
+      , {description: "Dedicated Instances", correct: true}
+      , {description: "Reserved Instances", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のうちどれがインスタンスストアに当てはまりますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Automatic backups", correct: false}
+      , {description: "Data is lost when the instance stops.", correct: true}
+      , {description: "Very high IOPS", correct: true}
+      , {description: "Charge is based on the total amount of storage provisioned.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Elastic Block Store（Amazon EBS）の機能は次のうちどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Data stored on Amazon EBS is automatically replicated within an Availability Zone.", correct: true}
+      , {description: "Amazon EBS data is automatically backed up to tape.", correct: false}
+      , {description: "Amazon EBS volumes can be encrypted transparently to workloads on the attached instance.", correct: true}
+      , {description: "Data on an Amazon EBS volume is lost when the attached instance is stopped.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Elastic Block Store（Amazon EBS）ボリュームのスナップショットを撮る必要があります。 ボリュームはどれくらいの期間利用できませんか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "It depends on the provisioned size of the volume.", correct: false}
+      , {description: "The volume will be available immediately.", correct: true}
+      , {description: "It depends on the amount of data stored on the volume.", correct: false}
+      , {description: "It depends on whether the attached instance is an Amazon EBS-optimized instance.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "スナップショットからAmazon Elastic Block Store（Amazon EBS）ボリュームをリストアしています。 データが利用可能になるまでの期間はどのくらいですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "It depends on the provisioned size of the volume.", correct: false}
+      , {description: "The data will be available immediately.", correct: true}
+      , {description: "It depends on the amount of data stored on the volume.", correct: false}
+      , {description: "It depends on whether the attached instance is an Amazon EBS-optimized instance.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "耐久性が必要なデータには、15,000の一貫性のあるIOPSを必要とするワークロードがあります。 次のステップのどのような組み合わせが必要ですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Use an Amazon Elastic Block Store (Amazon EBS)-optimized instance.", correct: true}
+      , {description: "Use an instance store.", correct: false}
+      , {description: "Use a Provisioned IOPS SSD volume.", correct: true}
+      , {description: "Use a magnetic volume.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のうちブートストラップによって達成できるものはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Install the most current security updates.", correct: false}
+      , {description: "Install the current version of the application.", correct: false}
+      , {description: "Configure Operating System (OS) services.", correct: false}
+      , {description: "All of the other choices.", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "SSHを使って新しいLinuxインスタンスに接続するにはどうすればいいですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Decrypt the root password.", correct: false}
+      , {description: "Using a certificate", correct: false}
+      , {description: "Using the private half of the instance’s key pair", correct: true}
+      , {description: "Using Multi-Factor Authentication (MFA)", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "VMのインポート/エクスポートでは、既存の仮想マシンを次のようにインポートできます。（2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Amazon Elastic Block Store (Amazon EBS) volumes", correct: false}
+      , {description: "Amazon Elastic Compute Cloud (Amazon EC2) instances", correct: true}
+      , {description: "Amazon Machine Images (AMIs)", correct: true}
+      , {description: "Security groups", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Elastic Compute Cloud（Amazon EC2）インスタンスをWeb上で扱うために使用できるのは次のうちどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Windows machine name", correct: false}
+      , {description: "Public DNS name", correct: true}
+      , {description: "Amazon EC2 instance ID", correct: false}
+      , {description: "Elastic IP address", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "正しく復号化された管理者パスワードとRDPを使用すると、起動したばかりのWindowsインスタンスにログインできなくなります。 次のうちどれが考えられる理由はありますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "There is no security group rule that allows RDP access over port 3389 from your IP address.", correct: true}
+      , {description: "The instance is a Reserved Instance.", correct: false}
+      , {description: "The instance is not using enhanced networking.", correct: false}
+      , {description: "The instance is not an Amazon EBS-optimized instance.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "通常の使用中に1,500 IOPSで1 TBの耐久性ブロックストレージが必要な作業負荷があります。 毎晩、15分間3000 IOPSが必要なExtract、Transform、Load（ETL）タスクがあります。 このワークロードに最も適したボリュームタイプは何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Use a Provisioned IOPS SSD volume at 3,000 IOPS.", correct: false}
+      , {description: "Use an instance store.", correct: false}
+      , {description: "Use a general-purpose SSD volume.", correct: true}
+      , {description: "Use a magnetic volume.", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたはElastic IPアドレスをどのように請求されますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Hourly when they are associated with an instance", correct: false}
+      , {description: "Hourly when they are not associated with an instance", correct: true}
+      , {description: "Based on the data that flows through them", correct: false}
+      , {description: "Based on the instance type to which they are attached", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
