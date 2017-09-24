@@ -9826,4 +9826,227 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "トラフィックをIPv6アドレスにルーティングするために一般的に使用されるレコードのタイプはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Aレコード", correct: false}
+      , {description: "CNAME", correct: false}
+      , {description: "AAAAレコード", correct: true}
+      , {description: "MXレコード", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "ドメイン名はどこに登録しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "あなたの地方政府機関", correct: false}
+      , {description: "ドメインレジストラを使用する", correct: true}
+      , {description: "InterNICで直接", correct: false}
+      , {description: "IANA（Internet Assigned Numbers Authority）", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "法律上の理由から、米国市民がアクセスする際に米国でホストされなければならないアプリケーションがあります。 欧州連合（EU）の市民がアクセスすれば、そのアプリケーションはEU内でホストされなければなりません。 世界中の他の市民にとっては、シドニーでアプリケーションをホストする必要があります。 これを達成するにはどのルーティングポリシーを選択する必要がありますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "レイテンシベースのルーティング", correct: false}
+      , {description: "シンプルなルーティング", correct: false}
+      , {description: "ジオロケーションルーティング", correct: true}
+      , {description: "フェールオーバールーティング", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "どのタイプのDNSレコードを使用してIPアドレスをドメイン名に解決する必要がありますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Aレコード", correct: false}
+      , {description: "CNAME", correct: false}
+      , {description: "SPFレコード", correct: false}
+      , {description: "PTRレコード", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "世界中の複数のAWS地域でWebアプリケーションをホストし、エンドユーザが可能な限り高速なネットワークパフォーマンスを得るようにDNSを設定する必要があります。 どのルーティングポリシーを適用する必要がありますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "ジオロケーションルーティング", correct: false}
+      , {description: "レイテンシベースのルーティング", correct: true}
+      , {description: "シンプルなルーティング", correct: false}
+      , {description: "加重ルーティング", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "どのDNSレコードを使用して、目的のメールサーバーへの電子メールの送信を構成する必要がありますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "SPFレコード", correct: false}
+      , {description: "Aレコード", correct: false}
+      , {description: "MXレコード", correct: true}
+      , {description: "SOAレコード", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "電子メールのなりすましやスパムを阻止するために一般的に使用されるDNSレコードはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "MXレコード", correct: false}
+      , {description: "SPFレコード", correct: true}
+      , {description: "Aレコード", correct: false}
+      , {description: "CNAME", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "WebアプリケーションのAとBのテストバージョンを展開して、最も売り上げが高いバージョンを確認します。 バージョンAに行くにはトラフィックの10％、バージョンBに行くには10％、残りを現在の製品バージョンにする必要があります。 これを達成するために選択するルーティングポリシーはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "シンプルなルーティング", correct: false}
+      , {description: "加重ルーティング", correct: true}
+      , {description: "ジオロケーションルーティング", correct: false}
+      , {description: "フェールオーバールーティング", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "すべてのゾーンがデフォルトで持つ必要があるDNSレコードはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "SPF", correct: false}
+      , {description: "TXT", correct: false}
+      , {description: "MX", correct: false}
+      , {description: "SOA", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社は、西ヨーロッパには主要生産拠点を、アジア太平洋にはDRサイトを持っています。 プライマリサイトが使用できなくなった場合、セカンダリサイトにDNSが失敗するようにDNSを構成する必要があります。 どのDNSルーティングポリシーがこれを達成するのに最適でしょうか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "加重ルーティング", correct: false}
+      , {description: "ジオロケーションルーティング", correct: false}
+      , {description: "シンプルなルーティング", correct: false}
+      , {description: "フェールオーバールーティング", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "ドメイン名を別のドメイン名に解決するには、どのタイプのDNSレコードを使用する必要がありますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Aレコード", correct: false}
+      , {description: "CNAMEレコード", correct: true}
+      , {description: "SPFレコード", correct: false}
+      , {description: "PTRレコード", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Route 53が実行しない機能はどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "ドメイン登録", correct: false}
+      , {description: "DNSサービス", correct: false}
+      , {description: "ロードバランシング", correct: true}
+      , {description: "健康チェック", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "どのDNSレコードを使用して、サーバ、ネットワーク、およびその他のアカウンティングデータに関する情報を、ホストが読み取り可能な情報を格納するために使用することができますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "TXTレコード", correct: true}
+      , {description: "MXレコード", correct: false}
+      , {description: "SPFレコード", correct: false}
+      , {description: "PTRレコード", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "ホストされているゾーンexample.comに対して許可されないリソースレコードセットはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "www.example.com", correct: false}
+      , {description: "www.aws.example.com", correct: false}
+      , {description: "www.example.ca", correct: true}
+      , {description: "www.beta.example.com", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "どのポート番号を使用してDNSによる要求を処理しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "22", correct: false}
+      , {description: "53", correct: true}
+      , {description: "161", correct: false}
+      , {description: "389", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "どのプロトコルが主にDNSによって要求を処理するために使用されていますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "伝送制御プロトコル（TCP）", correct: false}
+      , {description: "ハイパーテキスト転送プロトコル（HTTP）", correct: false}
+      , {description: "ファイル転送プロトコル（FTP）", correct: false}
+      , {description: "ユーザーデータグラムプロトコル（UDP）", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "応答データのサイズが512バイトを超えた場合、どのプロトコルがDNSで使用されますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "伝送制御プロトコル（TCP）", correct: true}
+      , {description: "ハイパーテキスト転送プロトコル（HTTP）", correct: false}
+      , {description: "ファイル転送プロトコル（FTP）", correct: false}
+      , {description: "ユーザーデータグラムプロトコル（UDP）", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Route 53で作成できる異なるホストゾーンは何ですか？" +
+                  "1.公開ホストゾーン" +
+                  "2.グローバルホストゾーン" +
+                  "3.プライベートホストゾーン"
+    , multiple_answer: false
+    , answers: [
+      {description: "1および2", correct: false}
+      , {description: "1および3", correct: true}
+      , {description: "2および3", correct: false}
+      , {description: "1,2,3", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Route 53はどのAWSリソースにクエリをルーティングできませんか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon CloudFrontディストリビューション", correct: false}
+      , {description: "弾性負荷分散ロードバランサ", correct: false}
+      , {description: "Amazon EC2", correct: false}
+      , {description: "AWS OpsWorks", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "既存のドメインのDNSサービスとしてAmazon Route 53を設定する場合に、実行する必要がある最初のステップは？"
+    , multiple_answer: false
+    , answers: [
+      {description: "ホストされたゾーンを作成します。", correct: false}
+      , {description: "リソースレコードセットを作成します。", correct: false}
+      , {description: "Amazon Route 53でドメインを登録する。", correct: false}
+      , {description: "現在のレジストラからAmazon Route 53にドメイン登録を転送します。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
