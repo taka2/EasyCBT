@@ -9606,4 +9606,224 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "次のうち、サポートされているAmazon Simple Notification Service（Amazon SNS）プロトコルではないものはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "HTTPS", correct: false}
+      , {description: "AWS Lambda", correct: false}
+      , {description: "Email-JSON", correct: false}
+      , {description: "Amazon DynamoDB", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "新しいAmazon Simple Notification Service（Amazon SNS）トピックを作成すると、次のうちどれが自動的に作成されますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazonリソース名（ARN）", correct: true}
+      , {description: "サブスクライバ", correct: false}
+      , {description: "Amazon SNSトピックを配信するためのAmazon Simple Queue Service（Amazon SQS）キュー", correct: false}
+      , {description: "メッセージ", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Notification Service（Amazon SNS）の特徴はどれですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "パブリッシャ", correct: true}
+      , {description: "リーダー", correct: false}
+      , {description: "サブスクライバ", correct: true}
+      , {description: "トピック", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Queue Service（Amazon SQS）の可視性タイムアウトのデフォルトの時間は何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "30秒", correct: true}
+      , {description: "60秒", correct: false}
+      , {description: "1時間", correct: false}
+      , {description: "12時間", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Queue Service（Amazon SQS）の可視性のタイムアウトに使用できる時間はどれくらいですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "30秒", correct: false}
+      , {description: "60秒", correct: false}
+      , {description: "1時間", correct: false}
+      , {description: "12時間", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のうち、Amazon Simple Queue Service（Amazon SQS）メッセージの有効なプロパティはどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Destination", correct: false}
+      , {description: "Message ID", correct: true}
+      , {description: "Type", correct: false}
+      , {description: "Body", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたは、新しいテイクアウト注文アプリケーションにAmazon Simple Workflow Service（Amazon SWF）を使用したいモバイルアプリケーション会社のために働いているソリューションアーキテクトです。 インタラクションする必要がある複数のワークフローがあります。 Amazon SWF環境のデザインを構成する際に、アドバイスする必要があるのは何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "それぞれが単一のワークフローを含む複数のドメインを使用し、異なるドメイン間でやりとりするワークフローを設計します。", correct: false}
+      , {description: "複数のワークフローを含む単一のドメインを使用します。 このようにして、ワークフローは相互作用することができます。", correct: true}
+      , {description: "単一のワークフローで単一のドメインを使用し、この単一のワークフロー内ですべてのアクティビティを折りたたみます。", correct: false}
+      , {description: "ワークフローは互いに対話できません。 彼らのアプリケーションにAmazon Simple Queue Service（Amazon SQS）とAmazon Simple Notification Service（Amazon SNS）を使用するほうが良いでしょう。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Workflow Service（Amazon SWF）では、次のうちどれがアクターですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Activity workers", correct: true}
+      , {description: "Workflow starters", correct: true}
+      , {description: "Deciders", correct: true}
+      , {description: "Activity tasks", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたは新しいアプリケーションを設計しており、アプリケーションのコンポーネントがしっかりと結合されていないことを保証する必要があります。 この目標を達成するために使用するさまざまなAWSクラウドサービスを決定しようとしています。 アプリケーションコンポーネント間のメッセージは複数回配信されないことがあり、タスクは同期または非同期のいずれかで完了する必要があり、タスクが完了したときの動作を決定する何らかのアプリケーションロジックが必要です。 どのアプリケーションサービスを使用しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Simple Queue Service（Amazon SQS）", correct: false}
+      , {description: "Amazon Simple Workflow Service（Amazon SWF）", correct: true}
+      , {description: "Amazon Simple Storage Service（Amazon S3）", correct: false}
+      , {description: "Amazon Simple Email Service (Amazon SES)", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Queue Service（Amazon SQS）はどのようにメッセージを配信しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Last In, First Out (LIFO)", correct: false}
+      , {description: "First In, First Out (FIFO)", correct: false}
+      , {description: "Sequentially", correct: false}
+      , {description: "Amazon SQSは、特定の順序でメッセージの配信を保証するものではありません。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "以下のオプションのうち、単一のAmazon Simple Notification Service（Amazon SNS）メッセージを複数のAmazon Simple Queue Service（Amazon SQS）キューにファンアウトする効率的な方法は何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon SNSを使用してAmazon SNSトピックを作成します。 次に、Amazon SNSトピックに送信された複数のAmazon SQSキューを作成し、購読します。", correct: true}
+      , {description: "複数のAmazon SNSトピックを購読するAmazon SQSキューを1つ作成します。", correct: false}
+      , {description: "Amazon SNSでは、各トピックに対して正確に1人の加入者しか参加できないため、ファンアウトはできません。", correct: false}
+      , {description: "Amazon SNSを使用してAmazon SNSトピックを作成します。 そのトピックにサブスクライブし、メッセージを複製するアプリケーションを作成します。 複数のAmazon SQSキューにコピーを送信する。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "アプリケーションはAmazon Simple Queue Service（Amazon SQS）のキューを頻繁にポーリングし、すぐに空のReceiveMessageResponsesを返します。 Amazon SQSのコストを削減するためにできることは何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon SQSの価格には、サービスリクエストの費用は含まれていません。 したがって、心配はありません。", correct: false}
+      , {description: "レスポンスを返す前に、短いポーリングがメッセージを長く待つためのタイムアウト値を増やします。", correct: false}
+      , {description: "メッセージの可視性値を高い数値に変更します。", correct: false}
+      , {description: "ReceiveMessageを呼び出すときに0秒を超えるWaitTimeSecondsを指定して、長いポーリングを使用します。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Queue Service（Amazon SQS）の長いポーリングタイムアウトで使用できる時間はどれくらいですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "10秒", correct: false}
+      , {description: "20秒", correct: true}
+      , {description: "30秒", correct: false}
+      , {description: "1時間", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Queue Service（Amazon SQS）の設定可能なメッセージ保持期間はどれくらいですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "30分", correct: false}
+      , {description: "4日", correct: false}
+      , {description: "30秒", correct: false}
+      , {description: "14日間", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Queue Service（Amazon SQS）のデフォルトのメッセージ保持期間は何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "30分", correct: false}
+      , {description: "4日", correct: true}
+      , {description: "30秒", correct: false}
+      , {description: "14日間", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Notification Service（Amazon SNS）はプッシュ通知サービスで、多数の受信者に個別または複数のメッセージを送信できます。 どのようなタイプのクライアントがサポートされていますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "パブリッシャおよびサブスクライバの種類をサポートするJavaおよびJavaScriptクライアント", correct: false}
+      , {description: "CおよびC++クライアントによってサポートされるプロデューサおよびコンシューマ", correct: false}
+      , {description: "パブリッシャとサブスクライバのクライアントタイプのモバイルとAMQPのサポート", correct: false}
+      , {description: "パブリッシャとサブスクライバのクライアントタイプ", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Workflow Service（Amazon SWF）では、決定者は何を担当していますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "作業の各ステップを実行する", correct: false}
+      , {description: "作業順序、タイミング、および障害条件を指定して作業調整ロジックを定義する", correct: true}
+      , {description: "ワークフローの実行", correct: false}
+      , {description: "Amazon SWFでアクティビティとワークフローを登録する", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Notification Service（Amazon SNS）のトピックは以前に使用されたトピック名で再作成できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "はい。 トピック名は、通常、同じ名前の前のトピックが削除されてから24時間後に利用可能になります。", correct: false}
+      , {description: "はい。 トピック名は、通常、同じ名前の前のトピックが削除されてから1〜3時間後に利用可能になります。", correct: false}
+      , {description: "はい。 トピック名は、通常、同じ名前の前のトピックが削除されてから30〜60秒後に利用可能になります。", correct: true}
+      , {description: "現時点では、この機能はサポートされていません。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Queue Service（Amazon SQS）のキューに異なるAWSアカウントのアクセス許可を与えるにはどうすればよいですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "アカウント情報をAWSアカウントに共有し、他のアカウントのアプリケーションでアカウントの資格情報を使用してAmazon SQSキューにアクセスできるようにします。", correct: false}
+      , {description: "AWS Identity and Access Management（IAM）でそのアカウントのユーザを作成し、キューへのアクセスを許可するIAMポリシーを確立します。", correct: false}
+      , {description: "他のアカウントへのアクセスを許可するAmazon SQSポリシーを作成します。", correct: true}
+      , {description: "これを実現するには、Amazon Virtual Private Cloud（Amazon VPC）のピアリングを使用する必要があります。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Notification Service（Amazon SNS）メッセージは、トピックに公開された後で削除できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "加入者がまだメッセージを読んでいない/持っていない場合のみ", correct: false}
+      , {description: "Amazon SNSリコールメッセージパラメータが設定されている場合のみ", correct: false}
+      , {description: "トピックにメッセージが正常に公開された後は、それを呼び出すことはできません。", correct: true}
+      , {description: "はい。 ただし、サブスクライバがAmazon SQSキューの場合にのみ削除できます。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
