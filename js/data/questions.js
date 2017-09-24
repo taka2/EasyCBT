@@ -9386,4 +9386,224 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "従来のオンライントランザクション処理（OLTP）に最適なAWSデータベースサービスはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Redshift", correct: false}
+      , {description: "Amazon Relational Database Service (Amazon RDS)", correct: true}
+      , {description: "Amazon Glacier", correct: false}
+      , {description: "Elastic Database", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "非リレーショナルデータベースに最適なAWSデータベースサービスはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Redshift", correct: false}
+      , {description: "Amazon Relational Database Service (Amazon RDS)", correct: false}
+      , {description: "Amazon Glacier", correct: false}
+      , {description: "Amazon DynamoDB", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWSでウェブサイトを運営するメディア会社のソリューションアーキテクトです。現在、Amazon EC2インスタンスには、Amazon EC2インスタンスがローカルにインストールされたAWS上のAmazon EC2インスタンスが1つあります。会社の生産環境をより弾力性のあるものにし、パフォーマンスを向上させるよう求められました。会社は、マルチAZを有効にしたAmazon RDSインスタンスにMySQLデータベースを分割することをお勧めします。これは、会社の弾力性向上の要求に対応します。これでパフォーマンスを向上させる方法を提案する必要があります。同社のエンドユーザーの99％は、ウェブサイト上で追加の記事を読む雑誌購読者であるため、エンドユーザーの1％だけがサイトにデータを書き込む必要があります。パフォーマンスを向上させるにはどうすればよいですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "ユーザーがデータを書き込む場合は、Multi-AZデータベースのセカンダリコピーに書き込まれるように接続文字列を変更します。", correct: false}
+      , {description: "接続文字列を変更して、ユーザーがデータを書き込む場合、Multi-AZデータベースのプライマリコピーに書き込まれるようにします。", correct: false}
+      , {description: "会社が読み取り複製を使用し、複数の読み取り複製にトラフィックを分散することを推奨します。", correct: true}
+      , {description: "MySQLデータベースをAmazon Redshiftに移行して、カラム型ストレージを活用し、パフォーマンスを最大化します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "オンライン分析処理（OLAP）に最適なAWSクラウドサービスはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Redshift", correct: true}
+      , {description: "Amazon Relational Database Service (Amazon RDS)", correct: false}
+      , {description: "Amazon Glacier", correct: false}
+      , {description: "Amazon DynamoDB", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "昨年、Amazon RDS（Amazon Relational Database Service）を使用して、自動バックアップを有効にした重要なアプリケーションを実行してきました。 チームメンバの1人が定期的なメンテナンスを実行していて、誤って重要なテーブルを破棄して停止しています。 停止時間を最小限に抑えながら、欠落したデータをどのように回復できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "取り消し操作を実行し、表をリカバリーします。", correct: false}
+      , {description: "最近の自動DBスナップショットからデータベースを復元します。", correct: true}
+      , {description: "削除されたテーブルのみをDBスナップショットから復元します。", correct: false}
+      , {description: "データを回復することはできません。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "どのAmazon Relational Database Service（Amazon RDS）データベースエンジンがMulti-AZをサポートしていますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "他の選択肢すべて", correct: true}
+      , {description: "Microsoft SQL Server、MySQL、およびOracle", correct: false}
+      , {description: "Oracle、Amazon Aurora、PostgreSQL", correct: false}
+      , {description: "MySQL", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "どのAmazon Relational Database Service（Amazon RDS）データベースエンジンがレプリカの読み取りをサポートしていますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Microsoft SQL ServerおよびOracle", correct: false}
+      , {description: "MySQL、MariaDB、PostgreSQL、およびAurora", correct: true}
+      , {description: "Aurora、Microsoft SQL Server、およびOracle", correct: false}
+      , {description: "MySQLとPostgreSQL", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたのチームは複数の可用性ゾーンにまたがる注文処理システムを構築しています。 テスト中、チームはアプリケーションがデータベースフェールオーバーにどのように反応するかをテストしたかったのです。 このタイプのテストをどのように有効にできますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon RDSコンソールを使用してプライマリインスタンスをリブートすることにより、複数のAZのフェールオーバーを1つの可用性ゾーンから別の可用性ゾーンに強制します。", correct: true}
+      , {description: "DBインスタンスを終了し、新しいインスタンスを作成します。 接続文字列を更新します。", correct: false}
+      , {description: "フェールオーバーを求めるサポートケースを作成します。", correct: false}
+      , {description: "フェイルオーバーをテストすることはできません。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "システム管理者は、本番データベースをAWSに移行しました。あなたの会社はAmazon CloudWatchを使用してその不動産を監視し、Amazon Simple Notification Service（Amazon SNS）を使用して携帯電話にアラームを送信します。ある夜、あなたの主要なAmazon Relational Database Service（Amazon RDS）インスタンスがダウンしたという警告が表示されます。このインスタンスでMulti-AZが有効になっています。フェールオーバーが迅速に行われるようにするにはどうすればよいですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "セカンダリインスタンスの新しいIPアドレスを指すようにドメインネームシステム（DNS）を更新し、アプリケーションをセカンダリインスタンスにフェイルオーバーさせます。", correct: false}
+      , {description: "Secure Shell（SSH）を使用してサーバーに接続し、アプリケーションが障害の発生したプライマリインスタンスではなくセカンダリインスタンスと通信できるように接続文字列を更新します。", correct: false}
+      , {description: "セカンダリインスタンスのスナップショットを作成し、このスナップショットを使用して新しいインスタンスを作成し、新しいインスタンスを指すように接続文字列を更新します。", correct: false}
+      , {description: "何もする必要はありません。接続文字列がデータベースエンドポイントを指していれば、AWSはこのエンドポイントを自動的に更新してセカンダリインスタンスを指し示します。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "専用のデータベース管理者がいない小規模な組織で働いています。 Amazon Relational Database Service（Amazon RDS）にアカウンティングバックオフィスアプリケーションをサポートするには、Microsoft SQL Server Enterprise Editionをすぐにインストールする必要があります。 あなたは何をするべきか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon RDS DBインスタンスを起動し、Bring Your Own License（BYOL）モデルでMicrosoft SQL Server Enterprise Editionを選択します。", correct: true}
+      , {description: "Amazon RDS Consoleの[ライセンスを含む]オプションを使用してSQL Server Enterprise Editionをプロビジョニングします。", correct: false}
+      , {description: "SQL Server Enterprise Editionは、コマンドラインインターフェイス（CLI）を介してのみ使用できます。 ラップトップにコマンドラインツールをインストールし、CLIを使用して新しいAmazon RDSインスタンスをプロビジョニングします。", correct: false}
+      , {description: "Amazon RDSでSQL Server Enterprise Editionを使用することはできません。 専用のAmazon Elastic Compute Cloud（Amazon EC2）インスタンスにインストールする必要があります。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "エンタープライズアプリケーション用のデータベース層を構築しており、1日中何度もアクティビティが発生します。 デフォルトのオプションとしてどのストレージタイプを選択する必要がありますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "磁気ストレージ", correct: false}
+      , {description: "汎用ソリッドステートドライブ（SSD）", correct: true}
+      , {description: "プロビジョニングされたIOPS（SSD）", correct: false}
+      , {description: "ストレージエリアネットワーク（SAN）に接続", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "潜在的に何十万人もの同時ユーザーに拡大する電子商取引Webアプリケーションを設計しています。 多数の同時ユーザーのセッション状態を保持するのに最も適しているデータベース技術はどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Relational Database Service（Amazon RDS）を使用したリレーショナルデータベース", correct: false}
+      , {description: "Amazon DynamoDBを使用したNoSQLデータベーステーブル", correct: true}
+      , {description: "Amazon Redshiftを使用したデータウェアハウス", correct: false}
+      , {description: "Amazon Simple Storage Service（Amazon S3）", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Recovery Point Objective（RPO）およびRecovery Time Objective（RTO）の要件を満たすのに役立つ次のテクニックはどれですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "DBスナップショット", correct: true}
+      , {description: "DBオプショングループ", correct: false}
+      , {description: "レプリカを読む", correct: true}
+      , {description: "マルチAZ配備", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Relational Database Service（Amazon RDS）Multi-AZを使用する場合、プライマリからの読み取り要求をどのようにオフロードできますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "プライマリが書き込みに使用されている間に、セカンダリノードに接続して読み取りを実行するクライアントの接続文字列を構成します。", correct: false}
+      , {description: "Amazon RDSは自動的にプライマリに書き込みを送信し、セカンダリに読み取りを送信します。", correct: false}
+      , {description: "読み取りレプリカDBインスタンスを追加し、読み取りレプリカを使用するようにクライアントのアプリケーションロジックを構成します。", correct: true}
+      , {description: "ElastiCacheを使用して頻繁に使用されるデータをキャッシュするためのキャッシュ環境を作成します。 アプリケーションロジックをキャッシュから読み書きするように更新します。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "大規模な受注処理システムを構築しており、データベースのセキュリティー管理を担当しています。 データを保護するためにどのような行動を取るのですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "管理者のAWS IDおよびアクセス管理（IAM）権限を調整します。", correct: true}
+      , {description: "ネットワークアクセスを制限するには、セキュリティグループとネットワークのアクセス制御リスト（ACL）を構成します。", correct: true}
+      , {description: "データベースユーザーを構成し、データベースオブジェクトへのアクセス許可を与えます。", correct: true}
+      , {description: "Amazon RDS DBインスタンスにウイルス対策ソフトウェアをインストールします。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたのチームはAmazon Relational Database Service（Amazon RDS）MySQLバックエンドを実行している一般的なWebサイトを管理しています。 マーケティング部門では、今後数千人の新しい訪問者をウェブサイトに誘導する予定のテレビCMについてお知らせしています。 どのように負荷を処理するためにデータベースを準備できますか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "より強力なインスタンスクラスを選択して、DBインスタンスを垂直方向にスケーリングします。", correct: true}
+      , {description: "読取り要求をオフロードしてアプリケーションを更新する読取りレプリカを作成します。", correct: true}
+      , {description: "ストレージを磁気ボリュームから汎用ソリッドステートドライブ（SSD）ボリュームにアップグレードします。", correct: true}
+      , {description: "Amazon Redshiftにアップグレードすると、より速いカラムストレージが可能になります。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon DynamoDBテーブルにある数百万のイメージのメタデータを管理する写真管理アプリケーションを構築しています。 写真が取得されると、画像の横にメタデータが表示されます。 どのAmazon DynamoDB操作を使用して、テーブルからメタデータ属性を取得しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "スキャン操作", correct: false}
+      , {description: "検索操作", correct: false}
+      , {description: "クエリ操作", correct: true}
+      , {description: "操作を検索", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "ソーシャルチャットアプリケーション用のメッセージを含むAmazon DynamoDBテーブルを作成しています。 このテーブルには、Username（String）、Timestamp（Number）、Message（String）という属性があります。 どの属性をパーティションキー、ソートキーとして使用しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "ユーザー名、タイムスタンプ", correct: true}
+      , {description: "ユーザー名、メッセージ", correct: false}
+      , {description: "タイムスタンプ、メッセージ", correct: false}
+      , {description: "メッセージ、タイムスタンプ", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon DynamoDBテーブルに関する次の記述はどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "グローバル・セカンダリ索引は、表の作成時にのみ作成できます。", correct: false}
+      , {description: "ローカル二次索引は、表の作成時にのみ作成できます。", correct: true}
+      , {description: "1つだけグローバルセカンダリインデックスを持つことができます。", correct: false}
+      , {description: "1つだけローカルセカンダリインデックスを持つことができます。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のうちAmazon Redshiftで動作するのに適したワークロードはどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "多忙な電子商取引注文処理ウェブサイトをサポートするトランザクションデータベース", correct: false}
+      , {description: "バックオフィス分析をサポートするレポートデータベース", correct: true}
+      , {description: "複数の異種データソースを集約するために使用されるデータウェアハウス", correct: true}
+      , {description: "数千人の同時ユーザーのセッション状態とユーザープロファイルデータを管理する", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
