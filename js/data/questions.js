@@ -9273,4 +9273,117 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "AWSクラウドサービスにアクセスするためのプリンシパルとしてAWS SDKを使用するアプリケーションを認証できるようにするには、次のどの方法がありますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "IAMユーザーを作成し、ユーザーのユーザー名とパスワードをアプリケーションの構成に保存します。", correct: false}
+      , {description: "IAMユーザーを作成し、ユーザーのアクセスキーの両方の部分をアプリケーションの構成に保存します。", correct: true}
+      , {description: "割り当てられたIAMロールを持つAmazon EC2インスタンス上でアプリケーションを実行します。", correct: true}
+      , {description: "すべてのAPI呼び出しをSSL接続で行います。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "IAMポリシーには次のうちどれがありますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Service Name", correct: true}
+      , {description: "Region", correct: false}
+      , {description: "Action", correct: true}
+      , {description: "Password", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWSアカウント管理者は、今日あなたの会社を辞めました。 管理者は、rootユーザーと個人用のIAM管理者アカウントにアクセスできました。 これらのアカウントで、彼は他のIAMアカウントとキーを生成しました。 AWSインフラストラクチャを保護するために今日、次のうちどれを実行する必要がありますか？ （4つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "パスワードを変更し、rootユーザーにMFAを追加します。", correct: true}
+      , {description: "rootユーザーにIP制限を設定します。", correct: true}
+      , {description: "IAMアカウントのキーを変更し、パスワードを変更します。", correct: true}
+      , {description: "すべてのIAMアカウントを削除します。", correct: false}
+      , {description: "管理者の個人IAMアカウントを削除します。", correct: true}
+      , {description: "すべてのAmazon EC2インスタンスを新しいロールで再起動します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のうちIAMが認可できるアクションはどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Windows ServerへのASP.NETのインストール", correct: false}
+      , {description: "Amazon Linux EC2インスタンスの起動", correct: true}
+      , {description: "Oracleデータベースのクエリ", correct: false}
+      , {description: "Amazon Simple Queue Service（Amazon SQS）キューにメッセージを追加する", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "IAMのセキュリティ機能はどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "パスワードポリシー", correct: true}
+      , {description: "Amazon DynamoDBグローバルセカンダリインデックス", correct: false}
+      , {description: "MFA", correct: true}
+      , {description: "Consolidated Billing", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon EC2の役割を使用する利点はどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "ポリシーは必要ありません。", correct: false}
+      , {description: "資格証明をAmazon EC2インスタンスに格納する必要はありません。", correct: true}
+      , {description: "鍵のローテーションは必要ありません。", correct: true}
+      , {description: "Active Directoryとの統合は自動的に行われます。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のうち一時的なセキュリティトークンに基づくものはどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Amazon EC2 roles", correct: true}
+      , {description: "MFA", correct: false}
+      , {description: "Root user", correct: false}
+      , {description: "Federation", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "セキュリティチームは、IAM管理者ユーザーアカウント（すべてのIAM機能とアカウントを構成するために使用されるアカウント）の脆弱性に非常に懸念を抱いています。 これらのアカウントをロックダウンするための手順は？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "アカウントにマルチファクタ認証（MFA）を追加します。", correct: true}
+      , {description: "ログインを米国の特定の州に限定する。", correct: false}
+      , {description: "AWSアカウントにパスワードポリシーを実装します。", correct: true}
+      , {description: "ユーザーが企業ネットワーク上にいるときにのみアクセス許可を与えるポリシーに送信元IPアドレス条件を適用します。", correct: true}
+      , {description: "アカウントにCAPTCHAテストを追加します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "ネットワークチームの担当者に、Amazon EC2インスタンスを完全に操作できるようにする必要があります。 次のうちどれがこの目標を達成していますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "EC2：*アクションを許可する新しいポリシーを作成し、NetworkTeamポリシーに名前を付けます。", correct: false}
+      , {description: "管理対象ポリシーEC2FullAccessをNetworkTeamという名前のグループに割り当て、すべてのチームメンバーのIAMユーザーアカウントをそのグループに割り当てます。", correct: true}
+      , {description: "すべてのリソースに対してEC2：*アクションを許可する新しいポリシーを作成し、そのポリシーをネットワークチームの各個人のIAMユーザーアカウントに割り当てます。", correct: true}
+      , {description: "NetworkTeam IAMグループを作成し、グループのユーザ名/パスワードを使用して各チームメンバーにAWS Management Consoleにログインさせます。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "IAMポリシーの形式は何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "XML", correct: false}
+      , {description: "キーと値のペア", correct: false}
+      , {description: "JSON", correct: true}
+      , {description: "タブ区切りテキスト", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
