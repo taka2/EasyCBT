@@ -10049,4 +10049,114 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "次のうち、キャッシュに格納するのに適したオブジェクトはどれですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "セッション状態", correct: true}
+      , {description: "ショッピングカート", correct: true}
+      , {description: "製品カタログ", correct: true}
+      , {description: "銀行口座残高", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のうち、Amazon ElastiCacheでサポートされているキャッシュエンジンはどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "MySQL", correct: false}
+      , {description: "Memcached", correct: true}
+      , {description: "Redis", correct: true}
+      , {description: "Couchbase", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Memcachedを実行しているAmazon ElastiCacheクラスタにいくつのノードを追加できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "1", correct: false}
+      , {description: "5", correct: false}
+      , {description: "20", correct: true}
+      , {description: "100", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Redisを実行しているAmazon ElastiCacheクラスタにいくつのノードを追加できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "1", correct: true}
+      , {description: "5", correct: false}
+      , {description: "20", correct: false}
+      , {description: "100", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "アプリケーションは、Memcachedを使用して、頻繁に使用されるデータベースクエリをキャッシュします。 最小限の変更でAmazon ElastiCacheを使用するためにアプリケーションを移行するために必要な手順は？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Amazon ElastiCacheライブラリを使用するようにアプリケーションを再コンパイルします。", correct: false}
+      , {description: "構成ファイルをAmazon ElastiCacheクラスタのエンドポイントで更新します。", correct: true}
+      , {description: "アプリケーションサーバーからのアクセスを許可するようにセキュリティグループを構成します。", correct: true}
+      , {description: "Secure Shell（SSH）を使用してAmazon ElastiCacheノードに接続し、Memcachedの最新バージョンをインストールします。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Redisを実行しているAmazon ElastiCacheに保存されているデータをどのようにバックアップできますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Amazon Elastic Compute Cloud（Amazon EC2）インスタンスのイメージを作成します。", correct: false}
+      , {description: "毎晩キャッシュ環境をバックアップするように自動スナップショットを構成します。", correct: true}
+      , {description: "手動でスナップショットを作成します。", correct: true}
+      , {description: "Redisクラスタはバックアップできません。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon ElastiCacheクラスタを保護するにはどうすればいいですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Memcachedのルートパスワードを変更します。", correct: false}
+      , {description: "AWS IDおよびアクセス管理（IAM）ポリシーを使用してアプリケーションプログラミングインターフェイス（API）アクションを制限する。", correct: true}
+      , {description: "セキュリティグループを使用してネットワークアクセスを制限する。", correct: true}
+      , {description: "ネットワークアクセス制御リスト（ACL）を使用してネットワークアクセスを制限する。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたはモバイルゲームアプリケーションの開発に取り組んでおり、何百万人ものユーザーのトップスコアを追跡するためのリーダーボード機能を構築しています。 このユースケースにはどのAWSサービスが最適ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Redshift", correct: false}
+      , {description: "Memcachedを使用しているAmazon ElastiCache", correct: false}
+      , {description: "Redisを使用したAmazon ElastiCache", correct: true}
+      , {description: "Amazon Simple Storage Service（S3）", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Memcachedを使用してAmazon ElastiCacheを使用して頻繁なクエリ結果を格納する大規模なWebアプリケーションを構築しました。 ユーザトラフィックの増加に対応するため、Webホスト群とキャッシュホスト群を次の年に何度も展開する予定です。 スケーリングイベントが発生したときに必要な変更量を最小限に抑えるにはどうすればよいですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "クライアント側で自動検出を構成する", correct: true}
+      , {description: "サーバー側で自動検出を構成する", correct: false}
+      , {description: "新しいクラスタごとに構成ファイルを更新する", correct: false}
+      , {description: "Elastic Load Balancerを使用してリクエストをプロキシする", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon ElastiCacheはどのキャッシュエンジンをサポートしていますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Memcached", correct: true}
+      , {description: "Redis", correct: true}
+      , {description: "Membase", correct: false}
+      , {description: "Couchbase", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
