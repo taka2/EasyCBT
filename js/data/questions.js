@@ -10159,4 +10159,226 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "Amazon CloudFrontはどのオリジンサーバーをサポートしていますか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Amazon Route 53ホストゾーン", correct: false}
+      , {description: "Amazon Simple Storage Service（Amazon S3）バケット", correct: true}
+      , {description: "Amazon Elastic Compute Cloud（Amazon EC2）上で動作するHTTPサーバー", correct: true}
+      , {description: "Amazon EC2自動スケーリンググループ", correct: false}
+      , {description: "オンプレミスで実行されているHTTPサーバー", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次の中でAmazon CloudFrontの有効な使用例はどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "急速に変化する動的コンテンツを使用して、世界中のユーザーをサポートする一般的なソフトウェアダウンロードサイト", correct: true}
+      , {description: "従業員にトレーニングビデオを提供する企業Webサイト。 ほとんどの従業員は同じ都市の2つの企業キャンパス内にあります。", correct: false}
+      , {description: "有償の加入者にのみ配信されるコンテンツを必要とする頻繁に使用されるビデオおよび音楽ストリーミングサービス", correct: true}
+      , {description: "グローバルな人材を支援する法人向けのWebサイト。 サイトには機密データが含まれているため、すべてのユーザーは企業の仮想プライベートネットワーク（VPN）を介して接続する必要があります。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Storage Service（Amazon S3）バケツの静的コンテンツ（主にイメージとCSSファイル）と、Amazon Elastic Compute Cloud（Amazon EC2）上で動作するPHP Webアプリケーションが現在提供している動的コンテンツの両方を含むWebアプリケーションがあります。 Amazon CloudFrontのどの機能を使用して、このアプリケーションを単一のAmazon CloudFrontディストリビューションでサポートすることができますか？（2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Multiple Origin Access Identifiers", correct: false}
+      , {description: "Multiple signed URLs", correct: false}
+      , {description: "Multiple origins", correct: true}
+      , {description: "Multiple edge locations", correct: false}
+      , {description: "Multiple cache behaviors", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたは、PCとモバイルデバイスの両方でエンドユーザーにビデオファイルを提供するメディア共有Webアプリケーションを構築しています。 メディアファイルはAmazon Simple Storage Service（Amazon S3）バケットにオブジェクトとして格納されますが、Amazon CloudFrontを通じて配信されます。 Amazon CloudFrontだけがAmazon S3バケット内のオブジェクトにアクセスできるようにする最も簡単な方法は何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon S3オブジェクトごとに署名付きURLを作成します。", correct: false}
+      , {description: "Amazon CloudFront Origin Access Identifier（OAI）を使用します。", correct: true}
+      , {description: "公開鍵と秘密鍵は、署名付きのCookieで使用します。", correct: false}
+      , {description: "AWS IDおよびアクセス管理（IAM）バケットポリシーを使用します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "貴社のデータセンターは完全に満杯ですが、販売グループは200TBの製品ビデオを保管する必要があると判断しました。 このビデオは過去数年間に作成されたもので、最も最近のものは最も頻繁にセールスによってアクセスされます。 データはローカルにアクセスする必要がありますが、このデータを格納するローカルストレージデバイスをインストールするスペースはデータセンターにありません。 どのAWSクラウドサービスが販売の要件を満たしますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWS Storage Gateway Gateway-Storedボリューム", correct: false}
+      , {description: "Amazon EBSボリュームが接続されたAmazon Elastic Compute Cloud（Amazon EC2）インスタンス", correct: false}
+      , {description: "AWS Storage Gateway Gateway-Cached volumes", correct: true}
+      , {description: "AWSインポート/エクスポートディスク", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "既存のオンプレミスActive Directoryとの信頼関係を確立せずに、既存のMicrosoft Active Directory機能をAmazon Virtual Private Cloud（Amazon VPC）に拡張したいと考えています。 この目標を達成するための最良のアプローチはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWSディレクトリサービスADコネクタを作成して接続します。", correct: false}
+      , {description: "AWS Directory Service Simple ADを作成して接続します。", correct: true}
+      , {description: "Microsoft Active Directory（Enterprise Edition）用のAWSディレクトリサービスを作成して接続します。", correct: false}
+      , {description: "他の選択肢のいずれでもない。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWSの復号化を決して終了しないAWS鍵管理サービス（AWS KMS）の鍵は、以下のいずれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWS KMS data keys", correct: false}
+      , {description: "Envelope encryption keys", correct: false}
+      , {description: "AWS KMS Customer Master Keys (CMKs)", correct: true}
+      , {description: "A and C", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWS Key Management Service（AWS KMS）がデータを暗号化するために使用する暗号方式はどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "パスワードベースの暗号化", correct: false}
+      , {description: "非対称", correct: false}
+      , {description: "共有秘密", correct: false}
+      , {description: "エンベロープ暗号化", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "アカウントでAPI（アプリケーションプログラムインターフェイス）の呼び出しを記録し、ログファイルをAmazon Simple Storage Service（Amazon S3）バケットに配信するAWSサービスはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWS CloudTrail", correct: true}
+      , {description: "Amazon CloudWatch", correct: false}
+      , {description: "Amazon Kinesis", correct: false}
+      , {description: "AWSデータパイプライン", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWS KMSで暗号文を復号しようとしていますが、復号化操作に失敗しています。 次のうちどれが原因が考えられますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "秘密鍵が暗号文の公開鍵と一致しません。", correct: false}
+      , {description: "プレーンテキストは暗号化コンテキストとともに暗号化されており、Decrypt APIを呼び出すときには同一の暗号化コンテキストを提供していません。", correct: true}
+      , {description: "解読しようとしている暗号文が無効です。", correct: true}
+      , {description: "正しい対称鍵をDecrypt APIに提供していません。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社には30年分の財務記録があり、15TBのオンプレミスストレージを使用します。 これらの記録を維持することが規制されていますが、今年は誰もこのデータを要求してこなかった会社で働いています。 同社のデータセンターが既にインターネット接続の帯域幅を満たしていることを考えると、最も適切なクラウドストレージにデータを格納する代替手段は何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Simple Storage Service（Amazon S3）へのAWSインポート/エクスポート", correct: false}
+      , {description: "Amazon GlacierへのAWSインポート/エクスポート", correct: true}
+      , {description: "Amazon Kinesis", correct: false}
+      , {description: "Amazon Elastic MapReduce（AWS EMR）Glacier", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社は、フランチャイズ店舗のすべての場所で販売店からの情報を収集します。 毎月、これらのプロセスはAmazon Simple Storage Service（Amazon S3）に格納されている200TBの情報を収集します。 このデータから知識を収集するために、24時間を要する分析ジョブが実行されます。 次のうち、これらの分析を費用効果の高い方法で実行できるのはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "永続的なAmazon Elastic MapReduce（Amazon EMR）クラスタにデータをコピーし、MapReduceジョブを実行します。", correct: false}
+      , {description: "Amazon S3バケットの情報を読み取り、Amazon Kinesisストリームを介して実行するアプリケーションを作成します。", correct: false}
+      , {description: "一時的なAmazon EMRクラスタを実行し、Amazon S3で直接データに対してMapReduceジョブを実行します。", correct: true}
+      , {description: "d2.8xlarge（32 vCPU、244GB RAM）Amazon Elastic Compute Cloud（Amazon EC2）インスタンスを起動し、アプリケーションを実行して各オブジェクトを順次読み込んで処理します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "飛行中の無制限のデータストリームを処理できるサービスはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Kinesis Firehose", correct: false}
+      , {description: "Amazon Elastic MapReduce（Amazon EMR）", correct: false}
+      , {description: "Amazon Redshift", correct: false}
+      , {description: "Amazon Kinesis Streams", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "どのようなサービスの組み合わせにより、毎日50TBのデータをAmazonストレージにコピーし、Hadoopでデータを処理し、結果を大規模なデータウェアハウスに格納することができますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Kinesis, Amazon Data Pipeline, Amazon Elastic MapReduce (Amazon EMR), and Amazon Elastic Compute Cloud (Amazon EC2)", correct: false}
+      , {description: "Amazon Elastic Block Store (Amazon EBS), Amazon Data Pipeline, Amazon EMR, and Amazon Redshift", correct: false}
+      , {description: "Amazon Simple Storage Service (Amazon S3), Amazon Data Pipeline, Amazon EMR, and Amazon Redshift", correct: true}
+      , {description: "Amazon S3, Amazon Simple Workflow, Amazon EMR, and Amazon DynamoDB", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社には、2秒ごとに更新を送信する全国の気象ステーションが50,000台あります。 このデータストリームを取り込んで、Amazon Simple Storage Service（Amazon S3）に保存して後で処理できるようにするサービスはありますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Simple Queue Service（Amazon SQS）", correct: false}
+      , {description: "Amazon Kinesis Firehose", correct: true}
+      , {description: "Amazon Elastic Compute Cloud（Amazon EC2）", correct: false}
+      , {description: "Amazon Data Pipeline", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの組織はChefをデプロイ自動化に大いに利用しています。 Chefレシピと統合して新しいアプリケーションサーバーインスタンスを開始し、アプリケーションサーバーソフトウェアを構成し、アプリケーションを展開するAWSクラウドサービスは？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWS Elastic Beanstalk", correct: false}
+      , {description: "Amazon Kinesis", correct: false}
+      , {description: "AWS OpsWorks", correct: true}
+      , {description: "AWS CloudFormation", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "企業はテストプラットフォームをAWSに移行し、開発者にクリーンなテストおよび開発環境への即時アクセスを提供します。 会社の主な要件は、環境を簡単に再現性と代替性にすることです。 どのようなサービスが企業の要件を満たすのに役立ちますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWS CloudFormation", correct: true}
+      , {description: "AWS Config", correct: false}
+      , {description: "Amazon Redshift", correct: false}
+      , {description: "AWS Trusted Advisor", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "貴社のIT管理チームは、お金を節約し、システムの可用性とパフォーマンスを向上させ、セキュリティのギャップを埋めるための推奨事項を提供するオンラインツールを探しています。 経営陣を助けることができるものは何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Cloud-init", correct: false}
+      , {description: "AWS Trusted Advisor", correct: true}
+      , {description: "AWS Config", correct: false}
+      , {description: "Configuration Recorder", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社は、内部ポリシーとベストプラクティスの遵守を確実にするためにAWS環境の頻繁な監査を必要とするデータを処理します。 これらの監査を実行するには、関連する構成変更を評価するために、リソースの履歴構成にアクセスする必要があります。 どのサービスが監査に必要な情報を提供しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWS Config", correct: true}
+      , {description: "AWS鍵管理サービス（AWS KMS）", correct: false}
+      , {description: "AWS CloudTrail", correct: false}
+      , {description: "AWS OpsWorks", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "すべてのWebサイトの展開は現在、貴社の開発チームによって行われています。 ウェブサイトの人気が高まる中、同社は導入の機敏性を高める方法を模索しています。 どのAWSクラウドサービスが、サーバ、データベース、ロードバランサ、ファイアウォール、ネットワークの管理や設定に時間を費やすのではなく、コードを書くことに集中することができますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWS Config", correct: false}
+      , {description: "AWS Trusted Advisor", correct: false}
+      , {description: "Amazon Kinesis", correct: false}
+      , {description: "AWS Elastic Beanstalk", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
