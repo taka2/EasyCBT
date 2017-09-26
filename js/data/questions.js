@@ -10381,4 +10381,226 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "データセキュリティのためにAWSが実行する運用プロセスはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "任意の共有ストレージデバイスに格納されたデータのAdvanced Encryption Standard（AES）-256暗号化", correct: false}
+      , {description: "業界標準のプラクティスを使用したストレージデバイスの廃止", correct: true}
+      , {description: "Amazon Elastic Block Store（Amazon EBS）ボリュームとAmazon EBSスナップショットのバックグラウンドウイルススキャン", correct: false}
+      , {description: "複数のAWS領域にわたるデータの複製", correct: false}
+      , {description: "Amazon EBSボリュームがマウントされていない場合のAmazon EBSデータの安全な拭き取り", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Windows Amazon Elastic Compute Cloud（Amazon EC2）インスタンスを起動し、起動時のインスタンスにAmazon EC2キーペアを指定しました。 次のうち、インスタンスへのログイン方法を正確に説明しているのはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon EC2キーペアを使用して、Secure Shell（SSH）経由でインスタンスに安全に接続します。", correct: false}
+      , {description: "インスタンスにログインするには、AWS IDおよびアクセス管理（IAM）ユーザーX.509証明書を使用します。", correct: false}
+      , {description: "Amazon EC2キーペアを使用して管理者パスワードを復号化し、管理者としてリモートデスクトッププロトコル（RDP）経由でインスタンスに安全に接続します。", correct: true}
+      , {description: "キーペアは必要ありません。 RDP経由でインスタンスに安全に接続します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "データベースセキュリティグループは、仮想プライベートクラウド（VPC）の内部にあるデータベースインスタンスへのネットワークアクセスを制御し、デフォルトではアクセスを許可しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "データベースが使用する標準ポートの任意のIPアドレスからのアクセスは、デフォルトで提供されます。", correct: false}
+      , {description: "任意のポートの任意のIPアドレスからのアクセスは、デフォルトでDBセキュリティグループに提供されます。", correct: false}
+      , {description: "デフォルトではアクセスは提供されておらず、DBセキュリティグループにルールを明示的に追加する必要があります。", correct: true}
+      , {description: "データベース接続文字列のアクセスは、デフォルトでDBセキュリティグループで提供されます。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Simple Storage Service（Amazon S3）は、サービスサイド暗号化（SSE）でデータを暗号化するために、どの暗号化アルゴリズムを使用していますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "高度暗号化標準（AES）-256", correct: true}
+      , {description: "RSA 1024", correct: false}
+      , {description: "RSA 2048", correct: false}
+      , {description: "AES-128", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWSアイデンティティとアクセス管理（IAM）ユーザが一度にアクティブにできるアクセスキーの数はいくつですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "0", correct: false}
+      , {description: "1", correct: false}
+      , {description: "2", correct: true}
+      , {description: "3", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWSが顧客と一緒に採用しているセキュリティモデルの名前はどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "共有秘密モデル", correct: false}
+      , {description: "共有責任モデル", correct: true}
+      , {description: "共有秘密鍵モデル", correct: false}
+      , {description: "秘密鍵責任モデル", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWS Key Management Service（AWS KMS）を利用してデータを暗号化するAmazon Redshiftクラスタで使用されるスキームについて、次のうちどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Redshiftは、暗号化に1層のキーベースのアーキテクチャを使用します。", correct: false}
+      , {description: "Amazon Redshiftは、暗号化に2層のキーベースのアーキテクチャを使用しています。", correct: false}
+      , {description: "Amazon Redshiftは、暗号化に3層のキーベースのアーキテクチャを使用しています。", correct: false}
+      , {description: "Amazon Redshiftは、暗号化に4層のキーベースのアーキテクチャを使用しています。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "ロードバランサがSSL（Secure Sockets Layer）接続に使用される暗号を判別することを保証する次のElastic Load Balancingオプションはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "クライアントサーバー暗号スイート", correct: false}
+      , {description: "サーバー暗号のみ", correct: false}
+      , {description: "最初のサーバー暗号", correct: false}
+      , {description: "サーバーの注文の優先順位", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon WorkSpacesはどのテクノロジーを使用してデータセキュリティを提供していますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "SSL（Secure Sockets Layer）/ TLS（Transport Layer Security）", correct: false}
+      , {description: "高度暗号化標準（AES）-256", correct: false}
+      , {description: "PC-over-IP（PCoIP）", correct: true}
+      , {description: "AES-128", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "ソリューションアーキテクトとして、AWSでシステムをどのように構築する必要がありますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "最低限のコストで設計してください", correct: false}
+      , {description: "Amazon Simple Storage Service（Amazon S3）の耐久性を活用するには、AWSの使用方法を設計する必要があります。", correct: false}
+      , {description: "複数のリージョンと可用性ゾーンを利用するには、AWSの使用法を設計する必要があります。", correct: true}
+      , {description: "Amazon Elastic Compute Cloud（Amazon EC2）自動スケーリングを使用して設計して、必要に応じて容量を確保する必要があります。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWS MFA（AWS Multi-Factor Authentication）トークンで使用されるセキュリティスキームはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "時間ベースワンタイムパスワード（TOTP）", correct: true}
+      , {description: "完璧な前方秘密（PFC）", correct: false}
+      , {description: "エフェメラルディフィーヘルマン（EDH）", correct: false}
+      , {description: "スプリットキー暗号化（SKE）", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "DynamoDBテーブルには、保護が必要な機密データが含まれている場合があります。 次のうちDynamoDBテーブルの内容を保護する方法はどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "DynamoDBはデフォルトですべてのデータサーバー側を暗号化するため、何も必要ありません。", correct: false}
+      , {description: "DynamoDBは、クライアント側の暗号化ライブラリソリューションで暗号化されたデータを格納してから、DynamoDBに格納することができます。", correct: true}
+      , {description: "DynamoDBは格納されているすべてのデータを難読化し、暗号化は不要です。", correct: false}
+      , {description: "DynamoDBをAWS Key Management Serviceと共に使用して、データを暗号化してからDynamoDBにデータを格納することができます。", correct: true}
+      , {description: "DynamoDBは、保護が必要な機密情報の格納には使用しないでください。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "EC2-ClassicにAmazon Linux Elastic Compute Cloud（Amazon EC2）インスタンスを起動し、インスタンスがSystem Status CheckおよびInstance Status Checkに合格しました。 セキュアシェル（SSH）経由でインスタンスに安全に接続しようとすると、「警告：非公開のプライベートキーファイル」という応答が返され、ログインが失敗します。 次のうちログインに失敗した原因はどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "間違った秘密鍵を使用しています。", correct: false}
+      , {description: "プライベートキーのアクセス許可は、キーを信頼するにはあまりにも安全ではありません。", correct: true}
+      , {description: "セキュリティグループルールによって接続がブロックされています。", correct: false}
+      , {description: "セキュリティグループルールは秘密キーに関連付けられていません。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次の公的アイデンティティプロバイダのどれがAmazon Cognito Identityによってサポートされていますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon", correct: false}
+      , {description: "Google", correct: false}
+      , {description: "Facebook", correct: false}
+      , {description: "その他の選択肢全て", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Elastic Compute Cloud（Amazon EC2）インスタンスからインスタンスへのアクセスキーを必要とせずにプラットフォームへの呼び出しを許可するように設計されたAWSの機能は何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWS Identity and Access Management（IAM）インスタンスプロファイル", correct: true}
+      , {description: "IAMグループ", correct: false}
+      , {description: "IAMロール", correct: false}
+      , {description: "Amazon EC2のキーペア", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のAmazon仮想プライベートクラウド（Amazon VPC）要素のどれがステートレスなファイアウォールとして機能しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "セキュリティグループ", correct: false}
+      , {description: "ネットワークアクセスコントロールリスト（ACL）", correct: true}
+      , {description: "ネットワークアドレス変換（NAT）インスタンス", correct: false}
+      , {description: "Amazon VPCエンドポイント", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のうちAWSデジタル署名計算プロセスの最新バージョンはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "署名バージョン1", correct: false}
+      , {description: "署名バージョン2", correct: false}
+      , {description: "署名バージョン3", correct: false}
+      , {description: "署名バージョン4", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "単一の顧客専用のハードウェアでAmazon Elastic Compute Cloud（Amazon EC2）インスタンスを起動できるAmazon Virtual Private Cloud（Amazon VPC）内の機能の名前はどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon VPC-based tenancy", correct: false}
+      , {description: "Dedicated tenancy", correct: true}
+      , {description: "Default tenancy", correct: false}
+      , {description: "Host-based tenancy", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のうち、Amazon Elastic MapReduce（Amazon EMR）がクラスタへのアクセスをどのように保護するかについて説明していますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "マスターノードとスレーブノードは、Amazon仮想プライベートクラウド（Amazon VPC）に起動されます。", correct: false}
+      , {description: "マスターノードは、クラスタ起動時に指定されたキーから仮想プライベートネットワーク（VPN）接続をサポートします。", correct: false}
+      , {description: "マスタノードは、セキュアシェル（SSH）とサービスアクセスを許可するセキュリティグループに投入され、スレーブノードはマスターノードとの通信のみを許可する別のセキュリティグループに起動されます。", correct: true}
+      , {description: "マスターノードとスレーブノードは、SSHとサービスアクセスを許可するセキュリティグループに投入されます。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "単一のハードウェアコンポーネントの障害によるデータ損失を防ぐため、Amazon Elastic Block Storage（Amazon EBS）は自動的にEBSボリュームデータを次のどれかに複製しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon EBSは、地域内の同じ可用性ゾーン内のEBSボリュームデータを複製します。", correct: true}
+      , {description: "Amazon EBSは、同じ地域内の他の可用性ゾーン間でEBSボリュームデータを複製します。", correct: false}
+      , {description: "Amazon EBSは、EBSボリュームデータを、同じリージョン内の可用性ゾーンと可用性ゾーン内の他の1つのリージョンに複製します。", correct: false}
+      , {description: "Amazon EBSは、EBSボリュームデータを、他のすべての地域の同じ地域と可用性ゾーンの可用性ゾーンに複製します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
