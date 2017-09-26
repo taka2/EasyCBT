@@ -10603,4 +10603,147 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "AWSは、さまざまな異なるメカニズムを使用して、セキュリティおよび制御環境に関して顧客と通信します。 次のうち有効なメカニズムはどれですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "業界の認定と独立したサードパーティのアテステーションの取得", correct: true}
+      , {description: "Webサイト、ホワイトペーパー、ブログを介したセキュリティとAWSコントロールの実践に関する情報の公開", correct: true}
+      , {description: "顧客に証明書、レポート、およびその他の文書を直接提供する場合もあります（場合によってはNDAの下で）", correct: true}
+      , {description: "顧客の監査人がAWSデータセンター、インフラストラクチャ、シニアスタッフに直接アクセスできるようにする", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWS共有責任モデルについては、次のうちどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "共有責任モデルは、セキュリティの考慮事項に限定されています。 それはITコントロールにまで及んでいません。", correct: false}
+      , {description: "共有責任モデルは、SOC 1タイプIIに準拠したい顧客にのみ適用されます。", correct: false}
+      , {description: "共有責任モデルは、セキュリティ上の考慮事項に限定されるものではありません。 それはITコントロールにも及んでいます。", correct: true}
+      , {description: "共有責任モデルは、ISO 27001に準拠したい顧客にのみ適用されます。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWSは、IT管理情報を次のいずれの方法で顧客に提供していますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "特定のコントロール定義を使用するか、または一般的なコントロール標準コンプライアンス", correct: true}
+      , {description: "特定のコントロール定義を使用するか、SAS 70", correct: false}
+      , {description: "一般的なコントロールの標準準拠を使用し、ISO 27001", correct: false}
+      , {description: "ISO 27001およびSOC 1タイプII", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWSの有効なレポート、認証、または第三者の認証はどれですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "SOC 1", correct: true}
+      , {description: "PCI DSSレベル1", correct: true}
+      , {description: "SOC 4", correct: false}
+      , {description: "ISO 27001", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のうちどれが当てはまりますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "ITガバナンスは、IT資産をAWSプラットフォームに導入しているにもかかわらず、依然として顧客の責任です。", correct: true}
+      , {description: "AWSプラットフォームは、レベル1のPCI DSS準拠です。顧客は、このプラットフォームにWebアプリケーションを導入することができ、自動的にPCI DSSに準拠します。", correct: false}
+      , {description: "共有責任モデルはITセキュリティにのみ適用されます。 ガバナンスには関係しません。", correct: false}
+      , {description: "AWSはリスク管理を非常に重視しておらず、AWSインフラストラクチャのリスクを軽減することはお客様の責任です。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWS環境のリスクとコンプライアンスのメリットについては、次のうちどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "さまざまな認定およびサードパーティのアテステーションに準拠するためには、ワークロードをAWSクラウドに完全に移行する必要があります。", correct: false}
+      , {description: "さまざまな認定および第三者のアテステーションに準拠するためには、ワークロードの重要なコンポーネントをAWSクラウドに完全に移行する必要がありますが、重要ではないコンポーネントはAWSクラウドに移行しないでください。", correct: false}
+      , {description: "ワークロードのクリティカルでないコンポーネントは、さまざまな認定およびサードパーティのアテステーションに準拠するために、AWSクラウドに完全に移行する必要がありますが、重要なコンポーネントはAWSクラウドにはありません。", correct: false}
+      , {description: "ワークロードのいくつか、多く、またはすべてのコンポーネントをAWSクラウドに移行することができますが、ワークロード全体がさまざまな認定およびサードパーティのアテステーションに準拠していることを保証することは、お客様の責任です。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "可用性ゾーンを最もよく表している次の文はどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "各可用性ゾーンは、冗長電源とネットワーク/接続性を備えた単一の個別データセンターで構成されています。", correct: false}
+      , {description: "各可用性ゾーンは、冗長電源とネットワーク/接続性を備えた複数の個別のデータセンターで構成されています。", correct: true}
+      , {description: "各可用性ゾーンは、複数の個別領域で構成され、それぞれが冗長電源とネットワーク/接続性を備えた単一のデータセンターを備えています。", correct: false}
+      , {description: "各アベイラビリティゾーンは、共有電源および冗長ネットワーキング/接続を備えた複数の個別のデータセンターで構成されています。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "脆弱性スキャンおよびAWSプラットフォームの脅威評価に関して、次の記述のうちどれが当てはまりますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "AWSは、公開されている脆弱性のエンドポイントIPアドレスのスキャンを定期的に実行します。", correct: true}
+      , {description: "AWSによって実行されるスキャンには、顧客インスタンスが含まれます。", correct: false}
+      , {description: "AWSセキュリティは、特定された脆弱性を是正するよう適切な関係者に通知します。", correct: true}
+      , {description: "お客様は事前の通知なしにいつでも独自のスキャンを実行できます。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWSに対する顧客のリスクとコンプライアンスのコミュニケーション責任は、次のどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWSと顧客は、常にセキュリティと制御環境情報を互いに通信します。", correct: false}
+      , {description: "AWSは、オンラインでAWSのセキュリティと管理の実践に関する情報をNDAの顧客に直接公開しています。 顧客は、AWSにその使用と設定を伝える必要はありません。", correct: true}
+      , {description: "顧客は常にAWSにその使用と設定を伝えます。 AWSは、セキュリティ上の理由から、AWSのセキュリティおよび制御プラクティスを顧客に伝えません。", correct: false}
+      , {description: "顧客とAWSの両方は、セキュリティと管理の慣行を完全に機密に保ち、すべての関係者に最高のセキュリティを保証するためにそれらを共有しません。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "リスク管理については、次のうちどれが当てはまりますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "AWSは戦略的な事業計画を策定しません。 リスク管理と緩和はまったく顧客の責任です。", correct: false}
+      , {description: "AWSは、あらゆるリスクを特定し、そのリスクを軽減または管理するためのコントロールを実施するための戦略的ビジネス計画を策定しました。 顧客は、独自のリスク管理計画を策定し、維持する必要はありません。", correct: false}
+      , {description: "AWSは、あらゆるリスクを識別するための戦略的ビジネス計画を策定し、そのリスクを緩和または管理するための管理を実施しています。 また、お客様は、関連する統制および認証に準拠していることを確認するために、独自のリスク管理計画を策定および維持する必要があります。", correct: true}
+      , {description: "AWSも顧客もリスク管理について心配する必要はないため、いずれの当事者からも計画は必要ありません。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWSクラウドサービスの安全な提供のために、AWSコントロール環境が用意されています。 集団管理環境に明示的に含まれていないのは次のうちどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "人", correct: false}
+      , {description: "エネルギー", correct: true}
+      , {description: "技術", correct: false}
+      , {description: "プロセス", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWS環境のセキュリティグループの構成は誰が担当しますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "顧客とAWSはともに、セキュリティグループが正しく安全に構成されていることを保証する責任を負います。", correct: false}
+      , {description: "AWSは、すべてのセキュリティグループが正しく安全に構成されるようにする責任があります。 顧客はセキュリティグループの設定を心配する必要はありません。", correct: false}
+      , {description: "AWSも顧客も、セキュリティグループの設定を担当していません。 セキュリティヒューリスティックを使用して、セキュリティグループがインテリジェントかつ自動的に構成されます。", correct: false}
+      , {description: "AWSはセキュリティグループの機能をサービスとして提供しますが、お客様は自分自身のセキュリティグループを正しく安全に設定する責任があります。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "ITコントロール環境全体で強力なコンプライアンスとガバナンスを達成しようとする顧客に対して、推奨されるアプローチではないものはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "全体的なアプローチ：AWSから入手可能な情報を他のすべての情報とともにレビューし、すべての準拠要件を文書化します。", correct: false}
+      , {description: "すべてのコントロール目標が満たされ、すべてのキーコントロールが設計され、効果的に動作していることを確認します。", correct: false}
+      , {description: "組織のコンプライアンス要件を満たすように特別に設計されていない汎用コントロール目標を実装する。", correct: true}
+      , {description: "すべての第三者が所有するコントロールを特定し、文書化する。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);

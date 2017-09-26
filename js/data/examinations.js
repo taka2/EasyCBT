@@ -7,7 +7,7 @@ examinations.add([
   }
   , {
     examinationName: "AWS認定ソリューションアーキテクトアソシエイト(EN) ALL"
-    , questionCount: 200
+    , questionCount: 243
     , categories: ['AWS-Certified-Solutions-Architect-Associate-EN']
   }
   , {
