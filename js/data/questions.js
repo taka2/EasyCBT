@@ -10746,4 +10746,232 @@ questions.add([
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
+  , {
+    description: "疎結合システムを設計する場合、どのAWSサービスがコンポーネント間に中間耐久性のあるストレージレイヤーを提供しますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Amazon CloudFront", correct: false}
+      , {description: "Amazon Kinesis", correct: true}
+      , {description: "Amazon Route 53", correct: false}
+      , {description: "AWS CloudFormation", correct: false}
+      , {description: "Amazon Simple Queue Service（Amazon SQS）", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Webサーバーファームの可用性を向上させるのに役立つ次のオプションはどれですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Amazon CloudFrontを使用すると、待ち時間が短くデータ転送速度が速いエンド・ユーザーにコンテンツを配信できます。", correct: false}
+      , {description: "複数の可用性ゾーンにわたってWebサーバーインスタンスを起動します。", correct: true}
+      , {description: "自動スケーリングを活用して、失敗したインスタンスから復旧する。", correct: true}
+      , {description: "Amazon Virtual Private Cloud（Amazon VPC）にインスタンスを展開します。", correct: false}
+      , {description: "各インスタンスにさらにCPUとRAMを追加します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "次のAWSクラウドサービスのどれかがマルチAZの原則に従って設計されていますか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Amazon DynamoDB", correct: true}
+      , {description: "Amazon ElastiCache", correct: false}
+      , {description: "Elastic Load Balancing", correct: false}
+      , {description: "Amazon Virtual Private Cloud (Amazon VPC)", correct: false}
+      , {description: "Amazon Simple Storage Service (Amazon S3)", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの電子商取引サイトはステートレスに設計されており、現在Amazon Elastic Compute Cloud（Amazon EC2）のインスタンスで動作しています。 コストを管理し、可用性を向上させるためには、サイトの需要曲線に合わせてCPUとネットワークの使用率に基づいて艦隊を拡張する必要があります。 この要件を満たすにはどんなサービスが必要ですか？ （2つの回答を選択）"
+    , multiple_answer: true
+    , answers: [
+      {description: "Amazon CloudWatch", correct: true}
+      , {description: "Amazon DynamoDB", correct: false}
+      , {description: "Elastic Load Balancing", correct: false}
+      , {description: "Auto Scaling", correct: true}
+      , {description: "Amazon Simple Storage Service (Amazon S3)", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "コンプライアンス部門は、Amazon Elastic Block Storage（Amazon EBS）ボリュームのすべてのデータを暗号化する必要があるという新しい要件を義務付けました。 既存のAmazon EBSボリュームが新しい要件に準拠するためには、次のどの手順を実行しますか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "既存のAmazon EBSボリュームをAmazon仮想プライベートクラウド（Amazon VPC）に移行します。", correct: false}
+      , {description: "暗号化が有効になっている新しいAmazon EBSボリュームを作成します。", correct: true}
+      , {description: "既存のAmazon EBSボリュームプロパティを変更して、暗号化を有効にします。", correct: true}
+      , {description: "暗号化を有効にしたAmazon EBSボリュームをデータをホストするインスタンスに接続し、データを暗号化対応のAmazon EBSボリュームに移行します。", correct: false}
+      , {description: "暗号化を有効にして、暗号化されていないAmazon EBSボリュームからAmazon EBSボリュームにデータをコピーします。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "分散型サービス拒否（DDoS） - 柔軟性アーキテクチャを構築する際、Amazon Virtual Private Cloud（Amazon VPC）はどのようにして攻撃対象領域を最小限に抑えるのでしょうか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "必要なインターネットエントリポイントの数を減らす", correct: true}
+      , {description: "エンドユーザトラフィックと管理トラフィックを組み合わせる", correct: false}
+      , {description: "信頼できないエンドユーザーがアクセスできないレベルに必要なインターネットエントリポイントを難読化する", correct: true}
+      , {description: "重要ではないインターネットエントリポイントをアーキテクチャに追加する", correct: true}
+      , {description: "ネットワークを拡張してDDoS攻撃を吸収する", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "電子商取引アプリケーションは、顧客の購入時にさまざまなビジネスユニットに毎日および随時のレポートを提供します。 この結果、MySQL Amazon Relational Database Service（Amazon RDS）インスタンスへの読み取りトラフィックが非常に高くなります。 データベースのパフォーマンスに影響を与えずに読み取りトラフィックを拡大するにはどうすればよいですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon RDSインスタンスの割り当てられたストレージを増やします。", correct: false}
+      , {description: "Amazon RDSインスタンスをマルチAZ展開に変更します。", correct: false}
+      , {description: "Amazon RDSインスタンスの読み取りレプリカを作成します。", correct: true}
+      , {description: "Amazon RDSインスタンスDBエンジンのバージョンを変更します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたのウェブサイトは、Elastic Load Balancer（ELB）を使用して、複数の可用性ゾーンにわたって負荷分散されている複数のWebサーバー上でホストされています。 Amazon Route 53のどのようなレコードセットを使用して、myawesomeapp.comをあなたのウェブサイトに向けられますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "タイプAエイリアスリソースレコードセット", correct: true}
+      , {description: "MXレコードセット", correct: false}
+      , {description: "TXTレコードセット", correct: false}
+      , {description: "CNAMEレコードセット", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon Elastic Compute Cloud（Amazon EC2）インスタンス上で動作するアプリケーションにAWSクレデンシャルを配布して、補足的なAWSクラウドサービスにアクセスするための安全な方法が必要です。 どのようなアプローチを使用すると、アプリケーションのアクセスで他のユーザーからの資格情報を保護しながら要求に署名するための短期資格情報を使用できるようになりますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "各Amazon EC2インスタンスのUserDataパラメータに資格情報を追加します。", correct: false}
+      , {description: "設定ファイルを使用して、アクセスと秘密鍵をAmazon EC2インスタンスに格納します。", correct: false}
+      , {description: "アプリケーションに直接アクセスキーと秘密鍵を指定します。", correct: false}
+      , {description: "適切な権限を持つインスタンスプロファイルを使用してAmazon EC2インスタンスをプロビジョニングします。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWS Lambdaで、タスク管理システム用にAmazon DynamoDBに格納されたデータにビジネスロジックとアクセスを提供する一連のマイクロサービスを実行しています。 新しいモバイルアプリケーションをサポートするためにトラフィックに合わせて拡張する、これらのマイクロサービス用に明確に定義されたRESTfulアプリケーションプログラムインターフェイス（API）を作成する必要があります。 必要なRESTful APIを作成するのにどのAWSクラウドサービスを使用できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Kinesis", correct: false}
+      , {description: "Amazon APIゲートウェイ", correct: true}
+      , {description: "Amazon Cognito", correct: false}
+      , {description: "Amazon Elastic Compute Cloud（Amazon EC2）コンテナレジストリ", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "WordPressのWebサイトは、Auto Scalingを活用して高可用性を実現するAmazon EC2インスタンスにホストされています。 WordPressサイトのコンテンツがスケールアップおよびスケールダウンイベントによって確実に維持されるようにするには、複数のAmazon EC2インスタンス間で共有される共通のファイルシステムが必要です。 どのAWSクラウドサービスがこの要件を満たすことができますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon CloudFront", correct: false}
+      , {description: "Amazon ElastiCache", correct: false}
+      , {description: "Amazon Elastic File System（Amazon EFS）", correct: true}
+      , {description: "Amazon Elastic Beanstalk", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "個々のAmazon Elastic Compute Cloud（Amazon EC2）インスタンスからセッション状態情報を移動するようにアプリケーションを変更して、自動スケーリングによって提供される弾力性とコストの利点を活用します。 次のAWSクラウドサービスのどれがセッション状態情報を保存するための代替手段として最も適していますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon DynamoDB", correct: true}
+      , {description: "Amazon Redshift", correct: false}
+      , {description: "Amazon Storage Gateway", correct: false}
+      , {description: "Amazon Kinesis", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "メディア共有アプリケーションは、非常に短い時間で非常に大量のデータを生成しています。 バックエンドサービスは大量のトランザクションを管理できません。 バックエンドサービスへのトランザクションの流れを管理する方法は何か？"
+    , multiple_answer: false
+    , answers: [
+      {description: "インバウンドトランザクションをAmazon Relational Database Service（Amazon RDS）インスタンスに格納し、バックエンドサービスが時間の許す限り取得できるようにします。", correct: false}
+      , {description: "Amazon Simple Queue Service（Amazon SQS）キューを使用してインバウンドトランザクションをバッファリングします。", correct: true}
+      , {description: "Amazon Simple Notification Service（Amazon SNS）トピックを使用してインバウンドトランザクションをバッファリングします。", correct: false}
+      , {description: "インバウンドトランザクションをAmazon Elastic MapReduce（Amazon EMR）クラスタに格納し、バックエンドサービスが時間の許す限り取得できるようにします。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "AWS Identity and Access Management（IAM）ユーザアクセスキーを管理するためのベストプラクティスはどれですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "アクセスコードをアプリケーションコードに直接埋め込みます。", correct: false}
+      , {description: "さまざまなアプリケーションに異なるアクセスキーを使用します。", correct: true}
+      , {description: "アクセスキーを定期的に回転させます。", correct: true}
+      , {description: "未使用のアクセスキーは無期限に保管してください。", correct: false}
+      , {description: "最も機密性の高い操作のためにマルチファクタ認証（MFA）を設定します。", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "アプリケーションプログラムインターフェイス（API）呼び出しと関連するイベントの履歴をAWSアカウントにスキャンするサービスを実装する必要があります。 このサービスは、未使用のアクセス許可、特権アカウントの過剰使用、異常なログインなどを検出します。 このサービスを実装するために利用できる次のAWSクラウドサービスはどれですか？ （3つの回答を選んでください）"
+    , multiple_answer: true
+    , answers: [
+      {description: "AWS CloudTrail", correct: true}
+      , {description: "Amazon Simple Storage Service（Amazon S3）", correct: true}
+      , {description: "Amazon Route 53", correct: false}
+      , {description: "Auto Scaling", correct: false}
+      , {description: "AWS Lambda", correct: true}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "政府の規制では、コンプライアンス上の理由から、会社がすべての通信を7年間維持する必要があります。 このデータを費用対効果の高い方法で保護するための最良のストレージメカニズムは何ですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon S3", correct: false}
+      , {description: "Amazon Glacier", correct: true}
+      , {description: "Amazon EBS", correct: false}
+      , {description: "Amazon EFS", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社は、有料サブスクリプションモデルを通じてインターネットを介して顧客にメディアコンテンツを提供します。 Amazon CloudFrontを活用して、待ち時間の少ない顧客にコンテンツを配信します。 このプライベートコンテンツを有料の加入者に安全に提供するためにどのようなアプローチを使用できますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "有料のコンテンツにアクセスする認証済みのユーザーに、署名済みのAmazon CloudFront URLを提供します。", correct: true}
+      , {description: "HTTPSリクエストを使用して、Amazon CloudFrontが視聴者にコンテンツを提供する際にオブジェクトが暗号化されていることを確認します。", correct: false}
+      , {description: "有料のユーザのためにAmazon CloudFrontがメディアファイルを自動的に圧縮するように設定します。", correct: false}
+      , {description: "Amazon CloudFrontジオ制限機能を使用して、国レベルですべての有料購読メディアへのアクセスを制限します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "あなたの会社は、アマチュアプロデューサーが短編映画をさまざまなビデオ形式にフォーマットするためのトランスコードサービスを提供しています。 どのサービスがビデオを保存するための最良のオプションを提供していますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "Amazon Glacier", correct: false}
+      , {description: "Amazon Simple Storage Service (Amazon S3)", correct: true}
+      , {description: "Amazon Relational Database Service (Amazon RDS)", correct: false}
+      , {description: "AWS Storage Gateway", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "昨年のサイバー月曜日の1週間前に、企業のデータセンターで空調ユニットの故障が発生し、サーバーラックに洪水が発生しました。 結果として生じる停止は、貴社の重要な収益にかかります。 あなたのCIOはクラウドへの移行を義務づけましたが、データセンターにおける致命的な障害についてはまだ心配しています。 彼の懸念を和らげるためにあなたは何ができますか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "複数の可用性ゾーンにアーキテクチャを分散する。", correct: true}
+      , {description: "サブネットを持つAmazon Virtual Private Cloud（Amazon VPC）を使用します。", correct: false}
+      , {description: "プレースメントグループ内の処理サービスの計算を開始します。", correct: false}
+      , {description: "購入処理サービスインスタンス用のリザーブドインスタンス。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
+  , {
+    description: "Amazon仮想プライベートクラウド（Amazon VPC）には、複数のプライベートサブネットが含まれています。 これらのプライベートサブネットのインスタンスは、インターネットを介してサードパーティの支払いアプリケーションプログラムインターフェイス（API）にアクセスする必要があります。 プライベートサブネット内のインスタンスに高可用性インターネットアクセスを提供するオプションはどれですか？"
+    , multiple_answer: false
+    , answers: [
+      {description: "各可用性ゾーンにAWSストレージゲートウェイを作成し、同じ可用性ゾーン内のリソースがAWSストレージゲートウェイを使用するようにルーティングを設定します。", correct: false}
+      , {description: "各可用性ゾーンにカスタマゲートウェイを作成し、リソースが同じ可用性ゾーン内のカスタマゲートウェイを使用するようにルーティングを設定します。", correct: false}
+      , {description: "各可用性ゾーンにネットワークアドレス変換（NAT）ゲートウェイを作成し、リソースが同じ可用性ゾーン内のNATゲートウェイを使用するようにルーティングを構成します。", correct: true}
+      , {description: "1つのアベイラビリティゾーンにNATゲートウェイを作成し、リソースがすべてのアベイラビリティゾーンでそのNATゲートウェイを使用するようにルーティングを設定します。", correct: false}
+    ]
+    , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
+  }
 ]);
