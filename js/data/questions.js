@@ -8798,13 +8798,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
   , {
-    description: "通常の使用中に1,500 IOPSで1 TBの耐久性ブロックストレージが必要な作業負荷があります。 毎晩、15分間3000 IOPSが必要なExtract、Transform、Load（ETL）タスクがあります。 このワークロードに最も適したボリュームタイプは何ですか？"
+    description: "通常の使用中に1,500 IOPSで1TBの耐久性ブロックストレージが必要な作業負荷があります。 毎晩、15分間3000 IOPSが必要なExtract、Transform、Load（ETL）タスクがあります。 このワークロードに最も適したボリュームタイプは何ですか？"
     , multiple_answer: false
     , answers: [
-      {description: "Use a Provisioned IOPS SSD volume at 3,000 IOPS.", correct: false}
-      , {description: "Use an instance store.", correct: false}
-      , {description: "Use a general-purpose SSD volume.", correct: true}
-      , {description: "Use a magnetic volume.", correct: false}
+      {description: "プロビジョニングされたIOPS SSDボリュームを3,000 IOPSで使用する", correct: false}
+      , {description: "インスタンスストアを使用する", correct: false}
+      , {description: "汎用SSDボリュームを使用する", correct: true}
+      , {description: "磁気ボリュームを使用する", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8812,10 +8812,10 @@ questions.add([
     description: "あなたはElastic IPアドレスをどのように請求されますか？"
     , multiple_answer: false
     , answers: [
-      {description: "Hourly when they are associated with an instance", correct: false}
-      , {description: "Hourly when they are not associated with an instance", correct: true}
-      , {description: "Based on the data that flows through them", correct: false}
-      , {description: "Based on the instance type to which they are attached", correct: false}
+      {description: "インスタンスと関連付けられている時間ごとに", correct: false}
+      , {description: "インスタンスと関連付けられていない時間単位", correct: true}
+      , {description: "それらを流れるデータに基づいて", correct: false}
+      , {description: "それらが接続されているインスタンスのタイプに基づいて", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8878,10 +8878,10 @@ questions.add([
     description: "新しいAmazon VPCを作成するとどうなりますか？"
     , multiple_answer: false
     , answers: [
-      {description: "A main route table is created by default.", correct: true}
-      , {description: "Three subnets are created by default—one for each Availability Zone.", correct: false}
-      , {description: "Three subnets are created by default in one Availability Zone.", correct: false}
-      , {description: "An IGW is created by default.", correct: false}
+      {description: "メインルートテーブルはデフォルトで作成されます", correct: true}
+      , {description: "デフォルトで3つのサブネットが作成されます.1つは各空き領域ごとに1つです。", correct: false}
+      , {description: "1つのアベイラビリティゾーンに3つのサブネットがデフォルトで作成されます。", correct: false}
+      , {description: "IGWはデフォルトで作成されます", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8889,10 +8889,10 @@ questions.add([
     description: "US-East-1で新しいVPCを作成し、このAmazon VPC内に3つのサブネットを用意します。 次のうちどれが当てはまりますか？"
     , multiple_answer: false
     , answers: [
-      {description: "By default, these subnets will not be able to communicate with each other; you will need to create routes.", correct: false}
-      , {description: "All subnets are public by default.", correct: false}
-      , {description: "All subnets will be able to communicate with each other by default.", correct: true}
-      , {description: "Each subnet will have identical CIDR blocks.", correct: false}
+      {description: "デフォルトでは、これらのサブネットは互いに通信することができません;ルートを作成する必要があります。", correct: false}
+      , {description: "すべてのサブネットはデフォルトでパブリックです", correct: false}
+      , {description: "すべてのサブネットはデフォルトで相互に通信できます", correct: true}
+      , {description: "各サブネットは同一のCIDRブロックを持ちます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8922,10 +8922,10 @@ questions.add([
     description: "プライベートサブネットとパブリックサブネットの両方を備えたカスタムAmazon VPCを作成しました。 NATインスタンスを作成し、このインスタンスをパブリックサブネットに展開しました。 EIPアドレスを添付し、NATをルートテーブルに追加しました。 残念ながら、プライベートサブネットのインスタンスは引き続きインターネットにアクセスできません。 これは何が原因でしょうか？"
     , multiple_answer: false
     , answers: [
-      {description: "Your NAT is in a public subnet, but it needs to be in a private subnet.", correct: false}
-      , {description: "Your NAT should be behind an Elastic Load Balancer.", correct: false}
-      , {description: "You should disable source/destination checks on the NAT.", correct: true}
-      , {description: "Your NAT has been deployed on a Windows instance, but your other instances are Linux. You should redeploy the NAT onto a Linux instance.", correct: false}
+      {description: "NATはパブリックサブネットにありますが、プライベートサブネットにある必要があります。", correct: false}
+      , {description: "あなたのNATはElastic Load Balancerの背後にあるべきです", correct: false}
+      , {description: "NATのソース/宛先チェックを無効にする必要があります。", correct: true}
+      , {description: "あなたのNATはWindowsインスタンスにデプロイされていますが、他のインスタンスはLinuxです.LinuxインスタンスにNATを再デプロイする必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8933,11 +8933,11 @@ questions.add([
     description: "Amazon Elastic Block Store（Amazon EBS）に関連付けられたEIPを持つAmazon VPC内のAmazon EC2インスタンスが停止され、開始された場合、次のうちどれが発生しますか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "The EIP will be dissociated from the instance.", correct: false}
-      , {description: "All data on instance-store devices will be lost.", correct: true}
-      , {description: "All data on Amazon EBS devices will be lost.", correct: false}
-      , {description: "The ENI is detached.", correct: false}
-      , {description: "The underlying host for the instance is changed.", correct: true}
+      {description: "EIPはインスタンスから分離されます", correct: false}
+      , {description: "インスタンスストアデバイスのすべてのデータが失われます。", correct: true}
+      , {description: "Amazon EBSデバイスのすべてのデータが失われます。", correct: false}
+      , {description: "ENIは切り離されています", correct: false}
+      , {description: "インスタンスの基礎となるホストが変更されました", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8981,7 +8981,7 @@ questions.add([
       {description: "5", correct: true}
       , {description: "6", correct: false}
       , {description: "7", correct: false}
-      , {description: "There is no default maximum number of VPCs within a region.", correct: false}
+      , {description: "リージョン内には、VPCのデフォルト最大数はありません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9022,10 +9022,10 @@ questions.add([
     description: "作成時にAmazon VPCのどのプロパティを指定する必要がありますか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "The CIDR block representing the IP address range", correct: true}
-      , {description: "One or more subnets for the Amazon VPC", correct: false}
-      , {description: "The region for the Amazon VPC", correct: true}
-      , {description: "Amazon VPC Peering relationships", correct: false}
+      {description: "IPアドレス範囲を表すCIDRブロック", correct: true}
+      , {description: "Amazon VPCの1つ以上のサブネット", correct: false}
+      , {description: "Amazon VPCのリージョン", correct: true}
+      , {description: "Amazon VPCピアリング関係", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9077,10 +9077,10 @@ questions.add([
     description: "Auto Scalingの起動設定を作成するために最低限必要な要素はどれですか？"
     , multiple_answer: false
     , answers: [
-      {description: "Launch configuration name, Amazon Machine Image (AMI), and instance type", correct: true}
-      , {description: "Launch configuration name, AMI, instance type, and key pair", correct: false}
-      , {description: "Launch configuration name, AMI, instance type, key pair, and security group", correct: false}
-      , {description: "Launch configuration name, AMI, instance type, key pair, security group, and block device mapping", correct: false}
+      {description: "設定名、Amazon Machine Image（AMI）、インスタンスタイプの起動", correct: true}
+      , {description: "設定名、AMI、インスタンスタイプ、キーペアの起動", correct: false}
+      , {description: "構成名、AMI、インスタンスタイプ、キーペア、セキュリティグループの起動", correct: false}
+      , {description: "構成名、AMI、インスタンスタイプ、キーペア、セキュリティグループ、ブロックデバイスマッピングを起動する", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9088,10 +9088,10 @@ questions.add([
     description: "複数のAmazon EC2インスタンス上で実行されている会社の既存のアプリケーション用のアプリケーションロギングソリューションは、お客様が担当しています。 AWS内のアプリケーションログを集約するための最良の方法はどれですか？"
     , multiple_answer: false
     , answers: [
-      {description: "Amazon CloudWatch custom metrics", correct: false}
+      {description: "Amazon CloudWatchカスタムメトリック", correct: false}
       , {description: "Amazon CloudWatch Logs Agent", correct: true}
       , {description: "An Elastic Load Balancing listener", correct: false}
-      , {description: "An internal Elastic Load Balancing load balancer", correct: false}
+      , {description: "内部Elastic Load Balancingロードバランサ", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9110,10 +9110,10 @@ questions.add([
     description: "Auto Scalingグループは、最小サイズ値10、最大サイズ値100、および希望する容量値50で構成された新しい領域に作成します。ただし、Amazon Elastic Compute Cloud（Amazon EC2）のインスタンスが起動できません。 この行動の原因は次のうちどれですか？"
     , multiple_answer: false
     , answers: [
-      {description: "You cannot define an Auto Scaling group larger than 20.", correct: false}
-      , {description: "The Auto Scaling group maximum value cannot be more than 20.", correct: false}
-      , {description: "You did not attach an Elastic Load Balancing load balancer to the Auto Scaling group.", correct: false}
-      , {description: "You have not raised your default Amazon EC2 capacity (20) for the new region.", correct: true}
+      {description: "20より大きい自動スケーリンググループを定義することはできません", correct: false}
+      , {description: "Auto Scalingグループの最大値は20を超えることはできません", correct: false}
+      , {description: "Elastic Load BalancingロードバランサをAuto Scalingグループに接続していませんでした", correct: false}
+      , {description: "あなたは新しい地域のデフォルトAmazon EC2容量（20）を上げていませんでした。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9121,10 +9121,10 @@ questions.add([
     description: "1つのX.509証明書を持つElastic Load Balancingロードバランサの背後にある複数のAmazon EC2インスタンスに複数のHTTPS（Hypertext Transfer Protocol Secure）Webサイトをホストしたいとします。 ロードバランサに接続するクライアントに接続時に警告が表示されないように、SSL（Secure Sockets Layer）証明書をどのように構成する必要がありますか。"
     , multiple_answer: false
     , answers: [
-      {description: "Create one SSL certificate with a Subject Alternative Name (SAN) value for each website name.", correct: true}
-      , {description: "Create one SSL certificate with the Server Name Indication (SNI) value checked.", correct: false}
-      , {description: "Create multiple SSL certificates with a SAN value for each website name.", correct: false}
-      , {description: "Create SSL certificates for each Availability Zone with a SAN value for each website name.", correct: false}
+      {description: "各ウェブサイト名に対してサブジェクト代替名（SAN）の値を持つSSL証明書を1つ作成する", correct: true}
+      , {description: "サーバー名表示（SNI）値がチェックされた1つのSSL証明書を作成する", correct: false}
+      , {description: "各ウェブサイト名に対してSAN値を持つ複数のSSL証明書を作成する", correct: false}
+      , {description: "各可用性ゾーンのSSL証明書を各ウェブサイト名のSAN値で作成する", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9132,10 +9132,10 @@ questions.add([
     description: "Webアプリケーションのフロントエンドは、Elastic Load Balancingロードバランサの背後にある複数のAmazon Compute Cloud（Amazon EC2）インスタンスで構成されています。 これらのAmazon EC2インスタンスでヘルスチェックを実行するようにロードバランサを設定しました。 インスタンスがヘルスチェックに合格しなかった場合、どのステートメントが正しいでしょうか？"
     , multiple_answer: false
     , answers: [
-      {description: "The instance is replaced automatically by the load balancer.", correct: false}
-      , {description: "The instance is terminated automatically by the load balancer.", correct: false}
-      , {description: "The load balancer stops sending traffic to the instance that failed its health check.", correct: true}
-      , {description: "The instance is quarantined by the load balancer for root cause analysis.", correct: false}
+      {description: "インスタンスはロードバランサによって自動的に置き換えられます。", correct: false}
+      , {description: "インスタンスはロードバランサによって自動的に終了します。", correct: false}
+      , {description: "ロードバランサは、ヘルスチェックに失敗したインスタンスへのトラフィックの送信を停止します。", correct: true}
+      , {description: "インスタンスが原因解析のためにロードバランサによって隔離されています。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9143,10 +9143,10 @@ questions.add([
     description: "Amazon Elastic Compute Cloud（Amazon EC2）の基本監視パッケージでは、Amazon CloudWatchのメトリックはどのように使用できますか？"
     , multiple_answer: false
     , answers: [
-      {description: "Web server visible metrics such as number of failed transaction requests", correct: false}
-      , {description: "Operating system visible metrics such as memory utilization", correct: false}
-      , {description: "Database visible metrics such as number of connections", correct: false}
-      , {description: "Hypervisor visible metrics such as CPU utilization", correct: true}
+      {description: "失敗したトランザクション要求数などのWebサーバーの可視メトリック", correct: false}
+      , {description: "メモリ使用率などのオペレーティングシステムの可視メトリック", correct: false}
+      , {description: "接続数などのデータベース可視メトリック", correct: false}
+      , {description: "CPU使用率などのハイパーバイザ可視メトリック", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9176,12 +9176,12 @@ questions.add([
     description: "AWS上のAuto Scalingサービスの特徴は次のうちどれですか？ （3つの回答を選んでください）"
     , multiple_answer: true
     , answers: [
-      {description: "Sends traffic to healthy instances", correct: false}
-      , {description: "Responds to changing conditions by adding or terminating Amazon Elastic Compute Cloud (Amazon EC2) instances", correct: true}
-      , {description: "Collects and tracks metrics and sets alarms", correct: false}
-      , {description: "Delivers push notifications", correct: false}
-      , {description: "Launches instances from a specified Amazon Machine Image (AMI)", correct: true}
-      , {description: "Enforces a minimum number of running Amazon EC2 instances", correct: true}
+      {description: "正常なインスタンスにトラフィックを送ります", correct: false}
+      , {description: "Amazon Elastic Compute Cloud（Amazon EC2）インスタンスを追加または終了して変化する条件に応答する", correct: true}
+      , {description: "メトリックを収集して追跡し、アラームを設定する", correct: false}
+      , {description: "プッシュ通知を配信する", correct: false}
+      , {description: "指定されたAmazonマシンイメージ（AMI）からインスタンスを起動する", correct: true}
+      , {description: "実行しているAmazon EC2インスタンスの数を最小限に抑える", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9189,11 +9189,11 @@ questions.add([
     description: "Auto Scalingグループの一部ではなく、Auto Scalingグループが起動設定を参照するのはなぜですか？"
     , multiple_answer: false
     , answers: [
-      {description: "It allows you to change the Amazon Elastic Compute Cloud (Amazon EC2) instance type and Amazon Machine Image (AMI) without disrupting the Auto Scaling group.", correct: false}
-      , {description: "It facilitates rolling out a patch to an existing set of instances managed by an Auto Scaling group.", correct: false}
-      , {description: "It allows you to change security groups associated with the instances launched without having to make changes to the Auto Scaling group.", correct: false}
-      , {description: "All of the other choices", correct: true}
-      , {description: "None of the other choices", correct: false}
+      {description: "Auto Scalingグループを中断することなくAmazon Elastic Compute Cloud（Amazon EC2）のインスタンスタイプとAmazon Machine Image（AMI）を変更することができます。", correct: false}
+      , {description: "Auto Scalingグループによって管理されているインスタンスの既存のセットへのパッチのロールアウトを容易にする", correct: false}
+      , {description: "Auto Scalingグループに変更を加えることなく、起動したインスタンスに関連付けられたセキュリティグループを変更することができます。", correct: false}
+      , {description: "その他のすべての選択肢", correct: true}
+      , {description: "選択肢にはありません", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9205,7 +9205,7 @@ questions.add([
       , {description: "Stopped instances", correct: false}
       , {description: "Spot Instances", correct: true}
       , {description: "On-premises instances", correct: false}
-      , {description: "Already running instances if they use the same Amazon Machine Image (AMI) as the Auto Scaling group’s launch configuration and are not already part of another Auto Scaling group", correct: false}
+      , {description: "Auto Scalingグループの起動設定と同じAmazonマシンイメージ（AMI）を使用し、別のAuto Scalingグループの一部ではないインスタンスを既に実行している", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9213,12 +9213,12 @@ questions.add([
     description: "Amazon CloudWatchはどのタイプの監視計画をサポートしていますか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Basic monitoring, which is free", correct: true}
-      , {description: "Basic monitoring, which has an additional cost", correct: false}
-      , {description: "Ad hoc monitoring, which is free", correct: false}
-      , {description: "Ad hoc monitoring, which has an additional cost", correct: false}
-      , {description: "Detailed monitoring, which is free", correct: false}
-      , {description: "Detailed monitoring, which has an additional cost", correct: true}
+      {description: "無料の基本監視", correct: true}
+      , {description: "基本的な監視、追加費用がかかります", correct: false}
+      , {description: "アドホックな監視は無料です", correct: false}
+      , {description: "アドホックモニタリング、追加費用がある", correct: false}
+      , {description: "詳細な監視は無料です", correct: false}
+      , {description: "追加の費用がかかる詳細な監視", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9227,10 +9227,10 @@ questions.add([
     , multiple_answer: true
     , answers: [
       {description: "A ping", correct: true}
-      , {description: "A key pair verification", correct: false}
-      , {description: "A connection attempt", correct: true}
-      , {description: "A page request", correct: true}
-      , {description: "An Amazon Elastic Compute Cloud (Amazon EC2) instance status check", correct: false}
+      , {description: "鍵ペア検証", correct: false}
+      , {description: "接続試行", correct: true}
+      , {description: "ページリクエスト", correct: true}
+      , {description: "Amazon Elastic Compute Cloud（Amazon EC2）インスタンスの状態チェック", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9238,11 +9238,11 @@ questions.add([
     description: "接続排水を使用するElastic Load Balancingロードバランサに登録されたAmazon Elastic Compute Cloud（Amazon EC2）インスタンスが登録解除または不健全になった場合、次のうちどれが実行されますか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Immediately close all existing connections to that instance.", correct: false}
-      , {description: "Keep the connections open to that instance, and attempt to complete in-flight requests.", correct: true}
-      , {description: "Redirect the requests to a user-defined error page like “Oops this is embarrassing” or “Under Construction.”", correct: true}
-      , {description: "Forcibly close all connections to that instance after a timeout period.", correct: false}
-      , {description: "Leave the connections open as long as the load balancer is running.", correct: false}
+      {description: "直ちにそのインスタンスへの既存の接続をすべて閉じる", correct: false}
+      , {description: "接続をそのインスタンスに開いたままにして、空のリクエストを完了しようとする", correct: true}
+      , {description: "リクエストがユーザー定義のエラーページにリダイレクトされます。たとえば、\"Oops this is embarrassing \"または\"Under Construction\"", correct: true}
+      , {description: "タイムアウト期間が経過した後、そのインスタンスへのすべての接続を強制的に閉じる", correct: false}
+      , {description: "ロードバランサが実行されている間は接続を開いたままにしておいてください。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -9255,7 +9255,7 @@ questions.add([
       , {description: "Interim", correct: false}
       , {description: "Itinerant", correct: false}
       , {description: "Internal", correct: true}
-      , {description: "Hypertext Transfer Protocol Secure (HTTPS) using Secure Sockets Layer (SSL)", correct: true}
+      , {description: "Secure Sockets Layer（SSL）を使用したHypertext Transfer Protocol Secure（HTTPS）", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
