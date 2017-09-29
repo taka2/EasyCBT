@@ -8370,11 +8370,11 @@ questions.add([
     description: "Amazon Simple Storage Service（Amazon S3）オブジェクトストレージはどのようにブロックストレージおよびファイルストレージとどのように異なるのですか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Amazon S3 stores data in fixed size blocks.", correct: false}
-      , {description: "Objects are identified by a numbered address.", correct: false}
-      , {description: "Objects can be any size.", correct: false}
-      , {description: "Objects contain both data and metadata.", correct: true}
-      , {description: "Objects are stored in buckets.", correct: true}
+      {description: "Amazon S3は固定サイズのブロックにデータを格納します。", correct: false}
+      , {description: "オブジェクトは番号付きアドレスで識別されます", correct: false}
+      , {description: "オブジェクトはどんなサイズでもかまいません", correct: false}
+      , {description: "オブジェクトにはデータとメタデータの両方が含まれています", correct: true}
+      , {description: "オブジェクトはバケットに格納されています", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8382,11 +8382,11 @@ questions.add([
     description: "Amazon Simple Storage Service（Amazon S3）の適切な使用例ではないものはどれですか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Storing web content", correct: false}
-      , {description: "Storing a file system mounted to an Amazon Elastic Compute Cloud (Amazon EC2) instance", correct: true}
-      , {description: "Storing backups for a relational database", correct: false}
-      , {description: "Primary storage for a database", correct: true}
-      , {description: "Storing logs for analytics", correct: false}
+      {description: "ウェブコンテンツを保存する", correct: false}
+      , {description: "Amazon Elastic Compute Cloud（Amazon EC2）インスタンスにマウントされたファイルシステムを格納する", correct: true}
+      , {description: "リレーショナルデータベースのバックアップを保存する", correct: false}
+      , {description: "データベースのプライマリストレージ", correct: true}
+      , {description: "分析ログの保存", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8394,11 +8394,11 @@ questions.add([
     description: "Amazon Simple Storage Service（Amazon S3）の重要な特徴は何ですか？ （3つの回答を選んでください）"
     , multiple_answer: true
     , answers: [
-      {description: "All objects have a URL.", correct: true}
-      , {description: "Amazon S3 can store unlimited amounts of data.", correct: true}
-      , {description: "Objects are world-readable by default.", correct: false}
-      , {description: "Amazon S3 uses a REST (Representational State Transfer) Application Program Interface (API).", correct: true}
-      , {description: "You must pre-allocate the storage in a bucket.", correct: false}
+      {description: "すべてのオブジェクトにはURLがあります", correct: true}
+      , {description: "Amazon S3は無制限のデータを格納できます。", correct: true}
+      , {description: "オブジェクトはデフォルトで世界的に読み込み可能です", correct: false}
+      , {description: "Amazon S3はREST（Representational State Transfer）アプリケーションプログラムインタフェース（API）を使用しています。", correct: true}
+      , {description: "バケットにストレージをあらかじめ割り当てる必要があります", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8406,11 +8406,11 @@ questions.add([
     description: "Amazon Simple Storage Service（Amazon S3）データへのアクセスを制限するために使用できる機能はどれですか？ （3つの回答を選んでください）"
     , multiple_answer: true
     , answers: [
-      {description: "Enable static website hosting on the bucket.", correct: false}
-      , {description: "Create a pre-signed URL for an object.", correct: true}
-      , {description: "Use an Amazon S3 Access Control List (ACL) on a bucket or object.", correct: true}
-      , {description: "Use a lifecycle policy.", correct: false}
-      , {description: "Use an Amazon S3 bucket policy.", correct: true}
+      {description: "バケット上の静的ウェブサイトのホスティングを有効にする", correct: false}
+      , {description: "オブジェクトにあらかじめ署名されたURLを作成する", correct: true}
+      , {description: "バケットまたはオブジェクトにAmazon S3アクセス制御リスト（ACL）を使用する", correct: true}
+      , {description: "ライフサイクルポリシーを使用する", correct: false}
+      , {description: "Amazon S3バケットポリシーを使用する", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8418,11 +8418,11 @@ questions.add([
     description: "アプリケーションは重要なデータをAmazon Simple Storage Service（Amazon S3）に保存します。Amazon S3は、不注意または故意の削除から保護する必要があります。 このデータはどのように保護されますか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Use cross-region replication to copy data to another bucket automatically.", correct: false}
-      , {description: "Set a vault lock.", correct: false}
-      , {description: "Enable versioning on the bucket.", correct: true}
-      , {description: "Use a lifecycle policy to migrate data to Amazon Glacier.", correct: false}
-      , {description: "Enable MFA Delete on the bucket.", correct: true}
+      {description: "クロスリージョンレプリケーションを使用して別のバケットにデータを自動的にコピーする", correct: false}
+      , {description: "ボールトロックを設定する", correct: false}
+      , {description: "バケットのバージョン管理を有効にする", correct: true}
+      , {description: "ライフサイクルポリシーを使用してAmazon Glacierにデータを移行する", correct: false}
+      , {description: "バケットのMFA削除を有効にする", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8430,10 +8430,10 @@ questions.add([
     description: "あなたの会社はAmazon Simple Storage Service（Amazon S3）にドキュメントを保存しますが、コストを最小限に抑えたいと考えています。 ほとんどの文書は約1ヶ月間だけ積極的に使用され、次にあまり頻繁に使用されません。 ただし、要求された場合、すべてのデータを数分以内に利用できる必要があります。 どのようにこれらの要件を満たすことができますか？"
     , multiple_answer: false
     , answers: [
-      {description: "Migrate the data to Amazon S3 Reduced Redundancy Storage (RRS) after 30 days.", correct: false}
-      , {description: "Migrate the data to Amazon Glacier after 30 days.", correct: false}
-      , {description: "Migrate the data to Amazon S3 Standard – Infrequent Access (IA) after 30 days.", correct: true}
-      , {description: "Turn on versioning, then migrate the older version to Amazon Glacier.", correct: false}
+      {description: "Amazon S3 Reduced Redundancy Storage（RRS）のデータを30日後に移行する", correct: false}
+      , {description: "Amazon Glacierにデータを30日後に移行する", correct: false}
+      , {description: "Amazon S3標準にデータを移行する - 30日後にアクセスが稀になる（IA）", correct: true}
+      , {description: "バージョン管理を有効にし、古いバージョンをAmazon Glacierに移行する", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8441,10 +8441,10 @@ questions.add([
     description: "高耐久性のためにAmazon Simple Storage Service（Amazon S3）にデータを保存する方法は？"
     , multiple_answer: false
     , answers: [
-      {description: "Data is automatically replicated to other regions.", correct: false}
-      , {description: "Data is automatically replicated within a region.", correct: true}
-      , {description: "Data is replicated only if versioning is enabled on the bucket.", correct: false}
-      , {description: "Data is automatically backed up on tape and restored if needed.", correct: false}
+      {description: "データは自動的に他の地域に複製されます", correct: false}
+      , {description: "データは地域内で自動的に複製されます", correct: true}
+      , {description: "バケットでバージョニングが有効になっている場合にのみデータがレプリケートされます。", correct: false}
+      , {description: "データは自動的にテープにバックアップされ、必要に応じて復元されます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8454,10 +8454,10 @@ questions.add([
                   "https://bucket1.abc.com.s3.amazonaws.com/folderx/myfile.doc"
     , multiple_answer: false
     , answers: [
-      {description: "The object “myfile.doc” is stored in the folder “folderx” in the bucket “bucket1.abc.com.”", correct: false}
-      , {description: "The object “myfile.doc” is stored in the bucket “bucket1.abc.com.”", correct: false}
-      , {description: "The object “folderx/myfile.doc” is stored in the bucket “bucket1.abc.com.”", correct: true}
-      , {description: "The object “myfile.doc” is stored in the bucket “bucket1.”", correct: false}
+      {description: "バケット\"bucket1.abc.com \"のフォルダ\" folderx \"にオブジェクト\" myfile.doc \"が格納されています。", correct: false}
+      , {description: "オブジェクト\" myfile.doc \"はバケット\" bucket1.abc.com \"に格納されます。", correct: false}
+      , {description: "オブジェクト\" folderx / myfile.doc \"はバケット\" bucket1.abc.com \"に格納されます。", correct: true}
+      , {description: "オブジェクト\" myfile.doc \"はバケット\" bucket1 \"に格納されます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8465,11 +8465,11 @@ questions.add([
     description: "誰があなたのAmazon Simple Storage Service（Amazon S3）データにアクセスしたのか、どこから何をすべきかを記録するには？"
     , multiple_answer: false
     , answers: [
-      {description: "Enable versioning on the bucket.", correct: false}
-      , {description: "Enable website hosting on the bucket.", correct: false}
-      , {description: "Enable server access logs on the bucket.", correct: true}
-      , {description: "Create an AWS Identity and Access Management (IAM) bucket policy.", correct: false}
-      , {description: "Enable Amazon CloudWatch logs.", correct: false}
+      {description: "バケットのバージョン管理を有効にする", correct: false}
+      , {description: "バケットでウェブサイトのホスティングを有効にする", correct: false}
+      , {description: "バケット上のサーバアクセスログを有効にする", correct: true}
+      , {description: "AWSアイデンティティとアクセス管理（IAM）バケットポリシーを作成する", correct: false}
+      , {description: "Amazon CloudWatchログを有効にする", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8477,10 +8477,10 @@ questions.add([
     description: "Amazon Simple Storage Service（Amazon S3）バケットでクロスリージョンレプリケーションを有効にする理由は何ですか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "You want a backup of your data in case of accidental deletion.", correct: false}
-      , {description: "You have a set of users or customers who can access the second bucket with lower latency.", correct: true}
-      , {description: "For compliance reasons, you need to store data in a location at least 300 miles away from the first region.", correct: true}
-      , {description: "Your data needs at least five nines of durability.", correct: false}
+      {description: "誤って削除した場合のデータのバックアップが必要です", correct: false}
+      , {description: "より短い待ち時間で2番目のバケットにアクセスできるユーザーまたは顧客のセットがあります。", correct: true}
+      , {description: "コンプライアンス上の理由から、最初の地域から少なくとも300マイル離れた場所にデータを格納する必要があります。", correct: true}
+      , {description: "あなたのデータに少なくとも5つの耐久性が必要です。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8488,10 +8488,10 @@ questions.add([
     description: "あなたの会社では、外部ストレージに送信されるすべてのデータを暗号化して送信する必要があります。 どのAmazon Simple Storage Service（Amazon S3）暗号化ソリューションがこの要件を満たしますか？"
     , multiple_answer: false
     , answers: [
-      {description: "Server-Side Encryption (SSE) with AWS-managed keys (SSE-S3)", correct: false}
-      , {description: "SSE with customer-provided keys (SSE-C)", correct: false}
-      , {description: "Client-side encryption with customer-managed keys", correct: true}
-      , {description: "Server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS)", correct: false}
+      {description: "AWS管理キー付きSSE（Server-Side Encryption）（SSE-S3）", correct: false}
+      , {description: "顧客提供キー付きSSE（SSE-C）", correct: false}
+      , {description: "顧客管理キーによるクライアント側の暗号化", correct: true}
+      , {description: "AWS Key Management Service（AWS KMS）キー（SSE-KMS）を使用したサーバー側の暗号化", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8499,10 +8499,10 @@ questions.add([
     description: "Amazon Simple Storage Service（Amazon S3）バケットに格納されたデータにアクセスする一般的なWebアプリケーションがあります。 アクセスは非常に読み込みが集中し、多くのクライアントから要求される要求速度は最大500 GET /秒です。 この場合、Amazon S3のパフォーマンスとスケーラビリティをどのように高めることができますか？"
     , multiple_answer: false
     , answers: [
-      {description: "Turn on cross-region replication to ensure that data is served from multiple locations.", correct: false}
-      , {description: "Ensure randomness in the namespace by including a hash prefix to key names.", correct: true}
-      , {description: "Turn on server access logging.", correct: false}
-      , {description: "Ensure that key names are sequential to enable pre-fetch.", correct: false}
+      {description: "データが複数の場所から配信されるようにするために領域外レプリケーションを有効にする", correct: false}
+      , {description: "キー名にハッシュ接頭辞を含めることによって名前空間のランダム性を確保する", correct: true}
+      , {description: "サーバーアクセスログを有効にする", correct: false}
+      , {description: "プリフェッチを有効にするためにキー名が順次であることを確認する", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8510,10 +8510,10 @@ questions.add([
     description: "Amazon Simple Storage Service（Amazon S3）バケットでクロスリージョンレプリケーションを有効にするには、何が必要ですか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Enable versioning on the bucket.", correct: true}
-      , {description: "Enable a lifecycle rule to migrate data to the second region.", correct: false}
-      , {description: "Enable static website hosting.", correct: false}
-      , {description: "Create an AWS Identity and Access Management (IAM) policy to allow Amazon S3 to replicate objects on your behalf.", correct: true}
+      {description: "バケットのバージョン管理を有効にする", correct: true}
+      , {description: "ライフサイクルルールを有効にしてデータを第2の領域に移行する", correct: false}
+      , {description: "静的なウェブサイトのホスティングを有効にする", correct: false}
+      , {description: "AWSアイデンティティとアクセス管理（IAM）ポリシーを作成して、Amazon S3があなたのためにオブジェクトを複製できるようにする", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8521,10 +8521,10 @@ questions.add([
     description: "あなたの会社には100TBの財務記録があり、法律で7年間保管する必要があります。 経験によると、1歳以上の記録はアクセスされない可能性があります。 次のいずれかのストレージプランが、費用対効果の最も高い方法でこれらのニーズを満たしていますか？"
     , multiple_answer: false
     , answers: [
-      {description: "Store the data on Amazon Elastic Block Store (Amazon EBS) volumes attached to t2.micro instances.", correct: false}
-      , {description: "Store the data on Amazon Simple Storage Service (Amazon S3) with lifecycle policies that change the storage class to Amazon Glacier after one year and delete the object after seven years.", correct: true}
-      , {description: "Store the data in Amazon DynamoDB and run daily script to delete data older than seven years.", correct: false}
-      , {description: "Store the data in Amazon Elastic MapReduce (Amazon EMR).", correct: false}
+      {description: "t2.microインスタンスにアタッチされたAmazon Elastic Block Store（Amazon EBS）ボリュームにデータを格納する", correct: false}
+      , {description: "Amazon Simple Storage Service（Amazon S3）にライフサイクルポリシーを適用してストレージクラスを1年後にAmazon Glacierに変更し、7年後にオブジェクトを削除する", correct: true}
+      , {description: "Amazon DynamoDBにデータを保存し、7年以上経過したデータを削除するためのスクリプトを毎日実行する", correct: false}
+      , {description: "Amazon Elastic MapReduce（Amazon EMR）にデータを保存する", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8532,11 +8532,11 @@ questions.add([
     description: "Amazon Simple Storage Service（S3）バケットポリシーは、Amazon S3バケットへのアクセスを制限することができます。 （3つの回答を選んでください）"
     , multiple_answer: true
     , answers: [
-      {description: "Company name", correct: false}
+      {description: "会社名", correct: false}
       , {description: "IP address range", correct: true}
       , {description: "AWS account", correct: true}
       , {description: "Country of origin", correct: false}
-      , {description: "Objects with a specific prefix", correct: true}
+      , {description: "特定の接頭辞を持つオブジェクト", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8544,10 +8544,10 @@ questions.add([
     description: "Amazon Simple Storage Service（Amazon S3）は最終的に一貫したストレージシステムです。 最終的な一貫性の結果として失効したデータを取得することは可能ですか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "GET after PUT of a new object", correct: false}
-      , {description: "GET or LIST after a DELETE", correct: true}
-      , {description: "GET after overwrite PUT (PUT to an existing key)", correct: true}
-      , {description: "DELETE after PUT of new object", correct: false}
+      {description: "新しいオブジェクトのPUT後にGET", correct: false}
+      , {description: "削除後のGETまたはLIST", correct: true}
+      , {description: "PUTを上書きしてから（既存のキーへのPUT）", correct: true}
+      , {description: "新しいオブジェクトのPUT後のDELETE", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8555,11 +8555,11 @@ questions.add([
     description: "Amazon Simple Storage Service（Amazon S3）バケットで静的なWebサイトをホストするためには何が必要ですか？ （3つの回答を選んでください）"
     , multiple_answer: true
     , answers: [
-      {description: "Configure the bucket for static hosting and specify an index and error document.", correct: true}
-      , {description: "Create a bucket with the same name as the website.", correct: true}
-      , {description: "Enable File Transfer Protocol (FTP) on the bucket.", correct: false}
-      , {description: "Make the objects in the bucket world-readable.", correct: true}
-      , {description: "Enable HTTP on the bucket.", correct: false}
+      {description: "静的なホスティング用にバケットを設定し、インデックスとエラードキュメントを指定する", correct: true}
+      , {description: "ウェブサイトと同じ名前のバケットを作成する", correct: true}
+      , {description: "バケット上のファイル転送プロトコル（FTP）を有効にする", correct: false}
+      , {description: "バケット内のオブジェクトをパブリックにする", correct: true}
+      , {description: "バケットのHTTPを有効にする", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8567,10 +8567,10 @@ questions.add([
     description: "あなたは、AWS上でホストされている貴重なメディアファイルを持っており、それらをあなたのWebアプリケーションの認証されたユーザーにのみ提供することにしたいです。 あなたは、あなたのコンテンツが無料で盗まれ、配布される可能性があると懸念しています。 どのようにあなたのコンテンツを保護することができますか？"
     , multiple_answer: false
     , answers: [
-      {description: "Use static web hosting.", correct: false}
-      , {description: "Generate pre-signed URLs for content in the web application.", correct: true}
-      , {description: "Use AWS Identity and Access Management (IAM) policies to restrict access.", correct: false}
-      , {description: "Use logging to track your content.", correct: false}
+      {description: "静的Webホスティングを使用する", correct: false}
+      , {description: "Webアプリケーションのコンテンツ用に事前に署名されたURLを生成する", correct: true}
+      , {description: "AWSアイデンティティとアクセス管理（IAM）ポリシーを使用してアクセスを制限する", correct: false}
+      , {description: "あなたのコンテンツを追跡するためにログを使用する", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8578,10 +8578,10 @@ questions.add([
     description: "Amazon Glacierは以下のどのデータに適していますか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Is infrequently or rarely accessed", correct: true}
-      , {description: "Must be immediately available when needed", correct: false}
-      , {description: "Is available after a three- to five-hour restore period", correct: true}
-      , {description: "Is frequently erased within 30 days", correct: false}
+      {description: "まれにしかアクセスされない", correct: true}
+      , {description: "必要なときにすぐに利用可能", correct: false}
+      , {description: "3〜5時間の復元期間の後に利用可能", correct: true}
+      , {description: "30日以内に頻繁に消去されます", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8589,11 +8589,11 @@ questions.add([
     description: "Amazon Glacierについての真実は？ （3つの回答を選んでください）"
     , multiple_answer: true
     , answers: [
-      {description: "Amazon Glacier stores data in objects that live in archives.", correct: false}
-      , {description: "Amazon Glacier archives are identified by user-specified key names.", correct: false}
-      , {description: "Amazon Glacier archives take three to five hours to restore.", correct: true}
-      , {description: "Amazon Glacier vaults can be locked.", correct: true}
-      , {description: "Amazon Glacier can be used as a standalone service and as an Amazon S3 storage class.", correct: true}
+      {description: "Amazon Glacierはアーカイブに存在するオブジェクトにデータを格納します。", correct: false}
+      , {description: "Amazon Glacierのアーカイブはユーザー指定のキー名で識別されます", correct: false}
+      , {description: "Amazon Glacierのアーカイブは復元に3〜5時間かかる", correct: true}
+      , {description: "Amazon Glacier vaultsはロックすることができます", correct: true}
+      , {description: "Amazon Glacierは、スタンドアロンサービスとしてもAmazon S3ストレージクラスとしても使用できます。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8601,10 +8601,10 @@ questions.add([
     description: "ほとんどの場合、安定したトラフィックをサポートするために、Webアプリケーションには4つのインスタンスが必要です。 毎月最終日に、トラフィックは3倍になります。 このトラフィックパターンを処理する費用効果の高い方法は何ですか？"
     , multiple_answer: false
     , answers: [
-      {description: "Run 12 Reserved Instances all of the time.", correct: false}
-      , {description: "Run four On-Demand Instances constantly, then add eight more On-Demand Instances on the last day of each month.", correct: false}
-      , {description: "Run four Reserved Instances constantly, then add eight On-Demand Instances on the last day of each month.", correct: true}
-      , {description: "Run four On-Demand Instances constantly, then add eight Reserved Instances on the last day of each month.", correct: false}
+      {description: "12の予約インスタンスを常に実行してください。", correct: false}
+      , {description: "4つのオンデマンドインスタンスを常に実行してから、毎月最終日に8つのオンデマンドインスタンスを追加します。", correct: false}
+      , {description: "4つのリザーブドインスタンスを常に実行してから、毎月最終日に8つのオンデマンドインスタンスを追加します。", correct: true}
+      , {description: "4つのオンデマンドインスタンスを常に実行してから、毎月最終日に8つのリザーブドインスタンスを追加します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8612,10 +8612,10 @@ questions.add([
     description: "受注処理アプリケーションは、2つの予約インスタンスが10件/分を処理するキューから抽出された受注を処理します。 処理中に注文が失敗した場合、注文はペナルティなしでキューに戻されます。 週末の販売のため、キューには数百の注文がバックアップされています。 バックアップは大惨事ではありませんが、顧客が確認メールをすばやく入手できるように、バックアップを排除したいと考えています。 受注用のキューを排除する費用効果の高い方法は何ですか？"
     , multiple_answer: false
     , answers: [
-      {description: "Create more queues.", correct: false}
-      , {description: "Deploy additional Spot Instances to assist in processing the orders.", correct: true}
-      , {description: "Deploy additional Reserved Instances to assist in processing the orders.", correct: false}
-      , {description: "Deploy additional On-Demand Instances to assist in processing the orders.", correct: false}
+      {description: "キューをさらに作成する", correct: false}
+      , {description: "注文を処理するために追加のスポットインスタンスを配備する", correct: true}
+      , {description: "注文を処理するのに役立つ追加の予約済みインスタンスを配備する", correct: false}
+      , {description: "注文を処理するために追加のオンデマンドインスタンスを配備する", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8623,9 +8623,9 @@ questions.add([
     description: "新しいAmazon Elastic Compute Cloud（Amazon EC2）Windowsインスタンスを起動するときに指定する必要があるのはどれですか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "The Amazon EC2 instance ID", correct: false}
-      , {description: "Password for the administrator account", correct: false}
-      , {description: "Amazon EC2 instance type", correct: true}
+      {description: "Amazon EC2インスタンスID", correct: false}
+      , {description: "管理者アカウントのパスワード", correct: false}
+      , {description: "Amazon EC2インスタンスタイプ", correct: true}
       , {description: "Amazon Machine Image (AMI)", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
@@ -8634,10 +8634,10 @@ questions.add([
     description: "us-east-1aにm3.xlarge Linux Reservedインスタンスを購入しました。 この予約をどのように変更できますか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Change it into two m3.large instances.", correct: true}
-      , {description: "Change it to a Windows instance.", correct: false}
-      , {description: "Move it to us-east-1b.", correct: true}
-      , {description: "Change it to an m4.xlarge.", correct: false}
+      {description: "2つのm3.largeインスタンスに変更する", correct: true}
+      , {description: "Windowsのインスタンスに変更する", correct: false}
+      , {description: "us-east-1bに移動する", correct: true}
+      , {description: "m4.xlargeに変更する", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8645,10 +8645,10 @@ questions.add([
     description: "インスタンスは2つのセキュリティグループに関連付けられています。 1つ目は、ポートレスのCIDR（Classless Inter-Domain Routing）ブロック72.14.0.0/16からのリモートデスクトッププロトコル（RDP）アクセスを可能にすることです。 2つ目は、CIDRブロック0.0.0.0/0からのポート80経由のHTTPアクセスを許可します。 あなたのインスタンスに到達できるトラフィックは何ですか？"
     , multiple_answer: false
     , answers: [
-      {description: "RDP and HTTP access from CIDR block 0.0.0.0/0", correct: false}
-      , {description: "No traffic is allowed.", correct: false}
-      , {description: "RDP and HTTP traffic from 72.14.0.0/16", correct: false}
-      , {description: "RDP traffic over port 3389 from 72.14.0.0/16 and HTTP traffic over port 80 from 0.0.00/0", correct: true}
+      {description: "CIDRブロック0.0.0.0/0からのRDPとHTTPアクセス", correct: false}
+      , {description: "トラフィックは許可されていません", correct: false}
+      , {description: "72.14.0.0/16からのRDPとHTTPトラフィック", correct: false}
+      , {description: "RDPトラフィックはポート3389で72.14.0.0/16、HTTPトラフィックはポート80で0.0.0.0/0", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8657,9 +8657,9 @@ questions.add([
     , multiple_answer: true
     , answers: [
       {description: "More Packets Per Second (PPS)", correct: true}
-      , {description: "Lower latency", correct: true}
-      , {description: "Multiple network interfaces", correct: false}
-      , {description: "Border Gateway Protocol (BGP) routing", correct: false}
+      , {description: "低レイテンシ", correct: true}
+      , {description: "複数のネットワークインタフェース", correct: false}
+      , {description: "Border Gateway Protocol (BGP) ルーティング", correct: false}
       , {description: "Less jitter", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
@@ -8668,11 +8668,11 @@ questions.add([
     description: "高性能コンピューティング（HPC）クラスターを作成しており、インスタンス間の待ち時間と帯域幅が非常に小さくなっています。 次のどのような組み合わせによってこれが可能になりますか？ （3つの回答を選んでください）"
     , multiple_answer: true
     , answers: [
-      {description: "Use an instance type with 10 Gbps network performance.", correct: true}
-      , {description: "Put the instances in a placement group.", correct: true}
-      , {description: "Use Dedicated Instances.", correct: false}
-      , {description: "Enable enhanced networking on the instances.", correct: true}
-      , {description: "Use Reserved Instances.", correct: false}
+      {description: "10 Gbpsネットワークパフォーマンスでインスタンスタイプを使用する", correct: true}
+      , {description: "インスタンスをプレースメントグループに入れる", correct: true}
+      , {description: "専用インスタンスを使用する", correct: false}
+      , {description: "インスタンスで拡張ネットワークを有効にする", correct: true}
+      , {description: "リザーブドインスタンスを使用する", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8691,10 +8691,10 @@ questions.add([
     description: "次のうちどれがインスタンスストアに当てはまりますか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Automatic backups", correct: false}
-      , {description: "Data is lost when the instance stops.", correct: true}
+      {description: "自動バックアップ", correct: false}
+      , {description: "インスタンスが停止するとデータが失われます。", correct: true}
       , {description: "Very high IOPS", correct: true}
-      , {description: "Charge is based on the total amount of storage provisioned.", correct: false}
+      , {description: "費用はプロビジョニングされたストレージの総量に基づいています。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8702,10 +8702,10 @@ questions.add([
     description: "Amazon Elastic Block Store（Amazon EBS）の機能は次のうちどれですか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Data stored on Amazon EBS is automatically replicated within an Availability Zone.", correct: true}
-      , {description: "Amazon EBS data is automatically backed up to tape.", correct: false}
-      , {description: "Amazon EBS volumes can be encrypted transparently to workloads on the attached instance.", correct: true}
-      , {description: "Data on an Amazon EBS volume is lost when the attached instance is stopped.", correct: false}
+      {description: "Amazon EBSに保存されたデータは、可用性ゾーン内で自動的に複製されます。", correct: true}
+      , {description: "Amazon EBSデータは自動的にテープにバックアップされます。", correct: false}
+      , {description: "Amazon EBSボリュームは、接続されたインスタンスのワークロードに対して透過的に暗号化できます。", correct: true}
+      , {description: "接続されたインスタンスが停止すると、Amazon EBSボリュームのデータが失われます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8713,10 +8713,10 @@ questions.add([
     description: "Amazon Elastic Block Store（Amazon EBS）ボリュームのスナップショットを撮る必要があります。 ボリュームはどれくらいの期間利用できませんか？"
     , multiple_answer: false
     , answers: [
-      {description: "It depends on the provisioned size of the volume.", correct: false}
-      , {description: "The volume will be available immediately.", correct: true}
-      , {description: "It depends on the amount of data stored on the volume.", correct: false}
-      , {description: "It depends on whether the attached instance is an Amazon EBS-optimized instance.", correct: false}
+      {description: "ボリュームのプロビジョニングされたサイズに依存します。", correct: false}
+      , {description: "ボリュームはすぐに利用可能になります。", correct: true}
+      , {description: "ボリュームに格納されているデータの量によって異なります。", correct: false}
+      , {description: "添付されたインスタンスがAmazon EBSに最適化されたインスタンスかどうかによって異なります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8724,10 +8724,10 @@ questions.add([
     description: "スナップショットからAmazon Elastic Block Store（Amazon EBS）ボリュームをリストアしています。 データが利用可能になるまでの期間はどのくらいですか？"
     , multiple_answer: false
     , answers: [
-      {description: "It depends on the provisioned size of the volume.", correct: false}
-      , {description: "The data will be available immediately.", correct: true}
-      , {description: "It depends on the amount of data stored on the volume.", correct: false}
-      , {description: "It depends on whether the attached instance is an Amazon EBS-optimized instance.", correct: false}
+      {description: "ボリュームのプロビジョニングされたサイズに依存します。", correct: false}
+      , {description: "データはすぐに利用可能になります。", correct: true}
+      , {description: "ボリュームに格納されているデータの量によって異なります。", correct: false}
+      , {description: "付されたインスタンスがAmazon EBSに最適化されたインスタンスかどうかによって異なります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8735,10 +8735,10 @@ questions.add([
     description: "耐久性が必要なデータには、15,000の一貫性のあるIOPSを必要とするワークロードがあります。 次のステップのどのような組み合わせが必要ですか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Use an Amazon Elastic Block Store (Amazon EBS)-optimized instance.", correct: true}
-      , {description: "Use an instance store.", correct: false}
-      , {description: "Use a Provisioned IOPS SSD volume.", correct: true}
-      , {description: "Use a magnetic volume.", correct: false}
+      {description: "Amazon Elastic Block Store（Amazon EBS）最適化インスタンスを使用する", correct: true}
+      , {description: "インスタンスストアを使用する", correct: false}
+      , {description: "プロビジョニングされたIOPS SSDボリュームを使用する", correct: true}
+      , {description: "磁気ボリュームを使用する", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8746,10 +8746,10 @@ questions.add([
     description: "次のうちブートストラップによって達成できるものはどれですか？"
     , multiple_answer: false
     , answers: [
-      {description: "Install the most current security updates.", correct: false}
-      , {description: "Install the current version of the application.", correct: false}
-      , {description: "Configure Operating System (OS) services.", correct: false}
-      , {description: "All of the other choices.", correct: true}
+      {description: "最新のセキュリティアップデートをインストールする", correct: false}
+      , {description: "現在のバージョンのアプリケーションをインストールする", correct: false}
+      , {description: "オペレーティングシステム（OS）サービスを設定する", correct: false}
+      , {description: "ほかの選択肢すべて", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8757,10 +8757,10 @@ questions.add([
     description: "SSHを使って新しいLinuxインスタンスに接続するにはどうすればいいですか？"
     , multiple_answer: false
     , answers: [
-      {description: "Decrypt the root password.", correct: false}
-      , {description: "Using a certificate", correct: false}
-      , {description: "Using the private half of the instance’s key pair", correct: true}
-      , {description: "Using Multi-Factor Authentication (MFA)", correct: false}
+      {description: "ルートパスワードの復号化", correct: false}
+      , {description: "証明書の使用", correct: false}
+      , {description: "インスタンスのキーペアのプライベートな方を使用する", correct: true}
+      , {description: "マルチファクタ認証（MFA）の使用", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8768,10 +8768,10 @@ questions.add([
     description: "VMのインポート/エクスポートでは、既存の仮想マシンを次のようにインポートできます。（2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Amazon Elastic Block Store (Amazon EBS) volumes", correct: false}
-      , {description: "Amazon Elastic Compute Cloud (Amazon EC2) instances", correct: true}
+      {description: "Amazon Elastic Block Store（Amazon EBS）ボリューム", correct: false}
+      , {description: "Amazon Elastic Compute Cloud（Amazon EC2）のインスタンス", correct: true}
       , {description: "Amazon Machine Images (AMIs)", correct: true}
-      , {description: "Security groups", correct: false}
+      , {description: "セキュリティグループ", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8779,10 +8779,10 @@ questions.add([
     description: "Amazon Elastic Compute Cloud（Amazon EC2）インスタンスをWeb上で扱うために使用できるのは次のうちどれですか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "Windows machine name", correct: false}
-      , {description: "Public DNS name", correct: true}
-      , {description: "Amazon EC2 instance ID", correct: false}
-      , {description: "Elastic IP address", correct: true}
+      {description: "Windowsマシン名", correct: false}
+      , {description: "パブリックDNS名", correct: true}
+      , {description: "Amazon EC2インスタンスID", correct: false}
+      , {description: "Elastic IPアドレス", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
@@ -8790,10 +8790,10 @@ questions.add([
     description: "正しく復号化された管理者パスワードとRDPを使用すると、起動したばかりのWindowsインスタンスにログインできなくなります。 次のうちどれが考えられる理由はありますか？"
     , multiple_answer: false
     , answers: [
-      {description: "There is no security group rule that allows RDP access over port 3389 from your IP address.", correct: true}
-      , {description: "The instance is a Reserved Instance.", correct: false}
-      , {description: "The instance is not using enhanced networking.", correct: false}
-      , {description: "The instance is not an Amazon EBS-optimized instance.", correct: false}
+      {description: "IPアドレスからポート3389経由でRDPアクセスを許可するセキュリティグループルールはありません。", correct: true}
+      , {description: "インスタンスはリザーブドインスタンスです", correct: false}
+      , {description: "インスタンスは拡張ネットワークを使用していません", correct: false}
+      , {description: "インスタンスはAmazon EBSに最適化されたインスタンスではありません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
