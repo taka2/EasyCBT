@@ -10800,8 +10800,8 @@ questions.add([
     , answers: [
       {description: "既存のAmazon EBSボリュームをAmazon仮想プライベートクラウド（Amazon VPC）に移行します。", correct: false}
       , {description: "暗号化が有効になっている新しいAmazon EBSボリュームを作成します。", correct: true}
-      , {description: "既存のAmazon EBSボリュームプロパティを変更して、暗号化を有効にします。", correct: true}
-      , {description: "暗号化を有効にしたAmazon EBSボリュームをデータをホストするインスタンスに接続し、データを暗号化対応のAmazon EBSボリュームに移行します。", correct: false}
+      , {description: "既存のAmazon EBSボリュームプロパティを変更して、暗号化を有効にします。", correct: false}
+      , {description: "暗号化を有効にしたAmazon EBSボリュームをデータをホストするインスタンスに接続し、データを暗号化対応のAmazon EBSボリュームに移行します。", correct: true}
       , {description: "暗号化を有効にして、暗号化されていないAmazon EBSボリュームからAmazon EBSボリュームにデータをコピーします。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
