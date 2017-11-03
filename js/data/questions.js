@@ -8136,7 +8136,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Associate-JP'
   }
   , {
-    description: "2つのAZ(AZ-1とAZ-2)内のサブネット設定がされたAuto Scalingグループがある。現在それぞれのAZに2台ずつAuto Scalingグループに所属しているEC2インスタンスが起動している。Auto ScalingポリシーでCPU利用率が70%を超えたら2台インスタンスを増やし、40%を下回ったら1台インスタンスを減らし、さらに30%を下回ったら1台インスタンスを減らす設定をしている。CPU利用率が次のように遷移した場合、各AZのインスタンス数の分布として発生しうる選択肢はどれか？正しい選択肢を全て選べ。"
+    description: "2つのAZ(AZ-1とAZ-2)内のサブネット設定がされたAuto Scalingグループがある。現在それぞれのAZに2台ずつAuto Scalingグループに所属しているEC2インスタンスが起動している。Auto ScalingポリシーでCPU利用率が70%を超えたら2台インスタンスを増やし、40%を下回ったら1台インスタンスを減らし、さらに30%を下回ったら1台インスタンスを減らす設定をしている。CPU利用率が次のように遷移した場合、各AZのインスタンス数の分布として発生しうる選択肢はどれか？正しい選択肢を全て選べ。CPU利用率：50%→75%→45%→35%"
     , multiple_answer: true
     , answers: [
       {description: "AZ-1：3　AZ-2：3", correct: false}
@@ -9052,7 +9052,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Associate-EN'
   }
   , {
-    description: "Port 80でリスニングするElastic Load Balancingロードバランサを作成し、ポート80でリッスンしている単一のAmazon Elastic Compute Cloud（Amazon EC2）インスタンスに登録しました。クライアントは正しいプロトコルでロードバランサにリクエストを行い、 ロードバランサのポート。 このシナリオでは、バランサは何コネクションを維持していますか？"
+    description: "Port 80でリスニングするElastic Load Balancingロードバランサを作成し、ポート80で待機している単一のAmazon Elastic Compute Cloud（Amazon EC2）インスタンスに登録しました。クライアントは正しいプロトコルでロードバランサに要求します このシナリオでは、バランサは何コネクションを維持していますか？"
     , multiple_answer: false
     , answers: [
       {description: "1", correct: false}
