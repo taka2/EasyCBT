@@ -1,10 +1,20 @@
 // 出題データ
 examinations.add([
   {
-    examinationName: "AWS認定ソリューションアーキテクトアソシエイト ALL"
-    , questionCount: 60
-    , categories: ['AWS-Certified-Solutions-Architect-Associate-JP', 'AWS-Certified-Solutions-Architect-Associate-EN']
+    examinationName: "AWS認定ソリューションアーキテクトプロフェッショナルALL"
+    , questionCount: 275
+    , categories: ['AWS-Certified-Solutions-Architect-Professional']
   }
+  , {
+    examinationName: "AWS認定ソリューションアーキテクトプロフェッショナル 60問"
+    , questionCount: 60
+    , categories: ['AWS-Certified-Solutions-Architect-Professional']
+  }
+  , {
+　　　　examinationName: "AWS認定ソリューションアーキテクトアソシエイト ALL"
+　　　　, questionCount: 60
+　　　　, categories: ['AWS-Certified-Solutions-Architect-Associate-JP', 'AWS-Certified-Solutions-Architect-Associate-EN']
+　　}
   , {
     examinationName: "AWS認定ソリューションアーキテクトアソシエイト(EN) ALL"
     , questionCount: 243
