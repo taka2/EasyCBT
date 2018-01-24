@@ -11456,7 +11456,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "組織は、AWS VPCでアプリケーションをホストする予定です。 組織は専用インスタンスを求めています。 しかし、AWSのコンサルタントは、設計にはいくつかの制限があるため、VPCで専用のインスタンスを使用しないことを組織に勧告しました。 以下に述べるステートメントのうち、VPC専用インスタンスの制限事項はありません。"
+    description: "組織は、AWS VPCでアプリケーションをホストする予定です。 組織は専用インスタンスを求めています。 しかし、AWSのコンサルタントは、設計にはいくつかの制限があるため、VPCで専用のインスタンスを使用しないことを組織に勧告しました。 以下に述べるステートメントのうち、VPCでの専用インスタンスの制限事項でないものはどれですか。"
     , multiple_answer: false
     , answers: [
       {description: "このVPCで起動されるすべてのインスタンスは常に専用のインスタンスになり、ユーザーはデフォルトのテナントモデルを使用できません。", correct: false}
@@ -11566,7 +11566,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "一般的な製品のWebトラフィックに対応するために、最高財務責任者とITディレクターは、2つのアベイラビリティゾーンに均等に分散された10ミリリットルの大量リザーブドリザーブドインスタンス（RI）を購入しました。ルート53は、トラフィックをElastic Load Balancer 。 数ヶ月後に製品がさらに普及し、追加の容量が必要となります。結果として、あなたの会社はC3.2xlargeの2つのメディア使用率を購入します。Ris EL2で2つのc3 2xlargeインスタンスを登録し、mlの大きなインスタンスが100 容量の％と2つの大きなインスタンスには未使用の容量がありますどのオプションが最も費用効果が高く、EC2の容量を最も効果的に使用していますか？"
+    description: "一般的な製品のWebトラフィックを処理するために、最高財務責任者とITディレクターは、2つの利用可能ゾーンに均等に分散された10の大規模なリザーブドリザーブドインスタンス（RI）を購入しました。ルート53を使用してトラフィックをElastic Load Balancer（ELB）に配信します。 数ヶ月後に製品がさらに普及し、追加容量が必要になる結果、会社は2つのc3.2xlargeメディアの使用量を購入します。Ris 2つのc3.2xlargeインスタンスをELBに登録し、mllargeインスタンスが100 容量の％およびc3.2x大きなインスタンスには未使用の重要な容量がありますどのオプションが最も費用効果が高く、EC2の容量を最も効果的に使用していますか？"
     , multiple_answer: false
     , answers: [
       {description: "自動スケールグループを構成し、ELBを使用して構成を起動すると、Cloudwatchによってトリガーされたときに最大10個のオンデマンドm1.largeインスタンスを追加できます。 c3.2xlargeインスタンスをシャットダウンします。", correct: false}
@@ -11830,7 +11830,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "組織はAWS VPCで管理ネットワークをセットアップする予定です。組織は、インターネットトラフィックとバックエンド管理トラフィックを許可するように、単一のVPCインスタンスでWebサーバーを保護しようとしています。 組織は、バックエンド管理ネットワークインターフェイスが選択されたIP範囲からのみSSHトラフィックを受信できるようにしたいと考えています.WSWはすべてのインターネットIPからのトラフィックを受信できるIPアドレスを持っています.Web 単一のインスタンス上のサーバー？"
+    description: "組織は、AWS VPCで管理ネットワークをセットアップする予定です。組織は、インターネットトラフィックとバックエンド管理トラフィックを許可するように、単一のVPCインスタンスでWebサーバーを保護しようとしています。 組織は、バックエンド管理ネットワークインターフェイスが選択されたIP範囲からのみSSHトラフィックを受信できるようにしたいと考えています。インターネットに直面しているWebサーバーは、すべてのインターネットIPからのトラフィックを受信できるIPアドレスを持っています。 これは、単一のインスタンスでWebサーバーを実行することによってですか？"
     , multiple_answer: false
     , answers: [
       {description: "1つのインスタンスに対して2つのIPアドレスを持つことはできません。", correct: false}
@@ -11907,7 +11907,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "非常に大規模な電子商取引サイトの全体的なセキュリティの姿勢を強化するために雇われました.WebとApptierの両方のELBを直接使用する静的資産を使用するVPCで動作する、 S3彼らは動的データのためにRDSとDynamoOBの組み合わせを使用しています。その後、夜間にS3にアーカイブしてEMRを使用してさらに処理します。疑わしいログエントリを見つけて、誰かが不正なアクセスを試みたと思われるため、懸念されます。 攻撃の？"
+    description: "非常に大規模な電子商取引サイトのセキュリティの全体的な姿勢を強化するためにあなたは雇われています。 彼らは、Webとアプリケーション層の前でELBを使用し、S3から直接提供される静的資産を持つVPCでうまく構築された多層アプリケーションを持っています。ダイナミックデータにRDSとDynamoOBの組み合わせを使用し、 EMRを使用してさらに処理するためにS3に入ります。疑わしいログエントリが見つかって、誰かが不正なアクセスを試みている疑いがあるため、懸念しています。"
     , multiple_answer: false
     , answers: [
       {description: "DirectConnectパートナーの場所でスペースをリースし、VPCへの1GDirectConnect接続を確立し、インターネット接続を確立し、ハードウェアWebアプリケーションファイアウォール（WAF）のトラフィックをフィルタすることを推奨します。 そして、トラフィックを、DirectConnect接続を介して、VPCで動作するアプリケーションに渡します。", correct: false}
@@ -12039,7 +12039,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "組織は、DCをVPNゲートウェイを使用してAWSVPCに接続して、データセンターを拡張する予定です。 組織は、動的にルーティングされるVPN接続を設定しています。 この中で答えを述べる必要はありませんか？"
+    description: "組織は、DCをVPNゲートウェイを使用してAWSVPCに接続することで、データセンターを拡張する予定です。 組織は、動的にルーティングされるVPN接続を設定しています。 次の回答のうち、この設定をセットアップする必要はありません。"
     , multiple_answer: false
     , answers: [
       {description: "Cisco ASA、Juniper Jシリーズ、Juniper SSG、Yamahaなどのカスタマーゲートウェイのタイプ。", correct: false}
@@ -12944,7 +12944,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "ユーザーがアプリケーション用にElastiCacheを設定し、起動していれば、どのサービスでもdoesAmazonはユーザーに提供しません。"
+    description: "ユーザーがElastiCacheをアプリケーション用に設定し、起動していればAmazonはそのサービスを提供しません。"
     , multiple_answer: false
     , answers: [
       {description: "クライアントプログラムがキャッシュクラスタ内のすべてのノードを自動的に識別し、これらのノードすべてへの接続を開始し維持する機能", correct: false}
@@ -13667,7 +13667,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "ウェブスタートアップは、ElasticLoadBalancer、Java / TomcatアプリケーションサーバーのAuto-Scalingグループ、およびデータストアとしてのDynamoDBを使用して、Amazon EC2上で非常に成功したソーシャルニュースアプリケーションを実行します。メインWebアプリケーションは、m2 x大規模なインスタンスは非常にメモリに拘束されているため新しいデプロイメントでは、アプリケーションサーバー用の新しいAMIの半自動化された作成とテストが必要となります。したがって、かなりの期間、anaは週に1回しか実行されません。アーキテクチャに統合されるべきである。最初のテストでは、新しいコンポーネントがCPUにバインドされていることを示しています。シェフの使用経験があるため、導入プロセスを合理化し、AWS OpsWorksasをアプリケーションライフサイクルツールとして使用して、アプリケーションの管理を簡素化し、新しいチャットモジュールを最も費用対効果の高い柔軟な方法で統合するには、作業が必要ですか？"
+    description: "Webスタートアップは、ElasticLoadBalancer、Java / TomcatアプリケーションサーバーのAuto-Scalingグループ、およびデータストアとしてのDynamoDBを使用して、Amazon EC2上で非常に成功したソーシャルニュースアプリケーションを実行します。メインのWebアプリケーションはm2.xlargeインスタンス 非常にメモリに拘束されています。新しいデプロイメントでは、アプリケーションサーバー用の新しいAMIの半自動化された作成とテストが必要です。このため、かなりの時間がかかります。したがって、1週間に1回しか実行されません。 アーキテクチャに統合されるべきである。 最初のテストでは、新しいコンポーネントがCPUにバインドされていることがわかりました。Chefの使用経験があるため、導入プロセスを合理化し、AWS OpsWorksをアプリケーションのライフサイクルツールとして使用して、アプリケーションの管理を簡素化し、 新しいチャットモジュールを最も費用対効果の高い柔軟な方法で統合するには、AWS Ops Worksの設定が必要ですか？"
     , multiple_answer: false
     , answers: [
       {description: "1つのAWS OpsWorksスタックを作成し、1つのAWS Ops Worksレイヤを作成し、1つのカスタムレシピを作成します", correct: false}
@@ -13847,7 +13847,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "ユーザーがIP10.10.10.1 / 32からの要求でない場合、すべての要求を拒否するIAMポリシーを設定しました。 他のポリシーでは、午後5時から7時の間にすべてのリクエストを許可しています。 午後6時にユーザーがIP 55.109.10.12/32からのアクセスを要求している場合はどうなりますか？"
+    description: "要求がIP10.10.10.1 / 32からのものでない場合、ユーザはすべての要求を拒否するIAMポリシーを設定しています。 もう1つのポリシーでは、午後5時から7時の間にすべてのリクエストを許可します。 ユーザーが午後6時にIP 55.109.10.12/32からのアクセスを要求しているときはどうなりますか？"
     , multiple_answer: false
     , answers: [
       {description: "アクセスを拒否する", correct: true}
@@ -13968,14 +13968,14 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "新聞社の組織では、一般の人が新聞を検索し、Javaで書かれたウェブサイトから個々の新聞ページを取り出すことを可能にするオンプレミスのアプリケーションを持っている。彼らは新聞をJPEG（およそ17TB）にスキャンし、OCR（Optical Character Recognition）非商用検索製品。ホスティングプラットフォームとソフトウェアは現在廃止されており、組織はAWSにアーカイブを移行し、コスト効率の高いアーキテクチャを作り出し、利用可能性と耐久性を考慮して設計されています。最も適切なのはどれですか？"
+    description: "新聞社の組織では、一般の人々が後ろのカタログを検索し、Javaで書かれたWebサイトを介して個々の新聞ページを検索できるようにするオンプレミスのアプリケーションを提供しています。 商用検索製品を作成します。 ホスティングプラットフォームとソフトウェアのライフサイクルは終わりました。組織はアーカイブをAWSに移行し、コスト効率の高いアーキテクチャを作り出し、可用性と耐久性を考慮して設計したいと考えています。 最も適切なのはどれですか？"
     , multiple_answer: false
     , answers: [
       {description: "冗長性の低いストアを使用してS3を使用し、スキャンしたファイルを提供し、EC2インスタンスに商用検索アプリケーションをインストールし、自動スケーリングとElastic Load Balancerで設定します。", correct: false}
       , {description: "CloudFormationを使用して環境をモデル化するには、Apache webserverおよびソース検索アプリケーションを実行するEC2インスタンスを使用し、複数の標準EBSボリュームをストライプ化してJPEGおよび検索インデックスを格納します。", correct: false}
       , {description: "標準的な冗長性を備えたS3を使用して、スキャンしたファイルを保存および提供し、クエリー処理にCloudSearchを使用し、Elastic Beanstalkを使用して複数の可用性ゾーンにわたってWebサイトをホストします。", correct: true}
       , {description: "単一のAZ RDSのMySQLインスタンスを使用します。検索インデックスを格納します。33d JPEGイメージは、EC2インスタンスを使用してWebサイトを提供し、ユーザーのクエリをSQLに変換します。", correct: false}
-      , {description: "CloudFrontダウンロード配信を使用してJPEGをエンドユーザに配信し、EC2インスタンスにJava Container Tor、DNSラウンドロビンでuseRoute53とともに、現在の商用検索製品をインストールします。", correct: false}
+      , {description: "CloudFrontダウンロード配信を使用してJPEGをエンドユーザに配信し、現在の商用検索製品をJava ContainerまたはEC2インスタンスにインストールし、Route53をDNSラウンドロビンで使用します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
