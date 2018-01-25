@@ -11786,7 +11786,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "4つの500 GB EBSプロビジョニングIOPSボリュームを接続したEC2インスタンスを起動しました。 TheEC2インスタンスはEBS-Optimizedで、EC2とEBSの間で500 Mbpsのスループットをサポートします。 4つのEBSボリュームは1つのRAID 0デバイスとして構成され、各プロビジョニングされたIOPSボリュームは4,000 IOPS（4,000 16KBの読み取りまたは書き込み）でプロビジョニングされ、合計16,000のランダムIOPSがインスタンスに与えられます。 EC2インスタンスは、最初は16,000 IOPSのランダム読み取りと書き込みパフォーマンスを提供します。その後、インスタンスの合計ランダムI / Oパフォーマンスを向上させるために、500GBのEBSプロビジョニングIOPSボリューム2つをRAIDに追加します。各ボリュームは、provisionedtoITの保証付きで、Easy Way！324,000元のIOP EC2インスタンスで合計24,000 IOPSになります。 EC2インスタンスのCPU使用率が50％から70％に増加したことを示すモニタリングでは、インスタンスレベルで測定されたランダムIOPSはまったく増加しません。問題と有効な解決策は何ですか？"
+    description: "4つの500 GB EBSプロビジョニングIOPSボリュームが接続されたEC2インスタンスを起動しました。 EC2インスタンスはEBS-Optimizedで、EC2とEBSの間で500 Mbpsのスループットをサポートします。 4つのEBSボリュームは1つのRAID 0デバイスとして構成され、プロビジョニングされた各IOPSボリュームは4,000 IOPS（4,000 16KBの読み取りまたは書き込み）でプロビジョニングされ、合計16,000のランダムIOPSがインスタンスに与えられます。 EC2インスタンスは、最初は16,000 IOPSのランダムな読み取りおよび書き込みパフォーマンスを提供します。 その後、インスタンスの合計ランダムI / Oパフォーマンスを向上させるために、RAIDに2つの500 GB EBSプロビジョニングIOPSボリュームを2つ追加します。各ボリュームは、元の4つのような4,000のIOPにプロビジョニングされ、合計 EC2インスタンスでは24,000 IOPSです。 監視では、EC2インスタンスのCPU使用率が50％から70％に増加しましたが、インスタンスレベルで測定された合計ランダムIOPSはまったく増加しません。問題と有効な解決策は何ですか？"
     , multiple_answer: false
     , answers: [
       {description: "EBS-Optimizedスループットは、利用可能なIOPSの合計を制限します。 より大きなスループットを提供するEBSOptimizedインスタンスを使用します。", correct: false}
@@ -11852,7 +11852,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "貴社は最近、データセンターをAVVS上のVPCに拡張し、必要なバーストコンピューティング能力を追加しました。ネットワークオペレーションセンターのメンバーは、AWSManagementConsoleにアクセスし、必要に応じてAmazon EC2インスタンスを管理できる必要があります。 IAMユーザーはNOCメンバーに参加し、それらのユーザーをAWS管理コンソールに再度サインインします。どのオプションがあなたのNOCメンバーのニーズを満たしますか？"
+    description: "貴社は最近、データセンターをAWS上のVPCに拡張し、必要なバーストコンピューティング能力を追加しました。ネットワークオペレーションセンターのメンバーは、AWSManagementConsoleにアクセスし、必要に応じてAmazon EC2インスタンスを管理できる必要があります。 IAMユーザーはNOCメンバーに参加し、それらのユーザーをAWS管理コンソールに再度サインインします。どのオプションがあなたのNOCメンバーのニーズを満たしますか？"
     , multiple_answer: false
     , answers: [
       {description: "OAuth 2 0を使用して一時的なAWSセキュリティ資格情報を取得し、NOCメンバーがAWS Management Consoleに署名し、簡単に証明することができるようにします。", correct: false}
@@ -11995,7 +11995,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "AWSは、CPU使用量クレジットが付いたT2インスタンスを開始しました。ある組織には、24時間稼働しているインスタンスを保持する職務があります。ただし、組織は11 AM〜12 PMの間のみ高い使用率を示します。組織はこの目的のためにT2の小さなインスタンスを使用する予定です。2012年1月以降に複数のインスタンスがすでに実行されている場合は、T2インスタンスを起動しているときに組織が実装する必要があります。"
+    description: "AWSは、CPU使用量クレジットが付いたT2インスタンスを開始しました。 ある組織には、インスタンスを24時間稼働させ続ける職務があります。 しかし、この組織は、午前11時から午後12時の間にのみ使用率が高くなります。 組織はこの目的でT2小規模インスタンスを使用する予定です。2012年1月以降に複数のインスタンスが既に稼働している場合は、T2インスタンスを起動しながら以下のオプションを実装する必要がありますか？"
     , multiple_answer: false
     , answers: [
       {description: "組織は、T2インスタンスを起動する前に、まずEC2-VPCプラットフォームに移行する必要があります。", correct: false}
@@ -12250,7 +12250,20 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "あなたはソリューションアーキテクトとして、Amazonの仮想プライベートクラウド（VPC）へのane-commerceプラットフォームの移行を支援するために企業の顧客を支援してきました。前のアーキテクトはすでに3層VPCを展開しています.VPC：vpc-2f8bc447IT 51igW：igw-2d8bc445NACL：ad-208bc448サブネット-258bc44dアプリケーションサーバー：サブネット-248bc44cデータベースサーバー：サブネット-9189c6f9Routeテーブル：rrb-218bc449rtb-238bc44bアソシエーション：サブネット-258bc44d：rtb- VPCにEC2インスタンスを展開する準備ができました。Webサーバーがインターネットに直接接続する必要があります。アプリケーションサーバーとデータベースサーバーは、インターネットに直接アクセスできません。以下の構成では、 アプリケーションとデータベースサーバをリモートで管理する機能と、これらのサーバがインターネットからアップデートを取得できる機能を備えていますか？"
+    description: "あなたはソリューションアーキテクトとして、エンタープライズ顧客がane-commerceプラットフォームをAmazon VPC（Virtual Private Cloud）に移行するのを支援してきました。前のアーキテクトは既に3層VPCを導入しています。<br/>" +
+    		"VPC: vpc-2f8bc447<br/>" + 
+"IGW: igw-2d8bc445<br/>" +
+"NACL: ad-208bc448<br/>" +
+"Subnets and Route Tables:<br/>" +
+"Web servers: subnet-258bc44d<br/>" +
+"Application servers: subnet-248bc44c<br/>" +
+"Database servers: subnet-9189c6f9<br/>" +
+"Route Tables:rrb-218bc449 rtb-238bc44b<br/>" +
+"Associations:<br/>" +
+"subnet-258bc44d : rtb-218bc449<br/>" +
+"subnet-248bc44c : rtb-238bc44b<br/>" +
+"subnet-9189c6f9 : rtb-238bc44b<br/>" +
+"これで、EC2インスタンスをVPCに展開する準備が整いました。Webサーバーがインターネットに直接アクセスできる必要があります。アプリケーションとデータベースサーバーはインターネットに直接アクセスできません。以下の構成では、アプリケーションとデータベースサーバー、 これらのサーバーがインターネットから更新プログラムを取得できるようにしますか？"
     , multiple_answer: false
     , answers: [
       {description: "サブネット-258bc44dで砦およびNATインスタンスを作成し、rtb-238bc44bからNATインスタンスにルートを追加します。", correct: true}
@@ -13115,15 +13128,15 @@ questions.add([
     description: "あなたの会社は現在、オンプレミスのデータセンターで実行されている2層のWebアプリケーションを持っています。過去2ヶ月でいくつかのインフラストラクチャの障害が発生し、財務的に重大な損失が発生しました.CIOはアプリケーションをAWSに移行することに強く同意します。 他の会社の役員に買収を達成しながら、短期的にはビジネスの継続性を向上させるための災害復旧計画を作成するよう依頼します。 彼は、目標復旧時間目標（RTO）を4時間、復旧ポイント目標（RPO）を1時間以下と定めています。 また、2週間以内にソリューションの実装を依頼します。 あなたのデータベースのサイズは200GBで、20Mbpsのインターネット接続があります。 あなたはコストを最小限に抑えながらどのようにしていますか？"
     , multiple_answer: false
     , answers: [
-      {description: "アプリケーションの新規インストールが含まれているEBSでサポートされているプラ​​イベートAMIを作成します。 AMIを含むaCloudFormationテンプレートを開発し、必要なEC2、AutoScaling、およびELB resourcestosupportを使用して、複数の可用性ゾーンにわたってアプリケーションを展開します。オンプレミスデータベースから安全なVPN接続を介してAWSのデータベースインスタンスに非同期にレプリケートします。", correct: true}
-      , {description: "複数の可用性ゾーンにわたるAuto Scalingグループ内のEC2インスタンスにアプリケーションをデプロイします。セキュアなVPN接続を介して、オンプレミスデータベースからデータベースinstanceinAWSに非同期にトランザクションをレプリケートします。", correct: false}
-      , {description: "アプリケーションの新規インストールが含まれているEBSバックアップのプライベートAMIを作成します。 1時間ごとにローカルデータベースをバックアップするscriptinyourデータセンターを設定し、マルチパートアップロードを使用して結果ファイルを暗号化してS3バケットにコピーします。", correct: false}
-      , {description: "アプリケーションの負荷をサポートできるコンピューティングに最適化されたEC2インスタンスにアプリケーションをインストールします。セキュアなダイレクトコネクト接続を介して、オンプレミスデータベースからAWS内のデータベースインスタンスにトランザクションを同期レプリケートします。", correct: false}
+      {description: "アプリケーションの新規インストールが含まれているEBSでサポートされているプラ​​イベートAMIを作成します。複数の可用性ゾーンにわたるアプリケーションの展開をサポートするために、AMIと必要なEC2、AutoScaling、およびELBリソースを含むaCloudFormationテンプレートを開発します。オンプレミスデータベースから安全なVPN接続を介してAWSのデータベースインスタンスに非同期にトランザクションをレプリケートします。", correct: true}
+      , {description: "複数の可用性ゾーンにわたるAuto Scalingグループ内のEC2インスタンスにアプリケーションをデプロイします。 オンプレミスデータベースからセキュリティ保護されたVPN接続を介してAWSのデータベースインスタンスにトランザクションを非同期でレプリケートします。", correct: false}
+      , {description: "アプリケーションの新規インストールが含まれているEBSバックアップのプライベートAMIを作成します。 1時間ごとにローカルデータベースをバックアップし、マルチパートアップロードを使用してS3バケットに暗号化してコピーするスクリプトをデータセンターに設定します。", correct: false}
+      , {description: "アプリケーションの平均負荷をサポートできるコンピューティングに最適化されたEC2インスタンスにアプリケーションをインストールします。 セキュアなダイレクトコネクト接続を介して、オンプレミスデータベースからAWSのデータベースインスタンスにトランザクションを同期レプリケートします。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "組織（口座ID 123412341234）がIAMポリシーを設定して、ユーザーが自分の信用状を変更できるようにしました。 下記の声明では、ユーザーは何を実行できるのですか？ {\"Version\"： \"2012-10-17\"、 \"Statement\"：[{\"効果\"： \"許可\"、 \"アクション\"： \"iam：AddUserToGroup\"、 \"iam：RemoveUserFromGroup\"、 \"iam：GetGroup\"] 、 \"リソース\"： \"arn：aws：iam :: 123412341234：グループ/ TestingGroup\"}]"
+    description: "組織（口座ID 123412341234）がIAMポリシーを設定して、ユーザーが自分の信用状を変更できるようにしました。 下記の声明では、ユーザーは何を実行できるのですか？{\"Version\": \"2012-10-17\",\"Statement\": [{\"Effect\": \"Allow\",\"Action\": [\"iam:AddUserToGroup\",\"iam:RemoveUserFromGroup\",\"iam:GetGroup\"],\"Resource\": \"arn:aws:iam:: 123412341234:group/TestingGroup\"}]]"
     , multiple_answer: false
     , answers: [
       {description: "IAMユーザーに、TestingGroupというグループのメンバシップを更新するように許可します。", correct: true}
@@ -13300,7 +13313,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "組織は、高可用性（HA）とディザスタリカバリ（DR）の両方を持つようにAWS上にアプリケーションを設定しています。 組織は、復旧ポイント目標（RPO）と回復時間目標（RTO）の両方を10分にすることを望んでいます。 以下に述べるサービス構成のうち、RPOとRTOを達成するためのhelptheorganizationはありませんか？"
+    description: "組織はAWS上に高可用性（HA）と災害復旧（DR）の両方を持つアプリケーションを設定しています。 組織は、復旧ポイント目標（RPO）と回復時間目標（RTO）の両方を10分にすることを望んでいます。 次のどのサービス構成が、組織がRPOとRTOを達成するのに役立つものではありませんか？"
     , multiple_answer: false
     , answers: [
       {description: "10分ごとにデータのスナップショットを作成し、それを他の領域にコピーします。", correct: false}
