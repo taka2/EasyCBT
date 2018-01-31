@@ -11113,7 +11113,7 @@ questions.add([
     description: "Amazon SNSに関しては、以下のサポートされているプッシュ通知サービスのいずれかを使用して、モバイルデバイスに通知メッセージを送信することができます。サポートされていないものはどれか："
     , multiple_answer: false
     , answers: [
-      {description: "Microsoft Windows Mobile Messaging（MWMM）", correct: false}
+      {description: "Microsoft Windows Mobile Messaging（MWMM）", correct: true}
       , {description: "Android向けGoogle Cloud Messaging（GCM）", correct: false}
       , {description: "Amazonデバイスメッセージング（ADM）", correct: false}
       , {description: "Appleプッシュ通知サービス（APNS）", correct: false}
@@ -11126,7 +11126,7 @@ questions.add([
     , answers: [
       {description: "保存したデータに定期的にアクセスし、変換して処理し、結果を別のAWSサービスに効率的に転送します。", correct: false}
       , {description: "指定された間隔で、異なるAWS計算サービスとストレージサービスとオンプレミスデータソース間でデータを移動します。", correct: false}
-      , {description: "保存されたデータに関するレポートを生成する。", correct: false}
+      , {description: "保存されたデータに関するレポートを生成する。", correct: true}
       , {description: "耐障害性、再現性、可用性の高い複雑なデータ処理ワークロードを作成します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
@@ -11343,13 +11343,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "現在、Webアプリケーションを運用しています。AWS US-East地域では、このアプリケーションはEC2インスタンスとRDS Multi-AZデータベースの自動拡張レイヤー上で実行されます。ITセキュリティコンプライアンスオフィサーは、信頼できる耐久性のあるロギングソリューションEC2.IAMおよびRDSリソースに対する変更。ソリューションでは、ログデータの整合性と機密性を確保する必要があります。どちらのソリューションをお勧めしますか？"
+    description: "現在、Webアプリケーションを運用しています。AWS US-East地域では、このアプリケーションはEC2インスタンスとRDS Multi-AZデータベースの自動スケーリングされたレイヤー上で実行されます。ITセキュリティコンプライアンスオフィサーは、信頼性の高い耐久性のあるログあなたのEC2の変更を追跡するソリューション。 IAMとRDSリソース。ソリューションは、ログデータの整合性と機密性を保証する必要があります。どちらのソリューションをお勧めしますか？"
     , multiple_answer: false
     , answers: [
-      {description: "ログを保存する新しいS3バケットと、グローバルサービスオプションが選択された新しいCloudTrailトレイルを作成します。IAMロールを使用します。S3バケットポリシーとマルチファクタ認証（MFA）ログを保存するS3バケットで削除します。", correct: true}
-      , {description: "ログを保存する新しいS3バケットを持つ新しいCloudTrailを作成します。ログファイル配信通知を管理システムに送信するようにSNSを設定します。S3バケットマットにIAMロールとS3バケットポリシーを使用してログを保存します。", correct: false}
-      , {description: "既存のS3バケットを使用して新しいCloudTrailトレールを作成し、ログを保存し、グローバルサービスオプションを選択します。S3 ACLとマルチファクタ認証（MFA）を使用して、ログを保存するS3バケットを削除します。", correct: false}
-      , {description: "AWS管理コンソール用、AWS SDK用、およびコマンドラインツール用のログを格納する3つの新しいS3バケットを持つ3つの新しいCloudTrailトレールを作成します。ログを格納するS3バケットにIAMロールとS3バケットポリシーを使用します。", correct: false}
+      {description: "ログを保存する新しいS3バケットと、グローバルサービスオプションが選択された新しいCloudTrailトレイルを作成します。IAMの役割を使用します。S3バケットポリシーとマルチファクタ認証（MFA）ログを保存するS3バケットで削除します。", correct: true}
+      , {description: "新しいS3バケットを1つ作成して新しいCloudTrailを作成し、ログを保存するSNSを構成して管理システムにログファイル配信通知を送信するS3バケットに関するIAMロールとS3バケットポリシーを使用すると、ログが保存されます。", correct: false}
+      , {description: "既存のS3バケットを使用して新しいCloudTrailトレールを作成し、ログを保存し、グローバルサービスオプションを選択します。ログを保存しているS3バケットでS3 ACLとマルチファクタ認証（MFA）を使用して削除します。", correct: false}
+      , {description: "3つの新しいS3バケットを作成して、AWS管理コンソール用、AWS SDK用、コマンドラインツール用のログを格納する3つの新しいCloudTrailを作成します。ログを格納するS3バケットにIAMロールとS3バケットポリシーを使用します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -11422,14 +11422,14 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "Elastic Beanstalkを使用して会社のWebサイトを展開し、ログファイルのローテーションをS3に有効にしました。 Elastic Map Reduceジョブは、S3のログを定期的に分析して、CIOと共有する使用ダッシュボードを構築しています。最近、クラウドフロントを使用して動的コンテンツ配信とウェブサイトを起点にウェブサイト全体のパフォーマンスを向上させました。このアーキテクチャの変更後、使用ダッシュボードには、Webサイトのトラフィックが一桁減少したことが示されます。どのようにあなたの使用ダッシュボードを修正するのですか？"
+    description: "Elastic Beanstalkを使用して会社のWebサイトを展開し、ログファイルの回転をS3に設定しました。 Elastic Map Reduceジョブは、S3のログを定期的に分析し、CIOと共有する使用ダッシュボードを構築しています。最近、クラウドフロントを使用して動的コンテンツ配信とWebサイトを起点としたWebサイト全体のパフォーマンスが向上しました。このアーキテクチャの変更後、使用ダッシュボードでは、Webサイトのトラフィックが一桁減少したことが示されます。どのようにあなたの使用ダッシュボードを修正するのですか？"
     , multiple_answer: false
     , answers: [
-      {description: "クラウドフロントがS3にアクセスログを配信し、それらをElastic Map Reduceジョブの入力として使用できるようにします。", correct: false}
-      , {description: "Cloud Trailをオンにし、Elastic Map Reduceジョブの入力としてS3のトレイルログタイルを使用する", correct: false}
-      , {description: "Cloud Watch ELBメトリックをElastic MapReduceジョブの入力として使用するようにログ収集プロセスを変更する", correct: false}
-	  , {description: "Elastic Beanstalkを使用して、Elastic Map Reduceジョブへのログ配信を更新するための「Rebuild Environment」オプションを使用します。", correct: true}
-      , {description: "Elastic Beanstalkの[Restart App server（s）]オプションを使用して、Elastic Map Reduceジョブへのログ配信を更新します。", correct: false}
+      {description: "Enable Cloud Frontを使用してアクセスログをS3に配信し、それらをElastic Map Reduceジョブの入力として使用します。", correct: false}
+      , {description: "Elastic Map Reduceジョブの入力としてCloud Trailをオンにし、S3のトレイルログタイルを使用します", correct: false}
+      , {description: "ElasticMapReduceジョブの入力としてCloud Watch ELBメトリックを使用するようにログ収集プロセスを変更する", correct: false}
+	  , {description: "ElasticMapReduceジョブへのログ配信を更新するElastic Beanstalk \"Rebuild Environment\"オプションを使用します。", correct: true}
+      , {description: "ElasticMapReduceジョブへのログ配信を更新するには、Elastic Beanstalkの「Restart App server（s）」オプションを使用します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -11879,7 +11879,7 @@ questions.add([
     , answers: [
       {description: "20", correct: false}
       , {description: "2", correct: false}
-      , {description: "5", correct: false}
+      , {description: "5", correct: true}
       , {description: "10", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
@@ -11984,13 +11984,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "大規模な不動産仲介業者がオプションoを探索しています（既存のモバイルアプリケーションに費用対効果の高いロケーションベースアラートを追加する）。アプリケーションバックエンドインフラストラクチャは現在AWS上で稼働しています。このサービスをご利用のお客様は、アラートが適切であるためには、配達時間が非常に短い分でなければならず、既存のmobileappには米国全土で500万人のユーザーがいます。次のアーキテクチャ上の提案はどれですか？"
+    description: "大規模な不動産仲介業者がオプションoを探求しています（既存のモバイルアプリケーションに費用対効果の高いロケーションベースのアラートを追加しています）。アプリケーションバックエンドインフラストラクチャは現在AWS上で稼動しています。このサービスにオプトインするユーザーは、 適切なアラートが届くようにするためには、配達時間を短くする必要があります。既存のmobileappには、米国全土で500万人のユーザーがいます。次のアーキテクチャ上の提案はどれですか？"
     , multiple_answer: false
     , answers: [
-      {description: "モバイルアプリケーションは、Elastic LoadBalancingおよびEC2インスタンスを使用してWebサービスエンドポイントにサブミットします。DynamoDBを使用して、EC2インスタンスがモバイルキャリア/デバイスプロバイダと通信し、アラートをモバイルアプリケーションにプッシュバックします。", correct: true}
-      , {description: "AWS DirectConnectまたはVPNを使用してモバイルキャリアとの接続を確立するEC2インスタンスはキャリア接続を介してモバイルアプリケーションのロケーションを受信します：RDSは関連する提供を保存するために使用されますEC2インスタンスはモバイルキャリアと通信し、アラートをモバイルアプリケーションに戻します。", correct: false}
-      , {description: "モバイルアプリケーションは、SQSを使用してデバイスの場所を送信します。 EC2インスタンスは、DynamoDBから関連するものを取得します。AWS Mobile Pushは、モバイルアプリケーションにオファーを送信するために使用されます", correct: false}
-      , {description: "モバイルアプリケーションは、AWS Mobile Pushを使用してデバイスの場所を送信します。EC2インスタンスは、DynamoDBから関連するオファーを取得します。EC2インスタンスは、モバイルキャリア/デバイスプロバイダと通信して、アラートをモバイルアプリケーションにプッシュバックします。", correct: false}
+      {description: "モバイルアプリケーションは、Elastic Load BalancingとEC2インスタンスを使用してWebサービスエンドポイントにサブミットします。DynamoDBを使用して関連するオファーを保存および検索します。EC2インスタンスは、携帯キャリア/デバイスプロバイダと通信してアラートをモバイルアプリケーションにプッシュバックします。", correct: true}
+      , {description: "AWS DirectConnectまたはVPNを使用してモバイルキャリアとの接続を確立するEC2インスタンスは、キャリア接続を介してモバイルアプリケーションのロケーションを受信します。RDSは、EC2インスタンスがモバイルキャリアと通信してアラートをモバイルアプリケーションにプッシュバックするために使用されます。", correct: false}
+      , {description: "モバイルアプリケーションは、SQSを使用してデバイスの場所を送信します。 EC2インスタンスは、DynamoDBから関連する他のものを取得します。AWS Mobile Pushは、モバイルアプリケーションにオファーを送信するために使用されます。", correct: false}
+      , {description: "モバイルアプリケーションは、AWS Mobile Pushを使用してデバイスの場所を送信します。EC2インスタンスは、DynamoDBから関連するオファーを取得します。EC2インスタンスはモバイルキャリア/デバイスプロバイダと通信し、アラートをモバイルアプリケーションにプッシュバックします。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12377,10 +12377,10 @@ questions.add([
     description: "あなたの会社は、複数の国のユーザーをサポートするソーシャルメディアサイトを運営しています。 Webサイトのパーソナライゼーションとアドセレクションをサポートするために、ユーザー設定を読み込むことが最もレイテンシに敏感なコンポーネントです。あなたのアプリケーションは複数の地域に分かれており、どのオプションがこのアプリケーションの要望をサポートしていますか？"
     , multiple_answer: false
     , answers: [
-      {description: "S3からユーザーコンテンツを提供します。 CloudFrontを使用し、各地域のELB間でRoute53レイテンシベースのルーティングを使用する各地域のローカルDynamoDBテーブルからユーザーのプリファレンスを取得し、SQワーカーを使用して各テーブルに更新を伝播するためにSQSを利用して、", correct: true}
-      , {description: "S3 Copy APIを使用して、最近アクセスしたコンテンツを複数の地域にコピーし、S3からユーザーコンテンツを提供します。各地域の動的コンテンツとELBを備えたCloudFront各地域のElasticCacheクラスタからユーザ環境設定を取得し、SNS通知を利用して各地域のワーカーノードにユーザ設定を反映させます。", correct: false}
-      , {description: "S3 Copy APIを使用して、最近アクセスしたコンテンツを複数のリージョンにコピーし、S3からユーザーコンテンツを提供するCloudFrontおよびRoute53レイテンシベースのルーティング各リージョンでDynamoDBテーブルからuserpreferencesを取得し、SOSSを利用して、 DynamoDBの更新。", correct: false}
-      , {description: "S3からのユーザコンテンツの配信。各地域のElastiCacheクラスタからRetrieveuserプリファレンスを取得し、シンプルワークフロー（SWF）を活用して、集中型OBから各ElastiCacheクラスタへのユ​​ーザープリファレンスの伝播を管理します。", correct: false}
+      {description: "S3からユーザーコンテンツを提供します。 CloudFrontを使用し、各地域のELB間でRoute53レイテンシベースのルーティングを使用する各地域のローカルDynamoDBテーブルからユーザー設定を取得し、SQSを利用してSQSワーカーによるユーザー設定の変更を取得して各テーブルに更新を伝播します。", correct: true}
+      , {description: "S3 Copy APIを使用して、最近アクセスしたコンテンツを複数の地域にコピーし、S3からユーザーコンテンツを提供します。 各地域の動的コンテンツとELBを備えたCloudFront各地域のElasticCacheクラスタからユーザ設定を取得し、SNS通知を活用して各地域のワーカーノードにユーザ設定変更を伝播します。", correct: false}
+      , {description: "S3 Copy APIを使用して、最近アクセスしたコンテンツを複数のリージョンにコピーし、S3 CloudFrontおよびRoute53レイテンシベースのルーティングからユーザーコンテンツを配信する。各地域のELB間。DynamoDBテーブルからユーザープリファレンスを取得し、SQSを利用して、 DynamoDB更新を伝播するためのSQSワーカ。", correct: false}
+      , {description: "S3からのユーザコンテンツの配信。 各地域のElastiCacheクラスターからユーザー設定を取得し、Simple Workflow（SWF）を活用して、集中型OBから各ElastiCacheクラスターへのユーザー設定の伝播を管理します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12454,7 +12454,7 @@ questions.add([
     description: "組織がAWSでウェブサイトを設定しています。 組織は、AWS EC2インスタンスで実行されるさまざまなセキュリティ手段に取り組んでいます。 以下のセキュリティメカニズムのどれが、将来のデータ漏洩を避け、セキュリティの弱点を特定するのに役立たないでしょうか？"
     , multiple_answer: false
     , answers: [
-      {description: "Amazonからの事前承認を得て、AWSのA.Run侵入テスト。", correct: false}
+      {description: "Amazonの事前承認を得てAWSの侵入テストを実行します。", correct: false}
       , {description: "アプリケーションテスト用のSQLインジェクションを実行します。", correct: false}
       , {description: "コードを実行してメモリリークがないかチェックします。", correct: true}
       , {description: "AWSインスタンスで強化テストを実行します。", correct: false}
@@ -12814,7 +12814,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "あなたは最近、郊外の街路騒音や空調を測定するセンサーを開発しているスタートアップ企業に加わりました。同社では、3か月間センサーで約100個のセンサーをパイロット展開し、AWSでホストされているバックエンドに毎分1KBのセンサーデータをアップロードしています。パイロットは、データベースでピークまたは10 IOPSを測定し、現在の展開は、500GBの標準ストレージを備えたEC2 instancesand PostgreSQL RDSデータベースを使用して負荷分散された自動拡張されたIngestionレイヤーで構成されています。パイロットは成功とみなされ、CEOは注目を集めました潜在的な投資家。事業計画には、バックエンドによってサポートされる必要がある少なくとも10万個のセンサーの展開が必要です。資金調達を確保するためには、プラットフォームがこれらの要件を満たしているかどうかを確認し、スケーリングをさらに進める必要があります。どのセットアップの勝利が要件を満たしていますか？"
+    description: "あなたは最近、都市部の街中の騒音や大気の質を測定するセンサーを構築するスタートアップ企業に加わりました。同社では、AWSでホストされているバックエンドに対して、毎分3センサーの1秒間に約1KBのセンサーデータをアップロードする約100個のセンサーのパイロット展開を行っています。パイロットは、データベース上のピークまたはIOPSを測定し、現在の展開は、EC2インスタンスを使用する負荷分散された自動拡張摂取レイヤーと、500GB標準ストレージを備えたPostgreSQL RDSデータベースで構成されています。パイロットは成功とみなされ、CEOは注目を集めるか、潜在的な投資家になる。事業計画では、少なくとも100,000個のセンサを配置する必要があり、バックエンドでサポートする必要があります。また、少なくとも2年間のセンサデータを保存する必要があります。資金調達を確保するには、プラットフォームがこれらの要件を満たしているかどうかを確認して、さらなるスケーリングの余地を残す必要があります。どのセットアップの勝利が要件を満たしていますか？"
     , multiple_answer: false
     , answers: [
       {description: "RDSインスタンスへの書き込みをバッファするために、SQSキューをイングレーションレイヤに追加する", correct: false}
@@ -13002,11 +13002,11 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "VPSで起動されたRDSインスタンスでプロビジョニングされたIOPSを使用できますか？"
+    description: "VPCで起動されたRDSインスタンスでプロビジョニングされたIOPSを使用できますか？"
     , multiple_answer: false
     , answers: [
       {description: "はい、Oracleベースのインスタンスでのみ使用できます。", correct: false}
-      , {description: "はい、すべてのRDSインスタンスに使用できます。", correct: false}
+      , {description: "はい、すべてのRDSインスタンスに使用できます。", correct: true}
       , {description: "いいえ", correct: false}
       , {description: "はい、MySQLベースのインスタンスでのみ使用できます。", correct: false}
     ]
@@ -13057,13 +13057,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "あなたの会社は、文書を保存して共有するためのソーシャルメディアウェブサイトを運営しています。 Webアプリケーションを使用すると、大量のファイルをアップロードし、必要に応じてアップロードを再開して一時停止することができます。 現在のところ、Elastic load balancingに基づいたPHPフロントエンドと、受け取ったバイトの平均（NetworkIn）に基づいたAmazonElastic Compute Cloud（EC2）インスタンスのオートスケーリング艦隊にファイルをアップロードしています。 afilehasがアップロードされると、Amazon Simple Storage Service（S3）にコピーされます。 Amazon EC2インスタンスは、Amazon S3のアップロードを許可するAWS Identity and Access Management（IAM）ロールを使用します。 過去6ヶ月間に、ユーザベースとスケールが大幅に増加し、AutoScalinggroupのMaxパラメータを数回増やす必要がありました。 CFOはコストの上昇を懸念しており、必要に応じてコストを最適化するためにアーキテクチャを調整するよう依頼しています。アーキテクチャを変更してコストを削減し、Webアプリケーションのセキュリティとスケーラビリティを維持することができますか？"
+    description: "あなたの会社は、文書の保存と共有のためにソーシャルメディアのウェブサイトを運営しています。 Webアプリケーションを使用すると、大きなファイルをアップロードしながら、必要に応じてアップロードを再開して一時停止することができます。 現在、ファイルはElastic load balancingに基づいてPHPフロントエンドにアップロードされ、受け取ったバイト数の平均（NetworkIn）に基づいたAmazon Elastic Compute Cloud（EC2）インスタンスのオートスケーリング艦隊にアップロードされます。 ファイルがアップロードされると、Amazon Simple Storage Service（S3）にコピーされます。 Amazon EC2インスタンスは、Amazon S3のアップロードを許可するAWS Identity and Access Management（IAM）ロールを使用します。 過去6ヶ月間にユーザーベースとスケールが大幅に増加し、AutoScalingグループのMaxパラメーターを数回増やす必要がありました。 CFOはコストの上昇を懸念しており、必要に応じてコストを最適化するためにアーキテクチャを調整するよう依頼しています。アーキテクチャを変更してコストを削減し、Webアプリケーションを安全かつスケーラブルに保つことができますか？"
     , multiple_answer: false
     , answers: [
-      {description: "Auto Scalingの起動設定を、c3.8xlargeインスタンスを含むように変更します。これらのインスタンスは、10Gbpsのネットワークスループットを潜在的にもたらす可能性があります。", correct: false}
-      , {description: "あなたの取り込みパターンを再構築し、あなたのアイデンティティプロバイダに対してアプリケーションを認証させ、AWSセキュアトークンサービス（GetFederationToken）から一時的なAWS資格情報を取得するブローカーとしてアイデンティティプロバイダを使用します。認証情報とS3エンドポイント/プレフィックスをアプリに安全に渡します。指定されたクレデンシャルとS3接頭辞を使用してファイルをAmazon S3に直接アップロードするクライアントサイドのロジックを実装します。", correct: false}
-      , {description: "あなたの取り込みパターンを再構築し、WebアプリケーションインスタンスをVPC publicsubnetに移動します。（自動スケーリング起動設定セットを使用して）E​​C2インスタンスごとにパブリックIPアドレスを割り当てます。Amazon Route 53ラウンドロビンレコードセットとHTTPヘルスチェックDNSへのapprequestsの負荷分散;この方法では、Elastic Load Balancingをバイパスしてコストを大幅に削減します。", correct: true}
-      , {description: "あなたのインジェストパターンを再構築し、アイデンティティプロバイダに対してアプリケーションを認証させ、AWSセキュアトークンサービス（GetFederationToken）から一時的なAWS資格情報を取得するブローカとしてアイデンティティプロバイダを使用します。認証情報とS3エンドポイント/プレフィックスをアプリに安全に渡します。 S3 multipartアップロードAPIを使用して、特定のクレデンシャルとS3接頭辞を使用してファイルをAmazon S3に直接アップロードするクライアント側のロジックを実装します。", correct: false}
+      {description: "Auto Scalingの起動設定を、c3.8xlargeインスタンスを含むように変更します。それらのインスタンスは潜在的に10Gbpsのネットワークスループットをもたらす可能性があります。", correct: false}
+      , {description: "あなたの取り込みパターンを再設計し、アイデンティティプロバイダに対してアプリケーションを認証させ、アイデンティティプロバイダをAWSセキュアトークンサービス（GetFederationToken）から一時的なAWS資格情報を取得するブローカーとして使用します。認証情報とS3エンドポイント/プレフィックスをアプリに安全に渡します。クライアント側のロジックを実装して、指定されたクレデンシャルとS3接頭辞を使用してファイルをAmazon S3に直接アップロードします。", correct: false}
+      , {description: "取り込みパターンを再構築し、WebアプリケーションインスタンスをVPCパブリックサブネットに移動します。 各EC2インスタンスのパブリックIPアドレスを（自動スケーリング起動設定を使用して）アタッチします。Amazon Route 53ラウンドロビンレコードセットを使用し、HTTPヘルスチェックからDNSへのアプリケーションリクエストの負荷分散を行います。 この方法では、Elastic Load Balancingをバイパスしてコストを大幅に削減します。", correct: true}
+      , {description: "あなたの取り込みパターンを再設計し、アイデンティティプロバイダに対してアプリケーションを認証させ、AWSセキュアトークンサービス（GetFederationToken）から一時的なAWS資格情報を取得するブローカーとしてアイデンティティプロバイダを使用します。 認証情報とS3エンドポイント/プレフィックスをアプリに安全に渡します。 S3 multipartアップロードAPIを使用して、指定された資格情報とS3接頭辞を使用してファイルをAmazon S3に直接アップロードするクライアント側のロジックを実装します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13280,13 +13280,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "あなたのチームには、開発、テスト、生産環境に展開する必要のあるTomcatベースのJavaアプリケーションがあります。いくつかの調査の後、Elastic Beanstalkは、管理が容易なため、開発者ツールとRDSとの緊密な統合のために使用されます。あなたのQAチームのリードは、夜間にあなたの環境にプロダクションデータの浄化されたセットを保存する必要があることを指摘します。同様に、組織の他のソフトウェアチームは、VPCのEC2インスタンスを介して同じ復元データにアクセスします。上記の要件を満たすセキュリティは、以下のようになります。"
+    description: "あなたのチームには、開発、テスト、実稼働環境に展開する必要のあるTomcatベースのJavaアプリケーションがあります。 いくつかの調査の後で、Elastic Beanstalkは、開発ツールとRDSとの緊密な統合のために、使いやすさのために使用します。 あなたのQAチームのリードは、夜間にあなたの環境に浄化された生産データセットをロールする必要があることを指摘しています。同様に、組織の他のソフトウェアチームは、VPCのEC2インスタンスを介して同じ復元データにアクセスします。 上記の要件を満たす永続性とセキュリティーの設定は次のようになります。"
     , multiple_answer: false
     , answers: [
-      {description: "Elastic Beanstalkの定義の一部としてRDSインスタンスを作成し、そのセキュリティグループを変更して、アプリケーションサブネット内のホストからアクセスできるようにします。", correct: true}
-      , {description: "RDSインスタンスを別途作成し、アプリケーションのDB接続文字列にIPアドレスを追加します。セキュリティグループを変更して、VPCのIPアドレスブロック内のホストからのアクセスを許可します。", correct: false}
-      , {description: "あなたのRDSインスタンスを別途作成し、そのDNS名をアプリケーションのDB接続文字列asanenvironment変数に渡します。クライアントマシン用のセキュリティグループを作成し、DBtrafficの有効なソースとしてRDSインスタンス自体のセキュリティグループに追加します。", correct: false}
-      , {description: "RDSインスタンスを個別に作成し、そのDNS名を環境変数としてDB接続文字列に渡します。セキュリティグループを変更して、ホストからのホストへのアクセスを許可します。", correct: false}
+      {description: "Elastic Beanstalk定義の一部としてRDSインスタンスを作成し、アプリケーションサブネット内のホストからアクセスできるようにセキュリティグループを変更します。", correct: true}
+      , {description: "RDSインスタンスを別々に作成し、コード内のアプリケーションのDB接続文字列にIPアドレスを追加します。セキュリティグループを変更して、VPCのIPアドレスブロック内のホストからのアクセスを許可します。", correct: false}
+      , {description: "あなたのRDSインスタンスを別途作成し、そのDNS名を環境変数としてアプリケーションのDB接続文字列に渡します。 クライアントマシン用のセキュリティグループを作成し、DBトラフィックの有効なソースとしてRDSインスタンス自体のセキュリティグループに追加します。", correct: false}
+      , {description: "RDSインスタンスを個別に作成し、そのDNS名を環境変数としてDB接続文字列に渡します。セキュリティグループを変更して、アプリケーションサブネット内のホストからアクセスできるようにします。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13357,7 +13357,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "顧客は、単一のシステム内でログストリーム（アクセスログアプリケーションログのセキュリティログなど）を統合しようとしています。 一旦統合されると、顧客はヒアリスティクスに基づいてこれらのログをリアルタイムで分析したいと考えています。 過去12時間に抽出したデータサンプルに戻す必要があるヒューリスティックを検証する必要がありますか？お客様の要件を満たす最善のアプローチは何ですか？"
+    description: "顧客は、1つのシステムでログストリーム（アクセスログアプリケーションログのセキュリティログなど）を統合しようとしています。 一旦統合されると、ヒューリスティックに基づいてこれらのログをリアルタイムで分析することが求められます。 顧客はヒューリスティックを検証する必要があります。ヒューリスティックは、過去12時間から抽出されたデータサンプルに戻る必要があります。 顧客の要件を満たすための最良のアプローチは何ですか？"
     , multiple_answer: false
     , answers: [
       {description: "すべてのログイベントをAmazon Kinesisに送信し、クライアントプロセスを開発して、ヒューリスティックをログに適用します。", correct: true}
@@ -13564,13 +13564,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "特典登録会社は、パブリックWeb層にNAT（Network Address Translation）インスタンスを含むAWS上のVPCで動作する3層Webアプリケーションをホストしています。 余分なオーバーヘッドが増えています。登録者は、CloudWatchやその他の監視ツールを使用した調査で、非常に大きくて予期しないものが発見された場合、2日間十分に処理してからWeb層が応答しなくなります。 有益な会社に顧客がいない国からのポート80を介した15の特定のIPアドレスのセットからの着信トラフィックの量。 Web層インスタンスは非常にオーバーロードされているため、登録管理者はSSHを使用することはできません。この攻撃に対する防御には何が役立つでしょうか？"
+    description: "特典登録会社は、パブリックWeb層にNAT（Network Address Translation）インスタンスを含むAWS上のVPCで動作する3層Webアプリケーションをホストしています。 新たな会計年度の給付登録期間に予想される作業負荷と、追加のオーバーヘッドに十分な準備容量があります。2日間の申し込みがうまくいってからWeb層が応答しなくなると、CloudWatchやその他の監視ツールを使って調査すると、 有益な会社に顧客がいない国からのポート80を介した15の特定のIPアドレスのセットからの着信トラフィックの大規模で予想外の量。 Web層インスタンスは非常にオーバーロードされているため、登録管理者はSSHさえできません。この攻撃に対する防御にはどのアクティビティが役立つでしょうか？"
     , multiple_answer: false
     , answers: [
       {description: "Web層に関連付けられたカスタムルートテーブルを作成し、IGW（インターネットゲートウェイ）からの攻撃IPアドレスをブロックします。", correct: false}
-      , {description: "Web層サブネット内のNATインスタンスのEIP（Elastic IP Address）を変更し、新しいEIPでMainRoute Tableを更新します", correct: false}
-      , {description: "ポート80を介して攻撃するIPアドレスをブロックするためのC. 15のセキュリティグループルールを作成する", correct: false}
-      , {description: "攻撃側のIPアドレスをブロックするために、Web層サブネットに関連付けられたインバウンドNACL（ネットワークアクセス制御リスト）を作成します", correct: true}
+      , {description: "Web層サブネット内のNATインスタンスのEIP（Elastic IP Address）を変更し、新しいEIPでMain Route Tableを更新します", correct: false}
+      , {description: "ポート80を介して攻撃するIPアドレスをブロックする15のセキュリティグループルールを作成する", correct: false}
+      , {description: "攻撃者のIPアドレスをブロックする拒否ルールを持つWeb層サブネットに関連付けられた着信NACL（ネットワークアクセス制御リスト）を作成する", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13849,11 +13849,11 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "trueまたはfalse：「Amazon ElastiCacheのコンテキストでは、アプリケーションの観点から、クラスタ構成エンドポイントに接続することは、個々のカセゴーノに直接接続することと同じです。"
+    description: "真実または虚偽：「Amazon ElastiCacheのコンテキストでは、アプリケーションの観点から、クラスタ構成エンドポイントに接続することは、個々のキャッシュノードに直接接続することと同じです。"
     , multiple_answer: false
     , answers: [
-      {description: "True、アプリケーションの観点からすると、クラスタ構成エンドポイントに接続することは、それぞれが一意のノード識別子を持つため、個々のキャッシュノードに直接接続するよりも根本的に異なります。", correct: false}
-      , {description: "True、アプリケーションの観点から見ると、クラスタ構成エンドポイントに接続することは、個々のキャッシュ・ノードに直接接続することとは異なります。", correct: true}
+      {description: "True、アプリケーションの観点からすると、クラスタ構成エンドポイントに接続することは、それぞれが一意のノード識別子を持つため、個々のキャッシュノードに直接接続することと変わりありません。", correct: false}
+      , {description: "True、アプリケーションの観点から見ると、クラスタ構成エンドポイントに接続することは、個々のキャッシュノードに直接接続することと変わりありません。", correct: true}
       , {description: "False、キャッシュノードに接続できますが、クラスタ構成エンドポイントには接続できません。", correct: false}
       , {description: "False、クラスタ構成エンドポイントに接続できますが、キャッシュノードには接続できません。", correct: false}
     ]
@@ -14004,13 +14004,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "ユーザーは、VPCのパブリックサブネットの一部である単一のEC2インスタンスにWebサーバーとアプリケーションサーバーをホストすることを計画しています。ユーザーが2つの個別の公開IPと両方のセキュリティグループを分離する方法 アプリケーションだけでなく、Webサーバー？"
+    description: "ユーザーは、VPCのパブリックサブネットの一部である単一のEC2インスタンス上に、Webサーバーとアプリケーションサーバーをホストすることを計画しています。 ユーザーセットアップでは、アプリケーションとWebサーバーの両方に2つの独立したパブリックIPとセキュリティグループを分離する方法を教えてください。"
     , multiple_answer: false
     , answers: [
       {description: "2つの別々のサブネットを持つVPCを起動し、インスタンスを両方のサブネットの一部にします。", correct: false}
       , {description: "2つのネットワークインターフェイスを持つVPCインスタンスを起動します。 個別のセキュリティグループとエラスティックIPを割り当てます。", correct: true}
-      , {description: "2つのネットワークインターフェイスを持つVPCインスタンスを起動します。 それぞれに別々のセキュリティグループを割り当て、andAWSは別のパブリックIPを割り当てます。", correct: false}
-      , {description: "パブリケーションサブネットの別々のVPCインスタンスへのリクエストをリダイレクトするように、ELBでVPCを起動します。", correct: false}
+      , {description: "2つのネットワークインターフェイスを持つVPCインスタンスを起動します。 それぞれに個別のセキュリティグループを割り当て、AWSはそれぞれに別のパブリックIPを割り当てます。", correct: false}
+      , {description: "パブリックサブネットの別々のVPCインスタンスへの要求をリダイレクトするように、ELBでVPCを起動します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
