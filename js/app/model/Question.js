@@ -43,6 +43,12 @@ easycbt.model.Question = Backbone.Model.extend({
   	var self = this;
   	return self.get('category');
   },
+  
+  // 解説を取得する
+  getExplanation: function() {
+	var self = this;
+	return self.get('explanation');
+  },
 
   // 正解の選択肢リストを取得する
   getCorrectAnswers: function() {
