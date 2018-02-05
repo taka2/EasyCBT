@@ -105,6 +105,10 @@
         <% } %>
         <li>回答: <%= takeExamination.getAnswers().at(k).getAnsweredChoicesDescription() %></li>
         <li>正解: <%= takeExamination.getAnswers().at(k).getQuestion().getCorrectAnswersDescription() %></li>
+        <li>
+          <% if(takeExamination.getAnswers().at(k).getQuestion().getExplanation()) { %>
+            解説: <%= takeExamination.getAnswers().at(k).getQuestion().getExplanation() %></li>
+          <% } %>
       </ul>
     </td></tr>
     <% } %>

@@ -10,6 +10,7 @@ questions.add([
       , {description: "short", correct: false}
     ]
     , category: 'Java'
+    , explanation: 'Stringは参照型です。'
   }
   , {
     description: "intの最大値はどれか"
