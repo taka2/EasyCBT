@@ -10985,6 +10985,7 @@ questions.add([
       , {description: "100 GB", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'ユーザーがMySQL RDSでPIOPSを有効にしようとしている場合、ストレージの最小サイズは100 GBにする必要があります。'
   }
   , {
     description: "Amazon ElastiCacheに関する正しい説明を選択してください。"
@@ -10996,6 +10997,7 @@ questions.add([
       , {description: "Amazon仮想プライベートクラウド（Amazon VPC）環境では実行できません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'ElastiCacheは、クラウド内の分散メモリ内キャッシュ環境を簡単に設定、管理、および拡張できるWebサービスです。 分散キャッシュ環境の導入と管理に伴う複雑さを排除しながら、高性能でスケーラブルでコスト効率の高いキャッシュソリューションを提供します。 ElastiCacheを使用すると、ハードウェアのプロビジョニングやソフトウェアのインストールを行うことなく、キャッシュ環境を迅速に導入できます。参考：http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/WhatIs.html'
   }
   , {
     description: "ユーザは、起動設定の一部として設定されたIAMロールをどのようにリストできますか？"
@@ -11007,6 +11009,7 @@ questions.add([
       , {description: "as-describe-launch-configs -role", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'as-describe-launch-configsは、指定された地域のAWSアカウントによって作成されたすべての起動設定パラメータを記述します。 一般に、Launch Config name、Instance Type、AMI IDなどの値を返します。設定で使用されるIAMプロファイルなどの追加パラメータが必要な場合は、コマンドを実行する必要があります。as-describe-launch-configs --show-long'
   }
   , {
     description: "非常に高いレベルの信頼性とパフォーマンスを実現するために、どのようなRAID方式がCloud Block Storageバックエンドで使用されていますか？"
@@ -11018,6 +11021,7 @@ questions.add([
       , {description: "RAID 2（ビットレベルストライピング）", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'クラウドブロックストレージバックエンドストレージボリュームは、RAID 10方式を採用し、非常に高いレベルの信頼性とパフォーマンスを提供します。参考：http://www.rackspace.com/knowledge_center/product-faq/cloud-block-storage'
   }
   , {
     description: "ARNの大文字と小文字を区別しない一致をチェックするためにIdentity and Access Management（IAM）ポリシー内で使用できるAmazonリソース名（ARN）条件演算子はどれですか？"
@@ -11029,6 +11033,7 @@ questions.add([
       , {description: "ArnLike", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon Resource Name（ARN）条件演算子を使用すると、キーをARNと比較してアクセスを制限する条件要素を構築できます。 例えば、ArnLikeは、ARNの大文字と小文字を区別しないマッチングです。 コロンで区切られた6つのARNコンポーネントはそれぞれ別々にチェックされ、それぞれに複数文字の一致ワイルドカード（*）または1文字の一致ワイルドカード（？）が含まれます。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_ElementDescriptions.html'
   }
   , {
     description: "開発（Dev）環境とテスト環境をAWSに移行しようとしています。各環境をホストするために別々のAWSアカウントを使用することに決めました。連結決済を使用して、各口座明細をマスターAWS口座にリンクする予定です。マスターアカウントの管理者がDevアカウントとTestアカウントの両方のリソースを停止、削除、または終了するためのアクセス権を持つ方法を実装したいと考えています。この目標を達成するためのオプションを特定します。"
@@ -11062,6 +11067,7 @@ questions.add([
       , {description: "32 KB", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IOPSは1秒当たりの入出力操作です。 Amazon EBSは1秒あたりの各I / O操作（つまり256 KB以下）を1 IOPSとして測定します。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html'
   }
   , {
     description: "PollForTaskアクションがAWSデータパイプラインのタスクランナーによって呼び出されたときの役割は何ですか"
@@ -11073,6 +11079,7 @@ questions.add([
       , {description: "タスクランナーがタスクを完了したときにAWSデータパイプラインに結果を通知するために使用されます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'タスクランナーは、AWSデータパイプラインから実行するタスクを受け取るためにPollForTaskを呼び出します。 タスクが作業キュー内で準備されている場合、PollForTaskはすぐに応答を返します。 キュー内で使用できるタスクがない場合、PollForTaskはロングポーリングを使用し、最大90秒間ポーリング接続を保持します。この間、新規にスケジュールされたタスクがタスクエージェントに渡されます。 リモートワーカーは、同じワーカーグループで応答を受信するまでPollForTaskを再度呼び出さないでください。これは最大90秒かかることがあります。参照：http://docs.aws.amazon.com/datapipeline/latest/APIReference/API_PollForTask.html'
   }
   , {
     description: "組織は、Elastic Beanstalkを使用して拡張性の高いアプリケーションを設定しています。 彼らは、Elastic Load Balancing（ELB）とパブリックサブネットとプライベートサブネットを持つVirtual Private Cloud（VPC）を使用しています。 彼らは以下の要件を持っています：<br/>" +
@@ -11087,6 +11094,7 @@ questions.add([
       , {description: "EC2インスタンスからのすべての発信トラフィックをNAT経由でルーティングするルーティングルールを作成します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon仮想プライベートクラウド（Amazon VPC）を使用すると、ユーザーはAmazon Web Services（AWS）クラウドのプライベートな独立したセクションで仮想ネットワーキング環境を定義できます。ユーザーは仮想ネットワーキング環境を完全に制御できます。組織がAmazon EC2インスタンスにプライベートIPアドレスを要求している場合は、各可用性ゾーンにVPC用のパブリックサブネットとプライベートサブネットを作成する必要があります（これはAWS Elastic Beanstalkの要件です）。組織は公共のサブネットにELBやNATなどのパブリックリソースを追加し、AWS Elastic Beanstalkは固有の弾性IPアドレス（静的なパブリックIPアドレス）を割り当てます。組織は、Amazon EC2インスタンスをプライベートサブネットで起動し、AWS Elastic Beanstalkがルーティング不可能なプライベートIPアドレスを割り当てるようにする必要があります。組織は、次のルールを使用してルートテーブルを設定する必要があります。すべての着信トラフィックをELBからEC2インスタンスにルーティングします。 NAT経由でEC2インスタンスからのすべての発信トラフィックをルーティングします。参照：http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo-vpc.html'
   }
   , {
     description: "AWS OpsWorksの仮想プライベートクラウド（VPC）で作成されたスタックについて、どのステートメントが真実ではないのですか？"
@@ -11098,6 +11106,7 @@ questions.add([
       , {description: "あなたのアプリとカスタムCookbookレポジトリは、スタック内のすべてのインスタンスでアクセス可能でなければなりません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS OpsWorksでは、仮想プライベートクラウド（VPC）でスタックのインスタンスを作成することで、スタックのインスタンスへのユーザーアクセスを制御できます。たとえば、ユーザーがスタックのアプリケーションサーバーまたはデータベースに直接アクセスするのを望まず、すべてのパブリックトラフィックをElastic Load Balancer経由で転送する必要があるとします。 VPCは1つまたは複数のサブネットで構成され、各サブネットには1つまたは複数のインスタンスが含まれます。各サブネットには、宛先IPアドレスに基づいて発信トラフィックを送信する関連ルーティングテーブルがあります.VPC内のインスタンスは、通常、サブネットに関係なく相互に通信できます。インスタンスがインターネットと通信できるサブネットは、パブリックサブネットと呼ばれます。サブネットそのインスタンスはVPC内の他のインスタンスとしか通信できず、インターネットと直接通信できないものをプライベートサブネットと呼びます.AWS OpsWorksでは、プライベートサブネット内のインスタンスを含むスタック内のすべてのインスタンスが次のエンドポイント：AWS OpsWorksサービス、https://opsworks-instance-service.us-east-1.amazonaws.com .Amazon S3指定したオペレーティングシステムに応じて、Amazon LinuxまたはUbuntu 12.04 LTSのパッケージリポジトリ。あなたのアプリとカスタム料理のレポジトリ。参照：http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-vpc.html#workingstacksvpc-basics'
   }
   , {
     description: "SAMLトークンで発行されたクレームを編集する必要がある理由は何ですか？"
@@ -11109,6 +11118,7 @@ questions.add([
       , {description: "NameIdentifierクレームは、ADに格納されているユーザー名と同じでなければなりません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '名前識別子の主張は、ADに格納されているユーザー名と同じにすることはできません。アプリには、異なるURIsの参照セットが必要です。参照：https://azure.microsoft.com/en-us/documentation/articles/active-directory-saml-claimscustomization/'
   }
   , {
     description: "Amazon SNSに関しては、以下のサポートされているプッシュ通知サービスのいずれかを使用して、モバイルデバイスに通知メッセージを送信することができます。サポートされていないものはどれか："
@@ -11120,6 +11130,7 @@ questions.add([
       , {description: "Appleプッシュ通知サービス（APNS）", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon SNSでは、モバイルデバイスのアプリケーションに通知メッセージを直接送信できます。モバイルエンドポイントに送信された通知メッセージは、メッセージアラート、バッジ更新、またはサウンドアラートとしてモバイルアプリに表示されます。 Microsoft Windows Mobile Messaging（MWMM）は存在せず、Amazon SNSではサポートされていません。参照：http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html'
   }
   , {
     description: "次のうちAWSデータパイプラインを使用して実行できないものはどれですか？"
@@ -11154,6 +11165,7 @@ questions.add([
       , {description: "ネットワークに開放されたポート22（SSHの場合）またはポート3389（RDPの場合）を持つセキュリティグループ。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS CloudHSMは、AWSクラウドでハードウェアセキュリティモジュール（HSM）を利用できるようにすることで、お客様に安全な暗号鍵ストレージを提供します.AWS CloudHSMは、HSMアプライアンスをプロビジョニングする前に、次の環境を必要とします。 AWS CloudHSMサービス.VPC内の1つのプライベートサブネット（インターネットゲートウェイのないサブネット）。このサブネットにはHSMアプライアンスがプロビジョニングされています.1つのパブリックサブネット（インターネットゲートウェイが接続されたサブネット）。コントロールインスタンスはこのサブネットにアタッチされます。AWSリソースへのアクセスをAWS CloudHSMに委譲するAWS IDおよびアクセス管理（IAM）の役割。SafeNetクライアントソフトウェアがインストールされているHSMアプライアンスと同じVPC内のEC2インスタンス。このインスタンスは制御インスタンスと呼ばれ、HSMアプライアンスへの接続および管理に使用されます。ポート22（SSHの場合）またはポート3389（RDPの場合）がネットワークに開放されているセキュリティグループ。このセキュリティグループはコントロールインスタンスに接続されているため、リモートからアクセスできます。'
   }
   , {
     description: "次のうち、EC2-ClassicインスタンスとEC2-VPCネットワークインターフェイスに適用されるセキュリティグループとルールの数について正しい記述はどれですか？"
@@ -11165,6 +11177,7 @@ questions.add([
       , {description: "EC2-Classicでは、インスタンスを最大500個のセキュリティグループに関連付け、最大100個のルールをセキュリティグループに追加できます。 EC2-VPCでは、ネットワークインターフェイスを最大5つのセキュリティグループに関連付け、最大50のルールをセキュリティグループに追加できます。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'セキュリティグループは、1つまたは複数のインスタンスのトラフィックを制御する仮想ファイアウォールとして機能します。 インスタンスを起動すると、1つまたは複数のセキュリティグループがインスタンスに関連付けられます。 関連付けられたインスタンスとの間でトラフィックを送受信できるようにする各セキュリティグループにルールを追加します。 EC2-Classicを使用している場合は、EC2-Classic専用に作成したセキュリティグループを使用する必要があります。 EC2-Classicでは、インスタンスを最大500個のセキュリティグループに関連付け、最大100個のルールをセキュリティグループに追加できます。 EC2-VPCを使用している場合は、VPC専用に作成されたセキュリティグループを使用する必要があります.EC2-VPCでは、ネットワークインターフェイスを最大5つのセキュリティグループに関連付け、最大50のルールをセキュリティグループに追加できます。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html'
   }
   , {
     description: "お使いのシステムでは、トラブルシューティングの処理中にダウンタイムが発生しました。 新しい管理者がいくつかのプロダクションEC2インスタンスを誤って終了したことがわかりました。 将来的に同様の状況を防ぐのに役立つ戦略はどれですか？ 管理者は、次のことができる必要があります。開発リソースの起動、停止の開始、および終了。 本番インスタンスを起動して起動します。"
@@ -11209,6 +11222,7 @@ questions.add([
       , {description: "numeql", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAM内で数値条件を使用する場合、より冗長なバージョンではなく、使用可能なコンパレータの短いバージョンを使用できます。 たとえば、numIteqはNumericLessThanEqualsの短いバージョンです。参照：http://awsdocs.s3.amazonaws.com/SQS/2011-10-01/sqs-dg-2011-10-01.pdf'
   }
   , {
     description: "IAMユーザーは、他のルートアカウントのバケットに属するオブジェクトに対してアクションを実行しようとしています。 AWS S3は以下のオプションのどれを検証しませんか？"
@@ -11220,6 +11234,7 @@ questions.add([
       , {description: "IAMユーザーの親が提供する許可", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAMユーザーが別のAWSユーザーのバケットに属するオブジェクトに対して何らかのアクションを実行しようとしている場合、S3はIAMユーザーの所有者が十分な許可を与えているかどうかを検証します。 また、バケットのポリシーとオブジェクト所有者によって定義されたポリシーも検証されます。参照：http://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-auth-workflow-objectoperation.html'
   }
   , {
     description: "専用インスタンスがVPCに起動されるとどうなりますか？"
@@ -11231,6 +11246,7 @@ questions.add([
       , {description: "これらのどれも真実ではありません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'インスタンスのテナンシーが専用のVPCにインスタンスを起動すると、インスタンスはインスタンスのテナントに関係なく、自動的に専用インスタンスになります。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/dedicated-instance.html'
   }
   , {
     description: "プロキシソフトウェアを実行する1つのEC2インスタンスを展開し、VPC内のすべてのサブネットおよびEC2インスタンスからのトラフィックを受け入れるように設定する、EC2ホストアプリケーションから特定のドメインへの送信HTTPの接続を制限する会社のURLホワイトリストシステムを実装しています 。 ホワイトリスト構成で定義したドメインへのトラフィックのみを通過させるようにプロキシを構成します。夜間のメンテナンスウィンドウまたは10分で新しいソフトウェア更新をフェッチします。 各アップデートのサイズは約200MBで、インスタンス数は500です。VPCで定期的にアップデートを取得する数日後に、一部のマシンがメンテナンスウィンドウ内のアップデートの一部ではなく、すべてを正常にダウンロードできていないことがわかります。 これらのアップデートに使用されるダウンロードURLは、プロキシのホワイトリスト設定に正しくリストされており、インスタンス上のWebブラウザを使用して手動でアクセスできます。 何が起こっているのでしょうか？ （2つの回答を選択）"
@@ -11265,6 +11281,7 @@ questions.add([
       , {description: "2", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon Redshiftのシングルノード構成の場合、利用可能な唯一のオプションは2つのオプションの中で最小です。 8XL超大ノードは、マルチノード構成でのみ使用できます。参照：http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html'
   }
   , {
     description: "組織には人事部門のVPCと管理部門のVPCがあります。 HR部門ではAdmin VPCで実行されているすべてのインスタンスにアクセスする必要があり、管理部門ではHR部門のすべてのリソースにアクセスする必要があります。 組織はどのようにこのシナリオを設定できますか？"
@@ -11276,6 +11293,7 @@ questions.add([
       , {description: "1つのVPCのリソースを別のVPCから接続することはできません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。 これにより、ユーザーは、ユーザーが定義した仮想ネットワークにAWSリソースを起動できます。 VPCピアリング接続を使用すると、プライベートIPアドレスを使用してピアVPC間で同じネットワークのようにトラフィックをルーティングできます。これは、同じまたは異なるAWSアカウントの1つのVPCが他のVPCのリソースに接続する場合に役立ちます。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-peering.html'
   }
   , {
     description: "あなたの会社はイベント登録サイトに直面している顧客を運営しています。 このサイトは、Webおよびアプリケーション層サーバーとMySQLデータベースを含む3層アーキテクチャーで構築されています。アプリケーションには通常の操作で6つのWeb層サーバーと6つのアプリケーション層サーバーが必要ですが、サーバーのキャパシティーは最低65％ MySQLデータベース。 3つのアベイラビリティゾーン（AZ）を持つ地域にこのアプリケーションを配備する場合、どのアーキテクチャが高可用性を提供しますか？"
@@ -11298,6 +11316,7 @@ questions.add([
       , {description: "プライベートIPアドレス10.201.31.6は、関連するサブネットのIPアドレス範囲の一部ではありません", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon VPCでは、プライベートIPアドレスをインスタンスに割り当てることができます。関連するサブネットのIPアドレス範囲の一部です。AmazonでIPネットワーキング目的で予約されていません。現在、別のインターフェイスに割り当てられていません。参照：http://aws.amazon.com/vpc/faqs/'
   }
   , {
     description: "IAMポリシーのPrincipal要素は、許可または拒否する必要のある特定のエンティティを参照しますが、_______は、指定されたエンティティ以外のすべてのユーザーに変換されます。"
@@ -11309,6 +11328,7 @@ questions.add([
       , {description: "Action", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAMポリシーステートメントに含まれているNotPrincipal要素を使用すると、特定のリソースへのアクセスが許可または拒否されたプリンシパルのリストに対する例外を指定できます。NotPrincipal要素を使用してプリンシパルのリストに対する例外を指定します。 たとえば、NotPrincipal要素に指定されたプリンシパル以外のすべてのプリンシパルへのアクセスを拒否できます。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#Principal'
   }
   , {
     description: "組織では、VPCを使用してRDSをセットアップしています。 組織は、RDSがインターネットからアクセス可能であることを望んでいます。 このシナリオでは、以下で説明する構成のどれを必要としませんか？"
@@ -11320,6 +11340,7 @@ questions.add([
       , {description: "組織は、VPC属性のDNSホスト名とDNS解決を有効にする必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。これにより、ユーザーは、ユーザーが定義した仮想ネットワークにRDSなどのAWSリソースを起動できます。サブネットは、VPCのIPアドレス範囲のセグメントで、ユーザーはセキュリティと運用上のニーズに基づいてVPCリソースのグループに割り当てることができます。 DBサブネットグループは、ユーザーがVPCで作成し、ユーザーがRDS DBインスタンスに割り当てることができるサブネット（通常はプライベート）の集合です。 DBサブネットグループを使用すると、DBインスタンスを作成するときに特定のVPCを指定できます。 RDSインスタンスがインターネットからアクセスできる必要がある場合：組織は、VPC属性、DNSホスト名、DNS解決でRDSインスタンスが有効になっていることを設定する必要があります。組織は、RDSインスタンスを一般にアクセス可能にするコンソールでパラメータを有効にする必要があります組織は、RDS VPCセキュリティグループのインターネットからのアクセスを許可する必要があります。参照：http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.html'
   }
   , {
     description: "リージョンごとに許可されるVPCのデフォルトの最大数は何ですか？"
@@ -11331,6 +11352,7 @@ questions.add([
       , {description: "15", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'リージョンごとに許可されるVPCの最大数は5です。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Appendix_Limits.html'
   }
   , {
     description: "ユーザーが必要なポート速度を決定する必要がある場合は、AWS Direct Connectを使用するどのステップですか？"
@@ -11342,6 +11364,7 @@ questions.add([
       , {description: "AWSダイレクトコネクト接続要求を送信する", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS Direct Connectの接続リクエストを提出するためには、下記の情報を提供する必要があります。連絡先情報、接続するAWS Direct Connectionの場所、AWS Partner Network（APN）サービスを使用している場合は、AWS Direct Connectのパートナーの詳細、必要なポート速度、1Gbpsまたは10Gbpsのいずれかです。参照：http://docs.aws.amazon.com/directconnect/latest/UserGuide/getstarted.html#ConnectionRequest'
   }
   , {
     description: "現在、Webアプリケーションを運用しています。AWS US-East地域では、このアプリケーションはEC2インスタンスとRDS Multi-AZデータベースの自動スケーリングされたレイヤー上で実行されます。ITセキュリティコンプライアンスオフィサーは、信頼性の高い耐久性のあるログあなたのEC2の変更を追跡するソリューション。 IAMとRDSリソース。ソリューションは、ログデータの整合性と機密性を保証する必要があります。どちらのソリューションをお勧めしますか？"
@@ -11364,6 +11387,7 @@ questions.add([
       , {description: "Amazon ElastiCacheはMemcachedのみをサポートしています。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    	, explanation: 'Amazon ElastiCacheでサポートされているキャッシュエンジンは、MemcachedとRedisです。参照：http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/SelectEngine.html'
   }
   , {
     description: "顧客はSSL対応のWebアプリケーションをAWSにデプロイしており、インスタンスへのログインとAPI呼び出しを行うEC2サービス管理者と、秘密鍵を含むアプリケーションのX.509証明書に対して排他的にアクセス権を持つセキュリティ担当者との間で役割の分離を実装したいと考えています。"
@@ -11444,6 +11468,7 @@ questions.add([
       , {description: "VPCを使用して内部ロードバランサを作成し、それにすべてのApp Serverを登録します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon仮想プライベートクラウド（Amazon VPC）を使用すると、Amazon Web Services（AWS）クラウドのプライベートな独立したセクションで仮想ネットワーク環境を定義できます。 ユーザーは仮想ネットワーキング環境を完全に制御できます。 この仮想プライベートクラウド内で、ユーザーはELBやEC2インスタンスなどのAWSリソースを起動できます。 VPCで利用できるELBには、インターネットに面したELBと内部（プライベート）ELBの2種類があります。 Appサーバーなどの内部サーバーの場合、組織はVPCに内部ロードバランサを作成し、内部ロードバランサの背後にバックエンドアプリケーションインスタンスを配置できます。 内部ロードバランサは、プライベートIPアドレスを使用するバックエンドアプリケーションインスタンスに要求をルーティングし、内部ロードバランサからの要求のみを受け入れます。参照：http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/vpc-loadbalancertypes.html'
   }
   , {
     description: "顧客がウェブサイト上のクリックストリームデータを分析して、行動分析を行うことができるようにする必要があります。 顧客がクリックしたページと広告の順序を知る必要があります。 このデータは、顧客がサイトをクリックして粘着性および広告のクリックスルーを増やすように、ページレイアウトを変更するためにリアルタイムで使用されます。 このデータのキャプションと分析の要件を満たすのはどのオプションですか？"
@@ -11466,6 +11491,7 @@ questions.add([
       , {description: "ユーザーが専用のテナントを設定したにもかかわらず、EBSボリュームはEC2インスタンスと同じテナントハードウェア上に存在しません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon仮想プライベートクラウド（Amazon VPC）を使用すると、ユーザーはAmazon Web Services（AWS）クラウドのプライベートな独立したセクションで仮想ネットワーキング環境を定義できます。ユーザーは仮想ネットワーキング環境を完全に制御できます。専用インスタンスは、単一の顧客専用のハードウェア上の仮想プライベートクラウド（VPC）で動作するAmazon EC2インスタンスです。クライアントの専用インスタンスは、ホストハードウェアレベルで、専用インスタンスではないインスタンスから物理的に分離されます。他のAWSアカウントに属しています。 VPCの専用テナントモデルで起動されるすべてのインスタンスは、常に専用インスタンスになります。専用テナントには、RDSなどの少数のサービスをサポートしないという制限があります。 EBSでさえ、専用ハードウェア上に置かれることはありません。ただし、専用のテナントを持つリザーブドインスタンスモデルを使用することで、一部のコストを節約したり、容量を確保したりすることもできます。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/dedicated-instance.html'
   }
   , {
     description: "AWSデータパイプラインはAWSデータパイプラインで管理される計算リソースをいつ終結させますか？"
@@ -11477,6 +11503,7 @@ questions.add([
       , {description: "リソースを使用する最終アクティビティが正常に完了した場合、または失敗した場合", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'これらのリソースを使用するスケジュールされた時間の最初のアクティビティは実行準備ができており、リソースを使用する最後のアクティビティが正常に完了するか失敗した場合にそれらのインスタンスが終了します。参照：https://aws.amazon.com/datapipeline/faqs/'
   }
   , {
     description: "組織は米国でCIAのソフトウェアを作っています。 CIAはAWS上でアプリケーションをホストすることに合意しましたが、安全な環境にあります。 組織は、AWS GovCloud地域でアプリケーションをホストすることを考えています。 組織がAWS標準の地域と比較してAWS GovCloudでホスティングしているときに、以下に述べる違いのどれが正しくないのですか？"
@@ -11488,6 +11515,7 @@ questions.add([
       , {description: "物理的に隔離されており、他のすべての地域との論理ネットワークの隔離があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS GovCloud（US）は、米国の政府機関および顧客が特定の規制要件およびコンプライアンス要件に対処することによって、敏感なワークロードをクラウドに移行できるように設計された独立したAWS地域です。 AWS GovCloud（米国）地域は、米国国際航空交通規則（ITAR）の要件に準拠しています。米国人のみへの物理的および論理的な管理アクセスの制限標準のAWSアカウントよりアクセスキーや秘密のアクセスキーなどの別個のAWS GovCloud（US）資格があります。ユーザーはIAMでサインインしますユーザー名とパスワードAWS GovCloud（米国）地域認証はAmazon.comから完全に分離されています。組織がAWS GovCloudのEC2でホストする予定の場合、AWS GovCloud請求は標準のAWSアカウントであり、別途請求されることはありません。リファレンス：http://docs.aws.amazon.com/govcloud-us/latest/UserGuide/whatis.html'
   }
   , {
     description: "組織は、AWSを使用してスケーラブルなWebアプリケーションをホストしています。 組織は、アプリケーションを拡張可能にするためにELBと自動スケーリングを設定しました。 アプリケーションがVPCでWebアプリケーションをホストする予定があるときに、ELBのために以下に述べる記述のどれを従う必要はありませんか？"
@@ -11499,6 +11527,7 @@ questions.add([
       , {description: "インターネットに直面しているELBは、パブリックサブネット内になければなりません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon仮想プライベートクラウド（Amazon VPC）を使用すると、Amazon Web Services（AWS）クラウドのプライベートな独立したセクションで仮想ネットワーキング環境を定義できます。ユーザーは仮想ネットワーキング環境を完全に制御できます。この仮想プライベートクラウド内で、ユーザーはELBやEC2インスタンスなどのAWSリソースを起動できます。 VPCで利用できるELBには、インターネットに面したELBと内部（プライベート）ELBの2種類があります。 ELBに直面しているインターネットでは、ELBをパブリックサブネットに置く必要があります。ユーザーがパブリックサブネットを作成した後、パブリックサブネットのルートテーブルをインターネットゲートウェイに関連付けて、サブネット内のロードバランサがインターネットに接続できるようにする必要があります。 ELBとインスタンスは別々のサブネットに置くことができます。ただし、インスタンスとELB間の通信を可能にするには、セキュリティグループルールとネットワークACLを設定して、VPC内のサブネット間でトラフィックをルーティングできるようにする必要があります。参照：http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/CreateVPCForELB.html'
   }
   , {
     description: "ユーザーは、VPCウィザードを使用してパブリックサブネットとプライベートサブネットを持つVPCを作成しました。 VPCのCIDRは20.0.0.0/16です。 プライベートサブネットはCIDR 20.0.0.0/24を使用します。 NATインスタンスIDはi-a12345です。 インスタンスをインターネットに接続できるようにプライベートサブネットに添付されているメインルートテーブルには、以下のエントリのどれが必要ですか？"
@@ -11510,6 +11539,7 @@ questions.add([
       , {description: "Destination: 0.0.0.0/0 and Target: i-a12345", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'ユーザーは、VPCを使用してサブネットを作成し、そのサブネット内でインスタンスを起動できます。 ユーザーがパブリックプライベートサブネットを作成した場合、パブリックサブネットのインスタンスはインターネットから直接受信トラフィックを受信できますが、プライベートサブネットのインスタンスは受信できません。 これらのサブネットがウィザードで作成された場合、AWSは2つのルートテーブルを作成し、サブネットにアタッチします。 メインルートテーブルには、プライベートサブネット内のすべてのインスタンスがNATを使用してインターネットに接続できる「Destination：0.0.0.0/0 and Target：i-a12345」というエントリがあります。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html'
   }
   , {
     description: "組織は、AWS VPCでWebアプリケーションをホストする予定です。 組織は法的要件のためパブリッククラウドにデータベースをホストしたくない。 どのようにこのシナリオで組織を設定できますか？"
@@ -11521,6 +11551,7 @@ questions.add([
       , {description: "組織は、パブリック・サブネットとプライベート・サブネット内のデータベースにあるアプリケーション・サーバーを、パブリック・クラウドにはないように計画する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。ユーザーは、VPC内の要件に従ってサブネットを作成できます。 ユーザーが自分のデータセンターからVPCに接続する場合は、ハードウェアVPNアクセスを使用してデータセンターに接続するパブリックおよびVPN専用サブネットをセットアップできます。 ユーザーがウィザードでこの設定を構成すると、VPNサブネットのすべてのトラフィックをルーティングする仮想プライベートゲートウェイが作成されます。仮想プライベートゲートウェイがVPCに接続され、ユーザーがコンソールからVPCを削除すると、 ゲートウェイを削除し、VPCを削除します。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html'
   }
   , {
     description: "現在3層のeコマースWebアプリケーションがオンプレミスに導入されており、拡張性と弾力性を高めるためにAWSに移行されます。Webサーバーは現在ネットワーク分散ファイルシステムを使用して読み取り専用データを共有しています。アプリケーションサーバー層は、 ディスカバリおよびIPマルチキャストに依存する共有セッション状態データベース層は、共有ストレージクラスタリングを使用してデータベースのフォールオーバー機能を提供し、複数の読み取りスレーブを使用してすべてのサーバー上のデータを分散し、分散ファイルシステムディレクトリをオフサイト テープAWSストレージとデータベースアーキテクチャは、アプリケーションの要件を満たしていますか？"
@@ -11543,6 +11574,7 @@ questions.add([
       , {description: "偽、パフォーマンスチューニングを改善するためにレプリケーショングループを再作成する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon ElastiCacheでは、レプリケーショングループは、1つの主な読み書きクラスタと、最大5つの副読取り専用クラスタ（読み取りレプリカと呼ばれる）を持つRedis Cacheクラスタの集合です。 プライマリクラスタとレプリカの1つが役割を交換しながら、レプリケーショングループ内のキャッシュクラスタの役割を変更できます。 パフォーマンスチューニングの理由から、これを行うことができます。参照：http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/Replication.Redis.Groups.htm'
   }
   , {
     description: "ユーザーがPIOPSでEBSボリュームを構成しました。 ユーザーは最適なスループットを経験していません。 次のうちEBSボリュームのI / Oパフォーマンスに影響を与えない要因はどれですか？"
@@ -11554,6 +11586,7 @@ questions.add([
       , {description: "インスタンスタイプはEBSに最適化されていません", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'ユーザーが予想されるIOPSまたはプロビジョニングされたスループットに遭遇していない場合は、EC2帯域幅が制限要因ではなく、インスタンスがEBS最適化（または10ギガビットネットワーク接続を含む）で、インスタンスタイプEBS専用帯域幅がIOPS 彼が提供した以上のもの。 参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html'
   }
   , {
     description: "正しいオプションセットを選択してください。 これらは、デフォルトセキュリティグループの初期設定です。"
@@ -11587,6 +11620,7 @@ questions.add([
       , {description: "NotAction", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'NotAction要素では、アクションのリストに対する例外を指定できます。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_ElementDescriptions.html'
   }
   , {
     description: "次のうち、AWS Direct Connectについて正しい記述はどれですか？"
@@ -11598,6 +11632,7 @@ questions.add([
       , {description: "AWS Direct Connectを使用するには、ネットワークを新しいAWS Direct Connectロケーションに配置する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS Direct Connectは、標準の1ギガビットまたは10ギガビットイーサネット光ファイバケーブルを使用して、内部ネットワークをAWS Direct Connectの場所にリンクします。 AWS Direct Connectロケーションは、関連する地域のAmazon Web Servicesへのアクセスと、他の米国地域へのアクセスを提供します。 AWS Direct Connectを使用するには、ネットワークが既存のAWS Direct Connectロケーションに配置されている必要があります。AWS Direct Connectへの接続には、シングルモードファイバ、1ギガビットイーサネットの場合は1000BASE-LX（1310nm）、10ギガビットイーサネットの場合は10GBASE- 。 ポートの自動ネゴシエーションは無効にする必要があります。参照：http://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html'
   }
   , {
     description: "パブリックサブネット内のNAT（ネットワークアドレス変換）デバイスとして機能するインスタンスを起動すると、NATデバイスをプライベートサブネットのインターネット接続トラフィックのターゲットにするためにルートテーブルが変更されます。 プライベートサブネット内のインスタンスからインターネットへの発信接続を試みると、成功しません。 問題を解決する次の手順はどれですか？"
@@ -11631,6 +11666,7 @@ questions.add([
       , {description: "64文字", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'インスタンスプロファイル名の最大長は128文字です。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html'
   }
   , {
     description: "IAMポリシー内で、Null状態の最後にIfExists条件を追加できますか？"
@@ -11642,6 +11678,7 @@ questions.add([
       , {description: "はい、Null条件の最後にIfExists条件を追加できます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAMポリシー内では、IfExistsをNull条件以外の条件演算子の最後に追加することができます。ポリシーキーが要求のコンテキスト内に存在する場合、条件比較が行われる必要があることを示すために使用できます。 それ以外の場合は、無視することができます。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html'
   }
   , {
     description: "EBSボリュームで使用可能なストライピングオプションのうち、次のような欠点があります。 'ボリュームからペアへのすべての書き込みをミラーリングしているため、インスタンスからEBSに必要なI / O量がRAID 0に比べて倍増します。 あなたがどれほどストライプできるかを制限しています。"
@@ -11653,6 +11690,7 @@ questions.add([
       , {description: "Raid 2", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'RAID 1 + 0（RAID 10）では、ストライプ数を制限して、ボリュームペアへのすべての書き込みをミラーリングしているため、インスタンスからEBSに必要なI / OがRAID0に比べて2倍になります。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/raid-config.html'
   }
   , {
     description: "AWS Data Pipelineでは、複数の計算リソースを同じパイプラインでどのように使用できますか？"
@@ -11664,6 +11702,7 @@ questions.add([
       , {description: "同じパイプライン上で複数の計算リソースを使用することはできません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWSデータパイプラインの複数のクラスタオブジェクトを定義ファイルに定義し、runsOnフィールドを使用して各アクティビティに使用するクラスタを関連付けることで、複数の計算リソースをAWSデータパイプラインの同じパイプラインで使用できます。 それらのアクティビティに複数のインスタンスタイプを使用することができます。参照：https://aws.amazon.com/datapipeline/faqs/'
   }
   , {
     description: "アクティビティの成功、失敗、AWS Data Pipelineの遅延など、特定のアクティビティでトリガするアラームを定義するために使用できる、次のAWSサービスはどれですか？"
@@ -11675,6 +11714,7 @@ questions.add([
       , {description: "Amazon SQS", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS Data Pipelineでは、アラームオブジェクトを作成し、アクティビティオブジェクトのonFail、onSuccess、またはonLateスロットで参照することで、Amazon SNSアラームを成功、失敗、遅延などのアクティビティでトリガするよう定義できます。参照：https://aws.amazon.com/datapipeline/faqs/'
   }
   , {
     description: "組織は、スケジュールに従ってEC2インスタンスを開始および停止できるアプリケーションを持っています。 組織は、そのソフトウェアに登録されるインスタンスのMACアドレスを必要とします。 このインスタンスはEC2-CLASSICで起動します。 インスタンスが起動されるたびに、組織はどのようにMAC登録を更新できますか？"
@@ -11686,6 +11726,7 @@ questions.add([
       , {description: "AWSはインスタンスにMACアドレスを提供しません。 インスタンスIDは、ソフトウェア登録のインスタンスを識別するために使用されます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWSは、オンデマンドでスケーラブルなインフラストラクチャを提供します。 AWS EC2では、オンデマンドインスタンスを起動できます。 AWSは、EC2-CLASSICで起動されたインスタンスに固定MACアドレスを提供しません。インスタンスがEC2-VPCの一部として起動される場合、固定MACを持つENIを持つことができます。 ただし、EC2-CLASSICでは、インスタンスが起動または停止するたびに新しいMACアドレスが割り当てられます。このMACを取得するには、起動時にインスタンスのメタデータを取得してそのインスタンスからMACアドレスを取得できるスクリプトを実行できます メタデータ。 MACが受信されると、組織はそのMACをソフトウェアに登録できます。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AESDG-chapterinstancedata.html'
   }
   , {
     description: "AWS IAMのポリシーとアクセス許可のコンテキストでは、Condition要素は______です。"
@@ -11697,6 +11738,7 @@ questions.add([
       , {description: "必須要素", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Condition要素（またはConditionブロック）を使用すると、ポリシーが有効なときの条件を指定できます。Condition要素は省略可能です。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_ElementDescriptions.html'
   }
   , {
     description: "Cognito Syncは、独自のバックエンドを必要とせずにモバイルデバイス間でユーザープロファイルデータを同期するために使用できるAWSサービスです。 デバイスがオンラインの場合、データを同期できます。 プッシュシンクも設定すると、何ができるのですか？"
@@ -11708,6 +11750,7 @@ questions.add([
       , {description: "オンラインデータをより速く同期させる", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Cognito Syncは、独自のバックエンドを必要とせずにモバイルデバイス間でユーザープロファイルデータを同期するために使用できるAWSサービスです。 デバイスがオンラインのときはデータを同期できます。プッシュ同期を設定している場合は、他のデバイスにアップデートが利用可能であることを直ちに通知します。参照：http://docs.aws.amazon.com/cognito/devguide/sync/'
   }
   , {
     description: "AWSラムダパーミッションモデルに関しては、ラムダ関数を作成するときに、AWSラムダがあなたのためにラムダ関数を実行すると想定できるIAMロールを指定します。 この役割は、_____役割とも呼ばれます。"
@@ -11719,6 +11762,7 @@ questions.add([
       , {description: "依存", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'ラムダ関数の呼び出し方法にかかわらず、AWS Lambdaは常に関数を実行します。 ラムダ関数を作成するときに、AWSラムダがあなたの代わりにラムダ関数を実行すると想定できるIAMロールを指定します。 このロールは、実行ロールとも呼ばれます。参照：http://docs.aws.amazon.com/lambda/latest/dg/lambda-dg.pdf'
   }
   , {
     description: "ユーザーがAWS Glacierで金庫を作成しようとしています。 ユーザーは通知を有効にする必要があります。 以下のオプションのうち、ユーザがAWSコンソールからの通知を有効にすることはできますか？"
@@ -11730,6 +11774,7 @@ questions.add([
       , {description: "Vaultインベントリ検索ジョブ完了", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWSコンソールから、ユーザーは通知をAmazon Simple Notification Service（SNS）に送信するように設定できます。 ユーザーは、Vault Inventory Retrieval Job CompleteやArchive Retrieval Job Completeなどの通知をトリガーする特定のジョブを選択できます。参照：http://docs.aws.amazon.com/amazonglacier/latest/dev/configuring- notificationsconsole.html'
   }
   , {
     description: "アプリケーションはデータ変換サービスを提供します。 変換されるデータを含むファイルは、まずAmazon S3にアップロードされ、スポットEC2インスタンスのフリートによって変換されます。 あなたのプレミアム顧客が提出したファイルは、最高の優先順位で変換されなければなりません。 どのようにこのようなシステムを実装する必要がありますか？"
@@ -11763,6 +11808,7 @@ questions.add([
       , {description: "別々のVPCを2つ作成し、1つのVPCでWebアプリケーションを起動し、別のVPCでRDSを起動し、VPCピアリングと接続します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。 これにより、ユーザーは、ユーザーが定義した仮想ネットワークにRDSなどのAWSリソースを起動できます。 サブネットは、VPCのIPアドレス範囲のセグメントで、ユーザーはセキュリティと運用のニーズに基づいてVPCリソースのグループに割り当てることができます.DBサブネットグループは、ユーザーがVPCで作成できるサブネット（通常はプライベート）の集合で、 RDS DBインスタンスに割り当てます。 DBサブネットグループを使用すると、DBインスタンスの作成時に特定のVPCを指定できます。 各DBサブネットグループには、特定のリージョン内の少なくとも2つのアベイラビリティゾーンにサブネットが必要です。参照：http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.html'
   }
   , {
     description: "直接接続リンクをインターネットに直接接続することはできますか？"
@@ -11774,6 +11820,7 @@ questions.add([
       , {description: "いいえ", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS Direct Connectは、インターネットを使用してAWSクラウドサービスを利用する代わりの方法を提供するネットワークサービスです。 したがって、Direct Connectリンクはインターネットに直接接続することはできません。参照：http://aws.amazon.com/directconnect/faqs/'
   }
   , {
     description: "あなたのスタートアップは、あなたの最初の日に1日当たり10件の注文を期待する6ヶ月間を要する注文で、平均3〜4日間の生産を必要とするパーソナライズされたガジェットを販売する注文履行プロセスを実装したいと考えています。 6ヶ月後に1日当たり1000件、12ヶ月間に10,000件の注文を受け取ります。注文は、品質管理包装出荷および支払い処理のために製造工場に派遣された一貫性のある男性をチェックします。 プロセスの従業員がプロセスを繰り返すように強制する可能性があります。お客様は、注文状況や支払いの失敗などの注文に関する重大な問題について電子メールで通知されます。ケース・アーキテクチャーには、顧客データおよびオーダー用のRDS MySQLインスタンスを含むAWS Elastic Beanstalk 電子メールが確実に配信されていることを確認しながら注文履行プロセスをどのように実装できますか？"
@@ -11807,6 +11854,7 @@ questions.add([
       , {description: "はい、作成後24時間以内に一連のDHCPオプションを変更できます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'DHCPオプションのセットを作成した後は、変更することはできません。 VPCに別のDHCPオプションセットを使用させる場合は、新しいセットを作成してVPCに関連付ける必要があります.DPCオプションをまったく使用しないようにVPCを設定することもできます。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_DHCP_Options.html'
   }
   , {
     description: "あなたの顧客は、複数のWebサーバー、いくつかのアプリケーションサーバー、および小さなサーバー（50GB）のOracleデータベース情報（inthedデータベースと各種サーバーのファイルシステムの両方）で構成されるエンタープライズアプリケーションをAWSに展開することを望みます。バックアップシステムは、サーバー全体およびディスク全体のリストア、および2時間以上の復旧時間を伴う個々のファイルリストアをサポートする必要があります。彼らはデータベースとしてRDS Oracleを使用することを選択しました。バックアップ・アーキテクチャはこれらの要件を満たすでしょうか？"
@@ -11840,6 +11888,7 @@ questions.add([
       , {description: "組織は、別のCIDRとセキュリティグループを持つことができる同じnetworkIT Certification Guaranteed、The Easy Way！34インターフェイスを使用して、2つの別々のサブネットを持つインスタンスを起動する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。これにより、ユーザーは、ユーザーが定義した仮想ネットワークにAWSリソースを起動できます。弾性ネットワークインターフェイス（ENI）は、ユーザーがVPC内のインスタンスに接続できる仮想ネットワークインターフェイスです。ユーザーは、2つの別個のネットワークインターフェイスを使用して管理ネットワークを作成できます。現在のシナリオでは、インスタンス上のセカンダリネットワークインターフェイスがパブリックに直面するトラフィックを処理し、プライマリネットワークインターフェイスがバックエンド管理トラフィックを処理し、より制限的なアクセスコントロールを持つVPC内の別のサブネットに接続する必要があります。ロードバランサの背後にあるかどうかに関わらないパブリックフェイリングインターフェイスには、インターネットからサーバーへのアクセスを許可する関連セキュリティグループがあり、プライベートフェイスインターフェイスには、許可されたIPアドレス範囲VPC内またはインターネット内、VPC内のプライベートサブネットまたは仮想プライベートゲートウェイ。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html'
   }
   , {
     description: "インメモリキャッシュはどのようにElastiCacheのアプリケーションのパフォーマンスを改善しますか？"
@@ -11851,6 +11900,7 @@ questions.add([
       , {description: "遅延の小さいアクセスのために重要なデータをメモリに保存することにより、アプリケーションのパフォーマンスを向上させます。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon ElastiCacheでは、メモリー内のキャッシュによって、重要なデータをメモリに保存して、アプリケーションのパフォーマンスを向上させ、待ち時間の少ないアクセスを実現します。 キャッシュされた情報には、I / O集約型データベースクエリの結果または計算集約型の計算結果が含まれます。参照：http://aws.amazon.com/elasticache/faqs/#g4'
   }
   , {
     description: "貴社は最近、データセンターをAWS上のVPCに拡張し、必要なバーストコンピューティング能力を追加しました。ネットワークオペレーションセンターのメンバーは、AWSManagementConsoleにアクセスし、必要に応じてAmazon EC2インスタンスを管理できる必要があります。 IAMユーザーはNOCメンバーに参加し、それらのユーザーをAWS管理コンソールに再度サインインします。どのオプションがあなたのNOCメンバーのニーズを満たしますか？"
@@ -11873,6 +11923,7 @@ questions.add([
       , {description: "送信用にNAT経由でインターネットに接続されているプライベートサブネットにDBをセットアップします。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。 これにより、ユーザーは、ユーザーが定義した仮想ネットワークにAWSリソースを起動できます。 AWSには、ユーザーがVPCのセキュリティを強化するために使用できる2つの機能があります。セキュリティグループとネットワークACLです。 ユーザがVPCでDBとAppの両方を設定したい場合、ユーザは1つのパブリックサブネットと1つのプライベートサブネットを作成する必要があります。DBはプライベートサブネットでホストされ、そのサブネット内のインスタンスはインターネットに到達できません。 彼のVPCでインターネットへのアウトバウンド接続を開始するが、ネットワークアドレス変換（NAT）インスタンスを使用してインターネットからの迷惑受信接続を防止する。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html'
   }
   , {
     description: "AWSからの増加許可なしに、1つの地域でユーザーが実行できるg2.2xlargeオンデマンドインスタンスの数はいくつですか？"
@@ -11884,6 +11935,7 @@ questions.add([
       , {description: "10", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '一般に、AWS EC2では、オンデマンドインスタンス20個とスポットインスタンス100個を同時に実行できます。 この制限は、https://aws.amazon.com/contact-us/ec2-requestでリクエストすることで増やすことができます。 特定のタイプのインスタンスを除いて、制限は上記のものよりも低くなります。 g2.2xlargeの場合、ユーザーは一度に5つのオンデマンドインスタンスしか実行できません。参照：http://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html#limits_ec2'
   }
   , {
     description: "あなたの会社は、ペットの健康的なライフスタイルを促進するために家族を支援するためのバイオメトリクス情報を収集する次世代ペットカラーを開発中です。各カラーは30kbのバイオメトリックデータをJSONフォーマットで2秒ごとに処理し、健康のトレンド情報をウェブポータルを介してペット所有者や獣医に返します。管理は、次の要件を満たしている収集プラットフォームを設計することを任命しました。インバウンドバイオメトリックデータのリアルタイム分析の機能を提供するバイオメトリックデータの処理は非常に耐久性があります。弾力性と並列性データマイニングのために分析処理の結果を維持する必要があります。下で概説したアーキテクチャは、収集プラットフォームの初期要件を満たしていますか？"
@@ -11928,6 +11980,7 @@ questions.add([
       , {description: "高いレイテンシのみ。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'データベースインスタンスごとに最大3TBのストレージと30,000のIOPSをプロビジョニングできます。 50％の書き込みと50％の読み取りがcr1.8xlargeのインスタンスで実行されているワークロードでは、PostgreSQLのために25,000以上のIOPSを実現できます。 ただし、この制限を超えてプロビジョニングすると、レイテンシとスループットを向上させることができます。 実際の実現IOPSは、データベースのワークロード、インスタンスの種類、データベースエンジンの選択に基づいてプロビジョニングした金額とは異なる場合があります。参照：https://aws.amazon.com/rds/postgresql/'
   }
   , {
     description: "AWSのお客様は、公開ブログのウェブサイトを運営しています。サイトユーザーは月に2百万のblogentriesをアップロードします。平均ブログエントリーサイズは200 KBです。ブログエントリーへのアクセス率は、出版後6ヶ月で無視され、ユーザーは出版後1年のブログエントリーにほとんどアクセスしません。さらに、ブログエントリは、公開後最初の3ヶ月間に更新レートが高いため、6ヶ月後には更新されません。お客様は、CloudFrontを使用してユーザーの読み込み時間を改善したいと考えています。次のうちお客様に推奨するのはどれですか？"
@@ -12005,6 +12058,7 @@ questions.add([
       , {description: "T2インスタンスを起動するとき、組織はEC2-VPCをプラットフォームとして選択する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。 ユーザーはVPC内の要件に従ってサブネットを作成できます.AWSアカウントは、ユーザーがAWSアカウントを作成した時期と使用している地域に応じてEC2-CLASSICとEC2-VPCの2つのプラットフォームを提供します。 ユーザーが2013-12-04の後にAWSアカウントを作成した場合、EC2-VPCのみがサポートされます。このシナリオでは、アカウントは必須の日付より前になっているため、サポートされているプラットフォームはEC2-CLASSICになります。 T2インスタンスはVPCの一部としてのみ起動できるため、VPCを作成する必要があります。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-migrate.html'
   }
   , {
     description: "MikeはExamKiller.comのクラウドコンサルタントに任命されました。 ExamKillerには、米国東部地域で以下のVPCセットアップがあります。CIDRブロック10.10.0.0/16を持つVPC、CIDRブロック10.10.1.0/24Aを持つVPCのサブネット、CIDRブロック10.40.0.0/16を持つVPC、そのサブネットCIDRブロック10.40.1.0/24ExamKiller.comのVPCは、CIDRblock1 0.10.1.0/24のサブネットとCIDRブロック10.40.1.0/24の別のサブネットの2つのサブネット間のネットワーク接続を確立しようとしています。 MikeがExamKiller.comに推奨するソリューションはどれですか？"
@@ -12016,6 +12070,7 @@ questions.add([
       , {description: "各サブネットに1つのEC2インスタンスを作成し、両方のインスタンスにElastic IPを割り当て、両方のEC2インスタンス間にセットアップサイト間VPN接続を設定します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'VPCピアリング接続は、2つのVPC間のネットワーク接続で、プライベートIPアドレスを使用してトラフィックをルーティングできます。 いずれかのVPCのEC2インスタンスは、同じネットワーク内にあるかのように互いに通信できます。 自分のVPC間でVPCピアリング接続を作成することも、単一のリージョン内の別のAWSアカウントでVPCとの接続を作成することもできます.AWSはVPCの既存のインフラストラクチャを使用してVPCピアリング接続を作成します。 それはゲートウェイでもVPN接続でもなく、物理ハードウェアの別の部分に依存しません。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-peering.html'
   }
   , {
     description: "あなたはモバイルスリープトラッキングアプリケーションを運営する会社の新しいITアーキテクトです。夜間にアクティブにすると、モバイルアプリは5分ごとに1キロバイトの収集データポイントを送信します。バックエンドはユーザーを認証し、データポイントをAmazon DynamoDBテーブルに書き出します。毎朝、テーブルをスキャンして昨夜のデータをユーザごとに抽出して集計し、結果をAmazon S3に保存します。ユーザーには、Amazon SNSモバイルプッシュ通知を介して、新しいデータが利用可能であることが通知されます。これは解析され、モバイルアプリによって視覚化されます。現在、ほとんどが北米を拠点とする約100,000人のユーザーを抱えています。バックエンドシステムのアーキテクチャあなたは何をお勧めしますか？ 2つの回答を選択"
@@ -12049,6 +12104,7 @@ questions.add([
       , {description: "ボーダーゲートウェイプロトコル（BGP）顧客ゲートウェイの自律システム番号（ASN）。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon仮想プライベートクラウド（Amazon VPC）を使用すると、ユーザーはAmazon Web Services（AWS）クラウドのプライベートな独立したセクションで仮想ネットワーキング環境を定義できます。ユーザーは仮想ネットワーキング環境を完全に制御できます。組織は、ネットワークをクラウド内に拡張し、AWS VPCからインターネットに直接アクセスする必要があります。このため、パブリックサブネットとプライベートサブネット、および仮想プライベートゲートウェイを使用して仮想プライベートクラウド（VPC）を設定する必要がありますIPsec VPNトンネルを介してデータセンターネットワークと通信します。この構成を設定するには、VPN接続でAmazon VPCを使用する必要があります。組織のネットワーク管理者は、物理的なアプライアンスを顧客ゲートウェイとして指定し、構成する必要があります。この構成には、以下の情報を設定する必要があります。Cisco ASA、Juniper Jシリーズ、Juniper SSG、Yamahaカスタマーゲートウェイの外部インターフェイスのインターネットルーティング可能なIPアドレス（静的）ボーダーゲートウェイプロトコル（BGP）組織が動的にルーティングされたVPN接続を作成している場合、カスタマーゲートウェイのASN（Autonomous System Number）。ユーザーが望む内部ネットワークIP範囲VPN接続経由でVPCにアドバタイズします。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_VPN.html'
   }
   , {
     description: "AWS Data Pipelineをポーリングしてタスクを実行するアプリケーションを特定し、そのタスクを実行します。"
@@ -12060,6 +12116,7 @@ questions.add([
       , {description: "タスクオプティマイザ", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'タスクランナーは、AWSデータパイプラインをポーリングしてタスクを実行するアプリケーションです.AWS Data Pipelineのタスクランナーを使用するか、カスタムのタスクランナーアプリケーションを作成することができます。タスクランナーは、タスクランナーのデフォルトの実装です AWS Data Pipelineによって提供されます。タスクランナーがインストールおよび設定されると、AWS Data Pipelineは、アクティブ化したパイプラインに関連するタスクをポーリングします。 タスクがタスクランナーに割り当てられると、そのタスクが実行され、そのステータスがAWSデータパイプラインにレポートされます。 ワークフローでデフォルト以外の動作が必要な場合は、カスタムタスクランナーにその機能を実装する必要があります。参照：http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-how-remote-taskrunnerclient.html'
   }
   , {
     description: "あなたの運勢500社はAmazon S3versusの使用を評価するTCO分析を実施していますハードウェアを増やす結果として、従業員は個人的な書類の保管のためにAmazonA3を使用するアクセス権が与えられました。次のうちどれを考慮する必要がありますか 企業のADまたはLDAPディレクトリからのシングルサインオンを組み込んだソリューションを設定し、各ユーザーのアクセスをバケット内の指定されたユーザーフォルダに限定することができますか？ （3つの回答を選んでください）"
@@ -12082,6 +12139,7 @@ questions.add([
       , {description: "Cognito SDK", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'モバイルアプリは、プロバイダのSDKを使用してIDプロバイダ（IdP）で認証されます。 エンドユーザーがIdPで認証されると、IdPから返されたOAuthまたはOpenID ConnectトークンがアプリによってAmazon Cognitoに渡され、ユーザーの新しいCognito IDと一時的な限定特権AWSクレデンシャルが返されます。参照：http://aws.amazon.com/cognito/faqs/'
   }
   , {
     description: "あなたのウェブサイトは、オンデマンドのトレーニングビデオをあなたの労働力に提供しています。動画は高解像度のMP4形式でアップロードされます。あなたの従業員は、ビデオの視聴にHTTPライブストリーミング（HLS）プロトコルを必要とする、提供されているタブレットを使用して、世界中で頻繁に配信されます。 Yourcompanyにはビデオトランスコーディングの専門知識はなく、コンサルタントに支払う必要がある場合もあります。高可用性とビデオ配信の品質を損なうことなく、最もコスト効率の高いアーキテクチャを実装するにはどうすればいいですか？"
@@ -12104,6 +12162,7 @@ questions.add([
       , {description: "Log処理", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'プロビジョニングされたIOPSボリュームは、I/O集約型ワークロード、特にストレージパフォーマンスとランダムアクセスI / Oスループットの一貫性に敏感なデータベースワークロードのニーズを満たすように設計されています。 プロビジョニングされたIOPSボリュームは、I / O集約型ワークロード、特にランダムアクセスI / Oスループットのビジネスアプリケーション、NoSQL DB、RDBMSなどのデータベースワークロードにおけるストレージパフォーマンスと一貫性に敏感なデータベースワークロードなどのニーズを満たすように設計されています。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html'
   }
   , {
     description: "IAMのポリシー評価論理を適用している間に明示的な拒否が見つからない場合、執行コードは要求に適用される______の指示を探します。"
@@ -12115,6 +12174,7 @@ questions.add([
       , {description: "有効", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '特定の要求に対して適用可能なポリシーの間に明示的な拒否が見つからない場合、IAMのPolicyEvaluation Logicは、要求が正常に完了できるかどうかを確認するための「許可」命令をチェックします。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_EvaluationLogic.html'
   }
   , {
     description: "あなたはAWS Business and Enterpriseサポートプランに加入しています。 あなたのビジネスには問題が残っており、テクニカルサポートのケースを開くには約20人のIAMユーザーが必要です。 AWS Business and Enterpriseサポートプランの下で、どのくらいの数のユーザーがテクニカルサポートのケースを開くことができますか？"
@@ -12170,6 +12230,7 @@ questions.add([
       , {description: "Amazonシンプルストレージサービス（Amazon S3）", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'パイプライン定義では、データ管理のビジネスロジックを指定します。参照：http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/what-isdatapipeline.html'
   }
   , {
     description: "ITインフラストラクチャの管理を担当するITオペレーションチームには4人の組織が所属しています。 組織は、各ユーザーが他のユーザーが変更できないゾーンでインスタンスを起動して管理するためのアクセス権を持つことをセットアップする必要があります。 以下で述べるオプションのどれをこれを設定するベストソリューションですか？"
@@ -12178,7 +12239,7 @@ questions.add([
       {description: "4つのAWSアカウントを作成し、各ユーザーに個別のアカウントへのアクセス権を付与します。", correct: false}
       , {description: "IAMユーザーを作成し、異なるサイズのインスタンスのみを起動する許可をユーザーに与えます。", correct: false}
       , {description: "4人のIAMユーザーと4人のVPCを作成し、各IAMユーザーが別々のVPCにアクセスできるようにします。", correct: false}
-      , {description: "4つのサブネットを持つVPCを作成し、個々のIAMユーザーの各サブネットへのアクセスを許可します。", correct: true}
+      , {description: "4つのサブネットを持つVPCを作成し、個々のIAMユー	ザーの各サブネットへのアクセスを許可します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12192,6 +12253,7 @@ questions.add([
       , {description: "はい、PIOPSが100より高いので", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'プロビジョニングされたIOPS（SSD）ボリュームのサイズは、4 GiBから16 TiBの範囲で、ボリュームあたり最大20,000 IOPSをプロビジョニングできます。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes html#EBSVolumeTypes_piops'    	
   }
   , {
     description: "組織は、アプリケーションホスティング用のVPCを作成しています。 組織は、同じAZに2つのprivatesubnetsを作成し、別のゾーンに1つのサブネットを作成しました。 組織は内部ELBを持つaHAシステムを作成したいと考えています。これらのステートメントのうち、ELBの内部ELBに関しては真ですか？"
@@ -12203,6 +12265,7 @@ questions.add([
       , {description: "ELBは、ゾーンに関係なくすべてのサブネットをサポートできます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon仮想プライベートクラウド（Amazon VPC）を使用すると、ユーザーはAmazon Web Services（AWS）クラウドのプライベートな独立したセクションで仮想ネットワーキング環境を定義できます。ユーザーは仮想ネットワーキング環境を完全に制御できます。この仮想プライベートクラウド内で、ユーザーはELBやEC2インスタンスなどのAWSリソースを起動できます.VPCで利用できるELBは2つあります。インターネットフェースと内部（プライベート）ELBです。 Appサーバーなどの内部サーバーの場合、組織はVPCに内部ロードバランサを作成し、内部ロードバランサの背後にバックエンドアプリケーションインスタンスを配置できます。内部ロードバランサは、プライベートIPアドレスを使用し、内部ロードバランサからの要求のみを受け入れるバックエンドアプリケーションインスタンスに要求をルーティングします。内部ELBは、各AZ内のサブネットを1つしかサポートせず、サブネットを選択するようユーザーに求めます内部ELBを設定します。参照：http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/USVPC_creating_basic_lb.html'
   }
   , {
     description: "AWSでは、どのセキュリティ面が顧客の責任ですか？ 4つの回答を選択"
@@ -12238,6 +12301,7 @@ questions.add([
       , {description: "SSL証明書を削除することはできません。 AWSからリクエストする必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'CloudFrontは、.html、.css、.php、およびイメージファイルなどの静的および動的Webコンテンツのエンドユーザーへの配信を高速化するWebサービスです。すべてのCloudFront Webディストリビューションは、デフォルトのCloudFront証明書または カスタムSSL証明書を使用します。 SSL証明書を削除する前に、SSL証明書をローテーション（現在のカスタムSSL証明書を別のカスタムSSL証明書に置き換える）するか、カスタムSSL証明書を使用してデフォルトのCloudFront証明書を使用するように戻す必要があります。参照：http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Troubleshooting.html'
   }
   , {
     description: "Amazon ElastiCacheでは、デフォルトのキャッシュポートは次のとおりです。"
@@ -12249,6 +12313,7 @@ questions.add([
       , {description: "Memcached 11211およびRedis 6379用。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon ElastiCacheでは、キャッシュクラスターの新しいポート番号を指定できます。デフォルトでは、Memcachedの場合は1211、Redisの場合は6379です。参照：http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/GettingStarted.AuthorizeAccess.html'
   }
   , {
     description: "あなたはソリューションアーキテクトとして、エンタープライズ顧客がane-commerceプラットフォームをAmazon VPC（Virtual Private Cloud）に移行するのを支援してきました。前のアーキテクトは既に3層VPCを導入しています。<br/>" +
@@ -12284,6 +12349,7 @@ questions.add([
       , {description: "48", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'デフォルトでは、IAMユーザーの一時的なセキュリティ資格情報は最大12時間有効ですが、短くて15分、長くて36時間という期間を要求できます。参照：http://docs.aws.amazon.com /STS/latest/UsingSTS/CreatingSessionTokens.html'
   }
   , {
     description: "現在EC2インスタンスに接続されているEBSボリュームをoneAvailabilityZoneから別のAvailabilityZoneに移行するにはどうすればよいですか？"
@@ -12306,6 +12372,7 @@ questions.add([
       , {description: "VPCと同じCIDRを持つサブネットを作成することはできません", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。 ユーザーは、VPCを使用してサブネットを作成し、そのサブネット内でインスタンスを起動できます。 ユーザーは、同じサイズのVPCを持つサブネットを作成できます。 ただし、2番目のサブネットのCIDRが最初のサブネットと競合するため、他のサブネットを作成することはできません。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html'
   }
   , {
     description: "Amazon Elastic Compute Cloud（EC2）インスタンスのAuto Scalingグループの前面にあるElastic Load Balancing（ELB）ロードバランサで構成されるWebアプリケーションを担当します。新しいバージョンのアプリケーションを最近デプロイした場合、新しいAmazon Machine Image（AMI）が作成され、Auto Scalingグループがこの新しいAMIを参照する新しい起動設定で更新されました。ウェブサイトはエラーで応答していました。すべての事例がELBの健康診断に合格しました。今後の展開でエラーが発生するのを避けるために何をすべきですか？ （2つの答えを選択してください）"
@@ -12328,6 +12395,7 @@ questions.add([
       , {description: "AJAX", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAMポリシーのStatement要素には、個々のステートメントの配列が含まれています。 個々のステートメントは、中括弧{}で囲まれたJSONブロックです。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_ElementDescriptions.html'
   }
   , {
     description: "AWS IAMの証明書IDの最大長は何ですか？"
@@ -12339,6 +12407,7 @@ questions.add([
       , {description: "128文字", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '証明書IDの最大長は128文字です。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html'
   }
   , {
     description: "CIDRブロックが10.0.0.0/28のVPCに3層Webアプリケーションをデプロイしました。7つのEC2インスタンスで2つのWebサーバー、2つのアプリケーションサーバー、2つのデータベースサーバー、1つのNATインスタンスを最初に展開します。アプリケーションサーバーとデータベースサーバーは、2つの稼働ゾーン（AZ）に展開されます。また、2つのWebサーバーの前にELBを配備し、Route53 for DNS Webを使用すると、配備後最初の数日間抽選が徐々に増加するため、新しい負荷を処理するためにアプリケーションの各ティアのインスタンス数を倍増させようとします残念ながら、一部のインスタンスの起動に失敗しました。次のうち根本原因は何か？（2つの回答を選択してください）"
@@ -12362,6 +12431,7 @@ questions.add([
       , {description: "複数のサブネットが接続されたVPCインスタンスを作成し、それぞれに別のIPアドレスが設定されます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。 これにより、ユーザーは、ユーザーが定義した仮想ネットワークにAWSリソースを起動できます。 VPCを使用すると、ユーザーはインスタンスに複数のプライベートIPアドレスを指定できます。ユーザーがインスタンスに対して指定できるネットワークインターフェイスとプライベートIPアドレスの数は、インスタンスの種類によって異なります。 組織は各ネットワークインターフェイスを使用してEIPを割り当てることができます。 このシナリオは、単一のサーバー上で複数のSSL証明書を使用し、各証明書を特定のEIPアドレスに関連付けることにより、単一のEC2インスタンスで複数のWebサイトをホストする場合に役立ちます。 また、各ネットワークインターフェイスに複数のプライベートIPアドレスを持つファイアウォールやロードバランサなど、ネットワークアプライアンスを動作させるシナリオにも役立ちます。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/MultipleIP.html'
   }
   , {
     description: "Amazon Cognitoを使用してAmazon Mobile Analyticsサービスを使用する必要がありますか？"
@@ -12395,6 +12465,7 @@ questions.add([
       , {description: "一時的なセキュリティ証明書を発行すると、それらを取り消すことができます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAMの一時資格は、定義された期間中有効です。したがって、取り消すことはできません。 ただし、資格情報を使用してAWS要求が行われるたびに権限が評価されるため、発行された後でも資格情報の権限を変更することで資格を取り消すことができます。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access_disableperms.html'
   }
   , {
     description: "IAM内で文字列条件を使用する場合、より冗長なものの代わりに使用可能なコンパレータの短いバージョンを使用できます.streqiは文字列条件の短いバージョンです。"
@@ -12406,6 +12477,7 @@ questions.add([
       , {description: "StringNotEquals", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAM内で文字列条件を使用する場合、より冗長なバージョンではなく、使用可能なコンパレータの短いバージョンを使用できます。 たとえば、streqiはStringEqualsIgnoreCaseの短いバージョンで、2つの文字列の間の完全一致をチェックします。参照：http://awsdocs.s3.amazonaws.com/SNS/20100331/sns-gsg-2010-03-31.pdf'
   }
   , {
     description: "災害復旧の目的で、別の地域に本番環境のミラーイメージを作成したいと考えています。 次の領域で再作成する必要のない次のAWSリソースはどれですか？ （2つの回答を選択）"
@@ -12439,6 +12511,7 @@ questions.add([
       , {description: "Trueですが、コンソールナビゲーションペインからキャッシュセキュリティグループを使用してキャッシュクラスタを構成する場合に限ります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon ElastiCacheキャッシュセキュリティグループは、Amazon Virtual Private Cloud環境（VPC）で動作していないキャッシュクラスタにのみ適用されます。 Amazon Virtual Private Cloudで実行している場合は、コンソールのナビゲーションペインでキャッシュセキュリティグループを使用することはできません。参照：http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/CacheSecurityGroup.html'
   }
   , {
     description: "ERPアプリケーションは、単一の地域の複数のAZに展開されます。 障害が発生した場合、約1.5時間前にデータ破損が発生したことをユーザーが認識すると、Recovery Time Objective（RTO）は3時間未満、RPO（Recovery Point Objective）は15分でなければなりません。 この種の障害が発生した場合に、このRTOとRPOを達成できますか？"
@@ -12461,6 +12534,7 @@ questions.add([
       , {description: "AWSインスタンスで強化テストを実行します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWSセキュリティは、共有セキュリティモデルに準拠しています。ユーザーはAmazonと同じくらい責任があります.Amazonはパブリッククラウドなので、ハッカーのターゲットとすることができます。 組織がAWS EC2でアプリケーションをホストする予定の場合、以下のセキュリティチェックをセキュリティ弱点/データ漏えいを見つけるための手段として実行する必要があります。攻撃者が行った侵入テストを実施して脆弱性を発見します。 組織は、侵入テストを実行する前にAWSから承認を取得する必要があります。不要なポートが開いているかどうかを確認するためのテストを実行します。DBインシデントを実行して、データベースのセキュリティ問題を検出します。 参照：http://aws.amazon.com/security/penetration-testing/'
   }
   , {
     description: "コンソールを使用してIAMロールを作成した場合のインスタンスプロファイルには、次のうちどれですか？"
@@ -12472,6 +12546,7 @@ questions.add([
       , {description: "コンソールは、役割とインスタンスのプロファイルを別々のアクションとして作成します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon EC2では、インスタンスプロファイルをIAMロールのコンテナとして使用します。 コンソールを使用してIAMロールを作成すると、コンソールは自動的にインスタンスプロファイルを作成し、対応するロールと同じ名前を付けます。 AWS CLI、API、またはAWS SDKを使用してロールを作成する場合は、ロールとインスタンスのプロファイルを別々のアクションとして作成し、異なる名前を付けることができます。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instanceprofiles.html'
   }
   , {
     description: "企業はサードパーティのSaaSアプリケーションを使用したいと考えています。 SaaSアプリケーションには、企業のアカウント内で実行されているAmazon EC2リソースを検出するためのいくつかのAPIコマンドにアクセスする必要があります。企業は、環境への外部アクセスを必要とする内部セキュリティポリシーを最低限の原則に準拠させる必要があり、 SaaSベンダーが使用する信用状を他の第三者が使用できないようにする。これらの条件のすべてを満たしているのはどれですか？"
@@ -12528,6 +12603,7 @@ questions.add([
       , {description: "4", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'キューの長さは、デバイスの保留中のI / O要求の数です。 最適な平均待ち行列の長さは、顧客のワークロードごとに異なります。この値は、特定のアプリケーションのIOPSに対する感度と待ち時間によって異なります。 ワークロードが最適な平均キュー長を維持するのに十分なI / O要求を配信していない場合、EBSボリュームはプロビジョニングされたIOPSを一貫して配信しない可能性があります。 ただし、ワークロードの平均キュー長が最適値よりも長い場合、要求ごとのI / O待ち時間は増加します。 この場合、ユーザは自分のボリュームに対してより多くのIOPSをプロビジョニングする必要があります。 AWSでは、プロビジョニングされた200のIOPSごとに最適な平均キュー長を1に設定し、そのアプリケーション要件に基づいてその値を調整することを推奨します。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs -workload-demand.html'
   }
   , {
     description: "自動スケーリング要求は、要求とユーザの独自鍵から計算された_________署名で署名されます。"
@@ -12584,6 +12660,7 @@ questions.add([
       , {description: "AWS Direct Connectはネットワークコストを削減します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS Direct Connectを使用すると、構内からAWSへの専用ネットワーク接続を簡単に確立できます。 AWS Direct Connectを使用すると、AWSとデータセンター、オフィス、コロケーション環境の間でプライベート接続を確立することができます。これは、多くの場合、ネットワークコストを削減し、帯域幅スループットを向上させ、インターネット接続よりも一貫したネットワーク体験を提供します。 業界標準の802.1q VLANを使用すると、この専用接続を複数の仮想インターフェイスに分割できます。 これにより、同じ接続を使用して、パブリックIPアドレス空間を使用するAmazon S3に格納されたオブジェクトやプライベートIPスペースを使用するAmazon Virtual Private Cloud（VPC）内で実行されるAmazon EC2インスタンスなどのプライベートリソースにアクセスできます。 パブリック環境とプライベート環境のネットワーク分離。参考：http://aws.amazon.com/directconnect/#details'
   }
   , {
     description: "Web企業は、VPCを導入した侵入検知および防御システムを実装しようとしています。このプラットフォームは、VPC内部で実行されている何千ものインスタンスに拡張する能力を備えている必要があります。"
@@ -12606,6 +12683,7 @@ questions.add([
       , {description: "組織は、プライベートサブネット内にテーブルを作成するときにDynamoDBを使用する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon仮想プライベートクラウド（Amazon VPC）を使用すると、ユーザーはAmazon Web Services（AWS）クラウドのプライベートな独立したセクションで仮想ネットワーキング環境を定義できます。 ユーザーは仮想ネットワーキング環境を完全に制御できます。 現在、VPCはDynamoDBをサポートしていません。そのため、VPCを実装したい場合は、VPC内に独自のNoSQL DBをセットアップする必要があります。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Introduction.html'
   }
   , {
     description: "ユーザーはDB要件にEBSを使用する予定です。 ユーザーは、VPCのプライベートサブネットでEC2インスタントサービスを既に持っています。 ユーザーはEBSボリュームを実行中のインスタンスにどのように接続できますか？"
@@ -12617,6 +12695,7 @@ questions.add([
       , {description: "ユーザーは、同じVPC内でEBSを作成してから、実行中のインスタンスに接続する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。 ユーザーは、VPC内の要件に従ってサブネットを作成できます.VPCは常に地域固有です。 ユーザは、各Availability Zoneに1つ以上のサブネットを追加することにより、複数のAvailability ZoneにまたがるVPCを作成できます。起動されるインスタンスは、常にそれぞれのサブネットの同じAvailability Zoneにあります。 EBSを作成する場合、ユーザーはサブネットまたはVPCを指定できません。ただし、実行中のインスタンスにEBSボリュームを添付できるように、インスタンスと同じゾーンにEBSを作成する必要があります。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html#VPCSubnet'
   }
   , {
     description: "AWSダイレクトコネクトの使用を開始するには、次のどの手順でBGP（ボーダーゲートウェイプロトコル）を設定しますか？"
@@ -12628,6 +12707,7 @@ questions.add([
       , {description: "ルータ構成のダウンロード", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWSダイレクトコネクトでは、BGP（Border Gateway Protocol）とBGP MD5認証をサポートする必要があり、ASN（Private Autonomous System Number）を提供して、Amazon VPCに接続する必要があります。 Amazon EC2やAmazon S3などの公開AWS製品に接続するには、所有している公開ASN（プライベートASN）も提供する必要があります。 仮想インターフェイスの作成ステップでBGPを設定する必要があります。参照：http://docs.aws.amazon.com/directconnect/latest/UserGuide/getstarted.html#createvirtualinterface'
   }
   , {
     description: "組織は5人のIAMユーザーを作成しました。 組織は同じloginIDを使用していて、別のパスワードを使用したいと考えています。 組織はこれをどのように達成することができますか？"
@@ -12639,6 +12719,7 @@ questions.add([
       , {description: "組織はさまざまなグループを作成し、同じログインIDを持つ各ユーザーを異なるグループに追加する必要があります。 ユーザーは、自分のグループIDでログインすることができます", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWSアイデンティティとアクセス管理は、組織がさまざまなAWSサービスのユーザとユーザ権限を管理できるようにするWebサービスです。 組織がIAMユーザーを作成するときはいつでも、各ユーザーに固有のIDが必要です。 複数のユーザーに対して同じログインIDを使用することはできません。ユーザー、グループ、役割、インスタンスプロファイルの名前は、plus (+), equal (=), comma (,), period (.), at (@), dash (-) 参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/Using_SettingUpUser.html'
   }
   , {
     description: "組織がライセンスソフトウェアを購入しています。 ソフトウェアライセンスは、特定のMACアドレスにのみ登録することができます。 組織はAWS環境でソフトウェアをホストします。 インスタンスが開始/停止/終了するたびにMACアドレスが変更されるため、組織はどのようにライセンス要件を満たすことができますか？"
@@ -12661,6 +12742,7 @@ questions.add([
       , {description: "Session永続性", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'セッション永続性は、負荷分散サービスの機能です。 それは、オンラインである限り、同じノードにリダイレクトされるサービスへの後続の接続を強制しようとします。参照：http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/Concepts-d1e233.html'
   }
   , {
     description: "貴社は以前は、使用頻度の高い、動的にルーティングされたVPN接続を、構内のデータセンターとAWS間で設定しました。あなたは最近、DirectConnect接続をプロビジョニングし、新しい接続の使用を開始します。 AWS ConsoleでDirectConnectの設定を行った後、次のオプションのどれがユーザーにとって最もシームレスな移行を実現しますか？"
@@ -12692,6 +12774,7 @@ questions.add([
       , {description: "はい、あなたはAWS Direct Connect経由でアクセスできます。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS Direct Connectは、標準の1ギガビットまたは10ギガビットイーサネット光ファイバケーブルを使用して、内部ネットワークをAWS Direct Connectの場所にリンクします。 ケーブルの一端はルータに接続され、もう一端はAWS Direct Connectルータに接続されます。 この接続を使用すると、Amazon Elastic Compute Cloud（Amazon EC2）やAmazon Simple Storage Service（Amazon S3）やAmazon Virtual Private Cloud（Amazon VPC）などのAWSクラウドに仮想インターフェイスを直接作成できます。 あなたのネットワークパスにインターネットサービスプロバイダを渡してください。参照：http://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html'
   }
   , {
     description: "非x86ハードウェアへの依存と、データバックアップにAWSを使用するために、オンプレミスのアプリケーションを実行しています。 バックアップアプリケーションは、POSIX互換のブロックベースストレージにのみ書き込むことができます。 140TBのデータがあり、ファイルサーバー上の単一のフォルダとしてマウントしたい場合バックアップが行われている間、このデータの一部にアクセスできる必要があります。 このユースケースに最も適したバックアップソリューションは何ですか？"
@@ -12725,6 +12808,7 @@ questions.add([
       , {description: "256文字", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon IAMでは、ロール名の最大長は64文字です。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html'    	
   }
   , {
     description: "アプリケーションのストレージレイヤを設計するように求められました。 このアプリケーションには少なくとも100,000 IOPSのディスク性能が必要です。 さらに、記憶層は、個々のディスク、EC2インスタンス、または可用性ゾーンでデータ損失なしに生き残ることができなければなりません。 あなたが提供するボリュームは、少なくとも3TBの容量を持たなければなりません。次の設計のどれがこれらの目標を達成するでしょうか？"
@@ -12747,6 +12831,7 @@ questions.add([
       , {description: "1Gbpsおよび10 Gbps", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS Direct Connectionは現在、1Gbpsと10Gbpsをサポートしています。参照：http://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html'
   }
   , {
     description: "Amazon ElastiCacheでは、単一のキャッシュノードの障害が、yourapplicationとバックエンドデータベースの負荷に影響を与える可能性があります。一方、ElastiCacheは故障したキャッシュノードの代替をプロビジョニングし、再投入されます。 この潜在的な利用可能性の影響を軽減するソリューションはどれですか？"
@@ -12769,6 +12854,7 @@ questions.add([
       , {description: "elasticache describe-events - ソースタイプのcache-cluster - 時間1440", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon ElastiCacheでは、コード "aws elasticache describe-events - source-type cache-cluster - duration 1440"を使用して過去24時間（1440分）のキャッシュクラスタイベントを一覧表示します。参照：http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/ECEvents.Viewing.html'
   }
   , {
     description: "ユーザがPIOPSでEBSボリュームを設定しました。 ユーザーは最適なスループットを経験していません。次のうち、そのEBSボリュームのI / Oパフォーマンスに影響を与えない要因は何ですか？"
@@ -12780,6 +12866,7 @@ questions.add([
       , {description: "インスタンスタイプがEBSに最適化されていない", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'ユーザーが予想されるIOPSまたはプロビジョニングされたスループットに遭遇していない場合は、EC2帯域幅が制限要因ではなく、インスタンスがEBS最適化（または10ギガビットネットワーク接続性を含む）で、インスタンスタイプEBS専用帯域幅がIOPSを超えている 彼が準備したよりも。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html'
   }
   , {
     description: "デフォルトでは、AmazonElastiCacheで実行できるキャッシュ・ノードの最大数はいくらですか？"
@@ -12791,6 +12878,7 @@ questions.add([
       , {description: "200", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon ElastiCacheでは、最大20のキャッシュノードを実行できます。参照：http://aws.amazon.com/elasticache/faqs/'
   }
   , {
     description: "いくつかのファイルを取得する定期的な画像解析アプリケーションがあります。インプット分析では、各ファイルは出力ファイルに10個のファイルを書き込み、1日の入力ファイル数は1日の数時間で集中します。現在、入力データとその結果をホストする大規模なEBSボリュームを持つEC2上のサーバーは、プロセスを完了するために1日約20時間を要します。どのようなサービスを使用して精緻化時間を短縮し、ソリューションの可用性を向上させることができますか？"
@@ -12813,6 +12901,7 @@ questions.add([
       , {description: "はい、自動再試行回数を10回に増やすことができます。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWSデータパイプラインでは、すべてのアクティビティの試行が失敗した状態で返された場合、アクティビティは失敗します。 デフォルトでは、アクティビティはハード障害状態に入る前に3回再試行されます。 自動再試行の回数を10回に増やすことはできますが、システムでは不定期の再試行は許可されません。参照：https://aws.amazon.com/datapipeline/faqs/'    	
   }
   , {
     description: "あなたは最近、都市部の街中の騒音や大気の質を測定するセンサーを構築するスタートアップ企業に加わりました。同社では、AWSでホストされているバックエンドに対して、毎分3センサーの1秒間に約1KBのセンサーデータをアップロードする約100個のセンサーのパイロット展開を行っています。パイロットは、データベース上のピークまたはIOPSを測定し、現在の展開は、EC2インスタンスを使用する負荷分散された自動拡張摂取レイヤーと、500GB標準ストレージを備えたPostgreSQL RDSデータベースで構成されています。パイロットは成功とみなされ、CEOは注目を集めるか、潜在的な投資家になる。事業計画では、少なくとも100,000個のセンサを配置する必要があり、バックエンドでサポートする必要があります。また、少なくとも2年間のセンサデータを保存する必要があります。資金調達を確保するには、プラットフォームがこれらの要件を満たしているかどうかを確認して、さらなるスケーリングの余地を残す必要があります。どのセットアップの勝利が要件を満たしていますか？"
@@ -12868,6 +12957,7 @@ questions.add([
       , {description: "\"Effect\": \"Allow\", \"Action\": [\"AccountUsage], \"Resource\": \"*\"", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWSアイデンティティとアクセス管理は、組織がさまざまなAWSサービスのユーザとユーザ権限を管理できるようにするWebサービスです。 CFOがAWS使用レポートページへのアクセスのみを許可したい場合、そのIAMユーザーのポリシーは以下のようになります。{"Version"： "2012-10-17"、 "Statement"：[{"Effect"： "Allow "、"アクション "：[" aws-portal：ViewUsage "]、" Resource "：" * "}]}参照：http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissionsref.html'
   }
   , {
     description: "AWSからの承認を受けなくても、1つの地域で複数のcg1.4x大規模オンデマンドインスタンスを実行できますか？"
@@ -12879,6 +12969,7 @@ questions.add([
       , {description: "10", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '一般に、AWS EC2では、オンデマンドインスタンス20個とスポットインスタンス100個を同時に実行できます。 この制限はhttps://aws.amazon.com/contact-us/ec2-requestでリクエストすることで増やすことができます。 特定のタイプのインスタンスを除いて、制限は上記のものよりも低くなります。 cg1.4xlargeの場合、ユーザーは一度に2つのオンデマンドインスタンスしか実行できません。参照：http://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html#limits_ec2'
   }
   , {
     description: "EC2インスタンス上で動作するアプリケーションがあります。このアプリケーションは、事前署名されたURLを使用して、プライベートS3バケットからfliesをダウンロードできます。 URLを生成する前に、アプリケーションはS3でファイルの存在を確認する必要があります。アプリケーションがAWS認証を使用してS3バケットに安全にアクセスする方法は？"
@@ -12901,6 +12992,7 @@ questions.add([
       , {description: "はい、Amazonはこれを行いますが、Oracle RDSのみです。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon RDS APIで使用可能なModify DB Instanceアクションを使用して、インスタンスに含めるインスタンスIDとDBセキュリティグループを指定するパラメータDBインスタンス識別子とDBセキュリティグループの値を渡すことができます。参照：http://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html'
   }
   , {
     description: "S3バケットとオブジェクトへのアクセスを制御するには："
@@ -12934,6 +13026,7 @@ questions.add([
       , {description: "あなたはどのアカウントまたはAWSサービスがその役割を果たすことができるかを定義できます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazonは、アプリケーションが使用するセキュリティ資格情報を管理することなく、アプリケーションがインスタンスからAPI要求を安全に行うことができるようにIAMロールを設計しました。 AWS資格情報を作成して配布する代わりに、次のようにIAMロールを使用してAPIリクエストを作成する権限を委任できます。IAMロールを作成します。 役割を引き受けることができるアカウントまたはAWSサービスを定義します。役割を引き受けた後にアプリケーションが使用できるAPIアクションとリソースを定義します。 インスタンスの起動時にロールを指定します。 アプリケーションに一時的な資格情報のセットを取得させ、それらを使用させる。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html'
   }
   , {
     description: "組織はAWS VPCとELBを使用して安全でスケーラブルなアプリケーションを作成する予定です。組織化にはすでに2つのインスタンスが実行されており、各インスタンスにはプライマリネットワークインターフェイスに加えてENIが付属しています。 プライマリネットワークインターフェイスと追加のENIの両方には弾性IPが接続されています。 これらのインスタンスがELBに登録されていて、組織がELBがインスタンスの特定のEEにデータを送信したい場合、どのようにしてこれを達成できますか？"
@@ -12967,6 +13060,7 @@ questions.add([
       , {description: "キャッシュノードに関連付けられた詳細な監視メトリックを提供し、問題を迅速に診断して対応することができます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazonは、障害検出と回復、およびCloudWatchと呼ばれるソフトウェアのパッチと監視ツールを提供しています。 さらに、Amazon ElastiCacheのキャッシュクラスタのすべてのノードを自動的に識別して初期化するAuto Discoveryも提供しています。参照：http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/WhatIs.html'
   }
   , {
     description: "あなたの会社は、東京、支店に本社を置き、日本、ヨーロッパ、米国のAWSでマルチリージョン展開のロジスティクスソフトウェアを使用しています。ロジスティックソフトウェアは3階層構造を持ち、現在データ用にMySQL 5.6を使用しています持続性。 HQ地域では、HQ地域では毎時間バッチプロセスを実行し、すべての地域からのデータを電子メールで全オフィスに送信します。このバッチプロセスは迅速に完了してロジスティクスを迅速に最適化する必要があります。それを満たすためのデータベースアーキテクチャ"
@@ -12990,6 +13084,7 @@ questions.add([
       , {description: "500", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'ユーザがMySQL RDSでPIOPSを有効にしようとしている場合、ストレージの最小サイズは100 GB、最小PIOPSは1000でなければなりません。参照：http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.html'    	
   }
   , {
     description: "AWS CodeDeployを使用して、anAmazon仮想プライベートクラウド（VPC）内で実行中のAmazon EC2インスタンスにアプリケーションをデプロイする場合。 これを可能にするためにはどのような基準を満たさなければならないのですか？"
@@ -13001,6 +13096,7 @@ questions.add([
       , {description: "現在のところ、AWS CodeDeployを使用して、Amazon Virtual Private Cloud（VPC）内でAmazon EC2インスタンスを実行するアプリケーションを展開することはできません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS CodeDeployを使用して、Amazon Virtual Private Cloud（VPC）内で動作するAmazon EC2インスタンスにアプリケーションをデプロイできます。 ただし、Amazon EC2インスタンスにインストールされたAWS CodeDeployエージェントは、公開AWS CodeDeployおよびAmazon S3サービスエンドポイントにアクセスできる必要があります。参照：http://aws.amazon.com/codedeploy/faqs/'
   }
   , {
     description: "VPCで起動されたRDSインスタンスでプロビジョニングされたIOPSを使用できますか？"
@@ -13012,6 +13108,7 @@ questions.add([
       , {description: "はい、MySQLベースのインスタンスでのみ使用できます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon RDSの基本ビルディングブロックはDBインスタンスです。 DBインスタンスストレージには、磁気、汎用（SSD）、およびプロビジョニングIOPS（SSD）の3種類があります。 サーバーを購入すると、CPU、メモリ、ストレージ、およびIOPSがすべてバンドルされます。 Amazon RDSでは、これらを分割して独立して拡張できます。 したがって、たとえば、より多くのCPU、少ないIOPS、またはより多くのストレージが必要な場合は、簡単に割り当てることができます。参照：http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/RDSFAQ.PIOPS.html'
   }
   , {
     description: "AWS Data Pipelineの次のコンポーネントのうち、タスクをポーリングしてそのタスクを実行するものはどれですか？"
@@ -13023,6 +13120,7 @@ questions.add([
       , {description: "AWSダイレクトコネクト", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'タスクランナーはタスクをポーリングし、それらのタスクを実行します。参照：http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/what-isdatapipeline.html'
   }
   , {
     description: "AWS Direct Connect自体には、アクセスを制御するための特別なリソースはありません。 したがって、アイデンティティおよびアクセス管理（IAM）ポリシーで使用するAWS（直接接続Amazonリソース名）はありません。 これを念頭に置いて、AWSDirect Connectアクションへのアクセスを制御するポリシーを作成するにはどうすればよいですか？"
@@ -13034,6 +13132,7 @@ questions.add([
       , {description: "リソースの名前を作成できます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS Direct Connect自体には、アクセスを制御するための特別なリソースはありません。 したがって、IAMポリシーで使用するAWS Direct Connect ARNはありません。 アスタリスク（*）をリソースとして使用して、AWSダイレクトコネクトのアクションへのアクセスを制御するポリシーを作成します。参照：http://docs.aws.amazon.com/directconnect/latest/UserGuide/using_iam.html'
   }
   , {
     description: "IAMの役割に付加する2つのポリシーは、アクセスポリシーと信頼ポリシーです。 Thetrustポリシーは、誰がAWSラムダアカウントのプリンシパルの役割を担うことができるかを確認し、AWSラムダアカウントのプリンシパルに________________アクションを許可します。"
@@ -13045,6 +13144,7 @@ questions.add([
       , {description: "sts:AssumeRole", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAMの役割に付加する2つのポリシーは、アクセスポリシーと信頼ポリシーです。 役割の信頼ポリシーにアカウントを追加することは、信頼関係を確立することの半分に過ぎないことに注意してください。 デフォルトでは、信頼できるアカウントのユーザーは、そのアカウントの管理者が、役割のAmazon ResourceName（ARN）をsts：AssumeRoleアクションのAllow要素に追加することで、ユーザーが役割を引き受ける権限をユーザーに付与するまで、 リファレンス：http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html'
   }
   , {
     description: "組織は、アプリケーションがonAWSだけでなく実行されるマルチサイトソリューションを設定して、最小復旧時間目標（RTO）を達成しています。 次のうち、マルチサイトソリューションシナリオの要件を満たしていない構成はどれですか？"
@@ -13056,6 +13156,7 @@ questions.add([
       , {description: "ルート53のような重み付けされたDNSサービスを設定して、サイト間でトラフィックをルーティングします。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWSには、DR（Disaster recovery）とHA（High Availability）のための多くのソリューションがあります。 組織がマルチサイトソリューションを使用してHAとDRを使用する場合は、1つは構内、もう1つはAWSでフルキャパシティを設定する必要があります。 組織は、加重されたDNSサービスをセットアップして、加重年齢に基づいて両方のサイトにトラフィックをルーティングする必要があります。 サイトの1つに障害が発生すると、負荷全体を別のサイトにルーティングできます。このシナリオでは、組織のRTOは最小限に抑えられます。 組織が単一のDBインスタンスを設定する場合、フェールオーバーではうまく機能しません。代わりに、各サイトに2つの別個のDBがあり、組織のRTO（復旧時間目標）に基づいてデータ複製をセットアップする必要があります。参照：http://d36cz9buwru1tt.cloudfront.net/AWS_Disaster_Recovery.pdf'
   }
   , {
     description: "あなたの会社は、文書の保存と共有のためにソーシャルメディアのウェブサイトを運営しています。 Webアプリケーションを使用すると、大きなファイルをアップロードしながら、必要に応じてアップロードを再開して一時停止することができます。 現在、ファイルはElastic load balancingに基づいてPHPフロントエンドにアップロードされ、受け取ったバイト数の平均（NetworkIn）に基づいたAmazon Elastic Compute Cloud（EC2）インスタンスのオートスケーリング艦隊にアップロードされます。 ファイルがアップロードされると、Amazon Simple Storage Service（S3）にコピーされます。 Amazon EC2インスタンスは、Amazon S3のアップロードを許可するAWS Identity and Access Management（IAM）ロールを使用します。 過去6ヶ月間にユーザーベースとスケールが大幅に増加し、AutoScalingグループのMaxパラメーターを数回増やす必要がありました。 CFOはコストの上昇を懸念しており、必要に応じてコストを最適化するためにアーキテクチャを調整するよう依頼しています。アーキテクチャを変更してコストを削減し、Webアプリケーションを安全かつスケーラブルに保つことができますか？"
@@ -13078,6 +13179,7 @@ questions.add([
       , {description: "ステートメント配列の各ステートメントにSid値を割り当てることはできません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Sid（ステートメントID）は、ポリシーステートメントに指定するオプションの識別子です。 ステートメント配列の各ステートメントにSidに値を割り当てることができます。 IAMでは、SidはIAM APIに公開されていません。 このIDに基づいて特定のステートメントを取得することはできません。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#Sid'
   }
   , {
     description: "ExamKillerには3つの部門があり、各部門にはそれぞれ独自のAWSアカウントがあります。 HRdepartmentは、ロールオンの従業員のすべてのデータがアップロードされるファイル共有サイトを作成しました。 従業員の在籍に関するデータをVPCでホストされているDBにアップロードします。財務部はHR部門のデータにアクセスして、従業員がいる日数に基づいて給与計算を計算します ExamKillerはこのシナリオをどのようにセットアップできますか？"
@@ -13168,6 +13270,7 @@ questions.add([
       , {description: "基本ラテン文字（ASCII）は使用できません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAMユーザーのユーザーパスワード（ログインプロファイル）には、任意のBasic Latin（ASCII）文字を含めることができます。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html'
   }
   , {
     description: "AWS IAMでは、以下の事前定義されたポリシー条件キーのどれが、マルチファクタ認証（MFA）を使用して発行されたMFAで検証されたセキュリティ資格証明書がどれくらい前にチェックされますか？"
@@ -13179,6 +13282,7 @@ questions.add([
       , {description: "aws:MultiFactorAuthPrevious", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS：MultiFactorAuthAgeは、AWSによって提供される定義済みキーの1つで、IAMポリシーのCondition要素に含めることができます。 このキーを使用すると、マルチファクタ認証（MFA）を使用して要求を発行したMFAで検証されたセキュリティ資格情報を、どれくらい前に（秒単位で）確認することができます。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_ElementDescriptions.html'
   }
   , {
     description: "会社は最近、AWSのVPCにデータセンターを拡張し、必要なバーストコンピューティング能力を追加しました。ネットワークオペレーションセンターのメンバーは、AWSManagementConsoleにアクセスし、必要に応じてAmazon EC2インスタンスを管理できる必要があります。 IAMユーザーはNOCメンバーに参加し、それらのユーザーをAWS管理コンソールに再度サインインします。どのオプションがあなたのNOCメンバーのニーズを満たしますか？"
@@ -13201,6 +13305,7 @@ questions.add([
       , {description: "10", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'ルートテーブルごとに許可されるBGPアドバタイズドルートの最大数は100です。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Appendix_Limits.html'
   }
   , {
     description: "デフォルトで送信元/宛先のチェックを実行するEC2インスタンスが、privateVPCサブネットで起動されます。すべてのセキュリティ、NACL、およびルーティング定義は、期待どおりに構成されます。 カスタムNATインスタンスは起動されます。カスタムNATインスタンスを動作させるには、次のうちどれを実行する必要がありますか？"
@@ -13212,6 +13317,7 @@ questions.add([
       , {description: "NATインスタンスは、弾性IPアドレスで構成する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '各EC2インスタンスは、デフォルトでソース/宛先チェックを実行します。 つまり、インスタンスは送信または受信するトラフィックの送信元または送信先でなければなりません。 ただし、NATインスタンスは、送信元または送信先がそれ自身ではない場合、トラフィックを送受信できる必要があります。 したがって、NATインスタンスで送信元/宛先のチェックを無効にする必要があります。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_NAT_Instance.html#EIP_Disable_SrcDestCheck'
   }
   , {
     description: "次のうちAWSデータパイプラインを使用して実行できないものはどれですか？"
@@ -13223,6 +13329,7 @@ questions.add([
       , {description: "指定された間隔で、異なるAWS計算サービスとストレージサービス間、およびオンプレミスデータソース間でデータを移動します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS Data Pipelineは、指定された間隔で、異なるAWS計算サービスとストレージサービス、オンプレミスデータソース間で確実にデータを処理し、移動するのに役立つWebサービスです。 AWS Data Pipelineを使用すると、保存されたデータに定期的にアクセスし、変換して処理し、結果を別のAWS.AWSデータ・パイプラインに効率的に転送して、フォールト・トレラントで反復可能な複雑なデータ処理ワークロードを簡単に作成できます。 高可用性。 AWS Data Pipelineでは、以前は社内のデータサイロでロックされていたデータを移動して処理することもできます。参照：http://aws.amazon.com/datapipeline/'
   }
   , {
     description: "Amazon Cognito IDプールはどのようなIDをサポートしていますか？"
@@ -13245,6 +13352,7 @@ questions.add([
       , {description: "クライアント秘密", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon SNSとADMを使用してモバイルデバイスにプッシュ通知を送信するには、次の情報を取得する必要があります。登録IDとクライアントの秘密 参照：http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePushPrereq.html'
   }
   , {
     description: "WebアプリケーションのAWSへの移行を設計する必要があります。このアプリケーションは、カスタムWebサーバーを実行するLinux Webサーバーで構成されています。アプリケーションから生成されたログを永続的な場所に保存する必要があります。アプリケーションをAWSに移行するために選択できるオプションは何ですか？ （2つを選択）"
@@ -13268,6 +13376,7 @@ questions.add([
       , {description: "ロギング用の別のモジュールを作成し、SQSを使用してモジュールのコンパイルを行い、すべてのロギングのロギングが非同期であるようにします。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '組織は、HAとDRの複数のAZにまたがって、常に同じ地域の複数のEC2インスタンスを起動できます。 AWSアーキテクチャのプラクティスでは、メインアプリケーションのパフォーマンスに影響を与えずに並列に実行できるように、機能をコンパートメント化することを推奨しています。 このシナリオでは、ログファイルのサイズが大きいため、ロギングに時間がかかります。 したがって、組織はそれらを分けて別々のモジュールを作り、それらの間で非同期呼び出しを行うことが推奨されます。 このようにして、アプリケーションは要件に従って拡張でき、パフォーマンスはロギングの影響を受けません。参照：http://www.awsarchitectureblog.com/2014/03/aws-and-compartmentalization.html'
   }
   , {
     description: "ExamKillerは、マルチテナントの学習管理システム（LMS）を作成しました。 アプリケーションは、テナントのそれぞれのAWSアカウントのVPC内の異なるテナント（クライアント）に対してホストされます。 ExamKillerは、必要に応じて各テナントアップグレードのLMSに接続できる集中サーバをセットアップします.ExamKillerは、セキュリティ上の理由から、1つのテナントVPCが他のVPCに接続できないようにしたいと考えています。 ExamKillerはこのシナリオをどのようにセットアップできますか？"
@@ -13301,6 +13410,7 @@ questions.add([
       , {description: "AND", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAMポリシー内の単一の条件に1つのキーに複数の値が含まれている場合、論理ORを使用して評価されます。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html'
   }
   , {
     description: "あなたの会社は、特注の技術的な改良を加えて、独自のスキーヘルメットをカスタムメイドで製作しています。お客様は、スキー場で個性を披露し、ヘッドアップディスプレイにアクセスできます。 GPSリアビューカム、ヘルメットに組み込むことを望む他の技術革新。現在の製造プロセスは、ヘルメットを組み立てるのに使用されるカスタム電子機器と材料が最高の基準になるようにする評価を含む、データが豊富で複雑です。アセスメントは、 CUDAを使用してGPUを使用してカスタムエレクトロニクスの障害モードをモデル化するための新しい評価セットを追加する必要がある自動アセスメントがあります。どのアーキテクチャでハイブリッドアプローチを使用して既存のプロセスを自動化し、アーキテクチャは時間の経過とともにプロセスの進化をサポートできますか？"
@@ -13378,6 +13488,7 @@ questions.add([
       , {description: "あるアカウントのIAMユーザーが他のIAMユーザーのオブジェクトにアクセスすることはできません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAMユーザーが別のAWSユーザーのバケットに属するオブジェクトに対して何らかのアクションを実行しようとすると、S3はIAMユーザーの所有者が十分な許可を与えているかどうかを検証します。 また、バケットのポリシーとオブジェクト所有者によって定義されたポリシーも検証されます。参照：http://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-auth-workflow-objectoperation.html'
   }
   , {
     description: "AWSアカウントIDが999988887777の組織で50人のIAMユーザーが作成されました。すべてのユーザーが同じグループ試験のキラーに追加されます。 組織が各IAMユーザーがAWSコンソールでログインできるようになっている場合、IAMユーザーはどのAWSログインURLを使用するのですか？"
@@ -13389,6 +13500,7 @@ questions.add([
       , {description: "https://999988887777.signin.aws.amazon.com/console/", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWSのアイデンティティとアクセス管理は、組織がさまざまなAWSサービスのユーザーとユーザーのアクセス許可を管理できるようにするWebサービスです。 組織がIAMユーザーを作成すると、AWSコンソールにログインするための別のAWSコンソールURLが作成されます。 IAMユーザーのコンソールログインURLは、https：//AWS_Account_ID.signin.aws.amazon.com/console/になります。 AWSアカウントIDのみを使用し、グループまたはユーザーIDに依存しません。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/AccountAlias.html'
   }
   , {
     description: "AWSダイレクトコネクトでポリシーキーを実装する際に、Amazon EC2インスタンスから_____と要求を使用すると、インスタンスのパブリックIPアドレスが評価され、アクセスが許可されているかどうかが判断されます。"
@@ -13400,6 +13512,7 @@ questions.add([
       , {description: "aws:CurrentTime", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon RDSでポリシーキーを実装しているときに、aws：SourceIpを使用し、Amazon EC2インスタンスから要求が来た場合、そのインスタンスのパブリックIPアドレスが評価され、アクセスが許可されているかどうかが判断されます。参照：http://docs.aws.amazon.com/directconnect/latest/UserGuide/using_iam.html'
   }
   , {
     description: "DaveはExample Corp.のメイン管理者であり、パスを使用して会社のユーザーを助け、各パスベースの部門ごとに別々の管理者グループを設定することにしました。彼が使うことを計画している経路の完全なリストのisasubsetに従って：。 /marketing. /sales. /legal Daveは、会社のマーケティング部門の管理者グループを作成し、itMarketing_Adminを呼び出して、/ marketingパスを割り当てます。グループのARN isarn：aws：iam :: 123456789012：group / marketing / Marketing_Admin.Daveは、marketing_Adminグループに、/ marketingパス内のすべてのグループとユーザーのallIAMアクションを使用する権限を与える次のポリシーを割り当てます。このポリシーは、corporatebucketの一部のオブジェクトに対するAWS S3アクションを実行する権限をMarking_Admingroupに与えます。{\"Version\": \"2012-10-17\",\"Statement\": [{\"Effect\": \"Deny\",\"Action\": \"iam:*\",\"Resource\": [\"arn:aws:iam::123456789012:group/marketing/*\",\"arn:aws:iam::123456789012:user/marketing/*\"]},{\"Effect\": \"Allow\",\"Action\": \"s3:*\", \"Resource\": \"arn:aws:s3:::example_bucket/marketing/*\"},{\"Effect\": \"Allow\",\"Action\": \"s3:ListBucket*\",\"Resource\": \"arn:aws:s3:::example_bucket\",\"Condition\":{\"StringLike\":{\"s3:prefix\": \"marketing/*\"}}}]}"
@@ -13453,6 +13566,7 @@ questions.add([
       , {description: "AWS資格情報をローテーションする場合は、資格情報を管理する必要があります。また、長期的なセキュリティリスクに対する注意を考慮する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAMロールを使用してEC2インスタンス上で実行されるアプリケーションに権限を与えるには、少しの追加の設定が必要です。 ロールの資格情報は一時的で自動的にローテーションされるため、資格情報を管理する必要はなく、長期的なセキュリティリスクについて心配する必要はありません。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/role-usecase-ec2app.html'
   }
   , {
     description: "ユーザがPIOPSを使用してMySQL RDSインスタンスを作成しました。 以下の記述のどれがPIOPSの利点を理解するのに役立つでしょうか？"
@@ -13475,6 +13589,7 @@ questions.add([
       , {description: ".すべてのユーザーのパスワードベースのログインを無効にします。 すべてのユーザーは、独自のキーを使用してインスタンスと安全に接続する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWSはパブリッククラウドなので、EC2でホストされているすべてのアプリケーションはハッカーの攻撃を受けやすい傾向があります。 ユーザがEC2インスタンス上に適切なセキュリティメカニズムを設定することは非常に重要になります。 セキュリティ対策のいくつかを以下に示します：OSを最新のパッチで常に最新の状態に保つEC2インスタンスに接続し、そのキーを作成し、パスワードを無効にする必要がある場合は、常にOS内で別のユーザーを作成します。 EC2インスタンスが完了したときにユーザーのアクセスを取り消すことができます。不要なポートをロックするユーザーがEC2インスタンスで実行している可能性がある独自のアプリケーションを監査します。 IAMは、ユーザーがAWSのリソースやアクション（インスタンスの起動など）を処理する必要がある場合に便利です。 インスタンス（RDP / SSH）を接続するのは便利ではありません。参照：http://aws.amazon.com/articles/1233/'    	
   }
   , {
     description: "組織はセキュリティ監査を受けています。 監査人は、組織がAWS VPCのすべてのアプリケーションをホストしているように、AWS VPC構成を表示する必要があります。監査人は遠隔地から来ており、AWSにアクセスしてすべてのVPCレコードを表示したいと考えています。 AWSインフラストラクチャのセキュリティを犠牲にすることなく、"
@@ -13497,6 +13612,7 @@ questions.add([
       , {description: "AWSデータパイプライン試行オブジェクトは、適用可能であれば、さまざまな試行、結果、および失敗の理由を追跡します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Attemptsは、AWS Data Pipelineのスケジュールパイプラインに関連する3種類のアイテムのうちの1つであり、堅牢なデータ管理を提供します。 AWSデータパイプラインは、失敗した操作を再試行します。 タスクが許可された再試行の最大回数に達するまで、タスクは引き続き実行されます。 試行オブジェクトは、適切な場合、さまざまな試行、結果、および失敗の理由を追跡します。 本質的には、それはカウンターを備えたインスタンスです。 AWS Data Pipelineは、Amazon EMRクラスタやEC2インスタンスなど以前の試みと同じリソースを使用して再試行を行います。参照：http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-how-tasks-scheduled.html'
   }
   , {
     description: "IAMユーザーには、フェデレーションユーザーとロールのためのTemporary Security Credentialsをデフォルトで作成する権限がありません。 対照的に、IAMユーザーは特別な許可を必要とせずに______に電話をかけることができます"
@@ -13508,6 +13624,7 @@ questions.add([
       , {description: "GetFederationName", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '現在、STS APIコマンドのGetSessionTokenは、アカウント内のすべてのIAMユーザーが前の許可なしに使用できます。 対照的に、GetFederationTokenコマンドは制限されており、ユーザーがこの特定のActionに呼び出しを発行できるように、明示的なアクセス許可を与える必要があります。参照：http://docs.aws.amazon.com/STS/latest/UsingSTS/STSPermission.html'
   }
   , {
     description: "サーバー環境の寿命が近づいているレガシーWebアプリケーションの責任はお客様にあります。 アプリケーション環境には現在次の制限があるため、このアプリケーションをできるだけ早くAWSに移行したいと考えています。VMの単一の10GB VMDKがほぼ満杯です。 私の仮想ネットワークインターフェイスは10Mbpsのドライバを使用しているため、100MbpsのWAN接続は完全に利用されません。 現在、高度にカスタマイズされた形で実行されています。 VMware環境内のWindows VM あなたはインストールメディアを持っていません;これは8時間のRTO（回復時間目標）を持つミッションクリティカルなアプリケーションです。 RPO（RecoveryPoint Objective）は1時間です。 ビジネス継続性要件を満たしながら、このアプリケーションをAWSに移行するにはどうすればよいでしょうか？"
@@ -13552,6 +13669,7 @@ questions.add([
       , {description: "単一のVPCから異なるデータセンターを接続することはできません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。 ユーザーはVPC内の要件に従ってサブネットを作成できます。ユーザーが自分のデータセンターからVPCに接続する場合、ハードウェアVPNアクセスを使用してデータセンターに接続するパブリックおよびVPN専用サブネットをセットアップできます。 組織に複数のVPN接続がある場合、AWS VPN CloudHubを使用してサイト間の安全な通信を提供できます.VPN CloudHubは、VPCの有無にかかわらず使用できる単純なハブ＆スポークモデルで動作します。この設計は、 複数のブランチオフィスおよび既存のインターネット接続を使用して、遠隔地のオフィス間のプライマリまたはバックアップの接続に便利な、潜在的に低コストのハブアンドスポークモデルを実装したいと考えています。参考：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPN_CloudHub.html'
   }
   , {
     description: "ユーザーがPIOPSボリュームを作成しています。 ユーザーがPIOPSとボリュームサイズの間で設定する必要がある最大比率はいくらですか？"
@@ -13563,6 +13681,7 @@ questions.add([
       , {description: "30", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'プロビジョニングされたIOPSボリュームは、I / O集約型ワークロード、特にストレージパフォーマンスとランダムアクセスI / Oスループットの一貫性に敏感なデータベースワークロードのニーズを満たすように設計されています。 プロビジョニングされたIOPSボリュームのサイズ範囲は10 GB〜1 TBで、ユーザーはボリュームあたり最大4000 IOPSをプロビジョニングできます。要求されたボリュームサイズにプロビジョニングされたIOPSの比率は最大30です。 たとえば、3000 IOPSのボリュームは少なくとも100GB必要です。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html'
   }
   , {
     description: "特典登録会社は、パブリックWeb層にNAT（Network Address Translation）インスタンスを含むAWS上のVPCで動作する3層Webアプリケーションをホストしています。 新たな会計年度の給付登録期間に予想される作業負荷と、追加のオーバーヘッドに十分な準備容量があります。2日間の申し込みがうまくいってからWeb層が応答しなくなると、CloudWatchやその他の監視ツールを使って調査すると、 有益な会社に顧客がいない国からのポート80を介した15の特定のIPアドレスのセットからの着信トラフィックの大規模で予想外の量。 Web層インスタンスは非常にオーバーロードされているため、登録管理者はSSHさえできません。この攻撃に対する防御にはどのアクティビティが役立つでしょうか？"
@@ -13604,11 +13723,11 @@ questions.add([
     description: "ソーシャルメディアサイトを設計しており、分散型サービス拒否（DDoS）攻撃を軽減する方法を検討しています。 次の中から実行可能な緩和手法はどれですか？ （3つの回答を選んでください）"
     , multiple_answer: true
     , answers: [
-      {description: "各EC2インスタンスに複数のENI（elastic network interface）を追加して、ネットワーク帯域幅を広げます。", correct: true}
+      {description: "各EC2インスタンスに複数のENI（elastic network interface）を追加して、ネットワーク帯域幅を広げます。", correct: false}
       , {description: "専用のインスタンスを使用して、各インスタンスが最大のパフォーマンスを発揮できるようにします。", correct: false}
       , {description: "静的コンテンツと動的コンテンツの両方にAmazon CloudFrontディストリビューションを使用します。", correct: true}
       , {description: "Web上に自動スケーリンググループを持つElastic Load Balancerを使用します。 AppおよびAmazon RelationalDatabase Service（RDS）層", correct: false}
-      , {description: "Amazon CloudWatchを追加してネットワークインとCPU使用率が高いことを確認します。", correct: false}
+      , {description: "Amazon CloudWatchを追加してネットワークインとCPU使用率が高いことを確認します。", correct: true}
       , {description: "インスタンスOSファイアウォールにルールを迅速に追加および削除するためのプロセスおよび機能を作成します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
@@ -13645,6 +13764,7 @@ questions.add([
       , {description: "ElastiCacheはAmazon Virtual Private Cloud（VPC）と完全に統合されていません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'VPCは、専用EC2以外のインスタンスを許可する必要があります。 専用インスタンスのテナント用に設定されたVPCでElastiCacheを使用することはできません。参照：http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/AmazonVPC.EC.html'
   }
   , {
     description: "ドメインname.example.comの下にある複数のAWSRegionsに渡って、グローバルオーディエンスを対象としたWebアプリケーションを配備しました。 Route53 Latency-Based Routingを使用して、ユーザに最も近い地域からのWeb要求ユーザにサービスを提供することにしました。サーバー停止時にビジネス継続性を提供するために、2つのWebサーバーに関連付けられた加重レコードセットを別々の可用性ゾーンに構成します。 DRテストを督促すると、いずれかの地域のすべてのWebサーバーを無効にすると、Route53は自動的にすべてのユーザーを他の地域に誘導しません。何が起こっているのでしょうか？ （2つを選ぶ）"
@@ -13679,6 +13799,7 @@ questions.add([
       , {description: "ユーザのデバイス上でアプリケーションによって受信され、ユーザの認証クレデンシャルを返すプッシュメッセージである。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon CognitoはAmazon Simple Notification Service（SNS）を使用して、デバイスにサイレントプッシュ通知を送信します。 サイレントプッシュ通知は、ユーザーのデバイス上でアプリケーションによって受信されるプッシュメッセージで、ユーザーが表示しません。参照：http://aws.amazon.com/cognito/faqs/'
   }
   , {
     description: "Webスタートアップは、ElasticLoadBalancer、Java / TomcatアプリケーションサーバーのAuto-Scalingグループ、およびデータストアとしてのDynamoDBを使用して、Amazon EC2上で非常に成功したソーシャルニュースアプリケーションを実行します。メインのWebアプリケーションはm2.xlargeインスタンス 非常にメモリに拘束されています。新しいデプロイメントでは、アプリケーションサーバー用の新しいAMIの半自動化された作成とテストが必要です。このため、かなりの時間がかかります。したがって、1週間に1回しか実行されません。 アーキテクチャに統合されるべきである。 最初のテストでは、新しいコンポーネントがCPUにバインドされていることがわかりました。Chefの使用経験があるため、導入プロセスを合理化し、AWS OpsWorksをアプリケーションのライフサイクルツールとして使用して、アプリケーションの管理を簡素化し、 新しいチャットモジュールを最も費用対効果の高い柔軟な方法で統合するには、AWS Ops Worksの設定が必要ですか？"
@@ -13712,6 +13833,7 @@ questions.add([
       , {description: "いいえ。しかし、DBインスタンスと同じAvailability Zoneに存在する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'アプリケーションは、CloudHSMインスタンスと同じVPCに存在する必要はありません。ただし、アプリケーションとHSMクライアントが実行されているサーバーまたはインスタンスは、HSMへのネットワーク（IP）到達可能性が必要です。 同じVPC、VPCピアリング、VPN接続、またはDirect Connectでアプリケーションを操作するなど、さまざまな方法でネットワーク接続を確立できます。参照：https://aws.amazon.com/cloudhsm/faqs/'
   }
   , {
     description: "社内に複数のPHP Webアプリケーションを展開しており、過去に大規模な休止を経験していました。企業の発表によるWebトラフィックの場合予測不能なバーストを発生させるために同様のアナウンスを試しています。トラフィックの予期しない増加を処理するためのインフラストラクチャ機能を迅速に改善する方法を見つけることができます。アプリケーションは現在、ロードバランサといくつかのLinuxApache WebサーバーとMySQLデータベースをホストするLinuxサーバーをホストするデータベース層で構成されるWeb層の2層で構成されています。下記のどのシナリオでフルサイト機能が提供されるのか、短期間であなたの能力を向上させるのに役立ちますか？"
@@ -13791,6 +13913,7 @@ questions.add([
       , {description: "push", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'デフォルトでは、Amazon Cognitoは最後に書き込まれたバージョンのデータを保持します。 この動作を無効にして、データの競合をプログラムで解決できます。 さらにプッシュ同期により、AmazonCognitoを使用して、IDに関連付けられたすべてのデバイスにサイレントプッシュ通知を送信し、新しいデータが利用可能であることを通知することができます。参照：http://aws.amazon.com/cognito/faqs/'
   }
   , {
     description: "会社がAmazon Simple Storage Service（S3）にデータを格納しています。 同社のセキュリティポリシーは、データが安心して暗号化されるようにしている。 これを達成できる方法はどれですか？3つの回答を選択してください"
@@ -13815,6 +13938,7 @@ questions.add([
       , {description: "スタティックルーティング", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'VPN接続を作成する場合は、使用するルーティングの種類を指定する必要があります。これは、VPNデバイスの製造元とモデルによって異なります。 VPNデバイスがBorderGatewayProtocol（BGP）をサポートしている場合は、VPN接続を設定するときに動的ルーティングを指定する必要があります。 デバイスがBGPをサポートしていない場合は、静的ルーティングを指定する必要があります。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_VPN.html'
   }
   , {
     description: "組織はよりスマートなショッピング体験を提供するアプリケーションを開発しました。彼らは、社内アプリケーションにアクセスできないさまざまなステークホルダーにデモンストレーションを行い、AWS上でアプリケーションのデモバージョンをホストすることを決定する必要があります。 その結果、彼らは起動時に自動的にインスタンスに接続された固定された弾性IPを必要とします。このシナリオでは、以下のオプションのどれが弾性IPを自動的に割り当てるのに役立たないでしょうか？"
@@ -13826,6 +13950,7 @@ questions.add([
       , {description: "VPCを使用してインスタンスを起動し、プライマリネットワークインターフェイスにエラスティックIPを割り当てます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'EC2を使用すると、オンデマンドインスタンスを起動できます。 組織がデモ目的でのみアプリケーションを一時的に使用している場合、エラスティックIPを割り当てる最良の方法は次のとおりです。VPCを使用してインスタンスを起動し、プライマリネットワークインターフェイスにEIPを割り当てます。 このようにして、すべてのインスタンスが起動するたびに、同じIPを持つようになります。ブートストラップスクリプトを作成し、EIPの割り当てに使用できるユーザーデータなどのメタデータを提供します。インスタンスの開始および停止をスケジュールし、 コントローラーインスタンスがインスタンスのブートをチェックしてEIPを割り当てることができるように、EIPをパラメーターとして使用します。インスタンスメタデータは、パブリック/プライベートIPなどの現在のインスタンスデータを提供します。 EIPを割り当てることはできません。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AESDG-chapterinstancedata.html'
   }
   , {
     description: "組織がAWS VPC上にウェブサイトを設定しています。組織は、DOS攻撃を回避するためにいくつかのIPをブロックしています。 上記のIPからの要求がアプリケーションインスタンスにアクセスしないように組織はどのように構成できますか？"
@@ -13837,6 +13962,7 @@ questions.add([
       , {description: "そのIPアドレスからのトラフィックを拒否するACLをサブネットに設定します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。 これにより、ユーザーは、ユーザーが定義した仮想ネットワークにAWSリソースを起動できます。 AWSには、ユーザーがVPCのセキュリティを強化するために使用できる2つの機能があります。セキュリティグループとネットワークACLです。 ACLはサブネットレベルで動作し、インスタンスレベルのセキュリティグループワーク。 ACLは許可と拒否の両方のルールを許可します。したがって、ユーザーが選択したIPからのトラフィックを拒否したい場合、サブネットでACLを使用することをお勧めします。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_ACLs.html'
   }
   , {
     description: "単一のVPCで顧客Webアプリケーション用の侵入検知防止（IDS / IPS）ソリューションを設計しています。インターネットからのトラフィックに対するIOS IPS保護を実装するオプションを検討しています。次のオプションのどれを検討しますか？ （2つの回答を選択）"
@@ -13859,6 +13985,7 @@ questions.add([
       , {description: "False、クラスタ構成エンドポイントに接続できますが、キャッシュノードには接続できません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'これは本当です。 アプリケーションの観点からは、クラスタ構成エンドポイントに接続することは、個々のキャッシュ・ノードに直接接続することと変わりありません。 キャッシュノードに接続するプロセスでは、アプリケーションは構成エンドポイントのDNS名を解決します。 構成エンドポイントはすべてのキャッシュノードのCNAMEエントリを維持するため、DNS名は1つのノードに解決されます。 クライアントはそのノードに接続できます。参照：http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/AutoDiscovery.HowAutoDiscoveryWorks.html'
   }
   , {
     description: "要求がIP10.10.10.1 / 32からのものでない場合、ユーザはすべての要求を拒否するIAMポリシーを設定しています。 もう1つのポリシーでは、午後5時から7時の間にすべてのリクエストを許可します。 ユーザーが午後6時にIP 55.109.10.12/32からのアクセスを要求しているときはどうなりますか？"
@@ -13870,6 +13997,7 @@ questions.add([
       , {description: "アクセスを許可する", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '要求が行われると、AWS IAMポリシーは、要求を許可するか拒否するかを決定します。 評価ロジックは次の規則に従います。デフォルトでは、すべての要求は拒否されます。 （通常、アカウントのリソースのアカウント資格情報を使用して行われた要求は常に許可されます）。このデフォルトを上書きするのは、明示的な許可ポリシーです。 明示的な拒否ポリシーは、許可をオーバーライドします。 この場合は、明示的な拒否と明示的な許可があるためです。 したがって、オーバーライドを許可しないため、要求は拒否されます。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_EvaluationLogic.html'
   }
   , {
     description: "Amazon Redshiftでは、dw2.8xlargeノードにはいくつのスライスがありますか？"
@@ -13881,6 +14009,7 @@ questions.add([
       , {description: "2", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon Redshiftの計算ノードのディスクストレージは、ノード上のプロセッサコアの数に等しい数のスライスに分割されています。 たとえば、各DW1.XL計算ノードには2つのスライスがあり、各DW2.8XL計算ノードには32のスライスがあります。参照：http://docs.aws.amazon.com/redshift/latest/dg/t_Distributing_data.html'
   }
   , {
     description: "組織がAWSを使用してスケーラブルなWebアプリケーションをホストしています。 組織は、アプリケーションをスケーラブルにするために、ELBとAuto Scalingに面するインターネットを構成しました。 アプリケーションがVPCでWebアプリケーションをホストする予定のときに、以下のステートメントのどれに従わなければならないのですか？"
@@ -13892,6 +14021,7 @@ questions.add([
       , {description: "ELBは公衆またはプライベートサブネットに置くことができますが、インターネットトラフィックを転送するためにルーティングテーブルを添付する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon仮想プライベートクラウド（Amazon VPC）を使用すると、ユーザーはAmazon Web Services（AWS）クラウドのプライベートな独立したセクションで仮想ネットワーキング環境を定義できます。 ユーザーは仮想ネットワーキング環境を完全に制御できます。 この仮想プライベートクラウド内で、ユーザーはELBやEC2インスタンスなどのAWSリソースを起動できます。 VPCで利用できるELBには、インターネットに面したELBと内部（プライベート）ELBの2種類があります。 ELBに直面しているインターネットの場合、ELBはパブリックサブネットに存在する必要があります。 ユーザーがパブリックサブネットを作成した後、パブリックサブネットのルートテーブルをインターネットゲートウェイに関連付けて、サブネット内のロードバランサがインターネットに接続できるようにする必要があります。参照：http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/CreateVPCForELB.html'
   }
   , {
     description: "AWS Direct Connectロケーションは、他の米国地域へのアクセスと同様に、関連する地域のAmazon Web Servicesへのアクセスを提供しますか？"
@@ -13903,6 +14033,7 @@ questions.add([
       , {description: "はい、それはアクセスを提供しますが、リージョン内に1つの可用性ゾーンがある場合のみです。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'AWS Direct Connectロケーションは、関連する地域のAmazon Web Servicesへのアクセスと、他の米国地域へのアクセスを提供します。 たとえば、米国内の任意のAWS Direct Connectロケーションへの単一の接続をプロビジョニングし、それを使用してすべての米国地域およびAWS GovCloud（米国）のパブリックAWSサービスにアクセスできます。参照：http://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html'
   }
   , {
     description: "Amazon EC2のc4.8xlargeインスタンスが提供するネットワークパフォーマンスは何ですか？"
@@ -13925,6 +14056,7 @@ questions.add([
       , {description: "RAID 0のみ", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'Amazon EBSでは、従来のベアメタルサーバーで使用できる標準的なRAID構成を使用できます。ただし、その特定のRAID構成がオペレーティングシステムでサポートされている限り、使用できます。 これは、すべてのRAIDがソフトウェアレベルで実行されるためです。 単一のボリュームで実現できるよりも大きなI / Oパフォーマンスを実現するため、RAID 0は複数のボリュームをストライプ化することができ、インスタンス冗長性の場合、RAID 1は2つのボリュームをミラーリングできます.RAID 5およびRAID 6は、 これらのRAIDモードのパリティ書き込み操作では、ボリュームに使用可能なIOPSの一部が消費されます。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/raid-config.html'
   }
   , {
     description: "IAMポリシーでロールの権限を定義する必要があります。 次のどの構成形式を使用しますか？"
@@ -13936,6 +14068,7 @@ questions.add([
       , {description: "あなたが選んだ言語で書かれたJSON文書", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'IAMポリシーでロールの権限を定義します。 IAMポリシーは、IAMポリシー言語で記述されたJSONドキュメントです。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html'
   }
   , {
     description: "AmazonElastic Map Reduceを使用してAmazon S3に格納されている大量のデータを分析する必要があります。 処理中にCPUがほとんどアイドルであるcc2 8x largeインスタンスタイプを使用しています。 次のうち、ジョブの実行時間を短縮する最もコスト効率の高い方法はどれですか？"
@@ -13958,6 +14091,7 @@ questions.add([
       , {description: "一度に1つの役割だけをEC2インスタンスに割り当てることができます。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '一度にEC2インスタンスに割り当てられる役割は1つだけで、インスタンス上のすべてのアプリケーションは同じ役割と権限を共有します。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/role-usecase-ec2app.html'
   }
   , {
     description: "ユーザーが4000 IOPSおよび100 GBサイズのPIOPS EBSボリュームを作成しようとしています。 AWSは、ユーザがこのボリュームを作成することはできません。 これの根本原因は何でしょうか？"
@@ -13969,6 +14103,7 @@ questions.add([
       , {description: "IOPSとEBS容積の比が50未満です", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: 'プロビジョニングされたIOPS（SSD）ボリュームのサイズは、4 GiBから16 TiBの範囲で、ボリュームあたり最大20,000 IOPSをプロビジョニングできます。 要求されたボリュームサイズにプロビジョニングされたIOPSの比率は最大30でなければなりません。 たとえば、3000 IOPSのボリュームは100 GB以上でなければなりません。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html#EBSVolumeTypes_piops'
   }
   , {
     description: "貴社の部門では、会社のログファイルから定期的な分析レポートを作成します。すべてのログデータは、Amazon S3で収集され、Amazon Redshiftデータウェアハウス用の日次PDFレポートとCSV形式の集計テーブルを生成する毎日Amazon Elastic MapReduce（EMR）ジョブによって処理されます。このシステムのコスト構造を最適化するよう依頼します。次の代替手段のどれかは、生データのシステムまたはデータの整合性の平均的なパフォーマンスを損なうことなくコストを削減しますか？"
@@ -14014,6 +14149,7 @@ questions.add([
       , {description: "パブリックサブネットの別々のVPCインスタンスへの要求をリダイレクトするように、ELBでVPCを起動します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
+    , explanation: '1つのEC2インスタンスに複数のWebサイト（異なるIPを持つ）をホストする必要がある場合、AWSの推奨方法は次のとおりです。2つのネットワークインターフェイスを備えたVPCインスタンスを起動するVPC EIPプールからこれらのインターフェイスに弾性IPを割り当てます ）複数のセキュリティグループが必要な場合は、個別のセキュリティグループを割り当てるこのシナリオは、複数のプライベートIPを持つファイアウォールやロードバランサなどのネットワークアプライアンスを操作する場合にも役立ちます 各ネットワークインターフェイスのアドレス。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/MultipleIP.html'
   }
   , {
     description: "あなたは何千人もの従業員がいるあなたのグローバル企業のための個人用の文書アーカイブソリューションを設計しています。 各従業員は、このアーカイブソリューションにバックアップされる潜在的に1ギガバイトのデータを持っています。ソリューションは従業員にアプリケーションとして公開され、ファイルをアーカイブシステムにドラッグアンドドロップできます。 従業員はウェブインターフェースを通じてアーカイブを取り出すことができます。 企業ネットワークには、AWSへの高帯域幅のAWS Direct Connect接続があります。すべてのデータを暗号化してからクラウドにアップロードする必要があります。高可用性でコスト効率の高い方法でこれを実装してください。"
