@@ -12006,13 +12006,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "あなたのウェブサイトは、オンデマンドのトレーニングビデオをあなたの労働力に提供しています。動画は高解像度のMP4形式でアップロードされます。あなたの従業員は、ビデオの視聴にHTTPライブストリーミング（HLS）プロトコルを必要とする、提供されているタブレットを使用して、世界中で頻繁に配信されます。 Yourcompanyにはビデオトランスコーディングの専門知識はなく、コンサルタントに支払う必要がある場合もあります。高可用性とビデオ配信の品質を損なうことなく、最もコスト効率の高いアーキテクチャを実装するにはどうすればいいですか？"
+    description: "あなたのウェブサイトは、オンデマンドのトレーニングビデオをあなたの労働力に提供しています。 動画は毎月高解像度のMP4形式でアップロードされます。 あなたの従業員は、ビデオを見るためにHTTPライブストリーミング（HLS）プロトコルを必要とする会社提供のタブレットを使用して、世界中で頻繁に配信されます。 あなたの会社にビデオトランスコーディングの専門知識はなく、コンサルタントに支払う必要があるかもしれません。 高い可用性とビデオ配信の品質を損なうことなく、コスト効率の高いアーキテクチャをどのように実装していますか？"
     , multiple_answer: false
     , answers: [
-      {description: "タスクを配布するためにSQSを使用してEC2上で実行されるビデオトランスコーディングパイプライン、およびキューの長さに応じてノードの数を調整する自動スケーリングEBSボリュームでビデオをホストし、EBSスナップショットを使用して数日後に元のファイルを増分バックアップします。 EC2からHLSのtranscodedvideosを提供するCloudFront", correct: false}
-      , {description: "Elastic Transcoderを使用してオリジナルの高解像度MP4ビデオをHLSにトランスコードします。 EBSボリュームをhostvideosに、EBSスナップショットを使用して数日後に元のファイルを増分バックアップします。 EC2からのHRSトランスコードビデオを提供するCloudFront。", correct: false}
-      , {description: "Elastic Transcoderを使用してオリジナルの高解像度MP4ビデオをHLSにトランスコードします。 S3は、数日後に元のファイルを氷河にアーカイブするために、ライフサイクルマネジメントでビデオをホストします。 CloudFrontはS3からのHLStranscoded動画を配信します。", correct: true}
-      , {description: "タスクを配布するためにSQSを使用してEC2上で実行されるビデオトランスコーディングパイプライン、およびキューの長さに応じてノードの数を調整する自動スケーリングS3はLifecycleManagementで動画をホストし、数日後にすべてのファイルを氷河にアーカイブします。 CloudFrontは、グラシアからHLSトランスコードされた動画を配信します。", correct: false}
+      {description: "タスクを配布するためにSQSを使用してEC2上で実行されるビデオトランスコードパイプライン、およびキューの長さに応じてノードの数を調整する自動スケーリングEBSボリュームでビデオをホストし、EBSスナップショットを使用して数日後に元のファイルを増分バックアップします。 EC2からHLSトランスコードビデオを提供するCloudFront。", correct: false}
+      , {description: "Elastic Transcoderを使用してオリジナルの高解像度MP4ビデオをHLSにトランスコードします。 EBSボリュームでビデオをホストし、EBSスナップショットを使用して数日後に元のファイルを増分バックアップします。 EC2からHLSトランスコードビデオを提供するCloudFront。", correct: false}
+      , {description: "オリジナルの高解像度MP4ビデオをHLSにトランスコードするElastic Transcoder。 S3を使用してLife Cycle Managementでビデオをホストし、数日後に元のファイルをGlacierにアーカイブします。 CloudFrontはS3からHLSトランスコードされたビデオを提供します。", correct: true}
+      , {description: "EC2でSQSを使用してタスクを配布するビデオトランスコードパイプライン、およびキューの長さに応じてノードの数を調整するAuto Scaling S3を使用してライフサイクル管理でビデオをホストして、数日後にすべてのファイルをGlacierにアーカイブします。 GlacierのHLSトランスコードビデオを提供するCloudFront。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12062,7 +12062,7 @@ questions.add([
     , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。 ユーザーはVPC内の要件に従ってサブネットを作成できます.AWSアカウントは、ユーザーがAWSアカウントを作成した時期と使用している地域に応じてEC2-CLASSICとEC2-VPCの2つのプラットフォームを提供します。 ユーザーが2013-12-04の後にAWSアカウントを作成した場合、EC2-VPCのみがサポートされます。このシナリオでは、アカウントは必須の日付より前になっているため、サポートされているプラットフォームはEC2-CLASSICになります。 T2インスタンスはVPCの一部としてのみ起動できるため、VPCを作成する必要があります。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-migrate.html'
   }
   , {
-    description: "MikeはExamKiller.comのクラウドコンサルタントに任命されました。 ExamKillerには、米国東部地域で以下のVPCセットアップがあります。CIDRブロック10.10.0.0/16を持つVPC、CIDRブロック10.10.1.0/24Aを持つVPCのサブネット、CIDRブロック10.40.0.0/16を持つVPC、そのサブネットCIDRブロック10.40.1.0/24ExamKiller.comのVPCは、CIDRblock1 0.10.1.0/24のサブネットとCIDRブロック10.40.1.0/24の別のサブネットの2つのサブネット間のネットワーク接続を確立しようとしています。 MikeがExamKiller.comに推奨するソリューションはどれですか？"
+    description: "MikeはExamKiller.comのクラウドコンサルタントに任命されました。 ExamKillerには、米国東部地域に以下のVPCが設定されています。CIDRブロック10.10.0.0/16を持つVPC、CIDRブロック10.10.1.0/24を持つVPCのサブネットCIDRブロック10.40.0.0/16を持つVPC、サブネット CIDRブロック10.40.1.0/24を持つVPCでExamKiller.comは、CIDRブロック10.10.1.0/24を持つサブネットとCIDRブロック10.40.1.0/24を持つ別のサブネットの2つのサブネット間にネットワーク接続を確立しようとしています。 MikeがExamKiller.comに推奨するソリューションはどれですか？"
     , multiple_answer: false
     , answers: [
       {description: "2つの仮想プライベートゲートウェイを作成し、それぞれのVPCで1つを構成します。", correct: false}
@@ -12257,11 +12257,11 @@ questions.add([
     , explanation: 'プロビジョニングされたIOPS（SSD）ボリュームのサイズは、4 GiBから16 TiBの範囲で、ボリュームあたり最大20,000 IOPSをプロビジョニングできます。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes html#EBSVolumeTypes_piops'    	
   }
   , {
-    description: "組織は、アプリケーションホスティング用のVPCを作成しています。 組織は、同じAZに2つのprivatesubnetsを作成し、別のゾーンに1つのサブネットを作成しました。 組織は内部ELBを持つaHAシステムを作成したいと考えています。これらのステートメントのうち、ELBの内部ELBに関しては真ですか？"
+    description: "組織は、アプリケーションホスティング用のVPCを作成しています。 組織は、同じAZに2つのプライベートサブネットを作成し、別のゾーンに1つのサブネットを作成しました。 組織は、内部ELBを持つHAシステムを作りたいと考えています。 このシナリオでは、内部ELBに関してこれらのステートメントのどちらが当てはまりますか？"
     , multiple_answer: false
     , answers: [
       {description: "ELBは、各アベイラビリティゾーンで1つのサブネットのみをサポートできます。", correct: true}
-      , {description: "ELBはサブネットの選択を許可しません。 代わりに、VPCの利用可能なサブネットをすべて自動的に選択します。", correct: false}
+      , {description: "ELBはサブネットの選択を許可しません。 代わりに、VPCの使用可能なサブネットをすべて自動的に選択します。", correct: false}
       , {description: "ユーザーが内部ELBを作成している場合は、プライベートサブネットのみを使用する必要があります。", correct: false}
       , {description: "ELBは、ゾーンに関係なくすべてのサブネットをサポートできます。", correct: false}
     ]
@@ -12317,7 +12317,7 @@ questions.add([
     , explanation: 'Amazon ElastiCacheでは、キャッシュクラスターの新しいポート番号を指定できます。デフォルトでは、Memcachedの場合は1211、Redisの場合は6379です。参照：http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/GettingStarted.AuthorizeAccess.html'
   }
   , {
-    description: "あなたはソリューションアーキテクトとして、エンタープライズ顧客がane-commerceプラットフォームをAmazon VPC（Virtual Private Cloud）に移行するのを支援してきました。前のアーキテクトは既に3層VPCを導入しています。<br/>" +
+    description: "あなたはソリューションアーキテクトとして、eコマースプラットフォームからAmazon VPCへの移行を支援しています。前のアーキテクトはすでに3層VPCを導入しています。 設定は次のとおりです。<br/>" +
     		"VPC: vpc-2f8bc447<br/>" + 
 "IGW: igw-2d8bc445<br/>" +
 "NACL: ad-208bc448<br/>" +
@@ -12336,7 +12336,7 @@ questions.add([
       {description: "サブネット-258bc44dで砦およびNATインスタンスを作成し、rtb-238bc44bからNATインスタンスにルートを追加します。", correct: true}
       , {description: "rtb-238bc44bからigw-2d8bc445へのルートを追加し、サブステーション248bc44c内でバスルームとNATインスタンスを追加します。", correct: false}
       , {description: "サブネット248bc44cで砦およびNATインスタンスを作成し、rtb-238bc44bからサブネット258bc44dへのルートを追加します。", correct: false}
-      , {description: "サブネット258bc44dにバスルームとNATのインスタンスを作成し、rtb-238bc44bからIgw-2d8bc445にルートを追加し、サブネット258bc44dとサブネット248bc44cの間でアクセスできる新しいNACLを追加します。", correct: false}
+      , {description: "サブネット258bc44dにバスルームとNATのインスタンスを作成し、rtb-238bc44bからigw-2d8bc445にルートを追加し、サブネット258bc44dとサブネット248bc44cの間でアクセスできる新しいNACLを追加します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12711,11 +12711,11 @@ questions.add([
     , explanation: 'AWSダイレクトコネクトでは、BGP（Border Gateway Protocol）とBGP MD5認証をサポートする必要があり、ASN（Private Autonomous System Number）を提供して、Amazon VPCに接続する必要があります。 Amazon EC2やAmazon S3などの公開AWS製品に接続するには、所有している公開ASN（プライベートASN）も提供する必要があります。 仮想インターフェイスの作成ステップでBGPを設定する必要があります。参照：http://docs.aws.amazon.com/directconnect/latest/UserGuide/getstarted.html#createvirtualinterface'
   }
   , {
-    description: "組織は5人のIAMユーザーを作成しました。 組織は同じloginIDを使用していて、別のパスワードを使用したいと考えています。 組織はこれをどのように達成することができますか？"
+    description: "組織は5人のIAMユーザーを作成しました。 組織は同じloginIDを使用していますが、異なるパスワードを使用したいと考えています。 組織はこれをどのように達成することができますか？"
     , multiple_answer: false
     , answers: [
-      {description: "組織は、それぞれのユーザーを別々の地域に作成して、それぞれのユーザーが独自のURLを持つようにする必要があります", correct: false}
-      , {description: "組織は別のログインIDを作成する必要がありますが、IAMユーザーに同じエイリアスを与えて、thateachoneはエイリアスでログインできます", correct: false}
+      {description: "組織は、各ユーザーを別々の地域に作成して、ログインするための独自のURLを持つようにする必要があります", correct: false}
+      , {description: "組織は別のログインIDを作成する必要がありますが、IAMユーザーには同じエイリアスを与え、エイリアスでログインできるようにします", correct: false}
       , {description: "同じアカウントの複数のIAMユーザーに対して同じログインIDを使用することはできません", correct: true}
       , {description: "組織はさまざまなグループを作成し、同じログインIDを持つ各ユーザーを異なるグループに追加する必要があります。 ユーザーは、自分のグループIDでログインすることができます", correct: false}
     ]
@@ -12885,10 +12885,10 @@ questions.add([
     description: "いくつかのファイルを取得する定期的な画像解析アプリケーションがあります。インプット分析では、各ファイルは出力ファイルに10個のファイルを書き込み、1日の入力ファイル数は1日の数時間で集中します。現在、入力データとその結果をホストする大規模なEBSボリュームを持つEC2上のサーバーは、プロセスを完了するために1日約20時間を要します。どのようなサービスを使用して精緻化時間を短縮し、ソリューションの可用性を向上させることができますか？"
     , multiple_answer: false
     , answers: [
-      {description: "S3はI / Oファイルを格納します。 SQSを使用して、並列で動作するホストグループに詳細なコマンドを配布します.SQSキューの長さに応じてホストのグループを動的にサイズ変更するための自動スケーリング", correct: false}
-      , {description: "I / Oファイルを格納するためのプロビジョニングIOPS（PIOPS）を備えたB.EBS。 SNSは並列SNS通知の数に応じてホストのグループのサイズを動的に調整する並列スケーリングで動作するホストのグループに精巧化コマンドを配布する", correct: false}
-      , {description: "S3はI / Oファイルを格納し、SNSは蒸発コマンドを並列で動作するホストのグループに配信する.SNS通知の数に応じてホストのグループを動的にサイズ変更する自動スケーリング", correct: false}
-      , {description: "SQSキューの長さに応じてホストのグループのサイズを動的に調整する並列自動スケーリングで動作するホストグループに精巧化コマンドを配布するためのI / OファイルSQSを格納するプロビジョニングIOPS（PIOPS）付きのEBS。", correct: true}
+      {description: "S3はI/Oファイルを格納します。 SQSは並行して動作するホストのグループに精巧化コマンドを配布します。 SQSキューの長さに応じてホストのグループを動的にサイズ変更する自動スケーリング", correct: false}
+      , {description: "I/Oファイルを格納するためのプロビジョニングIOPS（PIOPS）を備えたEBS。 SNSは、SNS通知の数に応じてホストのグループのサイズを動的に調整するために、パラレル自動スケーリングで動作するホストグループに詳細コマンドを配信します", correct: false}
+      , {description: "S3はI/Oファイルを格納し、SNSは蒸発コマンドを並行して動作するホストのグループに分配する。 SNS通知の数に応じてホストのグループのサイズを動的に変更する自動スケーリング", correct: false}
+      , {description: "I/Oファイルを格納するEIO（PIOPS）I/Oファイルを格納するSQS SQSキューの長さに応じてホストのグループを動的にサイズ変更する並列自動スケーリングで動作するホストのグループにエラボレーションコマンドを配布するSQS。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12930,9 +12930,9 @@ questions.add([
     description: "IVR（Interactive VoiceResponse）システムのコールアクティビティを追跡するには、永続的で耐久性のあるストレージが必要です。通話時間は、主に2〜3分です。トレースされた各コールは、アクティブまたはターミネータのいずれかになります。外部アプリケーションは、現在アクティブなコールのリストを分ごとに知る必要があります。通常、毎秒数回のコールがありますが、月に1回、最大1000コール/秒までの定期的なピークがあります。システムは24時間365日開いており、ダウンタイムは避けてください。履歴データは、ファイルに定期的にアーカイブされます。コスト削減はこのプロジェクトの優先事項です。このシナリオに適したデータベースの実装は可能な限り低コストで行いますか？"
     , multiple_answer: false
     , answers: [
-      {description: "「アクティブ」または「終了」と等しい「状態」属性で、「呼び出し」テーブルとグローバルセカンダリインデックスを持つDynamoDBを使用します。 このように、グローバルセカンダリインデックスは、テーブルのすべてのアイテムに使用できます。", correct: false}
-      , {description: "「ACTIVE_CALLS」と「TERMINATED_CALLS」の2つのテーブルを持つRDS Multi-AZを使用します。 この方法では、「ACTIVE_CALLS」テーブルは常に小さく、アクセスに効果的です。", correct: false}
-      , {description: "「ACTIVE_CALLS」と「TERMINATED_CALLS」の2つのテーブルを持つRDS Multi-AZを使用します。 この方法では、「ACTIVE_CALLS」テーブルは常に小さく、アクセスに効果的です。", correct: true}
+      {description: "「アクティブ」または「終了」に等しい「状態」属性の「呼び出し」テーブルとグローバルセカンダリインデックスを持つDynamoDBを使用します。 このようにして、テーブル内のすべての項目に対してグローバルセカンダリインデックスを使用できます。", correct: false}
+      , {description: "「CALLS」テーブルと「ACTIVE」または「TERMINATED」に等しい索引付きの「状態」フィールドを持つRDS Multi-AZを使用します。 このようにして、SQLクエリはインデックスの使用によって最適化されます。", correct: false}
+      , {description: "「ACTIVE_CALLS」と「TERMINATED_CALLS」の2つのテーブルを持つRDS Multi-AZを使用します。 このように、「ACTIVE_CALLS」テーブルは常に小さく、アクセスに効果的です。", correct: true}
       , {description: "アクティブなコールのみに存在する「アクティブ」属性の「コール」テーブルとグローバルセカンダリインデックスを持つDynamoDBを使用します。 このようにして、グローバル・セカンダリ・インデックスは疎であり、より効果的です。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
@@ -12949,7 +12949,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "会社のCFOは、従業員の1人がAWS利用報告ページのみを閲覧できるようにしたいと考えています。以下に述べるIAMポリシーステートメントのうち、AWSusagereportページへのアクセス権はユーザーに許されていますか？"
+    description: "会社のCFOは、従業員の1人がAWS使用レポートページのみを表示できるようにしたいと考えています。 次のIAMポリシーステートメントのどれを使用すれば、AWS使用レポートページにアクセスできますか？"
     , multiple_answer: false
     , answers: [
       {description: "\"Effect\": \"Allow\", \"Action\": [\"Describe\"], \"Resource\": \"Billing\"", correct: false}
@@ -13207,13 +13207,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "新しいモバイルアプリケーションを開発しており、AWS.2wのユーザー環境設定を保存することを検討しています。複数のモバイルデバイスを使用してアプリケーションにアクセスするユーザーに、より均一なクロスデバイスエクスペリエンスを提供します。各ユーザーの嗜好データは50KBと見積もられており、さらに5百万人のお客様が定期的にアプリケーションを使用する予定です。ソリューションは、有効性が高く、可用性が高く、拡張性があり、安全である必要があります。その要件を満たすソリューションを設計するにはどうすればよいでしょうか？"
+    description: "新しいモバイルアプリケーションを開発しており、AWSにユーザー設定を保存することを検討しています。 これにより、複数のモバイルデバイスを使用してアプリケーションにアクセスするユーザーに、より均一なクロスデバイスエクスペリエンスが提供されます。 各ユーザーのプリファレンスデータは50KBと見積もられています。さらに、500万人のユーザーが定期的にアプリケーションを使用する予定です。 ソリューションは、費用効果が高く、可用性が高く、拡張性があり、安全である必要があります。上記の要件を満たすソリューションを設計するにはどうすればよいでしょうか？"
     , multiple_answer: false
     , answers: [
-      {description: "ユーザー設定データを格納する2つの可用性ゾーンにRDS MySQLインスタンスを設定します。データベースの前にあるサーバーに、アプリケーションを公開して、セキュリティとアクセス資格情報を管理する", correct: false}
-      , {description: "userpreferencesを保持するために必要な属性を持つ各ユーザーの項目を含むDynamoDBテーブルを設定します。モバイルアプリケーションは、DynamoDBtable.Utilize STSから直接ユーザープリファレンスを照会します。 Web Identity Federation、およびDynamoDB Fine Grained Access Controlを使用してアクセスを認証および認証します。", correct: true}
-      , {description: "2つの可用性ゾーンに複数の読み取りレプリカを持つRDS MySQLインスタンスを設定して、ユーザーの参照データを格納します。モバイルアプリケーションは、読み取ったレプリカからユーザープリファレンスを照会します。", correct: false}
-      , {description: "S3のユーザー設定データを保存します。各ユーザーのアイテムとユーザーのS3オブジェクトを指し示す属性を持つDynamoDBテーブルを設定します。モバイルアプリケーションは、S3 URLをDynamoDBから取得し、S3オブジェクトに直接アクセスして、STS、Web IDフェデレーション、およびS3 ACLを直接利用してアクセスを認証し、認証します。", correct: false}
+      {description: "ユーザー設定データを格納する2つの可用性ゾーンにRDS MySQLインスタンスを設定します。データベースの前にあるサーバーに公開アプリケーションを配置して、セキュリティとアクセス資格情報を管理する", correct: false}
+      , {description: "ユーザー設定を保持するために必要な属性を持つ各ユーザーの項目を含むDynamoDBテーブルを設定します。 モバイルアプリケーションは、DynamoDBテーブルから直接ユーザープリファレンスを照会します。 STSを利用する。 Web Identity Federation、およびDynamoDB Fine Grained Access Controlを使用して、アクセスを認証および認可します。", correct: true}
+      , {description: "2つの可用性ゾーンに複数の読み取りレプリカを持つRDS MySQLインスタンスを設定して、ユーザー参照データを格納します。モバイルアプリケーションは、読み取ったレプリカからユーザー設定を照会します。 MySQLユーザー管理とアクセス特権システムを利用して、セキュリティとアクセス資格情報を管理します。", correct: false}
+      , {description: "S3のユーザープリファレンスデータを保存します。各ユーザーのアイテムとユーザーのS3オブジェクトを指すアイテム属性を持つDynamoDBテーブルを設定します。 モバイルアプリケーションはDynamoDBからS3 URLを取得し、STS、Web IDフェデレーション、およびS3 ACLを直接利用してS3オブジェクトにアクセスし、アクセスを認証して認証します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13286,13 +13286,13 @@ questions.add([
     , explanation: 'AWS：MultiFactorAuthAgeは、AWSによって提供される定義済みキーの1つで、IAMポリシーのCondition要素に含めることができます。 このキーを使用すると、マルチファクタ認証（MFA）を使用して要求を発行したMFAで検証されたセキュリティ資格情報を、どれくらい前に（秒単位で）確認することができます。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_ElementDescriptions.html'
   }
   , {
-    description: "会社は最近、AWSのVPCにデータセンターを拡張し、必要なバーストコンピューティング能力を追加しました。ネットワークオペレーションセンターのメンバーは、AWSManagementConsoleにアクセスし、必要に応じてAmazon EC2インスタンスを管理できる必要があります。 IAMユーザーはNOCメンバーに参加し、それらのユーザーをAWS管理コンソールに再度サインインします。どのオプションがあなたのNOCメンバーのニーズを満たしますか？"
+    description: "あなたの会社は、AWSのVPCにデータセンターを拡張し、必要に応じてバーストコンピューティング機能を追加しました。ネットワークオペレーションセンターのメンバーは、AWSManagementConsoleにアクセスし、必要に応じてAmazon EC2インスタンスを管理できる必要があります。新しいIAM各NOCメンバーのユーザーがAWS管理コンソールに再度サインインするようにします。以下のオプションはNOCメンバーのニーズを満たしますか？"
     , multiple_answer: false
     , answers: [
-      {description: "OAuth 2.0を使用して一時的なAWSセキュリティ資格情報を取得し、NOCメンバーがAWS管理コンソールに署名できるようにします。", correct: false}
-      , {description: "Web Identity Federationを使用してAWS臨時セキュリティ資格情報を取得し、NOCメンバーがAWS Management Consoleにサインインできるようにします。", correct: false}
-      , {description: "オンプレミスのSAML 2.0準拠アイデンティティプロバイダ（IDP）を使用して、AWSシングルサインオン（SSO）エンドポイント経由でAWS管理コンソールへのNOCメンバのアクセスを許可します。", correct: false}
-      , {description: "社内のSAML2.0-Complam Identity Provider（IDP）を使用して一時的なセキュリティクレデンシャルを取得し、NOCメンバーがAWS Management Consoleにサインインできるようにします。", correct: true}
+      {description: "OAuth 2.0を使用して一時的なAWSセキュリティ資格情報を取得し、NOCメンバーがAWS管理コンソールにサインインできるようにします。", correct: false}
+      , {description: "Web Identity Federationを使用してAWSの一時セキュリティ情報を取得し、NOCメンバーがAWS Management Consoleにサインインできるようにします。", correct: false}
+      , {description: "オンプレミスのSAML 2.0準拠アイデンティティプロバイダ（IDP）を使用して、AWSシングルサインオン（SSO）エンドポイント経由でNOCメンバにAWS管理コンソールへのフェデレーションアクセスを許可します。", correct: false}
+      , {description: "社内のSAML2.0準拠アイデンティティプロバイダ（IDP）を使用して、一時的なセキュリティ資格情報を取得し、NOCメンバーがAWS管理コンソールにサインインできるようにします。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13436,13 +13436,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "AWS Direct Connectを実装しています。 AWS Direct Connectリンク全体で、AWSの公的サービスのエンドポイント、例えば、Amazon S3を使用する予定です。他のインターネットトラフィックが既存のリンクをインターネットサービスプロバイダに使用するようにしたい場合は、Amazon S3などのサービスへのアクセスにAWS Direct接続を設定する正しい方法はありますか？"
+    description: "AWS Direct Connectを実装しています。 Amazon S3などのAWSの公共サービスのエンドポイントは、AWS Direct Connectリンク全体で使用する予定です。インターネットサービスプロバイダーへの既存のリンクを他のインターネットトラフィックで使用する必要があります。 Amazon S3などのサービスへのアクセスにAWS Direct connectを設定する正しい方法は何ですか？"
     , multiple_answer: false
     , answers: [
-      {description: "AWSダイレクトコネクトリンクのパブリックインターフェイスを設定するAmazon S3を指すAWSDirect Connectリンク経由で静的ルートを設定するBGPを使用してAWSへのデフォルトルートを通知します。", correct: false}
-      , {description: "AWS Direct Connectリンクにプライベートインターフェイスを作成します。 Amazon S3を指すAWSDirect接続リンクを介してスタティックルートを設定するVPC内のネットワークへの特定のルートを設定します。", correct: false}
-      , {description: "AWSダイレクトコネクトリンクでパブリックインターフェイスを作成するBGPルートを再配布するインフラストラクチャに再配布します。ネットワークの特定のルートをAWSに広告する。", correct: true}
-      , {description: "AWSダイレクト接続リンクにプライベートインターフェイスを作成します。 BGPルートを再配布するインフラストラクチャに再配布し、AWSへのデフォルトルートをアドバタイズします。", correct: false}
+      {description: "AWSダイレクトコネクトリンクのパブリックインターフェイスを設定するAWSダイレクトコネクトリンク（Amazon S3を指す）経由で静的ルートを設定するBGPを使用してAWSへのデフォルトルートを通知します。", correct: false}
+      , {description: "AWS Direct Connectリンクにプライベートインターフェイスを作成します。 Amazon S3を指すAWSダイレクト接続リンク経由で静的ルートを設定するVPC内のネットワークへの特定のルートを設定します。", correct: false}
+      , {description: "AWSダイレクトコネクトリンクのパブリックインターフェイスを作成するBGPルートを既存のルーティングインフラストラクチャに再配布します。 ネットワークの特定のルートをAWSに通知します。", correct: true}
+      , {description: "AWSダイレクト接続リンクにプライベートインターフェイスを作成します。 BGPルートを既存のルーティングインフラストラクチャに再配布し、AWSへのデフォルトルートを通知します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
