@@ -104,7 +104,18 @@
           <li class="incorrect_answer">不正解。。</li>
         <% } %>
         <li>回答: <%= takeExamination.getAnswers().at(k).getAnsweredChoicesDescription() %></li>
-        <li>正解: <%= takeExamination.getAnswers().at(k).getQuestion().getCorrectAnswersDescription() %></li>
+        <li>正解: 
+        <%
+        	var choices = takeExamination.getAnswers().at(k).getQuestion().getChoices(); 
+            for(var l=0; l<choices.length; l++) {
+              if(choices[l].correct) {
+        %>
+                <%= (l+1) %>. <%= choices[l].description %><br/>
+        <%
+              }  
+            }
+        %>
+        </li>
         <li>
           <% if(takeExamination.getAnswers().at(k).getQuestion().getExplanation()) { %>
             解説: <%= takeExamination.getAnswers().at(k).getQuestion().getExplanation() %></li>
