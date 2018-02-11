@@ -11191,13 +11191,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "あなたはAWS上で成功したマルチサイトWebアプリケーションを実行しており、マーケティング部門はアプリケーションにレポーティング層を追加するよう依頼しています。レポート層は、Webアプリケーションのデータベースに格納されているユーザー生成情報から30分ごとにステータスレポートを集計して公開します。現在、データベース層の複数AZ RDS MySQLインスタンスが実行されています。また、アプリケーション層とデータベース層の間にデータベースキャッシュ層としてElasticacheを実装しました。できるだけデータベースに影響を与えずにレポート作成層を正常に実装するための回答を選択してください。"
+    description: "あなたはAWS上で成功したマルチサイトWebアプリケーションを実行しており、マーケティング部門はアプリケーションにレポーティング層を追加するよう依頼しています。レポーティング層は、Webアプリケーションデータベースに格納されているユーザ生成情報からステータスレポートを30分間集約して公開します。現在、データベース層に複数AZ RDS MySQLインスタンスが実行されています。また、アプリケーション層とデータベース層の間にデータベースキャッシュ層としてElasticacheを実装しました。データベースにできるだけ影響を与えずにレポート層を正常に実装できるようにする答えを選択してください。"
     , multiple_answer: false
     , answers: [
-      {description: "マスターデータベースからS3バケットにトランザクションログを継続的に送信し、S3バイト範囲要求を使用してS3バケットからレポートを生成します。", correct: false}
+      {description: "S3データベースからS3バケットにトランザクションログを継続的に送信し、S3バイト範囲要求を使用してS3バケットからレポートを生成します。", correct: false}
       , {description: "Multi-AZを介して管理されている同期レプリケートされたスタンバイRDS MySQLインスタンスを照会して、レポートを生成します。", correct: false}
       , {description: "Multi AZマスタデータベースに接続されているRDS読み取りレプリカを起動し、読み取りレプリカを照会してレポートを生成します。", correct: true}
-      , {description: "ElastiCacheデータベースキャッシング層を照会して、レポートを生成します。", correct: false}
+      , {description: "ElastiCacheデータベースのキャッシュ層を照会して、レポートを生成します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -11394,9 +11394,9 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "セキュリティ管理者が所有するS3バケットに証明書をアップロードし、EC2によってのみアクセス可能なWebサーバーの役割。", correct: false}
-      , {description: "CloudHSMからブート時に証明書を取得するようにWebサーバーを設定することは、セキュリティ担当者が管理します。", correct: false}
-      , {description: "Webサーバー上のシステム権限を設定して、権限セキュリティー責任者にのみ証明書へのアクセスを制限する", correct: false}
-      , {description: "IAMポリシーを設定して、証明書ストアへのアクセスをセキュリティ担当者のみに許可し、ELB上のSSLを終了します。", correct: true}
+      , {description: "CloudHSMからブート時に証明書を取得するようにWebサーバーを設定すると、セキュリティ担当者が管理します。", correct: false}
+      , {description: "Webサーバー上のシステム権限を設定して、権限セキュリティー責任者にのみ証明書へのアクセスを制限します。", correct: false}
+      , {description: "IAMポリシーを設定して、証明書ストアへのアクセスをセキュリティ担当者のみに許可し、ELBのSSLを終了します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -11459,13 +11459,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "IAM Secure and Scalableは、スケーラブルで安全なSAASをクライアントに提供する組織です。 彼らはAWS VPC上に別々の層としてWebサーバーとAppサーバーをホストする予定です。 組織は、アプリケーションサーバー（中間層）でAuto Scalingとロードバランサを構成することによってスケーラビリティを実装したいと考えています。 次のオプションのどれが要件に合っていますか？"
+    description: "IAM Secure and Scalableは、スケーラブルで安全なSAASをクライアントに提供する組織です。 彼らはAWS VPC上に別々の層としてWebサーバーとAppサーバーをホストする予定です。 組織は、自動スケーリングとロードバランサをアプリケーションサーバー（middletier）で構成することによってスケーラビリティを実装したいと考えています。 次のオプションのどれが要件に合っていますか？"
     , multiple_answer: false
     , answers: [
-      {description: "ELBはインターネットに接続されているため、VPC内のロードバランサとしてHAProxyをセットアップすることをお勧めします。", correct: false}
-      , {description: "VPCを使用してELBに向かうインターネットを作成し、それを使ってすべてのAppサーバーを構成します。", correct: false}
+      {description: "ELBはインターネットに面しているので、VPC内のロードバランサとしてHAProxyをセットアップすることをお勧めします。", correct: false}
+      , {description: "VPCを使ってインターネットに接続しているELBを作成し、それを使ってすべてのAppサーバーを構成します。", correct: false}
       , {description: "ユーザーはEL2をEC2-CLASSICで作成し、セキュリティのためにSSHを有効にする必要があります。", correct: false}
-      , {description: "VPCを使用して内部ロードバランサを作成し、それにすべてのApp Serverを登録します。", correct: true}
+      , {description: "VPCを使用して内部ロードバランサを作成し、すべてのアプリケーションサーバーをそのサーバーに登録します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
     , explanation: 'Amazon仮想プライベートクラウド（Amazon VPC）を使用すると、Amazon Web Services（AWS）クラウドのプライベートな独立したセクションで仮想ネットワーク環境を定義できます。 ユーザーは仮想ネットワーキング環境を完全に制御できます。 この仮想プライベートクラウド内で、ユーザーはELBやEC2インスタンスなどのAWSリソースを起動できます。 VPCで利用できるELBには、インターネットに面したELBと内部（プライベート）ELBの2種類があります。 Appサーバーなどの内部サーバーの場合、組織はVPCに内部ロードバランサを作成し、内部ロードバランサの背後にバックエンドアプリケーションインスタンスを配置できます。 内部ロードバランサは、プライベートIPアドレスを使用するバックエンドアプリケーションインスタンスに要求をルーティングし、内部ロードバランサからの要求のみを受け入れます。参照：http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/vpc-loadbalancertypes.html'
@@ -11594,19 +11594,19 @@ questions.add([
     , answers: [
       {description: "受信トラフィックを許可しない、すべての送信トラフィックを許可する、およびこのセキュリティグループに関連付けられたインスタンスを許可する", correct: true}
       , {description: "すべての受信トラフィックを許可する、送信トラフィックを許可しない、このセキュリティグループに関連付けられたインスタンスを許可する", correct: false}
-      , {description: "インバウンドトラフィックを許可しない、すべてのアウトバウンドトラフィックを許可する、およびこのセキュリティグループに関連付けられたインスタンスが互いに通信することを許可しない", correct: false}
-      , {description: "すべてのインバウンドトラフィックを許可する、すべてのアウトバウンドトラフィックを許可する、およびこのセキュリティグループに関連付けられたインスタンスが互いに通信することを許可しない", correct: false}
+      , {description: "インバウンドトラフィックを許可しない。すべてのアウトバウンドトラフィックを許可する。このセキュリティグループに関連付けられたインスタンスが互いに通信することを許可しない。", correct: false}
+      , {description: "すべての着信トラフィックを許可する。すべての発信トラフィックを許可する。このセキュリティグループに関連付けられたインスタンスが互いに通信することを許可しない。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "一般的な製品のWebトラフィックを処理するために、最高財務責任者とITディレクターは、2つの利用可能ゾーンに均等に分散された10の大規模なリザーブドリザーブドインスタンス（RI）を購入しました。ルート53を使用してトラフィックをElastic Load Balancer（ELB）に配信します。 数ヶ月後に製品がさらに普及し、追加容量が必要になる結果、会社は2つのc3.2xlargeメディアの使用量を購入します。Ris 2つのc3.2xlargeインスタンスをELBに登録し、mllargeインスタンスが100 容量の％およびc3.2x大きなインスタンスには未使用の重要な容量がありますどのオプションが最も費用効果が高く、EC2の容量を最も効果的に使用していますか？"
+    description: "一般的な製品のWebトラフィックを処理するために、最高財務責任者とITディレクターは、10のm1.largeのリザーブドインスタンス（RI）を2つのアベイラビリティゾーンに均等に分散して購入しました。ルート53は、トラフィックをElastic Load Balancer 。 数か月後に製品がさらに普及し、追加容量が必要となります。結果として、会社は2つのc3.2xメディア使用率RIを購入します。ELBに2つのc3 2xlargeインスタンスを登録し、m1.largeインスタンスが 100%の容量とc2 2倍のインスタンスには、未使用の大きな容量があります。どのオプションが最も費用効果が高く、EC2の容量を最も効果的に使用していますか？"
     , multiple_answer: false
     , answers: [
-      {description: "自動スケールグループを構成し、ELBを使用して構成を起動すると、Cloudwatchによってトリガーされたときに最大10個のオンデマンドm1.largeインスタンスを追加できます。 c3.2xlargeインスタンスをシャットダウンします。", correct: false}
-      , {description: "2つのc3.2xlargeインスタンスでELBを構成し、最大2つの追加のc3.2xlargeインスタンスに対してオンデマンド自動スケーリンググループを使用します。 m1.largeインスタンスをシャットダウンします。", correct: true}
-      , {description: "Route 53レイテンシに基づくルーティングとヘルスチェックを使用して、トラフィックをEC2 m1.largeおよびc3.2xlargeインスタンスに直接ルーティングします。 ELBをシャットダウンします。", correct: false}
-      , {description: "各インスタンスタイプに対して別々のELBを使用し、Route 53加重ラウンドロビンを使用してELBに負荷を分散します。", correct: false}
+      {description: "自動スケーリンググループを設定し、ELBを使用してLaunch Configurationを実行すると、Cloudwatchによってトリガーされたときに最大10個のオンデマンドm1.largeインスタンスを追加できます。 c3.2xlargeインスタンスをシャットダウンします。", correct: false}
+      , {description: "2つのc3.2xlargeインスタンスでELBを設定し、最大2つの追加のc3.2xlargeインスタンスに対してオンデマンド自動スケーリンググループを使用します。 m1.largeインスタンスをシャットダウンします。", correct: true}
+      , {description: "Route 53レイテンシに基づくルーティングとヘルスチェックを直接使用して、EC2 m1.largeおよびc3.2xlargeインスタンスへのトラフィックを直接ルーティングします。 ELBをシャットダウンします。", correct: false}
+      , {description: "各インスタンスタイプに対して別々のELBを使用し、ルート53加重ラウンドロビンを使用してELBに負荷を分散します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -11781,7 +11781,7 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "優先レベルを定義する属性を持つDynamoDBテーブルを使用します。 変換インスタンスは、タスクの優先順位で結果をソートします。", correct: false}
-      , {description: "ルート53のレイテンシに基づいたルーティングを使用して、最も優先度の高いタスクを最も近いトランスフォーメーションインスタンスに送信します.IT保証付き、簡単な方法！", correct: false}
+      , {description: "ルート53のレイテンシに基づいたルーティングを使用して、最も優先度の高いタスクを最も近いトランスフォーメーションインスタンスに送信します。", correct: false}
       , {description: "2つのSQSキューを使用します.1つは高優先度メッセージ用、もう1つはデフォルト優先度用です。 Transformationインスタンスは最初に高優先度キューをポーリングします。 メッセージがない場合は、デフォルトの優先度キューをポーリングします。", correct: true}
       , {description: "単一のSQSキューを使用します。 各メッセージには優先レベルが含まれています。 変換は、優先度の高いメッセージを最初にポーリングします。", correct: false}
     ]
@@ -11792,8 +11792,8 @@ questions.add([
     , multiple_answer: true
     , answers: [
       {description: "AWS Relational Database Service (AWS RDS)", correct: false}
-      , {description: "AWS ElastiCache", correct: true}
-      , {description: "AWS Glacier", correct: false}
+      , {description: "AWS ElastiCache", correct: false}
+      , {description: "AWS Glacier", correct: true}
       , {description: "AWS Import/Export", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
@@ -11860,7 +11860,7 @@ questions.add([
     description: "あなたの顧客は、複数のWebサーバー、いくつかのアプリケーションサーバー、および小さなサーバー（50GB）のOracleデータベース情報（inthedデータベースと各種サーバーのファイルシステムの両方）で構成されるエンタープライズアプリケーションをAWSに展開することを望みます。バックアップシステムは、サーバー全体およびディスク全体のリストア、および2時間以上の復旧時間を伴う個々のファイルリストアをサポートする必要があります。彼らはデータベースとしてRDS Oracleを使用することを選択しました。バックアップ・アーキテクチャはこれらの要件を満たすでしょうか？"
     , multiple_answer: false
     , answers: [
-      {description: "毎日のDB自動バックアップを使用したバックアップRDS AMIを使用してEC2インスタンスをバックアップし、従来のエンタープライズバックアップソフトウェアを使用してファイルレベルのバックアップをS3に提供し、fileITの保証を保証する簡単な方法を提供します。", correct: true}
+      {description: "自動DBバックアップを使用したRDSのバックアップAMIを使用してEC2インスタンスをバックアップし、従来のエンタープライズバックアップソフトウェアを使用してファイルレベルのバックアップを提供して、S3にファイルレベルのバックアップを補完します。", correct: true}
       , {description: "複数のAZ展開を使用したRDSのバックアップAmisを使用してEC2インスタンスをバックアップし、ファイルシステムのデータをS3にコピーしてファイルレベルの復元を補完します。", correct: false}
       , {description: "毎日のDB自動バックアップを使用したRDSのバックアップEBSスナップショットを使用してEC2インスタンスをバックアップし、従来のエンタープライズバックアップソフトウェアを使用してファイルレベルのバックアップをAmazon Glacierに追加する", correct: false}
       , {description: "Oracle RMANを使用してRDSデータベースをS3にバックアップAmisを使用してEC2インスタンスをバックアップし、個別のボリューム復元用にEBSスナップショットを追加します。", correct: false}
@@ -11879,13 +11879,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "組織は、AWS VPCで管理ネットワークをセットアップする予定です。組織は、インターネットトラフィックとバックエンド管理トラフィックを許可するように、単一のVPCインスタンスでWebサーバーを保護しようとしています。 組織は、バックエンド管理ネットワークインターフェイスが選択されたIP範囲からのみSSHトラフィックを受信できるようにしたいと考えています。インターネットに直面しているWebサーバーは、すべてのインターネットIPからのトラフィックを受信できるIPアドレスを持っています。 これは、単一のインスタンスでWebサーバーを実行することによってですか？"
+    description: "組織は、AWS VPCで管理ネットワークを設定する予定です。組織は、インターネットトラフィックとバックエンド管理トラフィックを許可するように、単一のVPCインスタンスでWebサーバーを保護しようとしています。組織は、バックエンド管理ネットワークインターフェイスが選択されたIP範囲からのみSSHトラフィックを受信できるようにする一方で、インターネットに直面しているWebサーバーはすべてのインターネットIPからのトラフィックを受信できるIPアドレスを持ちます。どのようにして組織は単一のインスタンスでWebサーバーを稼働させてこれを達成できますか？"
     , multiple_answer: false
     , answers: [
       {description: "1つのインスタンスに対して2つのIPアドレスを持つことはできません。", correct: false}
-      , {description: "組織は、同じサブネットとセキュリティグループを持つ2つのネットワークインターフェイスを作成して、各ネットワークインターフェイスに別々のIPを割り当てる必要があります。", correct: false}
-      , {description: "組織は、別々のサブネットを持つ2つのネットワークインターフェイスを作成して、制御されたアクセスのために1つのインスタンスをサブネットとそれぞれのセキュリティグループに分けることができます。", correct: true}
-      , {description: "組織は、別のCIDRとセキュリティグループを持つことができる同じnetworkIT Certification Guaranteed、The Easy Way！34インターフェイスを使用して、2つの別々のサブネットを持つインスタンスを起動する必要があります。", correct: false}
+      , {description: "組織は、同じサブネットとセキュリティグループを持つ2つのネットワークインターフェイスを作成して、各ネットワークインターフェイスに個別のIPを割り当てる必要があります。", correct: false}
+      , {description: "組織は、別々のサブネットを持つ2つのネットワークインターフェイスを作成し、1つのインスタンスに2つのサブネットと制御されたアクセス用のそれぞれのセキュリティグループを持たせる必要があります。", correct: true}
+      , {description: "組織は、別のCIDRとセキュリティグループを持つことができる同じネットワークインターフェイスを使用して、2つの別個のサブネットでインスタンスを起動する必要があります。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
     , explanation: '仮想プライベートクラウド（VPC）は、ユーザーのAWSアカウント専用の仮想ネットワークです。これにより、ユーザーは、ユーザーが定義した仮想ネットワークにAWSリソースを起動できます。弾性ネットワークインターフェイス（ENI）は、ユーザーがVPC内のインスタンスに接続できる仮想ネットワークインターフェイスです。ユーザーは、2つの別個のネットワークインターフェイスを使用して管理ネットワークを作成できます。現在のシナリオでは、インスタンス上のセカンダリネットワークインターフェイスがパブリックに直面するトラフィックを処理し、プライマリネットワークインターフェイスがバックエンド管理トラフィックを処理し、より制限的なアクセスコントロールを持つVPC内の別のサブネットに接続する必要があります。ロードバランサの背後にあるかどうかに関わらないパブリックフェイリングインターフェイスには、インターネットからサーバーへのアクセスを許可する関連セキュリティグループがあり、プライベートフェイスインターフェイスには、許可されたIPアドレス範囲VPC内またはインターネット内、VPC内のプライベートサブネットまたは仮想プライベートゲートウェイ。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html'
@@ -11949,13 +11949,14 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "あなたの会社は、輸送中や休憩中に暗号化された何千もの100 GBファイルに、何百万もの重要な取引を保管しています。アナリストは、同時に5 TBの容量を消費できるファイルのサブセットに依存して、ビジネス上の意思決定を助けるために使用できるシミュレーションを生成します。 AWSソリューションを設計するには、長期間のストレージとデータのフライト中のサブセットに費用対効果の高いソリューションを設計する必要があります。"
+    description: "あなたの会社は、輸送中や休憩中に暗号化されなければならない数千の100 GBファイルに、何百万もの重要な取引を保存しています。アナリストは同時に、ファイルのサブセットに依存します。ファイルのサブセットは、最大5 TBのスペースを消費し、ビジネス上の意思決定を助けるためのシミュレーションを生成します。長期間のストレージおよび飛行中のデータサブセットに費用対効果の高いAWSソリューションを設計する必要があります。"
     , multiple_answer: false
     , answers: [
       {description: "Amazon Simple Storage Service（S3）を使用してサーバー側の暗号化を行い、Amazon EC2の一時ドライブのサブセットでシミュレーションを実行します。", correct: false}
-      , {description: "Amazon S3をサーバー側の暗号化で使用し、AmazonEC2のメモリ内のサブセットでシミュレーションを実行します。", correct: false}
+      , {description: "Amazon S3をサーバー側の暗号化で使用し、Amazon EC2のメモリ内のサブセットでシミュレーションを実行します。", correct: false}
       , {description: "Amazon EMRでHDFSを使用し、Amazon EC2の一時ドライブ内のサブセットでシミュレーションを実行します。", correct: false}
-      , {description: "Amazon Elastic MapReduce（EMR）でHDFSを使用し、メモリ内のサブセットonAmazon Elastic Compute Cloud（EC2）でシミュレーションを実行します。暗号化されたAmazon Elastic Block Store（EBS）ボリュームにすべてのデータセットを保存し、EC2ワークステーションに複製できる37Sスナップショットを定期的に取得してください。", correct: true}
+      , {description: "Amazon Elastic MapReduce（EMR）でHDFSを使用し、Amazon Elastic Compute Cloud（EC2）のメモリ内のサブセットでシミュレーションを実行します。", correct: true}
+      , {description: "暗号化されたAmazon Elastic Block Store（EBS）ボリュームに完全なデータセットを格納し、定期的にEC2ワークステーションに複製できるスナップショットを取得します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12491,13 +12492,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "国際企業は、単一領域にonDynamoDBを使用するマルチティアWebアプリケーションを導入しました。規制上の理由から、復旧時間目標2時間とリカバリポイント24時間を目標とする別の地域で、災害復旧機能が必要です。彼らは定期的にデータを同期させ、CloudFormationを使用してWebアプリケーションを迅速にプロビジョニングする必要があります。既存のWebアプリケーションの変更を最小限に抑え、DynamoDBのスループットを制御してデータの同期化を行い、これらの要件を満たすことを選択しますか？"
+    description: "国際企業は、単一地域でDynamoDBに依存する多層Webアプリケーションを導入しました規制上の理由から、復旧時間目標2時間とリカバリポイント目標24時間の別の地域で災害復旧機能が必要です。 彼らは定期的にデータを同期し、CloudFormationを使用してWebアプリケーションを迅速にプロビジョニングする必要があります。既存のWebアプリケーションの変更を最小限に抑え、データの同期に使用されるDynamoDBのスループットを制御し、 これらの要件を満たすためにどのような設計を選択しましたか？"
     , multiple_answer: false
     , answers: [
-      {description: "AWSデータパイプラインを使用して、DynamoDBのクロスリージョンコピーを1日に1回スケジュールし、最後の更新のタイムスタンプを表すDynamoDBテーブルの「Lastupdated」属性を作成し、それをフィルタとして使用します。", correct: true}
-      , {description: "EMRを使用し、SCAN操作を使用して現在の領域のDynamoDBからデータを取得し、それを第2領域のDynamoDBにプッシュするカスタムスクリプトを作成します。", correct: false}
-      , {description: "AWSデータパイプラインを使用して、現在のregiononceaの日にS3へのDynamoDBテーブルのエクスポートをスケジュールし、S3のデータを他の地域のDynamoDBにインポートする直後の別のタスクをスケジュールします。", correct: false}
-      , {description: "各Anteを私の第2の領域のSQSキューにも送ります。 SQSキューの後ろにある自動スケーリンググループを使用して、第2領域の書き込みを再生します。", correct: false}
+      {description: "AWSデータパイプラインを使用して、DynamoDBのクロスリージョンコピーを1日に1回スケジュールするには、DynamoDBテーブルに最後の更新のタイムスタンプを表す「Lastupdated」属性を作成し、それをフィルタとして使用します。", correct: true}
+      , {description: "EMRを使用し、カスタムスクリプトを作成して、SCAN操作を使用して現在の地域のDynamoDBからデータを取得し、それを第2領域のDynamoDBにプッシュします。", correct: false}
+      , {description: "AWSデータパイプラインを使用して、現在の地域のDynamoDBテーブルを現在の地域のS3に1日に1回エクスポートするスケジュールを設定し、S3のデータを他の地域のDynamoDBにインポートする直後の別のタスクをスケジュールします。", correct: false}
+      , {description: "各Anteを私の第2の領域のSQSキューにも送ります。 SQSキューの背後にある自動スケーリンググループを使用して、第2領域の書き込みを再生します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12834,10 +12835,10 @@ questions.add([
     , explanation: 'AWS Direct Connectionは現在、1Gbpsと10Gbpsをサポートしています。参照：http://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html'
   }
   , {
-    description: "Amazon ElastiCacheでは、単一のキャッシュノードの障害が、yourapplicationとバックエンドデータベースの負荷に影響を与える可能性があります。一方、ElastiCacheは故障したキャッシュノードの代替をプロビジョニングし、再投入されます。 この潜在的な利用可能性の影響を軽減するソリューションはどれですか？"
+    description: "Amazon ElastiCacheでは、単一のキャッシュノードの障害は、アプリケーションの可用性とバックエンドデータベースの負荷に影響を与え、ElastiCacheは障害の発生したキャッシュノードの代替をプロビジョニングし、再投入されます。 この潜在的な可用性への影響を軽減するソリューションはどれですか？"
     , multiple_answer: false
     , answers: [
-      {description: "メモリと計算能力をより少ないキャッシュノード数で分散させます。それぞれの能力は小さいです。", correct: false}
+      {description: "容量を抑えたキャッシュノードの数を減らし、メモリと計算能力を分散します。", correct: false}
       , {description: "あなたのメモリを広げ、より大きい数のキャッシュノードに容量を計算します。それぞれのキャッシュノードはわずかなキャパシティしかありません。", correct: true}
       , {description: "大容量ノードの数を減らします。", correct: false}
       , {description: "大容量のキャッシュノードを多数追加する。", correct: false}
@@ -13029,12 +13030,12 @@ questions.add([
     , explanation: 'Amazonは、アプリケーションが使用するセキュリティ資格情報を管理することなく、アプリケーションがインスタンスからAPI要求を安全に行うことができるようにIAMロールを設計しました。 AWS資格情報を作成して配布する代わりに、次のようにIAMロールを使用してAPIリクエストを作成する権限を委任できます。IAMロールを作成します。 役割を引き受けることができるアカウントまたはAWSサービスを定義します。役割を引き受けた後にアプリケーションが使用できるAPIアクションとリソースを定義します。 インスタンスの起動時にロールを指定します。 アプリケーションに一時的な資格情報のセットを取得させ、それらを使用させる。参照：http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html'
   }
   , {
-    description: "組織はAWS VPCとELBを使用して安全でスケーラブルなアプリケーションを作成する予定です。組織化にはすでに2つのインスタンスが実行されており、各インスタンスにはプライマリネットワークインターフェイスに加えてENIが付属しています。 プライマリネットワークインターフェイスと追加のENIの両方には弾性IPが接続されています。 これらのインスタンスがELBに登録されていて、組織がELBがインスタンスの特定のEEにデータを送信したい場合、どのようにしてこれを達成できますか？"
+    description: "組織では、AWS VPCとELBを使用してセキュアでスケーラブルなアプリケーションを作成する予定です。この組織にはすでに2つのインスタンスが実行されており、各インスタンスにはプライマリネットワークインターフェイスに加えてENIが関連付けられています。 プライマリネットワークインターフェイスと追加のENIの両方には、エラスティックIPが接続されています。 これらのインスタンスがELBに登録されており、組織がELBがインスタンスの特定のEIPにデータを送信することを希望する場合、どのようにしてこれを達成できますか？"
     , multiple_answer: false
     , answers: [
-      {description: "組織は、ELBトラフィックを受信するために必要なIPが第一次ネットワークインターフェイスに接続されていることを確認する必要があります。", correct: true}
+      {description: "組織は、ELBトラフィックを受信するために必要なIPがプライマリネットワークインターフェイスに接続されていることを確認する必要があります。", correct: true}
       , {description: "ELBに2つのENIがあるインスタンスにIP競合エラーが発生するため、インスタンスをアタッチすることはできません。", correct: false}
-      , {description: "組織は、ELBトラフィックを受信するために必要なIPが追加のENIに添付されていることを確認する必要があります。", correct: false}
+      , {description: "組織は、ELBトラフィックを受信するために必要なIPが追加のENIに接続されていることを確認する必要があります。", correct: false}
       , {description: "ELBがいずれかのEIPに送信する際に、特定のIPにデータを送信することはできません。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
@@ -13063,14 +13064,14 @@ questions.add([
     , explanation: 'Amazonは、障害検出と回復、およびCloudWatchと呼ばれるソフトウェアのパッチと監視ツールを提供しています。 さらに、Amazon ElastiCacheのキャッシュクラスタのすべてのノードを自動的に識別して初期化するAuto Discoveryも提供しています。参照：http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/WhatIs.html'
   }
   , {
-    description: "あなたの会社は、東京、支店に本社を置き、日本、ヨーロッパ、米国のAWSでマルチリージョン展開のロジスティクスソフトウェアを使用しています。ロジスティックソフトウェアは3階層構造を持ち、現在データ用にMySQL 5.6を使用しています持続性。 HQ地域では、HQ地域では毎時間バッチプロセスを実行し、すべての地域からのデータを電子メールで全オフィスに送信します。このバッチプロセスは迅速に完了してロジスティクスを迅速に最適化する必要があります。それを満たすためのデータベースアーキテクチャ"
+    description: "あなたの会社は、東京、支店などに本社を持ち、日本、ヨーロッパ、米国のAWSにマルチリージョン展開されたロジスティクスソフトウェアを使用しています。ロジスティックソフトウェアは3層アーキテクチャーで、現在データ用にMySQL 5.6を使用しています持続性。各地域で独自のデータベースが導入されていますHQ地域では、すべての地域からのデータを読み取る毎時バッチ処理を実行し、電子メールですべてのオフィスに送信される地域別レポートを計算します。このバッチ処理は、どのように要件を満たすためにデータベースアーキテクチャを構築するのですか？"
     , multiple_answer: false
     , answers: [
-      {description: "各地域の展開には、地域のマスターとRDS MySQLを使用し、HQ地域の読み取りレプリカを使用します", correct: true}
+      {description: "各地域の展開では、地域のマスターとRDS MySQLを使用し、HQ地域の読み取りレプリカを使用します", correct: true}
       , {description: "各地域の展開には、地域のマスターと一緒にEC2のMySQLを使用し、HQ地域に毎時EBSスナップショットを送信します", correct: false}
-      , {description: "各地域の展開には、地域のマスターと一緒にRDS MySQLを使用し、毎時RDSスナップショットをHQ地域に送信します", correct: false}
-      , {description: "各地域の展開では、地域のマスターと一緒にEC2でMySQLを使用し、HQ地域に毎時S3のコピーデータファイルを使用する", correct: false}
-      , {description: "ダイレクトコネクトを使用して、地域のMySQL展開をすべてHQ地域に接続し、バッチ処理のネットワーク遅延を減らします", correct: false}
+      , {description: "各地域の展開には、地域のマスターと一緒にRDS MySQLを使用し、HQ地域に毎時RDSスナップショットを送信します", correct: false}
+      , {description: "各地域の展開では、地域のマスターと一緒にEC2でMySQLを使用し、S3を使用してデータファイルをHQ地域に毎時コピーします", correct: false}
+      , {description: "ダイレクトコネクトを使用して、地域のMySQL展開をすべてHQ領域に接続し、バッチ処理のネットワーク待ち時間を短縮します", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13273,7 +13274,7 @@ questions.add([
     , explanation: 'IAMユーザーのユーザーパスワード（ログインプロファイル）には、任意のBasic Latin（ASCII）文字を含めることができます。参照：http://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html'
   }
   , {
-    description: "AWS IAMでは、以下の事前定義されたポリシー条件キーのどれが、マルチファクタ認証（MFA）を使用して発行されたMFAで検証されたセキュリティ資格証明書がどれくらい前にチェックされますか？"
+    description: "AWS IAMでは、次の定義済みポリシー条件キーのどれが、マルチファクタ認証（MFA）を使用して発行されたMFAで検証されたセキュリティ資格証明書がどれぐらい前（何秒）前にチェックされましたか？"
     , multiple_answer: false
     , answers: [
       {description: "aws:MultiFactorAuthAge", correct: true}
@@ -13446,13 +13447,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "AWS地域への10 GB AWS Direct Connect接続があり、Amazon Elastic Computer Cloud（EC2）でWebアプリケーションがホストされています。このアプリケーションは、ACID（Atomicity、Consistency isolation、Durability）整合性モデルではなく、BASE（Basic Available。Stale最終整合性）を使用するアノン構内メインフレームデータベースに依存します。このアプリケーションは、データベースが書き込み量を処理できないため、望ましくない動作を示しています。最も費用対効果の高い方法で、オンプレミスデータベースリソースの負荷をどのように削減できますか？"
+    description: "顧客は、Amazon Elastic Computer Cloud（EC2）でホストされているWebアプリケーションを持っているAWS地域への10 GB AWS Direct Connect接続を持っています。このアプリケーションは、ACID（Atomicity、Consistency isolation、Durability）整合性モデルではなく、BASE（Basic Available。Stale Eventual consistency）を使用するオンプレミスメインフレームデータベースに依存しています。データベースが書き込み量を処理できないため、アプリケーションは望ましくない動作を示しています。オンプレミスデータベースリソースの負荷を最も費用対効果の高い方法でどのように削減できますか？"
     , multiple_answer: false
     , answers: [
       {description: "AWS上のオンプレミスデータベースとHadoopクラスタ間の同期メカニズムとして、Amazon Elastic Map Reduce（EMR）S3DistCpを使用します。", correct: true}
-      , {description: "アプリケーションを修正してAmazon SQSキューに書き込み、ワーカープロセスを開発してオンプレミスデータベースにキューをフラッシュします。", correct: false}
-      , {description: "アプリケーションを変更して、DynamoDBを使用して、オンプレミスデータベースにマップ機能を使用するEMRクラスタに給電します。", correct: false}
-      , {description: "データパイプラインを使用して書き込みを処理し、2つのデータベースを同期させるために、AWS上にRDS読み取り - 複製データベースを提供する。", correct: false}
+      , {description: "アプリケーションを修正してAmazon SQSキューに書き込み、キューをオンプレミスデータベースにフラッシュするワーカープロセスを開発します。", correct: false}
+      , {description: "マップ機能を使用してオンプレミスデータベースに書き込むEMRクラスタにDynamoDBを使用してフィードを適用するようにアプリケーションを変更します。", correct: false}
+      , {description: "書き込みを処理し、データパイプラインを使用して2つのデータベースを同期するために、AWS上にRDS読み取り - 複製データベースをプロビジョニングします。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13638,13 +13639,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "結合されたWebおよびアプリケーション層と大量の予測不可能なトラフィック需要を受け取るデータベース層を備えた読み取り専用のニュースレポートサイトでは、これらのトラフィックの変動に自動的に対応できる必要があります。"
+    description: "大量の予測不可能なトラフィック需要を受け取る、統合されたWebアプリケーション層とデータベース層を持つ読み取り専用のニュースレポートサイトでは、これらのトラフィック変動に自動的に対応できる必要があります。 これらの要件を満たすAWSサービスは何ですか？"
     , multiple_answer: false
     , answers: [
       {description: "ElastiCache Memcached inanautoscaimgグループを使用してWebおよびアプリケーション層のステートレスインスタンスを同期し、CloudWatchで監視し、読み取りレプリカでRDSを監視します。", correct: true}
-      , {description: "自動複製グループ内のWeb層とアプリケーション層の定常的なインスタンスが、CloudWatchで監視され、読み取り複製を持つRDS。", correct: false}
-      , {description: "CloudWatch.AndマルチAZ RDSで監視されているオートスケーリンググループのWebおよびアプリケーション層の定型インスタンス。", correct: false}
-      , {description: "CloudWatchおよびマルチAZ RDSで監視されるElastiCache Memcached非自動スケーリンググループを使用してWebおよびアプリケーション層のステートレスインスタンスを同期させました。", correct: false}
+      , {description: "読取りレプリカを使用してCloudWatchとRDSで監視されている自動拡張グループのWebおよびアプリケーション層のステートフルインスタンス。", correct: false}
+      , {description: "CloudWatchおよびマルチAZ RDSで監視される自動拡張グループのWebおよびアプリケーション層のステートフルインスタンス。", correct: false}
+      , {description: "CloudWatchおよびマルチAZ RDSで監視されている自動拡張グループで、ElastiCache Memcachedを使用してWebおよびアプリケーション層のステートレスインスタンスを同期しました。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13733,13 +13734,13 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "人気のあるテレビ番組の投票システムを構築している視聴者は、そのパフォーマンスを見て、自分の好きなパフォーマーに投票するためにショーのウェブサイトにアクセスします。ショーが終了してから短期間にサイトには何百万人もの訪問者が訪れることが予想されます。訪問者はまずAmazon.comの資格情報を使用してサイトにログインし、投票を行います。投票が完了すると、ページは投票総数を表示します。同社は、優れたパフォーマンスを維持しながら、急速な流入を処理できるだけでなく、コストを最小限に抑えることを望むようなサイトを構築する必要があります。どのパターンを使うべきですか？"
+    description: "ある企業が人気のあるテレビ番組の投票システムを構築しており、視聴者がその公演を見て優勝者に投票するためにショーのウェブサイトにアクセスします。 ショーが終了してから短期間でサイトには何百万人もの訪問者が訪れることが予想されます。 訪問者はまずAmazon.comの資格情報を使用してサイトにログインし、投票を行います。 投票が完了すると、そのページに投票総数が表示されます。 同社は、優れたパフォーマンスを維持しながらトラフィックの急激な流入に対応できるだけでなく、コストを最小限に抑えることを望むようなサイトを構築する必要があります。 どのデザインパターンを使用すべきですか？"
     , multiple_answer: false
     , answers: [
-      {description: "Webサーバーの自動スケールされたセットの前にCloudFrontとElastic Load Balancerを使用すると、WebサーバーはLogin with Amazonサービスを呼び出してユーザーを認証し、そのユーザーのビデオを処理し、その結果を複数のAZのリレーショナルデータベースサービスインスタンス。", correct: false}
-      , {description: "CloudFrontとS3の静的Webサイトホスティング機能を使用してJavascript SDKを使用してAmazonサービスでLoginWithを呼び出してユーザーを認証し、IAMロールを使用してDynamoDBtableへの権限を取得してユーザーの投票を保存します。", correct: false}
-      , {description: "自動的にスケールされたWebサーバーのセットの前にCloudFrontとElastic Load Balancerを使用すると、WebサーバーはまずLogin with Amazonサービスを呼び出してユーザーを認証し、Webサーバーはユーザーの投票を処理し、その結果をDynamoDBテーブルEC2インスタンスのIAMロールを使用してDynamoDBテーブルへのアクセス権を取得します。", correct: false}
-      , {description: "Webサーバーは自動スケールされたWebサーバーのセットの前にCloudFrontとElastic Load Balancerを使用すると、WebサーバーはLogin with Amazonサービスを呼び出してユーザーを認証し、Webサーバーはユーザー投票を行い、その結果をSQSキューに格納しますEC2インスタンスのIAMロールを使用してSQSキューへのアクセス権を取得します。アプリケーションサーバーのセットは、キューから項目を取り出し、その結果をDynamoDBテーブルに格納します。", correct: true}
+      {description: "Webサーバーの自動スケールされたセットの前にCloudFrontとElastic Load Balancerを使用すると、Webサーバーは最初にLogin With Amazonサービスを呼び出してユーザーを認証し、ユーザー投票を処理し、その結果を複数のAZのリレーショナルデータベースサービスインスタンス。", correct: false}
+      , {description: "CloudFrontとS3の静的Webサイトホスティング機能を使用してJavascript SDKを使用してLogin with Amazonサービスを呼び出してユーザーを認証し、IAMロールを使用してDynamoDBテーブルへのアクセス許可を取得してユーザー投票を保存します。", correct: false}
+      , {description: "CloudFrontとElastic Load Balancerを自動スケーリングされたWebサーバーのセットの前に使用すると、Webサーバーは最初にLogin with Amazonサービスを呼び出してユーザーを認証し、Webサーバーはユーザーの投票を処理し、結果をa IAMを使用するDynamoDBテーブルEC2インスタンスのロールを使用してDynamoDBテーブルへのアクセス権を取得します。", correct: false}
+      , {description: "Webサーバーは、自動的にスケールされたWebサーバーのセットの前にCloudFrontとElastic Load Balancerを使用すると、まず、Login With Amazonサービスを呼び出してユーザーを認証し、Webサーバーがユーザーの投票プロセスに勝ち、結果を EC2インスタンスのIAMロールを使用してSQSキューにアクセス権を取得するSQSキュー。 アプリケーションサーバーのセットは、キューからアイテムを取得し、その結果をDynamoDBテーブルに格納します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13847,25 +13848,25 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "コーポレートWebアプリケーションは、Amazon Virtual Private Cloud（VPC）内に配置され、IPSec VPN経由で企業のデータセンターに接続されます。アプリケーションは、オンプレミスLDAPサーバーに対して認証する必要があります。認証後、ログインしている各ユーザーは、そのユーザー固有のAmazonSimpleStorage Space（S3）キースペースにのみアクセスできます。これら2つのアプローチはどちらの目的にも対応できますか？ （2つの回答を選択）"
+    description: "企業Webアプリケーションは、Amazon Virtual Private Cloud（VPC）内に展開され、IPSec VPN経由で企業のデータセンターに接続されます。アプリケーションは、構内LDAPサーバーに対して認証する必要があります。認証後、ログインしている各ユーザーは、そのユーザー固有のAmazonSimpleStorage Space（S3）キースペースにのみアクセスできます。これら2つのアプローチはどちらの目的にも対応できますか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "IAMセキュリティに対して認証するIDブローカーを作成します。IAMroleinを使用して一時的なAWSセキュリティー資格を取得するためのトークン・サービスアプリケーションはIDブローカーを呼び出して、適切なS3バケットにアクセスして現行のセキュリティー信任状を取得します。", correct: false}
-      , {description: "アプリケーションはLDAPに対して認証を行い、ユーザーに関連付けられたIAMロールの名前を取得します。次に、アプリケーションはIAMセキュリティトークンサービスを呼び出して、そのIAMロールを想定します。簡単な方法！111アプリケーションでは、一時的な証明書を使用して適切なS3バケットにアクセスできます。", correct: true}
-      , {description: "LDAPに対して認証を行うIDブローカーを開発し、IAM Security TokenServicを呼び出して、IAMフェデレーテッド・ユーザー信任状を取得します。アプリケーションは、アイデンティティブローカーを呼び出して、適切なS3バケットにアクセスできるIAM連合エンジンクレデンシャルを取得します。", correct: true}
-      , {description: "アプリケーションはLDAPに対して認証され、アプリケーションはAWS IDとAccessManagement（IAM）セキュリティサービスを呼び出してLDAP資格情報を使用してIAMにログインします。アプリケーションは適切なS3バケットにアクセスするためにIAM一時認証情報を受け取ります。", correct: false}
-      , {description: "アプリケーションは、LDAP資格情報を使用してIAMセキュリティトークンサービスに対して認証します。アプリケーションは、それらの一時的なAWSセキュリティ資格情報を使用して適切なS3バケットにアクセスします。", correct: false}
+      {description: "IAMセキュリティに対して認証するIDブローカーを作成する一時的なAWSセキュリティー資格を取得するためにIAMロールを引き受けるトークン・サービスアプリケーションはIDブローカーを呼び出して、適切なS3バケットへのアクセス権を持つAWS一時セキュリティー資格情報を取得します。", correct: false}
+      , {description: "アプリケーションはLDAPに対して認証を行い、ユーザーに関連付けられたIAMロールの名前を取得します。 次に、アプリケーションはIAMセキュリティトークンサービスを呼び出して、そのIAMロールを想定します。 アプリケーションは、一時資格情報を使用して適切なS3バケットにアクセスできます。", correct: true}
+      , {description: "LDAPに対して認証を行うアイデンティティブローカを開発し、次にIAMセキュリティトークンサービスを呼び出して、IAMフェデレーションされたユーザー資格情報を取得します。 アプリケーションはIDブローカーを呼び出して、IAMフェデレーションされたユーザー資格情報を適切なS3バケットにアクセスできるようにします。", correct: true}
+      , {description: "アプリケーションがLDAPに対して認証されると、アプリケーションはAWS IDとAccessManagement（IAM）セキュリティサービスを呼び出してLDAP資格情報を使用してIAMにログインします。アプリケーションはIAM一時資格情報を使用して適切なS3バケットにアクセスできます。", correct: false}
+      , {description: "アプリケーションは、LDAP資格情報を使用してIAMセキュリティトークンサービスに対して認証します。アプリケーションは、その一時的なAWSセキュリティ資格情報を使用して適切なS3バケットにアクセスします。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "顧客は、市場全体で利用可能なすべての取引を表示するWebサイトを持っています。 5つの大規模なEC2インスタンスの一般的なサイトエクスペリエンスの負荷。 しかし、感謝祭の休暇の1週間前には、ほぼ20の大きなインスタンスのロードがあります。 その期間中の負荷は、公表された日付に基づいて変化する。 ウェブサイトのパフォーマンスを向上させるだけでなく、費用対効果に優れているソリューションはどれですか？"
+    description: "顧客は、市場全体で利用可能なすべての取引を表示するWebサイトを持っています。 このサイトでは一般的に5つの大きなEC2インスタンスの負荷が発生します。 しかし、感謝祭の休暇の1週間前に、彼らはほぼ20の大きなインスタンスの負荷に遭遇します。 その期間中の負荷は、オフィスのタイミングに基づいて日によって異なります。 以下のうちどれがコスト効果が高く、ウェブサイトのパフォーマンス向上に役立つのでしょうか？"
     , multiple_answer: false
     , answers: [
-      {description: "休暇期間中に10インスタンスを実行するように設定し、オフィス時間中にスケールアップするだけで、自動スケーリングスケジュールを使用してさらに10インスタンスをビルドします。", correct: false}
-      , {description: "就業時間中に10インスタンスしか実行せず、手動で毎日10インスタンスを起動します。", correct: false}
+      {description: "休暇前期間中に10インスタンスを実行するように設定し、自動スケーリングスケジュールを使用してさらに10インスタンスを起動して、オフィス時間中にスケールアップするだけです。", correct: false}
+      , {description: "就業時間中に10インスタンスしか実行せず、毎日手動で10インスタンスを起動します。", correct: false}
       , {description: "休暇前期間中に、20のインスタンスを連続して実行するように設定します。", correct: false}
-      , {description: "休暇前期間中に、組織が15のインスタンスを実行し、ネットワークI / Oポリシーに基づいて自動スケーリングを使用して拡大縮小する5つのインスタンスがあるシナリオを設定します。", correct: true}
+      , {description: "休暇前の期間に、ネットワークI / Oポリシーに基づいて自動スケーリングを使用して、組織が稼動している15のインスタンスと、5つのインスタンスを拡大または縮小するシナリオを設定します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13893,12 +13894,12 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "Amazon Elastic MapReduce（Amazon EMR）では、膨大な量のデータを分析して処理できます。クラスタは、Hadoopと呼ばれるオープンソースフレームワークを使用して管理されます.Hadoopジョブを実行するアプリケーションをセットアップしました。 アプリケーションはDynamoDBからデータを読み取り、100 TBの一時ファイルを生成します。プロセス全体が30分間実行され、ジョブの出力がS3に格納されます。 この場合、以下のうちどれが最も費用対効果の高いソリューションですか？"
+    description: "Amazon Elastic MapReduce（Amazon EMR）を使用すると、膨大な量のデータを分析して処理できます。クラスタは、Hadoopというオープンソースフレームワークを使用して管理されます。 Hadoopジョブを実行するアプリケーションを設定しました。 アプリケーションはDynamoDBからデータを読み取り、100 TBの一時ファイルを生成します。プロセス全体が30分間実行され、ジョブの出力がS3に格納されます。 次のうちどれがこの場合最も費用対効果の高いソリューションですか？"
     , multiple_answer: false
     , answers: [
       {description: "スポットインスタンスを使用してHadoopジョブを実行し、永続データストア用のEBSボリュームでそれらを設定します。", correct: false}
       , {description: "スポットインスタンスを使用してHadoopジョブを実行し、出力ファイル保管のために断熱ストレージでそれらを設定します。", correct: true}
-      , {description: "オンデマンドインスタンスを使用してHadoopジョブを実行し、永続的な保存のためにEBSボリュームを設定します。", correct: false}
+      , {description: "オンデマンドインスタンスを使用してHadoopジョブを実行し、EBSボリュームを永続ストレージ用に構成します。", correct: false}
       , {description: "オンデマンドインスタンスを使用してHadoopジョブを実行し、出力ファイルストレージ用の一時記憶域でそれらを設定します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
