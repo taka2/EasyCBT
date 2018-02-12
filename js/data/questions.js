@@ -11604,9 +11604,9 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "自動スケーリンググループを設定し、ELBを使用してLaunch Configurationを実行すると、Cloudwatchによってトリガーされたときに最大10個のオンデマンドm1.largeインスタンスを追加できます。 c3.2xlargeインスタンスをシャットダウンします。", correct: false}
-      , {description: "2つのc3.2xlargeインスタンスでELBを設定し、最大2つの追加のc3.2xlargeインスタンスに対してオンデマンド自動スケーリンググループを使用します。 m1.largeインスタンスをシャットダウンします。", correct: true}
+      , {description: "2つのc3.2xlargeインスタンスでELBを設定し、最大2つの追加のc3.2xlargeインスタンスに対してオンデマンド自動スケーリンググループを使用します。 m1.largeインスタンスをシャットダウンします。", correct: false}
       , {description: "Route 53レイテンシに基づくルーティングとヘルスチェックを直接使用して、EC2 m1.largeおよびc3.2xlargeインスタンスへのトラフィックを直接ルーティングします。 ELBをシャットダウンします。", correct: false}
-      , {description: "各インスタンスタイプに対して別々のELBを使用し、ルート53加重ラウンドロビンを使用してELBに負荷を分散します。", correct: false}
+      , {description: "各インスタンスタイプに対して別々のELBを使用し、ルート53加重ラウンドロビンを使用してELBに負荷を分散します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12882,13 +12882,13 @@ questions.add([
     , explanation: 'Amazon ElastiCacheでは、最大20のキャッシュノードを実行できます。参照：http://aws.amazon.com/elasticache/faqs/'
   }
   , {
-    description: "いくつかのファイルを取得する定期的な画像解析アプリケーションがあります。インプット分析では、各ファイルは出力ファイルに10個のファイルを書き込み、1日の入力ファイル数は1日の数時間で集中します。現在、入力データとその結果をホストする大規模なEBSボリュームを持つEC2上のサーバーは、プロセスを完了するために1日約20時間を要します。どのようなサービスを使用して精緻化時間を短縮し、ソリューションの可用性を向上させることができますか？"
+    description: "入力解析でいくつかのファイルを取得する定期的な画像解析アプリケーションがあります。各ファイルの需要に応じて、出力ファイルに10個のファイルを書き込み、1日の入力ファイル数が多く、1日の数時間で集中します。現在、EC2に大きなEBSボリュームを持つサーバーがあり、入力データをホストし、結果を処理するために1日に約20時間かかっています。どのようなサービスを使用して精緻化時間を短縮し、ソリューションの可用性を向上させることができますか？"
     , multiple_answer: false
     , answers: [
-      {description: "S3はI/Oファイルを格納します。 SQSは並行して動作するホストのグループに精巧化コマンドを配布します。 SQSキューの長さに応じてホストのグループを動的にサイズ変更する自動スケーリング", correct: false}
-      , {description: "I/Oファイルを格納するためのプロビジョニングIOPS（PIOPS）を備えたEBS。 SNSは、SNS通知の数に応じてホストのグループのサイズを動的に調整するために、パラレル自動スケーリングで動作するホストグループに詳細コマンドを配信します", correct: false}
-      , {description: "S3はI/Oファイルを格納し、SNSは蒸発コマンドを並行して動作するホストのグループに分配する。 SNS通知の数に応じてホストのグループのサイズを動的に変更する自動スケーリング", correct: false}
-      , {description: "I/Oファイルを格納するEIO（PIOPS）I/Oファイルを格納するSQS SQSキューの長さに応じてホストのグループを動的にサイズ変更する並列自動スケーリングで動作するホストのグループにエラボレーションコマンドを配布するSQS。", correct: true}
+      {description: "S3はI/Oファイルを格納します。 SQSは並行して動作するホストのグループに精巧化コマンドを配布します。 SQSキューの長さに応じてホストのグループのサイズを動的に変更する自動スケーリング。", correct: false}
+      , {description: "I/Oファイルを格納するためのプロビジョニングIOPS（PIOPS）を備えたEBS。 SNSは、SNS通知の数に応じてホストのグループのサイズを動的に調整するために、パラレル自動スケーリングで動作するホストグループに精緻化コマンドを配布します。", correct: false}
+      , {description: "S3はI/Oファイルを保存するために、SNSは並行して動作するホストのグループに精緻化コマンドを配布します。 SNS通知の数に応じて、ホストのグループのサイズを動的に変更する自動スケーリング。", correct: false}
+      , {description: "I/Oファイルを格納するEIO（PIOPS） I/Oファイルを格納するSQSキューの長さに応じてホストのグループを動的にサイズ変更する並列自動スケーリングで動作するホストのグループに精緻化コマンドを配布するSQS。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13165,8 +13165,8 @@ questions.add([
     , answers: [
       {description: "Auto Scalingの起動設定を、c3.8xlargeインスタンスを含むように変更します。それらのインスタンスは潜在的に10Gbpsのネットワークスループットをもたらす可能性があります。", correct: false}
       , {description: "あなたの取り込みパターンを再設計し、アイデンティティプロバイダに対してアプリケーションを認証させ、アイデンティティプロバイダをAWSセキュアトークンサービス（GetFederationToken）から一時的なAWS資格情報を取得するブローカーとして使用します。認証情報とS3エンドポイント/プレフィックスをアプリに安全に渡します。クライアント側のロジックを実装して、指定されたクレデンシャルとS3接頭辞を使用してファイルをAmazon S3に直接アップロードします。", correct: false}
-      , {description: "取り込みパターンを再構築し、WebアプリケーションインスタンスをVPCパブリックサブネットに移動します。 各EC2インスタンスのパブリックIPアドレスを（自動スケーリング起動設定を使用して）アタッチします。Amazon Route 53ラウンドロビンレコードセットを使用し、HTTPヘルスチェックからDNSへのアプリケーションリクエストの負荷分散を行います。 この方法では、Elastic Load Balancingをバイパスしてコストを大幅に削減します。", correct: true}
-      , {description: "あなたの取り込みパターンを再設計し、アイデンティティプロバイダに対してアプリケーションを認証させ、AWSセキュアトークンサービス（GetFederationToken）から一時的なAWS資格情報を取得するブローカーとしてアイデンティティプロバイダを使用します。 認証情報とS3エンドポイント/プレフィックスをアプリに安全に渡します。 S3 multipartアップロードAPIを使用して、指定された資格情報とS3接頭辞を使用してファイルをAmazon S3に直接アップロードするクライアント側のロジックを実装します。", correct: false}
+      , {description: "取り込みパターンを再構築し、WebアプリケーションインスタンスをVPCパブリックサブネットに移動します。 各EC2インスタンスのパブリックIPアドレスを（自動スケーリング起動設定を使用して）アタッチします。Amazon Route 53ラウンドロビンレコードセットを使用し、HTTPヘルスチェックからDNSへのアプリケーションリクエストの負荷分散を行います。 この方法では、Elastic Load Balancingをバイパスしてコストを大幅に削減します。", correct: false}
+      , {description: "あなたの取り込みパターンを再設計し、アイデンティティプロバイダに対してアプリケーションを認証させ、AWSセキュアトークンサービス（GetFederationToken）から一時的なAWS資格情報を取得するブローカーとしてアイデンティティプロバイダを使用します。 認証情報とS3エンドポイント/プレフィックスをアプリに安全に渡します。 S3 multipartアップロードAPIを使用して、指定された資格情報とS3接頭辞を使用してファイルをAmazon S3に直接アップロードするクライアント側のロジックを実装します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13450,8 +13450,8 @@ questions.add([
     description: "顧客は、Amazon Elastic Computer Cloud（EC2）でホストされているWebアプリケーションを持っているAWS地域への10 GB AWS Direct Connect接続を持っています。このアプリケーションは、ACID（Atomicity、Consistency isolation、Durability）整合性モデルではなく、BASE（Basic Available。Stale Eventual consistency）を使用するオンプレミスメインフレームデータベースに依存しています。データベースが書き込み量を処理できないため、アプリケーションは望ましくない動作を示しています。オンプレミスデータベースリソースの負荷を最も費用対効果の高い方法でどのように削減できますか？"
     , multiple_answer: false
     , answers: [
-      {description: "AWS上のオンプレミスデータベースとHadoopクラスタ間の同期メカニズムとして、Amazon Elastic Map Reduce（EMR）S3DistCpを使用します。", correct: true}
-      , {description: "アプリケーションを修正してAmazon SQSキューに書き込み、キューをオンプレミスデータベースにフラッシュするワーカープロセスを開発します。", correct: false}
+      {description: "AWS上のオンプレミスデータベースとHadoopクラスタ間の同期メカニズムとして、Amazon Elastic Map Reduce（EMR）S3DistCpを使用します。", correct: false}
+      , {description: "アプリケーションを修正してAmazon SQSキューに書き込み、キューをオンプレミスデータベースにフラッシュするワーカープロセスを開発します。", correct: true}
       , {description: "マップ機能を使用してオンプレミスデータベースに書き込むEMRクラスタにDynamoDBを使用してフィードを適用するようにアプリケーションを変更します。", correct: false}
       , {description: "書き込みを処理し、データパイプラインを使用して2つのデータベースを同期するために、AWS上にRDS読み取り - 複製データベースをプロビジョニングします。", correct: false}
     ]
