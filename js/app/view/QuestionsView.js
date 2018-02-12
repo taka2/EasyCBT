@@ -31,6 +31,8 @@ easycbt.view.QuestionsView = Backbone.View.extend({
 
     // 実問題数を保存
     self.examination.setActualQuestionCount(copiedQuestions.length);
+    // シャッフルした問題を保存
+    self.examination.setShuffledQuestions(copiedQuestions);
 
     var output = self.template({
       'examination': self.examination

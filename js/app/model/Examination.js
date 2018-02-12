@@ -36,4 +36,16 @@ easycbt.model.Examination = Backbone.Model.extend({
   	var self = this;
   	return self.set('actualQuestionCount', actualQuestionCount);
   },
+  
+  // シャッフル後の問題を取得する
+  getShuffledQuestions: function() {
+    var self = this;
+    return self.get('shuffledQuestions');
+  },
+
+  // シャッフル後の問題を設定する
+  setShuffledQuestions: function(shuffledQuestions) {
+    var self = this;
+    return self.set('shuffledQuestions', shuffledQuestions);
+  },
 });

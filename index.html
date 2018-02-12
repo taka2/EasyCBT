@@ -106,7 +106,7 @@
         <li>回答: <%= takeExamination.getAnswers().at(k).getAnsweredChoicesDescription() %></li>
         <li>正解: 
         <%
-        	var choices = takeExamination.getAnswers().at(k).getQuestion().getChoices(); 
+        	var choices = takeExamination.getExamination().getShuffledQuestions().at(k).getChoices(); 
             for(var l=0; l<choices.length; l++) {
               if(choices[l].correct) {
         %>
