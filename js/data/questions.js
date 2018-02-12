@@ -11509,7 +11509,7 @@ questions.add([
     description: "組織は米国でCIAのソフトウェアを作っています。 CIAはAWS上でアプリケーションをホストすることに合意しましたが、安全な環境にあります。 組織は、AWS GovCloud地域でアプリケーションをホストすることを考えています。 組織がAWS標準の地域と比較してAWS GovCloudでホスティングしているときに、以下に述べる違いのどれが正しくないのですか？"
     , multiple_answer: false
     , answers: [
-      {description: "AWS GovCLoudの請求は、標準AWSアカウントとは異なるアカウントで行われます。", correct: true}
+      {description: "AWS GovCloudの請求は、標準AWSアカウントとは異なるアカウントで行われます。", correct: true}
       , {description: "GovCloud地域認証はAmazon.comから分離されています。", correct: false}
       , {description: "米国人のみに対する物理的および論理的管理アクセス。", correct: false}
       , {description: "物理的に隔離されており、他のすべての地域との論理ネットワークの隔離があります。", correct: false}
@@ -11650,8 +11650,8 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "ジョブメッセージを渡すためにSQSを使用すると、EC2ワーカーインスタンスがアイドル状態になったときにクラウドウォッチアラームを使用して終了します。 データが処理されたら、S3オブジェクトのストレージクラスをRedundancy Redundancy Storageに変更します。", correct: false}
-      , {description: "セットアップSOSのメッセージを処理するためにスポットインスタンスを使用するキューの深さによってトリガされた自動スケーリングされたワーカーデータが処理されます。", correct: false}
-      , {description: "S3オブジェクトのストレージクラスをRedundancy Redundancy Storageに変更します。 SQSのメッセージを処理するためにスポットインスタンスを使用するキューの深さによって起動される自動スケールされたワーカーをセットアップします。データが処理されたら、S3オブジェクトのストレージクラスをGlacierに変更します。", correct: false}
+      , {description: "キューの深さによってトリガーされた自動スケーリングされたワーカーをセットアップします。これは、データが処理されると、スポットインスタンスを使用してSQSのメッセージを処理します。", correct: false}
+      , {description: "S3オブジェクトのストレージクラスをReduced Redundancy Storageに変更します。 SQSのメッセージを処理するためにスポットインスタンスを使用するキューの深さによって起動される自動スケールされたワーカーをセットアップします。データが処理されたら、S3オブジェクトのストレージクラスをGlacierに変更します。", correct: false}
       , {description: "SNSを使用してジョブメッセージを渡すと、クラウドウォッチアラームが使用され、スポットワーカーインスタンスがアイドル状態になったときに終了します。 データが処理されたら、S3オブジェクトのストレージクラスをGlacierに変更します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
@@ -11857,13 +11857,13 @@ questions.add([
     , explanation: 'DHCPオプションのセットを作成した後は、変更することはできません。 VPCに別のDHCPオプションセットを使用させる場合は、新しいセットを作成してVPCに関連付ける必要があります.DPCオプションをまったく使用しないようにVPCを設定することもできます。参照：http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_DHCP_Options.html'
   }
   , {
-    description: "あなたの顧客は、複数のWebサーバー、いくつかのアプリケーションサーバー、および小さなサーバー（50GB）のOracleデータベース情報（inthedデータベースと各種サーバーのファイルシステムの両方）で構成されるエンタープライズアプリケーションをAWSに展開することを望みます。バックアップシステムは、サーバー全体およびディスク全体のリストア、および2時間以上の復旧時間を伴う個々のファイルリストアをサポートする必要があります。彼らはデータベースとしてRDS Oracleを使用することを選択しました。バックアップ・アーキテクチャはこれらの要件を満たすでしょうか？"
+    description: "顧客は、複数のWebサーバー、いくつかのアプリケーションサーバー、および小さな（50GB）Oracleデータベース情報がデータベースと各種サーバーのファイルシステムの両方に格納されるエンタープライズアプリケーションをAWSに展開することを望みます。 バックアップ・システムは、サーバー全体およびディスク全体のデータベース・リカバリー、および復旧時間が2時間以下の個々のファイル・リストアをサポートする必要があります。 彼らはデータベースとしてRDS Oracleを使用することを選択しました。これらの要件を満たすバックアップアーキテクチャはどれですか？"
     , multiple_answer: false
     , answers: [
-      {description: "自動DBバックアップを使用したRDSのバックアップAMIを使用してEC2インスタンスをバックアップし、従来のエンタープライズバックアップソフトウェアを使用してファイルレベルのバックアップを提供して、S3にファイルレベルのバックアップを補完します。", correct: true}
+      {description: "毎日のDB自動バックアップを使用したバックアップRDS AMIを使用してEC2インスタンスをバックアップし、従来のエンタープライズバックアップソフトウェアを使用してファイルレベルのリストアを提供するS3へのファイルレベルのバックアップを補完します。", correct: true}
       , {description: "複数のAZ展開を使用したRDSのバックアップAmisを使用してEC2インスタンスをバックアップし、ファイルシステムのデータをS3にコピーしてファイルレベルの復元を補完します。", correct: false}
       , {description: "毎日のDB自動バックアップを使用したRDSのバックアップEBSスナップショットを使用してEC2インスタンスをバックアップし、従来のエンタープライズバックアップソフトウェアを使用してファイルレベルのバックアップをAmazon Glacierに追加する", correct: false}
-      , {description: "Oracle RMANを使用してRDSデータベースをS3にバックアップAmisを使用してEC2インスタンスをバックアップし、個別のボリューム復元用にEBSスナップショットを追加します。", correct: false}
+      , {description: "Oracle RMANを使用してRDSデータベースをS3にバックアップAmiを使用してEC2インスタンスをバックアップし、個別のボリューム復元用にEBSスナップショットを追加します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -11961,7 +11961,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "あなたは非常に大規模な電子商取引サイトの全体的なセキュリティ姿勢を向上させるために雇われています.SWから直接提供される静的資産を使用してWebとApptierの両方にELBを使用するVPCでうまく構築された多層アプリケーション 彼らは動的データにRDSとDynamoOBの組み合わせを使用しています。その後、夜間にS3にアーカイブしてEMRで処理します。疑問のあるログエントリが見つかったため、誰かが不正なアクセスを試みた疑いがあるためです。 どのようなアプローチが、この種の攻撃に対してコスト効率の高いスケーラブルな軽減を提供しますか？"
+    description: "あなたは非常に大規模な電子商取引サイトの全体的なセキュリティ姿勢を向上させるために雇われています.SWから直接提供される静的資産を使用してWebとApptierの両方にELBを使用するVPCでうまく構築された多層アプリケーション 彼らは動的データにRDSとDynamoDBの組み合わせを使用しています。その後、夜間にS3にアーカイブしてEMRで処理します。疑問のあるログエントリが見つかったため、誰かが不正なアクセスを試みた疑いがあるためです。 どのようなアプローチが、この種の攻撃に対してコスト効率の高いスケーラブルな軽減を提供しますか？"
     , multiple_answer: false
     , answers: [
       {description: "DirectConnectのパートナーロケーションでスペースをリースし、VPCへの1GDirectConnect接続を確立し、そのスペースにインターネット接続を確立し、ハードウェアWebアプリケーションファイアウォール（WAF）でトラフィックをフィルタすることを推奨します。 DirectConnect接続を介してトラフィックをVPCで動作するアプリケーションに渡します。", correct: false}
@@ -12010,9 +12010,9 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "タスクを配布するためにSQSを使用してEC2上で実行されるビデオトランスコードパイプライン、およびキューの長さに応じてノードの数を調整する自動スケーリングEBSボリュームでビデオをホストし、EBSスナップショットを使用して数日後に元のファイルを増分バックアップします。 EC2からHLSトランスコードビデオを提供するCloudFront。", correct: false}
-      , {description: "Elastic Transcoderを使用してオリジナルの高解像度MP4ビデオをHLSにトランスコードします。 EBSボリュームでビデオをホストし、EBSスナップショットを使用して数日後に元のファイルを増分バックアップします。 EC2からHLSトランスコードビデオを提供するCloudFront。", correct: false}
+      , {description: "Elastic Transcoderを使用してオリジナルの高解像度MP4ビデオをHLSにトランスコードします。 EBSボリュームでビデオをホストし、EBSスナップショットを使用して数日後に元のファイルを増分バックアップします。 EC2からのHRSトランスコードビデオを提供するCloudFront。", correct: false}
       , {description: "オリジナルの高解像度MP4ビデオをHLSにトランスコードするElastic Transcoder。 S3を使用してLife Cycle Managementでビデオをホストし、数日後に元のファイルをGlacierにアーカイブします。 CloudFrontはS3からHLSトランスコードされたビデオを提供します。", correct: true}
-      , {description: "EC2でSQSを使用してタスクを配布するビデオトランスコードパイプライン、およびキューの長さに応じてノードの数を調整するAuto Scaling S3を使用してライフサイクル管理でビデオをホストして、数日後にすべてのファイルをGlacierにアーカイブします。 GlacierのHLSトランスコードビデオを提供するCloudFront。", correct: false}
+      , {description: "SQSを使用してタスクを配布するEC2上で動作するビデオトランスコードパイプライン、およびキューの長さに応じてノードの数を調整する自動スケーリング EBSボリュームでビデオをホストし、EBSスナップショットを使用して数日後に元のファイルを増分バックアップします。 EC2からHLSトランスコードビデオを提供するCloudFront。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12919,7 +12919,7 @@ questions.add([
     description: "組織はAWSでバックアップおよび復元システムを構内システムに設定しています。組織化にはHA（高可用性）およびDR（災害復旧）が必要ですが、コストを節約するために回復時間を長くすることは可能です。 どのような設定オプションを使用すれば、最も効果的な方法でコスト削減だけでなくDRも達成できますか？"
     , multiple_answer: false
     , answers: [
-      {description: "事前設定されたサーバーを設定し、AMIを作成します.EIPとRoute 53を使用して、前提条件のAWSにすぐに切り替えます。", correct: false}
+      {description: "事前設定されたサーバーをセットアップし、AMIを作成します。 EIPとRoute 53を使用して、素早くAWSに切り替えることができます。", correct: false}
       , {description: "S3にバックアップデータを設定し、ストレージゲートウェイを使用して定期的にS3にデータを転送します。", correct: true}
       , {description: "自動スケーリングを使用して小さなインスタンスを設定します。 DRの場合、すべての負荷をAWSにオンフレムから迂回させます。", correct: false}
       , {description: "定期的に構内DBをEC2に複製し、パイロットライトと同様のシナリオを設定します。", correct: false}
@@ -13148,7 +13148,7 @@ questions.add([
     , explanation: 'IAMの役割に付加する2つのポリシーは、アクセスポリシーと信頼ポリシーです。 役割の信頼ポリシーにアカウントを追加することは、信頼関係を確立することの半分に過ぎないことに注意してください。 デフォルトでは、信頼できるアカウントのユーザーは、そのアカウントの管理者が、役割のAmazon ResourceName（ARN）をsts：AssumeRoleアクションのAllow要素に追加することで、ユーザーが役割を引き受ける権限をユーザーに付与するまで、 リファレンス：http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html'
   }
   , {
-    description: "組織は、アプリケーションがonAWSだけでなく実行されるマルチサイトソリューションを設定して、最小復旧時間目標（RTO）を達成しています。 次のうち、マルチサイトソリューションシナリオの要件を満たしていない構成はどれですか？"
+    description: "組織は、アプリケーションがAWSだけでなく前提条件で実行されるマルチサイトソリューションを設定して、最小復旧時間目標（RTO）を達成しています。 マルチサイトソリューションシナリオの要件を満たしていない構成は次のうちどれですか？"
     , multiple_answer: false
     , answers: [
       {description: "RTOに基づいたデータ複製の設定。", correct: false}
@@ -13229,10 +13229,10 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "あなたの会社は現在、オンプレミスのデータセンターで実行されている2層のWebアプリケーションを持っています。過去2ヶ月でいくつかのインフラストラクチャの障害が発生し、財務的に重大な損失が発生しました.CIOはアプリケーションをAWSに移行することに強く同意します。 他の会社の役員に買収を達成しながら、短期的にはビジネスの継続性を向上させるための災害復旧計画を作成するよう依頼します。 彼は、目標復旧時間目標（RTO）を4時間、復旧ポイント目標（RPO）を1時間以下と定めています。 また、2週間以内にソリューションの実装を依頼します。 あなたのデータベースのサイズは200GBで、20Mbpsのインターネット接続があります。 あなたはコストを最小限に抑えながらどのようにしていますか？"
+    description: "現在、会社にはオンプレミスのデータセンターで実行されている2層Webアプリケーションがあります。 過去2ヶ月間にいくつかのインフラストラクチャの障害が発生したため、大きな財務的損失が発生しました。 CIOは、アプリケーションをAWSに移行することに強く同意しています。 他の会社の役員からバイインを購入する際には、短期間でビジネス継続性を向上させるための災害復旧計画を作成するように求められます。 目標復旧時間目標（RTO）を4時間、復旧ポイント目標（RPO）を1時間以下と指定しています。 また、2週間以内にソリューションの実装を依頼します。 あなたのデータベースのサイズは200GBで、20Mbpsのインターネット接続があります。 コストを最小限に抑えながら、これをどのようにして行いますか？"
     , multiple_answer: false
     , answers: [
-      {description: "アプリケーションの新規インストールが含まれているEBSでサポートされているプラ​​イベートAMIを作成します。複数の可用性ゾーンにわたるアプリケーションの展開をサポートするために、AMIと必要なEC2、AutoScaling、およびELBリソースを含むaCloudFormationテンプレートを開発します。オンプレミスデータベースから安全なVPN接続を介してAWSのデータベースインスタンスに非同期にトランザクションをレプリケートします。", correct: true}
+      {description: "アプリケーションの新規インストールが含まれているEBSバックアップのプライベートAMIを作成します。 複数の可用性ゾーンにわたるアプリケーションの展開をサポートするために、AMIと必要なEC2、AutoScaling、およびELBリソースを含むCloudFormationテンプレートを作成します。 オンプレミスデータベースから安全なVPN接続を介してAWSのデータベースインスタンスに非同期にトランザクションをレプリケートします。", correct: true}
       , {description: "複数の可用性ゾーンにわたるAuto Scalingグループ内のEC2インスタンスにアプリケーションをデプロイします。 オンプレミスデータベースからセキュリティ保護されたVPN接続を介してAWSのデータベースインスタンスにトランザクションを非同期でレプリケートします。", correct: false}
       , {description: "アプリケーションの新規インストールが含まれているEBSバックアップのプライベートAMIを作成します。 1時間ごとにローカルデータベースをバックアップし、マルチパートアップロードを使用してS3バケットに暗号化してコピーするスクリプトをデータセンターに設定します。", correct: false}
       , {description: "アプリケーションの平均負荷をサポートできるコンピューティングに最適化されたEC2インスタンスにアプリケーションをインストールします。 セキュアなダイレクトコネクト接続を介して、オンプレミスデータベースからAWSのデータベースインスタンスにトランザクションを同期レプリケートします。", correct: false}
@@ -13368,10 +13368,10 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "組織がJEEスタックを使用してWebアプリケーションを設定しています。 アプリケーションは、JBossアプリケーションサーバーとMySQL DBを使用します。アプリケーションには、JEEアプリケーションのビジネス機能が呼び出されるたびにすべてのアクティビティを記録するログモジュールがあります。 ログ・ファイルのサイズが大きいため、ロギング・アクティビティに時間がかかります。 アプリケーションが以下のような拡張可能なインフラストラクチャをセットアップしたい場合、edoptionsがこの設定を達成するのに役立つでしょうか？"
+    description: "組織は、JEEスタックを使用してWebアプリケーションを設定しています。 アプリケーションは、JBossアプリケーションサーバーとMySQL DBを使用します。アプリケーションには、JEEアプリケーションのビジネス機能が呼び出されるたびにすべてのアクティビティを記録するログモジュールがあります。 ログ・ファイルのサイズが大きいため、ロギング・アクティビティには時間がかかります。 アプリケーションがスケーラブルなインフラストラクチャをセットアップしたい場合、以下のオプションのうちどれがこの設定を達成するのに役立つでしょうか？"
     , multiple_answer: false
     , answers: [
-      {description: "I / Oの高いPIOPSを使用してEBS上のログファイルをホストします。", correct: false}
+      {description: "I/Oの高いPIOPSを使用してEBS上のログファイルをホストします。", correct: false}
       , {description: "ロギングとアプリケーションサーバーが別々のサーバーにあり、両方が同じゾーンにあるようにする。", correct: false}
       , {description: "ネットワークの待ち時間が短くなるようにロギングとアプリケーションサーバーを同じインスタンスにホステッドします。", correct: false}
       , {description: "ロギング用の別のモジュールを作成し、SQSを使用してモジュールのコンパイルを行い、すべてのロギングのロギングが非同期であるようにします。", correct: true}
@@ -13391,7 +13391,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "あなたのチームには、開発、テスト、実稼働環境に展開する必要のあるTomcatベースのJavaアプリケーションがあります。 いくつかの調査の後で、Elastic Beanstalkは、開発ツールとRDSとの緊密な統合のために、使いやすさのために使用します。 あなたのQAチームのリードは、夜間にあなたの環境に浄化された生産データセットをロールする必要があることを指摘しています。同様に、組織の他のソフトウェアチームは、VPCのEC2インスタンスを介して同じ復元データにアクセスします。 上記の要件を満たす永続性とセキュリティーの設定は次のようになります。"
+    description: "あなたのチームには、開発環境、テスト環境、運用環境に展開する必要のあるTomcatベースのJavaアプリケーションがあります。 いくつかの調査の後で、Elastic Beanstalkは、開発ツールとRDSとの緊密な統合のために、管理の容易さのために使用されます。 QAチームの指導者は、夜間に、サニタイズされた運用データのセットを自分の環境にロールする必要があることを指摘しています。 同様に、組織内の他のソフトウェアチームは、VPCのEC2インスタンスを介して同じ復元データにアクセスしたいと考えています。上記の要件を満たす永続性とセキュリティの最適な設定は次のとおりです。"
     , multiple_answer: false
     , answers: [
       {description: "Elastic Beanstalk定義の一部としてRDSインスタンスを作成し、アプリケーションサブネット内のホストからアクセスできるようにセキュリティグループを変更します。", correct: true}
@@ -13642,7 +13642,7 @@ questions.add([
     description: "大量の予測不可能なトラフィック需要を受け取るデータベース層とWebおよびアプリケーション層を組み合わせた読み取り専用のニュースレポーティングサイトでは、これらのトラフィックの変動に自動的に対応できる必要があります。 これらの要件を満たすAWSサービスは何ですか？"
     , multiple_answer: false
     , answers: [
-      {description: "ElasticCacheを使用してWebおよびアプリケーション層のステートレスインスタンスを同期化しました.Mycachedは、読取りレプリカを使用してCloudWatchおよびRDSで監視される自動スケーリンググループで使用されます。", correct: true}
+      {description: "読取りレプリカを使用してCloudWatchおよびRDSで監視されている自動拡張グループ内のMemcachedのElastiCacheを使用して、Webおよびアプリケーション層のステートレスインスタンスを同期しました。", correct: true}
       , {description: "CloudWatchおよびRDSと読み取りレプリカで監視されている自動拡張グループのWebおよびアプリケーション層のステートフルインスタンス。", correct: false}
       , {description: "CloudWatchおよびマルチAZ RDSで監視される自動拡張グループのWebおよびアプリケーション層のステートフルインスタンス。", correct: false}
       , {description: "CloudWatchおよびマルチAZ RDSで監視されている自動拡張グループで、ElastiCache Memcachedを使用してWebおよびアプリケーション層のステートレスインスタンスを同期しました。", correct: false}
@@ -13898,7 +13898,7 @@ questions.add([
     , multiple_answer: false
     , answers: [
       {description: "スポットインスタンスを使用してHadoopジョブを実行し、永続データストア用のEBSボリュームでそれらを設定します。", correct: false}
-      , {description: "スポットインスタンスを使用してHadoopジョブを実行し、出力ファイル保管のために断熱ストレージでそれらを設定します。", correct: true}
+      , {description: "スポットインスタンスを使用してHadoopジョブを実行し、出力ファイルストレージ用の一時記憶域でそれらを設定します。", correct: true}
       , {description: "オンデマンドインスタンスを使用してHadoopジョブを実行し、EBSボリュームを永続ストレージ用に構成します。", correct: false}
       , {description: "オンデマンドインスタンスを使用してHadoopジョブを実行し、出力ファイルストレージ用の一時記憶域でそれらを設定します。", correct: false}
     ]
@@ -14083,7 +14083,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "IAMロールを使用してonAmazon EC2インスタンスを実行しているアプリケーションに権限を与える際に、以下のうちどれですか？"
+    description: "IAMロールを使用してAmazon EC2インスタンス上で実行されているアプリケーションに権限を付与しているときは、次のうちどれですか？"
     , multiple_answer: false
     , answers: [
       {description: "インスタンス上のすべてのアプリケーションは同じ役割を共有しますが、異なる権限を共有します。", correct: false}
