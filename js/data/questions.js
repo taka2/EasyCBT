@@ -11424,7 +11424,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "eu-west-1地域で15分ごとに更新されるニュースサイトを運営しています。 このWebサイトには、Elastic Load BalancerとAmazon RDSデータベースの背後にあるAuto Scalingグループを使用する世界中の視聴者がいます。静的コンテンツはAmazon S3にあり、Amazon CloudFrontを通じて配信されます。 Auto Scalingグループは、60％のCPU使用率でスケールアップイベントをトリガーするように設定されていますが、10.000のプロビジョニングIOPSを持つAmazon RDSextraラージDBインスタンスを使用すると、そのCPU使用率は約80％です。 空きメモリは2 GBの範囲です。 ウェブ解析レポートでは、ウェブページの平均ロード時間は約1.5〜2秒ですが、SEOコンサルタントは平均ロード時間を0.5秒未満に短縮したいと考えています。 ユーザーのページ読み込み時間をどのように改善しますか？ （3つの回答を選んでください）"
+    description: "eu-west-1地域で15分ごとに更新されるニュースサイトを運営しています。 このWebサイトには、Elastic Load BalancerとAmazon RDSデータベースの背後にあるAuto Scalingグループを使用する世界中の視聴者がいます。静的コンテンツはAmazon S3にあり、Amazon CloudFrontを通じて配信されます。 Auto Scalingグループは、60％のCPU使用率でスケールアップイベントをトリガーするように設定されており、10,000のプロビジョニングIOPSを持つAmazon RDSの超大規模DBインスタンスを使用すると、そのCPU使用率は約80％です。 空きメモリは2 GBの範囲です。 ウェブ解析レポートでは、ウェブページの平均ロード時間は約1.5〜2秒ですが、SEOコンサルタントは平均ロード時間を0.5秒未満に短縮したいと考えています。 ユーザーのページ読み込み時間をどのように改善しますか？ （3つの回答を選んでください）"
     , multiple_answer: true
     , answers: [
       {description: "Auto Scalingグループのスケールアップトリガーを30％に下げて、より積極的にスケールを調整します。", correct: true}
@@ -12017,18 +12017,18 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "Amazon VPCでアプリケーションサーバーのネットワークインフラストラクチャを設計しています。ユーザーは、オンプレミスネットワークだけでなく、インターネットからアクセスできるすべてのアプリケーションインスタンスになります。オンプレミスネットワークは、AWS Direct Connectリンク経由でVPCに接続されています。上記の要件を満たすようにルーティングを設計する方法は？"
+    description: "Amazon VPCでアプリケーションサーバーのネットワークインフラストラクチャを設計しています。ユーザーは、インターネットとオンプレミスネットワークからすべてのアプリケーションインスタンスにアクセスします。オンプレミスネットワークは、AWS Direct Connectリンクを介してVPCに接続されています。上記の要件を満たすためにルーティングをどのように設計しますか？"
     , multiple_answer: false
     , answers: [
-      {description: "インターネットゲートウェイ経由でデフォルトルートを使用して単一のルーティングテーブルを設定します。 AWSダイレクトコネクトのカスタマールータでデフォルト経路BGPを伝播します。ルーティングテーブルをすべてのVPCサブネットに関連付けます。", correct: true}
-      , {description: "インターネットゲートウェイを経由してデフォルトルートを持つ単一のルーティングテーブルを設定します。 AWSダイレクトコネクトカスタマールータのBGP経由でオンプレミスネットワークの仕様を伝播します。ルーティングテーブルとすべてのVPCサブネットを関連付けます。", correct: false}
-      , {description: "インターネットゲートウェイ経由でインターネットに接続し、VPNゲートウェイ経由でオンプレミスネットワークに接続する2つのデフォルトルートを持つ単一のルーティングテーブルを構成します。このルーティングテーブルは、VPC内のすべてのサブネットで使用します。", correct: false}
-      , {description: "Configure 2つのルーティングテーブル：その上には、インターネットゲートウェイを介してデフォルトのルータがあり、その他にはVPNゲートウェイを介してadefaultルートがあります。両方のルーティングテーブルを各VPCサブネットに関連付けます。", correct: false}
+      {description: "インターネットゲートウェイ経由でデフォルトルートを使用して単一のルーティングテーブルを設定します。 AWSダイレクトコネクトカスタマールータのBGP経由でデフォルトルートを伝播します。 ルーティングテーブルをすべてのVPCサブネットに関連付けます。", correct: true}
+      , {description: "インターネットゲートウェイを経由してデフォルトルートを持つ単一のルーティングテーブルを設定します。 オンプレミスネットワークの特定のルートをAWS Direct ConnectカスタマールータのBGP経由で伝播します。 ルーティングテーブルをすべてのVPCサブネットに関連付けます。", correct: false}
+      , {description: "デフォルトの2つのルートを持つ単一のルーティングテーブルを設定します。インターネットゲートウェイ経由でインターネットに接続し、もう1つはVPNゲートウェイ経由で構内ネットワークに接続します。 このルーティングテーブルは、VPCのすべてのサブネットで使用します。", correct: false}
+      , {description: "2つのルーティングテーブルを設定します。インターネットゲートウェイ経由でデフォルトルータがあり、その他にVPNゲートウェイ経由でデフォルトルートがあるものを設定します。 両方のルーティングテーブルを各VPCサブネットに関連付けます。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "VPC環境用のデータ漏洩防止ソリューションを設計しています。 あなたのVPCInstancesは、製品アップデートのためにインターネット上のソフトウェアデポとディストリビューションにアクセスできるようにしたいと思います。デポとディストリビューションは、サードパーティのCDN経由でURLでアクセスできます。 VPCインスタンスからインターネット上のホストへの他のアウトバウンド接続を明示的に指定したいと考えています。次のオプションのどれを検討しますか？"
+    description: "VPC環境用のデータ漏洩防止ソリューションを設計しています。 VPCインスタンスが製品アップデートのためにインターネット上のソフトウェアデポとディストリビューションにアクセスできるようにしたいとします。 デポとディストリビューションは、サードパーティのCDNからURLでアクセスできます。 VPCインスタンスからインターネット上のホストへの他のアウトバウンド接続を明示的に拒否したいとします。 次のうちどれを検討しますか？"
     , multiple_answer: false
     , answers: [
       {description: "VPCにWebプロキシサーバを設定し、アウトバウンドアクセス用のURLベースのルールを適用するデフォルトルートを削除します。", correct: true}
@@ -12077,7 +12077,7 @@ questions.add([
     description: "あなたはモバイルスリープトラッキングアプリケーションを運営する会社の新しいITアーキテクトです。夜間にアクティブにすると、モバイルアプリは5分ごとに1キロバイトの収集データポイントを送信します。バックエンドはユーザーを認証し、データポイントをAmazon DynamoDBテーブルに書き出します。毎朝、テーブルをスキャンして昨夜のデータをユーザごとに抽出して集計し、結果をAmazon S3に保存します。ユーザーには、Amazon SNSモバイルプッシュ通知を介して、新しいデータが利用可能であることが通知されます。これは解析され、モバイルアプリによって視覚化されます。現在、ほとんどが北米を拠点とする約100,000人のユーザーを抱えています。バックエンドシステムのアーキテクチャあなたは何をお勧めしますか？ 2つの回答を選択"
     , multiple_answer: true
     , answers: [
-      {description: "Amazon.comに保存されているJSONファイルの代わりに、モバイルアプリにAmazon DynamoDBに直接アクセスしてください。", correct: true}
+      {description: "Amazon S3に格納されているJSONファイルの代わりに、モバイルアプリがAmazon DynamoDBに直接アクセスできるようにします。", correct: true}
       , {description: "Amazon DynamoDBとAmazonS3の両方に代わるAmazon Redshiftクラスタにデータを直接書き込みます。", correct: false}
       , {description: "Amazon SQSキューを導入し、Amazon DynamoDBテーブルへの書き込みをバッファし、プロビジョニングされた書き込みスループットを削減します。", correct: false}
       , {description: "Amazon Elasticacheを導入して、Amazon DynamoDBテーブルからの読み取りをキャッシュし、プロビジョニングされた読み取りスループットを削減します。 新しいAmazon DynamoDBテーブルを毎日作成し、そのデータがAmazon S3以降の前日にドロップします。", correct: true}
@@ -12120,7 +12120,7 @@ questions.add([
     , explanation: 'タスクランナーは、AWSデータパイプラインをポーリングしてタスクを実行するアプリケーションです.AWS Data Pipelineのタスクランナーを使用するか、カスタムのタスクランナーアプリケーションを作成することができます。タスクランナーは、タスクランナーのデフォルトの実装です AWS Data Pipelineによって提供されます。タスクランナーがインストールおよび設定されると、AWS Data Pipelineは、アクティブ化したパイプラインに関連するタスクをポーリングします。 タスクがタスクランナーに割り当てられると、そのタスクが実行され、そのステータスがAWSデータパイプラインにレポートされます。 ワークフローでデフォルト以外の動作が必要な場合は、カスタムタスクランナーにその機能を実装する必要があります。参照：http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-how-remote-taskrunnerclient.html'
   }
   , {
-    description: "あなたの運勢500社はAmazon S3versusの使用を評価するTCO分析を実施していますハードウェアを増やす結果として、従業員は個人的な書類の保管のためにAmazonA3を使用するアクセス権が与えられました。次のうちどれを考慮する必要がありますか 企業のADまたはLDAPディレクトリからのシングルサインオンを組み込んだソリューションを設定し、各ユーザーのアクセスをバケット内の指定されたユーザーフォルダに限定することができますか？ （3つの回答を選んでください）"
+    description: "あなたの運勢500社は、Amazon S3の使用と、より多くのハードウェアの購入を評価するTCO分析を行っています。その結果、すべての従業員はAmazonS3を使用して個人用ドキュメントの保管にアクセスできます。次のうちどれを考慮する必要がありますか 企業のADまたはLDAPディレクトリからのシングルサインオンを組み込んだソリューションを設定し、各ユーザーのアクセスをバケット内の指定されたユーザーフォルダに制限できますか？ （3つの回答を選んでください）"
     , multiple_answer: true
     , answers: [
       {description: "フェデレーションプロキシまたはアイデンティティプロバイダの設定", correct: true}
@@ -12556,7 +12556,7 @@ questions.add([
       {description: "AWS Management Consoleから、Security Credentialsページに移動し、アカウントのアクセスと秘密鍵を取得します。", correct: false}
       , {description: "企業アカウント内のIAMユーザーを作成し、SaaSアプリケーションが必要とするアクションのみを許可するユーザーポリシーをIAMユーザーに割り当て、ユーザーに新しいアクセスと秘密キーを作成し、これらの資格情報をSaaSプロバイダーに提供します。", correct: false}
       , {description: "クロスアカウントアクセスのためのIAMロールを作成するSaaSプロバイダのアカウントはロールを想定し、SaaSアプリケーションが要求するアクションのみを許可するポリシーを割り当てることができます。", correct: true}
-      , {description: "ECAインスタンスのIAMロールを作成し、SaaSアプリケーションの動作に必要なアクションのみを許可するポリシーを割り当てる.iPAインスタンスを起動するときに使用するSaaSプロバイダにARNロールを提供する。", correct: false}
+      , {description: "EC2インスタンスのIAMロールを作成し、SaaSアプリケーションに必要なアクションだけを許可するポリシーを割り当て、アプリケーションインスタンスを起動するときに使用するSaaSプロバイダにロールARNを提供します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12905,7 +12905,7 @@ questions.add([
     , explanation: 'AWSデータパイプラインでは、すべてのアクティビティの試行が失敗した状態で返された場合、アクティビティは失敗します。 デフォルトでは、アクティビティはハード障害状態に入る前に3回再試行されます。 自動再試行の回数を10回に増やすことはできますが、システムでは不定期の再試行は許可されません。参照：https://aws.amazon.com/datapipeline/faqs/'    	
   }
   , {
-    description: "あなたは最近、都市部の街中の騒音や大気の質を測定するセンサーを構築するスタートアップ企業に加わりました。同社では、AWSでホストされているバックエンドに対して、毎分3センサーの1秒間に約1KBのセンサーデータをアップロードする約100個のセンサーのパイロット展開を行っています。パイロットは、データベース上のピークまたはIOPSを測定し、現在の展開は、EC2インスタンスを使用する負荷分散された自動拡張摂取レイヤーと、500GB標準ストレージを備えたPostgreSQL RDSデータベースで構成されています。パイロットは成功とみなされ、CEOは注目を集めるか、潜在的な投資家になる。事業計画では、少なくとも100,000個のセンサを配置する必要があり、バックエンドでサポートする必要があります。また、少なくとも2年間のセンサデータを保存する必要があります。資金調達を確保するには、プラットフォームがこれらの要件を満たしているかどうかを確認して、さらなるスケーリングの余地を残す必要があります。どのセットアップの勝利が要件を満たしていますか？"
+    description: "あなたは最近、都市部の街中の騒音や大気の質を測定するセンサーを構築するスタートアップ企業に加わりました。同社は3ヶ月間約100個のセンサーをパイロット展開しており、各センサーは1分ごとに1KBのセンサーデータをAWS上でホストされているバックエンドにアップロードしています。パイロットの間に、データベースでピークまたは10 IOPSを測定し、月に平均3GBのセンサーデータをデータベースに保存しました。現在のデプロイメントは、EC2インスタンスを使用したロードバランスされた自動拡張されたIngestionレイヤーと、500GB標準ストレージを備えたPostgreSQL RDSデータベースで構成されています。パイロットは成功とみなされ、CEOは注目を集めたり、潜在的な投資家を獲得したりしています。事業計画では、少なくとも100,000個のセンサを配置する必要があり、バックエンドでサポートする必要があります。また、少なくとも2年間のセンサーデータを保存して、年々の改善点を比較できるようにする必要があります。資金を確保するためには、プラットフォームがこれらの要件を満たしているかどうかを確認して、どのセットアップの勝利が要件を満たしていますか？"
     , multiple_answer: false
     , answers: [
       {description: "RDSインスタンスへの書き込みをバッファするために、SQSキューをイングレーションレイヤに追加する", correct: false}
@@ -13088,7 +13088,7 @@ questions.add([
     , explanation: 'ユーザがMySQL RDSでPIOPSを有効にしようとしている場合、ストレージの最小サイズは100 GB、最小PIOPSは1000でなければなりません。参照：http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.html'    	
   }
   , {
-    description: "AWS CodeDeployを使用して、anAmazon仮想プライベートクラウド（VPC）内で実行中のAmazon EC2インスタンスにアプリケーションをデプロイする場合。 これを可能にするためにはどのような基準を満たさなければならないのですか？"
+    description: "AWS CodeDeployを使用して、Amazon仮想プライベートクラウド（VPC）内で実行されているAmazon EC2インスタンスにアプリケーションを導入する場合。 これを可能にするためにはどのような基準を満たさなければならないのですか？"
     , multiple_answer: false
     , answers: [
       {description: "Amazon EC2インスタンスにインストールされたAWS CodeDeployエージェントは、公開されたAWS CodeDeployエンドポイントにのみアクセスできる必要があります。", correct: false}
@@ -13356,14 +13356,14 @@ questions.add([
     , explanation: 'Amazon SNSとADMを使用してモバイルデバイスにプッシュ通知を送信するには、次の情報を取得する必要があります。登録IDとクライアントの秘密 参照：http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePushPrereq.html'
   }
   , {
-    description: "WebアプリケーションのAWSへの移行を設計する必要があります。このアプリケーションは、カスタムWebサーバーを実行するLinux Webサーバーで構成されています。アプリケーションから生成されたログを永続的な場所に保存する必要があります。アプリケーションをAWSに移行するために選択できるオプションは何ですか？ （2つを選択）"
+    description: "WebアプリケーションのAWSへの移行を設計する必要があります。 このアプリケーションは、カスタムWebサーバーを実行するLinux Webサーバーで構成されています。 アプリケーションから生成されたログは、永続的な場所に保存する必要があります。 アプリケーションをAWSに移行するために選択できるオプションは何ですか？ （2を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "カスタムWebサーバープラットフォームを使用して、AWS Elastic Beanstalkアプリケーションを作成します。 webserver実行可能ファイルとアプリケーション・プロジェクトおよびソース・ファイルを指定します。 AmazonSimpleStorage Service（S3）へのログファイルのローテーションを有効にします。", correct: true}
-      , {description: "アプリケーションのDockerfileを作成します。 Dockerをインストールするカスタムレシピを作成し、Dockerfile.Createcustomerレシピを使用してDockerコンテナを展開して、Amazon CloudWatchLogsにログを公開するようにアプリケーションをインストールおよび設定します。", correct: false}
-      , {description: "アプリケーションのDockerfileを作成します。 Dockerレイヤーで構成されるAWS OpsWorksスタックを作成して、Dockerファイルを停止します。 Amazon Cloudworksにログを公開するようにAmazon Kinesesをインストールおよび設定するカスタムレシピを作成します。", correct: false}
-      , {description: "アプリケーションのDockerfileを作成します。 DockerプラットフォームとDockerファイルを使用して、AWS Elastic Beanstalkアプリケーションを作成します。アプリケーションログを自動的に公開するようにDocker設定のログを有効にします。 Amazon S3へのログファイルローテーションを有効にします。", correct: true}
-      , {description: "VMインポート/エクスポートを使用して、サーバーの仮想マシンイメージをAMIとしてAWSにインポートします。 AMIからAmazon Elastic Compute Cloud（EC2）インスタンスを作成し、AmazonCloudWatch Logsエージェントをインストールして設定します。インスタンスから新しいAMIを作成します。 AMIプラットフォームと新しいAMIを使用してAWS Elastic Beanstalkアプリケーションを作成します。", correct: false}
+      {description: "カスタムWebサーバープラットフォームを使用して、AWS Elastic Beanstalkアプリケーションを作成します。 Webサーバーの実行可能ファイルとアプリケーションのプロジェクトとソースファイルを指定します。 AmazonSimpleStorage Service（S3）へのログファイルのローテーションを有効にします。", correct: true}
+      , {description: "アプリケーション用のDockerfileを作成します。カスタムレイヤーで構成されるAWS OpsWorksスタックを作成します。カスタムレシピを作成してDockerをインストールし、Dockerファイルを使用してDockerコンテナを展開します。 Amazon CloudWatchLogsにログを公開するようにアプリケーションをインストールおよび設定するための顧客レシピを作成します。", correct: false}
+      , {description: "アプリケーション用のDockerfileを作成します。 Dockerファイルを使用するDockerレイヤーで構成されるAWS OpsWorksスタックを作成します。 カスタムレシピを作成し、Amazon Kinesesをインストールして設定し、Amazon CloudWatchにログを公開します。", correct: false}
+      , {description: "アプリケーションのDockerfileを作成します。 DockerプラットフォームとDockerfileを使用してAWS Elastic Beanstalkアプリケーションを作成します。 アプリケーションログを自動的に公開するようにDocker設定のログを有効にします。 Amazon S3へのログファイルローテーションを有効にします。", correct: true}
+      , {description: "VMインポート/エクスポートを使用して、サーバーの仮想マシンイメージをAMIとしてAWSにインポートします。 AMIからAmazon Elastic Compute Cloud（EC2）インスタンスを作成し、AmazonCloudWatch Logsエージェントをインストールして設定します。 インスタンスから新しいAMIを作成します。 AMIプラットフォームと新しいAMIを使用してAWS Elastic Beanstalkアプリケーションを作成します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13609,7 +13609,7 @@ questions.add([
     , answers: [
       {description: "Attemptsは堅牢なデータ管理を提供します。", correct: false}
       , {description: "AWSデータパイプラインは、再試行回数が最大許容再試行回数に達するまで失敗した操作を再試行します。", correct: false}
-      , {description: "An AWS Data Pipeline Attemptオブジェクトはパイプラインコンポーネントをコンパイルして一連のアクション可能なインスタンスを作成します。", correct: true}
+      , {description: "AWS Data Pipeline Attemptオブジェクトはパイプラインコンポーネントをコンパイルして一連のアクション可能なインスタンスを作成します。", correct: true}
       , {description: "AWSデータパイプライン試行オブジェクトは、適用可能であれば、さまざまな試行、結果、および失敗の理由を追跡します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
@@ -13639,11 +13639,11 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "大量の予測不可能なトラフィック需要を受け取る、統合されたWebアプリケーション層とデータベース層を持つ読み取り専用のニュースレポートサイトでは、これらのトラフィック変動に自動的に対応できる必要があります。 これらの要件を満たすAWSサービスは何ですか？"
+    description: "大量の予測不可能なトラフィック需要を受け取るデータベース層とWebおよびアプリケーション層を組み合わせた読み取り専用のニュースレポーティングサイトでは、これらのトラフィックの変動に自動的に対応できる必要があります。 これらの要件を満たすAWSサービスは何ですか？"
     , multiple_answer: false
     , answers: [
-      {description: "ElastiCache Memcached inanautoscaimgグループを使用してWebおよびアプリケーション層のステートレスインスタンスを同期し、CloudWatchで監視し、読み取りレプリカでRDSを監視します。", correct: true}
-      , {description: "読取りレプリカを使用してCloudWatchとRDSで監視されている自動拡張グループのWebおよびアプリケーション層のステートフルインスタンス。", correct: false}
+      {description: "ElasticCacheを使用してWebおよびアプリケーション層のステートレスインスタンスを同期化しました.Mycachedは、読取りレプリカを使用してCloudWatchおよびRDSで監視される自動スケーリンググループで使用されます。", correct: true}
+      , {description: "CloudWatchおよびRDSと読み取りレプリカで監視されている自動拡張グループのWebおよびアプリケーション層のステートフルインスタンス。", correct: false}
       , {description: "CloudWatchおよびマルチAZ RDSで監視される自動拡張グループのWebおよびアプリケーション層のステートフルインスタンス。", correct: false}
       , {description: "CloudWatchおよびマルチAZ RDSで監視されている自動拡張グループで、ElastiCache Memcachedを使用してWebおよびアプリケーション層のステートレスインスタンスを同期しました。", correct: false}
     ]
