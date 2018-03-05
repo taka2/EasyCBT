@@ -11052,8 +11052,8 @@ questions.add([
     , answers: [
       {description: "各可用性ゾーンで実行されているElastiCacheインメモリキャッシュを展開する", correct: true}
       , {description: "複数のRDS MySQLインスタンスに負荷を分散するシャーディングの実装", correct: false}
-      , {description: "RDS MySQLインスタンスサイズを大きくし、プロビジョニングされたIOPSを実装する", correct: true}
-      , {description: "各可用性ゾーンにRDS MySQL読み取りレプリカを追加する", correct: false}
+      , {description: "RDS MySQLインスタンスサイズを大きくし、プロビジョニングされたIOPSを実装する", correct: false}
+      , {description: "各可用性ゾーンにRDS MySQL読み取りレプリカを追加する", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -11264,10 +11264,10 @@ questions.add([
     description: "Web企業は、VPCに配備された高可用性アプリケーションに外部支払いサービスを実装しようとしています。アプリケーションEC2インスタンスは公衆ELBの背後にあります。自動スケーリングは、アプリケーションが通常の負荷でトラフィックが増加するにつれてインスタンスを追加します。 Auto Scalingグループはピーク時に3倍に拡大することができます。アプリケーションインスタンスは、インターネット上の支払いサービスと通信する必要があり、通信に使用されるすべてのパブリックIPアドレスをホワイトリストに登録する必要があります。一度に許可されるホワイトリストIPアドレスは最大4つあり、API経由で追加できます。彼らはどのようにしてソリューションを設計すべきですか？"
     , multiple_answer: false
     , answers: [
-      {description: "ハイアベイラビリティ用に設定された2つのNATインスタンスを介して支払いリクエストをルーティングし、MATインスタンスに接続された弾性IPアドレスをホワイトリストに登録します。", correct: false}
+      {description: "ハイアベイラビリティ用に設定された2つのNATインスタンスを介して支払いリクエストをルーティングし、NATインスタンスに接続された弾性IPアドレスをホワイトリストに登録します。", correct: true}
       , {description: "VPCインターネットゲートウェイパブリックIPをホワイトリストに登録し、インターネットゲートウェイ経由で支払い要求をルーティングします。", correct: false}
       , {description: "ELB IPアドレスをホワイトリストに登録し、ELBを介してアプリケーションサーバから支払い要求をルーティングします。", correct: false}
-      , {description: "Auto Scalingグループ内のアプリケーションインスタンスにパブリックIPアドレスを自動的に割り当て、ブート時に各インスタンスのパブリックIPアドレスを支払い検証ホワイトリストAPIに追加するスクリプトを実行します。", correct: true}
+      , {description: "Auto Scalingグループ内のアプリケーションインスタンスにパブリックIPアドレスを自動的に割り当て、ブート時に各インスタンスのパブリックIPアドレスを支払い検証ホワイトリストAPIに追加するスクリプトを実行します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -11404,11 +11404,11 @@ questions.add([
     description: "顧客がAWSへのAWS Direct Connect接続を確立しました。 リンクはアップしており、ルートは顧客側からアドバタイズされていますが、お客様はVPC内のEC2インスタンスからデータセンターにあるサーバーに接続することはできません。 この状況を改善するための実行可能なソリューションを提供する次のオプションはどれですか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "IPsec VPN接続をターゲットとしてルートテーブルにルートを追加します。", correct: true}
-      , {description: "バーチャル・ピンネイト・ゲートウェイ（VGW）へのルート伝播を可能にする。", correct: false}
-      , {description: "顧客ゲートウェイ（CGW）への経路伝播を可能にする。", correct: true}
+      {description: "IPsec VPN接続をターゲットとしてルートテーブルにルートを追加します。", correct: false}
+      , {description: "バーチャル・ピンネイト・ゲートウェイ（VGW）へのルート伝播を可能にする。", correct: true}
+      , {description: "顧客ゲートウェイ（CGW）への経路伝播を可能にする。", correct: false}
       , {description: "'route'コマンドを使用して、すべてのインスタンスのルートテーブルを変更します。", correct: false}
-	  , {description: "顧客のオンプレミス環境にルートを追加して、インスタンスVPCサブネットルートテーブルを変更します。", correct: false}
+	  , {description: "顧客のオンプレミス環境にルートを追加して、インスタンスVPCサブネットルートテーブルを変更します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -11427,9 +11427,9 @@ questions.add([
     description: "eu-west-1地域で15分ごとに更新されるニュースサイトを運営しています。 このWebサイトには、Elastic Load BalancerとAmazon RDSデータベースの背後にあるAuto Scalingグループを使用する世界中の視聴者がいます。静的コンテンツはAmazon S3にあり、Amazon CloudFrontを通じて配信されます。 Auto Scalingグループは、60％のCPU使用率でスケールアップイベントをトリガーするように設定されており、10,000のプロビジョニングIOPSを持つAmazon RDSの超大規模DBインスタンスを使用すると、そのCPU使用率は約80％です。 空きメモリは2 GBの範囲です。 ウェブ解析レポートでは、ウェブページの平均ロード時間は約1.5〜2秒ですが、SEOコンサルタントは平均ロード時間を0.5秒未満に短縮したいと考えています。 ユーザーのページ読み込み時間をどのように改善しますか？ （3つの回答を選んでください）"
     , multiple_answer: true
     , answers: [
-      {description: "Auto Scalingグループのスケールアップトリガーを30％に下げて、より積極的にスケールを調整します。", correct: true}
+      {description: "Auto Scalingグループのスケールアップトリガーを30％に下げて、より積極的にスケールを調整します。", correct: false}
       , {description: "Amazon ElastiCacheキャッシングレイヤーをアプリケーションに追加して、セッションや頻繁なDBクエリを保存する", correct: true}
-      , {description: "Amazon CloudFrontの動的コンテンツサポートを設定して、サイトから再利用可能なコンテンツをキャッシュできるようにする", correct: false}
+      , {description: "Amazon CloudFrontの動的コンテンツサポートを設定して、サイトから再利用可能なコンテンツをキャッシュできるようにする", correct: true}
       , {description: "Amazon RDSデータベースを高メモリの大容量インスタンスに切り替える", correct: true}
 	  , {description: "別の地域に2番目のインストールをセットアップし、Amazon Route 53レイテンシーベースのルーティング機能を使用して適切な地域を選択します。", correct: false}
     ]
@@ -12042,9 +12042,9 @@ questions.add([
     description: "大規模な不動産仲介業者がオプションoを探求しています（既存のモバイルアプリケーションに費用対効果の高いロケーションベースのアラートを追加しています）。アプリケーションバックエンドインフラストラクチャは現在AWS上で稼動しています。このサービスにオプトインするユーザーは、 適切なアラートが届くようにするためには、配達時間を短くする必要があります。既存のmobileappには、米国全土で500万人のユーザーがいます。次のアーキテクチャ上の提案はどれですか？"
     , multiple_answer: false
     , answers: [
-      {description: "モバイルアプリケーションは、Elastic Load BalancingとEC2インスタンスを使用してWebサービスエンドポイントにサブミットします。DynamoDBを使用して関連するオファーを保存および検索します。EC2インスタンスは、携帯キャリア/デバイスプロバイダと通信してアラートをモバイルアプリケーションにプッシュバックします。", correct: true}
+      {description: "モバイルアプリケーションは、Elastic Load BalancingとEC2インスタンスを使用してWebサービスエンドポイントにサブミットします。DynamoDBを使用して関連するオファーを保存および検索します。EC2インスタンスは、携帯キャリア/デバイスプロバイダと通信してアラートをモバイルアプリケーションにプッシュバックします。", correct: false}
       , {description: "AWS DirectConnectまたはVPNを使用してモバイルキャリアとの接続を確立するEC2インスタンスは、キャリア接続を介してモバイルアプリケーションのロケーションを受信します。RDSは、EC2インスタンスがモバイルキャリアと通信してアラートをモバイルアプリケーションにプッシュバックするために使用されます。", correct: false}
-      , {description: "モバイルアプリケーションは、SQSを使用してデバイスの場所を送信します。 EC2インスタンスは、DynamoDBから関連する他のものを取得します。AWS Mobile Pushは、モバイルアプリケーションにオファーを送信するために使用されます。", correct: false}
+      , {description: "モバイルアプリケーションは、SQSを使用してデバイスの場所を送信します。 EC2インスタンスは、DynamoDBから関連する他のものを取得します。AWS Mobile Pushは、モバイルアプリケーションにオファーを送信するために使用されます。", correct: true}
       , {description: "モバイルアプリケーションは、AWS Mobile Pushを使用してデバイスの場所を送信します。EC2インスタンスは、DynamoDBから関連するオファーを取得します。EC2インスタンスはモバイルキャリア/デバイスプロバイダと通信し、アラートをモバイルアプリケーションにプッシュバックします。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
@@ -12079,8 +12079,8 @@ questions.add([
     , answers: [
       {description: "Amazon S3に格納されているJSONファイルの代わりに、モバイルアプリがAmazon DynamoDBに直接アクセスできるようにします。", correct: true}
       , {description: "Amazon DynamoDBとAmazonS3の両方に代わるAmazon Redshiftクラスタにデータを直接書き込みます。", correct: false}
-      , {description: "Amazon SQSキューを導入し、Amazon DynamoDBテーブルへの書き込みをバッファし、プロビジョニングされた書き込みスループットを削減します。", correct: false}
-      , {description: "Amazon Elasticacheを導入して、Amazon DynamoDBテーブルからの読み取りをキャッシュし、プロビジョニングされた読み取りスループットを削減します。 新しいAmazon DynamoDBテーブルを毎日作成し、そのデータがAmazon S3以降の前日にドロップします。", correct: true}
+      , {description: "Amazon SQSキューを導入し、Amazon DynamoDBテーブルへの書き込みをバッファし、プロビジョニングされた書き込みスループットを削減します。", correct: true}
+      , {description: "Amazon Elasticacheを導入して、Amazon DynamoDBテーブルからの読み取りをキャッシュし、プロビジョニングされた読み取りスループットを削減します。 新しいAmazon DynamoDBテーブルを毎日作成し、そのデータがAmazon S3以降の前日にドロップします。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12485,9 +12485,11 @@ questions.add([
     , multiple_answer: true
     , answers: [
       {description: "Route 53レコードセット", correct: true}
-      , {description: "IAMの役割", correct: false}
-      , {description: "エラスチックIPアドレス（EIP）", correct: true}
-      , {description: "EC2鍵ペア 起動設定。 セキュリティグループ", correct: false}
+      , {description: "IAMの役割", correct: true}
+      , {description: "エラスチックIPアドレス（EIP）", correct: false}
+      , {description: "EC2鍵ペア", correct: false}
+      , {description: "起動設定", correct: false}
+      , {description: "セキュリティグループ", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12495,10 +12497,10 @@ questions.add([
     description: "国際企業は、単一地域でDynamoDBに依存する多層Webアプリケーションを導入しました規制上の理由から、復旧時間目標2時間とリカバリポイント目標24時間の別の地域で災害復旧機能が必要です。 彼らは定期的にデータを同期し、CloudFormationを使用してWebアプリケーションを迅速にプロビジョニングする必要があります。既存のWebアプリケーションの変更を最小限に抑え、データの同期に使用されるDynamoDBのスループットを制御し、 これらの要件を満たすためにどのような設計を選択しましたか？"
     , multiple_answer: false
     , answers: [
-      {description: "AWSデータパイプラインを使用して、DynamoDBのクロスリージョンコピーを1日に1回スケジュールするには、DynamoDBテーブルに最後の更新のタイムスタンプを表す「Lastupdated」属性を作成し、それをフィルタとして使用します。", correct: true}
+      {description: "AWSデータパイプラインを使用して、DynamoDBのクロスリージョンコピーを1日に1回スケジュールするには、DynamoDBテーブルに最後の更新のタイムスタンプを表す「Lastupdated」属性を作成し、それをフィルタとして使用します。", correct: false}
       , {description: "EMRを使用し、カスタムスクリプトを作成して、SCAN操作を使用して現在の地域のDynamoDBからデータを取得し、それを第2領域のDynamoDBにプッシュします。", correct: false}
       , {description: "AWSデータパイプラインを使用して、現在の地域のDynamoDBテーブルを現在の地域のS3に1日に1回エクスポートするスケジュールを設定し、S3のデータを他の地域のDynamoDBにインポートする直後の別のタスクをスケジュールします。", correct: false}
-      , {description: "各Anteを私の第2の領域のSQSキューにも送ります。 SQSキューの背後にある自動スケーリンググループを使用して、第2領域の書き込みを再生します。", correct: false}
+      , {description: "各Anteを私の第2の領域のSQSキューにも送ります。 SQSキューの背後にある自動スケーリンググループを使用して、第2領域の書き込みを再生します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -12781,10 +12783,10 @@ questions.add([
     description: "非x86ハードウェアへの依存と、データバックアップにAWSを使用するために、オンプレミスのアプリケーションを実行しています。 バックアップアプリケーションは、POSIX互換のブロックベースストレージにのみ書き込むことができます。 140TBのデータがあり、ファイルサーバー上の単一のフォルダとしてマウントしたい場合バックアップが行われている間、このデータの一部にアクセスできる必要があります。 このユースケースに最も適したバックアップソリューションは何ですか？"
     , multiple_answer: false
     , answers: [
-      {description: "Storage Gatewayを使用し、Gateway Cachedボリュームを使用するように構成します。", correct: true}
+      {description: "Storage Gatewayを使用し、Gateway Cachedボリュームを使用するように構成します。", correct: false}
       , {description: "データバックアップの対象としてS3を使用するようにバックアップソフトウェアを設定します。", correct: false}
       , {description: "データバックアップの対象としてGlacierを使用するようにバックアップソフトウェアを設定します。", correct: false}
-      , {description: "ストレージ・ゲートウェイを使用して、ゲートウェイ・ストアド・ボリュームを使用するように構成します。", correct: false}
+      , {description: "ストレージ・ゲートウェイを使用して、ゲートウェイ・ストアド・ボリュームを使用するように構成します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13197,7 +13199,7 @@ questions.add([
     description: "オンプレミスインフラストラクチャとAmazon VPC間の接続ソリューションを設計しています。オンプレミスの自宅がVPCインスタンスと通信します。 VPNゲートウェイを使用し、AWSでサポートされているカスタマーゲートウェイでIPSecトンネルを終了させます。次の目的は、上に概説したようにIPSecトンネルを実装することで達成できますか？"
     , multiple_answer: true
     , answers: [
-      {description: "通過中のデータの完全な保護", correct: false}
+      {description: "転送中のデータのエンドツーエンド保護", correct: false}
       , {description: "エンドツーエンドのアイデンティティ認証", correct: false}
       , {description: "インターネットを介したデータの暗号化", correct: true}
       , {description: "インターネット上での転送中のデータの保護", correct: true}
@@ -13291,8 +13293,8 @@ questions.add([
     , answers: [
       {description: "OAuth 2.0を使用して一時的なAWSセキュリティ資格情報を取得し、NOCメンバーがAWS管理コンソールにサインインできるようにします。", correct: false}
       , {description: "Web Identity Federationを使用してAWSの一時セキュリティ情報を取得し、NOCメンバーがAWS Management Consoleにサインインできるようにします。", correct: false}
-      , {description: "オンプレミスのSAML 2.0準拠アイデンティティプロバイダ（IDP）を使用して、AWSシングルサインオン（SSO）エンドポイント経由でNOCメンバにAWS管理コンソールへのフェデレーションアクセスを許可します。", correct: false}
-      , {description: "社内のSAML2.0準拠アイデンティティプロバイダ（IDP）を使用して、一時的なセキュリティ資格情報を取得し、NOCメンバーがAWS管理コンソールにサインインできるようにします。", correct: true}
+      , {description: "オンプレミスのSAML 2.0準拠アイデンティティプロバイダ（IDP）を使用して、AWSシングルサインオン（SSO）エンドポイント経由でNOCメンバにAWS管理コンソールへのフェデレーションアクセスを許可します。", correct: true}
+      , {description: "社内のSAML2.0準拠アイデンティティプロバイダ（IDP）を使用して、一時的なセキュリティ資格情報を取得し、NOCメンバーがAWS管理コンソールにサインインできるようにします。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13359,11 +13361,11 @@ questions.add([
     description: "WebアプリケーションのAWSへの移行を設計する必要があります。 このアプリケーションは、カスタムWebサーバーを実行するLinux Webサーバーで構成されています。 アプリケーションから生成されたログは、永続的な場所に保存する必要があります。 アプリケーションをAWSに移行するために選択できるオプションは何ですか？ （2を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "カスタムWebサーバープラットフォームを使用して、AWS Elastic Beanstalkアプリケーションを作成します。 Webサーバーの実行可能ファイルとアプリケーションのプロジェクトとソースファイルを指定します。 AmazonSimpleStorage Service（S3）へのログファイルのローテーションを有効にします。", correct: true}
-      , {description: "アプリケーション用のDockerfileを作成します。カスタムレイヤーで構成されるAWS OpsWorksスタックを作成します。カスタムレシピを作成してDockerをインストールし、Dockerファイルを使用してDockerコンテナを展開します。 Amazon CloudWatchLogsにログを公開するようにアプリケーションをインストールおよび設定するための顧客レシピを作成します。", correct: false}
+      {description: "カスタムWebサーバープラットフォームを使用して、AWS Elastic Beanstalkアプリケーションを作成します。 Webサーバーの実行可能ファイルとアプリケーションのプロジェクトとソースファイルを指定します。 AmazonSimpleStorage Service（S3）へのログファイルのローテーションを有効にします。", correct: false}
+      , {description: "アプリケーション用のDockerfileを作成します。カスタムレイヤーで構成されるAWS OpsWorksスタックを作成します。カスタムレシピを作成してDockerをインストールし、Dockerファイルを使用してDockerコンテナを展開します。 Amazon CloudWatchLogsにログを公開するようにアプリケーションをインストールおよび設定するための顧客レシピを作成します。", correct: true}
       , {description: "アプリケーション用のDockerfileを作成します。 Dockerファイルを使用するDockerレイヤーで構成されるAWS OpsWorksスタックを作成します。 カスタムレシピを作成し、Amazon Kinesesをインストールして設定し、Amazon CloudWatchにログを公開します。", correct: false}
-      , {description: "アプリケーションのDockerfileを作成します。 DockerプラットフォームとDockerfileを使用してAWS Elastic Beanstalkアプリケーションを作成します。 アプリケーションログを自動的に公開するようにDocker設定のログを有効にします。 Amazon S3へのログファイルローテーションを有効にします。", correct: true}
-      , {description: "VMインポート/エクスポートを使用して、サーバーの仮想マシンイメージをAMIとしてAWSにインポートします。 AMIからAmazon Elastic Compute Cloud（EC2）インスタンスを作成し、AmazonCloudWatch Logsエージェントをインストールして設定します。 インスタンスから新しいAMIを作成します。 AMIプラットフォームと新しいAMIを使用してAWS Elastic Beanstalkアプリケーションを作成します。", correct: false}
+      , {description: "アプリケーションのDockerfileを作成します。 DockerプラットフォームとDockerfileを使用してAWS Elastic Beanstalkアプリケーションを作成します。 アプリケーションログを自動的に公開するようにDocker設定のログを有効にします。 Amazon S3へのログファイルローテーションを有効にします。", correct: false}
+      , {description: "VMインポート/エクスポートを使用して、サーバーの仮想マシンイメージをAMIとしてAWSにインポートします。 AMIからAmazon Elastic Compute Cloud（EC2）インスタンスを作成し、AmazonCloudWatch Logsエージェントをインストールして設定します。 インスタンスから新しいAMIを作成します。 AMIプラットフォームと新しいAMIを使用してAWS Elastic Beanstalkアプリケーションを作成します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13461,7 +13463,7 @@ questions.add([
     description: "バッチ処理として使用されるEC2インスタンス間でメッセージキューを設定するためにSimple QueueService（SQS）を使用したバッチ処理ソリューションのアーキテクチャ図を参照Cloud Watchmonitorsジョブ要求（キューに入れられたメッセージ）の数とAuto Scalingグループは、Cloud Watchアラームで設定されたパラメータに基づいてバッチサーバーを自動的に追加または削除します。このアーキテクチャーを使用して、費用対効果の高い効率的な方法で次の機能のいずれかを実装できますか？"
     , multiple_answer: false
     , answers: [
-      {description: "ビジー状態のEC2instancethatがデイジーチェーン設定で次のインスタンスにメッセージを渡すのを許可することによって、並列処理によってジョブを実行するための全体的な石灰を減らします。", correct: false}
+      {description: "デイジーチェーン接続でメッセージを受け取ったビジー状態のEC2インスタンスを次のインスタンスに渡すことができるようにすることで、並列処理によってジョブを実行するための全体的な行を減らします。", correct: false}
       , {description: "メッセージはSQSに残り、EC2インスタンスの回復はS3へのバックアップメッセージによるSQS障害に対するフォールトトレランスを実装し続けるため、EC2インスタンスの障害に対するフォールトトレランスを実装します。", correct: false}
       , {description: "SQSを介してメッセージを交換することにより、バッチ内のEC2インスタンス間でメッセージの受け渡しを実装します。", correct: false}
       , {description: "ジョブ要求の数を自動的に調整してEC2インスタンスの数を調整し、効果を向上させます。プライオリティメタデータフィールドをSQSmessagesに割り当てることによって、優先度の低いジョブの前に優先度の高いジョブを処理します。", correct: true}
@@ -13727,9 +13729,9 @@ questions.add([
       {description: "各EC2インスタンスに複数のENI（elastic network interface）を追加して、ネットワーク帯域幅を広げます。", correct: false}
       , {description: "専用のインスタンスを使用して、各インスタンスが最大のパフォーマンスを発揮できるようにします。", correct: false}
       , {description: "静的コンテンツと動的コンテンツの両方にAmazon CloudFrontディストリビューションを使用します。", correct: true}
-      , {description: "Web上に自動スケーリンググループを持つElastic Load Balancerを使用します。 AppおよびAmazon RelationalDatabase Service（RDS）層", correct: false}
+      , {description: "Web上に自動スケーリンググループを持つElastic Load Balancerを使用します。 AppおよびAmazon RelationalDatabase Service（RDS）層", correct: true}
       , {description: "Amazon CloudWatchを追加してネットワークインとCPU使用率が高いことを確認します。", correct: true}
-      , {description: "インスタンスOSファイアウォールにルールを迅速に追加および削除するためのプロセスおよび機能を作成します。", correct: true}
+      , {description: "インスタンスOSファイアウォールにルールを迅速に追加および削除するためのプロセスおよび機能を作成します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13888,8 +13890,8 @@ questions.add([
       {description: "IAMユーザーを作成します。バケットポリシーをIAMユーザの適切な権限で更新します。IAMユーザのアクセスキーと秘密鍵を生成し、モバイルアプリに格納し、その認証を使用してAmazon S3にアクセスします。", correct: false}
       , {description: "IAMユーザーを作成します。適切な権限をIAMユーザーに割り当てます。 IAMユーザーのアクセスキーと秘密鍵を生成し、モバイルアプリケーションに格納し、これらの資格情報を使用してaccessAmazonS3にアクセスします。", correct: false}
       , {description: "適切な権限を持つAWS Security Token Serviceを使用して、長期の認証情報を作成します。モバイルアプリでこれらの認証情報を保管し、それらを使用してAmazon S3にアクセスします。", correct: false}
-      , {description: "Amazon RDSでユーザーの情報を記録し、適切な権限を持つIAMで役割を作成します。ユーザーがモバイルアプリケーションを使用する場合は、AWS Security TokenService \"AssumeRole\"機能を使用して一時的な資格情報を作成します。これらの資格情報をモバイルアプリのメモリに保存し、それらを使用してAmazon S3にアクセスします。次回ユーザーがモバイルアプリを実行したときに新しい認証情報を生成します。", correct: true}
-      , {description: "Amazon DynamoDBにユーザーの情報を記録します。ユーザーがモバイルアプリを使用する場合は、AWS Security Token Serviceを適切な権限で使用してクレデンシャル認証を行います。モバイルアプリのメモリにストアを保存し、それらを使用してAmazon S3にアクセスします。次回ユーザーがモバイルアプリを実行するときにnewcredentialを生成します。", correct: false}
+      , {description: "Amazon RDSでユーザーの情報を記録し、適切な権限を持つIAMで役割を作成します。ユーザーがモバイルアプリケーションを使用する場合は、AWS Security TokenService \"AssumeRole\"機能を使用して一時的な資格情報を作成します。これらの資格情報をモバイルアプリのメモリに保存し、それらを使用してAmazon S3にアクセスします。次回ユーザーがモバイルアプリを実行したときに新しい認証情報を生成します。", correct: false}
+      , {description: "Amazon DynamoDBにユーザーの情報を記録します。ユーザーがモバイルアプリを使用する場合は、AWS Security Token Serviceを適切な権限で使用してクレデンシャル認証を行います。モバイルアプリのメモリにストアを保存し、それらを使用してAmazon S3にアクセスします。次回ユーザーがモバイルアプリを実行するときにnewcredentialを生成します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13969,8 +13971,8 @@ questions.add([
     description: "単一のVPCで顧客Webアプリケーション用の侵入検知防止（IDS / IPS）ソリューションを設計しています。インターネットからのトラフィックに対するIOS IPS保護を実装するオプションを検討しています。次のオプションのどれを検討しますか？ （2つの回答を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "VPCで動作している各インスタンスでIDS / IPSエージェントを実装する", correct: false}
-      , {description: "サブネットごとにインスタンスを設定して、ネットワークインターフェイスカードを無差別モードに切り替え、ネットワークトラフィックを分析します。", correct: true}
+      {description: "VPCで動作している各インスタンスでIDS / IPSエージェントを実装する", correct: true}
+      , {description: "サブネットごとにインスタンスを設定して、ネットワークインターフェイスカードを無差別モードに切り替え、ネットワークトラフィックを分析します。", correct: false}
       , {description: "SSLリスナーを使用したElastic Load Balancingの実装Webアプリケーションの前に。", correct: false}
       , {description: "Webサーバの前にリバースプロキシレイヤを実装し、各リバースプロキシサーバ上でIDS / IPSエージェントを設定します。", correct: true}
     ]
@@ -14167,9 +14169,9 @@ questions.add([
     description: "ある企業は、RDS MySQLインスタンス上で実行されているメイントランザクションDBで1時間ごとにバッチ分析を実行して、Redshiftで実行中の中央データウェアハウスにデータを移入します。バッチの実行中、トランザクションアプリケーションは非常に遅いです。バッチが完了すると、トップマネジメントダッシュボードを新しいデータで更新する必要があります。ダッシュボードは、手動で送信された電子メールが更新が必要であることを通知すると現在開始されているオンプレミスを実行している別のシステムによって生成されます。オンプレミスシステムは、別のチームによって管理されているため、変更することはできません。このシナリオを最適化してパフォーマンスの問題を解決し、できるだけプロセスを自動化する方法は？"
     , multiple_answer: false
     , answers: [
-      {description: "バッチ分析用にRedshiftでRDSを置き換え、オンプレミスシステムにダッシュボードを更新するよう通知するSNS。", correct: true}
+      {description: "バッチ分析用にRedshiftでRDSを置き換え、オンプレミスシステムにダッシュボードを更新するよう通知するSNS。", correct: false}
       , {description: "オーダー分析のためにRDSをRedshiftに置き換え、SQSがオンプレミスシステムにメッセージを送信してダッシュボードを更新します。", correct: false}
-      , {description: "バッチ分析用のRDS読み取りレプリカを作成し、オンプレミスシステムにダッシュボードの更新を通知するSNSを作成します。", correct: false}
+      , {description: "バッチ分析用のRDS読み取りレプリカを作成し、オンプレミスシステムにダッシュボードの更新を通知するSNSを作成します。", correct: true}
       , {description: "バッチ分析用にRDS読み取りレプリカを作成し、オンプレミスシステムにメッセージを送信してダッシュボードを更新するSQSを作成します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
