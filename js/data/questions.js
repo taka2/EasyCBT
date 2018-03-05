@@ -13197,11 +13197,11 @@ questions.add([
     description: "オンプレミスインフラストラクチャとAmazon VPC間の接続ソリューションを設計しています。オンプレミスの自宅がVPCインスタンスと通信します。 VPNゲートウェイを使用し、AWSでサポートされているカスタマーゲートウェイでIPSecトンネルを終了させます。次の目的は、上に概説したようにIPSecトンネルを実装することで達成できますか？"
     , multiple_answer: true
     , answers: [
-      {description: "通過中のデータの完全な保護", correct: false}
+      {description: "通過中のデータの完全な保護", correct: true}
       , {description: "エンドツーエンドのアイデンティティ認証", correct: false}
       , {description: "インターネットを介したデータの暗号化", correct: true}
       , {description: "インターネット上での転送中のデータの保護", correct: true}
-      , {description: "VPNゲートウェイと顧客ゲートウェイ間のピア識別認証", correct: true}
+      , {description: "VPNゲートウェイと顧客ゲートウェイ間のピア識別認証", correct: false}
       , {description: "インターネットを介したデータの完全性の保護", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
@@ -13359,11 +13359,11 @@ questions.add([
     description: "WebアプリケーションのAWSへの移行を設計する必要があります。 このアプリケーションは、カスタムWebサーバーを実行するLinux Webサーバーで構成されています。 アプリケーションから生成されたログは、永続的な場所に保存する必要があります。 アプリケーションをAWSに移行するために選択できるオプションは何ですか？ （2を選択）"
     , multiple_answer: true
     , answers: [
-      {description: "カスタムWebサーバープラットフォームを使用して、AWS Elastic Beanstalkアプリケーションを作成します。 Webサーバーの実行可能ファイルとアプリケーションのプロジェクトとソースファイルを指定します。 AmazonSimpleStorage Service（S3）へのログファイルのローテーションを有効にします。", correct: true}
-      , {description: "アプリケーション用のDockerfileを作成します。カスタムレイヤーで構成されるAWS OpsWorksスタックを作成します。カスタムレシピを作成してDockerをインストールし、Dockerファイルを使用してDockerコンテナを展開します。 Amazon CloudWatchLogsにログを公開するようにアプリケーションをインストールおよび設定するための顧客レシピを作成します。", correct: false}
+      {description: "カスタムWebサーバープラットフォームを使用して、AWS Elastic Beanstalkアプリケーションを作成します。 Webサーバーの実行可能ファイルとアプリケーションのプロジェクトとソースファイルを指定します。 AmazonSimpleStorage Service（S3）へのログファイルのローテーションを有効にします。", correct: false}
+      , {description: "アプリケーション用のDockerfileを作成します。カスタムレイヤーで構成されるAWS OpsWorksスタックを作成します。カスタムレシピを作成してDockerをインストールし、Dockerファイルを使用してDockerコンテナを展開します。 Amazon CloudWatchLogsにログを公開するようにアプリケーションをインストールおよび設定するための顧客レシピを作成します。", correct: true}
       , {description: "アプリケーション用のDockerfileを作成します。 Dockerファイルを使用するDockerレイヤーで構成されるAWS OpsWorksスタックを作成します。 カスタムレシピを作成し、Amazon Kinesesをインストールして設定し、Amazon CloudWatchにログを公開します。", correct: false}
-      , {description: "アプリケーションのDockerfileを作成します。 DockerプラットフォームとDockerfileを使用してAWS Elastic Beanstalkアプリケーションを作成します。 アプリケーションログを自動的に公開するようにDocker設定のログを有効にします。 Amazon S3へのログファイルローテーションを有効にします。", correct: true}
-      , {description: "VMインポート/エクスポートを使用して、サーバーの仮想マシンイメージをAMIとしてAWSにインポートします。 AMIからAmazon Elastic Compute Cloud（EC2）インスタンスを作成し、AmazonCloudWatch Logsエージェントをインストールして設定します。 インスタンスから新しいAMIを作成します。 AMIプラットフォームと新しいAMIを使用してAWS Elastic Beanstalkアプリケーションを作成します。", correct: false}
+      , {description: "アプリケーションのDockerfileを作成します。 DockerプラットフォームとDockerfileを使用してAWS Elastic Beanstalkアプリケーションを作成します。 アプリケーションログを自動的に公開するようにDocker設定のログを有効にします。 Amazon S3へのログファイルローテーションを有効にします。", correct: false}
+      , {description: "VMインポート/エクスポートを使用して、サーバーの仮想マシンイメージをAMIとしてAWSにインポートします。 AMIからAmazon Elastic Compute Cloud（EC2）インスタンスを作成し、AmazonCloudWatch Logsエージェントをインストールして設定します。 インスタンスから新しいAMIを作成します。 AMIプラットフォームと新しいAMIを使用してAWS Elastic Beanstalkアプリケーションを作成します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -13461,7 +13461,7 @@ questions.add([
     description: "バッチ処理として使用されるEC2インスタンス間でメッセージキューを設定するためにSimple QueueService（SQS）を使用したバッチ処理ソリューションのアーキテクチャ図を参照Cloud Watchmonitorsジョブ要求（キューに入れられたメッセージ）の数とAuto Scalingグループは、Cloud Watchアラームで設定されたパラメータに基づいてバッチサーバーを自動的に追加または削除します。このアーキテクチャーを使用して、費用対効果の高い効率的な方法で次の機能のいずれかを実装できますか？"
     , multiple_answer: false
     , answers: [
-      {description: "ビジー状態のEC2instancethatがデイジーチェーン設定で次のインスタンスにメッセージを渡すのを許可することによって、並列処理によってジョブを実行するための全体的な石灰を減らします。", correct: false}
+      {description: "デイジーチェーン接続でメッセージを受け取ったビジー状態のEC2インスタンスを次のインスタンスに渡すことができるようにすることで、並列処理によってジョブを実行するための全体的な行を減らします。", correct: false}
       , {description: "メッセージはSQSに残り、EC2インスタンスの回復はS3へのバックアップメッセージによるSQS障害に対するフォールトトレランスを実装し続けるため、EC2インスタンスの障害に対するフォールトトレランスを実装します。", correct: false}
       , {description: "SQSを介してメッセージを交換することにより、バッチ内のEC2インスタンス間でメッセージの受け渡しを実装します。", correct: false}
       , {description: "ジョブ要求の数を自動的に調整してEC2インスタンスの数を調整し、効果を向上させます。プライオリティメタデータフィールドをSQSmessagesに割り当てることによって、優先度の低いジョブの前に優先度の高いジョブを処理します。", correct: true}
@@ -13888,8 +13888,8 @@ questions.add([
       {description: "IAMユーザーを作成します。バケットポリシーをIAMユーザの適切な権限で更新します。IAMユーザのアクセスキーと秘密鍵を生成し、モバイルアプリに格納し、その認証を使用してAmazon S3にアクセスします。", correct: false}
       , {description: "IAMユーザーを作成します。適切な権限をIAMユーザーに割り当てます。 IAMユーザーのアクセスキーと秘密鍵を生成し、モバイルアプリケーションに格納し、これらの資格情報を使用してaccessAmazonS3にアクセスします。", correct: false}
       , {description: "適切な権限を持つAWS Security Token Serviceを使用して、長期の認証情報を作成します。モバイルアプリでこれらの認証情報を保管し、それらを使用してAmazon S3にアクセスします。", correct: false}
-      , {description: "Amazon RDSでユーザーの情報を記録し、適切な権限を持つIAMで役割を作成します。ユーザーがモバイルアプリケーションを使用する場合は、AWS Security TokenService \"AssumeRole\"機能を使用して一時的な資格情報を作成します。これらの資格情報をモバイルアプリのメモリに保存し、それらを使用してAmazon S3にアクセスします。次回ユーザーがモバイルアプリを実行したときに新しい認証情報を生成します。", correct: true}
-      , {description: "Amazon DynamoDBにユーザーの情報を記録します。ユーザーがモバイルアプリを使用する場合は、AWS Security Token Serviceを適切な権限で使用してクレデンシャル認証を行います。モバイルアプリのメモリにストアを保存し、それらを使用してAmazon S3にアクセスします。次回ユーザーがモバイルアプリを実行するときにnewcredentialを生成します。", correct: false}
+      , {description: "Amazon RDSでユーザーの情報を記録し、適切な権限を持つIAMで役割を作成します。ユーザーがモバイルアプリケーションを使用する場合は、AWS Security TokenService \"AssumeRole\"機能を使用して一時的な資格情報を作成します。これらの資格情報をモバイルアプリのメモリに保存し、それらを使用してAmazon S3にアクセスします。次回ユーザーがモバイルアプリを実行したときに新しい認証情報を生成します。", correct: false}
+      , {description: "Amazon DynamoDBにユーザーの情報を記録します。ユーザーがモバイルアプリを使用する場合は、AWS Security Token Serviceを適切な権限で使用してクレデンシャル認証を行います。モバイルアプリのメモリにストアを保存し、それらを使用してAmazon S3にアクセスします。次回ユーザーがモバイルアプリを実行するときにnewcredentialを生成します。", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
