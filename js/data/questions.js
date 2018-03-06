@@ -11837,10 +11837,11 @@ questions.add([
     description: "4つの500 GB EBSプロビジョニングIOPSボリュームが接続されたEC2インスタンスを起動しました。 EC2インスタンスはEBS-Optimizedで、EC2とEBSの間で500 Mbpsのスループットをサポートします。 4つのEBSボリュームは1つのRAID 0デバイスとして構成され、プロビジョニングされた各IOPSボリュームは4,000 IOPS（4,000 16KBの読み取りまたは書き込み）でプロビジョニングされ、合計16,000のランダムIOPSがインスタンスに与えられます。 EC2インスタンスは、最初は16,000 IOPSのランダムな読み取りおよび書き込みパフォーマンスを提供します。 その後、インスタンスの合計ランダムI / Oパフォーマンスを向上させるために、RAIDに2つの500 GB EBSプロビジョニングIOPSボリュームを2つ追加します。各ボリュームは、元の4つのような4,000のIOPにプロビジョニングされ、合計 EC2インスタンスでは24,000 IOPSです。 監視では、EC2インスタンスのCPU使用率が50％から70％に増加しましたが、インスタンスレベルで測定された合計ランダムIOPSはまったく増加しません。問題と有効な解決策は何ですか？"
     , multiple_answer: false
     , answers: [
-      {description: "EBS-Optimizedスループットは、利用可能なIOPSの合計を制限します。 より大きなスループットを提供するEBSOptimizedインスタンスを使用します。", correct: false}
+      {description: "EBS-Optimizedスループットは、利用可能なIOPSの合計を制限します。 より大きなスループットを提供するEBSOptimizedインスタンスを使用します。", correct: true}
       , {description: "小さなブロックサイズが原因でパフォーマンスが低下し、I / Oスループットが制限されます。 64KBブロックを使用してスループットを向上させるように、デバイスドライバとファイルシステムを構成します。", correct: false}
-      , {description: "標準のEBSインスタンスルートボリュームは、合計IOPSレートを制限します。 インスタンスのルートボリュームを500GB 4,000のプロビジョニングされたIOPSボリュームに変更します。", correct: true}
-      , {description: "より大きいストレージボリュームは、より高いプロビジョニングIOPSレートをサポートします。 6つの各EBSボリュームのプロビジョニングされたボリュームを1TB.Eに増やします。 RAID 0は、約4つのデバイスに直線的にしかスケーリングされません。 4つのEBSプロビジョニングIOPSボリュームでRAID 0を使用しますが、各プロビジョニングIOPS EBSボリュームを6,000 IOPSに増やしてください。", correct: false}
+      , {description: "標準のEBSインスタンスルートボリュームは、合計IOPSレートを制限します。 インスタンスのルートボリュームを500GB 4,000のプロビジョニングされたIOPSボリュームに変更します。", correct: false}
+      , {description: "容量が大きいほど、プロビジョニングされたIOPSレートが高くなります。 6つのEBSボリュームのプロビジョニングされたボリューム記憶容量を1 TBに増やします。", correct: false}
+      , {description: "RAID 0は、約4つのデバイスに直線的にしかスケーリングされません。 4つのEBSプロビジョニングIOPSボリュームでRAID 0を使用しますが、各プロビジョニングIOPS EBSボリュームを6,000 IOPSに増やしてください。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
@@ -11954,8 +11955,8 @@ questions.add([
     , answers: [
       {description: "Amazon Simple Storage Service（S3）を使用してサーバー側の暗号化を行い、Amazon EC2の一時ドライブのサブセットでシミュレーションを実行します。", correct: false}
       , {description: "Amazon S3をサーバー側の暗号化で使用し、Amazon EC2のメモリ内のサブセットでシミュレーションを実行します。", correct: false}
-      , {description: "Amazon EMRでHDFSを使用し、Amazon EC2の一時ドライブ内のサブセットでシミュレーションを実行します。", correct: false}
-      , {description: "Amazon Elastic MapReduce（EMR）でHDFSを使用し、Amazon Elastic Compute Cloud（EC2）のメモリ内のサブセットでシミュレーションを実行します。", correct: true}
+      , {description: "Amazon EMRでHDFSを使用し、Amazon EC2の一時ドライブ内のサブセットでシミュレーションを実行します。", correct: true}
+      , {description: "Amazon Elastic MapReduce（EMR）でHDFSを使用し、Amazon Elastic Compute Cloud（EC2）のメモリ内のサブセットでシミュレーションを実行します。", correct: false}
       , {description: "暗号化されたAmazon Elastic Block Store（EBS）ボリュームに完全なデータセットを格納し、定期的にEC2ワークステーションに複製できるスナップショットを取得します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
@@ -13203,7 +13204,7 @@ questions.add([
       , {description: "エンドツーエンドのアイデンティティ認証", correct: false}
       , {description: "インターネットを介したデータの暗号化", correct: true}
       , {description: "インターネット上での転送中のデータの保護", correct: true}
-      , {description: "VPNゲートウェイと顧客ゲートウェイ間のピア識別認証", correct: true}
+      , {description: "VPNゲートウェイと顧客ゲートウェイ間のピア識別認証", correct: false}
       , {description: "インターネットを介したデータの完全性の保護", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
