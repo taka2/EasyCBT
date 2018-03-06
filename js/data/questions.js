@@ -11405,7 +11405,7 @@ questions.add([
     , multiple_answer: true
     , answers: [
       {description: "IPsec VPN接続をターゲットとしてルートテーブルにルートを追加します。", correct: false}
-      , {description: "バーチャル・ピンネイト・ゲートウェイ（VGW）へのルート伝播を可能にする。", correct: true}
+      , {description: "バーチャル・プライベート・ゲートウェイ（VGW）へのルート伝播を可能にする。", correct: true}
       , {description: "顧客ゲートウェイ（CGW）への経路伝播を可能にする。", correct: false}
       , {description: "'route'コマンドを使用して、すべてのインスタンスのルートテーブルを変更します。", correct: false}
 	  , {description: "顧客のオンプレミス環境にルートを追加して、インスタンスVPCサブネットルートテーブルを変更します。", correct: true}
