@@ -13203,7 +13203,7 @@ questions.add([
       , {description: "エンドツーエンドのアイデンティティ認証", correct: false}
       , {description: "インターネットを介したデータの暗号化", correct: true}
       , {description: "インターネット上での転送中のデータの保護", correct: true}
-      , {description: "VPNゲートウェイと顧客ゲートウェイ間のピア識別認証", correct: true}
+      , {description: "VPNゲートウェイと顧客ゲートウェイ間のピア識別認証", correct: false}
       , {description: "インターネットを介したデータの完全性の保護", correct: true}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
