@@ -11450,10 +11450,10 @@ questions.add([
     description: "Elastic Beanstalkを使用して会社のWebサイトを展開し、ログファイルの回転をS3に設定しました。 Elastic Map Reduceジョブは、S3のログを定期的に分析し、CIOと共有する使用ダッシュボードを構築しています。最近、クラウドフロントを使用して動的コンテンツ配信とWebサイトを起点としたWebサイト全体のパフォーマンスが向上しました。このアーキテクチャの変更後、使用ダッシュボードでは、Webサイトのトラフィックが一桁減少したことが示されます。どのようにあなたの使用ダッシュボードを修正するのですか？"
     , multiple_answer: false
     , answers: [
-      {description: "Enable Cloud Frontを使用してアクセスログをS3に配信し、それらをElastic Map Reduceジョブの入力として使用します。", correct: false}
+      {description: "Enable Cloud Frontを使用してアクセスログをS3に配信し、それらをElastic Map Reduceジョブの入力として使用します。", correct: true}
       , {description: "Elastic Map Reduceジョブの入力としてCloud Trailをオンにし、S3のトレイルログタイルを使用します", correct: false}
       , {description: "ElasticMapReduceジョブの入力としてCloud Watch ELBメトリックを使用するようにログ収集プロセスを変更する", correct: false}
-	  , {description: "ElasticMapReduceジョブへのログ配信を更新するElastic Beanstalk \"Rebuild Environment\"オプションを使用します。", correct: true}
+	  , {description: "ElasticMapReduceジョブへのログ配信を更新するElastic Beanstalk \"Rebuild Environment\"オプションを使用します。", correct: false}
       , {description: "ElasticMapReduceジョブへのログ配信を更新するには、Elastic Beanstalkの「Restart App server（s）」オプションを使用します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
