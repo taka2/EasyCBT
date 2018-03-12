@@ -13021,7 +13021,7 @@ questions.add([
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
   , {
-    description: "Amazon EC2のIAMロールのコンテキストでは、API要求を行うための許可を抹消することはできません。"
+    description: "Amazon EC2のIAMロールのコンテキストでは、パーミッションを委任することについて以下のどれが当てはまりませんか。"
     , multiple_answer: false
     , answers: [
       {description: "IAMロールを作成することはできません。", correct: true}
