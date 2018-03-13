@@ -12240,8 +12240,8 @@ questions.add([
     , answers: [
       {description: "4つのAWSアカウントを作成し、各ユーザーに個別のアカウントへのアクセス権を付与します。", correct: false}
       , {description: "IAMユーザーを作成し、異なるサイズのインスタンスのみを起動する許可をユーザーに与えます。", correct: false}
-      , {description: "4人のIAMユーザーと4人のVPCを作成し、各IAMユーザーが別々のVPCにアクセスできるようにします。", correct: false}
-      , {description: "4つのサブネットを持つVPCを作成し、個々のIAMユー	ザーの各サブネットへのアクセスを許可します。", correct: true}
+      , {description: "4人のIAMユーザーと4人のVPCを作成し、各IAMユーザーが別々のVPCにアクセスできるようにします。", correct: true}
+      , {description: "4つのサブネットを持つVPCを作成し、個々のIAMユーザーの各サブネットへのアクセスを許可します。", correct: false}
     ]
     , category: 'AWS-Certified-Solutions-Architect-Professional'
   }
